@@ -95,15 +95,16 @@ public class DriftService(
 
     /// <summary>
     ///     The steps of a preview that would change the machine, leaving out the ones the last
-    ///     apply could not make either (refused or failed): those never held, so they did not
-    ///     drift, and reporting them would flag the same item after every check.
+    ///     apply found refused or not applicable: those never held, so they did not drift, and
+    ///     reporting them would flag the same item after every check. A step that failed still
+    ///     counts, so a failed apply stays visible until it is reapplied.
     /// </summary>
     internal static IReadOnlyList<Change> PendingSteps(ChangeSet preview, ChangeRecord? lastApply)
     {
         var neverHeld = lastApply is { Operation: ChangeRecordOperation.Apply }
             ? lastApply
                 .Steps.Where(static s =>
-                    !s.Ok || s.Kind is ChangeKind.Refused or ChangeKind.NotApplicable
+                    s.Ok && s.Kind is ChangeKind.Refused or ChangeKind.NotApplicable
                 )
                 .Select(static s => (s.Name, s.Description))
                 .ToHashSet()

@@ -71,7 +71,14 @@ public sealed record CommandLineOptions
                     options = WithCommand(options, CliCommand.ReapplyDrift, null);
                     break;
                 case "--report":
-                    options = options with { ReportPath = Value(args, ref i) };
+                    var reportPath = Value(args, ref i);
+                    if (reportPath is null)
+                        return options with
+                        {
+                            Error = "Cli.Error.MissingValue",
+                            ErrorArg = "--report",
+                        };
+                    options = options with { ReportPath = reportPath };
                     break;
                 case "--restore-point":
                     options = options with { RestorePoint = true };

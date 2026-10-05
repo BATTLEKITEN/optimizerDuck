@@ -210,13 +210,25 @@ public partial class ProfilesViewModel(
             IsFooterVisible = false,
         };
         _ = contentDialogService.ShowAsync(dialog, CancellationToken.None);
+        var failed = new List<string>();
         try
         {
             foreach (var entry in entries)
-                await optimizationService.ApplyAsync(
+            {
+                // A provider reports a failure in the result instead of throwing, so each
+                // result is read: a failed reapply must not look like a fixed one.
+                var result = await optimizationService.ApplyAsync(
                     entry.Optimization,
                     processing.ProgressReporter
                 );
+                if (
+                    result.Status
+                    is OptimizationSuccessResult.Failed
+                        or OptimizationSuccessResult.PartialSuccess
+                )
+                    failed.Add($"{entry.Optimization.Name}: {result.Message}");
+            }
+
             await OptimizationService.UpdateOptimizationStateAsync(
                 entries.Select(e => e.Optimization)
             );
@@ -233,6 +245,21 @@ public partial class ProfilesViewModel(
             dialog.Hide();
             IsBusy = false;
         }
+
+        if (failed.Count > 0)
+            await contentDialogService.ShowSimpleDialogAsync(
+                new SimpleContentDialogCreateOptions
+                {
+                    Title = Loc.Instance["Drift.Reapply.Title"],
+                    Content = ScrollableText(
+                        Loc.Instance["Profiles.Report.Failures"]
+                            + Environment.NewLine
+                            + string.Join(Environment.NewLine, failed.Select(f => "• " + f))
+                    ),
+                    CloseButtonText = Loc.Instance["Button.Ok"],
+                },
+                CancellationToken.None
+            );
 
         await CheckDrift();
     }

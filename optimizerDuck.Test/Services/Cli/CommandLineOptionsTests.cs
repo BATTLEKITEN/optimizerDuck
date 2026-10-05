@@ -62,6 +62,15 @@ public class CommandLineOptionsTests
     }
 
     [Fact]
+    public void Parse_ReportWithoutPath_IsAUsageError()
+    {
+        var options = CommandLineOptions.Parse(["--check-drift", "--report"]);
+
+        Assert.Equal("Cli.Error.MissingValue", options.Error);
+        Assert.Equal("--report", options.ErrorArg);
+    }
+
+    [Fact]
     public void Parse_TwoCommands_IsAUsageError()
     {
         Assert.Equal(

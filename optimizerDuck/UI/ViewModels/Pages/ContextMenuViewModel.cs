@@ -100,10 +100,30 @@ public partial class ContextMenuViewModel(
     {
         try
         {
-            await shellService.QueryCMDAsync(
+            var result = await shellService.QueryCMDAsync(
                 "taskkill /f /im explorer.exe && start explorer.exe",
                 logger
             );
+            if (result.ExitCode != 0)
+            {
+                // The prompt stays: Explorer still runs with the old handler list.
+                logger.LogWarning(
+                    "Restarting File Explorer exited with {ExitCode}: {Error}",
+                    result.ExitCode,
+                    result.Stderr
+                );
+                snackbarService.Show(
+                    Loc.Instance["ContextMenu.Error.Title"],
+                    string.IsNullOrWhiteSpace(result.Stderr)
+                        ? Loc.Instance["Service.Shell.Error.ExitCode", result.ExitCode]
+                        : result.Stderr.Trim(),
+                    ControlAppearance.Danger,
+                    new SymbolIcon { Symbol = SymbolRegular.ErrorCircle24, Filled = true },
+                    TimeSpan.FromSeconds(5)
+                );
+                return;
+            }
+
             NeedsExplorerRestart = false;
         }
         catch (Exception ex)

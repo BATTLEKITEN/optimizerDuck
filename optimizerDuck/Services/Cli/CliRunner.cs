@@ -230,7 +230,8 @@ public class CliRunner(
         report.Drifted = (await driftService.CheckAsync())
             .Select(d => d.Optimization.Name)
             .ToList();
-        return report.Failed.Count == 0 ? ExitOk : ExitFailed;
+        // A value something put straight back still counts as undone.
+        return report.Failed.Count == 0 && report.Drifted.Count == 0 ? ExitOk : ExitFailed;
     }
 
     private static void WriteDrift(TextWriter output, IReadOnlyList<string> names)

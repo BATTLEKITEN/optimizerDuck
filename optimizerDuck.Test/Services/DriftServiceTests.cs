@@ -19,7 +19,7 @@ public class DriftServiceTests
     }
 
     [Fact]
-    public void PendingSteps_StepTheLastApplyCouldNotMake_IsNotDrift()
+    public void PendingSteps_RefusedAtLastApply_IsNotDriftButFailedIs()
     {
         var applied = new ChangeSet();
         applied.Add("Registry", "write A", true);
@@ -38,7 +38,7 @@ public class DriftServiceTests
 
         var pending = DriftService.PendingSteps(preview, record);
 
-        Assert.Equal("write A", Assert.Single(pending).Description);
+        Assert.Equal(["write A", "write B"], pending.Select(c => c.Description));
     }
 
     [Fact]
