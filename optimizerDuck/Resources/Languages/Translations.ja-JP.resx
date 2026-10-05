@@ -2511,4 +2511,154 @@
   <data name="Error.Unhandled.LogHint" xml:space="preserve">
     <value>詳細はログ ファイルに記録されています。</value>
   </data>
+  <data name="Sidebar.Profiles" xml:space="preserve">
+    <value>プロファイル</value>
+  </data>
+  <data name="Profiles.Header.Title" xml:space="preserve">
+    <value>プロファイル</value>
+  </data>
+  <data name="Profiles.Header.Description" xml:space="preserve">
+    <value>用意された最適化セットを適用したり、設定を別の PC に移したり、Windows が元に戻した設定を再適用したりできます。</value>
+  </data>
+  <data name="Profiles.Presets.Header" xml:space="preserve">
+    <value>プリセット</value>
+  </data>
+  <data name="Profiles.Preset.Recommended.Title" xml:space="preserve">
+    <value>おすすめ</value>
+  </data>
+  <data name="Profiles.Preset.Recommended.Description" xml:space="preserve">
+    <value>「安全」と表示されたすべての最適化です。ほとんどのデスクトップ PC に適しています。</value>
+  </data>
+  <data name="Profiles.Preset.Gaming.Title" xml:space="preserve">
+    <value>ゲーム</value>
+  </data>
+  <data name="Profiles.Preset.Gaming.Description" xml:space="preserve">
+    <value>パフォーマンスと遅延に関する最適化です（リスクの高いものは除く）。</value>
+  </data>
+  <data name="Profiles.Preset.Privacy.Title" xml:space="preserve">
+    <value>プライバシー</value>
+  </data>
+  <data name="Profiles.Preset.Privacy.Description" xml:space="preserve">
+    <value>テレメトリ、広告、おすすめ、AI 機能をオフにします（リスクの高い最適化は除く）。</value>
+  </data>
+  <data name="Profiles.Preset.Laptop.Title" xml:space="preserve">
+    <value>ノート PC</value>
+  </data>
+  <data name="Profiles.Preset.Laptop.Description" xml:space="preserve">
+    <value>バッテリー持ちに影響しない安全な最適化です。電源プラン、USB、GPU は変更しません。</value>
+  </data>
+  <data name="Profiles.Preset.Count" xml:space="preserve">
+    <value>最適化: {0} 件</value>
+  </data>
+  <data name="Profiles.Button.Preview" xml:space="preserve">
+    <value>プレビュー</value>
+  </data>
+  <data name="Profiles.Button.Apply" xml:space="preserve">
+    <value>適用</value>
+  </data>
+  <data name="Profiles.File.Header" xml:space="preserve">
+    <value>現在の設定</value>
+  </data>
+  <data name="Profiles.Export.Title" xml:space="preserve">
+    <value>ファイルにエクスポート</value>
+  </data>
+  <data name="Profiles.Export.Description" xml:space="preserve">
+    <value>この PC に適用済みの最適化とカスタマイズ設定を保存し、別の PC で適用できるようにします。</value>
+  </data>
+  <data name="Profiles.Export.Button" xml:space="preserve">
+    <value>エクスポート</value>
+  </data>
+  <data name="Profiles.Import.Title" xml:space="preserve">
+    <value>インポートして適用</value>
+  </data>
+  <data name="Profiles.Import.Description" xml:space="preserve">
+    <value>プロファイル ファイルを開いて内容を適用します。この PC が対応していない項目はスキップされます。</value>
+  </data>
+  <data name="Profiles.Import.Button" xml:space="preserve">
+    <value>インポート</value>
+  </data>
+  <data name="Profiles.FileFilter" xml:space="preserve">
+    <value>optimizerDuck プロファイル</value>
+  </data>
+  <data name="Profiles.Export.Success.Title" xml:space="preserve">
+    <value>プロファイルを保存しました</value>
+  </data>
+  <data name="Profiles.Export.Success.Message" xml:space="preserve">
+    <value>最適化: {0} 件、カスタマイズ設定: {1} 件。</value>
+  </data>
+  <data name="Profiles.Export.Failed.Title" xml:space="preserve">
+    <value>プロファイルを保存できませんでした</value>
+  </data>
+  <data name="Profiles.Import.Failed.Title" xml:space="preserve">
+    <value>プロファイルを開けませんでした</value>
+  </data>
+  <data name="Profiles.Import.Failed.Message" xml:space="preserve">
+    <value>このファイルは optimizerDuck のプロファイルではないか、新しいバージョンで作成されています。</value>
+  </data>
+  <data name="Profiles.Apply.Confirm.Title" xml:space="preserve">
+    <value>「{0}」を適用しますか？</value>
+  </data>
+  <data name="Profiles.Apply.Confirm.Message" xml:space="preserve">
+    <value>適用する最適化: {0} 件、カスタマイズ設定: {1} 件。
+
+適用済みの項目と、この PC が対応していない項目はスキップされます。各最適化はあとからカードで元に戻せます。</value>
+  </data>
+  <data name="Profiles.Apply.Title" xml:space="preserve">
+    <value>「{0}」を適用中</value>
+  </data>
+  <data name="Profiles.Apply.Progress" xml:space="preserve">
+    <value>適用中: {0}</value>
+  </data>
+  <data name="Profiles.Report.Title" xml:space="preserve">
+    <value>プロファイルを適用しました</value>
+  </data>
+  <data name="Profiles.Report.Summary" xml:space="preserve">
+    <value>適用: {0}
+適用済み: {1}
+この PC では非対応: {2}
+このバージョンでは不明: {3}
+失敗: {4}</value>
+  </data>
+  <data name="Profiles.Report.Failures" xml:space="preserve">
+    <value>失敗した項目:</value>
+  </data>
+  <data name="Profiles.Preview.Title" xml:space="preserve">
+    <value>「{0}」で適用される項目</value>
+  </data>
+  <data name="Profiles.Preview.Empty" xml:space="preserve">
+    <value>このバージョンでは、このプリセットに最適化は含まれていません。</value>
+  </data>
+  <data name="Drift.Header" xml:space="preserve">
+    <value>Windows によって元に戻された変更</value>
+  </data>
+  <data name="Drift.Description" xml:space="preserve">
+    <value>Windows Update やほかのプログラムが設定を元に戻すことがあります。このチェックは現在の状態を読み取るだけで、何も変更しません。</value>
+  </data>
+  <data name="Drift.Button.Check" xml:space="preserve">
+    <value>今すぐチェック</value>
+  </data>
+  <data name="Drift.Button.Reapply" xml:space="preserve">
+    <value>再適用</value>
+  </data>
+  <data name="Drift.Status.Checking" xml:space="preserve">
+    <value>適用済みの最適化をチェックしています...</value>
+  </data>
+  <data name="Drift.Status.None" xml:space="preserve">
+    <value>適用済みの最適化はすべて有効なままです。</value>
+  </data>
+  <data name="Drift.Status.Found" xml:space="preserve">
+    <value>適用後に元に戻された最適化: {0} 件</value>
+  </data>
+  <data name="Drift.Reapply.Title" xml:space="preserve">
+    <value>最適化を再適用しています</value>
+  </data>
+  <data name="Dashboard.Drift.Title" xml:space="preserve">
+    <value>一部の最適化が元に戻されました</value>
+  </data>
+  <data name="Dashboard.Drift.Message" xml:space="preserve">
+    <value>Windows または別のプログラムが、適用済みの最適化 {0} 件で変更した設定を元に戻しました。</value>
+  </data>
+  <data name="Dashboard.Drift.Button" xml:space="preserve">
+    <value>確認して再適用</value>
+  </data>
 </root>

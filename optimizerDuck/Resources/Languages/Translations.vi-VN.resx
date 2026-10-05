@@ -2511,4 +2511,154 @@ Cập nhật ngay để trải nghiệm các tính năng mới, cải tiến và
   <data name="Error.Unhandled.LogHint" xml:space="preserve">
     <value>Chi tiết có trong tệp log.</value>
   </data>
+  <data name="Sidebar.Profiles" xml:space="preserve">
+    <value>Hồ sơ</value>
+  </data>
+  <data name="Profiles.Header.Title" xml:space="preserve">
+    <value>Hồ sơ</value>
+  </data>
+  <data name="Profiles.Header.Description" xml:space="preserve">
+    <value>Áp dụng bộ tối ưu có sẵn, chuyển cấu hình sang PC khác hoặc khôi phục những gì Windows đã hoàn tác.</value>
+  </data>
+  <data name="Profiles.Presets.Header" xml:space="preserve">
+    <value>Cấu hình sẵn</value>
+  </data>
+  <data name="Profiles.Preset.Recommended.Title" xml:space="preserve">
+    <value>Khuyên dùng</value>
+  </data>
+  <data name="Profiles.Preset.Recommended.Description" xml:space="preserve">
+    <value>Tất cả tối ưu được đánh dấu an toàn. Khởi đầu tốt cho hầu hết PC để bàn.</value>
+  </data>
+  <data name="Profiles.Preset.Gaming.Title" xml:space="preserve">
+    <value>Chơi game</value>
+  </data>
+  <data name="Profiles.Preset.Gaming.Description" xml:space="preserve">
+    <value>Các tối ưu về hiệu năng và độ trễ, bỏ qua những mục rủi ro.</value>
+  </data>
+  <data name="Profiles.Preset.Privacy.Title" xml:space="preserve">
+    <value>Quyền riêng tư</value>
+  </data>
+  <data name="Profiles.Preset.Privacy.Description" xml:space="preserve">
+    <value>Tắt telemetry, quảng cáo, gợi ý và tính năng AI, bỏ qua các tối ưu rủi ro.</value>
+  </data>
+  <data name="Profiles.Preset.Laptop.Title" xml:space="preserve">
+    <value>Laptop</value>
+  </data>
+  <data name="Profiles.Preset.Laptop.Description" xml:space="preserve">
+    <value>Các tối ưu an toàn không làm hao pin: không thay đổi power plan, USB hay GPU.</value>
+  </data>
+  <data name="Profiles.Preset.Count" xml:space="preserve">
+    <value>Số tối ưu: {0}</value>
+  </data>
+  <data name="Profiles.Button.Preview" xml:space="preserve">
+    <value>Xem trước</value>
+  </data>
+  <data name="Profiles.Button.Apply" xml:space="preserve">
+    <value>Áp dụng</value>
+  </data>
+  <data name="Profiles.File.Header" xml:space="preserve">
+    <value>Cấu hình của bạn</value>
+  </data>
+  <data name="Profiles.Export.Title" xml:space="preserve">
+    <value>Xuất ra tệp</value>
+  </data>
+  <data name="Profiles.Export.Description" xml:space="preserve">
+    <value>Lưu các tối ưu đã áp dụng trên PC này cùng thiết lập tùy chỉnh để áp dụng ở máy khác.</value>
+  </data>
+  <data name="Profiles.Export.Button" xml:space="preserve">
+    <value>Xuất</value>
+  </data>
+  <data name="Profiles.Import.Title" xml:space="preserve">
+    <value>Nhập và áp dụng</value>
+  </data>
+  <data name="Profiles.Import.Description" xml:space="preserve">
+    <value>Mở tệp hồ sơ và áp dụng nội dung bên trong. Các mục PC này không hỗ trợ sẽ được bỏ qua.</value>
+  </data>
+  <data name="Profiles.Import.Button" xml:space="preserve">
+    <value>Nhập</value>
+  </data>
+  <data name="Profiles.FileFilter" xml:space="preserve">
+    <value>Hồ sơ optimizerDuck</value>
+  </data>
+  <data name="Profiles.Export.Success.Title" xml:space="preserve">
+    <value>Đã lưu hồ sơ</value>
+  </data>
+  <data name="Profiles.Export.Success.Message" xml:space="preserve">
+    <value>Tối ưu: {0}. Thiết lập tùy chỉnh: {1}.</value>
+  </data>
+  <data name="Profiles.Export.Failed.Title" xml:space="preserve">
+    <value>Không thể lưu hồ sơ</value>
+  </data>
+  <data name="Profiles.Import.Failed.Title" xml:space="preserve">
+    <value>Không thể mở hồ sơ</value>
+  </data>
+  <data name="Profiles.Import.Failed.Message" xml:space="preserve">
+    <value>Tệp này không phải hồ sơ optimizerDuck hoặc được tạo bởi phiên bản mới hơn.</value>
+  </data>
+  <data name="Profiles.Apply.Confirm.Title" xml:space="preserve">
+    <value>Áp dụng "{0}"?</value>
+  </data>
+  <data name="Profiles.Apply.Confirm.Message" xml:space="preserve">
+    <value>Số tối ưu sẽ áp dụng: {0}. Thiết lập tùy chỉnh: {1}.
+
+Các mục đã áp dụng và các mục PC này không hỗ trợ sẽ được bỏ qua. Mỗi tối ưu đều có thể hoàn tác sau từ thẻ của nó.</value>
+  </data>
+  <data name="Profiles.Apply.Title" xml:space="preserve">
+    <value>Đang áp dụng "{0}"</value>
+  </data>
+  <data name="Profiles.Apply.Progress" xml:space="preserve">
+    <value>Đang áp dụng: {0}</value>
+  </data>
+  <data name="Profiles.Report.Title" xml:space="preserve">
+    <value>Đã áp dụng hồ sơ</value>
+  </data>
+  <data name="Profiles.Report.Summary" xml:space="preserve">
+    <value>Đã áp dụng: {0}
+Đã có sẵn: {1}
+PC này không hỗ trợ: {2}
+Phiên bản này không nhận ra: {3}
+Thất bại: {4}</value>
+  </data>
+  <data name="Profiles.Report.Failures" xml:space="preserve">
+    <value>Các mục thất bại:</value>
+  </data>
+  <data name="Profiles.Preview.Title" xml:space="preserve">
+    <value>"{0}" sẽ áp dụng gì</value>
+  </data>
+  <data name="Profiles.Preview.Empty" xml:space="preserve">
+    <value>Cấu hình sẵn này không có tối ưu nào trong phiên bản hiện tại.</value>
+  </data>
+  <data name="Drift.Header" xml:space="preserve">
+    <value>Thay đổi bị Windows hoàn tác</value>
+  </data>
+  <data name="Drift.Description" xml:space="preserve">
+    <value>Bản cập nhật Windows và các chương trình khác đôi khi khôi phục lại thiết lập. Lần kiểm tra này chỉ đọc trạng thái hiện tại, không thay đổi gì.</value>
+  </data>
+  <data name="Drift.Button.Check" xml:space="preserve">
+    <value>Kiểm tra ngay</value>
+  </data>
+  <data name="Drift.Button.Reapply" xml:space="preserve">
+    <value>Áp dụng lại</value>
+  </data>
+  <data name="Drift.Status.Checking" xml:space="preserve">
+    <value>Đang kiểm tra các tối ưu đã áp dụng...</value>
+  </data>
+  <data name="Drift.Status.None" xml:space="preserve">
+    <value>Tất cả tối ưu đã áp dụng vẫn còn hiệu lực.</value>
+  </data>
+  <data name="Drift.Status.Found" xml:space="preserve">
+    <value>Số tối ưu bị hoàn tác sau khi áp dụng: {0}</value>
+  </data>
+  <data name="Drift.Reapply.Title" xml:space="preserve">
+    <value>Đang áp dụng lại các tối ưu</value>
+  </data>
+  <data name="Dashboard.Drift.Title" xml:space="preserve">
+    <value>Một số tối ưu đã bị hoàn tác</value>
+  </data>
+  <data name="Dashboard.Drift.Message" xml:space="preserve">
+    <value>Windows hoặc chương trình khác đã khôi phục các thiết lập do {0} tối ưu đã áp dụng thay đổi.</value>
+  </data>
+  <data name="Dashboard.Drift.Button" xml:space="preserve">
+    <value>Xem lại và áp dụng lại</value>
+  </data>
 </root>

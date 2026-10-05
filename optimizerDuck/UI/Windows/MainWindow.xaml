@@ -66,6 +66,12 @@
                     Icon="{ui:SymbolIcon Delete24}"
                     TargetPageType="{x:Type pages:BloatwarePage}" />
 
+                <controls:FilledNavigationViewItem
+                    Content="{extensions:Loc Sidebar.Profiles}"
+                    Cursor="Hand"
+                    Icon="{ui:SymbolIcon DocumentBulletList24}"
+                    TargetPageType="{x:Type pages:ProfilesPage}" />
+
                 <ui:NavigationViewItemSeparator Margin="0,2,0,2" />
 
                 <controls:FilledNavigationViewItem

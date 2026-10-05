@@ -54,6 +54,38 @@ public class OperationRunner(
         return result;
     }
 
+    /// <summary>
+    ///     Runs the work as a preview: every provider reads the current state and records what it
+    ///     would change, and nothing is written, recorded or persisted.
+    /// </summary>
+    /// <param name="request">The run to preview.</param>
+    /// <param name="cancellationToken">The token that cancels the preview.</param>
+    /// <returns>The steps the run would take.</returns>
+    public async Task<ChangeSet> PreviewAsync(
+        OperationRequest request,
+        CancellationToken cancellationToken = default
+    )
+    {
+        ArgumentNullException.ThrowIfNull(request);
+
+        var changes = new ChangeSet();
+        try
+        {
+            await request
+                .Work(
+                    SilentProgress.Instance,
+                    NewContext(changes, request.RunLogger, cancellationToken, dryRun: true)
+                )
+                .ConfigureAwait(false);
+        }
+        catch (Exception ex)
+        {
+            RecordRunFailure(changes, request, ex);
+        }
+
+        return changes;
+    }
+
     private async Task<OptimizationResult> RunCoreAsync(
         OperationRequest request,
         ChangeSet changes,
@@ -213,7 +245,8 @@ public class OperationRunner(
     private OptimizationContext NewContext(
         ChangeSet changes,
         ILogger runLogger,
-        CancellationToken cancellationToken
+        CancellationToken cancellationToken,
+        bool dryRun = false
     )
     {
         return new OptimizationContext
@@ -221,6 +254,7 @@ public class OperationRunner(
             Changes = changes,
             Logger = runLogger,
             CancellationToken = cancellationToken,
+            DryRun = dryRun,
             Snapshot = systemInfoService.Snapshot,
             StreamService = streamService,
             Shell = shellService,
@@ -284,5 +318,12 @@ public class OperationRunner(
             exception.Message,
             exception.ToString()
         );
+    }
+
+    private sealed class SilentProgress : IProgress<ProcessingProgress>
+    {
+        public static readonly SilentProgress Instance = new();
+
+        public void Report(ProcessingProgress value) { }
     }
 }

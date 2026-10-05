@@ -62,6 +62,9 @@ public abstract partial class BaseOptimization : LocalizedObject, IOptimization
 
     public OptimizationRisk Risk => Meta.Risk;
 
+    /// <summary>Gets the tags declared in <see cref="OptimizationAttribute.Tags" />.</summary>
+    public OptimizationTags Tags => Meta.Tags;
+
     /// <summary>Gets the unique key used for localization and identification.</summary>
     public string OptimizationKey => GetType().Name;
 

@@ -2527,4 +2527,154 @@
   <data name="Error.Unhandled.LogHint" xml:space="preserve">
     <value>详细信息已写入日志文件。</value>
   </data>
+  <data name="Sidebar.Profiles" xml:space="preserve">
+    <value>配置方案</value>
+  </data>
+  <data name="Profiles.Header.Title" xml:space="preserve">
+    <value>配置方案</value>
+  </data>
+  <data name="Profiles.Header.Description" xml:space="preserve">
+    <value>一键应用现成的优化组合，把配置迁移到另一台电脑，或恢复被 Windows 撤销的设置。</value>
+  </data>
+  <data name="Profiles.Presets.Header" xml:space="preserve">
+    <value>预设方案</value>
+  </data>
+  <data name="Profiles.Preset.Recommended.Title" xml:space="preserve">
+    <value>推荐</value>
+  </data>
+  <data name="Profiles.Preset.Recommended.Description" xml:space="preserve">
+    <value>所有标记为“安全”的优化项，适合大多数台式电脑作为起点。</value>
+  </data>
+  <data name="Profiles.Preset.Gaming.Title" xml:space="preserve">
+    <value>游戏</value>
+  </data>
+  <data name="Profiles.Preset.Gaming.Description" xml:space="preserve">
+    <value>性能和延迟相关的优化，不含高风险项。</value>
+  </data>
+  <data name="Profiles.Preset.Privacy.Title" xml:space="preserve">
+    <value>隐私</value>
+  </data>
+  <data name="Profiles.Preset.Privacy.Description" xml:space="preserve">
+    <value>关闭遥测、广告、推荐和 AI 功能，不含高风险优化。</value>
+  </data>
+  <data name="Profiles.Preset.Laptop.Title" xml:space="preserve">
+    <value>笔记本电脑</value>
+  </data>
+  <data name="Profiles.Preset.Laptop.Description" xml:space="preserve">
+    <value>不影响续航的安全优化：不更改电源计划、USB 或 GPU 设置。</value>
+  </data>
+  <data name="Profiles.Preset.Count" xml:space="preserve">
+    <value>优化项：{0}</value>
+  </data>
+  <data name="Profiles.Button.Preview" xml:space="preserve">
+    <value>预览</value>
+  </data>
+  <data name="Profiles.Button.Apply" xml:space="preserve">
+    <value>应用</value>
+  </data>
+  <data name="Profiles.File.Header" xml:space="preserve">
+    <value>你的配置</value>
+  </data>
+  <data name="Profiles.Export.Title" xml:space="preserve">
+    <value>导出到文件</value>
+  </data>
+  <data name="Profiles.Export.Description" xml:space="preserve">
+    <value>保存本机已应用的优化和自定义设置，方便在其他电脑上应用。</value>
+  </data>
+  <data name="Profiles.Export.Button" xml:space="preserve">
+    <value>导出</value>
+  </data>
+  <data name="Profiles.Import.Title" xml:space="preserve">
+    <value>导入并应用</value>
+  </data>
+  <data name="Profiles.Import.Description" xml:space="preserve">
+    <value>打开配置方案文件并应用其中的内容，本机不支持的项目会被跳过。</value>
+  </data>
+  <data name="Profiles.Import.Button" xml:space="preserve">
+    <value>导入</value>
+  </data>
+  <data name="Profiles.FileFilter" xml:space="preserve">
+    <value>optimizerDuck 配置方案</value>
+  </data>
+  <data name="Profiles.Export.Success.Title" xml:space="preserve">
+    <value>配置方案已保存</value>
+  </data>
+  <data name="Profiles.Export.Success.Message" xml:space="preserve">
+    <value>优化项：{0}。自定义设置：{1}。</value>
+  </data>
+  <data name="Profiles.Export.Failed.Title" xml:space="preserve">
+    <value>无法保存配置方案</value>
+  </data>
+  <data name="Profiles.Import.Failed.Title" xml:space="preserve">
+    <value>无法打开配置方案</value>
+  </data>
+  <data name="Profiles.Import.Failed.Message" xml:space="preserve">
+    <value>该文件不是 optimizerDuck 配置方案，或由更新的版本创建。</value>
+  </data>
+  <data name="Profiles.Apply.Confirm.Title" xml:space="preserve">
+    <value>应用“{0}”？</value>
+  </data>
+  <data name="Profiles.Apply.Confirm.Message" xml:space="preserve">
+    <value>将应用的优化项：{0}。自定义设置：{1}。
+
+已生效的项目和本机不支持的项目会被跳过。每项优化之后都可以在其卡片上还原。</value>
+  </data>
+  <data name="Profiles.Apply.Title" xml:space="preserve">
+    <value>正在应用“{0}”</value>
+  </data>
+  <data name="Profiles.Apply.Progress" xml:space="preserve">
+    <value>正在应用：{0}</value>
+  </data>
+  <data name="Profiles.Report.Title" xml:space="preserve">
+    <value>配置方案已应用</value>
+  </data>
+  <data name="Profiles.Report.Summary" xml:space="preserve">
+    <value>已应用：{0}
+已生效：{1}
+本机不支持：{2}
+当前版本无法识别：{3}
+失败：{4}</value>
+  </data>
+  <data name="Profiles.Report.Failures" xml:space="preserve">
+    <value>失败的项目：</value>
+  </data>
+  <data name="Profiles.Preview.Title" xml:space="preserve">
+    <value>“{0}”将应用的内容</value>
+  </data>
+  <data name="Profiles.Preview.Empty" xml:space="preserve">
+    <value>此预设方案在当前版本中不包含任何优化项。</value>
+  </data>
+  <data name="Drift.Header" xml:space="preserve">
+    <value>被 Windows 撤销的更改</value>
+  </data>
+  <data name="Drift.Description" xml:space="preserve">
+    <value>Windows 更新和其他程序有时会恢复设置。此检查只读取当前状态，不会做任何更改。</value>
+  </data>
+  <data name="Drift.Button.Check" xml:space="preserve">
+    <value>立即检查</value>
+  </data>
+  <data name="Drift.Button.Reapply" xml:space="preserve">
+    <value>重新应用</value>
+  </data>
+  <data name="Drift.Status.Checking" xml:space="preserve">
+    <value>正在检查已应用的优化...</value>
+  </data>
+  <data name="Drift.Status.None" xml:space="preserve">
+    <value>所有已应用的优化仍然有效。</value>
+  </data>
+  <data name="Drift.Status.Found" xml:space="preserve">
+    <value>应用后被撤销的优化项：{0}</value>
+  </data>
+  <data name="Drift.Reapply.Title" xml:space="preserve">
+    <value>正在重新应用优化</value>
+  </data>
+  <data name="Dashboard.Drift.Title" xml:space="preserve">
+    <value>部分优化已被撤销</value>
+  </data>
+  <data name="Dashboard.Drift.Message" xml:space="preserve">
+    <value>Windows 或其他程序恢复了 {0} 项已应用优化所更改的设置。</value>
+  </data>
+  <data name="Dashboard.Drift.Button" xml:space="preserve">
+    <value>查看并重新应用</value>
+  </data>
 </root>

@@ -381,6 +381,9 @@ public static class RegistryService
             return OpResult.Fail(nullError, nullError);
         }
 
+        if (call.DryRun)
+            return PlanWrite(call, item, name, description);
+
         var createdSubKeys = new List<string>();
 
         var result = WithKey<OpResult>(
@@ -541,6 +544,58 @@ public static class RegistryService
         return result;
     }
 
+    /// <summary>
+    ///     The preview of <see cref="Write(OpCall, RegistryItem)" />: reads the value without
+    ///     creating any key on the way and records a skip or the planned write.
+    /// </summary>
+    private static OpResult PlanWrite(
+        OpCall call,
+        RegistryItem item,
+        string name,
+        string description
+    )
+    {
+        var valueName = NormalizeValueName(item.Name);
+        object? current = null;
+        var exists = false;
+        var kind = RegistryValueKind.Unknown;
+        WithKey<bool>(
+            item,
+            regKey =>
+            {
+                current = regKey.GetValue(
+                    valueName,
+                    null,
+                    RegistryValueOptions.DoNotExpandEnvironmentNames
+                );
+                exists =
+                    current != null
+                    || regKey.GetValueNames().Contains(valueName, StringComparer.OrdinalIgnoreCase);
+                kind = exists ? regKey.GetValueKind(valueName) : RegistryValueKind.Unknown;
+                return true;
+            },
+            call.Logger,
+            out _,
+            out _,
+            out _
+        );
+
+        var facts = new RegistryValueWriteDetail
+        {
+            Target = item.Path,
+            ValueName = item.Name,
+            ValueType = item.Kind.ToString(),
+            PreviousValue = DescribeValue(current),
+            NewValue = DescribeValue(item.Value),
+        };
+
+        if (exists && kind == item.Kind && ValuesEqual(current, item.Value, item.Kind))
+            call.Changes.AddSkip(name, description, facts);
+        else
+            call.Changes.AddPlanned(name, description, facts);
+        return OpResult.Success();
+    }
+
     /// <summary>Deletes a registry value, backing up the current value for revert.</summary>
     /// <param name="call">The call context carrying the change collector and logger.</param>
     /// <param name="item">The registry path and value name to delete.</param>
@@ -594,6 +649,22 @@ public static class RegistryService
                     }
 
                     var backupKind = regKey.GetValueKind(valueName);
+                    if (call.DryRun)
+                    {
+                        call.Changes.AddPlanned(
+                            name,
+                            description,
+                            new RegistryValueRemoveDetail
+                            {
+                                Target = item.Path,
+                                ValueName = item.Name,
+                                ValueType = backupKind.ToString(),
+                                PreviousValue = DescribeValue(backupValue),
+                            }
+                        );
+                        return OpResult.Success();
+                    }
+
                     regKey.DeleteValue(valueName, false);
 
                     var revertStep = new RegistryRevertStep
@@ -726,6 +797,16 @@ public static class RegistryService
                 return OpResult.Success();
             }
 
+            if (call.DryRun)
+            {
+                call.Changes.AddPlanned(
+                    name,
+                    description,
+                    new RegistryKeyCreateDetail { Target = item.Path }
+                );
+                return OpResult.Success();
+            }
+
             using var newKey = CreateSubKeyTrack(rootKey, subPath, createdSubKeys, logger);
 
             var revertStep = new RegistryRevertStep
@@ -838,6 +919,16 @@ public static class RegistryService
                     (OpCall rc) => Task.FromResult(DeleteSubKeyTree(rc, item))
                 );
                 return OpResult.Fail(error, error);
+            }
+
+            if (call.DryRun)
+            {
+                call.Changes.AddPlanned(
+                    name,
+                    description,
+                    new RegistryKeyRemoveDetail { Target = item.Path }
+                );
+                return OpResult.Success();
             }
 
             rootKey.DeleteSubKeyTree(subPath, false);

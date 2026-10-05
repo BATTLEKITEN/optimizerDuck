@@ -138,6 +138,21 @@ public static class ServiceProcessService
                 return MapToOpResult(ServiceChangeResult.AlreadyConfigured, null, null, null);
             }
 
+            if (call.DryRun)
+            {
+                call.Changes.AddPlanned(
+                    ServiceStrings.ServiceName,
+                    description,
+                    new ServiceStartupDetail
+                    {
+                        ServiceName = item.Name,
+                        PreviousStartupType = originalStartupType,
+                        NewStartupType = item.StartupType,
+                    }
+                );
+                return OpResult.Success();
+            }
+
             var write = SetStartupType(item.Name, item.StartupType);
             var nativeError = write.Error;
 

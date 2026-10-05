@@ -2519,4 +2519,154 @@ Atualize agora para desfrutar das últimas funcionalidades, melhorias e correç�
   <data name="Error.Unhandled.LogHint" xml:space="preserve">
     <value>Os detalhes estão no arquivo de log.</value>
   </data>
+  <data name="Sidebar.Profiles" xml:space="preserve">
+    <value>Perfis</value>
+  </data>
+  <data name="Profiles.Header.Title" xml:space="preserve">
+    <value>Perfis</value>
+  </data>
+  <data name="Profiles.Header.Description" xml:space="preserve">
+    <value>Aplique um conjunto pronto de otimizações, leve sua configuração para outro PC ou restaure o que o Windows desfez.</value>
+  </data>
+  <data name="Profiles.Presets.Header" xml:space="preserve">
+    <value>Predefinições</value>
+  </data>
+  <data name="Profiles.Preset.Recommended.Title" xml:space="preserve">
+    <value>Recomendado</value>
+  </data>
+  <data name="Profiles.Preset.Recommended.Description" xml:space="preserve">
+    <value>Todas as otimizações marcadas como seguras. Um bom começo para a maioria dos PCs de mesa.</value>
+  </data>
+  <data name="Profiles.Preset.Gaming.Title" xml:space="preserve">
+    <value>Jogos</value>
+  </data>
+  <data name="Profiles.Preset.Gaming.Description" xml:space="preserve">
+    <value>Otimizações de desempenho e latência, sem as arriscadas.</value>
+  </data>
+  <data name="Profiles.Preset.Privacy.Title" xml:space="preserve">
+    <value>Privacidade</value>
+  </data>
+  <data name="Profiles.Preset.Privacy.Description" xml:space="preserve">
+    <value>Desativa telemetria, anúncios, sugestões e recursos de IA, sem as otimizações arriscadas.</value>
+  </data>
+  <data name="Profiles.Preset.Laptop.Title" xml:space="preserve">
+    <value>Notebook</value>
+  </data>
+  <data name="Profiles.Preset.Laptop.Description" xml:space="preserve">
+    <value>Otimizações seguras que não gastam bateria: sem mudanças no plano de energia, USB ou GPU.</value>
+  </data>
+  <data name="Profiles.Preset.Count" xml:space="preserve">
+    <value>Otimizações: {0}</value>
+  </data>
+  <data name="Profiles.Button.Preview" xml:space="preserve">
+    <value>Visualizar</value>
+  </data>
+  <data name="Profiles.Button.Apply" xml:space="preserve">
+    <value>Aplicar</value>
+  </data>
+  <data name="Profiles.File.Header" xml:space="preserve">
+    <value>Sua configuração</value>
+  </data>
+  <data name="Profiles.Export.Title" xml:space="preserve">
+    <value>Exportar para um arquivo</value>
+  </data>
+  <data name="Profiles.Export.Description" xml:space="preserve">
+    <value>Salva as otimizações aplicadas neste PC e suas personalizações para aplicá-las em outro lugar.</value>
+  </data>
+  <data name="Profiles.Export.Button" xml:space="preserve">
+    <value>Exportar</value>
+  </data>
+  <data name="Profiles.Import.Title" xml:space="preserve">
+    <value>Importar e aplicar</value>
+  </data>
+  <data name="Profiles.Import.Description" xml:space="preserve">
+    <value>Abre um arquivo de perfil e aplica o conteúdo. Itens que este PC não suporta são ignorados.</value>
+  </data>
+  <data name="Profiles.Import.Button" xml:space="preserve">
+    <value>Importar</value>
+  </data>
+  <data name="Profiles.FileFilter" xml:space="preserve">
+    <value>Perfil do optimizerDuck</value>
+  </data>
+  <data name="Profiles.Export.Success.Title" xml:space="preserve">
+    <value>Perfil salvo</value>
+  </data>
+  <data name="Profiles.Export.Success.Message" xml:space="preserve">
+    <value>Otimizações: {0}. Personalizações: {1}.</value>
+  </data>
+  <data name="Profiles.Export.Failed.Title" xml:space="preserve">
+    <value>Não foi possível salvar o perfil</value>
+  </data>
+  <data name="Profiles.Import.Failed.Title" xml:space="preserve">
+    <value>Não foi possível abrir o perfil</value>
+  </data>
+  <data name="Profiles.Import.Failed.Message" xml:space="preserve">
+    <value>O arquivo não é um perfil do optimizerDuck ou foi criado por uma versão mais recente.</value>
+  </data>
+  <data name="Profiles.Apply.Confirm.Title" xml:space="preserve">
+    <value>Aplicar "{0}"?</value>
+  </data>
+  <data name="Profiles.Apply.Confirm.Message" xml:space="preserve">
+    <value>Otimizações a aplicar: {0}. Personalizações: {1}.
+
+Itens já aplicados e itens que este PC não suporta são ignorados. Cada otimização pode ser revertida depois pelo seu cartão.</value>
+  </data>
+  <data name="Profiles.Apply.Title" xml:space="preserve">
+    <value>Aplicando "{0}"</value>
+  </data>
+  <data name="Profiles.Apply.Progress" xml:space="preserve">
+    <value>Aplicando: {0}</value>
+  </data>
+  <data name="Profiles.Report.Title" xml:space="preserve">
+    <value>Perfil aplicado</value>
+  </data>
+  <data name="Profiles.Report.Summary" xml:space="preserve">
+    <value>Aplicados: {0}
+Já aplicados: {1}
+Não suportados neste PC: {2}
+Não reconhecidos por esta versão: {3}
+Com falha: {4}</value>
+  </data>
+  <data name="Profiles.Report.Failures" xml:space="preserve">
+    <value>O que falhou:</value>
+  </data>
+  <data name="Profiles.Preview.Title" xml:space="preserve">
+    <value>O que "{0}" aplica</value>
+  </data>
+  <data name="Profiles.Preview.Empty" xml:space="preserve">
+    <value>Esta predefinição não contém otimizações nesta versão.</value>
+  </data>
+  <data name="Drift.Header" xml:space="preserve">
+    <value>Alterações desfeitas pelo Windows</value>
+  </data>
+  <data name="Drift.Description" xml:space="preserve">
+    <value>Atualizações do Windows e outros programas às vezes restauram configurações. Esta verificação apenas lê o estado atual e não altera nada.</value>
+  </data>
+  <data name="Drift.Button.Check" xml:space="preserve">
+    <value>Verificar agora</value>
+  </data>
+  <data name="Drift.Button.Reapply" xml:space="preserve">
+    <value>Reaplicar</value>
+  </data>
+  <data name="Drift.Status.Checking" xml:space="preserve">
+    <value>Verificando as otimizações aplicadas...</value>
+  </data>
+  <data name="Drift.Status.None" xml:space="preserve">
+    <value>Todas as otimizações aplicadas continuam ativas.</value>
+  </data>
+  <data name="Drift.Status.Found" xml:space="preserve">
+    <value>Otimizações desfeitas desde que foram aplicadas: {0}</value>
+  </data>
+  <data name="Drift.Reapply.Title" xml:space="preserve">
+    <value>Reaplicando otimizações</value>
+  </data>
+  <data name="Dashboard.Drift.Title" xml:space="preserve">
+    <value>Algumas otimizações foram desfeitas</value>
+  </data>
+  <data name="Dashboard.Drift.Message" xml:space="preserve">
+    <value>O Windows ou outro programa restaurou configurações alteradas por otimizações aplicadas (quantidade: {0}).</value>
+  </data>
+  <data name="Dashboard.Drift.Button" xml:space="preserve">
+    <value>Revisar e reaplicar</value>
+  </data>
 </root>

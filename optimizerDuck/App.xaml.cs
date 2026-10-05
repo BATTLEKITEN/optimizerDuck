@@ -416,6 +416,20 @@ public partial class App : Application
         await customizeRegistry.PreloadCategoriesAsync().ConfigureAwait(false);
 
         RevertManager.RemoveOrphanedTempFiles(_logger);
+
+        // Feature updates put tweaks back; the check only reads, so it runs in the background.
+        var drift = _host.Services.GetRequiredService<DriftService>();
+        _ = Task.Run(async () =>
+        {
+            try
+            {
+                await drift.CheckAsync().ConfigureAwait(false);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogWarning(ex, "Startup drift check failed");
+            }
+        });
     }
 
     protected override async void OnExit(ExitEventArgs e)

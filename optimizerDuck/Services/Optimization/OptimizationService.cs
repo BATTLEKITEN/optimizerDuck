@@ -207,6 +207,36 @@ public class OptimizationService(
     }
 
     /// <summary>
+    ///     Previews the specified optimization: the steps it would take on this machine right
+    ///     now, without changing anything.
+    /// </summary>
+    /// <param name="optimization">The optimization to preview.</param>
+    /// <param name="cancellationToken">A token to cancel the preview.</param>
+    /// <returns>The steps the apply would record.</returns>
+    public Task<ChangeSet> PreviewAsync(
+        IOptimization optimization,
+        CancellationToken cancellationToken = default
+    )
+    {
+        ArgumentNullException.ThrowIfNull(optimization);
+
+        return runner.PreviewAsync(
+            new OperationRequest(
+                new OperationSubject(
+                    optimization.Id,
+                    optimization.OptimizationKey,
+                    optimization.LogName()
+                ),
+                optimization.Name,
+                loggerFactory.CreateLogger(optimization.GetType()),
+                RevertPersistence.Disabled,
+                optimization.ApplyAsync
+            ),
+            cancellationToken
+        );
+    }
+
+    /// <summary>
     ///     Reverts the specified optimization using stored revert data from a previous apply
     ///     operation.
     /// </summary>

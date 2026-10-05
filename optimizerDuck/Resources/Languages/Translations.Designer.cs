@@ -7363,5 +7363,437 @@ namespace optimizerDuck.Resources.Languages {
                 return ResourceManager.GetString("TitleBar.Support", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Profiles.
+        /// </summary>
+        internal static string Sidebar_Profiles {
+            get {
+                return ResourceManager.GetString("Sidebar.Profiles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Profiles.
+        /// </summary>
+        internal static string Profiles_Header_Title {
+            get {
+                return ResourceManager.GetString("Profiles.Header.Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Apply a ready-made set of optimizations, move your setup to another PC, or put back what Windows und....
+        /// </summary>
+        internal static string Profiles_Header_Description {
+            get {
+                return ResourceManager.GetString("Profiles.Header.Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Presets.
+        /// </summary>
+        internal static string Profiles_Presets_Header {
+            get {
+                return ResourceManager.GetString("Profiles.Presets.Header", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Recommended.
+        /// </summary>
+        internal static string Profiles_Preset_Recommended_Title {
+            get {
+                return ResourceManager.GetString("Profiles.Preset.Recommended.Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Every optimization marked safe. A good start for most desktop PCs..
+        /// </summary>
+        internal static string Profiles_Preset_Recommended_Description {
+            get {
+                return ResourceManager.GetString("Profiles.Preset.Recommended.Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Gaming.
+        /// </summary>
+        internal static string Profiles_Preset_Gaming_Title {
+            get {
+                return ResourceManager.GetString("Profiles.Preset.Gaming.Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Performance and latency optimizations, without the risky ones..
+        /// </summary>
+        internal static string Profiles_Preset_Gaming_Description {
+            get {
+                return ResourceManager.GetString("Profiles.Preset.Gaming.Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Privacy.
+        /// </summary>
+        internal static string Profiles_Preset_Privacy_Title {
+            get {
+                return ResourceManager.GetString("Profiles.Preset.Privacy.Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Telemetry, ads, suggestions and AI features turned off, without the risky optimizations..
+        /// </summary>
+        internal static string Profiles_Preset_Privacy_Description {
+            get {
+                return ResourceManager.GetString("Profiles.Preset.Privacy.Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Laptop.
+        /// </summary>
+        internal static string Profiles_Preset_Laptop_Title {
+            get {
+                return ResourceManager.GetString("Profiles.Preset.Laptop.Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Safe optimizations that do not cost battery life: no power plan, USB or GPU changes..
+        /// </summary>
+        internal static string Profiles_Preset_Laptop_Description {
+            get {
+                return ResourceManager.GetString("Profiles.Preset.Laptop.Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Optimizations: {0}.
+        /// </summary>
+        internal static string Profiles_Preset_Count {
+            get {
+                return ResourceManager.GetString("Profiles.Preset.Count", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Preview.
+        /// </summary>
+        internal static string Profiles_Button_Preview {
+            get {
+                return ResourceManager.GetString("Profiles.Button.Preview", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Apply.
+        /// </summary>
+        internal static string Profiles_Button_Apply {
+            get {
+                return ResourceManager.GetString("Profiles.Button.Apply", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Your setup.
+        /// </summary>
+        internal static string Profiles_File_Header {
+            get {
+                return ResourceManager.GetString("Profiles.File.Header", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Export to a file.
+        /// </summary>
+        internal static string Profiles_Export_Title {
+            get {
+                return ResourceManager.GetString("Profiles.Export.Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Saves the optimizations applied on this PC and your customize settings, so you can apply them elsewh....
+        /// </summary>
+        internal static string Profiles_Export_Description {
+            get {
+                return ResourceManager.GetString("Profiles.Export.Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Export.
+        /// </summary>
+        internal static string Profiles_Export_Button {
+            get {
+                return ResourceManager.GetString("Profiles.Export.Button", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Import and apply.
+        /// </summary>
+        internal static string Profiles_Import_Title {
+            get {
+                return ResourceManager.GetString("Profiles.Import.Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Opens a profile file and applies what it contains. Items this PC does not support are skipped..
+        /// </summary>
+        internal static string Profiles_Import_Description {
+            get {
+                return ResourceManager.GetString("Profiles.Import.Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Import.
+        /// </summary>
+        internal static string Profiles_Import_Button {
+            get {
+                return ResourceManager.GetString("Profiles.Import.Button", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to optimizerDuck profile.
+        /// </summary>
+        internal static string Profiles_FileFilter {
+            get {
+                return ResourceManager.GetString("Profiles.FileFilter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Profile saved.
+        /// </summary>
+        internal static string Profiles_Export_Success_Title {
+            get {
+                return ResourceManager.GetString("Profiles.Export.Success.Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Optimizations: {0}. Customize settings: {1}..
+        /// </summary>
+        internal static string Profiles_Export_Success_Message {
+            get {
+                return ResourceManager.GetString("Profiles.Export.Success.Message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Could not save the profile.
+        /// </summary>
+        internal static string Profiles_Export_Failed_Title {
+            get {
+                return ResourceManager.GetString("Profiles.Export.Failed.Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Could not open the profile.
+        /// </summary>
+        internal static string Profiles_Import_Failed_Title {
+            get {
+                return ResourceManager.GetString("Profiles.Import.Failed.Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The file is not an optimizerDuck profile, or it was made by a newer version..
+        /// </summary>
+        internal static string Profiles_Import_Failed_Message {
+            get {
+                return ResourceManager.GetString("Profiles.Import.Failed.Message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Apply "{0}"?.
+        /// </summary>
+        internal static string Profiles_Apply_Confirm_Title {
+            get {
+                return ResourceManager.GetString("Profiles.Apply.Confirm.Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Optimizations to apply: {0}. Customize settings: {1}.  Items already in place and items this PC does....
+        /// </summary>
+        internal static string Profiles_Apply_Confirm_Message {
+            get {
+                return ResourceManager.GetString("Profiles.Apply.Confirm.Message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Applying "{0}".
+        /// </summary>
+        internal static string Profiles_Apply_Title {
+            get {
+                return ResourceManager.GetString("Profiles.Apply.Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Applying: {0}.
+        /// </summary>
+        internal static string Profiles_Apply_Progress {
+            get {
+                return ResourceManager.GetString("Profiles.Apply.Progress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Profile applied.
+        /// </summary>
+        internal static string Profiles_Report_Title {
+            get {
+                return ResourceManager.GetString("Profiles.Report.Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Applied: {0} Already in place: {1} Not supported on this PC: {2} Not recognized by this version: {3}....
+        /// </summary>
+        internal static string Profiles_Report_Summary {
+            get {
+                return ResourceManager.GetString("Profiles.Report.Summary", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to What failed:.
+        /// </summary>
+        internal static string Profiles_Report_Failures {
+            get {
+                return ResourceManager.GetString("Profiles.Report.Failures", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to What "{0}" applies.
+        /// </summary>
+        internal static string Profiles_Preview_Title {
+            get {
+                return ResourceManager.GetString("Profiles.Preview.Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This preset contains no optimizations in this version..
+        /// </summary>
+        internal static string Profiles_Preview_Empty {
+            get {
+                return ResourceManager.GetString("Profiles.Preview.Empty", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Changes undone by Windows.
+        /// </summary>
+        internal static string Drift_Header {
+            get {
+                return ResourceManager.GetString("Drift.Header", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Windows updates and other programs sometimes put settings back. This check only reads the current st....
+        /// </summary>
+        internal static string Drift_Description {
+            get {
+                return ResourceManager.GetString("Drift.Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Check now.
+        /// </summary>
+        internal static string Drift_Button_Check {
+            get {
+                return ResourceManager.GetString("Drift.Button.Check", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reapply.
+        /// </summary>
+        internal static string Drift_Button_Reapply {
+            get {
+                return ResourceManager.GetString("Drift.Button.Reapply", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Checking applied optimizations....
+        /// </summary>
+        internal static string Drift_Status_Checking {
+            get {
+                return ResourceManager.GetString("Drift.Status.Checking", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to All applied optimizations are still in place..
+        /// </summary>
+        internal static string Drift_Status_None {
+            get {
+                return ResourceManager.GetString("Drift.Status.None", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Optimizations undone since they were applied: {0}.
+        /// </summary>
+        internal static string Drift_Status_Found {
+            get {
+                return ResourceManager.GetString("Drift.Status.Found", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reapplying optimizations.
+        /// </summary>
+        internal static string Drift_Reapply_Title {
+            get {
+                return ResourceManager.GetString("Drift.Reapply.Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Some optimizations were undone.
+        /// </summary>
+        internal static string Dashboard_Drift_Title {
+            get {
+                return ResourceManager.GetString("Dashboard.Drift.Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Windows or another program put back settings changed by {0} applied optimization(s)..
+        /// </summary>
+        internal static string Dashboard_Drift_Message {
+            get {
+                return ResourceManager.GetString("Dashboard.Drift.Message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Review and reapply.
+        /// </summary>
+        internal static string Dashboard_Drift_Button {
+            get {
+                return ResourceManager.GetString("Dashboard.Drift.Button", resourceCulture);
+            }
+        }
     }
 }

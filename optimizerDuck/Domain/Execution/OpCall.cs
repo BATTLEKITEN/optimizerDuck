@@ -15,4 +15,11 @@ public class OpCall
 
     /// <summary>Gets the token that cancels the operation.</summary>
     public CancellationToken CancellationToken { get; init; }
+
+    /// <summary>
+    ///     Gets a value that indicates whether this is a preview: every provider reads the
+    ///     current state and records what it would do, through <see cref="ChangeSet.AddPlanned"/>,
+    ///     without changing anything.
+    /// </summary>
+    public bool DryRun { get; init; }
 }

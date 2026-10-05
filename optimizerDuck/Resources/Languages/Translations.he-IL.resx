@@ -2576,4 +2576,154 @@
   <data name="Error.Unhandled.LogHint" xml:space="preserve">
     <value>הפרטים נמצאים בקובץ היומן.</value>
   </data>
+  <data name="Sidebar.Profiles" xml:space="preserve">
+    <value>פרופילים</value>
+  </data>
+  <data name="Profiles.Header.Title" xml:space="preserve">
+    <value>פרופילים</value>
+  </data>
+  <data name="Profiles.Header.Description" xml:space="preserve">
+    <value>החל ערכת מיטובים מוכנה, העבר את ההגדרות שלך למחשב אחר או החזר את מה ש-Windows ביטל.</value>
+  </data>
+  <data name="Profiles.Presets.Header" xml:space="preserve">
+    <value>הגדרות מוכנות</value>
+  </data>
+  <data name="Profiles.Preset.Recommended.Title" xml:space="preserve">
+    <value>מומלץ</value>
+  </data>
+  <data name="Profiles.Preset.Recommended.Description" xml:space="preserve">
+    <value>כל המיטובים שמסומנים כבטוחים. נקודת התחלה טובה לרוב המחשבים השולחניים.</value>
+  </data>
+  <data name="Profiles.Preset.Gaming.Title" xml:space="preserve">
+    <value>גיימינג</value>
+  </data>
+  <data name="Profiles.Preset.Gaming.Description" xml:space="preserve">
+    <value>מיטובי ביצועים והשהיה, בלי המסוכנים שבהם.</value>
+  </data>
+  <data name="Profiles.Preset.Privacy.Title" xml:space="preserve">
+    <value>פרטיות</value>
+  </data>
+  <data name="Profiles.Preset.Privacy.Description" xml:space="preserve">
+    <value>כיבוי טלמטריה, פרסומות, הצעות ותכונות AI, בלי המיטובים המסוכנים.</value>
+  </data>
+  <data name="Profiles.Preset.Laptop.Title" xml:space="preserve">
+    <value>מחשב נייד</value>
+  </data>
+  <data name="Profiles.Preset.Laptop.Description" xml:space="preserve">
+    <value>מיטובים בטוחים שלא פוגעים בסוללה: בלי שינויים בתוכנית צריכת החשמל, ב-USB או ב-GPU.</value>
+  </data>
+  <data name="Profiles.Preset.Count" xml:space="preserve">
+    <value>מיטובים: {0}</value>
+  </data>
+  <data name="Profiles.Button.Preview" xml:space="preserve">
+    <value>תצוגה מקדימה</value>
+  </data>
+  <data name="Profiles.Button.Apply" xml:space="preserve">
+    <value>החל</value>
+  </data>
+  <data name="Profiles.File.Header" xml:space="preserve">
+    <value>ההגדרות שלך</value>
+  </data>
+  <data name="Profiles.Export.Title" xml:space="preserve">
+    <value>ייצוא לקובץ</value>
+  </data>
+  <data name="Profiles.Export.Description" xml:space="preserve">
+    <value>שומר את המיטובים שהוחלו במחשב זה ואת הגדרות ההתאמה האישית, כדי להחיל אותם במחשב אחר.</value>
+  </data>
+  <data name="Profiles.Export.Button" xml:space="preserve">
+    <value>ייצוא</value>
+  </data>
+  <data name="Profiles.Import.Title" xml:space="preserve">
+    <value>ייבוא והחלה</value>
+  </data>
+  <data name="Profiles.Import.Description" xml:space="preserve">
+    <value>פותח קובץ פרופיל ומחיל את תוכנו. פריטים שהמחשב לא תומך בהם ידולגו.</value>
+  </data>
+  <data name="Profiles.Import.Button" xml:space="preserve">
+    <value>ייבוא</value>
+  </data>
+  <data name="Profiles.FileFilter" xml:space="preserve">
+    <value>פרופיל optimizerDuck</value>
+  </data>
+  <data name="Profiles.Export.Success.Title" xml:space="preserve">
+    <value>הפרופיל נשמר</value>
+  </data>
+  <data name="Profiles.Export.Success.Message" xml:space="preserve">
+    <value>מיטובים: {0}. הגדרות התאמה אישית: {1}.</value>
+  </data>
+  <data name="Profiles.Export.Failed.Title" xml:space="preserve">
+    <value>לא ניתן לשמור את הפרופיל</value>
+  </data>
+  <data name="Profiles.Import.Failed.Title" xml:space="preserve">
+    <value>לא ניתן לפתוח את הפרופיל</value>
+  </data>
+  <data name="Profiles.Import.Failed.Message" xml:space="preserve">
+    <value>הקובץ אינו פרופיל של optimizerDuck, או שנוצר בגרסה חדשה יותר.</value>
+  </data>
+  <data name="Profiles.Apply.Confirm.Title" xml:space="preserve">
+    <value>להחיל את "{0}"?</value>
+  </data>
+  <data name="Profiles.Apply.Confirm.Message" xml:space="preserve">
+    <value>מיטובים להחלה: {0}. הגדרות התאמה אישית: {1}.
+
+פריטים שכבר הוחלו ופריטים שהמחשב לא תומך בהם ידולגו. ניתן לבטל כל מיטוב מאוחר יותר מהכרטיס שלו.</value>
+  </data>
+  <data name="Profiles.Apply.Title" xml:space="preserve">
+    <value>מחיל את "{0}"</value>
+  </data>
+  <data name="Profiles.Apply.Progress" xml:space="preserve">
+    <value>מחיל: {0}</value>
+  </data>
+  <data name="Profiles.Report.Title" xml:space="preserve">
+    <value>הפרופיל הוחל</value>
+  </data>
+  <data name="Profiles.Report.Summary" xml:space="preserve">
+    <value>הוחלו: {0}
+כבר פעילים: {1}
+לא נתמכים במחשב זה: {2}
+לא מזוהים בגרסה זו: {3}
+נכשלו: {4}</value>
+  </data>
+  <data name="Profiles.Report.Failures" xml:space="preserve">
+    <value>מה נכשל:</value>
+  </data>
+  <data name="Profiles.Preview.Title" xml:space="preserve">
+    <value>מה "{0}" מחיל</value>
+  </data>
+  <data name="Profiles.Preview.Empty" xml:space="preserve">
+    <value>הגדרה מוכנה זו אינה כוללת מיטובים בגרסה זו.</value>
+  </data>
+  <data name="Drift.Header" xml:space="preserve">
+    <value>שינויים ש-Windows ביטל</value>
+  </data>
+  <data name="Drift.Description" xml:space="preserve">
+    <value>עדכוני Windows ותוכנות אחרות מחזירים לפעמים הגדרות למצבן הקודם. הבדיקה רק קוראת את המצב הנוכחי ואינה משנה דבר.</value>
+  </data>
+  <data name="Drift.Button.Check" xml:space="preserve">
+    <value>בדוק עכשיו</value>
+  </data>
+  <data name="Drift.Button.Reapply" xml:space="preserve">
+    <value>החל מחדש</value>
+  </data>
+  <data name="Drift.Status.Checking" xml:space="preserve">
+    <value>בודק את המיטובים שהוחלו...</value>
+  </data>
+  <data name="Drift.Status.None" xml:space="preserve">
+    <value>כל המיטובים שהוחלו עדיין בתוקף.</value>
+  </data>
+  <data name="Drift.Status.Found" xml:space="preserve">
+    <value>מיטובים שבוטלו מאז שהוחלו: {0}</value>
+  </data>
+  <data name="Drift.Reapply.Title" xml:space="preserve">
+    <value>מחיל מחדש את המיטובים</value>
+  </data>
+  <data name="Dashboard.Drift.Title" xml:space="preserve">
+    <value>חלק מהמיטובים בוטלו</value>
+  </data>
+  <data name="Dashboard.Drift.Message" xml:space="preserve">
+    <value>Windows או תוכנה אחרת החזירו הגדרות ששונו על ידי מיטובים שהוחלו (מספר: {0}).</value>
+  </data>
+  <data name="Dashboard.Drift.Button" xml:space="preserve">
+    <value>סקירה והחלה מחדש</value>
+  </data>
 </root>

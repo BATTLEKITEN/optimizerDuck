@@ -2510,4 +2510,154 @@ En son özelliklerden, iyileştirmelerden ve hata düzeltmelerinden yararlanmak 
   <data name="Error.Unhandled.LogHint" xml:space="preserve">
     <value>Ayrıntılar günlük dosyasında.</value>
   </data>
+  <data name="Sidebar.Profiles" xml:space="preserve">
+    <value>Profiller</value>
+  </data>
+  <data name="Profiles.Header.Title" xml:space="preserve">
+    <value>Profiller</value>
+  </data>
+  <data name="Profiles.Header.Description" xml:space="preserve">
+    <value>Hazır bir optimizasyon setini uygulayın, ayarlarınızı başka bir PC’ye taşıyın veya Windows’un geri aldıklarını yeniden uygulayın.</value>
+  </data>
+  <data name="Profiles.Presets.Header" xml:space="preserve">
+    <value>Hazır ayarlar</value>
+  </data>
+  <data name="Profiles.Preset.Recommended.Title" xml:space="preserve">
+    <value>Önerilen</value>
+  </data>
+  <data name="Profiles.Preset.Recommended.Description" xml:space="preserve">
+    <value>Güvenli olarak işaretlenen tüm optimizasyonlar. Çoğu masaüstü PC için iyi bir başlangıç.</value>
+  </data>
+  <data name="Profiles.Preset.Gaming.Title" xml:space="preserve">
+    <value>Oyun</value>
+  </data>
+  <data name="Profiles.Preset.Gaming.Description" xml:space="preserve">
+    <value>Riskli olanlar hariç performans ve gecikme optimizasyonları.</value>
+  </data>
+  <data name="Profiles.Preset.Privacy.Title" xml:space="preserve">
+    <value>Gizlilik</value>
+  </data>
+  <data name="Profiles.Preset.Privacy.Description" xml:space="preserve">
+    <value>Telemetri, reklamlar, öneriler ve yapay zekâ özellikleri kapatılır; riskli optimizasyonlar hariç.</value>
+  </data>
+  <data name="Profiles.Preset.Laptop.Title" xml:space="preserve">
+    <value>Dizüstü</value>
+  </data>
+  <data name="Profiles.Preset.Laptop.Description" xml:space="preserve">
+    <value>Pil ömrünü azaltmayan güvenli optimizasyonlar: güç planı, USB veya GPU değişikliği yok.</value>
+  </data>
+  <data name="Profiles.Preset.Count" xml:space="preserve">
+    <value>Optimizasyon: {0}</value>
+  </data>
+  <data name="Profiles.Button.Preview" xml:space="preserve">
+    <value>Önizle</value>
+  </data>
+  <data name="Profiles.Button.Apply" xml:space="preserve">
+    <value>Uygula</value>
+  </data>
+  <data name="Profiles.File.Header" xml:space="preserve">
+    <value>Ayarlarınız</value>
+  </data>
+  <data name="Profiles.Export.Title" xml:space="preserve">
+    <value>Dosyaya aktar</value>
+  </data>
+  <data name="Profiles.Export.Description" xml:space="preserve">
+    <value>Bu PC’de uygulanan optimizasyonları ve özelleştirme ayarlarınızı kaydeder; böylece başka bir yerde uygulayabilirsiniz.</value>
+  </data>
+  <data name="Profiles.Export.Button" xml:space="preserve">
+    <value>Dışa aktar</value>
+  </data>
+  <data name="Profiles.Import.Title" xml:space="preserve">
+    <value>İçe aktar ve uygula</value>
+  </data>
+  <data name="Profiles.Import.Description" xml:space="preserve">
+    <value>Bir profil dosyasını açar ve içeriğini uygular. Bu PC’nin desteklemediği öğeler atlanır.</value>
+  </data>
+  <data name="Profiles.Import.Button" xml:space="preserve">
+    <value>İçe aktar</value>
+  </data>
+  <data name="Profiles.FileFilter" xml:space="preserve">
+    <value>optimizerDuck profili</value>
+  </data>
+  <data name="Profiles.Export.Success.Title" xml:space="preserve">
+    <value>Profil kaydedildi</value>
+  </data>
+  <data name="Profiles.Export.Success.Message" xml:space="preserve">
+    <value>Optimizasyon: {0}. Özelleştirme ayarı: {1}.</value>
+  </data>
+  <data name="Profiles.Export.Failed.Title" xml:space="preserve">
+    <value>Profil kaydedilemedi</value>
+  </data>
+  <data name="Profiles.Import.Failed.Title" xml:space="preserve">
+    <value>Profil açılamadı</value>
+  </data>
+  <data name="Profiles.Import.Failed.Message" xml:space="preserve">
+    <value>Dosya bir optimizerDuck profili değil ya da daha yeni bir sürümle oluşturulmuş.</value>
+  </data>
+  <data name="Profiles.Apply.Confirm.Title" xml:space="preserve">
+    <value>"{0}" uygulansın mı?</value>
+  </data>
+  <data name="Profiles.Apply.Confirm.Message" xml:space="preserve">
+    <value>Uygulanacak optimizasyon: {0}. Özelleştirme ayarı: {1}.
+
+Zaten uygulanmış ve bu PC’nin desteklemediği öğeler atlanır. Her optimizasyon daha sonra kendi kartından geri alınabilir.</value>
+  </data>
+  <data name="Profiles.Apply.Title" xml:space="preserve">
+    <value>"{0}" uygulanıyor</value>
+  </data>
+  <data name="Profiles.Apply.Progress" xml:space="preserve">
+    <value>Uygulanıyor: {0}</value>
+  </data>
+  <data name="Profiles.Report.Title" xml:space="preserve">
+    <value>Profil uygulandı</value>
+  </data>
+  <data name="Profiles.Report.Summary" xml:space="preserve">
+    <value>Uygulanan: {0}
+Zaten uygulanmış: {1}
+Bu PC’de desteklenmeyen: {2}
+Bu sürümün tanımadığı: {3}
+Başarısız: {4}</value>
+  </data>
+  <data name="Profiles.Report.Failures" xml:space="preserve">
+    <value>Başarısız olanlar:</value>
+  </data>
+  <data name="Profiles.Preview.Title" xml:space="preserve">
+    <value>"{0}" neleri uygular</value>
+  </data>
+  <data name="Profiles.Preview.Empty" xml:space="preserve">
+    <value>Bu hazır ayar bu sürümde hiçbir optimizasyon içermiyor.</value>
+  </data>
+  <data name="Drift.Header" xml:space="preserve">
+    <value>Windows’un geri aldığı değişiklikler</value>
+  </data>
+  <data name="Drift.Description" xml:space="preserve">
+    <value>Windows güncellemeleri ve diğer programlar bazen ayarları geri alır. Bu kontrol yalnızca mevcut durumu okur, hiçbir şeyi değiştirmez.</value>
+  </data>
+  <data name="Drift.Button.Check" xml:space="preserve">
+    <value>Şimdi kontrol et</value>
+  </data>
+  <data name="Drift.Button.Reapply" xml:space="preserve">
+    <value>Yeniden uygula</value>
+  </data>
+  <data name="Drift.Status.Checking" xml:space="preserve">
+    <value>Uygulanan optimizasyonlar kontrol ediliyor...</value>
+  </data>
+  <data name="Drift.Status.None" xml:space="preserve">
+    <value>Uygulanan tüm optimizasyonlar hâlâ geçerli.</value>
+  </data>
+  <data name="Drift.Status.Found" xml:space="preserve">
+    <value>Uygulandıktan sonra geri alınan optimizasyon: {0}</value>
+  </data>
+  <data name="Drift.Reapply.Title" xml:space="preserve">
+    <value>Optimizasyonlar yeniden uygulanıyor</value>
+  </data>
+  <data name="Dashboard.Drift.Title" xml:space="preserve">
+    <value>Bazı optimizasyonlar geri alındı</value>
+  </data>
+  <data name="Dashboard.Drift.Message" xml:space="preserve">
+    <value>Windows veya başka bir program, uygulanan {0} optimizasyonun değiştirdiği ayarları geri aldı.</value>
+  </data>
+  <data name="Dashboard.Drift.Button" xml:space="preserve">
+    <value>İncele ve yeniden uygula</value>
+  </data>
 </root>

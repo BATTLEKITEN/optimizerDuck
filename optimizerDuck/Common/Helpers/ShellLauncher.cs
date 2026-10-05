@@ -28,9 +28,10 @@ public static class ShellLauncher
         if (!Directory.Exists(full))
             throw new DirectoryNotFoundException(full);
 
-        StartExplorer(
-            $"\"{full.TrimEnd(Path.DirectorySeparatorChar)}{Path.DirectorySeparatorChar}\""
-        );
+        // A drive root keeps its separator; anything else drops it, because a backslash before
+        // the closing quote would escape the quote.
+        var trimmed = full.TrimEnd(Path.DirectorySeparatorChar);
+        StartExplorer(Path.GetPathRoot(full) == full ? full : $"\"{trimmed}\"");
     }
 
     /// <summary>Opens Explorer with an existing file or directory selected.</summary>

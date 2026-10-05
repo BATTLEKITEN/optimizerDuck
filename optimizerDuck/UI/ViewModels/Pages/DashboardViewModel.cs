@@ -8,7 +8,9 @@ using Microsoft.Extensions.Logging;
 using optimizerDuck.Common.Helpers;
 using optimizerDuck.Resources.Languages;
 using optimizerDuck.Services.Configuration;
+using optimizerDuck.Services.Optimization;
 using optimizerDuck.Services.System;
+using optimizerDuck.UI.Pages;
 using Wpf.Ui;
 using Wpf.Ui.Appearance;
 using Wpf.Ui.Controls;
@@ -22,6 +24,14 @@ public partial class DashboardViewModel : ViewModel
     private readonly ISnackbarService _snackbarService;
     private readonly SystemInfoService _systemInfoService;
     private readonly UpdaterService _updaterService;
+    private readonly DriftService _driftService;
+    private readonly INavigationService _navigationService;
+
+    [ObservableProperty]
+    private bool _isDriftInfoOpen;
+
+    [ObservableProperty]
+    private string _driftMessage = string.Empty;
 
     private readonly DispatcherTimer _updateTimer;
     private bool _ticking;
@@ -69,9 +79,14 @@ public partial class DashboardViewModel : ViewModel
         ISnackbarService snackbarService,
         ILogger<DashboardViewModel> logger,
         UpdaterService updaterService,
-        IContentDialogService contentDialogService
+        IContentDialogService contentDialogService,
+        DriftService driftService,
+        INavigationService navigationService
     )
     {
+        _driftService = driftService;
+        _navigationService = navigationService;
+        _driftService.Checked += (_, _) => _ = UiThread.InvokeAsync(ShowDrift);
         _systemInfoService = systemInfoService;
         _snackbarService = snackbarService;
         _logger = logger;
@@ -100,8 +115,23 @@ public partial class DashboardViewModel : ViewModel
         }
     }
 
+    private void ShowDrift()
+    {
+        var count = _driftService.LastResult.Count;
+        DriftMessage = Loc.Instance["Dashboard.Drift.Message", count];
+        IsDriftInfoOpen = count > 0;
+    }
+
+    [RelayCommand]
+    private void OpenProfiles()
+    {
+        IsDriftInfoOpen = false;
+        _navigationService.Navigate(typeof(ProfilesPage));
+    }
+
     protected override async Task InitializeOnceAsync()
     {
+        ShowDrift();
         await LoadSystemInfoAsync();
         _systemInfoService.LogSummary();
         var version = await _updaterService.CheckForUpdatesAsync();

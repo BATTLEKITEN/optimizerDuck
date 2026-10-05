@@ -2561,5 +2561,155 @@
   <data name="Error.Unhandled.LogHint" xml:space="preserve">
     <value>التفاصيل موجودة في ملف السجل.</value>
   </data>
+  <data name="Sidebar.Profiles" xml:space="preserve">
+    <value>الملفات الشخصية</value>
+  </data>
+  <data name="Profiles.Header.Title" xml:space="preserve">
+    <value>الملفات الشخصية</value>
+  </data>
+  <data name="Profiles.Header.Description" xml:space="preserve">
+    <value>طبّق مجموعة جاهزة من التحسينات، أو انقل إعداداتك إلى جهاز آخر، أو أعِد ما تراجع عنه Windows.</value>
+  </data>
+  <data name="Profiles.Presets.Header" xml:space="preserve">
+    <value>إعدادات مسبقة</value>
+  </data>
+  <data name="Profiles.Preset.Recommended.Title" xml:space="preserve">
+    <value>موصى به</value>
+  </data>
+  <data name="Profiles.Preset.Recommended.Description" xml:space="preserve">
+    <value>كل التحسينات المصنفة آمنة. بداية جيدة لمعظم أجهزة الكمبيوتر المكتبية.</value>
+  </data>
+  <data name="Profiles.Preset.Gaming.Title" xml:space="preserve">
+    <value>الألعاب</value>
+  </data>
+  <data name="Profiles.Preset.Gaming.Description" xml:space="preserve">
+    <value>تحسينات الأداء وزمن الاستجابة، باستثناء الخطرة منها.</value>
+  </data>
+  <data name="Profiles.Preset.Privacy.Title" xml:space="preserve">
+    <value>الخصوصية</value>
+  </data>
+  <data name="Profiles.Preset.Privacy.Description" xml:space="preserve">
+    <value>إيقاف بيانات القياس عن بُعد والإعلانات والاقتراحات وميزات الذكاء الاصطناعي، دون التحسينات الخطرة.</value>
+  </data>
+  <data name="Profiles.Preset.Laptop.Title" xml:space="preserve">
+    <value>حاسوب محمول</value>
+  </data>
+  <data name="Profiles.Preset.Laptop.Description" xml:space="preserve">
+    <value>تحسينات آمنة لا تستهلك البطارية: بلا تغييرات في خطة الطاقة أو USB أو GPU.</value>
+  </data>
+  <data name="Profiles.Preset.Count" xml:space="preserve">
+    <value>التحسينات: {0}</value>
+  </data>
+  <data name="Profiles.Button.Preview" xml:space="preserve">
+    <value>معاينة</value>
+  </data>
+  <data name="Profiles.Button.Apply" xml:space="preserve">
+    <value>تطبيق</value>
+  </data>
+  <data name="Profiles.File.Header" xml:space="preserve">
+    <value>إعداداتك</value>
+  </data>
+  <data name="Profiles.Export.Title" xml:space="preserve">
+    <value>تصدير إلى ملف</value>
+  </data>
+  <data name="Profiles.Export.Description" xml:space="preserve">
+    <value>يحفظ التحسينات المطبقة على هذا الجهاز وإعدادات التخصيص لتطبيقها على جهاز آخر.</value>
+  </data>
+  <data name="Profiles.Export.Button" xml:space="preserve">
+    <value>تصدير</value>
+  </data>
+  <data name="Profiles.Import.Title" xml:space="preserve">
+    <value>استيراد وتطبيق</value>
+  </data>
+  <data name="Profiles.Import.Description" xml:space="preserve">
+    <value>يفتح ملف ملف شخصي ويطبق محتواه. يتم تخطي العناصر التي لا يدعمها هذا الجهاز.</value>
+  </data>
+  <data name="Profiles.Import.Button" xml:space="preserve">
+    <value>استيراد</value>
+  </data>
+  <data name="Profiles.FileFilter" xml:space="preserve">
+    <value>ملف optimizerDuck الشخصي</value>
+  </data>
+  <data name="Profiles.Export.Success.Title" xml:space="preserve">
+    <value>تم حفظ الملف الشخصي</value>
+  </data>
+  <data name="Profiles.Export.Success.Message" xml:space="preserve">
+    <value>التحسينات: {0}. إعدادات التخصيص: {1}.</value>
+  </data>
+  <data name="Profiles.Export.Failed.Title" xml:space="preserve">
+    <value>تعذر حفظ الملف الشخصي</value>
+  </data>
+  <data name="Profiles.Import.Failed.Title" xml:space="preserve">
+    <value>تعذر فتح الملف الشخصي</value>
+  </data>
+  <data name="Profiles.Import.Failed.Message" xml:space="preserve">
+    <value>الملف ليس ملفًا شخصيًا لـ optimizerDuck، أو تم إنشاؤه بإصدار أحدث.</value>
+  </data>
+  <data name="Profiles.Apply.Confirm.Title" xml:space="preserve">
+    <value>تطبيق "{0}"؟</value>
+  </data>
+  <data name="Profiles.Apply.Confirm.Message" xml:space="preserve">
+    <value>التحسينات المراد تطبيقها: {0}. إعدادات التخصيص: {1}.
+
+سيتم تخطي العناصر المطبقة مسبقًا والعناصر غير المدعومة على هذا الجهاز. يمكن التراجع عن كل تحسين لاحقًا من بطاقته.</value>
+  </data>
+  <data name="Profiles.Apply.Title" xml:space="preserve">
+    <value>جارٍ تطبيق "{0}"</value>
+  </data>
+  <data name="Profiles.Apply.Progress" xml:space="preserve">
+    <value>جارٍ التطبيق: {0}</value>
+  </data>
+  <data name="Profiles.Report.Title" xml:space="preserve">
+    <value>تم تطبيق الملف الشخصي</value>
+  </data>
+  <data name="Profiles.Report.Summary" xml:space="preserve">
+    <value>تم التطبيق: {0}
+مطبق مسبقًا: {1}
+غير مدعوم على هذا الجهاز: {2}
+غير معروف لهذا الإصدار: {3}
+فشل: {4}</value>
+  </data>
+  <data name="Profiles.Report.Failures" xml:space="preserve">
+    <value>ما فشل:</value>
+  </data>
+  <data name="Profiles.Preview.Title" xml:space="preserve">
+    <value>ما يطبقه "{0}"</value>
+  </data>
+  <data name="Profiles.Preview.Empty" xml:space="preserve">
+    <value>لا يحتوي هذا الإعداد المسبق على أي تحسينات في هذا الإصدار.</value>
+  </data>
+  <data name="Drift.Header" xml:space="preserve">
+    <value>تغييرات تراجع عنها Windows</value>
+  </data>
+  <data name="Drift.Description" xml:space="preserve">
+    <value>قد تعيد تحديثات Windows وبرامج أخرى بعض الإعدادات إلى حالتها السابقة. هذا الفحص يقرأ الحالة الحالية فقط ولا يغيّر شيئًا.</value>
+  </data>
+  <data name="Drift.Button.Check" xml:space="preserve">
+    <value>افحص الآن</value>
+  </data>
+  <data name="Drift.Button.Reapply" xml:space="preserve">
+    <value>إعادة التطبيق</value>
+  </data>
+  <data name="Drift.Status.Checking" xml:space="preserve">
+    <value>جارٍ فحص التحسينات المطبقة...</value>
+  </data>
+  <data name="Drift.Status.None" xml:space="preserve">
+    <value>لا تزال جميع التحسينات المطبقة سارية.</value>
+  </data>
+  <data name="Drift.Status.Found" xml:space="preserve">
+    <value>تحسينات تم التراجع عنها منذ تطبيقها: {0}</value>
+  </data>
+  <data name="Drift.Reapply.Title" xml:space="preserve">
+    <value>إعادة تطبيق التحسينات</value>
+  </data>
+  <data name="Dashboard.Drift.Title" xml:space="preserve">
+    <value>تم التراجع عن بعض التحسينات</value>
+  </data>
+  <data name="Dashboard.Drift.Message" xml:space="preserve">
+    <value>أعاد Windows أو برنامج آخر إعدادات غيّرتها تحسينات مطبقة (العدد: {0}).</value>
+  </data>
+  <data name="Dashboard.Drift.Button" xml:space="preserve">
+    <value>مراجعة وإعادة التطبيق</value>
+  </data>
 </root>
 

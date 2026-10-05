@@ -2514,4 +2514,154 @@
   <data name="Error.Unhandled.LogHint" xml:space="preserve">
     <value>詳細資料已寫入記錄檔。</value>
   </data>
+  <data name="Sidebar.Profiles" xml:space="preserve">
+    <value>設定檔</value>
+  </data>
+  <data name="Profiles.Header.Title" xml:space="preserve">
+    <value>設定檔</value>
+  </data>
+  <data name="Profiles.Header.Description" xml:space="preserve">
+    <value>套用現成的最佳化組合、將設定移轉到另一台電腦，或還原被 Windows 復原的設定。</value>
+  </data>
+  <data name="Profiles.Presets.Header" xml:space="preserve">
+    <value>預設組合</value>
+  </data>
+  <data name="Profiles.Preset.Recommended.Title" xml:space="preserve">
+    <value>建議</value>
+  </data>
+  <data name="Profiles.Preset.Recommended.Description" xml:space="preserve">
+    <value>所有標示為「安全」的最佳化項目，適合大多數桌上型電腦作為起點。</value>
+  </data>
+  <data name="Profiles.Preset.Gaming.Title" xml:space="preserve">
+    <value>遊戲</value>
+  </data>
+  <data name="Profiles.Preset.Gaming.Description" xml:space="preserve">
+    <value>效能與延遲相關的最佳化，不含高風險項目。</value>
+  </data>
+  <data name="Profiles.Preset.Privacy.Title" xml:space="preserve">
+    <value>隱私權</value>
+  </data>
+  <data name="Profiles.Preset.Privacy.Description" xml:space="preserve">
+    <value>關閉遙測、廣告、建議與 AI 功能，不含高風險最佳化。</value>
+  </data>
+  <data name="Profiles.Preset.Laptop.Title" xml:space="preserve">
+    <value>筆記型電腦</value>
+  </data>
+  <data name="Profiles.Preset.Laptop.Description" xml:space="preserve">
+    <value>不影響電池續航力的安全最佳化：不變更電源計劃、USB 或 GPU 設定。</value>
+  </data>
+  <data name="Profiles.Preset.Count" xml:space="preserve">
+    <value>最佳化項目：{0}</value>
+  </data>
+  <data name="Profiles.Button.Preview" xml:space="preserve">
+    <value>預覽</value>
+  </data>
+  <data name="Profiles.Button.Apply" xml:space="preserve">
+    <value>套用</value>
+  </data>
+  <data name="Profiles.File.Header" xml:space="preserve">
+    <value>你的設定</value>
+  </data>
+  <data name="Profiles.Export.Title" xml:space="preserve">
+    <value>匯出至檔案</value>
+  </data>
+  <data name="Profiles.Export.Description" xml:space="preserve">
+    <value>儲存此電腦已套用的最佳化與自訂設定，方便在其他電腦上套用。</value>
+  </data>
+  <data name="Profiles.Export.Button" xml:space="preserve">
+    <value>匯出</value>
+  </data>
+  <data name="Profiles.Import.Title" xml:space="preserve">
+    <value>匯入並套用</value>
+  </data>
+  <data name="Profiles.Import.Description" xml:space="preserve">
+    <value>開啟設定檔並套用其中內容，此電腦不支援的項目會略過。</value>
+  </data>
+  <data name="Profiles.Import.Button" xml:space="preserve">
+    <value>匯入</value>
+  </data>
+  <data name="Profiles.FileFilter" xml:space="preserve">
+    <value>optimizerDuck 設定檔</value>
+  </data>
+  <data name="Profiles.Export.Success.Title" xml:space="preserve">
+    <value>設定檔已儲存</value>
+  </data>
+  <data name="Profiles.Export.Success.Message" xml:space="preserve">
+    <value>最佳化項目：{0}。自訂設定：{1}。</value>
+  </data>
+  <data name="Profiles.Export.Failed.Title" xml:space="preserve">
+    <value>無法儲存設定檔</value>
+  </data>
+  <data name="Profiles.Import.Failed.Title" xml:space="preserve">
+    <value>無法開啟設定檔</value>
+  </data>
+  <data name="Profiles.Import.Failed.Message" xml:space="preserve">
+    <value>此檔案不是 optimizerDuck 設定檔，或是由較新版本建立。</value>
+  </data>
+  <data name="Profiles.Apply.Confirm.Title" xml:space="preserve">
+    <value>要套用「{0}」嗎？</value>
+  </data>
+  <data name="Profiles.Apply.Confirm.Message" xml:space="preserve">
+    <value>將套用的最佳化項目：{0}。自訂設定：{1}。
+
+已生效與此電腦不支援的項目會略過。每項最佳化之後都能從其卡片還原。</value>
+  </data>
+  <data name="Profiles.Apply.Title" xml:space="preserve">
+    <value>正在套用「{0}」</value>
+  </data>
+  <data name="Profiles.Apply.Progress" xml:space="preserve">
+    <value>正在套用：{0}</value>
+  </data>
+  <data name="Profiles.Report.Title" xml:space="preserve">
+    <value>設定檔已套用</value>
+  </data>
+  <data name="Profiles.Report.Summary" xml:space="preserve">
+    <value>已套用：{0}
+已生效：{1}
+此電腦不支援：{2}
+此版本無法辨識：{3}
+失敗：{4}</value>
+  </data>
+  <data name="Profiles.Report.Failures" xml:space="preserve">
+    <value>失敗的項目：</value>
+  </data>
+  <data name="Profiles.Preview.Title" xml:space="preserve">
+    <value>「{0}」將套用的內容</value>
+  </data>
+  <data name="Profiles.Preview.Empty" xml:space="preserve">
+    <value>此預設組合在目前版本中不包含任何最佳化項目。</value>
+  </data>
+  <data name="Drift.Header" xml:space="preserve">
+    <value>被 Windows 復原的變更</value>
+  </data>
+  <data name="Drift.Description" xml:space="preserve">
+    <value>Windows 更新與其他程式有時會還原設定。此檢查只會讀取目前狀態，不會變更任何內容。</value>
+  </data>
+  <data name="Drift.Button.Check" xml:space="preserve">
+    <value>立即檢查</value>
+  </data>
+  <data name="Drift.Button.Reapply" xml:space="preserve">
+    <value>重新套用</value>
+  </data>
+  <data name="Drift.Status.Checking" xml:space="preserve">
+    <value>正在檢查已套用的最佳化...</value>
+  </data>
+  <data name="Drift.Status.None" xml:space="preserve">
+    <value>所有已套用的最佳化仍然有效。</value>
+  </data>
+  <data name="Drift.Status.Found" xml:space="preserve">
+    <value>套用後被復原的最佳化項目：{0}</value>
+  </data>
+  <data name="Drift.Reapply.Title" xml:space="preserve">
+    <value>正在重新套用最佳化</value>
+  </data>
+  <data name="Dashboard.Drift.Title" xml:space="preserve">
+    <value>部分最佳化已被復原</value>
+  </data>
+  <data name="Dashboard.Drift.Message" xml:space="preserve">
+    <value>Windows 或其他程式還原了 {0} 項已套用最佳化所變更的設定。</value>
+  </data>
+  <data name="Dashboard.Drift.Button" xml:space="preserve">
+    <value>檢視並重新套用</value>
+  </data>
 </root>

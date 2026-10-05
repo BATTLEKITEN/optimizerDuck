@@ -2519,4 +2519,154 @@
   <data name="Error.Unhandled.LogHint" xml:space="preserve">
     <value>Подробности в файле журнала.</value>
   </data>
+  <data name="Sidebar.Profiles" xml:space="preserve">
+    <value>Профили</value>
+  </data>
+  <data name="Profiles.Header.Title" xml:space="preserve">
+    <value>Профили</value>
+  </data>
+  <data name="Profiles.Header.Description" xml:space="preserve">
+    <value>Примените готовый набор оптимизаций, перенесите настройки на другой ПК или верните то, что откатил Windows.</value>
+  </data>
+  <data name="Profiles.Presets.Header" xml:space="preserve">
+    <value>Готовые наборы</value>
+  </data>
+  <data name="Profiles.Preset.Recommended.Title" xml:space="preserve">
+    <value>Рекомендуемый</value>
+  </data>
+  <data name="Profiles.Preset.Recommended.Description" xml:space="preserve">
+    <value>Все оптимизации с пометкой «безопасно». Хорошее начало для большинства настольных ПК.</value>
+  </data>
+  <data name="Profiles.Preset.Gaming.Title" xml:space="preserve">
+    <value>Игры</value>
+  </data>
+  <data name="Profiles.Preset.Gaming.Description" xml:space="preserve">
+    <value>Оптимизации производительности и задержек, без рискованных.</value>
+  </data>
+  <data name="Profiles.Preset.Privacy.Title" xml:space="preserve">
+    <value>Конфиденциальность</value>
+  </data>
+  <data name="Profiles.Preset.Privacy.Description" xml:space="preserve">
+    <value>Отключает телеметрию, рекламу, рекомендации и функции ИИ, без рискованных оптимизаций.</value>
+  </data>
+  <data name="Profiles.Preset.Laptop.Title" xml:space="preserve">
+    <value>Ноутбук</value>
+  </data>
+  <data name="Profiles.Preset.Laptop.Description" xml:space="preserve">
+    <value>Безопасные оптимизации, не влияющие на время работы от батареи: без изменений схемы питания, USB и GPU.</value>
+  </data>
+  <data name="Profiles.Preset.Count" xml:space="preserve">
+    <value>Оптимизаций: {0}</value>
+  </data>
+  <data name="Profiles.Button.Preview" xml:space="preserve">
+    <value>Просмотр</value>
+  </data>
+  <data name="Profiles.Button.Apply" xml:space="preserve">
+    <value>Применить</value>
+  </data>
+  <data name="Profiles.File.Header" xml:space="preserve">
+    <value>Ваши настройки</value>
+  </data>
+  <data name="Profiles.Export.Title" xml:space="preserve">
+    <value>Экспорт в файл</value>
+  </data>
+  <data name="Profiles.Export.Description" xml:space="preserve">
+    <value>Сохраняет оптимизации, применённые на этом ПК, и ваши настройки, чтобы применить их на другом компьютере.</value>
+  </data>
+  <data name="Profiles.Export.Button" xml:space="preserve">
+    <value>Экспорт</value>
+  </data>
+  <data name="Profiles.Import.Title" xml:space="preserve">
+    <value>Импорт и применение</value>
+  </data>
+  <data name="Profiles.Import.Description" xml:space="preserve">
+    <value>Открывает файл профиля и применяет его содержимое. Неподдерживаемые на этом ПК пункты пропускаются.</value>
+  </data>
+  <data name="Profiles.Import.Button" xml:space="preserve">
+    <value>Импорт</value>
+  </data>
+  <data name="Profiles.FileFilter" xml:space="preserve">
+    <value>Профиль optimizerDuck</value>
+  </data>
+  <data name="Profiles.Export.Success.Title" xml:space="preserve">
+    <value>Профиль сохранён</value>
+  </data>
+  <data name="Profiles.Export.Success.Message" xml:space="preserve">
+    <value>Оптимизаций: {0}. Настроек: {1}.</value>
+  </data>
+  <data name="Profiles.Export.Failed.Title" xml:space="preserve">
+    <value>Не удалось сохранить профиль</value>
+  </data>
+  <data name="Profiles.Import.Failed.Title" xml:space="preserve">
+    <value>Не удалось открыть профиль</value>
+  </data>
+  <data name="Profiles.Import.Failed.Message" xml:space="preserve">
+    <value>Файл не является профилем optimizerDuck или создан более новой версией.</value>
+  </data>
+  <data name="Profiles.Apply.Confirm.Title" xml:space="preserve">
+    <value>Применить «{0}»?</value>
+  </data>
+  <data name="Profiles.Apply.Confirm.Message" xml:space="preserve">
+    <value>Будет применено оптимизаций: {0}. Настроек: {1}.
+
+Уже применённые и неподдерживаемые на этом ПК пункты будут пропущены. Любую оптимизацию можно позже отменить на её карточке.</value>
+  </data>
+  <data name="Profiles.Apply.Title" xml:space="preserve">
+    <value>Применение «{0}»</value>
+  </data>
+  <data name="Profiles.Apply.Progress" xml:space="preserve">
+    <value>Применяется: {0}</value>
+  </data>
+  <data name="Profiles.Report.Title" xml:space="preserve">
+    <value>Профиль применён</value>
+  </data>
+  <data name="Profiles.Report.Summary" xml:space="preserve">
+    <value>Применено: {0}
+Уже было применено: {1}
+Не поддерживается на этом ПК: {2}
+Неизвестно этой версии: {3}
+Ошибки: {4}</value>
+  </data>
+  <data name="Profiles.Report.Failures" xml:space="preserve">
+    <value>Что не удалось:</value>
+  </data>
+  <data name="Profiles.Preview.Title" xml:space="preserve">
+    <value>Что применяет «{0}»</value>
+  </data>
+  <data name="Profiles.Preview.Empty" xml:space="preserve">
+    <value>В этой версии набор не содержит оптимизаций.</value>
+  </data>
+  <data name="Drift.Header" xml:space="preserve">
+    <value>Изменения, отменённые Windows</value>
+  </data>
+  <data name="Drift.Description" xml:space="preserve">
+    <value>Обновления Windows и другие программы иногда возвращают настройки. Проверка только считывает текущее состояние и ничего не меняет.</value>
+  </data>
+  <data name="Drift.Button.Check" xml:space="preserve">
+    <value>Проверить</value>
+  </data>
+  <data name="Drift.Button.Reapply" xml:space="preserve">
+    <value>Применить снова</value>
+  </data>
+  <data name="Drift.Status.Checking" xml:space="preserve">
+    <value>Проверка применённых оптимизаций...</value>
+  </data>
+  <data name="Drift.Status.None" xml:space="preserve">
+    <value>Все применённые оптимизации по-прежнему действуют.</value>
+  </data>
+  <data name="Drift.Status.Found" xml:space="preserve">
+    <value>Оптимизаций, отменённых после применения: {0}</value>
+  </data>
+  <data name="Drift.Reapply.Title" xml:space="preserve">
+    <value>Повторное применение оптимизаций</value>
+  </data>
+  <data name="Dashboard.Drift.Title" xml:space="preserve">
+    <value>Некоторые оптимизации были отменены</value>
+  </data>
+  <data name="Dashboard.Drift.Message" xml:space="preserve">
+    <value>Windows или другая программа вернули настройки, изменённые применёнными оптимизациями (количество: {0}).</value>
+  </data>
+  <data name="Dashboard.Drift.Button" xml:space="preserve">
+    <value>Просмотреть и применить снова</value>
+  </data>
 </root>

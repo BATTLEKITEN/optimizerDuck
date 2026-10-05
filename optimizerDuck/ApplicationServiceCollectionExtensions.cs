@@ -75,6 +75,8 @@ public static class ApplicationServiceCollectionExtensions
         services.AddSingleton<StartupManagerPage>();
         services.AddSingleton<ScheduledTasksViewModel>();
         services.AddSingleton<ScheduledTasksPage>();
+        services.AddSingleton<ProfilesViewModel>();
+        services.AddSingleton<ProfilesPage>();
 
         // Dialogs
         services.AddTransient<LegalDialogViewModel>();
@@ -111,6 +113,8 @@ public static class ApplicationServiceCollectionExtensions
         services.AddSingleton<UpdaterService>();
         services.AddSingleton<IRegistryWatcher, RegistryWatcher>();
         services.AddSingleton<UserErrorSurface>();
+        services.AddSingleton<DriftService>();
+        services.AddSingleton<optimizerDuck.Services.Profiles.ProfileService>();
 
         return services;
     }

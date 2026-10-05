@@ -2576,4 +2576,154 @@ Perbarui sekarang untuk menikmati fitur terbaru, peningkatan, dan perbaikan bug.
   <data name="Error.Unhandled.LogHint" xml:space="preserve">
     <value>Detailnya ada di file log.</value>
   </data>
+  <data name="Sidebar.Profiles" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="Profiles.Header.Title" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="Profiles.Header.Description" xml:space="preserve">
+    <value>Terapkan kumpulan optimasi siap pakai, pindahkan pengaturan Anda ke PC lain, atau pulihkan yang dibatalkan oleh Windows.</value>
+  </data>
+  <data name="Profiles.Presets.Header" xml:space="preserve">
+    <value>Preset</value>
+  </data>
+  <data name="Profiles.Preset.Recommended.Title" xml:space="preserve">
+    <value>Direkomendasikan</value>
+  </data>
+  <data name="Profiles.Preset.Recommended.Description" xml:space="preserve">
+    <value>Semua optimasi yang ditandai aman. Awal yang baik untuk sebagian besar PC desktop.</value>
+  </data>
+  <data name="Profiles.Preset.Gaming.Title" xml:space="preserve">
+    <value>Gaming</value>
+  </data>
+  <data name="Profiles.Preset.Gaming.Description" xml:space="preserve">
+    <value>Optimasi performa dan latensi, tanpa yang berisiko.</value>
+  </data>
+  <data name="Profiles.Preset.Privacy.Title" xml:space="preserve">
+    <value>Privasi</value>
+  </data>
+  <data name="Profiles.Preset.Privacy.Description" xml:space="preserve">
+    <value>Mematikan telemetri, iklan, saran, dan fitur AI, tanpa optimasi yang berisiko.</value>
+  </data>
+  <data name="Profiles.Preset.Laptop.Title" xml:space="preserve">
+    <value>Laptop</value>
+  </data>
+  <data name="Profiles.Preset.Laptop.Description" xml:space="preserve">
+    <value>Optimasi aman yang tidak menguras baterai: tanpa perubahan power plan, USB, atau GPU.</value>
+  </data>
+  <data name="Profiles.Preset.Count" xml:space="preserve">
+    <value>Optimasi: {0}</value>
+  </data>
+  <data name="Profiles.Button.Preview" xml:space="preserve">
+    <value>Pratinjau</value>
+  </data>
+  <data name="Profiles.Button.Apply" xml:space="preserve">
+    <value>Terapkan</value>
+  </data>
+  <data name="Profiles.File.Header" xml:space="preserve">
+    <value>Pengaturan Anda</value>
+  </data>
+  <data name="Profiles.Export.Title" xml:space="preserve">
+    <value>Ekspor ke file</value>
+  </data>
+  <data name="Profiles.Export.Description" xml:space="preserve">
+    <value>Menyimpan optimasi yang diterapkan di PC ini beserta pengaturan kustomisasi agar bisa diterapkan di PC lain.</value>
+  </data>
+  <data name="Profiles.Export.Button" xml:space="preserve">
+    <value>Ekspor</value>
+  </data>
+  <data name="Profiles.Import.Title" xml:space="preserve">
+    <value>Impor dan terapkan</value>
+  </data>
+  <data name="Profiles.Import.Description" xml:space="preserve">
+    <value>Membuka file profil dan menerapkan isinya. Item yang tidak didukung PC ini akan dilewati.</value>
+  </data>
+  <data name="Profiles.Import.Button" xml:space="preserve">
+    <value>Impor</value>
+  </data>
+  <data name="Profiles.FileFilter" xml:space="preserve">
+    <value>Profil optimizerDuck</value>
+  </data>
+  <data name="Profiles.Export.Success.Title" xml:space="preserve">
+    <value>Profil disimpan</value>
+  </data>
+  <data name="Profiles.Export.Success.Message" xml:space="preserve">
+    <value>Optimasi: {0}. Pengaturan kustomisasi: {1}.</value>
+  </data>
+  <data name="Profiles.Export.Failed.Title" xml:space="preserve">
+    <value>Tidak dapat menyimpan profil</value>
+  </data>
+  <data name="Profiles.Import.Failed.Title" xml:space="preserve">
+    <value>Tidak dapat membuka profil</value>
+  </data>
+  <data name="Profiles.Import.Failed.Message" xml:space="preserve">
+    <value>File ini bukan profil optimizerDuck, atau dibuat dengan versi yang lebih baru.</value>
+  </data>
+  <data name="Profiles.Apply.Confirm.Title" xml:space="preserve">
+    <value>Terapkan "{0}"?</value>
+  </data>
+  <data name="Profiles.Apply.Confirm.Message" xml:space="preserve">
+    <value>Optimasi yang akan diterapkan: {0}. Pengaturan kustomisasi: {1}.
+
+Item yang sudah diterapkan dan yang tidak didukung PC ini akan dilewati. Setiap optimasi dapat dibatalkan nanti dari kartunya.</value>
+  </data>
+  <data name="Profiles.Apply.Title" xml:space="preserve">
+    <value>Menerapkan "{0}"</value>
+  </data>
+  <data name="Profiles.Apply.Progress" xml:space="preserve">
+    <value>Menerapkan: {0}</value>
+  </data>
+  <data name="Profiles.Report.Title" xml:space="preserve">
+    <value>Profil diterapkan</value>
+  </data>
+  <data name="Profiles.Report.Summary" xml:space="preserve">
+    <value>Diterapkan: {0}
+Sudah diterapkan: {1}
+Tidak didukung PC ini: {2}
+Tidak dikenali versi ini: {3}
+Gagal: {4}</value>
+  </data>
+  <data name="Profiles.Report.Failures" xml:space="preserve">
+    <value>Yang gagal:</value>
+  </data>
+  <data name="Profiles.Preview.Title" xml:space="preserve">
+    <value>Yang diterapkan "{0}"</value>
+  </data>
+  <data name="Profiles.Preview.Empty" xml:space="preserve">
+    <value>Preset ini tidak berisi optimasi di versi ini.</value>
+  </data>
+  <data name="Drift.Header" xml:space="preserve">
+    <value>Perubahan yang dibatalkan Windows</value>
+  </data>
+  <data name="Drift.Description" xml:space="preserve">
+    <value>Pembaruan Windows dan program lain terkadang mengembalikan pengaturan. Pemeriksaan ini hanya membaca kondisi saat ini dan tidak mengubah apa pun.</value>
+  </data>
+  <data name="Drift.Button.Check" xml:space="preserve">
+    <value>Periksa sekarang</value>
+  </data>
+  <data name="Drift.Button.Reapply" xml:space="preserve">
+    <value>Terapkan ulang</value>
+  </data>
+  <data name="Drift.Status.Checking" xml:space="preserve">
+    <value>Memeriksa optimasi yang diterapkan...</value>
+  </data>
+  <data name="Drift.Status.None" xml:space="preserve">
+    <value>Semua optimasi yang diterapkan masih berlaku.</value>
+  </data>
+  <data name="Drift.Status.Found" xml:space="preserve">
+    <value>Optimasi yang dibatalkan sejak diterapkan: {0}</value>
+  </data>
+  <data name="Drift.Reapply.Title" xml:space="preserve">
+    <value>Menerapkan ulang optimasi</value>
+  </data>
+  <data name="Dashboard.Drift.Title" xml:space="preserve">
+    <value>Beberapa optimasi telah dibatalkan</value>
+  </data>
+  <data name="Dashboard.Drift.Message" xml:space="preserve">
+    <value>Windows atau program lain mengembalikan pengaturan yang diubah oleh {0} optimasi yang diterapkan.</value>
+  </data>
+  <data name="Dashboard.Drift.Button" xml:space="preserve">
+    <value>Tinjau dan terapkan ulang</value>
+  </data>
 </root>
