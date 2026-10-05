@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json.Linq;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace optimizerDuck.Domain.Revert;
 
@@ -55,4 +56,11 @@ public class RevertData
     ///     Example: [step1, null, null, step4] for steps at indexes 1 and 4.
     /// </summary>
     public RevertStepData?[] Steps { get; set; } = Array.Empty<RevertStepData?>();
+
+    /// <summary>
+    ///     HMAC over the rest of the file, keyed by a secret only administrators can read. A file
+    ///     without a matching signature is never executed.
+    /// </summary>
+    [JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+    public string? Signature { get; set; }
 }

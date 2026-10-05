@@ -144,7 +144,7 @@ public class OptimizationServiceTests
                     },
                 };
 
-                var json = JsonConvert.SerializeObject(payload, Formatting.Indented);
+                var json = RevertDataSeal.ToJson(payload);
                 await File.WriteAllTextAsync(revertPath, json);
 
                 var service = CreateService();

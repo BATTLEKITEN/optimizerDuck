@@ -383,6 +383,8 @@ public partial class App : Application
         );
         _logger.LogInformation("Loaded language: {Language}", appSettings.App.Language);
 
+        RevertDataSeal.EnsureKey(_logger);
+
         var optimizationRegistry = _host.Services.GetRequiredService<OptimizationRegistry>();
 
         await Dispatcher.InvokeAsync(() =>

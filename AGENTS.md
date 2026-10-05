@@ -81,6 +81,7 @@ Reflection discovery, no registration array to update.
 ## Revert system
 - One JSON file per subject: `%LocalAppData%\optimizerDuck\Revert\{id}.json`. Applied state is inferred from file presence.
 - `RevertManager` is the API: `SaveRevertDataAsync`, `RevertAsync`, `AppendRevertStepAsync`, `RemoveRevertStepAtIndexAsync`, `RemoveRevertStepsAtIndexesAsync`, `RemoveRevertData`, plus static `IsAppliedAsync`, `GetRevertDataAsync`, `ClearAllRevertData`, `RemoveOrphanedTempFiles`.
+- **Sealing**: every file carries `Signature`, an HMAC-SHA256 over the rest of the file keyed by `HKLM\SOFTWARE\optimizerDuck\RevertSealKey` (DACL: Administrators + SYSTEM only). `RevertDataSeal.ToJson` writes it, `RevertDataSeal.Verify` gates every load; an unsigned or edited file is unreadable and never executed. The first build that creates the key seals the files already on disk once. Tests write revert JSON through `RevertDataSeal.ToJson(payload)`.
 - **Atomic writes**: temp file via `FileStream(WriteThrough)` + `Flush(flushToDisk: true)`, then `File.Replace`. Stale `.tmp` files are swept at startup.
 - **Concurrency**: a per-file `SemaphoreSlim` (30 s timeout) in `RevertManager.FileLocks`. A lock entry is never disposed while another thread holds or waits on it.
 - **Compact layout**: only successful steps persist, re-indexed with no gaps. Re-apply appends; a recovered retry step appends (never overwrites), so LIFO revert still ends at the original backup.
