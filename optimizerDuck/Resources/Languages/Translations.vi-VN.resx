@@ -2713,4 +2713,40 @@ Mã thoát: 0 thành công, 1 có lỗi hoặc có tối ưu bị hoàn tác, 2 
   <data name="Optimizer.Preview.Failed.Title" xml:space="preserve">
     <value>Không thể xem trước thay đổi</value>
   </data>
+  <data name="Optimizer.AI.DisablePaintAI.Name" xml:space="preserve">
+    <value>Tắt AI trong Paint</value>
+  </data>
+  <data name="Optimizer.AI.DisablePaintAI.ShortDescription" xml:space="preserve">
+    <value>Tắt Cocreator, Image Creator, tô màu tạo sinh và xóa tạo sinh trong Paint bằng chính sách chính thức của Microsoft.</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.Name" xml:space="preserve">
+    <value>Tắt AI trong Notepad</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.ShortDescription" xml:space="preserve">
+    <value>Gỡ Rewrite, Summarize và các tính năng AI khác khỏi Notepad bằng chính sách được Microsoft công bố.</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.Name" xml:space="preserve">
+    <value>Ngăn Microsoft Edge chạy nền</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.ShortDescription" xml:space="preserve">
+    <value>Tắt startup boost (nạp sẵn Edge khi đăng nhập) và chế độ chạy nền (giữ Edge chạy sau khi đóng). Giải phóng RAM kể cả khi bạn không dùng Edge.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.Name" xml:space="preserve">
+    <value>Tắt thanh bên, mua sắm và thu thập dữ liệu của Edge</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.ShortDescription" xml:space="preserve">
+    <value>Dùng chính sách của Edge để ẩn thanh bên (kèm Copilot), tắt trợ lý mua sắm và gợi ý, đồng thời ngừng báo cáo cá nhân hóa và dữ liệu chẩn đoán tùy chọn.</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.Name" xml:space="preserve">
+    <value>Loại Driver khỏi Windows Update</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.ShortDescription" xml:space="preserve">
+    <value>Ngăn Windows Update thay thế các Driver bạn tự cài, như Driver GPU hoặc âm thanh từ nhà sản xuất. Sau đó bạn tự cập nhật Driver.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.Name" xml:space="preserve">
+    <value>Tắt OneDrive</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.ShortDescription" xml:space="preserve">
+    <value>Ngăn OneDrive khởi động và đồng bộ, đồng thời gỡ nó khỏi thanh bên File Explorer. Các tệp trong thư mục OneDrive vẫn còn trên ổ đĩa, không gỡ cài đặt gì cả.</value>
+  </data>
 </root>

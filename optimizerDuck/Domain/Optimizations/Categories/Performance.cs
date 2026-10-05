@@ -281,4 +281,29 @@ public class Performance : LocalizedObject, IOptimizationCategory
             return Task.FromResult(context.Changes.ToApplyResult());
         }
     }
+
+    [Optimization(
+        Id = "675D7178-100E-46CE-AA53-C6D7B43C4E79",
+        Risk = OptimizationRisk.Safe,
+        Tags = OptimizationTags.Performance | OptimizationTags.Ram
+    )]
+    public class DisableEdgeBackgroundRunning : BaseOptimization
+    {
+        public override Task<ApplyResult> ApplyAsync(
+            IProgress<ProcessingProgress> progress,
+            OptimizationContext context
+        )
+        {
+            // Startup boost preloads Edge at sign-in; background mode keeps it running after
+            // its last window closes. Both are documented Edge policies.
+            const string policy = @"HKLM\SOFTWARE\Policies\Microsoft\Edge";
+            RegistryService.Write(
+                context,
+                new RegistryItem(policy, "StartupBoostEnabled", 0),
+                new RegistryItem(policy, "BackgroundModeEnabled", 0)
+            );
+            context.Logger.LogInformation("Stopped Microsoft Edge from running in the background");
+            return Task.FromResult(context.Changes.ToApplyResult());
+        }
+    }
 }

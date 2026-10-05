@@ -2773,4 +2773,40 @@ Exitcodes: 0 Erfolg, 1 Fehler oder rückgängig gemachte Optimierungen gefunden,
   <data name="Optimizer.Preview.Failed.Title" xml:space="preserve">
     <value>Vorschau der Änderungen nicht möglich</value>
   </data>
+  <data name="Optimizer.AI.DisablePaintAI.Name" xml:space="preserve">
+    <value>KI in Paint deaktivieren</value>
+  </data>
+  <data name="Optimizer.AI.DisablePaintAI.ShortDescription" xml:space="preserve">
+    <value>Schaltet Cocreator, Image Creator, generatives Füllen und generatives Löschen in Paint über die offiziellen Richtlinien von Microsoft ab.</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.Name" xml:space="preserve">
+    <value>KI im Editor deaktivieren</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.ShortDescription" xml:space="preserve">
+    <value>Entfernt Umschreiben, Zusammenfassen und die übrigen KI-Funktionen aus dem Editor über die dokumentierte Richtlinie.</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.Name" xml:space="preserve">
+    <value>Microsoft Edge nicht im Hintergrund ausführen</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.ShortDescription" xml:space="preserve">
+    <value>Deaktiviert den Startup-Boost, der Edge bei der Anmeldung vorlädt, und den Hintergrundmodus, der Edge nach dem Schließen weiterlaufen lässt. Spart RAM, auch wenn du Edge nie öffnest.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.Name" xml:space="preserve">
+    <value>Edge-Seitenleiste, Shopping und Datensammlung abschalten</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.ShortDescription" xml:space="preserve">
+    <value>Blendet per Edge-Richtlinien die Seitenleiste (samt Copilot) aus, schaltet Shopping-Assistent und Empfehlungen ab und stoppt Personalisierungsberichte und optionale Diagnosedaten.</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.Name" xml:space="preserve">
+    <value>Treiber von Windows Update ausschließen</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.ShortDescription" xml:space="preserve">
+    <value>Verhindert, dass Windows Update selbst installierte Treiber ersetzt, etwa GPU- oder Audiotreiber des Herstellers. Treiber aktualisierst du danach selbst.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.Name" xml:space="preserve">
+    <value>OneDrive deaktivieren</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.ShortDescription" xml:space="preserve">
+    <value>Verhindert, dass OneDrive startet und synchronisiert, und entfernt es aus der Seitenleiste des Explorers. Dateien im OneDrive-Ordner bleiben erhalten, nichts wird deinstalliert.</value>
+  </data>
 </root>

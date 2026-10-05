@@ -2729,4 +2729,40 @@
   <data name="Optimizer.Preview.Failed.Title" xml:space="preserve">
     <value>无法预览更改</value>
   </data>
+  <data name="Optimizer.AI.DisablePaintAI.Name" xml:space="preserve">
+    <value>禁用画图中的 AI</value>
+  </data>
+  <data name="Optimizer.AI.DisablePaintAI.ShortDescription" xml:space="preserve">
+    <value>通过 Microsoft 官方策略关闭画图中的 Cocreator、Image Creator、生成式填充和生成式擦除。</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.Name" xml:space="preserve">
+    <value>禁用记事本中的 AI</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.ShortDescription" xml:space="preserve">
+    <value>使用官方策略移除记事本中的重写、摘要等 AI 功能。</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.Name" xml:space="preserve">
+    <value>阻止 Microsoft Edge 在后台运行</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.ShortDescription" xml:space="preserve">
+    <value>关闭在登录时预加载 Edge 的启动加速，以及关闭窗口后仍保持运行的后台模式。即使从不打开 Edge 也能节省内存。</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.Name" xml:space="preserve">
+    <value>关闭 Edge 侧边栏、购物和数据收集</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.ShortDescription" xml:space="preserve">
+    <value>通过 Edge 策略隐藏侧边栏（及其中的 Copilot），关闭购物助手和推荐，并停止个性化报告和可选诊断数据。</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.Name" xml:space="preserve">
+    <value>从 Windows 更新中排除驱动程序</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.ShortDescription" xml:space="preserve">
+    <value>阻止 Windows 更新替换你自行安装的驱动程序，例如厂商提供的 GPU 或音频驱动。之后需要你自己更新驱动。</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.Name" xml:space="preserve">
+    <value>禁用 OneDrive</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.ShortDescription" xml:space="preserve">
+    <value>阻止 OneDrive 启动和同步，并将其从文件资源管理器侧边栏移除。OneDrive 文件夹中的文件仍保留在磁盘上，不会卸载任何内容。</value>
+  </data>
 </root>

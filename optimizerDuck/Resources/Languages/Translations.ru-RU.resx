@@ -2721,4 +2721,40 @@
   <data name="Optimizer.Preview.Failed.Title" xml:space="preserve">
     <value>Не удалось показать предпросмотр изменений</value>
   </data>
+  <data name="Optimizer.AI.DisablePaintAI.Name" xml:space="preserve">
+    <value>Отключить ИИ в Paint</value>
+  </data>
+  <data name="Optimizer.AI.DisablePaintAI.ShortDescription" xml:space="preserve">
+    <value>Отключает Cocreator, Image Creator, генеративную заливку и генеративное стирание в Paint через официальные политики Microsoft.</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.Name" xml:space="preserve">
+    <value>Отключить ИИ в Блокноте</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.ShortDescription" xml:space="preserve">
+    <value>Убирает из Блокнота функции «Переписать», «Кратко» и другие функции ИИ через документированную политику.</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.Name" xml:space="preserve">
+    <value>Запретить работу Microsoft Edge в фоне</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.ShortDescription" xml:space="preserve">
+    <value>Отключает ускорение запуска, которое загружает Edge при входе в систему, и фоновый режим, оставляющий его работать после закрытия. Освобождает RAM, даже если вы не открываете Edge.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.Name" xml:space="preserve">
+    <value>Отключить боковую панель, покупки и сбор данных в Edge</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.ShortDescription" xml:space="preserve">
+    <value>Через политики Edge скрывает боковую панель (и Copilot в ней), отключает помощника покупок и рекомендации, останавливает отчёты о персонализации и необязательные диагностические данные.</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.Name" xml:space="preserve">
+    <value>Исключить драйверы из Центра обновления Windows</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.ShortDescription" xml:space="preserve">
+    <value>Не даёт Центру обновления Windows заменять установленные вами драйверы, например драйвер GPU или звука от производителя. Обновлять драйверы придётся самостоятельно.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.Name" xml:space="preserve">
+    <value>Отключить OneDrive</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.ShortDescription" xml:space="preserve">
+    <value>Не даёт OneDrive запускаться и синхронизироваться и убирает его из боковой панели Проводника. Файлы в папке OneDrive остаются на диске, ничего не удаляется.</value>
+  </data>
 </root>

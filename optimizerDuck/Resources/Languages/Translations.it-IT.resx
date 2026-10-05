@@ -2729,4 +2729,40 @@ Codici di uscita: 0 riuscito, 1 errori od ottimizzazioni annullate trovate, 2 er
   <data name="Optimizer.Preview.Failed.Title" xml:space="preserve">
     <value>Impossibile visualizzare l’anteprima delle modifiche</value>
   </data>
+  <data name="Optimizer.AI.DisablePaintAI.Name" xml:space="preserve">
+    <value>Disattiva l’IA in Paint</value>
+  </data>
+  <data name="Optimizer.AI.DisablePaintAI.ShortDescription" xml:space="preserve">
+    <value>Disattiva Cocreator, Image Creator, riempimento generativo e cancellazione generativa in Paint tramite i criteri ufficiali di Microsoft.</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.Name" xml:space="preserve">
+    <value>Disattiva l’IA nel Blocco note</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.ShortDescription" xml:space="preserve">
+    <value>Rimuove Riscrivi, Riepiloga e le altre funzioni di IA dal Blocco note tramite il criterio documentato.</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.Name" xml:space="preserve">
+    <value>Impedisci a Microsoft Edge di restare in background</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.ShortDescription" xml:space="preserve">
+    <value>Disattiva l’avvio rapido, che precarica Edge all’accesso, e la modalità in background, che lo tiene attivo dopo la chiusura. Libera RAM anche se non apri mai Edge.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.Name" xml:space="preserve">
+    <value>Disattiva barra laterale, acquisti e raccolta dati di Edge</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.ShortDescription" xml:space="preserve">
+    <value>Tramite i criteri di Edge nasconde la barra laterale (e Copilot al suo interno), disattiva l’assistente acquisti e i consigli, e interrompe i report di personalizzazione e i dati di diagnostica facoltativi.</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.Name" xml:space="preserve">
+    <value>Escludi i driver da Windows Update</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.ShortDescription" xml:space="preserve">
+    <value>Impedisce a Windows Update di sostituire i driver installati da te, come quelli della GPU o dell’audio del produttore. Da quel momento aggiorni i driver da solo.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.Name" xml:space="preserve">
+    <value>Disattiva OneDrive</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.ShortDescription" xml:space="preserve">
+    <value>Impedisce a OneDrive di avviarsi e sincronizzare e lo rimuove dal riquadro di spostamento di Esplora file. I file già nella cartella OneDrive restano sul disco; non viene disinstallato nulla.</value>
+  </data>
 </root>

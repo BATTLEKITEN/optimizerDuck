@@ -2763,5 +2763,41 @@
   <data name="Optimizer.Preview.Failed.Title" xml:space="preserve">
     <value>تعذرت معاينة التغييرات</value>
   </data>
+  <data name="Optimizer.AI.DisablePaintAI.Name" xml:space="preserve">
+    <value>تعطيل الذكاء الاصطناعي في الرسام</value>
+  </data>
+  <data name="Optimizer.AI.DisablePaintAI.ShortDescription" xml:space="preserve">
+    <value>يوقف Cocreator ومنشئ الصور والتعبئة التوليدية والمسح التوليدي في الرسام عبر سياسات Microsoft الرسمية.</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.Name" xml:space="preserve">
+    <value>تعطيل الذكاء الاصطناعي في المفكرة</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.ShortDescription" xml:space="preserve">
+    <value>يزيل إعادة الصياغة والتلخيص وميزات الذكاء الاصطناعي الأخرى من المفكرة باستخدام سياستها الموثقة.</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.Name" xml:space="preserve">
+    <value>إيقاف تشغيل Microsoft Edge في الخلفية</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.ShortDescription" xml:space="preserve">
+    <value>يوقف التشغيل المسبق الذي يحمّل Edge عند تسجيل الدخول، ووضع الخلفية الذي يبقيه يعمل بعد إغلاقه. يحرر ذاكرة RAM حتى لو لم تفتح Edge أبدًا.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.Name" xml:space="preserve">
+    <value>إيقاف الشريط الجانبي والتسوق وجمع البيانات في Edge</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.ShortDescription" xml:space="preserve">
+    <value>يستخدم سياسات Edge لإخفاء الشريط الجانبي (ومعه Copilot)، وإيقاف مساعد التسوق والتوصيات، ووقف تقارير التخصيص وبيانات التشخيص الاختيارية.</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.Name" xml:space="preserve">
+    <value>استبعاد برامج التشغيل من Windows Update</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.ShortDescription" xml:space="preserve">
+    <value>يمنع Windows Update من استبدال برامج التشغيل التي ثبّتها بنفسك، مثل برنامج تشغيل GPU أو الصوت من الشركة المصنعة. ستحتاج بعدها إلى تحديث برامج التشغيل بنفسك.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.Name" xml:space="preserve">
+    <value>تعطيل OneDrive</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.ShortDescription" xml:space="preserve">
+    <value>يمنع OneDrive من التشغيل والمزامنة، ويزيله من الشريط الجانبي لمستكشف الملفات. تبقى الملفات الموجودة في مجلد OneDrive على القرص ولا يتم إلغاء تثبيت أي شيء.</value>
+  </data>
 </root>
 

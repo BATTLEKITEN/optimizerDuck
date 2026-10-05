@@ -2779,4 +2779,40 @@ Exit codes: 0 success, 1 failures or undone optimizations found, 2 usage or file
   <data name="Optimizer.Preview.Failed.Title" xml:space="preserve">
     <value>Could not preview the changes</value>
   </data>
+  <data name="Optimizer.AI.DisablePaintAI.Name" xml:space="preserve">
+    <value>Disable AI in Paint</value>
+  </data>
+  <data name="Optimizer.AI.DisablePaintAI.ShortDescription" xml:space="preserve">
+    <value>Turns off Cocreator, Image Creator, generative fill and generative erase in Paint through Microsoft’s own policies.</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.Name" xml:space="preserve">
+    <value>Disable AI in Notepad</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.ShortDescription" xml:space="preserve">
+    <value>Removes Rewrite, Summarize and the other AI features from Notepad using its documented policy.</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.Name" xml:space="preserve">
+    <value>Stop Microsoft Edge running in the background</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.ShortDescription" xml:space="preserve">
+    <value>Turns off startup boost, which preloads Edge at sign-in, and background mode, which keeps it running after you close it. Frees RAM even if you never open Edge.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.Name" xml:space="preserve">
+    <value>Turn off Edge sidebar, shopping and data collection</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.ShortDescription" xml:space="preserve">
+    <value>Uses Edge policies to hide the sidebar (and Copilot in it), turn off the shopping assistant and recommendations, and stop personalization reporting and optional diagnostic data.</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.Name" xml:space="preserve">
+    <value>Exclude drivers from Windows Update</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.ShortDescription" xml:space="preserve">
+    <value>Stops Windows Update from replacing drivers you installed yourself, such as the GPU or audio driver from the vendor. You then update drivers on your own.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.Name" xml:space="preserve">
+    <value>Disable OneDrive</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.ShortDescription" xml:space="preserve">
+    <value>Stops OneDrive from starting and syncing, and removes it from the File Explorer sidebar. Files already in your OneDrive folder stay on disk; nothing is uninstalled.</value>
+  </data>
 </root>

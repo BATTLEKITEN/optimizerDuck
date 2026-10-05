@@ -112,17 +112,17 @@ It also includes built-in management tools, allowing you to see what is running,
 
 ### System Optimizations
 
-42 tweaks across 7 categories, each with a clear description and risk rating so you know exactly what each change does before applying it.
+48 tweaks across 7 categories, each with a clear description and risk rating so you know exactly what each change does before applying it.
 
 | Category                 | What it covers                                                                                                                                       |
 | :----------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Performance**          | Service host tuning based on your RAM, process priority adjustments, keyboard latency reduction, and multimedia scheduler tweaks for smoother gaming |
-| **Privacy**              | Disable Windows telemetry, error reporting, advertising ID, location tracking, Cortana, Copilot, and content delivery suggestions                    |
+| **Performance**          | Service host tuning based on your RAM, process priority adjustments, keyboard latency reduction, multimedia scheduler tweaks for smoother gaming, and stopping Edge from running in the background |
+| **Privacy**              | Disable Windows telemetry, error reporting, advertising ID, location tracking, Cortana, Copilot, content delivery suggestions, and the Edge sidebar, shopping and data collection |
 | **GPU**                  | Vendor-specific registry tweaks for AMD, NVIDIA, and Intel GPUs, covering power states, clock gating, and display latency                            |
 | **Power**                | Disable hibernation and fast startup, turn off USB selective suspend, install a custom high-performance power plan, and disable power throttling     |
-| **Bloatware & Services** | Block OEM app reinstall behavior and fine-tune startup types for 200+ Windows services                                                               |
-| **User Experience**      | Remove menu show delays, disable visual effects like taskbar animations and transparency for a snappier feel                                         |
-| **AI**                   | Disable Windows Recall snapshots and the Click To Do AI overlay (Windows 11)                                                                         |
+| **Bloatware & Services** | Block OEM app reinstall behavior, fine-tune startup types for 200+ Windows services, and disable OneDrive without uninstalling it                    |
+| **User Experience**      | Remove menu show delays, disable visual effects like taskbar animations and transparency for a snappier feel, and keep Windows Update from replacing your drivers |
+| **AI**                   | Disable Windows Recall snapshots, the Click To Do AI overlay, and the AI features in Paint and Notepad (Windows 11)                                   |
 
 > [!NOTE]
 > The optimizations here are researched from well-known tools with large user bases, nothing is AI-generated or blindly added. Every tweak is chosen for real-world impact.

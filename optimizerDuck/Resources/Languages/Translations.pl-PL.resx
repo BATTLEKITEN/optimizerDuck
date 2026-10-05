@@ -2721,4 +2721,40 @@ Kody wyjścia: 0 sukces, 1 błędy lub wykryte cofnięte optymalizacje, 2 błąd
   <data name="Optimizer.Preview.Failed.Title" xml:space="preserve">
     <value>Nie udało się wyświetlić podglądu zmian</value>
   </data>
+  <data name="Optimizer.AI.DisablePaintAI.Name" xml:space="preserve">
+    <value>Wyłącz AI w Paint</value>
+  </data>
+  <data name="Optimizer.AI.DisablePaintAI.ShortDescription" xml:space="preserve">
+    <value>Wyłącza w Paint funkcje Cocreator, Image Creator, generatywne wypełnianie i generatywne wymazywanie za pomocą oficjalnych zasad Microsoftu.</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.Name" xml:space="preserve">
+    <value>Wyłącz AI w Notatniku</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.ShortDescription" xml:space="preserve">
+    <value>Usuwa z Notatnika funkcje Przepisz, Podsumuj i inne funkcje AI za pomocą udokumentowanych zasad.</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.Name" xml:space="preserve">
+    <value>Zatrzymaj działanie Microsoft Edge w tle</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.ShortDescription" xml:space="preserve">
+    <value>Wyłącza przyspieszanie uruchamiania, które ładuje Edge przy logowaniu, oraz tryb w tle, który utrzymuje go po zamknięciu. Oszczędza RAM, nawet jeśli nie otwierasz Edge.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.Name" xml:space="preserve">
+    <value>Wyłącz pasek boczny, zakupy i zbieranie danych w Edge</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.ShortDescription" xml:space="preserve">
+    <value>Za pomocą zasad Edge ukrywa pasek boczny (wraz z Copilotem), wyłącza asystenta zakupów i rekomendacje oraz zatrzymuje raporty personalizacji i opcjonalne dane diagnostyczne.</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.Name" xml:space="preserve">
+    <value>Wyklucz sterowniki z Windows Update</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.ShortDescription" xml:space="preserve">
+    <value>Zapobiega zastępowaniu przez Windows Update sterowników zainstalowanych samodzielnie, np. sterownika GPU lub audio od producenta. Sterowniki aktualizujesz wtedy sam.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.Name" xml:space="preserve">
+    <value>Wyłącz OneDrive</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.ShortDescription" xml:space="preserve">
+    <value>Zatrzymuje uruchamianie i synchronizację OneDrive oraz usuwa go z panelu bocznego Eksploratora plików. Pliki w folderze OneDrive zostają na dysku, nic nie jest odinstalowywane.</value>
+  </data>
 </root>

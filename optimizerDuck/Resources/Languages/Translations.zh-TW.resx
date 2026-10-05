@@ -2716,4 +2716,40 @@
   <data name="Optimizer.Preview.Failed.Title" xml:space="preserve">
     <value>無法預覽變更</value>
   </data>
+  <data name="Optimizer.AI.DisablePaintAI.Name" xml:space="preserve">
+    <value>停用小畫家中的 AI</value>
+  </data>
+  <data name="Optimizer.AI.DisablePaintAI.ShortDescription" xml:space="preserve">
+    <value>透過 Microsoft 官方原則關閉小畫家中的 Cocreator、Image Creator、生成式填滿與生成式清除。</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.Name" xml:space="preserve">
+    <value>停用記事本中的 AI</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.ShortDescription" xml:space="preserve">
+    <value>使用官方原則移除記事本中的重寫、摘要等 AI 功能。</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.Name" xml:space="preserve">
+    <value>阻止 Microsoft Edge 在背景執行</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.ShortDescription" xml:space="preserve">
+    <value>關閉在登入時預先載入 Edge 的啟動加速，以及關閉視窗後仍持續執行的背景模式。即使從不開啟 Edge 也能節省記憶體。</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.Name" xml:space="preserve">
+    <value>關閉 Edge 側邊欄、購物與資料收集</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.ShortDescription" xml:space="preserve">
+    <value>透過 Edge 原則隱藏側邊欄（及其中的 Copilot），關閉購物助理與建議，並停止個人化報告與選用診斷資料。</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.Name" xml:space="preserve">
+    <value>從 Windows Update 排除驅動程式</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.ShortDescription" xml:space="preserve">
+    <value>防止 Windows Update 取代你自行安裝的驅動程式，例如廠商提供的 GPU 或音訊驅動程式。之後需自行更新驅動程式。</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.Name" xml:space="preserve">
+    <value>停用 OneDrive</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.ShortDescription" xml:space="preserve">
+    <value>阻止 OneDrive 啟動與同步，並將其從檔案總管側邊欄移除。OneDrive 資料夾中的檔案仍保留在磁碟上，不會解除安裝任何項目。</value>
+  </data>
 </root>

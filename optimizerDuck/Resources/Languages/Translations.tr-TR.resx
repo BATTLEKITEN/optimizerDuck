@@ -2712,4 +2712,40 @@ Seçenekler:
   <data name="Optimizer.Preview.Failed.Title" xml:space="preserve">
     <value>Değişiklikler önizlenemedi</value>
   </data>
+  <data name="Optimizer.AI.DisablePaintAI.Name" xml:space="preserve">
+    <value>Paint’te yapay zekâyı kapat</value>
+  </data>
+  <data name="Optimizer.AI.DisablePaintAI.ShortDescription" xml:space="preserve">
+    <value>Paint’teki Cocreator, Image Creator, üretken dolgu ve üretken silme özelliklerini Microsoft’un resmi ilkeleriyle kapatır.</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.Name" xml:space="preserve">
+    <value>Not Defteri’nde yapay zekâyı kapat</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.ShortDescription" xml:space="preserve">
+    <value>Belgelenmiş ilkeyle Not Defteri’nden Yeniden Yaz, Özetle ve diğer yapay zekâ özelliklerini kaldırır.</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.Name" xml:space="preserve">
+    <value>Microsoft Edge’in arka planda çalışmasını durdur</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.ShortDescription" xml:space="preserve">
+    <value>Oturum açılırken Edge’i önceden yükleyen başlangıç hızlandırmayı ve kapatıldıktan sonra çalışmaya devam ettiren arka plan modunu kapatır. Edge’i hiç açmasanız bile RAM kazandırır.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.Name" xml:space="preserve">
+    <value>Edge kenar çubuğunu, alışverişi ve veri toplamayı kapat</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.ShortDescription" xml:space="preserve">
+    <value>Edge ilkeleriyle kenar çubuğunu (ve içindeki Copilot’u) gizler, alışveriş yardımcısını ve önerileri kapatır, kişiselleştirme raporlarını ve isteğe bağlı tanılama verilerini durdurur.</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.Name" xml:space="preserve">
+    <value>Sürücüleri Windows Update’ten hariç tut</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.ShortDescription" xml:space="preserve">
+    <value>Windows Update’in kendi yüklediğiniz sürücüleri (örneğin üreticinin GPU veya ses sürücüsü) değiştirmesini engeller. Sürücüleri bundan sonra kendiniz güncellersiniz.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.Name" xml:space="preserve">
+    <value>OneDrive’ı devre dışı bırak</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.ShortDescription" xml:space="preserve">
+    <value>OneDrive’ın başlamasını ve eşitlemesini durdurur, Dosya Gezgini kenar çubuğundan kaldırır. OneDrive klasöründeki dosyalar diskte kalır; hiçbir şey kaldırılmaz.</value>
+  </data>
 </root>

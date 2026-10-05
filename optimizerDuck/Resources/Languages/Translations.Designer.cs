@@ -7903,5 +7903,113 @@ namespace optimizerDuck.Resources.Languages {
                 return ResourceManager.GetString("Optimizer.Preview.Failed.Title", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Disable AI in Paint.
+        /// </summary>
+        internal static string Optimizer_AI_DisablePaintAI_Name {
+            get {
+                return ResourceManager.GetString("Optimizer.AI.DisablePaintAI.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Turns off Cocreator, Image Creator, generative fill and generative erase in Paint through Microsoft’....
+        /// </summary>
+        internal static string Optimizer_AI_DisablePaintAI_ShortDescription {
+            get {
+                return ResourceManager.GetString("Optimizer.AI.DisablePaintAI.ShortDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Disable AI in Notepad.
+        /// </summary>
+        internal static string Optimizer_AI_DisableNotepadAI_Name {
+            get {
+                return ResourceManager.GetString("Optimizer.AI.DisableNotepadAI.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Removes Rewrite, Summarize and the other AI features from Notepad using its documented policy..
+        /// </summary>
+        internal static string Optimizer_AI_DisableNotepadAI_ShortDescription {
+            get {
+                return ResourceManager.GetString("Optimizer.AI.DisableNotepadAI.ShortDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Stop Microsoft Edge running in the background.
+        /// </summary>
+        internal static string Optimizer_Performance_DisableEdgeBackgroundRunning_Name {
+            get {
+                return ResourceManager.GetString("Optimizer.Performance.DisableEdgeBackgroundRunning.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Turns off startup boost, which preloads Edge at sign-in, and background mode, which keeps it running....
+        /// </summary>
+        internal static string Optimizer_Performance_DisableEdgeBackgroundRunning_ShortDescription {
+            get {
+                return ResourceManager.GetString("Optimizer.Performance.DisableEdgeBackgroundRunning.ShortDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Turn off Edge sidebar, shopping and data collection.
+        /// </summary>
+        internal static string Optimizer_SecurityAndPrivacy_DisableEdgeExtras_Name {
+            get {
+                return ResourceManager.GetString("Optimizer.SecurityAndPrivacy.DisableEdgeExtras.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Uses Edge policies to hide the sidebar (and Copilot in it), turn off the shopping assistant and reco....
+        /// </summary>
+        internal static string Optimizer_SecurityAndPrivacy_DisableEdgeExtras_ShortDescription {
+            get {
+                return ResourceManager.GetString("Optimizer.SecurityAndPrivacy.DisableEdgeExtras.ShortDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Exclude drivers from Windows Update.
+        /// </summary>
+        internal static string Optimizer_UserExperience_ExcludeDriversFromWindowsUpdate_Name {
+            get {
+                return ResourceManager.GetString("Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Stops Windows Update from replacing drivers you installed yourself, such as the GPU or audio driver ....
+        /// </summary>
+        internal static string Optimizer_UserExperience_ExcludeDriversFromWindowsUpdate_ShortDescription {
+            get {
+                return ResourceManager.GetString("Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.ShortDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Disable OneDrive.
+        /// </summary>
+        internal static string Optimizer_BloatwareAndServices_DisableOneDrive_Name {
+            get {
+                return ResourceManager.GetString("Optimizer.BloatwareAndServices.DisableOneDrive.Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Stops OneDrive from starting and syncing, and removes it from the File Explorer sidebar. Files alrea....
+        /// </summary>
+        internal static string Optimizer_BloatwareAndServices_DisableOneDrive_ShortDescription {
+            get {
+                return ResourceManager.GetString("Optimizer.BloatwareAndServices.DisableOneDrive.ShortDescription", resourceCulture);
+            }
+        }
     }
 }

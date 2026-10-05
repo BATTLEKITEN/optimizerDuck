@@ -2778,4 +2778,40 @@ Kode keluar: 0 berhasil, 1 ada kegagalan atau optimasi yang dibatalkan, 2 kesala
   <data name="Optimizer.Preview.Failed.Title" xml:space="preserve">
     <value>Tidak dapat menampilkan pratinjau perubahan</value>
   </data>
+  <data name="Optimizer.AI.DisablePaintAI.Name" xml:space="preserve">
+    <value>Nonaktifkan AI di Paint</value>
+  </data>
+  <data name="Optimizer.AI.DisablePaintAI.ShortDescription" xml:space="preserve">
+    <value>Mematikan Cocreator, Image Creator, isian generatif, dan penghapusan generatif di Paint melalui kebijakan resmi Microsoft.</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.Name" xml:space="preserve">
+    <value>Nonaktifkan AI di Notepad</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.ShortDescription" xml:space="preserve">
+    <value>Menghapus Rewrite, Summarize, dan fitur AI lainnya dari Notepad melalui kebijakan resminya.</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.Name" xml:space="preserve">
+    <value>Hentikan Microsoft Edge berjalan di latar belakang</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.ShortDescription" xml:space="preserve">
+    <value>Mematikan startup boost yang memuat Edge saat masuk, serta mode latar belakang yang membuatnya tetap berjalan setelah ditutup. Menghemat RAM meski Anda tidak pernah membuka Edge.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.Name" xml:space="preserve">
+    <value>Matikan sidebar, belanja, dan pengumpulan data Edge</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.ShortDescription" xml:space="preserve">
+    <value>Menggunakan kebijakan Edge untuk menyembunyikan sidebar (dan Copilot di dalamnya), mematikan asisten belanja dan rekomendasi, serta menghentikan laporan personalisasi dan data diagnostik opsional.</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.Name" xml:space="preserve">
+    <value>Kecualikan driver dari Windows Update</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.ShortDescription" xml:space="preserve">
+    <value>Mencegah Windows Update mengganti driver yang Anda pasang sendiri, misalnya driver GPU atau audio dari produsen. Setelah itu Anda memperbarui driver sendiri.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.Name" xml:space="preserve">
+    <value>Nonaktifkan OneDrive</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.ShortDescription" xml:space="preserve">
+    <value>Mencegah OneDrive berjalan dan menyinkronkan, serta menghapusnya dari panel samping File Explorer. File di folder OneDrive tetap ada di disk; tidak ada yang dicopot.</value>
+  </data>
 </root>

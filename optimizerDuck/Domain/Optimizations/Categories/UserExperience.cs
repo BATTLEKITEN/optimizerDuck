@@ -188,4 +188,31 @@ public class UserExperience : LocalizedObject, IOptimizationCategory
             return Task.FromResult(context.Changes.ToApplyResult());
         }
     }
+
+    [Optimization(
+        Id = "F7208D7C-5171-4E17-9F14-1A1A5D770025",
+        Risk = OptimizationRisk.Moderate,
+        Tags = OptimizationTags.System
+    )]
+    public sealed class ExcludeDriversFromWindowsUpdate : BaseOptimization
+    {
+        public override Task<ApplyResult> ApplyAsync(
+            IProgress<ProcessingProgress> progress,
+            OptimizationContext context
+        )
+        {
+            // The documented "Do not include drivers with Windows Updates" policy, so a driver
+            // installed from the vendor (GPU, audio) is not replaced by an older one.
+            RegistryService.Write(
+                context,
+                new RegistryItem(
+                    @"HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate",
+                    "ExcludeWUDriversInQualityUpdate",
+                    1
+                )
+            );
+            context.Logger.LogInformation("Excluded drivers from Windows Update");
+            return Task.FromResult(context.Changes.ToApplyResult());
+        }
+    }
 }

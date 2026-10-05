@@ -2778,4 +2778,40 @@
   <data name="Optimizer.Preview.Failed.Title" xml:space="preserve">
     <value>לא ניתן להציג תצוגה מקדימה של השינויים</value>
   </data>
+  <data name="Optimizer.AI.DisablePaintAI.Name" xml:space="preserve">
+    <value>השבתת AI בצייר</value>
+  </data>
+  <data name="Optimizer.AI.DisablePaintAI.ShortDescription" xml:space="preserve">
+    <value>מכבה את Cocreator,‏ Image Creator, מילוי גנרטיבי ומחיקה גנרטיבית בצייר באמצעות המדיניות הרשמית של Microsoft.</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.Name" xml:space="preserve">
+    <value>השבתת AI בפנקס הרשימות</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.ShortDescription" xml:space="preserve">
+    <value>מסיר את שכתוב, סיכום ושאר תכונות ה-AI מפנקס הרשימות באמצעות המדיניות המתועדת שלו.</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.Name" xml:space="preserve">
+    <value>מניעת ריצה של Microsoft Edge ברקע</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.ShortDescription" xml:space="preserve">
+    <value>מכבה את האצת ההפעלה שטוענת את Edge מראש בכניסה, ואת מצב הרקע שמשאיר אותו פועל אחרי הסגירה. משחרר RAM גם אם אף פעם לא פותחים את Edge.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.Name" xml:space="preserve">
+    <value>כיבוי סרגל הצד, הקניות ואיסוף הנתונים ב-Edge</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.ShortDescription" xml:space="preserve">
+    <value>משתמש במדיניות של Edge כדי להסתיר את סרגל הצד (ואת Copilot שבו), לכבות את עוזר הקניות וההמלצות, ולהפסיק דיווחי התאמה אישית ונתוני אבחון אופציונליים.</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.Name" xml:space="preserve">
+    <value>החרגת מנהלי התקן מ-Windows Update</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.ShortDescription" xml:space="preserve">
+    <value>מונע מ-Windows Update להחליף מנהלי התקן שהתקנת בעצמך, כמו מנהל ההתקן של ה-GPU או השמע מהיצרן. מעכשיו תעדכן מנהלי התקן בעצמך.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.Name" xml:space="preserve">
+    <value>השבתת OneDrive</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.ShortDescription" xml:space="preserve">
+    <value>מונע מ-OneDrive לפעול ולסנכרן ומסיר אותו מסרגל הצד של סייר הקבצים. קבצים שכבר נמצאים בתיקיית OneDrive נשארים בדיסק, ושום דבר לא מוסר.</value>
+  </data>
 </root>
