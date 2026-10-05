@@ -1,6 +1,8 @@
 name: Release
 
 on:
+  push:
+    tags: ['v*']
   release:
     types: [published]
   workflow_dispatch:
@@ -55,6 +57,7 @@ jobs:
         run: |
           $tag = "${{ inputs.tag }}"
           if (-not $tag) { $tag = "${{ github.event.release.tag_name }}" }
+          if (-not $tag -and "${{ github.ref_type }}" -eq "tag") { $tag = "${{ github.ref_name }}" }
           if (-not $tag) {
             $tag = gh release view --repo $env:GITHUB_REPOSITORY --json tagName --jq .tagName
           }
@@ -119,6 +122,7 @@ jobs:
         uses: softprops/action-gh-release@v3
         with:
           tag_name: ${{ steps.get_version.outputs.tag }}
+          generate_release_notes: true
           files: |
             ./optimizerDuck-Windows-x64-${{ steps.get_version.outputs.version }}.exe
             ./optimizerDuck-Windows-x64-${{ steps.get_version.outputs.version }}.exe.sha256
@@ -169,8 +173,14 @@ jobs:
 
       - name: Send webhook notify
         if: steps.verify_asset.outputs.verified == 'true' && inputs.skip_notify != true
+        env:
+          BOTGHOST_ID: ${{ secrets.BOTGHOST_WEBHOOK_RELEASE_EVENT_ID }}
         shell: pwsh
         run: |
+          if (-not $env:BOTGHOST_ID) {
+            Write-Host "No webhook configured, skipping the notification."
+            exit 0
+          }
           $webhookUrl = "https://api.botghost.com/webhook/1124234779194298438/${{ secrets.BOTGHOST_WEBHOOK_RELEASE_EVENT_ID }}"
           $body = @{
             variables = @(
