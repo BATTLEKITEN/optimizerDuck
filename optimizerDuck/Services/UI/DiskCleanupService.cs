@@ -90,6 +90,37 @@ public class DiskCleanupService(ILogger<DiskCleanupService> logger)
             },
             new CleanupItem
             {
+                Id = "DeliveryOptimization",
+                NameKey = "DiskCleanup.Item.DeliveryOptimization",
+                DescriptionKey = "DiskCleanup.Item.DeliveryOptimization.Description",
+                Path = Path.Combine(
+                    windowsDir,
+                    @"ServiceProfiles\NetworkService\AppData\Local",
+                    @"Microsoft\Windows\DeliveryOptimization\Cache"
+                ),
+                Icon = SymbolRegular.CloudArrowDown24,
+            },
+            new CleanupItem
+            {
+                Id = "SystemErrorReports",
+                NameKey = "DiskCleanup.Item.SystemErrorReports",
+                DescriptionKey = "DiskCleanup.Item.SystemErrorReports.Description",
+                Path = Path.Combine(
+                    Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData),
+                    @"Microsoft\Windows\WER"
+                ),
+                Icon = SymbolRegular.DocumentError24,
+            },
+            new CleanupItem
+            {
+                Id = "ShaderCache",
+                NameKey = "DiskCleanup.Item.ShaderCache",
+                DescriptionKey = "DiskCleanup.Item.ShaderCache.Description",
+                Path = Path.Combine(localAppData, "D3DSCache"),
+                Icon = SymbolRegular.Games24,
+            },
+            new CleanupItem
+            {
                 Id = "OldWindowsInstallation",
                 NameKey = "DiskCleanup.Item.OldWindowsInstallation",
                 DescriptionKey = "DiskCleanup.Item.OldWindowsInstallation.Description",

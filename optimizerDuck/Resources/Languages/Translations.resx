@@ -2815,4 +2815,304 @@ Exit codes: 0 success, 1 failures or undone optimizations found, 2 usage or file
   <data name="Optimizer.BloatwareAndServices.DisableOneDrive.ShortDescription" xml:space="preserve">
     <value>Stops OneDrive from starting and syncing, and removes it from the File Explorer sidebar. Files already in your OneDrive folder stay on disk; nothing is uninstalled.</value>
   </data>
+  <data name="Sidebar.Health" xml:space="preserve">
+    <value>System health</value>
+  </data>
+  <data name="Sidebar.ContextMenu" xml:space="preserve">
+    <value>Context menu</value>
+  </data>
+  <data name="Sidebar.OptionalFeatures" xml:space="preserve">
+    <value>Windows features</value>
+  </data>
+  <data name="Sidebar.AppInstaller" xml:space="preserve">
+    <value>Install apps</value>
+  </data>
+  <data name="DiskCleanup.Item.DeliveryOptimization" xml:space="preserve">
+    <value>Delivery Optimization cache</value>
+  </data>
+  <data name="DiskCleanup.Item.DeliveryOptimization.Description" xml:space="preserve">
+    <value>Update files Windows keeps to share with other PCs; safe to remove</value>
+  </data>
+  <data name="DiskCleanup.Item.SystemErrorReports" xml:space="preserve">
+    <value>System error reports</value>
+  </data>
+  <data name="DiskCleanup.Item.SystemErrorReports.Description" xml:space="preserve">
+    <value>Crash and problem reports Windows Error Reporting keeps for all users</value>
+  </data>
+  <data name="DiskCleanup.Item.ShaderCache" xml:space="preserve">
+    <value>DirectX shader cache</value>
+  </data>
+  <data name="DiskCleanup.Item.ShaderCache.Description" xml:space="preserve">
+    <value>Compiled shaders; games rebuild them on next launch, which can fix stutter after a driver update</value>
+  </data>
+  <data name="Health.Header.Title" xml:space="preserve">
+    <value>System health</value>
+  </data>
+  <data name="Health.Header.Description" xml:space="preserve">
+    <value>Security, disks and battery at a glance. Nothing here changes your PC.</value>
+  </data>
+  <data name="Health.Loading" xml:space="preserve">
+    <value>Checking your PC...</value>
+  </data>
+  <data name="Health.Button.Refresh" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="Health.Button.Export" xml:space="preserve">
+    <value>Save report</value>
+  </data>
+  <data name="Health.Button.BatteryReport" xml:space="preserve">
+    <value>Battery report</value>
+  </data>
+  <data name="Health.Export.Failed.Title" xml:space="preserve">
+    <value>Could not save the report</value>
+  </data>
+  <data name="Health.Status.Good" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Health.Status.Info" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="Health.Status.Warning" xml:space="preserve">
+    <value>Attention</value>
+  </data>
+  <data name="Health.Status.Bad" xml:space="preserve">
+    <value>Problem</value>
+  </data>
+  <data name="Health.Status.Unknown" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="Health.Unknown" xml:space="preserve">
+    <value>Windows did not report this.</value>
+  </data>
+  <data name="Health.State.On" xml:space="preserve">
+    <value>On</value>
+  </data>
+  <data name="Health.State.Off" xml:space="preserve">
+    <value>Off</value>
+  </data>
+  <data name="Health.Check.SecureBoot" xml:space="preserve">
+    <value>Secure Boot</value>
+  </data>
+  <data name="Health.SecureBoot.Off" xml:space="preserve">
+    <value>Off. Turn it on in the UEFI settings to block boot-level malware.</value>
+  </data>
+  <data name="Health.SecureBoot.Unsupported" xml:space="preserve">
+    <value>Not available: the PC starts in legacy BIOS mode.</value>
+  </data>
+  <data name="Health.Check.Tpm" xml:space="preserve">
+    <value>TPM</value>
+  </data>
+  <data name="Health.Tpm.Ready" xml:space="preserve">
+    <value>TPM {0} is on and ready.</value>
+  </data>
+  <data name="Health.Tpm.NotReady" xml:space="preserve">
+    <value>TPM {0} is present but off or not ready. Check the UEFI settings.</value>
+  </data>
+  <data name="Health.Tpm.None" xml:space="preserve">
+    <value>No TPM found. Windows 11 and BitLocker need one.</value>
+  </data>
+  <data name="Health.Check.Vbs" xml:space="preserve">
+    <value>Virtualization-based security</value>
+  </data>
+  <data name="Health.Vbs.Running" xml:space="preserve">
+    <value>Running. It protects the system, at a small cost in gaming performance.</value>
+  </data>
+  <data name="Health.Vbs.Enabled" xml:space="preserve">
+    <value>Enabled but not running. A restart or a firmware setting may be missing.</value>
+  </data>
+  <data name="Health.Check.MemoryIntegrity" xml:space="preserve">
+    <value>Memory integrity</value>
+  </data>
+  <data name="Health.Check.Defender" xml:space="preserve">
+    <value>Microsoft Defender</value>
+  </data>
+  <data name="Health.Defender.On" xml:space="preserve">
+    <value>Real-time protection is on and definitions are current.</value>
+  </data>
+  <data name="Health.Defender.Off" xml:space="preserve">
+    <value>Real-time protection is off. Make sure another antivirus protects this PC.</value>
+  </data>
+  <data name="Health.Defender.Old" xml:space="preserve">
+    <value>Definitions are {0} days old. Run Windows Update.</value>
+  </data>
+  <data name="Health.Defender.Unknown" xml:space="preserve">
+    <value>No status from Defender; another antivirus may be in use.</value>
+  </data>
+  <data name="Health.Check.Disk" xml:space="preserve">
+    <value>Disk: {0}</value>
+  </data>
+  <data name="Health.Disk.Healthy" xml:space="preserve">
+    <value>Healthy ({0})</value>
+  </data>
+  <data name="Health.Disk.Warning" xml:space="preserve">
+    <value>Windows reports a warning ({0}). Back up your data.</value>
+  </data>
+  <data name="Health.Disk.Unhealthy" xml:space="preserve">
+    <value>Windows reports this disk as failing ({0}). Back up your data now.</value>
+  </data>
+  <data name="Health.Check.Trim" xml:space="preserve">
+    <value>SSD TRIM</value>
+  </data>
+  <data name="Health.Trim.Off" xml:space="preserve">
+    <value>Off. SSDs slow down over time without it.</value>
+  </data>
+  <data name="Health.Check.FreeSpace" xml:space="preserve">
+    <value>Free space on the system drive</value>
+  </data>
+  <data name="Health.FreeSpace.Value" xml:space="preserve">
+    <value>{0} free of {1} ({2}%)</value>
+  </data>
+  <data name="Health.Check.PendingRestart" xml:space="preserve">
+    <value>Pending restart</value>
+  </data>
+  <data name="Health.PendingRestart.Yes" xml:space="preserve">
+    <value>Windows is waiting for a restart to finish installing updates.</value>
+  </data>
+  <data name="Health.PendingRestart.No" xml:space="preserve">
+    <value>No restart needed.</value>
+  </data>
+  <data name="Health.Check.BootTime" xml:space="preserve">
+    <value>Last boot time</value>
+  </data>
+  <data name="Health.BootTime.Value" xml:space="preserve">
+    <value>{0} s, as measured by Windows</value>
+  </data>
+  <data name="Health.BootTime.Unknown" xml:space="preserve">
+    <value>Windows has not recorded a boot time yet.</value>
+  </data>
+  <data name="Health.Check.Battery" xml:space="preserve">
+    <value>Battery wear</value>
+  </data>
+  <data name="Health.Battery.Value" xml:space="preserve">
+    <value>Holds {0}% of its original capacity.</value>
+  </data>
+  <data name="ContextMenu.Header.Title" xml:space="preserve">
+    <value>Context menu</value>
+  </data>
+  <data name="ContextMenu.Header.Description" xml:space="preserve">
+    <value>Turn off entries that apps add to the right-click menu in File Explorer. Nothing is deleted; turning an entry back on restores it.</value>
+  </data>
+  <data name="ContextMenu.Search" xml:space="preserve">
+    <value>Search entries</value>
+  </data>
+  <data name="ContextMenu.ShowWindows" xml:space="preserve">
+    <value>Show Windows entries</value>
+  </data>
+  <data name="ContextMenu.Loading" xml:space="preserve">
+    <value>Reading context menu entries...</value>
+  </data>
+  <data name="ContextMenu.RestartNeeded" xml:space="preserve">
+    <value>Restart File Explorer to see the change.</value>
+  </data>
+  <data name="ContextMenu.RestartExplorer" xml:space="preserve">
+    <value>Restart File Explorer</value>
+  </data>
+  <data name="ContextMenu.Error.Title" xml:space="preserve">
+    <value>Could not change the entry</value>
+  </data>
+  <data name="ContextMenu.Location.Files" xml:space="preserve">
+    <value>Files</value>
+  </data>
+  <data name="ContextMenu.Location.Folders" xml:space="preserve">
+    <value>Folders</value>
+  </data>
+  <data name="ContextMenu.Location.Background" xml:space="preserve">
+    <value>Folder background</value>
+  </data>
+  <data name="ContextMenu.Location.Drives" xml:space="preserve">
+    <value>Drives</value>
+  </data>
+  <data name="OptionalFeatures.Header.Title" xml:space="preserve">
+    <value>Windows features</value>
+  </data>
+  <data name="OptionalFeatures.Header.Description" xml:space="preserve">
+    <value>Turn optional Windows features on or off, the same as "Turn Windows features on or off". Most changes finish after a restart.</value>
+  </data>
+  <data name="OptionalFeatures.Search" xml:space="preserve">
+    <value>Search features</value>
+  </data>
+  <data name="OptionalFeatures.Loading" xml:space="preserve">
+    <value>Asking Windows for its features...</value>
+  </data>
+  <data name="OptionalFeatures.RestartNeeded" xml:space="preserve">
+    <value>Restart Windows to finish the change.</value>
+  </data>
+  <data name="OptionalFeatures.Error.Title" xml:space="preserve">
+    <value>Could not change the feature</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Microsoft_Hyper_V_All" xml:space="preserve">
+    <value>Hyper-V: run virtual machines. Turning it on can lower gaming performance and conflict with other virtualization apps.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Microsoft_Windows_Subsystem_Linux" xml:space="preserve">
+    <value>Windows Subsystem for Linux (WSL): run Linux tools on Windows.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.VirtualMachinePlatform" xml:space="preserve">
+    <value>Virtual Machine Platform: needed by WSL 2 and Android apps.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Containers_DisposableClientVM" xml:space="preserve">
+    <value>Windows Sandbox: a throwaway desktop for trying unknown programs safely.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.NetFx3" xml:space="preserve">
+    <value>.NET Framework 3.5: needed by some older programs and games.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.SMB1Protocol" xml:space="preserve">
+    <value>SMB 1.0: an outdated, insecure file sharing protocol. Keep it off unless an old device needs it.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.TelnetClient" xml:space="preserve">
+    <value>Telnet client: a command line tool for testing network ports.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Printing_PrintToPDFServices_Features" xml:space="preserve">
+    <value>Microsoft Print to PDF: save anything you can print as a PDF.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.MediaPlayback" xml:space="preserve">
+    <value>Media features: Windows Media Player and media playback components some apps rely on.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Recall" xml:space="preserve">
+    <value>Recall: takes snapshots of your screen to search later. Removing it frees space and keeps your activity private.</value>
+  </data>
+  <data name="AppInstaller.Header.Title" xml:space="preserve">
+    <value>Install apps</value>
+  </data>
+  <data name="AppInstaller.Header.Description" xml:space="preserve">
+    <value>Pick popular apps and install them in one go through winget, Microsoft’s package manager. Apps come from their official sources.</value>
+  </data>
+  <data name="AppInstaller.Install" xml:space="preserve">
+    <value>Install selected ({0})</value>
+  </data>
+  <data name="AppInstaller.Loading" xml:space="preserve">
+    <value>Looking for winget...</value>
+  </data>
+  <data name="AppInstaller.WingetMissing" xml:space="preserve">
+    <value>winget was not found. Install "App Installer" from the Microsoft Store, then come back.</value>
+  </data>
+  <data name="AppInstaller.Progress" xml:space="preserve">
+    <value>Installing {0}...</value>
+  </data>
+  <data name="AppInstaller.Success.Title" xml:space="preserve">
+    <value>Apps installed</value>
+  </data>
+  <data name="AppInstaller.Success.Message" xml:space="preserve">
+    <value>Apps installed or already up to date: {0}</value>
+  </data>
+  <data name="AppInstaller.Error.Title" xml:space="preserve">
+    <value>Some apps could not be installed</value>
+  </data>
+  <data name="AppInstaller.Category.Browsers" xml:space="preserve">
+    <value>Browsers</value>
+  </data>
+  <data name="AppInstaller.Category.Utilities" xml:space="preserve">
+    <value>Utilities</value>
+  </data>
+  <data name="AppInstaller.Category.Media" xml:space="preserve">
+    <value>Media</value>
+  </data>
+  <data name="AppInstaller.Category.Gaming" xml:space="preserve">
+    <value>Gaming</value>
+  </data>
+  <data name="AppInstaller.Category.Development" xml:space="preserve">
+    <value>Development</value>
+  </data>
+  <data name="AppInstaller.Category.Runtimes" xml:space="preserve">
+    <value>Runtimes</value>
+  </data>
 </root>

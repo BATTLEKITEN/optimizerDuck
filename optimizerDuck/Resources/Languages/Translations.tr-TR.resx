@@ -2748,4 +2748,304 @@ Seçenekler:
   <data name="Optimizer.BloatwareAndServices.DisableOneDrive.ShortDescription" xml:space="preserve">
     <value>OneDrive’ın başlamasını ve eşitlemesini durdurur, Dosya Gezgini kenar çubuğundan kaldırır. OneDrive klasöründeki dosyalar diskte kalır; hiçbir şey kaldırılmaz.</value>
   </data>
+  <data name="Sidebar.Health" xml:space="preserve">
+    <value>Sistem durumu</value>
+  </data>
+  <data name="Sidebar.ContextMenu" xml:space="preserve">
+    <value>Bağlam menüsü</value>
+  </data>
+  <data name="Sidebar.OptionalFeatures" xml:space="preserve">
+    <value>Windows özellikleri</value>
+  </data>
+  <data name="Sidebar.AppInstaller" xml:space="preserve">
+    <value>Uygulama yükle</value>
+  </data>
+  <data name="DiskCleanup.Item.DeliveryOptimization" xml:space="preserve">
+    <value>Teslim İyileştirme önbelleği</value>
+  </data>
+  <data name="DiskCleanup.Item.DeliveryOptimization.Description" xml:space="preserve">
+    <value>Windows’un diğer PC’lerle paylaşmak için tuttuğu güncelleme dosyaları; silinmesi güvenlidir</value>
+  </data>
+  <data name="DiskCleanup.Item.SystemErrorReports" xml:space="preserve">
+    <value>Sistem hata raporları</value>
+  </data>
+  <data name="DiskCleanup.Item.SystemErrorReports.Description" xml:space="preserve">
+    <value>Windows Hata Bildirimi’nin tüm kullanıcılar için sakladığı çökme ve sorun raporları</value>
+  </data>
+  <data name="DiskCleanup.Item.ShaderCache" xml:space="preserve">
+    <value>DirectX gölgelendirici önbelleği</value>
+  </data>
+  <data name="DiskCleanup.Item.ShaderCache.Description" xml:space="preserve">
+    <value>Derlenmiş gölgelendiriciler; oyunlar bir sonraki açılışta yeniden oluşturur, sürücü güncellemesinden sonraki takılmaları giderebilir</value>
+  </data>
+  <data name="Health.Header.Title" xml:space="preserve">
+    <value>Sistem durumu</value>
+  </data>
+  <data name="Health.Header.Description" xml:space="preserve">
+    <value>Güvenlik, diskler ve pil tek bakışta. Burada PC’nizde hiçbir şey değiştirilmez.</value>
+  </data>
+  <data name="Health.Loading" xml:space="preserve">
+    <value>PC’niz kontrol ediliyor...</value>
+  </data>
+  <data name="Health.Button.Refresh" xml:space="preserve">
+    <value>Yenile</value>
+  </data>
+  <data name="Health.Button.Export" xml:space="preserve">
+    <value>Raporu kaydet</value>
+  </data>
+  <data name="Health.Button.BatteryReport" xml:space="preserve">
+    <value>Pil raporu</value>
+  </data>
+  <data name="Health.Export.Failed.Title" xml:space="preserve">
+    <value>Rapor kaydedilemedi</value>
+  </data>
+  <data name="Health.Status.Good" xml:space="preserve">
+    <value>İyi</value>
+  </data>
+  <data name="Health.Status.Info" xml:space="preserve">
+    <value>Bilgi</value>
+  </data>
+  <data name="Health.Status.Warning" xml:space="preserve">
+    <value>Dikkat</value>
+  </data>
+  <data name="Health.Status.Bad" xml:space="preserve">
+    <value>Sorun</value>
+  </data>
+  <data name="Health.Status.Unknown" xml:space="preserve">
+    <value>Bilinmiyor</value>
+  </data>
+  <data name="Health.Unknown" xml:space="preserve">
+    <value>Windows bunu bildirmedi.</value>
+  </data>
+  <data name="Health.State.On" xml:space="preserve">
+    <value>Açık</value>
+  </data>
+  <data name="Health.State.Off" xml:space="preserve">
+    <value>Kapalı</value>
+  </data>
+  <data name="Health.Check.SecureBoot" xml:space="preserve">
+    <value>Güvenli Önyükleme</value>
+  </data>
+  <data name="Health.SecureBoot.Off" xml:space="preserve">
+    <value>Kapalı. Önyükleme düzeyindeki kötü amaçlı yazılımları engellemek için UEFI ayarlarından açın.</value>
+  </data>
+  <data name="Health.SecureBoot.Unsupported" xml:space="preserve">
+    <value>Kullanılamıyor: PC eski BIOS modunda başlıyor.</value>
+  </data>
+  <data name="Health.Check.Tpm" xml:space="preserve">
+    <value>TPM</value>
+  </data>
+  <data name="Health.Tpm.Ready" xml:space="preserve">
+    <value>TPM {0} açık ve hazır.</value>
+  </data>
+  <data name="Health.Tpm.NotReady" xml:space="preserve">
+    <value>TPM {0} var ancak kapalı veya hazır değil. UEFI ayarlarını kontrol edin.</value>
+  </data>
+  <data name="Health.Tpm.None" xml:space="preserve">
+    <value>TPM bulunamadı. Windows 11 ve BitLocker için gereklidir.</value>
+  </data>
+  <data name="Health.Check.Vbs" xml:space="preserve">
+    <value>Sanallaştırma tabanlı güvenlik</value>
+  </data>
+  <data name="Health.Vbs.Running" xml:space="preserve">
+    <value>Çalışıyor. Sistemi korur, oyun performansından biraz götürür.</value>
+  </data>
+  <data name="Health.Vbs.Enabled" xml:space="preserve">
+    <value>Etkin ancak çalışmıyor. Yeniden başlatma veya bir donanım yazılımı ayarı eksik olabilir.</value>
+  </data>
+  <data name="Health.Check.MemoryIntegrity" xml:space="preserve">
+    <value>Bellek bütünlüğü</value>
+  </data>
+  <data name="Health.Check.Defender" xml:space="preserve">
+    <value>Microsoft Defender</value>
+  </data>
+  <data name="Health.Defender.On" xml:space="preserve">
+    <value>Gerçek zamanlı koruma açık ve tanımlar güncel.</value>
+  </data>
+  <data name="Health.Defender.Off" xml:space="preserve">
+    <value>Gerçek zamanlı koruma kapalı. Bu PC’yi başka bir antivirüsün koruduğundan emin olun.</value>
+  </data>
+  <data name="Health.Defender.Old" xml:space="preserve">
+    <value>Tanımlar {0} gün önceye ait. Windows Update’i çalıştırın.</value>
+  </data>
+  <data name="Health.Defender.Unknown" xml:space="preserve">
+    <value>Defender’dan durum alınamadı; başka bir antivirüs kullanılıyor olabilir.</value>
+  </data>
+  <data name="Health.Check.Disk" xml:space="preserve">
+    <value>Disk: {0}</value>
+  </data>
+  <data name="Health.Disk.Healthy" xml:space="preserve">
+    <value>Sağlıklı ({0})</value>
+  </data>
+  <data name="Health.Disk.Warning" xml:space="preserve">
+    <value>Windows bir uyarı bildiriyor ({0}). Verilerinizi yedekleyin.</value>
+  </data>
+  <data name="Health.Disk.Unhealthy" xml:space="preserve">
+    <value>Windows bu diskin arızalandığını bildiriyor ({0}). Verilerinizi hemen yedekleyin.</value>
+  </data>
+  <data name="Health.Check.Trim" xml:space="preserve">
+    <value>SSD TRIM</value>
+  </data>
+  <data name="Health.Trim.Off" xml:space="preserve">
+    <value>Kapalı. TRIM olmadan SSD’ler zamanla yavaşlar.</value>
+  </data>
+  <data name="Health.Check.FreeSpace" xml:space="preserve">
+    <value>Sistem sürücüsündeki boş alan</value>
+  </data>
+  <data name="Health.FreeSpace.Value" xml:space="preserve">
+    <value>{1} alanın {0} kadarı boş (%{2})</value>
+  </data>
+  <data name="Health.Check.PendingRestart" xml:space="preserve">
+    <value>Bekleyen yeniden başlatma</value>
+  </data>
+  <data name="Health.PendingRestart.Yes" xml:space="preserve">
+    <value>Windows, güncellemeleri tamamlamak için yeniden başlatma bekliyor.</value>
+  </data>
+  <data name="Health.PendingRestart.No" xml:space="preserve">
+    <value>Yeniden başlatma gerekmiyor.</value>
+  </data>
+  <data name="Health.Check.BootTime" xml:space="preserve">
+    <value>Son önyükleme süresi</value>
+  </data>
+  <data name="Health.BootTime.Value" xml:space="preserve">
+    <value>{0} sn (Windows ölçümü)</value>
+  </data>
+  <data name="Health.BootTime.Unknown" xml:space="preserve">
+    <value>Windows henüz bir önyükleme süresi kaydetmedi.</value>
+  </data>
+  <data name="Health.Check.Battery" xml:space="preserve">
+    <value>Pil yıpranması</value>
+  </data>
+  <data name="Health.Battery.Value" xml:space="preserve">
+    <value>Orijinal kapasitesinin %{0} kadarını tutuyor.</value>
+  </data>
+  <data name="ContextMenu.Header.Title" xml:space="preserve">
+    <value>Bağlam menüsü</value>
+  </data>
+  <data name="ContextMenu.Header.Description" xml:space="preserve">
+    <value>Uygulamaların Dosya Gezgini sağ tık menüsüne eklediği öğeleri kapatın. Hiçbir şey silinmez; yeniden açmak öğeyi geri getirir.</value>
+  </data>
+  <data name="ContextMenu.Search" xml:space="preserve">
+    <value>Öğelerde ara</value>
+  </data>
+  <data name="ContextMenu.ShowWindows" xml:space="preserve">
+    <value>Windows öğelerini göster</value>
+  </data>
+  <data name="ContextMenu.Loading" xml:space="preserve">
+    <value>Bağlam menüsü öğeleri okunuyor...</value>
+  </data>
+  <data name="ContextMenu.RestartNeeded" xml:space="preserve">
+    <value>Değişikliği görmek için Dosya Gezgini’ni yeniden başlatın.</value>
+  </data>
+  <data name="ContextMenu.RestartExplorer" xml:space="preserve">
+    <value>Dosya Gezgini’ni yeniden başlat</value>
+  </data>
+  <data name="ContextMenu.Error.Title" xml:space="preserve">
+    <value>Öğe değiştirilemedi</value>
+  </data>
+  <data name="ContextMenu.Location.Files" xml:space="preserve">
+    <value>Dosyalar</value>
+  </data>
+  <data name="ContextMenu.Location.Folders" xml:space="preserve">
+    <value>Klasörler</value>
+  </data>
+  <data name="ContextMenu.Location.Background" xml:space="preserve">
+    <value>Klasör arka planı</value>
+  </data>
+  <data name="ContextMenu.Location.Drives" xml:space="preserve">
+    <value>Sürücüler</value>
+  </data>
+  <data name="OptionalFeatures.Header.Title" xml:space="preserve">
+    <value>Windows özellikleri</value>
+  </data>
+  <data name="OptionalFeatures.Header.Description" xml:space="preserve">
+    <value>"Windows özelliklerini aç veya kapat" ile aynı şekilde isteğe bağlı özellikleri açıp kapatın. Çoğu değişiklik yeniden başlatmadan sonra tamamlanır.</value>
+  </data>
+  <data name="OptionalFeatures.Search" xml:space="preserve">
+    <value>Özelliklerde ara</value>
+  </data>
+  <data name="OptionalFeatures.Loading" xml:space="preserve">
+    <value>Windows özellikleri alınıyor...</value>
+  </data>
+  <data name="OptionalFeatures.RestartNeeded" xml:space="preserve">
+    <value>Değişikliği tamamlamak için Windows’u yeniden başlatın.</value>
+  </data>
+  <data name="OptionalFeatures.Error.Title" xml:space="preserve">
+    <value>Özellik değiştirilemedi</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Microsoft_Hyper_V_All" xml:space="preserve">
+    <value>Hyper-V: sanal makineler çalıştırır. Açmak oyun performansını düşürebilir ve diğer sanallaştırma uygulamalarıyla çakışabilir.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Microsoft_Windows_Subsystem_Linux" xml:space="preserve">
+    <value>Linux için Windows Alt Sistemi (WSL): Windows’ta Linux araçlarını çalıştırır.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.VirtualMachinePlatform" xml:space="preserve">
+    <value>Sanal Makine Platformu: WSL 2 ve Android uygulamaları için gerekir.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Containers_DisposableClientVM" xml:space="preserve">
+    <value>Windows Sandbox: bilinmeyen programları güvenle denemek için kullan-at bir masaüstü.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.NetFx3" xml:space="preserve">
+    <value>.NET Framework 3.5: bazı eski program ve oyunlar için gerekir.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.SMB1Protocol" xml:space="preserve">
+    <value>SMB 1.0: eski ve güvensiz bir dosya paylaşım protokolü. Eski bir cihaz gerektirmedikçe kapalı tutun.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.TelnetClient" xml:space="preserve">
+    <value>Telnet istemcisi: ağ bağlantı noktalarını test etmek için komut satırı aracı.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Printing_PrintToPDFServices_Features" xml:space="preserve">
+    <value>Microsoft Print to PDF: yazdırılabilen her şeyi PDF olarak kaydeder.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.MediaPlayback" xml:space="preserve">
+    <value>Medya özellikleri: Windows Media Player ve bazı uygulamaların kullandığı oynatma bileşenleri.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Recall" xml:space="preserve">
+    <value>Recall: daha sonra aramak için ekran görüntüleri alır. Kaldırmak yer açar ve etkinliğinizi gizli tutar.</value>
+  </data>
+  <data name="AppInstaller.Header.Title" xml:space="preserve">
+    <value>Uygulama yükle</value>
+  </data>
+  <data name="AppInstaller.Header.Description" xml:space="preserve">
+    <value>Popüler uygulamaları seçip Microsoft’un paket yöneticisi winget ile tek seferde yükleyin. Uygulamalar resmi kaynaklarından gelir.</value>
+  </data>
+  <data name="AppInstaller.Install" xml:space="preserve">
+    <value>Seçilenleri yükle ({0})</value>
+  </data>
+  <data name="AppInstaller.Loading" xml:space="preserve">
+    <value>winget aranıyor...</value>
+  </data>
+  <data name="AppInstaller.WingetMissing" xml:space="preserve">
+    <value>winget bulunamadı. Microsoft Store’dan "Uygulama Yükleyicisi"ni yükleyip geri dönün.</value>
+  </data>
+  <data name="AppInstaller.Progress" xml:space="preserve">
+    <value>{0} yükleniyor...</value>
+  </data>
+  <data name="AppInstaller.Success.Title" xml:space="preserve">
+    <value>Uygulamalar yüklendi</value>
+  </data>
+  <data name="AppInstaller.Success.Message" xml:space="preserve">
+    <value>Yüklenen veya zaten güncel: {0}</value>
+  </data>
+  <data name="AppInstaller.Error.Title" xml:space="preserve">
+    <value>Bazı uygulamalar yüklenemedi</value>
+  </data>
+  <data name="AppInstaller.Category.Browsers" xml:space="preserve">
+    <value>Tarayıcılar</value>
+  </data>
+  <data name="AppInstaller.Category.Utilities" xml:space="preserve">
+    <value>Yardımcı araçlar</value>
+  </data>
+  <data name="AppInstaller.Category.Media" xml:space="preserve">
+    <value>Medya</value>
+  </data>
+  <data name="AppInstaller.Category.Gaming" xml:space="preserve">
+    <value>Oyun</value>
+  </data>
+  <data name="AppInstaller.Category.Development" xml:space="preserve">
+    <value>Geliştirme</value>
+  </data>
+  <data name="AppInstaller.Category.Runtimes" xml:space="preserve">
+    <value>Çalışma zamanları</value>
+  </data>
 </root>

@@ -2765,4 +2765,304 @@ Codici di uscita: 0 riuscito, 1 errori od ottimizzazioni annullate trovate, 2 er
   <data name="Optimizer.BloatwareAndServices.DisableOneDrive.ShortDescription" xml:space="preserve">
     <value>Impedisce a OneDrive di avviarsi e sincronizzare e lo rimuove dal riquadro di spostamento di Esplora file. I file già nella cartella OneDrive restano sul disco; non viene disinstallato nulla.</value>
   </data>
+  <data name="Sidebar.Health" xml:space="preserve">
+    <value>Stato del sistema</value>
+  </data>
+  <data name="Sidebar.ContextMenu" xml:space="preserve">
+    <value>Menu contestuale</value>
+  </data>
+  <data name="Sidebar.OptionalFeatures" xml:space="preserve">
+    <value>Funzionalità di Windows</value>
+  </data>
+  <data name="Sidebar.AppInstaller" xml:space="preserve">
+    <value>Installa app</value>
+  </data>
+  <data name="DiskCleanup.Item.DeliveryOptimization" xml:space="preserve">
+    <value>Cache di Ottimizzazione recapito</value>
+  </data>
+  <data name="DiskCleanup.Item.DeliveryOptimization.Description" xml:space="preserve">
+    <value>File di aggiornamento che Windows conserva per condividerli con altri PC; eliminabili senza rischi</value>
+  </data>
+  <data name="DiskCleanup.Item.SystemErrorReports" xml:space="preserve">
+    <value>Segnalazioni errori di sistema</value>
+  </data>
+  <data name="DiskCleanup.Item.SystemErrorReports.Description" xml:space="preserve">
+    <value>Report di arresti anomali e problemi conservati da Segnalazione errori Windows per tutti gli utenti</value>
+  </data>
+  <data name="DiskCleanup.Item.ShaderCache" xml:space="preserve">
+    <value>Cache shader DirectX</value>
+  </data>
+  <data name="DiskCleanup.Item.ShaderCache.Description" xml:space="preserve">
+    <value>Shader compilati; i giochi li ricreano al successivo avvio, il che può risolvere gli scatti dopo un aggiornamento dei driver</value>
+  </data>
+  <data name="Health.Header.Title" xml:space="preserve">
+    <value>Stato del sistema</value>
+  </data>
+  <data name="Health.Header.Description" xml:space="preserve">
+    <value>Sicurezza, dischi e batteria a colpo d’occhio. Qui non viene modificato nulla.</value>
+  </data>
+  <data name="Health.Loading" xml:space="preserve">
+    <value>Controllo del PC...</value>
+  </data>
+  <data name="Health.Button.Refresh" xml:space="preserve">
+    <value>Aggiorna</value>
+  </data>
+  <data name="Health.Button.Export" xml:space="preserve">
+    <value>Salva report</value>
+  </data>
+  <data name="Health.Button.BatteryReport" xml:space="preserve">
+    <value>Report batteria</value>
+  </data>
+  <data name="Health.Export.Failed.Title" xml:space="preserve">
+    <value>Impossibile salvare il report</value>
+  </data>
+  <data name="Health.Status.Good" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Health.Status.Info" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="Health.Status.Warning" xml:space="preserve">
+    <value>Attenzione</value>
+  </data>
+  <data name="Health.Status.Bad" xml:space="preserve">
+    <value>Problema</value>
+  </data>
+  <data name="Health.Status.Unknown" xml:space="preserve">
+    <value>Sconosciuto</value>
+  </data>
+  <data name="Health.Unknown" xml:space="preserve">
+    <value>Windows non ha fornito questa informazione.</value>
+  </data>
+  <data name="Health.State.On" xml:space="preserve">
+    <value>Attivo</value>
+  </data>
+  <data name="Health.State.Off" xml:space="preserve">
+    <value>Disattivo</value>
+  </data>
+  <data name="Health.Check.SecureBoot" xml:space="preserve">
+    <value>Avvio protetto</value>
+  </data>
+  <data name="Health.SecureBoot.Off" xml:space="preserve">
+    <value>Disattivo. Attivalo nelle impostazioni UEFI per bloccare il malware all’avvio.</value>
+  </data>
+  <data name="Health.SecureBoot.Unsupported" xml:space="preserve">
+    <value>Non disponibile: il PC si avvia in modalità BIOS legacy.</value>
+  </data>
+  <data name="Health.Check.Tpm" xml:space="preserve">
+    <value>TPM</value>
+  </data>
+  <data name="Health.Tpm.Ready" xml:space="preserve">
+    <value>TPM {0} attivo e pronto.</value>
+  </data>
+  <data name="Health.Tpm.NotReady" xml:space="preserve">
+    <value>TPM {0} presente ma disattivo o non pronto. Controlla le impostazioni UEFI.</value>
+  </data>
+  <data name="Health.Tpm.None" xml:space="preserve">
+    <value>Nessun TPM trovato. Windows 11 e BitLocker ne hanno bisogno.</value>
+  </data>
+  <data name="Health.Check.Vbs" xml:space="preserve">
+    <value>Sicurezza basata sulla virtualizzazione</value>
+  </data>
+  <data name="Health.Vbs.Running" xml:space="preserve">
+    <value>In esecuzione. Protegge il sistema con un piccolo costo in prestazioni nei giochi.</value>
+  </data>
+  <data name="Health.Vbs.Enabled" xml:space="preserve">
+    <value>Abilitata ma non in esecuzione. Potrebbe mancare un riavvio o un’impostazione del firmware.</value>
+  </data>
+  <data name="Health.Check.MemoryIntegrity" xml:space="preserve">
+    <value>Integrità della memoria</value>
+  </data>
+  <data name="Health.Check.Defender" xml:space="preserve">
+    <value>Microsoft Defender</value>
+  </data>
+  <data name="Health.Defender.On" xml:space="preserve">
+    <value>Protezione in tempo reale attiva e definizioni aggiornate.</value>
+  </data>
+  <data name="Health.Defender.Off" xml:space="preserve">
+    <value>La protezione in tempo reale è disattivata. Assicurati che un altro antivirus protegga il PC.</value>
+  </data>
+  <data name="Health.Defender.Old" xml:space="preserve">
+    <value>Le definizioni risalgono a {0} giorni fa. Esegui Windows Update.</value>
+  </data>
+  <data name="Health.Defender.Unknown" xml:space="preserve">
+    <value>Nessuno stato da Defender; potrebbe essere in uso un altro antivirus.</value>
+  </data>
+  <data name="Health.Check.Disk" xml:space="preserve">
+    <value>Disco: {0}</value>
+  </data>
+  <data name="Health.Disk.Healthy" xml:space="preserve">
+    <value>Integro ({0})</value>
+  </data>
+  <data name="Health.Disk.Warning" xml:space="preserve">
+    <value>Windows segnala un avviso ({0}). Esegui un backup dei dati.</value>
+  </data>
+  <data name="Health.Disk.Unhealthy" xml:space="preserve">
+    <value>Windows segnala che questo disco si sta guastando ({0}). Esegui subito un backup.</value>
+  </data>
+  <data name="Health.Check.Trim" xml:space="preserve">
+    <value>TRIM dell’SSD</value>
+  </data>
+  <data name="Health.Trim.Off" xml:space="preserve">
+    <value>Disattivo. Senza TRIM gli SSD rallentano nel tempo.</value>
+  </data>
+  <data name="Health.Check.FreeSpace" xml:space="preserve">
+    <value>Spazio libero sull’unità di sistema</value>
+  </data>
+  <data name="Health.FreeSpace.Value" xml:space="preserve">
+    <value>{0} liberi su {1} ({2}%)</value>
+  </data>
+  <data name="Health.Check.PendingRestart" xml:space="preserve">
+    <value>Riavvio in sospeso</value>
+  </data>
+  <data name="Health.PendingRestart.Yes" xml:space="preserve">
+    <value>Windows attende un riavvio per completare l’installazione degli aggiornamenti.</value>
+  </data>
+  <data name="Health.PendingRestart.No" xml:space="preserve">
+    <value>Nessun riavvio necessario.</value>
+  </data>
+  <data name="Health.Check.BootTime" xml:space="preserve">
+    <value>Durata dell’ultimo avvio</value>
+  </data>
+  <data name="Health.BootTime.Value" xml:space="preserve">
+    <value>{0} s, misurati da Windows</value>
+  </data>
+  <data name="Health.BootTime.Unknown" xml:space="preserve">
+    <value>Windows non ha ancora registrato una durata di avvio.</value>
+  </data>
+  <data name="Health.Check.Battery" xml:space="preserve">
+    <value>Usura della batteria</value>
+  </data>
+  <data name="Health.Battery.Value" xml:space="preserve">
+    <value>Mantiene il {0}% della capacità originale.</value>
+  </data>
+  <data name="ContextMenu.Header.Title" xml:space="preserve">
+    <value>Menu contestuale</value>
+  </data>
+  <data name="ContextMenu.Header.Description" xml:space="preserve">
+    <value>Disattiva le voci che le app aggiungono al menu del tasto destro di Esplora file. Non viene eliminato nulla; riattivandole tornano.</value>
+  </data>
+  <data name="ContextMenu.Search" xml:space="preserve">
+    <value>Cerca voci</value>
+  </data>
+  <data name="ContextMenu.ShowWindows" xml:space="preserve">
+    <value>Mostra voci di Windows</value>
+  </data>
+  <data name="ContextMenu.Loading" xml:space="preserve">
+    <value>Lettura delle voci del menu contestuale...</value>
+  </data>
+  <data name="ContextMenu.RestartNeeded" xml:space="preserve">
+    <value>Riavvia Esplora file per vedere la modifica.</value>
+  </data>
+  <data name="ContextMenu.RestartExplorer" xml:space="preserve">
+    <value>Riavvia Esplora file</value>
+  </data>
+  <data name="ContextMenu.Error.Title" xml:space="preserve">
+    <value>Impossibile modificare la voce</value>
+  </data>
+  <data name="ContextMenu.Location.Files" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="ContextMenu.Location.Folders" xml:space="preserve">
+    <value>Cartelle</value>
+  </data>
+  <data name="ContextMenu.Location.Background" xml:space="preserve">
+    <value>Sfondo cartella</value>
+  </data>
+  <data name="ContextMenu.Location.Drives" xml:space="preserve">
+    <value>Unità</value>
+  </data>
+  <data name="OptionalFeatures.Header.Title" xml:space="preserve">
+    <value>Funzionalità di Windows</value>
+  </data>
+  <data name="OptionalFeatures.Header.Description" xml:space="preserve">
+    <value>Attiva o disattiva le funzionalità facoltative di Windows, come in "Attiva o disattiva funzionalità di Windows". La maggior parte delle modifiche si completa dopo un riavvio.</value>
+  </data>
+  <data name="OptionalFeatures.Search" xml:space="preserve">
+    <value>Cerca funzionalità</value>
+  </data>
+  <data name="OptionalFeatures.Loading" xml:space="preserve">
+    <value>Recupero delle funzionalità da Windows...</value>
+  </data>
+  <data name="OptionalFeatures.RestartNeeded" xml:space="preserve">
+    <value>Riavvia Windows per completare la modifica.</value>
+  </data>
+  <data name="OptionalFeatures.Error.Title" xml:space="preserve">
+    <value>Impossibile modificare la funzionalità</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Microsoft_Hyper_V_All" xml:space="preserve">
+    <value>Hyper-V: esegue macchine virtuali. Può ridurre le prestazioni nei giochi e andare in conflitto con altre app di virtualizzazione.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Microsoft_Windows_Subsystem_Linux" xml:space="preserve">
+    <value>Sottosistema Windows per Linux (WSL): esegue strumenti Linux su Windows.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.VirtualMachinePlatform" xml:space="preserve">
+    <value>Piattaforma macchina virtuale: richiesta da WSL 2 e dalle app Android.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Containers_DisposableClientVM" xml:space="preserve">
+    <value>Windows Sandbox: un desktop usa e getta per provare in sicurezza programmi sconosciuti.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.NetFx3" xml:space="preserve">
+    <value>.NET Framework 3.5: richiesto da alcuni programmi e giochi meno recenti.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.SMB1Protocol" xml:space="preserve">
+    <value>SMB 1.0: protocollo di condivisione obsoleto e non sicuro. Lascialo disattivato a meno che un vecchio dispositivo non lo richieda.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.TelnetClient" xml:space="preserve">
+    <value>Client Telnet: strumento da riga di comando per testare le porte di rete.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Printing_PrintToPDFServices_Features" xml:space="preserve">
+    <value>Microsoft Print to PDF: salva come PDF tutto ciò che si può stampare.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.MediaPlayback" xml:space="preserve">
+    <value>Funzionalità multimediali: Windows Media Player e componenti di riproduzione usati da alcune app.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Recall" xml:space="preserve">
+    <value>Recall: acquisisce istantanee dello schermo per cercarle in seguito. Rimuoverlo libera spazio e protegge la tua attività.</value>
+  </data>
+  <data name="AppInstaller.Header.Title" xml:space="preserve">
+    <value>Installa app</value>
+  </data>
+  <data name="AppInstaller.Header.Description" xml:space="preserve">
+    <value>Scegli app popolari e installale in un colpo solo con winget, il gestore di pacchetti di Microsoft. Le app provengono dalle fonti ufficiali.</value>
+  </data>
+  <data name="AppInstaller.Install" xml:space="preserve">
+    <value>Installa selezionate ({0})</value>
+  </data>
+  <data name="AppInstaller.Loading" xml:space="preserve">
+    <value>Ricerca di winget...</value>
+  </data>
+  <data name="AppInstaller.WingetMissing" xml:space="preserve">
+    <value>winget non trovato. Installa "Programma di installazione app" da Microsoft Store e torna qui.</value>
+  </data>
+  <data name="AppInstaller.Progress" xml:space="preserve">
+    <value>Installazione di {0}...</value>
+  </data>
+  <data name="AppInstaller.Success.Title" xml:space="preserve">
+    <value>App installate</value>
+  </data>
+  <data name="AppInstaller.Success.Message" xml:space="preserve">
+    <value>Installate o già aggiornate: {0}</value>
+  </data>
+  <data name="AppInstaller.Error.Title" xml:space="preserve">
+    <value>Impossibile installare alcune app</value>
+  </data>
+  <data name="AppInstaller.Category.Browsers" xml:space="preserve">
+    <value>Browser</value>
+  </data>
+  <data name="AppInstaller.Category.Utilities" xml:space="preserve">
+    <value>Utilità</value>
+  </data>
+  <data name="AppInstaller.Category.Media" xml:space="preserve">
+    <value>Multimedia</value>
+  </data>
+  <data name="AppInstaller.Category.Gaming" xml:space="preserve">
+    <value>Gaming</value>
+  </data>
+  <data name="AppInstaller.Category.Development" xml:space="preserve">
+    <value>Sviluppo</value>
+  </data>
+  <data name="AppInstaller.Category.Runtimes" xml:space="preserve">
+    <value>Runtime</value>
+  </data>
 </root>

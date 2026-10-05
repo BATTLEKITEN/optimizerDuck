@@ -8011,5 +8011,905 @@ namespace optimizerDuck.Resources.Languages {
                 return ResourceManager.GetString("Optimizer.BloatwareAndServices.DisableOneDrive.ShortDescription", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to System health.
+        /// </summary>
+        internal static string Sidebar_Health {
+            get {
+                return ResourceManager.GetString("Sidebar.Health", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Context menu.
+        /// </summary>
+        internal static string Sidebar_ContextMenu {
+            get {
+                return ResourceManager.GetString("Sidebar.ContextMenu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Windows features.
+        /// </summary>
+        internal static string Sidebar_OptionalFeatures {
+            get {
+                return ResourceManager.GetString("Sidebar.OptionalFeatures", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Install apps.
+        /// </summary>
+        internal static string Sidebar_AppInstaller {
+            get {
+                return ResourceManager.GetString("Sidebar.AppInstaller", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delivery Optimization cache.
+        /// </summary>
+        internal static string DiskCleanup_Item_DeliveryOptimization {
+            get {
+                return ResourceManager.GetString("DiskCleanup.Item.DeliveryOptimization", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Update files Windows keeps to share with other PCs; safe to remove.
+        /// </summary>
+        internal static string DiskCleanup_Item_DeliveryOptimization_Description {
+            get {
+                return ResourceManager.GetString("DiskCleanup.Item.DeliveryOptimization.Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to System error reports.
+        /// </summary>
+        internal static string DiskCleanup_Item_SystemErrorReports {
+            get {
+                return ResourceManager.GetString("DiskCleanup.Item.SystemErrorReports", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Crash and problem reports Windows Error Reporting keeps for all users.
+        /// </summary>
+        internal static string DiskCleanup_Item_SystemErrorReports_Description {
+            get {
+                return ResourceManager.GetString("DiskCleanup.Item.SystemErrorReports.Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DirectX shader cache.
+        /// </summary>
+        internal static string DiskCleanup_Item_ShaderCache {
+            get {
+                return ResourceManager.GetString("DiskCleanup.Item.ShaderCache", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Compiled shaders; games rebuild them on next launch, which can fix stutter after a driver update.
+        /// </summary>
+        internal static string DiskCleanup_Item_ShaderCache_Description {
+            get {
+                return ResourceManager.GetString("DiskCleanup.Item.ShaderCache.Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to System health.
+        /// </summary>
+        internal static string Health_Header_Title {
+            get {
+                return ResourceManager.GetString("Health.Header.Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Security, disks and battery at a glance. Nothing here changes your PC..
+        /// </summary>
+        internal static string Health_Header_Description {
+            get {
+                return ResourceManager.GetString("Health.Header.Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Checking your PC....
+        /// </summary>
+        internal static string Health_Loading {
+            get {
+                return ResourceManager.GetString("Health.Loading", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refresh.
+        /// </summary>
+        internal static string Health_Button_Refresh {
+            get {
+                return ResourceManager.GetString("Health.Button.Refresh", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save report.
+        /// </summary>
+        internal static string Health_Button_Export {
+            get {
+                return ResourceManager.GetString("Health.Button.Export", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Battery report.
+        /// </summary>
+        internal static string Health_Button_BatteryReport {
+            get {
+                return ResourceManager.GetString("Health.Button.BatteryReport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Could not save the report.
+        /// </summary>
+        internal static string Health_Export_Failed_Title {
+            get {
+                return ResourceManager.GetString("Health.Export.Failed.Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OK.
+        /// </summary>
+        internal static string Health_Status_Good {
+            get {
+                return ResourceManager.GetString("Health.Status.Good", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Info.
+        /// </summary>
+        internal static string Health_Status_Info {
+            get {
+                return ResourceManager.GetString("Health.Status.Info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Attention.
+        /// </summary>
+        internal static string Health_Status_Warning {
+            get {
+                return ResourceManager.GetString("Health.Status.Warning", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Problem.
+        /// </summary>
+        internal static string Health_Status_Bad {
+            get {
+                return ResourceManager.GetString("Health.Status.Bad", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unknown.
+        /// </summary>
+        internal static string Health_Status_Unknown {
+            get {
+                return ResourceManager.GetString("Health.Status.Unknown", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Windows did not report this..
+        /// </summary>
+        internal static string Health_Unknown {
+            get {
+                return ResourceManager.GetString("Health.Unknown", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to On.
+        /// </summary>
+        internal static string Health_State_On {
+            get {
+                return ResourceManager.GetString("Health.State.On", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Off.
+        /// </summary>
+        internal static string Health_State_Off {
+            get {
+                return ResourceManager.GetString("Health.State.Off", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Secure Boot.
+        /// </summary>
+        internal static string Health_Check_SecureBoot {
+            get {
+                return ResourceManager.GetString("Health.Check.SecureBoot", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Off. Turn it on in the UEFI settings to block boot-level malware..
+        /// </summary>
+        internal static string Health_SecureBoot_Off {
+            get {
+                return ResourceManager.GetString("Health.SecureBoot.Off", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Not available: the PC starts in legacy BIOS mode..
+        /// </summary>
+        internal static string Health_SecureBoot_Unsupported {
+            get {
+                return ResourceManager.GetString("Health.SecureBoot.Unsupported", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TPM.
+        /// </summary>
+        internal static string Health_Check_Tpm {
+            get {
+                return ResourceManager.GetString("Health.Check.Tpm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TPM {0} is on and ready..
+        /// </summary>
+        internal static string Health_Tpm_Ready {
+            get {
+                return ResourceManager.GetString("Health.Tpm.Ready", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to TPM {0} is present but off or not ready. Check the UEFI settings..
+        /// </summary>
+        internal static string Health_Tpm_NotReady {
+            get {
+                return ResourceManager.GetString("Health.Tpm.NotReady", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No TPM found. Windows 11 and BitLocker need one..
+        /// </summary>
+        internal static string Health_Tpm_None {
+            get {
+                return ResourceManager.GetString("Health.Tpm.None", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Virtualization-based security.
+        /// </summary>
+        internal static string Health_Check_Vbs {
+            get {
+                return ResourceManager.GetString("Health.Check.Vbs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Running. It protects the system, at a small cost in gaming performance..
+        /// </summary>
+        internal static string Health_Vbs_Running {
+            get {
+                return ResourceManager.GetString("Health.Vbs.Running", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enabled but not running. A restart or a firmware setting may be missing..
+        /// </summary>
+        internal static string Health_Vbs_Enabled {
+            get {
+                return ResourceManager.GetString("Health.Vbs.Enabled", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Memory integrity.
+        /// </summary>
+        internal static string Health_Check_MemoryIntegrity {
+            get {
+                return ResourceManager.GetString("Health.Check.MemoryIntegrity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Microsoft Defender.
+        /// </summary>
+        internal static string Health_Check_Defender {
+            get {
+                return ResourceManager.GetString("Health.Check.Defender", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Real-time protection is on and definitions are current..
+        /// </summary>
+        internal static string Health_Defender_On {
+            get {
+                return ResourceManager.GetString("Health.Defender.On", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Real-time protection is off. Make sure another antivirus protects this PC..
+        /// </summary>
+        internal static string Health_Defender_Off {
+            get {
+                return ResourceManager.GetString("Health.Defender.Off", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Definitions are {0} days old. Run Windows Update..
+        /// </summary>
+        internal static string Health_Defender_Old {
+            get {
+                return ResourceManager.GetString("Health.Defender.Old", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No status from Defender; another antivirus may be in use..
+        /// </summary>
+        internal static string Health_Defender_Unknown {
+            get {
+                return ResourceManager.GetString("Health.Defender.Unknown", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Disk: {0}.
+        /// </summary>
+        internal static string Health_Check_Disk {
+            get {
+                return ResourceManager.GetString("Health.Check.Disk", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Healthy ({0}).
+        /// </summary>
+        internal static string Health_Disk_Healthy {
+            get {
+                return ResourceManager.GetString("Health.Disk.Healthy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Windows reports a warning ({0}). Back up your data..
+        /// </summary>
+        internal static string Health_Disk_Warning {
+            get {
+                return ResourceManager.GetString("Health.Disk.Warning", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Windows reports this disk as failing ({0}). Back up your data now..
+        /// </summary>
+        internal static string Health_Disk_Unhealthy {
+            get {
+                return ResourceManager.GetString("Health.Disk.Unhealthy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SSD TRIM.
+        /// </summary>
+        internal static string Health_Check_Trim {
+            get {
+                return ResourceManager.GetString("Health.Check.Trim", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Off. SSDs slow down over time without it..
+        /// </summary>
+        internal static string Health_Trim_Off {
+            get {
+                return ResourceManager.GetString("Health.Trim.Off", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Free space on the system drive.
+        /// </summary>
+        internal static string Health_Check_FreeSpace {
+            get {
+                return ResourceManager.GetString("Health.Check.FreeSpace", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} free of {1} ({2}%).
+        /// </summary>
+        internal static string Health_FreeSpace_Value {
+            get {
+                return ResourceManager.GetString("Health.FreeSpace.Value", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pending restart.
+        /// </summary>
+        internal static string Health_Check_PendingRestart {
+            get {
+                return ResourceManager.GetString("Health.Check.PendingRestart", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Windows is waiting for a restart to finish installing updates..
+        /// </summary>
+        internal static string Health_PendingRestart_Yes {
+            get {
+                return ResourceManager.GetString("Health.PendingRestart.Yes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No restart needed..
+        /// </summary>
+        internal static string Health_PendingRestart_No {
+            get {
+                return ResourceManager.GetString("Health.PendingRestart.No", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Last boot time.
+        /// </summary>
+        internal static string Health_Check_BootTime {
+            get {
+                return ResourceManager.GetString("Health.Check.BootTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} s, as measured by Windows.
+        /// </summary>
+        internal static string Health_BootTime_Value {
+            get {
+                return ResourceManager.GetString("Health.BootTime.Value", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Windows has not recorded a boot time yet..
+        /// </summary>
+        internal static string Health_BootTime_Unknown {
+            get {
+                return ResourceManager.GetString("Health.BootTime.Unknown", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Battery wear.
+        /// </summary>
+        internal static string Health_Check_Battery {
+            get {
+                return ResourceManager.GetString("Health.Check.Battery", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Holds {0}% of its original capacity..
+        /// </summary>
+        internal static string Health_Battery_Value {
+            get {
+                return ResourceManager.GetString("Health.Battery.Value", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Context menu.
+        /// </summary>
+        internal static string ContextMenu_Header_Title {
+            get {
+                return ResourceManager.GetString("ContextMenu.Header.Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Turn off entries that apps add to the right-click menu in File Explorer. Nothing is deleted; turning....
+        /// </summary>
+        internal static string ContextMenu_Header_Description {
+            get {
+                return ResourceManager.GetString("ContextMenu.Header.Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Search entries.
+        /// </summary>
+        internal static string ContextMenu_Search {
+            get {
+                return ResourceManager.GetString("ContextMenu.Search", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Show Windows entries.
+        /// </summary>
+        internal static string ContextMenu_ShowWindows {
+            get {
+                return ResourceManager.GetString("ContextMenu.ShowWindows", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reading context menu entries....
+        /// </summary>
+        internal static string ContextMenu_Loading {
+            get {
+                return ResourceManager.GetString("ContextMenu.Loading", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Restart File Explorer to see the change..
+        /// </summary>
+        internal static string ContextMenu_RestartNeeded {
+            get {
+                return ResourceManager.GetString("ContextMenu.RestartNeeded", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Restart File Explorer.
+        /// </summary>
+        internal static string ContextMenu_RestartExplorer {
+            get {
+                return ResourceManager.GetString("ContextMenu.RestartExplorer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Could not change the entry.
+        /// </summary>
+        internal static string ContextMenu_Error_Title {
+            get {
+                return ResourceManager.GetString("ContextMenu.Error.Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Files.
+        /// </summary>
+        internal static string ContextMenu_Location_Files {
+            get {
+                return ResourceManager.GetString("ContextMenu.Location.Files", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Folders.
+        /// </summary>
+        internal static string ContextMenu_Location_Folders {
+            get {
+                return ResourceManager.GetString("ContextMenu.Location.Folders", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Folder background.
+        /// </summary>
+        internal static string ContextMenu_Location_Background {
+            get {
+                return ResourceManager.GetString("ContextMenu.Location.Background", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Drives.
+        /// </summary>
+        internal static string ContextMenu_Location_Drives {
+            get {
+                return ResourceManager.GetString("ContextMenu.Location.Drives", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Windows features.
+        /// </summary>
+        internal static string OptionalFeatures_Header_Title {
+            get {
+                return ResourceManager.GetString("OptionalFeatures.Header.Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Turn optional Windows features on or off, the same as "Turn Windows features on or off". Most change....
+        /// </summary>
+        internal static string OptionalFeatures_Header_Description {
+            get {
+                return ResourceManager.GetString("OptionalFeatures.Header.Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Search features.
+        /// </summary>
+        internal static string OptionalFeatures_Search {
+            get {
+                return ResourceManager.GetString("OptionalFeatures.Search", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Asking Windows for its features....
+        /// </summary>
+        internal static string OptionalFeatures_Loading {
+            get {
+                return ResourceManager.GetString("OptionalFeatures.Loading", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Restart Windows to finish the change..
+        /// </summary>
+        internal static string OptionalFeatures_RestartNeeded {
+            get {
+                return ResourceManager.GetString("OptionalFeatures.RestartNeeded", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Could not change the feature.
+        /// </summary>
+        internal static string OptionalFeatures_Error_Title {
+            get {
+                return ResourceManager.GetString("OptionalFeatures.Error.Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hyper-V: run virtual machines. Turning it on can lower gaming performance and conflict with other vi....
+        /// </summary>
+        internal static string OptionalFeatures_Feature_Microsoft_Hyper_V_All {
+            get {
+                return ResourceManager.GetString("OptionalFeatures.Feature.Microsoft_Hyper_V_All", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Windows Subsystem for Linux (WSL): run Linux tools on Windows..
+        /// </summary>
+        internal static string OptionalFeatures_Feature_Microsoft_Windows_Subsystem_Linux {
+            get {
+                return ResourceManager.GetString("OptionalFeatures.Feature.Microsoft_Windows_Subsystem_Linux", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Virtual Machine Platform: needed by WSL 2 and Android apps..
+        /// </summary>
+        internal static string OptionalFeatures_Feature_VirtualMachinePlatform {
+            get {
+                return ResourceManager.GetString("OptionalFeatures.Feature.VirtualMachinePlatform", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Windows Sandbox: a throwaway desktop for trying unknown programs safely..
+        /// </summary>
+        internal static string OptionalFeatures_Feature_Containers_DisposableClientVM {
+            get {
+                return ResourceManager.GetString("OptionalFeatures.Feature.Containers_DisposableClientVM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .NET Framework 3.5: needed by some older programs and games..
+        /// </summary>
+        internal static string OptionalFeatures_Feature_NetFx3 {
+            get {
+                return ResourceManager.GetString("OptionalFeatures.Feature.NetFx3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SMB 1.0: an outdated, insecure file sharing protocol. Keep it off unless an old device needs it..
+        /// </summary>
+        internal static string OptionalFeatures_Feature_SMB1Protocol {
+            get {
+                return ResourceManager.GetString("OptionalFeatures.Feature.SMB1Protocol", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Telnet client: a command line tool for testing network ports..
+        /// </summary>
+        internal static string OptionalFeatures_Feature_TelnetClient {
+            get {
+                return ResourceManager.GetString("OptionalFeatures.Feature.TelnetClient", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Microsoft Print to PDF: save anything you can print as a PDF..
+        /// </summary>
+        internal static string OptionalFeatures_Feature_Printing_PrintToPDFServices_Features {
+            get {
+                return ResourceManager.GetString("OptionalFeatures.Feature.Printing_PrintToPDFServices_Features", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Media features: Windows Media Player and media playback components some apps rely on..
+        /// </summary>
+        internal static string OptionalFeatures_Feature_MediaPlayback {
+            get {
+                return ResourceManager.GetString("OptionalFeatures.Feature.MediaPlayback", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Recall: takes snapshots of your screen to search later. Removing it frees space and keeps your activ....
+        /// </summary>
+        internal static string OptionalFeatures_Feature_Recall {
+            get {
+                return ResourceManager.GetString("OptionalFeatures.Feature.Recall", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Install apps.
+        /// </summary>
+        internal static string AppInstaller_Header_Title {
+            get {
+                return ResourceManager.GetString("AppInstaller.Header.Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pick popular apps and install them in one go through winget, Microsoft’s package manager. Apps come ....
+        /// </summary>
+        internal static string AppInstaller_Header_Description {
+            get {
+                return ResourceManager.GetString("AppInstaller.Header.Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Install selected ({0}).
+        /// </summary>
+        internal static string AppInstaller_Install {
+            get {
+                return ResourceManager.GetString("AppInstaller.Install", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Looking for winget....
+        /// </summary>
+        internal static string AppInstaller_Loading {
+            get {
+                return ResourceManager.GetString("AppInstaller.Loading", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to winget was not found. Install "App Installer" from the Microsoft Store, then come back..
+        /// </summary>
+        internal static string AppInstaller_WingetMissing {
+            get {
+                return ResourceManager.GetString("AppInstaller.WingetMissing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Installing {0}....
+        /// </summary>
+        internal static string AppInstaller_Progress {
+            get {
+                return ResourceManager.GetString("AppInstaller.Progress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Apps installed.
+        /// </summary>
+        internal static string AppInstaller_Success_Title {
+            get {
+                return ResourceManager.GetString("AppInstaller.Success.Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Apps installed or already up to date: {0}.
+        /// </summary>
+        internal static string AppInstaller_Success_Message {
+            get {
+                return ResourceManager.GetString("AppInstaller.Success.Message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Some apps could not be installed.
+        /// </summary>
+        internal static string AppInstaller_Error_Title {
+            get {
+                return ResourceManager.GetString("AppInstaller.Error.Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Browsers.
+        /// </summary>
+        internal static string AppInstaller_Category_Browsers {
+            get {
+                return ResourceManager.GetString("AppInstaller.Category.Browsers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Utilities.
+        /// </summary>
+        internal static string AppInstaller_Category_Utilities {
+            get {
+                return ResourceManager.GetString("AppInstaller.Category.Utilities", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Media.
+        /// </summary>
+        internal static string AppInstaller_Category_Media {
+            get {
+                return ResourceManager.GetString("AppInstaller.Category.Media", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Gaming.
+        /// </summary>
+        internal static string AppInstaller_Category_Gaming {
+            get {
+                return ResourceManager.GetString("AppInstaller.Category.Gaming", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Development.
+        /// </summary>
+        internal static string AppInstaller_Category_Development {
+            get {
+                return ResourceManager.GetString("AppInstaller.Category.Development", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Runtimes.
+        /// </summary>
+        internal static string AppInstaller_Category_Runtimes {
+            get {
+                return ResourceManager.GetString("AppInstaller.Category.Runtimes", resourceCulture);
+            }
+        }
     }
 }

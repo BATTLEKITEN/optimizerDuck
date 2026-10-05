@@ -2749,4 +2749,304 @@
   <data name="Optimizer.BloatwareAndServices.DisableOneDrive.ShortDescription" xml:space="preserve">
     <value>OneDrive の起動と同期を止め、エクスプローラーのナビゲーション ウィンドウから削除します。OneDrive フォルダー内のファイルはそのまま残り、アンインストールは行いません。</value>
   </data>
+  <data name="Sidebar.Health" xml:space="preserve">
+    <value>システムの状態</value>
+  </data>
+  <data name="Sidebar.ContextMenu" xml:space="preserve">
+    <value>コンテキスト メニュー</value>
+  </data>
+  <data name="Sidebar.OptionalFeatures" xml:space="preserve">
+    <value>Windows の機能</value>
+  </data>
+  <data name="Sidebar.AppInstaller" xml:space="preserve">
+    <value>アプリのインストール</value>
+  </data>
+  <data name="DiskCleanup.Item.DeliveryOptimization" xml:space="preserve">
+    <value>配信の最適化キャッシュ</value>
+  </data>
+  <data name="DiskCleanup.Item.DeliveryOptimization.Description" xml:space="preserve">
+    <value>他の PC と共有するために Windows が保持している更新ファイル。削除しても安全です</value>
+  </data>
+  <data name="DiskCleanup.Item.SystemErrorReports" xml:space="preserve">
+    <value>システム エラー レポート</value>
+  </data>
+  <data name="DiskCleanup.Item.SystemErrorReports.Description" xml:space="preserve">
+    <value>Windows エラー報告がすべてのユーザー向けに保存しているクラッシュと問題のレポート</value>
+  </data>
+  <data name="DiskCleanup.Item.ShaderCache" xml:space="preserve">
+    <value>DirectX シェーダー キャッシュ</value>
+  </data>
+  <data name="DiskCleanup.Item.ShaderCache.Description" xml:space="preserve">
+    <value>コンパイル済みシェーダーです。ゲームの次回起動時に再生成され、ドライバー更新後のカクつきが直ることがあります</value>
+  </data>
+  <data name="Health.Header.Title" xml:space="preserve">
+    <value>システムの状態</value>
+  </data>
+  <data name="Health.Header.Description" xml:space="preserve">
+    <value>セキュリティ、ディスク、バッテリーの状態をひと目で確認できます。ここでは PC に変更を加えません。</value>
+  </data>
+  <data name="Health.Loading" xml:space="preserve">
+    <value>PC をチェックしています...</value>
+  </data>
+  <data name="Health.Button.Refresh" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="Health.Button.Export" xml:space="preserve">
+    <value>レポートを保存</value>
+  </data>
+  <data name="Health.Button.BatteryReport" xml:space="preserve">
+    <value>バッテリー レポート</value>
+  </data>
+  <data name="Health.Export.Failed.Title" xml:space="preserve">
+    <value>レポートを保存できませんでした</value>
+  </data>
+  <data name="Health.Status.Good" xml:space="preserve">
+    <value>正常</value>
+  </data>
+  <data name="Health.Status.Info" xml:space="preserve">
+    <value>情報</value>
+  </data>
+  <data name="Health.Status.Warning" xml:space="preserve">
+    <value>注意</value>
+  </data>
+  <data name="Health.Status.Bad" xml:space="preserve">
+    <value>問題あり</value>
+  </data>
+  <data name="Health.Status.Unknown" xml:space="preserve">
+    <value>不明</value>
+  </data>
+  <data name="Health.Unknown" xml:space="preserve">
+    <value>Windows から情報を取得できませんでした。</value>
+  </data>
+  <data name="Health.State.On" xml:space="preserve">
+    <value>オン</value>
+  </data>
+  <data name="Health.State.Off" xml:space="preserve">
+    <value>オフ</value>
+  </data>
+  <data name="Health.Check.SecureBoot" xml:space="preserve">
+    <value>セキュア ブート</value>
+  </data>
+  <data name="Health.SecureBoot.Off" xml:space="preserve">
+    <value>オフです。UEFI 設定でオンにすると、起動時のマルウェアを防げます。</value>
+  </data>
+  <data name="Health.SecureBoot.Unsupported" xml:space="preserve">
+    <value>利用不可: PC はレガシ BIOS モードで起動しています。</value>
+  </data>
+  <data name="Health.Check.Tpm" xml:space="preserve">
+    <value>TPM</value>
+  </data>
+  <data name="Health.Tpm.Ready" xml:space="preserve">
+    <value>TPM {0} は有効で使用可能です。</value>
+  </data>
+  <data name="Health.Tpm.NotReady" xml:space="preserve">
+    <value>TPM {0} はありますが、無効か準備ができていません。UEFI 設定を確認してください。</value>
+  </data>
+  <data name="Health.Tpm.None" xml:space="preserve">
+    <value>TPM が見つかりません。Windows 11 と BitLocker には TPM が必要です。</value>
+  </data>
+  <data name="Health.Check.Vbs" xml:space="preserve">
+    <value>仮想化ベースのセキュリティ</value>
+  </data>
+  <data name="Health.Vbs.Running" xml:space="preserve">
+    <value>実行中です。システムを保護しますが、ゲーム性能はわずかに低下します。</value>
+  </data>
+  <data name="Health.Vbs.Enabled" xml:space="preserve">
+    <value>有効ですが実行されていません。再起動またはファームウェア設定が必要な場合があります。</value>
+  </data>
+  <data name="Health.Check.MemoryIntegrity" xml:space="preserve">
+    <value>メモリ整合性</value>
+  </data>
+  <data name="Health.Check.Defender" xml:space="preserve">
+    <value>Microsoft Defender</value>
+  </data>
+  <data name="Health.Defender.On" xml:space="preserve">
+    <value>リアルタイム保護がオンで、定義ファイルは最新です。</value>
+  </data>
+  <data name="Health.Defender.Off" xml:space="preserve">
+    <value>リアルタイム保護がオフです。別のウイルス対策ソフトがこの PC を保護しているか確認してください。</value>
+  </data>
+  <data name="Health.Defender.Old" xml:space="preserve">
+    <value>定義ファイルが {0} 日前のものです。Windows Update を実行してください。</value>
+  </data>
+  <data name="Health.Defender.Unknown" xml:space="preserve">
+    <value>Defender から状態を取得できません。別のウイルス対策ソフトを使用している可能性があります。</value>
+  </data>
+  <data name="Health.Check.Disk" xml:space="preserve">
+    <value>ディスク: {0}</value>
+  </data>
+  <data name="Health.Disk.Healthy" xml:space="preserve">
+    <value>正常 ({0})</value>
+  </data>
+  <data name="Health.Disk.Warning" xml:space="preserve">
+    <value>Windows が警告を報告しています ({0})。データをバックアップしてください。</value>
+  </data>
+  <data name="Health.Disk.Unhealthy" xml:space="preserve">
+    <value>Windows がこのディスクの故障を報告しています ({0})。今すぐデータをバックアップしてください。</value>
+  </data>
+  <data name="Health.Check.Trim" xml:space="preserve">
+    <value>SSD TRIM</value>
+  </data>
+  <data name="Health.Trim.Off" xml:space="preserve">
+    <value>オフです。TRIM がないと SSD は徐々に遅くなります。</value>
+  </data>
+  <data name="Health.Check.FreeSpace" xml:space="preserve">
+    <value>システム ドライブの空き容量</value>
+  </data>
+  <data name="Health.FreeSpace.Value" xml:space="preserve">
+    <value>{1} 中 {0} が空き ({2}%)</value>
+  </data>
+  <data name="Health.Check.PendingRestart" xml:space="preserve">
+    <value>保留中の再起動</value>
+  </data>
+  <data name="Health.PendingRestart.Yes" xml:space="preserve">
+    <value>更新プログラムのインストールを完了するために再起動が必要です。</value>
+  </data>
+  <data name="Health.PendingRestart.No" xml:space="preserve">
+    <value>再起動は不要です。</value>
+  </data>
+  <data name="Health.Check.BootTime" xml:space="preserve">
+    <value>前回の起動時間</value>
+  </data>
+  <data name="Health.BootTime.Value" xml:space="preserve">
+    <value>{0} 秒 (Windows の計測値)</value>
+  </data>
+  <data name="Health.BootTime.Unknown" xml:space="preserve">
+    <value>Windows はまだ起動時間を記録していません。</value>
+  </data>
+  <data name="Health.Check.Battery" xml:space="preserve">
+    <value>バッテリーの劣化</value>
+  </data>
+  <data name="Health.Battery.Value" xml:space="preserve">
+    <value>元の容量の {0}% を保持しています。</value>
+  </data>
+  <data name="ContextMenu.Header.Title" xml:space="preserve">
+    <value>コンテキスト メニュー</value>
+  </data>
+  <data name="ContextMenu.Header.Description" xml:space="preserve">
+    <value>アプリがエクスプローラーの右クリック メニューに追加した項目をオフにします。削除はされず、オンに戻せば元どおりになります。</value>
+  </data>
+  <data name="ContextMenu.Search" xml:space="preserve">
+    <value>項目を検索</value>
+  </data>
+  <data name="ContextMenu.ShowWindows" xml:space="preserve">
+    <value>Windows の項目を表示</value>
+  </data>
+  <data name="ContextMenu.Loading" xml:space="preserve">
+    <value>コンテキスト メニューの項目を読み込んでいます...</value>
+  </data>
+  <data name="ContextMenu.RestartNeeded" xml:space="preserve">
+    <value>変更を反映するにはエクスプローラーを再起動してください。</value>
+  </data>
+  <data name="ContextMenu.RestartExplorer" xml:space="preserve">
+    <value>エクスプローラーを再起動</value>
+  </data>
+  <data name="ContextMenu.Error.Title" xml:space="preserve">
+    <value>項目を変更できませんでした</value>
+  </data>
+  <data name="ContextMenu.Location.Files" xml:space="preserve">
+    <value>ファイル</value>
+  </data>
+  <data name="ContextMenu.Location.Folders" xml:space="preserve">
+    <value>フォルダー</value>
+  </data>
+  <data name="ContextMenu.Location.Background" xml:space="preserve">
+    <value>フォルダーの背景</value>
+  </data>
+  <data name="ContextMenu.Location.Drives" xml:space="preserve">
+    <value>ドライブ</value>
+  </data>
+  <data name="OptionalFeatures.Header.Title" xml:space="preserve">
+    <value>Windows の機能</value>
+  </data>
+  <data name="OptionalFeatures.Header.Description" xml:space="preserve">
+    <value>「Windows の機能の有効化または無効化」と同じように、オプション機能をオン/オフします。ほとんどの変更は再起動後に完了します。</value>
+  </data>
+  <data name="OptionalFeatures.Search" xml:space="preserve">
+    <value>機能を検索</value>
+  </data>
+  <data name="OptionalFeatures.Loading" xml:space="preserve">
+    <value>Windows の機能を取得しています...</value>
+  </data>
+  <data name="OptionalFeatures.RestartNeeded" xml:space="preserve">
+    <value>変更を完了するには Windows を再起動してください。</value>
+  </data>
+  <data name="OptionalFeatures.Error.Title" xml:space="preserve">
+    <value>機能を変更できませんでした</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Microsoft_Hyper_V_All" xml:space="preserve">
+    <value>Hyper-V: 仮想マシンを実行します。オンにするとゲーム性能が下がったり、他の仮想化ソフトと競合したりすることがあります。</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Microsoft_Windows_Subsystem_Linux" xml:space="preserve">
+    <value>Windows Subsystem for Linux (WSL): Windows 上で Linux ツールを実行します。</value>
+  </data>
+  <data name="OptionalFeatures.Feature.VirtualMachinePlatform" xml:space="preserve">
+    <value>仮想マシン プラットフォーム: WSL 2 や Android アプリに必要です。</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Containers_DisposableClientVM" xml:space="preserve">
+    <value>Windows サンドボックス: 不明なプログラムを安全に試せる使い捨てのデスクトップです。</value>
+  </data>
+  <data name="OptionalFeatures.Feature.NetFx3" xml:space="preserve">
+    <value>.NET Framework 3.5: 一部の古いプログラムやゲームに必要です。</value>
+  </data>
+  <data name="OptionalFeatures.Feature.SMB1Protocol" xml:space="preserve">
+    <value>SMB 1.0: 古く安全でないファイル共有プロトコルです。古い機器で必要な場合を除き、オフのままにしてください。</value>
+  </data>
+  <data name="OptionalFeatures.Feature.TelnetClient" xml:space="preserve">
+    <value>Telnet クライアント: ネットワーク ポートをテストするコマンド ライン ツールです。</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Printing_PrintToPDFServices_Features" xml:space="preserve">
+    <value>Microsoft Print to PDF: 印刷できるものを PDF として保存します。</value>
+  </data>
+  <data name="OptionalFeatures.Feature.MediaPlayback" xml:space="preserve">
+    <value>メディア機能: Windows Media Player と、一部のアプリが使う再生コンポーネントです。</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Recall" xml:space="preserve">
+    <value>Recall: 後で検索できるよう画面のスナップショットを保存します。削除すると空き容量が増え、操作履歴も守れます。</value>
+  </data>
+  <data name="AppInstaller.Header.Title" xml:space="preserve">
+    <value>アプリのインストール</value>
+  </data>
+  <data name="AppInstaller.Header.Description" xml:space="preserve">
+    <value>人気のアプリを選んで、Microsoft のパッケージ マネージャー winget でまとめてインストールします。アプリは公式の配布元から取得されます。</value>
+  </data>
+  <data name="AppInstaller.Install" xml:space="preserve">
+    <value>選択したアプリをインストール ({0})</value>
+  </data>
+  <data name="AppInstaller.Loading" xml:space="preserve">
+    <value>winget を確認しています...</value>
+  </data>
+  <data name="AppInstaller.WingetMissing" xml:space="preserve">
+    <value>winget が見つかりません。Microsoft Store から「アプリ インストーラー」をインストールしてから戻ってください。</value>
+  </data>
+  <data name="AppInstaller.Progress" xml:space="preserve">
+    <value>{0} をインストールしています...</value>
+  </data>
+  <data name="AppInstaller.Success.Title" xml:space="preserve">
+    <value>アプリをインストールしました</value>
+  </data>
+  <data name="AppInstaller.Success.Message" xml:space="preserve">
+    <value>インストール済みまたは最新: {0} 件</value>
+  </data>
+  <data name="AppInstaller.Error.Title" xml:space="preserve">
+    <value>一部のアプリをインストールできませんでした</value>
+  </data>
+  <data name="AppInstaller.Category.Browsers" xml:space="preserve">
+    <value>ブラウザー</value>
+  </data>
+  <data name="AppInstaller.Category.Utilities" xml:space="preserve">
+    <value>ユーティリティ</value>
+  </data>
+  <data name="AppInstaller.Category.Media" xml:space="preserve">
+    <value>メディア</value>
+  </data>
+  <data name="AppInstaller.Category.Gaming" xml:space="preserve">
+    <value>ゲーム</value>
+  </data>
+  <data name="AppInstaller.Category.Development" xml:space="preserve">
+    <value>開発</value>
+  </data>
+  <data name="AppInstaller.Category.Runtimes" xml:space="preserve">
+    <value>ランタイム</value>
+  </data>
 </root>

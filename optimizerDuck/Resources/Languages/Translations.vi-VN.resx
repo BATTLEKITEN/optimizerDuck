@@ -2749,4 +2749,304 @@ Mã thoát: 0 thành công, 1 có lỗi hoặc có tối ưu bị hoàn tác, 2 
   <data name="Optimizer.BloatwareAndServices.DisableOneDrive.ShortDescription" xml:space="preserve">
     <value>Ngăn OneDrive khởi động và đồng bộ, đồng thời gỡ nó khỏi thanh bên File Explorer. Các tệp trong thư mục OneDrive vẫn còn trên ổ đĩa, không gỡ cài đặt gì cả.</value>
   </data>
+  <data name="Sidebar.Health" xml:space="preserve">
+    <value>Tình trạng hệ thống</value>
+  </data>
+  <data name="Sidebar.ContextMenu" xml:space="preserve">
+    <value>Menu chuột phải</value>
+  </data>
+  <data name="Sidebar.OptionalFeatures" xml:space="preserve">
+    <value>Tính năng Windows</value>
+  </data>
+  <data name="Sidebar.AppInstaller" xml:space="preserve">
+    <value>Cài ứng dụng</value>
+  </data>
+  <data name="DiskCleanup.Item.DeliveryOptimization" xml:space="preserve">
+    <value>Bộ nhớ đệm Delivery Optimization</value>
+  </data>
+  <data name="DiskCleanup.Item.DeliveryOptimization.Description" xml:space="preserve">
+    <value>Tệp cập nhật Windows giữ lại để chia sẻ với PC khác; xóa an toàn</value>
+  </data>
+  <data name="DiskCleanup.Item.SystemErrorReports" xml:space="preserve">
+    <value>Báo cáo lỗi hệ thống</value>
+  </data>
+  <data name="DiskCleanup.Item.SystemErrorReports.Description" xml:space="preserve">
+    <value>Báo cáo sự cố mà Windows Error Reporting lưu cho mọi người dùng</value>
+  </data>
+  <data name="DiskCleanup.Item.ShaderCache" xml:space="preserve">
+    <value>Bộ nhớ đệm shader DirectX</value>
+  </data>
+  <data name="DiskCleanup.Item.ShaderCache.Description" xml:space="preserve">
+    <value>Shader đã biên dịch; game sẽ tạo lại khi chạy lần sau, có thể khắc phục giật sau khi cập nhật Driver</value>
+  </data>
+  <data name="Health.Header.Title" xml:space="preserve">
+    <value>Tình trạng hệ thống</value>
+  </data>
+  <data name="Health.Header.Description" xml:space="preserve">
+    <value>Bảo mật, ổ đĩa và pin trong một màn hình. Không có gì trên PC bị thay đổi.</value>
+  </data>
+  <data name="Health.Loading" xml:space="preserve">
+    <value>Đang kiểm tra PC...</value>
+  </data>
+  <data name="Health.Button.Refresh" xml:space="preserve">
+    <value>Làm mới</value>
+  </data>
+  <data name="Health.Button.Export" xml:space="preserve">
+    <value>Lưu báo cáo</value>
+  </data>
+  <data name="Health.Button.BatteryReport" xml:space="preserve">
+    <value>Báo cáo pin</value>
+  </data>
+  <data name="Health.Export.Failed.Title" xml:space="preserve">
+    <value>Không thể lưu báo cáo</value>
+  </data>
+  <data name="Health.Status.Good" xml:space="preserve">
+    <value>Tốt</value>
+  </data>
+  <data name="Health.Status.Info" xml:space="preserve">
+    <value>Thông tin</value>
+  </data>
+  <data name="Health.Status.Warning" xml:space="preserve">
+    <value>Cần chú ý</value>
+  </data>
+  <data name="Health.Status.Bad" xml:space="preserve">
+    <value>Có vấn đề</value>
+  </data>
+  <data name="Health.Status.Unknown" xml:space="preserve">
+    <value>Không rõ</value>
+  </data>
+  <data name="Health.Unknown" xml:space="preserve">
+    <value>Windows không cung cấp thông tin này.</value>
+  </data>
+  <data name="Health.State.On" xml:space="preserve">
+    <value>Bật</value>
+  </data>
+  <data name="Health.State.Off" xml:space="preserve">
+    <value>Tắt</value>
+  </data>
+  <data name="Health.Check.SecureBoot" xml:space="preserve">
+    <value>Secure Boot</value>
+  </data>
+  <data name="Health.SecureBoot.Off" xml:space="preserve">
+    <value>Đang tắt. Hãy bật trong thiết lập UEFI để chặn mã độc ở cấp khởi động.</value>
+  </data>
+  <data name="Health.SecureBoot.Unsupported" xml:space="preserve">
+    <value>Không khả dụng: PC đang khởi động ở chế độ Legacy BIOS.</value>
+  </data>
+  <data name="Health.Check.Tpm" xml:space="preserve">
+    <value>TPM</value>
+  </data>
+  <data name="Health.Tpm.Ready" xml:space="preserve">
+    <value>TPM {0} đang bật và sẵn sàng.</value>
+  </data>
+  <data name="Health.Tpm.NotReady" xml:space="preserve">
+    <value>Có TPM {0} nhưng đang tắt hoặc chưa sẵn sàng. Hãy kiểm tra thiết lập UEFI.</value>
+  </data>
+  <data name="Health.Tpm.None" xml:space="preserve">
+    <value>Không tìm thấy TPM. Windows 11 và BitLocker cần TPM.</value>
+  </data>
+  <data name="Health.Check.Vbs" xml:space="preserve">
+    <value>Bảo mật dựa trên ảo hóa (VBS)</value>
+  </data>
+  <data name="Health.Vbs.Running" xml:space="preserve">
+    <value>Đang chạy. Bảo vệ hệ thống nhưng giảm nhẹ hiệu năng chơi game.</value>
+  </data>
+  <data name="Health.Vbs.Enabled" xml:space="preserve">
+    <value>Đã bật nhưng chưa chạy. Có thể cần khởi động lại hoặc chỉnh firmware.</value>
+  </data>
+  <data name="Health.Check.MemoryIntegrity" xml:space="preserve">
+    <value>Tính toàn vẹn bộ nhớ</value>
+  </data>
+  <data name="Health.Check.Defender" xml:space="preserve">
+    <value>Microsoft Defender</value>
+  </data>
+  <data name="Health.Defender.On" xml:space="preserve">
+    <value>Bảo vệ thời gian thực đang bật và định nghĩa đã cập nhật.</value>
+  </data>
+  <data name="Health.Defender.Off" xml:space="preserve">
+    <value>Bảo vệ thời gian thực đang tắt. Hãy chắc chắn có phần mềm diệt virus khác bảo vệ PC.</value>
+  </data>
+  <data name="Health.Defender.Old" xml:space="preserve">
+    <value>Định nghĩa đã cũ {0} ngày. Hãy chạy Windows Update.</value>
+  </data>
+  <data name="Health.Defender.Unknown" xml:space="preserve">
+    <value>Không có trạng thái từ Defender; có thể bạn đang dùng phần mềm diệt virus khác.</value>
+  </data>
+  <data name="Health.Check.Disk" xml:space="preserve">
+    <value>Ổ đĩa: {0}</value>
+  </data>
+  <data name="Health.Disk.Healthy" xml:space="preserve">
+    <value>Tốt ({0})</value>
+  </data>
+  <data name="Health.Disk.Warning" xml:space="preserve">
+    <value>Windows báo cảnh báo ({0}). Hãy sao lưu dữ liệu.</value>
+  </data>
+  <data name="Health.Disk.Unhealthy" xml:space="preserve">
+    <value>Windows báo ổ đĩa này sắp hỏng ({0}). Hãy sao lưu dữ liệu ngay.</value>
+  </data>
+  <data name="Health.Check.Trim" xml:space="preserve">
+    <value>TRIM cho SSD</value>
+  </data>
+  <data name="Health.Trim.Off" xml:space="preserve">
+    <value>Đang tắt. Không có TRIM, SSD sẽ chậm dần theo thời gian.</value>
+  </data>
+  <data name="Health.Check.FreeSpace" xml:space="preserve">
+    <value>Dung lượng trống ổ hệ thống</value>
+  </data>
+  <data name="Health.FreeSpace.Value" xml:space="preserve">
+    <value>Còn trống {0} trên {1} ({2}%)</value>
+  </data>
+  <data name="Health.Check.PendingRestart" xml:space="preserve">
+    <value>Đang chờ khởi động lại</value>
+  </data>
+  <data name="Health.PendingRestart.Yes" xml:space="preserve">
+    <value>Windows đang chờ khởi động lại để hoàn tất cài đặt cập nhật.</value>
+  </data>
+  <data name="Health.PendingRestart.No" xml:space="preserve">
+    <value>Không cần khởi động lại.</value>
+  </data>
+  <data name="Health.Check.BootTime" xml:space="preserve">
+    <value>Thời gian khởi động gần nhất</value>
+  </data>
+  <data name="Health.BootTime.Value" xml:space="preserve">
+    <value>{0} giây, theo Windows đo</value>
+  </data>
+  <data name="Health.BootTime.Unknown" xml:space="preserve">
+    <value>Windows chưa ghi nhận thời gian khởi động.</value>
+  </data>
+  <data name="Health.Check.Battery" xml:space="preserve">
+    <value>Độ chai pin</value>
+  </data>
+  <data name="Health.Battery.Value" xml:space="preserve">
+    <value>Còn {0}% dung lượng ban đầu.</value>
+  </data>
+  <data name="ContextMenu.Header.Title" xml:space="preserve">
+    <value>Menu chuột phải</value>
+  </data>
+  <data name="ContextMenu.Header.Description" xml:space="preserve">
+    <value>Tắt các mục mà ứng dụng thêm vào menu chuột phải của File Explorer. Không xóa gì cả; bật lại sẽ khôi phục mục đó.</value>
+  </data>
+  <data name="ContextMenu.Search" xml:space="preserve">
+    <value>Tìm mục</value>
+  </data>
+  <data name="ContextMenu.ShowWindows" xml:space="preserve">
+    <value>Hiện mục của Windows</value>
+  </data>
+  <data name="ContextMenu.Loading" xml:space="preserve">
+    <value>Đang đọc các mục menu chuột phải...</value>
+  </data>
+  <data name="ContextMenu.RestartNeeded" xml:space="preserve">
+    <value>Khởi động lại File Explorer để thấy thay đổi.</value>
+  </data>
+  <data name="ContextMenu.RestartExplorer" xml:space="preserve">
+    <value>Khởi động lại File Explorer</value>
+  </data>
+  <data name="ContextMenu.Error.Title" xml:space="preserve">
+    <value>Không thể thay đổi mục</value>
+  </data>
+  <data name="ContextMenu.Location.Files" xml:space="preserve">
+    <value>Tệp</value>
+  </data>
+  <data name="ContextMenu.Location.Folders" xml:space="preserve">
+    <value>Thư mục</value>
+  </data>
+  <data name="ContextMenu.Location.Background" xml:space="preserve">
+    <value>Nền thư mục</value>
+  </data>
+  <data name="ContextMenu.Location.Drives" xml:space="preserve">
+    <value>Ổ đĩa</value>
+  </data>
+  <data name="OptionalFeatures.Header.Title" xml:space="preserve">
+    <value>Tính năng Windows</value>
+  </data>
+  <data name="OptionalFeatures.Header.Description" xml:space="preserve">
+    <value>Bật hoặc tắt các tính năng tùy chọn của Windows, giống "Turn Windows features on or off". Phần lớn thay đổi hoàn tất sau khi khởi động lại.</value>
+  </data>
+  <data name="OptionalFeatures.Search" xml:space="preserve">
+    <value>Tìm tính năng</value>
+  </data>
+  <data name="OptionalFeatures.Loading" xml:space="preserve">
+    <value>Đang lấy danh sách tính năng...</value>
+  </data>
+  <data name="OptionalFeatures.RestartNeeded" xml:space="preserve">
+    <value>Khởi động lại Windows để hoàn tất thay đổi.</value>
+  </data>
+  <data name="OptionalFeatures.Error.Title" xml:space="preserve">
+    <value>Không thể thay đổi tính năng</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Microsoft_Hyper_V_All" xml:space="preserve">
+    <value>Hyper-V: chạy máy ảo. Bật lên có thể giảm hiệu năng chơi game và xung đột với phần mềm ảo hóa khác.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Microsoft_Windows_Subsystem_Linux" xml:space="preserve">
+    <value>Windows Subsystem for Linux (WSL): chạy công cụ Linux trên Windows.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.VirtualMachinePlatform" xml:space="preserve">
+    <value>Virtual Machine Platform: cần cho WSL 2 và ứng dụng Android.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Containers_DisposableClientVM" xml:space="preserve">
+    <value>Windows Sandbox: môi trường dùng một lần để thử phần mềm lạ an toàn.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.NetFx3" xml:space="preserve">
+    <value>.NET Framework 3.5: cần cho một số phần mềm và game cũ.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.SMB1Protocol" xml:space="preserve">
+    <value>SMB 1.0: giao thức chia sẻ tệp lỗi thời và không an toàn. Chỉ bật khi thiết bị cũ cần.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.TelnetClient" xml:space="preserve">
+    <value>Telnet Client: công cụ dòng lệnh để kiểm tra cổng mạng.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Printing_PrintToPDFServices_Features" xml:space="preserve">
+    <value>Microsoft Print to PDF: lưu mọi thứ có thể in thành PDF.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.MediaPlayback" xml:space="preserve">
+    <value>Tính năng đa phương tiện: Windows Media Player và thành phần phát lại mà một số ứng dụng cần.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Recall" xml:space="preserve">
+    <value>Recall: chụp màn hình để tìm kiếm sau. Gỡ bỏ giúp tiết kiệm dung lượng và giữ riêng tư hoạt động.</value>
+  </data>
+  <data name="AppInstaller.Header.Title" xml:space="preserve">
+    <value>Cài ứng dụng</value>
+  </data>
+  <data name="AppInstaller.Header.Description" xml:space="preserve">
+    <value>Chọn các ứng dụng phổ biến và cài một lượt qua winget, trình quản lý gói của Microsoft. Ứng dụng được tải từ nguồn chính thức.</value>
+  </data>
+  <data name="AppInstaller.Install" xml:space="preserve">
+    <value>Cài mục đã chọn ({0})</value>
+  </data>
+  <data name="AppInstaller.Loading" xml:space="preserve">
+    <value>Đang tìm winget...</value>
+  </data>
+  <data name="AppInstaller.WingetMissing" xml:space="preserve">
+    <value>Không tìm thấy winget. Hãy cài "App Installer" từ Microsoft Store rồi quay lại.</value>
+  </data>
+  <data name="AppInstaller.Progress" xml:space="preserve">
+    <value>Đang cài {0}...</value>
+  </data>
+  <data name="AppInstaller.Success.Title" xml:space="preserve">
+    <value>Đã cài ứng dụng</value>
+  </data>
+  <data name="AppInstaller.Success.Message" xml:space="preserve">
+    <value>Đã cài hoặc đã mới nhất: {0}</value>
+  </data>
+  <data name="AppInstaller.Error.Title" xml:space="preserve">
+    <value>Không thể cài một số ứng dụng</value>
+  </data>
+  <data name="AppInstaller.Category.Browsers" xml:space="preserve">
+    <value>Trình duyệt</value>
+  </data>
+  <data name="AppInstaller.Category.Utilities" xml:space="preserve">
+    <value>Tiện ích</value>
+  </data>
+  <data name="AppInstaller.Category.Media" xml:space="preserve">
+    <value>Đa phương tiện</value>
+  </data>
+  <data name="AppInstaller.Category.Gaming" xml:space="preserve">
+    <value>Chơi game</value>
+  </data>
+  <data name="AppInstaller.Category.Development" xml:space="preserve">
+    <value>Lập trình</value>
+  </data>
+  <data name="AppInstaller.Category.Runtimes" xml:space="preserve">
+    <value>Runtime</value>
+  </data>
 </root>

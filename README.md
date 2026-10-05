@@ -143,8 +143,12 @@ It also includes built-in management tools, allowing you to see what is running,
 | **System Dashboard**  | View your CPU, RAM, GPU, storage drives, and OS details in one panel                                                                             |
 | **Startup Manager**   | See every app and task that launches at boot, toggle them on or off, and open their file location                                                |
 | **Scheduled Tasks**   | Browse, run, stop, enable, disable, or delete Windows scheduled tasks                                                                            |
-| **Disk Cleanup**      | Scan and clear temp files, system cache, Windows Update leftovers, prefetch, thumbnails, recycle bin, crash dumps, and old Windows installations |
+| **Disk Cleanup**      | Scan and clear temp files, system cache, Windows Update leftovers, Delivery Optimization cache, prefetch, thumbnails, DirectX shader cache, recycle bin, crash dumps and error reports, and old Windows installations |
 | **Bloatware Remover** | Lists all removable AppX packages with risk badges (Safe, Caution, Unknown), so you can pick what to remove                                      |
+| **System Health**     | Secure Boot, TPM, virtualization-based security, memory integrity, Defender, disk health (SMART), TRIM, free space, pending restart, boot time and battery wear on one page, with an HTML report |
+| **Context Menu**      | Turn off the entries apps add to the File Explorer right-click menu, without deleting anything                                                   |
+| **Windows Features**  | Turn optional features such as Hyper-V, WSL, Windows Sandbox, .NET 3.5 or SMB 1.0 on or off                                                     |
+| **App Installer**     | Pick popular apps (browsers, 7-Zip, VLC, Steam, Discord, VS Code...) and install them in one go through winget                                   |
 | **Profiles**          | Apply a preset (Recommended, Gaming, Privacy, Laptop), export your setup to a `.duckprofile` file, or import one on another PC                   |
 
 ### Command line

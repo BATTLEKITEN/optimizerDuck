@@ -2765,4 +2765,304 @@
   <data name="Optimizer.BloatwareAndServices.DisableOneDrive.ShortDescription" xml:space="preserve">
     <value>阻止 OneDrive 启动和同步，并将其从文件资源管理器侧边栏移除。OneDrive 文件夹中的文件仍保留在磁盘上，不会卸载任何内容。</value>
   </data>
+  <data name="Sidebar.Health" xml:space="preserve">
+    <value>系统健康</value>
+  </data>
+  <data name="Sidebar.ContextMenu" xml:space="preserve">
+    <value>右键菜单</value>
+  </data>
+  <data name="Sidebar.OptionalFeatures" xml:space="preserve">
+    <value>Windows 功能</value>
+  </data>
+  <data name="Sidebar.AppInstaller" xml:space="preserve">
+    <value>安装应用</value>
+  </data>
+  <data name="DiskCleanup.Item.DeliveryOptimization" xml:space="preserve">
+    <value>传递优化缓存</value>
+  </data>
+  <data name="DiskCleanup.Item.DeliveryOptimization.Description" xml:space="preserve">
+    <value>Windows 为与其他电脑共享而保留的更新文件，可放心删除</value>
+  </data>
+  <data name="DiskCleanup.Item.SystemErrorReports" xml:space="preserve">
+    <value>系统错误报告</value>
+  </data>
+  <data name="DiskCleanup.Item.SystemErrorReports.Description" xml:space="preserve">
+    <value>Windows 错误报告为所有用户保存的崩溃和问题报告</value>
+  </data>
+  <data name="DiskCleanup.Item.ShaderCache" xml:space="preserve">
+    <value>DirectX 着色器缓存</value>
+  </data>
+  <data name="DiskCleanup.Item.ShaderCache.Description" xml:space="preserve">
+    <value>已编译的着色器；游戏下次启动时会重新生成，可缓解驱动更新后的卡顿</value>
+  </data>
+  <data name="Health.Header.Title" xml:space="preserve">
+    <value>系统健康</value>
+  </data>
+  <data name="Health.Header.Description" xml:space="preserve">
+    <value>一览安全、磁盘和电池状况。此页面不会更改你的电脑。</value>
+  </data>
+  <data name="Health.Loading" xml:space="preserve">
+    <value>正在检查你的电脑...</value>
+  </data>
+  <data name="Health.Button.Refresh" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+  <data name="Health.Button.Export" xml:space="preserve">
+    <value>保存报告</value>
+  </data>
+  <data name="Health.Button.BatteryReport" xml:space="preserve">
+    <value>电池报告</value>
+  </data>
+  <data name="Health.Export.Failed.Title" xml:space="preserve">
+    <value>无法保存报告</value>
+  </data>
+  <data name="Health.Status.Good" xml:space="preserve">
+    <value>良好</value>
+  </data>
+  <data name="Health.Status.Info" xml:space="preserve">
+    <value>信息</value>
+  </data>
+  <data name="Health.Status.Warning" xml:space="preserve">
+    <value>注意</value>
+  </data>
+  <data name="Health.Status.Bad" xml:space="preserve">
+    <value>有问题</value>
+  </data>
+  <data name="Health.Status.Unknown" xml:space="preserve">
+    <value>未知</value>
+  </data>
+  <data name="Health.Unknown" xml:space="preserve">
+    <value>Windows 未提供此信息。</value>
+  </data>
+  <data name="Health.State.On" xml:space="preserve">
+    <value>已开启</value>
+  </data>
+  <data name="Health.State.Off" xml:space="preserve">
+    <value>已关闭</value>
+  </data>
+  <data name="Health.Check.SecureBoot" xml:space="preserve">
+    <value>安全启动</value>
+  </data>
+  <data name="Health.SecureBoot.Off" xml:space="preserve">
+    <value>已关闭。可在 UEFI 设置中开启，以阻止启动级恶意软件。</value>
+  </data>
+  <data name="Health.SecureBoot.Unsupported" xml:space="preserve">
+    <value>不可用：电脑以传统 BIOS 模式启动。</value>
+  </data>
+  <data name="Health.Check.Tpm" xml:space="preserve">
+    <value>TPM</value>
+  </data>
+  <data name="Health.Tpm.Ready" xml:space="preserve">
+    <value>TPM {0} 已开启并就绪。</value>
+  </data>
+  <data name="Health.Tpm.NotReady" xml:space="preserve">
+    <value>存在 TPM {0}，但未开启或未就绪。请检查 UEFI 设置。</value>
+  </data>
+  <data name="Health.Tpm.None" xml:space="preserve">
+    <value>未找到 TPM。Windows 11 和 BitLocker 需要 TPM。</value>
+  </data>
+  <data name="Health.Check.Vbs" xml:space="preserve">
+    <value>基于虚拟化的安全</value>
+  </data>
+  <data name="Health.Vbs.Running" xml:space="preserve">
+    <value>运行中。保护系统，但会略微影响游戏性能。</value>
+  </data>
+  <data name="Health.Vbs.Enabled" xml:space="preserve">
+    <value>已启用但未运行。可能需要重启或调整固件设置。</value>
+  </data>
+  <data name="Health.Check.MemoryIntegrity" xml:space="preserve">
+    <value>内存完整性</value>
+  </data>
+  <data name="Health.Check.Defender" xml:space="preserve">
+    <value>Microsoft Defender</value>
+  </data>
+  <data name="Health.Defender.On" xml:space="preserve">
+    <value>实时保护已开启，病毒定义为最新。</value>
+  </data>
+  <data name="Health.Defender.Off" xml:space="preserve">
+    <value>实时保护已关闭。请确认有其他杀毒软件保护这台电脑。</value>
+  </data>
+  <data name="Health.Defender.Old" xml:space="preserve">
+    <value>病毒定义已过期 {0} 天，请运行 Windows 更新。</value>
+  </data>
+  <data name="Health.Defender.Unknown" xml:space="preserve">
+    <value>未获取到 Defender 状态，可能正在使用其他杀毒软件。</value>
+  </data>
+  <data name="Health.Check.Disk" xml:space="preserve">
+    <value>磁盘：{0}</value>
+  </data>
+  <data name="Health.Disk.Healthy" xml:space="preserve">
+    <value>健康 ({0})</value>
+  </data>
+  <data name="Health.Disk.Warning" xml:space="preserve">
+    <value>Windows 报告了警告 ({0})，请备份数据。</value>
+  </data>
+  <data name="Health.Disk.Unhealthy" xml:space="preserve">
+    <value>Windows 报告此磁盘出现故障 ({0})，请立即备份数据。</value>
+  </data>
+  <data name="Health.Check.Trim" xml:space="preserve">
+    <value>SSD TRIM</value>
+  </data>
+  <data name="Health.Trim.Off" xml:space="preserve">
+    <value>已关闭。没有 TRIM，SSD 会随时间变慢。</value>
+  </data>
+  <data name="Health.Check.FreeSpace" xml:space="preserve">
+    <value>系统盘可用空间</value>
+  </data>
+  <data name="Health.FreeSpace.Value" xml:space="preserve">
+    <value>{1} 中可用 {0} ({2}%)</value>
+  </data>
+  <data name="Health.Check.PendingRestart" xml:space="preserve">
+    <value>待重启</value>
+  </data>
+  <data name="Health.PendingRestart.Yes" xml:space="preserve">
+    <value>Windows 正在等待重启以完成更新安装。</value>
+  </data>
+  <data name="Health.PendingRestart.No" xml:space="preserve">
+    <value>无需重启。</value>
+  </data>
+  <data name="Health.Check.BootTime" xml:space="preserve">
+    <value>上次启动用时</value>
+  </data>
+  <data name="Health.BootTime.Value" xml:space="preserve">
+    <value>{0} 秒（Windows 测量）</value>
+  </data>
+  <data name="Health.BootTime.Unknown" xml:space="preserve">
+    <value>Windows 尚未记录启动用时。</value>
+  </data>
+  <data name="Health.Check.Battery" xml:space="preserve">
+    <value>电池损耗</value>
+  </data>
+  <data name="Health.Battery.Value" xml:space="preserve">
+    <value>保持原始容量的 {0}%。</value>
+  </data>
+  <data name="ContextMenu.Header.Title" xml:space="preserve">
+    <value>右键菜单</value>
+  </data>
+  <data name="ContextMenu.Header.Description" xml:space="preserve">
+    <value>关闭应用添加到文件资源管理器右键菜单中的项目。不会删除任何内容，重新开启即可恢复。</value>
+  </data>
+  <data name="ContextMenu.Search" xml:space="preserve">
+    <value>搜索项目</value>
+  </data>
+  <data name="ContextMenu.ShowWindows" xml:space="preserve">
+    <value>显示 Windows 项目</value>
+  </data>
+  <data name="ContextMenu.Loading" xml:space="preserve">
+    <value>正在读取右键菜单项目...</value>
+  </data>
+  <data name="ContextMenu.RestartNeeded" xml:space="preserve">
+    <value>重启文件资源管理器后生效。</value>
+  </data>
+  <data name="ContextMenu.RestartExplorer" xml:space="preserve">
+    <value>重启文件资源管理器</value>
+  </data>
+  <data name="ContextMenu.Error.Title" xml:space="preserve">
+    <value>无法更改该项目</value>
+  </data>
+  <data name="ContextMenu.Location.Files" xml:space="preserve">
+    <value>文件</value>
+  </data>
+  <data name="ContextMenu.Location.Folders" xml:space="preserve">
+    <value>文件夹</value>
+  </data>
+  <data name="ContextMenu.Location.Background" xml:space="preserve">
+    <value>文件夹背景</value>
+  </data>
+  <data name="ContextMenu.Location.Drives" xml:space="preserve">
+    <value>驱动器</value>
+  </data>
+  <data name="OptionalFeatures.Header.Title" xml:space="preserve">
+    <value>Windows 功能</value>
+  </data>
+  <data name="OptionalFeatures.Header.Description" xml:space="preserve">
+    <value>开启或关闭 Windows 可选功能，与“启用或关闭 Windows 功能”相同。大多数更改需重启后完成。</value>
+  </data>
+  <data name="OptionalFeatures.Search" xml:space="preserve">
+    <value>搜索功能</value>
+  </data>
+  <data name="OptionalFeatures.Loading" xml:space="preserve">
+    <value>正在获取 Windows 功能...</value>
+  </data>
+  <data name="OptionalFeatures.RestartNeeded" xml:space="preserve">
+    <value>重启 Windows 以完成更改。</value>
+  </data>
+  <data name="OptionalFeatures.Error.Title" xml:space="preserve">
+    <value>无法更改该功能</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Microsoft_Hyper_V_All" xml:space="preserve">
+    <value>Hyper-V：运行虚拟机。开启后可能降低游戏性能，并与其他虚拟化软件冲突。</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Microsoft_Windows_Subsystem_Linux" xml:space="preserve">
+    <value>适用于 Linux 的 Windows 子系统 (WSL)：在 Windows 上运行 Linux 工具。</value>
+  </data>
+  <data name="OptionalFeatures.Feature.VirtualMachinePlatform" xml:space="preserve">
+    <value>虚拟机平台：WSL 2 和 Android 应用需要。</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Containers_DisposableClientVM" xml:space="preserve">
+    <value>Windows 沙盒：用于安全试用陌生程序的一次性桌面。</value>
+  </data>
+  <data name="OptionalFeatures.Feature.NetFx3" xml:space="preserve">
+    <value>.NET Framework 3.5：部分旧程序和游戏需要。</value>
+  </data>
+  <data name="OptionalFeatures.Feature.SMB1Protocol" xml:space="preserve">
+    <value>SMB 1.0：过时且不安全的文件共享协议。除非旧设备需要，否则请保持关闭。</value>
+  </data>
+  <data name="OptionalFeatures.Feature.TelnetClient" xml:space="preserve">
+    <value>Telnet 客户端：用于测试网络端口的命令行工具。</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Printing_PrintToPDFServices_Features" xml:space="preserve">
+    <value>Microsoft Print to PDF：将任何可打印内容保存为 PDF。</value>
+  </data>
+  <data name="OptionalFeatures.Feature.MediaPlayback" xml:space="preserve">
+    <value>媒体功能：Windows Media Player 以及部分应用依赖的播放组件。</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Recall" xml:space="preserve">
+    <value>Recall：截取屏幕快照以便日后搜索。移除可释放空间并保护你的活动隐私。</value>
+  </data>
+  <data name="AppInstaller.Header.Title" xml:space="preserve">
+    <value>安装应用</value>
+  </data>
+  <data name="AppInstaller.Header.Description" xml:space="preserve">
+    <value>挑选常用应用，通过 Microsoft 的包管理器 winget 一次性安装。应用均来自官方来源。</value>
+  </data>
+  <data name="AppInstaller.Install" xml:space="preserve">
+    <value>安装所选 ({0})</value>
+  </data>
+  <data name="AppInstaller.Loading" xml:space="preserve">
+    <value>正在查找 winget...</value>
+  </data>
+  <data name="AppInstaller.WingetMissing" xml:space="preserve">
+    <value>未找到 winget。请从 Microsoft Store 安装“应用安装程序”后再回来。</value>
+  </data>
+  <data name="AppInstaller.Progress" xml:space="preserve">
+    <value>正在安装 {0}...</value>
+  </data>
+  <data name="AppInstaller.Success.Title" xml:space="preserve">
+    <value>应用已安装</value>
+  </data>
+  <data name="AppInstaller.Success.Message" xml:space="preserve">
+    <value>已安装或已是最新：{0}</value>
+  </data>
+  <data name="AppInstaller.Error.Title" xml:space="preserve">
+    <value>部分应用无法安装</value>
+  </data>
+  <data name="AppInstaller.Category.Browsers" xml:space="preserve">
+    <value>浏览器</value>
+  </data>
+  <data name="AppInstaller.Category.Utilities" xml:space="preserve">
+    <value>实用工具</value>
+  </data>
+  <data name="AppInstaller.Category.Media" xml:space="preserve">
+    <value>媒体</value>
+  </data>
+  <data name="AppInstaller.Category.Gaming" xml:space="preserve">
+    <value>游戏</value>
+  </data>
+  <data name="AppInstaller.Category.Development" xml:space="preserve">
+    <value>开发</value>
+  </data>
+  <data name="AppInstaller.Category.Runtimes" xml:space="preserve">
+    <value>运行库</value>
+  </data>
 </root>

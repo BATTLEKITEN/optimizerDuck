@@ -2814,4 +2814,304 @@
   <data name="Optimizer.BloatwareAndServices.DisableOneDrive.ShortDescription" xml:space="preserve">
     <value>מונע מ-OneDrive לפעול ולסנכרן ומסיר אותו מסרגל הצד של סייר הקבצים. קבצים שכבר נמצאים בתיקיית OneDrive נשארים בדיסק, ושום דבר לא מוסר.</value>
   </data>
+  <data name="Sidebar.Health" xml:space="preserve">
+    <value>תקינות המערכת</value>
+  </data>
+  <data name="Sidebar.ContextMenu" xml:space="preserve">
+    <value>תפריט הקשר</value>
+  </data>
+  <data name="Sidebar.OptionalFeatures" xml:space="preserve">
+    <value>תכונות Windows</value>
+  </data>
+  <data name="Sidebar.AppInstaller" xml:space="preserve">
+    <value>התקנת אפליקציות</value>
+  </data>
+  <data name="DiskCleanup.Item.DeliveryOptimization" xml:space="preserve">
+    <value>מטמון אופטימיזציית מסירה</value>
+  </data>
+  <data name="DiskCleanup.Item.DeliveryOptimization.Description" xml:space="preserve">
+    <value>קובצי עדכון ש-Windows שומר כדי לשתף עם מחשבים אחרים; בטוח למחוק</value>
+  </data>
+  <data name="DiskCleanup.Item.SystemErrorReports" xml:space="preserve">
+    <value>דוחות שגיאות מערכת</value>
+  </data>
+  <data name="DiskCleanup.Item.SystemErrorReports.Description" xml:space="preserve">
+    <value>דוחות קריסה ובעיות שדיווח השגיאות של Windows שומר לכל המשתמשים</value>
+  </data>
+  <data name="DiskCleanup.Item.ShaderCache" xml:space="preserve">
+    <value>מטמון Shader של DirectX</value>
+  </data>
+  <data name="DiskCleanup.Item.ShaderCache.Description" xml:space="preserve">
+    <value>Shaders מהודרים; משחקים בונים אותם מחדש בהפעלה הבאה, מה שיכול לתקן גמגומים אחרי עדכון מנהל התקן</value>
+  </data>
+  <data name="Health.Header.Title" xml:space="preserve">
+    <value>תקינות המערכת</value>
+  </data>
+  <data name="Health.Header.Description" xml:space="preserve">
+    <value>אבטחה, דיסקים וסוללה במבט אחד. שום דבר כאן לא משנה את המחשב.</value>
+  </data>
+  <data name="Health.Loading" xml:space="preserve">
+    <value>בודק את המחשב...</value>
+  </data>
+  <data name="Health.Button.Refresh" xml:space="preserve">
+    <value>רענון</value>
+  </data>
+  <data name="Health.Button.Export" xml:space="preserve">
+    <value>שמירת דוח</value>
+  </data>
+  <data name="Health.Button.BatteryReport" xml:space="preserve">
+    <value>דוח סוללה</value>
+  </data>
+  <data name="Health.Export.Failed.Title" xml:space="preserve">
+    <value>לא ניתן לשמור את הדוח</value>
+  </data>
+  <data name="Health.Status.Good" xml:space="preserve">
+    <value>תקין</value>
+  </data>
+  <data name="Health.Status.Info" xml:space="preserve">
+    <value>מידע</value>
+  </data>
+  <data name="Health.Status.Warning" xml:space="preserve">
+    <value>לתשומת לב</value>
+  </data>
+  <data name="Health.Status.Bad" xml:space="preserve">
+    <value>בעיה</value>
+  </data>
+  <data name="Health.Status.Unknown" xml:space="preserve">
+    <value>לא ידוע</value>
+  </data>
+  <data name="Health.Unknown" xml:space="preserve">
+    <value>Windows לא דיווח על כך.</value>
+  </data>
+  <data name="Health.State.On" xml:space="preserve">
+    <value>מופעל</value>
+  </data>
+  <data name="Health.State.Off" xml:space="preserve">
+    <value>כבוי</value>
+  </data>
+  <data name="Health.Check.SecureBoot" xml:space="preserve">
+    <value>אתחול מאובטח</value>
+  </data>
+  <data name="Health.SecureBoot.Off" xml:space="preserve">
+    <value>כבוי. הפעל אותו בהגדרות UEFI כדי לחסום נוזקות ברמת האתחול.</value>
+  </data>
+  <data name="Health.SecureBoot.Unsupported" xml:space="preserve">
+    <value>לא זמין: המחשב מאתחל במצב BIOS מדור קודם.</value>
+  </data>
+  <data name="Health.Check.Tpm" xml:space="preserve">
+    <value>TPM</value>
+  </data>
+  <data name="Health.Tpm.Ready" xml:space="preserve">
+    <value>TPM {0} מופעל ומוכן.</value>
+  </data>
+  <data name="Health.Tpm.NotReady" xml:space="preserve">
+    <value>TPM {0} קיים אך כבוי או לא מוכן. בדוק את הגדרות UEFI.</value>
+  </data>
+  <data name="Health.Tpm.None" xml:space="preserve">
+    <value>לא נמצא TPM. Windows 11 ו-BitLocker זקוקים לו.</value>
+  </data>
+  <data name="Health.Check.Vbs" xml:space="preserve">
+    <value>אבטחה מבוססת וירטואליזציה</value>
+  </data>
+  <data name="Health.Vbs.Running" xml:space="preserve">
+    <value>פועל. מגן על המערכת במחיר קטן בביצועי משחקים.</value>
+  </data>
+  <data name="Health.Vbs.Enabled" xml:space="preserve">
+    <value>מופעל אך לא פועל. ייתכן שחסרה הפעלה מחדש או הגדרת קושחה.</value>
+  </data>
+  <data name="Health.Check.MemoryIntegrity" xml:space="preserve">
+    <value>שלמות זיכרון</value>
+  </data>
+  <data name="Health.Check.Defender" xml:space="preserve">
+    <value>Microsoft Defender</value>
+  </data>
+  <data name="Health.Defender.On" xml:space="preserve">
+    <value>ההגנה בזמן אמת פועלת וההגדרות מעודכנות.</value>
+  </data>
+  <data name="Health.Defender.Off" xml:space="preserve">
+    <value>ההגנה בזמן אמת כבויה. ודא שאנטי-וירוס אחר מגן על המחשב.</value>
+  </data>
+  <data name="Health.Defender.Old" xml:space="preserve">
+    <value>ההגדרות בנות {0} ימים. הפעל את Windows Update.</value>
+  </data>
+  <data name="Health.Defender.Unknown" xml:space="preserve">
+    <value>אין סטטוס מ-Defender; ייתכן שבשימוש אנטי-וירוס אחר.</value>
+  </data>
+  <data name="Health.Check.Disk" xml:space="preserve">
+    <value>דיסק: {0}</value>
+  </data>
+  <data name="Health.Disk.Healthy" xml:space="preserve">
+    <value>תקין ({0})</value>
+  </data>
+  <data name="Health.Disk.Warning" xml:space="preserve">
+    <value>Windows מדווח על אזהרה ({0}). גבה את הנתונים שלך.</value>
+  </data>
+  <data name="Health.Disk.Unhealthy" xml:space="preserve">
+    <value>Windows מדווח שהדיסק כושל ({0}). גבה את הנתונים עכשיו.</value>
+  </data>
+  <data name="Health.Check.Trim" xml:space="preserve">
+    <value>SSD TRIM</value>
+  </data>
+  <data name="Health.Trim.Off" xml:space="preserve">
+    <value>כבוי. בלעדיו כונני SSD מאטים עם הזמן.</value>
+  </data>
+  <data name="Health.Check.FreeSpace" xml:space="preserve">
+    <value>שטח פנוי בכונן המערכת</value>
+  </data>
+  <data name="Health.FreeSpace.Value" xml:space="preserve">
+    <value>{0} פנויים מתוך {1} ({2}%)</value>
+  </data>
+  <data name="Health.Check.PendingRestart" xml:space="preserve">
+    <value>הפעלה מחדש ממתינה</value>
+  </data>
+  <data name="Health.PendingRestart.Yes" xml:space="preserve">
+    <value>Windows ממתין להפעלה מחדש כדי לסיים התקנת עדכונים.</value>
+  </data>
+  <data name="Health.PendingRestart.No" xml:space="preserve">
+    <value>אין צורך בהפעלה מחדש.</value>
+  </data>
+  <data name="Health.Check.BootTime" xml:space="preserve">
+    <value>משך האתחול האחרון</value>
+  </data>
+  <data name="Health.BootTime.Value" xml:space="preserve">
+    <value>{0} שניות, לפי מדידת Windows</value>
+  </data>
+  <data name="Health.BootTime.Unknown" xml:space="preserve">
+    <value>Windows עדיין לא תיעד משך אתחול.</value>
+  </data>
+  <data name="Health.Check.Battery" xml:space="preserve">
+    <value>בלאי סוללה</value>
+  </data>
+  <data name="Health.Battery.Value" xml:space="preserve">
+    <value>מחזיקה {0}% מהקיבולת המקורית.</value>
+  </data>
+  <data name="ContextMenu.Header.Title" xml:space="preserve">
+    <value>תפריט הקשר</value>
+  </data>
+  <data name="ContextMenu.Header.Description" xml:space="preserve">
+    <value>כבה פריטים שאפליקציות מוסיפות לתפריט הלחיצה הימנית בסייר הקבצים. שום דבר לא נמחק, והפעלה מחדש משחזרת את הפריט.</value>
+  </data>
+  <data name="ContextMenu.Search" xml:space="preserve">
+    <value>חיפוש פריטים</value>
+  </data>
+  <data name="ContextMenu.ShowWindows" xml:space="preserve">
+    <value>הצג פריטים של Windows</value>
+  </data>
+  <data name="ContextMenu.Loading" xml:space="preserve">
+    <value>קורא את פריטי תפריט ההקשר...</value>
+  </data>
+  <data name="ContextMenu.RestartNeeded" xml:space="preserve">
+    <value>הפעל מחדש את סייר הקבצים כדי לראות את השינוי.</value>
+  </data>
+  <data name="ContextMenu.RestartExplorer" xml:space="preserve">
+    <value>הפעלה מחדש של סייר הקבצים</value>
+  </data>
+  <data name="ContextMenu.Error.Title" xml:space="preserve">
+    <value>לא ניתן לשנות את הפריט</value>
+  </data>
+  <data name="ContextMenu.Location.Files" xml:space="preserve">
+    <value>קבצים</value>
+  </data>
+  <data name="ContextMenu.Location.Folders" xml:space="preserve">
+    <value>תיקיות</value>
+  </data>
+  <data name="ContextMenu.Location.Background" xml:space="preserve">
+    <value>רקע תיקייה</value>
+  </data>
+  <data name="ContextMenu.Location.Drives" xml:space="preserve">
+    <value>כוננים</value>
+  </data>
+  <data name="OptionalFeatures.Header.Title" xml:space="preserve">
+    <value>תכונות Windows</value>
+  </data>
+  <data name="OptionalFeatures.Header.Description" xml:space="preserve">
+    <value>הפעל או כבה תכונות אופציונליות של Windows, בדיוק כמו ב"הפעלה או ביטול של תכונות Windows". רוב השינויים מסתיימים אחרי הפעלה מחדש.</value>
+  </data>
+  <data name="OptionalFeatures.Search" xml:space="preserve">
+    <value>חיפוש תכונות</value>
+  </data>
+  <data name="OptionalFeatures.Loading" xml:space="preserve">
+    <value>מבקש מ-Windows את רשימת התכונות...</value>
+  </data>
+  <data name="OptionalFeatures.RestartNeeded" xml:space="preserve">
+    <value>הפעל מחדש את Windows כדי לסיים את השינוי.</value>
+  </data>
+  <data name="OptionalFeatures.Error.Title" xml:space="preserve">
+    <value>לא ניתן לשנות את התכונה</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Microsoft_Hyper_V_All" xml:space="preserve">
+    <value>Hyper-V: הרצת מכונות וירטואליות. עלול להוריד ביצועי משחקים ולהתנגש עם תוכנות וירטואליזציה אחרות.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Microsoft_Windows_Subsystem_Linux" xml:space="preserve">
+    <value>תת-מערכת Windows ל-Linux ‏(WSL): הרצת כלי Linux ב-Windows.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.VirtualMachinePlatform" xml:space="preserve">
+    <value>פלטפורמת מכונה וירטואלית: נדרשת ל-WSL 2 ולאפליקציות Android.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Containers_DisposableClientVM" xml:space="preserve">
+    <value>Windows Sandbox: שולחן עבודה חד-פעמי לניסוי בטוח של תוכנות לא מוכרות.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.NetFx3" xml:space="preserve">
+    <value>‏.NET Framework 3.5: נדרש לחלק מהתוכנות והמשחקים הישנים.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.SMB1Protocol" xml:space="preserve">
+    <value>SMB 1.0: פרוטוקול שיתוף קבצים מיושן ולא מאובטח. השאר כבוי אלא אם מכשיר ישן צריך אותו.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.TelnetClient" xml:space="preserve">
+    <value>לקוח Telnet: כלי שורת פקודה לבדיקת יציאות רשת.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Printing_PrintToPDFServices_Features" xml:space="preserve">
+    <value>Microsoft Print to PDF: שמירת כל מה שניתן להדפיס כקובץ PDF.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.MediaPlayback" xml:space="preserve">
+    <value>תכונות מדיה: Windows Media Player ורכיבי הפעלת מדיה שחלק מהאפליקציות תלויות בהם.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Recall" xml:space="preserve">
+    <value>Recall: מצלם את המסך לחיפוש מאוחר יותר. הסרתו מפנה מקום ושומרת על פרטיות הפעילות.</value>
+  </data>
+  <data name="AppInstaller.Header.Title" xml:space="preserve">
+    <value>התקנת אפליקציות</value>
+  </data>
+  <data name="AppInstaller.Header.Description" xml:space="preserve">
+    <value>בחר אפליקציות פופולריות והתקן את כולן בבת אחת דרך winget, מנהל החבילות של Microsoft. האפליקציות מגיעות ממקורותיהן הרשמיים.</value>
+  </data>
+  <data name="AppInstaller.Install" xml:space="preserve">
+    <value>התקן נבחרים ({0})</value>
+  </data>
+  <data name="AppInstaller.Loading" xml:space="preserve">
+    <value>מחפש את winget...</value>
+  </data>
+  <data name="AppInstaller.WingetMissing" xml:space="preserve">
+    <value>לא נמצא winget. התקן את "App Installer" מ-Microsoft Store וחזור לכאן.</value>
+  </data>
+  <data name="AppInstaller.Progress" xml:space="preserve">
+    <value>מתקין את {0}...</value>
+  </data>
+  <data name="AppInstaller.Success.Title" xml:space="preserve">
+    <value>האפליקציות הותקנו</value>
+  </data>
+  <data name="AppInstaller.Success.Message" xml:space="preserve">
+    <value>הותקנו או כבר מעודכנות: {0}</value>
+  </data>
+  <data name="AppInstaller.Error.Title" xml:space="preserve">
+    <value>לא ניתן היה להתקין חלק מהאפליקציות</value>
+  </data>
+  <data name="AppInstaller.Category.Browsers" xml:space="preserve">
+    <value>דפדפנים</value>
+  </data>
+  <data name="AppInstaller.Category.Utilities" xml:space="preserve">
+    <value>כלי עזר</value>
+  </data>
+  <data name="AppInstaller.Category.Media" xml:space="preserve">
+    <value>מדיה</value>
+  </data>
+  <data name="AppInstaller.Category.Gaming" xml:space="preserve">
+    <value>גיימינג</value>
+  </data>
+  <data name="AppInstaller.Category.Development" xml:space="preserve">
+    <value>פיתוח</value>
+  </data>
+  <data name="AppInstaller.Category.Runtimes" xml:space="preserve">
+    <value>סביבות ריצה</value>
+  </data>
 </root>

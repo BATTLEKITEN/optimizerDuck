@@ -1,0 +1,103 @@
+<Page
+    x:Class="optimizerDuck.UI.Pages.ContextMenuPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="clr-namespace:optimizerDuck.UI.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:ext="clr-namespace:optimizerDuck.Common.Extensions"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:pages="clr-namespace:optimizerDuck.UI.Pages"
+    xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+    Title="ContextMenuPage"
+    d:DataContext="{d:DesignInstance pages:ContextMenuPage}"
+    d:DesignHeight="1200"
+    d:DesignWidth="800"
+    ui:Design.Background="Black"
+    ui:Design.Foreground="White"
+    Style="{StaticResource PageRootStyle}"
+    mc:Ignorable="d">
+
+    <Grid RowDefinitions="Auto,Auto,Auto,*">
+        <StackPanel Style="{StaticResource PageHeaderStyle}">
+            <ui:TextBlock Style="{StaticResource PageTitleStyle}" Text="{ext:Loc ContextMenu.Header.Title}" />
+            <ui:TextBlock Style="{StaticResource PageDescriptionStyle}" Text="{ext:Loc ContextMenu.Header.Description}" />
+        </StackPanel>
+
+        <Border Grid.Row="1" Style="{StaticResource ToolbarSurfaceStyle}">
+            <Grid ColumnDefinitions="*,Auto,Auto">
+                <ui:TextBox
+                    Icon="{ui:SymbolIcon Search24}"
+                    PlaceholderText="{ext:Loc ContextMenu.Search}"
+                    Text="{Binding ViewModel.SearchText, UpdateSourceTrigger=PropertyChanged}" />
+                <CheckBox
+                    Grid.Column="1"
+                    Margin="12,0,12,0"
+                    VerticalAlignment="Center"
+                    Content="{ext:Loc ContextMenu.ShowWindows}"
+                    Cursor="Hand"
+                    IsChecked="{Binding ViewModel.ShowWindowsEntries}" />
+                <ui:Button
+                    Grid.Column="2"
+                    Command="{Binding ViewModel.RefreshCommand}"
+                    Cursor="Hand"
+                    Icon="{ui:SymbolIcon ArrowClockwise24}"
+                    ToolTip="{ext:Loc Health.Button.Refresh}" />
+            </Grid>
+        </Border>
+
+        <ui:InfoBar
+            Grid.Row="2"
+            Margin="0,0,0,8"
+            IsClosable="False"
+            IsOpen="{Binding ViewModel.NeedsExplorerRestart}"
+            Message="{ext:Loc ContextMenu.RestartNeeded}"
+            Severity="Informational">
+            <ui:Button
+                Margin="0,4,0,0"
+                Command="{Binding ViewModel.RestartExplorerCommand}"
+                Content="{ext:Loc ContextMenu.RestartExplorer}"
+                Cursor="Hand"
+                Icon="{ui:SymbolIcon ArrowClockwise24}" />
+        </ui:InfoBar>
+
+        <controls:LoadingStateOverlay
+            Grid.Row="3"
+            IsLoading="{Binding ViewModel.IsLoading}"
+            Title="{ext:Loc ContextMenu.Loading}" />
+
+        <ScrollViewer Grid.Row="3">
+            <ItemsControl ItemsSource="{Binding ViewModel.Entries}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <ui:CardControl Margin="0,0,0,4" Icon="{ui:SymbolIcon AppsList24}">
+                            <ui:CardControl.Header>
+                                <StackPanel>
+                                    <ui:TextBlock
+                                        FontTypography="BodyStrong"
+                                        Text="{Binding Name}"
+                                        TextWrapping="Wrap" />
+                                    <ui:TextBlock
+                                        FontTypography="Caption"
+                                        Foreground="{DynamicResource TextFillColorSecondaryBrush}"
+                                        Text="{Binding Locations}" />
+                                    <ui:TextBlock
+                                        FontTypography="Caption"
+                                        Foreground="{DynamicResource TextFillColorDisabledBrush}"
+                                        Text="{Binding DllPath}"
+                                        TextTrimming="CharacterEllipsis" />
+                                </StackPanel>
+                            </ui:CardControl.Header>
+                            <ui:ToggleSwitch
+                                Command="{Binding DataContext.ViewModel.ToggleEntryCommand, RelativeSource={RelativeSource AncestorType=Page}}"
+                                CommandParameter="{Binding}"
+                                Cursor="Hand"
+                                IsChecked="{Binding IsEnabled, Mode=TwoWay}"
+                                OffContent="{ext:Loc Common.Toggle.Off}"
+                                OnContent="{ext:Loc Common.Toggle.On}" />
+                        </ui:CardControl>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+    </Grid>
+</Page>

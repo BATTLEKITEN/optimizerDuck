@@ -2799,5 +2799,305 @@
   <data name="Optimizer.BloatwareAndServices.DisableOneDrive.ShortDescription" xml:space="preserve">
     <value>يمنع OneDrive من التشغيل والمزامنة، ويزيله من الشريط الجانبي لمستكشف الملفات. تبقى الملفات الموجودة في مجلد OneDrive على القرص ولا يتم إلغاء تثبيت أي شيء.</value>
   </data>
+  <data name="Sidebar.Health" xml:space="preserve">
+    <value>صحة النظام</value>
+  </data>
+  <data name="Sidebar.ContextMenu" xml:space="preserve">
+    <value>قائمة السياق</value>
+  </data>
+  <data name="Sidebar.OptionalFeatures" xml:space="preserve">
+    <value>ميزات Windows</value>
+  </data>
+  <data name="Sidebar.AppInstaller" xml:space="preserve">
+    <value>تثبيت التطبيقات</value>
+  </data>
+  <data name="DiskCleanup.Item.DeliveryOptimization" xml:space="preserve">
+    <value>ذاكرة التخزين المؤقت لتحسين التسليم</value>
+  </data>
+  <data name="DiskCleanup.Item.DeliveryOptimization.Description" xml:space="preserve">
+    <value>ملفات تحديث يحتفظ بها Windows لمشاركتها مع أجهزة أخرى، ويمكن حذفها بأمان</value>
+  </data>
+  <data name="DiskCleanup.Item.SystemErrorReports" xml:space="preserve">
+    <value>تقارير أخطاء النظام</value>
+  </data>
+  <data name="DiskCleanup.Item.SystemErrorReports.Description" xml:space="preserve">
+    <value>تقارير الأعطال والمشكلات التي يحتفظ بها الإبلاغ عن أخطاء Windows لجميع المستخدمين</value>
+  </data>
+  <data name="DiskCleanup.Item.ShaderCache" xml:space="preserve">
+    <value>ذاكرة DirectX المؤقتة للمظللات</value>
+  </data>
+  <data name="DiskCleanup.Item.ShaderCache.Description" xml:space="preserve">
+    <value>مظللات مُجمّعة تعيد الألعاب بناءها عند التشغيل التالي، وقد يحل ذلك التقطيع بعد تحديث برنامج التشغيل</value>
+  </data>
+  <data name="Health.Header.Title" xml:space="preserve">
+    <value>صحة النظام</value>
+  </data>
+  <data name="Health.Header.Description" xml:space="preserve">
+    <value>الأمان والأقراص والبطارية في لمحة واحدة. لا شيء هنا يغيّر جهازك.</value>
+  </data>
+  <data name="Health.Loading" xml:space="preserve">
+    <value>جارٍ فحص جهازك...</value>
+  </data>
+  <data name="Health.Button.Refresh" xml:space="preserve">
+    <value>تحديث</value>
+  </data>
+  <data name="Health.Button.Export" xml:space="preserve">
+    <value>حفظ التقرير</value>
+  </data>
+  <data name="Health.Button.BatteryReport" xml:space="preserve">
+    <value>تقرير البطارية</value>
+  </data>
+  <data name="Health.Export.Failed.Title" xml:space="preserve">
+    <value>تعذر حفظ التقرير</value>
+  </data>
+  <data name="Health.Status.Good" xml:space="preserve">
+    <value>جيد</value>
+  </data>
+  <data name="Health.Status.Info" xml:space="preserve">
+    <value>معلومة</value>
+  </data>
+  <data name="Health.Status.Warning" xml:space="preserve">
+    <value>تنبيه</value>
+  </data>
+  <data name="Health.Status.Bad" xml:space="preserve">
+    <value>مشكلة</value>
+  </data>
+  <data name="Health.Status.Unknown" xml:space="preserve">
+    <value>غير معروف</value>
+  </data>
+  <data name="Health.Unknown" xml:space="preserve">
+    <value>لم يبلّغ Windows عن ذلك.</value>
+  </data>
+  <data name="Health.State.On" xml:space="preserve">
+    <value>مفعّل</value>
+  </data>
+  <data name="Health.State.Off" xml:space="preserve">
+    <value>معطّل</value>
+  </data>
+  <data name="Health.Check.SecureBoot" xml:space="preserve">
+    <value>التمهيد الآمن</value>
+  </data>
+  <data name="Health.SecureBoot.Off" xml:space="preserve">
+    <value>معطّل. فعّله من إعدادات UEFI لحظر البرمجيات الخبيثة على مستوى الإقلاع.</value>
+  </data>
+  <data name="Health.SecureBoot.Unsupported" xml:space="preserve">
+    <value>غير متاح: يبدأ الجهاز في وضع BIOS القديم.</value>
+  </data>
+  <data name="Health.Check.Tpm" xml:space="preserve">
+    <value>TPM</value>
+  </data>
+  <data name="Health.Tpm.Ready" xml:space="preserve">
+    <value>TPM {0} مفعّل وجاهز.</value>
+  </data>
+  <data name="Health.Tpm.NotReady" xml:space="preserve">
+    <value>TPM {0} موجود لكنه معطّل أو غير جاهز. راجع إعدادات UEFI.</value>
+  </data>
+  <data name="Health.Tpm.None" xml:space="preserve">
+    <value>لم يتم العثور على TPM. يحتاجه Windows 11 وBitLocker.</value>
+  </data>
+  <data name="Health.Check.Vbs" xml:space="preserve">
+    <value>الأمان المستند إلى المحاكاة الافتراضية</value>
+  </data>
+  <data name="Health.Vbs.Running" xml:space="preserve">
+    <value>قيد التشغيل. يحمي النظام مقابل تكلفة طفيفة في أداء الألعاب.</value>
+  </data>
+  <data name="Health.Vbs.Enabled" xml:space="preserve">
+    <value>مفعّل لكنه لا يعمل. قد يلزم إعادة التشغيل أو ضبط إعداد في البرنامج الثابت.</value>
+  </data>
+  <data name="Health.Check.MemoryIntegrity" xml:space="preserve">
+    <value>تكامل الذاكرة</value>
+  </data>
+  <data name="Health.Check.Defender" xml:space="preserve">
+    <value>Microsoft Defender</value>
+  </data>
+  <data name="Health.Defender.On" xml:space="preserve">
+    <value>الحماية في الوقت الحقيقي مفعّلة والتعريفات محدّثة.</value>
+  </data>
+  <data name="Health.Defender.Off" xml:space="preserve">
+    <value>الحماية في الوقت الحقيقي معطّلة. تأكد من أن برنامج مكافحة فيروسات آخر يحمي هذا الجهاز.</value>
+  </data>
+  <data name="Health.Defender.Old" xml:space="preserve">
+    <value>عمر التعريفات {0} يومًا. شغّل Windows Update.</value>
+  </data>
+  <data name="Health.Defender.Unknown" xml:space="preserve">
+    <value>لا توجد حالة من Defender؛ قد يكون برنامج مكافحة فيروسات آخر قيد الاستخدام.</value>
+  </data>
+  <data name="Health.Check.Disk" xml:space="preserve">
+    <value>القرص: {0}</value>
+  </data>
+  <data name="Health.Disk.Healthy" xml:space="preserve">
+    <value>سليم ({0})</value>
+  </data>
+  <data name="Health.Disk.Warning" xml:space="preserve">
+    <value>يبلّغ Windows عن تحذير ({0}). انسخ بياناتك احتياطيًا.</value>
+  </data>
+  <data name="Health.Disk.Unhealthy" xml:space="preserve">
+    <value>يبلّغ Windows أن هذا القرص يتعطل ({0}). انسخ بياناتك احتياطيًا الآن.</value>
+  </data>
+  <data name="Health.Check.Trim" xml:space="preserve">
+    <value>SSD TRIM</value>
+  </data>
+  <data name="Health.Trim.Off" xml:space="preserve">
+    <value>معطّل. تتباطأ أقراص SSD بمرور الوقت بدونه.</value>
+  </data>
+  <data name="Health.Check.FreeSpace" xml:space="preserve">
+    <value>المساحة الحرة على قرص النظام</value>
+  </data>
+  <data name="Health.FreeSpace.Value" xml:space="preserve">
+    <value>{0} متاحة من {1} ({2}%)</value>
+  </data>
+  <data name="Health.Check.PendingRestart" xml:space="preserve">
+    <value>إعادة تشغيل معلّقة</value>
+  </data>
+  <data name="Health.PendingRestart.Yes" xml:space="preserve">
+    <value>ينتظر Windows إعادة التشغيل لإكمال تثبيت التحديثات.</value>
+  </data>
+  <data name="Health.PendingRestart.No" xml:space="preserve">
+    <value>لا حاجة لإعادة التشغيل.</value>
+  </data>
+  <data name="Health.Check.BootTime" xml:space="preserve">
+    <value>مدة آخر إقلاع</value>
+  </data>
+  <data name="Health.BootTime.Value" xml:space="preserve">
+    <value>{0} ث، حسب قياس Windows</value>
+  </data>
+  <data name="Health.BootTime.Unknown" xml:space="preserve">
+    <value>لم يسجّل Windows مدة إقلاع بعد.</value>
+  </data>
+  <data name="Health.Check.Battery" xml:space="preserve">
+    <value>تآكل البطارية</value>
+  </data>
+  <data name="Health.Battery.Value" xml:space="preserve">
+    <value>تحتفظ بنسبة {0}% من سعتها الأصلية.</value>
+  </data>
+  <data name="ContextMenu.Header.Title" xml:space="preserve">
+    <value>قائمة السياق</value>
+  </data>
+  <data name="ContextMenu.Header.Description" xml:space="preserve">
+    <value>أوقف الإدخالات التي تضيفها التطبيقات إلى قائمة النقر بزر الماوس الأيمن في مستكشف الملفات. لا يُحذف شيء، وإعادة تشغيل الإدخال تستعيده.</value>
+  </data>
+  <data name="ContextMenu.Search" xml:space="preserve">
+    <value>البحث في الإدخالات</value>
+  </data>
+  <data name="ContextMenu.ShowWindows" xml:space="preserve">
+    <value>إظهار إدخالات Windows</value>
+  </data>
+  <data name="ContextMenu.Loading" xml:space="preserve">
+    <value>جارٍ قراءة إدخالات قائمة السياق...</value>
+  </data>
+  <data name="ContextMenu.RestartNeeded" xml:space="preserve">
+    <value>أعد تشغيل مستكشف الملفات لرؤية التغيير.</value>
+  </data>
+  <data name="ContextMenu.RestartExplorer" xml:space="preserve">
+    <value>إعادة تشغيل مستكشف الملفات</value>
+  </data>
+  <data name="ContextMenu.Error.Title" xml:space="preserve">
+    <value>تعذر تغيير الإدخال</value>
+  </data>
+  <data name="ContextMenu.Location.Files" xml:space="preserve">
+    <value>الملفات</value>
+  </data>
+  <data name="ContextMenu.Location.Folders" xml:space="preserve">
+    <value>المجلدات</value>
+  </data>
+  <data name="ContextMenu.Location.Background" xml:space="preserve">
+    <value>خلفية المجلد</value>
+  </data>
+  <data name="ContextMenu.Location.Drives" xml:space="preserve">
+    <value>محركات الأقراص</value>
+  </data>
+  <data name="OptionalFeatures.Header.Title" xml:space="preserve">
+    <value>ميزات Windows</value>
+  </data>
+  <data name="OptionalFeatures.Header.Description" xml:space="preserve">
+    <value>شغّل ميزات Windows الاختيارية أو أوقفها، تمامًا مثل "تشغيل ميزات Windows أو إيقاف تشغيلها". تكتمل معظم التغييرات بعد إعادة التشغيل.</value>
+  </data>
+  <data name="OptionalFeatures.Search" xml:space="preserve">
+    <value>البحث في الميزات</value>
+  </data>
+  <data name="OptionalFeatures.Loading" xml:space="preserve">
+    <value>جارٍ طلب الميزات من Windows...</value>
+  </data>
+  <data name="OptionalFeatures.RestartNeeded" xml:space="preserve">
+    <value>أعد تشغيل Windows لإكمال التغيير.</value>
+  </data>
+  <data name="OptionalFeatures.Error.Title" xml:space="preserve">
+    <value>تعذر تغيير الميزة</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Microsoft_Hyper_V_All" xml:space="preserve">
+    <value>Hyper-V: تشغيل الأجهزة الافتراضية. قد يقلل تشغيله أداء الألعاب ويتعارض مع تطبيقات المحاكاة الأخرى.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Microsoft_Windows_Subsystem_Linux" xml:space="preserve">
+    <value>نظام Windows الفرعي لـ Linux ‏(WSL): تشغيل أدوات Linux على Windows.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.VirtualMachinePlatform" xml:space="preserve">
+    <value>منصة الجهاز الظاهري: يحتاجها WSL 2 وتطبيقات Android.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Containers_DisposableClientVM" xml:space="preserve">
+    <value>Windows Sandbox: سطح مكتب مؤقت لتجربة البرامج المجهولة بأمان.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.NetFx3" xml:space="preserve">
+    <value>‏.NET Framework 3.5: تحتاجه بعض البرامج والألعاب القديمة.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.SMB1Protocol" xml:space="preserve">
+    <value>‏SMB 1.0: بروتوكول مشاركة ملفات قديم وغير آمن. أبقه معطّلًا ما لم يحتجه جهاز قديم.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.TelnetClient" xml:space="preserve">
+    <value>عميل Telnet: أداة سطر أوامر لاختبار منافذ الشبكة.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Printing_PrintToPDFServices_Features" xml:space="preserve">
+    <value>‏Microsoft Print to PDF: احفظ أي شيء قابل للطباعة كملف PDF.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.MediaPlayback" xml:space="preserve">
+    <value>ميزات الوسائط: مشغل Windows Media ومكونات تشغيل الوسائط التي تعتمد عليها بعض التطبيقات.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Recall" xml:space="preserve">
+    <value>Recall: يلتقط لقطات لشاشتك للبحث فيها لاحقًا. إزالته توفر مساحة وتحافظ على خصوصية نشاطك.</value>
+  </data>
+  <data name="AppInstaller.Header.Title" xml:space="preserve">
+    <value>تثبيت التطبيقات</value>
+  </data>
+  <data name="AppInstaller.Header.Description" xml:space="preserve">
+    <value>اختر تطبيقات شائعة وثبّتها دفعة واحدة عبر winget، مدير الحزم من Microsoft. تأتي التطبيقات من مصادرها الرسمية.</value>
+  </data>
+  <data name="AppInstaller.Install" xml:space="preserve">
+    <value>تثبيت المحدد ({0})</value>
+  </data>
+  <data name="AppInstaller.Loading" xml:space="preserve">
+    <value>جارٍ البحث عن winget...</value>
+  </data>
+  <data name="AppInstaller.WingetMissing" xml:space="preserve">
+    <value>لم يتم العثور على winget. ثبّت "مثبّت التطبيقات" من Microsoft Store ثم عد.</value>
+  </data>
+  <data name="AppInstaller.Progress" xml:space="preserve">
+    <value>جارٍ تثبيت {0}...</value>
+  </data>
+  <data name="AppInstaller.Success.Title" xml:space="preserve">
+    <value>تم تثبيت التطبيقات</value>
+  </data>
+  <data name="AppInstaller.Success.Message" xml:space="preserve">
+    <value>التطبيقات المثبتة أو المحدّثة مسبقًا: {0}</value>
+  </data>
+  <data name="AppInstaller.Error.Title" xml:space="preserve">
+    <value>تعذر تثبيت بعض التطبيقات</value>
+  </data>
+  <data name="AppInstaller.Category.Browsers" xml:space="preserve">
+    <value>المتصفحات</value>
+  </data>
+  <data name="AppInstaller.Category.Utilities" xml:space="preserve">
+    <value>الأدوات المساعدة</value>
+  </data>
+  <data name="AppInstaller.Category.Media" xml:space="preserve">
+    <value>الوسائط</value>
+  </data>
+  <data name="AppInstaller.Category.Gaming" xml:space="preserve">
+    <value>الألعاب</value>
+  </data>
+  <data name="AppInstaller.Category.Development" xml:space="preserve">
+    <value>التطوير</value>
+  </data>
+  <data name="AppInstaller.Category.Runtimes" xml:space="preserve">
+    <value>بيئات التشغيل</value>
+  </data>
 </root>
 

@@ -2757,4 +2757,304 @@
   <data name="Optimizer.BloatwareAndServices.DisableOneDrive.ShortDescription" xml:space="preserve">
     <value>Не даёт OneDrive запускаться и синхронизироваться и убирает его из боковой панели Проводника. Файлы в папке OneDrive остаются на диске, ничего не удаляется.</value>
   </data>
+  <data name="Sidebar.Health" xml:space="preserve">
+    <value>Состояние системы</value>
+  </data>
+  <data name="Sidebar.ContextMenu" xml:space="preserve">
+    <value>Контекстное меню</value>
+  </data>
+  <data name="Sidebar.OptionalFeatures" xml:space="preserve">
+    <value>Компоненты Windows</value>
+  </data>
+  <data name="Sidebar.AppInstaller" xml:space="preserve">
+    <value>Установка приложений</value>
+  </data>
+  <data name="DiskCleanup.Item.DeliveryOptimization" xml:space="preserve">
+    <value>Кэш оптимизации доставки</value>
+  </data>
+  <data name="DiskCleanup.Item.DeliveryOptimization.Description" xml:space="preserve">
+    <value>Файлы обновлений, которые Windows хранит для раздачи другим ПК; можно безопасно удалить</value>
+  </data>
+  <data name="DiskCleanup.Item.SystemErrorReports" xml:space="preserve">
+    <value>Системные отчёты об ошибках</value>
+  </data>
+  <data name="DiskCleanup.Item.SystemErrorReports.Description" xml:space="preserve">
+    <value>Отчёты о сбоях и проблемах, которые служба отчётов об ошибках Windows хранит для всех пользователей</value>
+  </data>
+  <data name="DiskCleanup.Item.ShaderCache" xml:space="preserve">
+    <value>Кэш шейдеров DirectX</value>
+  </data>
+  <data name="DiskCleanup.Item.ShaderCache.Description" xml:space="preserve">
+    <value>Скомпилированные шейдеры; игры пересоздадут их при следующем запуске, что может убрать фризы после обновления драйвера</value>
+  </data>
+  <data name="Health.Header.Title" xml:space="preserve">
+    <value>Состояние системы</value>
+  </data>
+  <data name="Health.Header.Description" xml:space="preserve">
+    <value>Безопасность, диски и батарея в одном окне. Здесь ничего не меняется.</value>
+  </data>
+  <data name="Health.Loading" xml:space="preserve">
+    <value>Проверка ПК...</value>
+  </data>
+  <data name="Health.Button.Refresh" xml:space="preserve">
+    <value>Обновить</value>
+  </data>
+  <data name="Health.Button.Export" xml:space="preserve">
+    <value>Сохранить отчёт</value>
+  </data>
+  <data name="Health.Button.BatteryReport" xml:space="preserve">
+    <value>Отчёт о батарее</value>
+  </data>
+  <data name="Health.Export.Failed.Title" xml:space="preserve">
+    <value>Не удалось сохранить отчёт</value>
+  </data>
+  <data name="Health.Status.Good" xml:space="preserve">
+    <value>Норма</value>
+  </data>
+  <data name="Health.Status.Info" xml:space="preserve">
+    <value>Сведения</value>
+  </data>
+  <data name="Health.Status.Warning" xml:space="preserve">
+    <value>Внимание</value>
+  </data>
+  <data name="Health.Status.Bad" xml:space="preserve">
+    <value>Проблема</value>
+  </data>
+  <data name="Health.Status.Unknown" xml:space="preserve">
+    <value>Неизвестно</value>
+  </data>
+  <data name="Health.Unknown" xml:space="preserve">
+    <value>Windows не сообщил эти данные.</value>
+  </data>
+  <data name="Health.State.On" xml:space="preserve">
+    <value>Включено</value>
+  </data>
+  <data name="Health.State.Off" xml:space="preserve">
+    <value>Выключено</value>
+  </data>
+  <data name="Health.Check.SecureBoot" xml:space="preserve">
+    <value>Безопасная загрузка</value>
+  </data>
+  <data name="Health.SecureBoot.Off" xml:space="preserve">
+    <value>Выключена. Включите её в настройках UEFI, чтобы блокировать вредоносные загрузчики.</value>
+  </data>
+  <data name="Health.SecureBoot.Unsupported" xml:space="preserve">
+    <value>Недоступно: ПК загружается в режиме Legacy BIOS.</value>
+  </data>
+  <data name="Health.Check.Tpm" xml:space="preserve">
+    <value>TPM</value>
+  </data>
+  <data name="Health.Tpm.Ready" xml:space="preserve">
+    <value>TPM {0} включён и готов.</value>
+  </data>
+  <data name="Health.Tpm.NotReady" xml:space="preserve">
+    <value>TPM {0} есть, но выключен или не готов. Проверьте настройки UEFI.</value>
+  </data>
+  <data name="Health.Tpm.None" xml:space="preserve">
+    <value>TPM не найден. Он нужен для Windows 11 и BitLocker.</value>
+  </data>
+  <data name="Health.Check.Vbs" xml:space="preserve">
+    <value>Безопасность на основе виртуализации</value>
+  </data>
+  <data name="Health.Vbs.Running" xml:space="preserve">
+    <value>Работает. Защищает систему ценой небольшого снижения производительности в играх.</value>
+  </data>
+  <data name="Health.Vbs.Enabled" xml:space="preserve">
+    <value>Включена, но не работает. Возможно, нужна перезагрузка или настройка прошивки.</value>
+  </data>
+  <data name="Health.Check.MemoryIntegrity" xml:space="preserve">
+    <value>Целостность памяти</value>
+  </data>
+  <data name="Health.Check.Defender" xml:space="preserve">
+    <value>Microsoft Defender</value>
+  </data>
+  <data name="Health.Defender.On" xml:space="preserve">
+    <value>Защита в реальном времени включена, базы актуальны.</value>
+  </data>
+  <data name="Health.Defender.Off" xml:space="preserve">
+    <value>Защита в реальном времени выключена. Убедитесь, что ПК защищает другой антивирус.</value>
+  </data>
+  <data name="Health.Defender.Old" xml:space="preserve">
+    <value>Базам {0} дн. Запустите Центр обновления Windows.</value>
+  </data>
+  <data name="Health.Defender.Unknown" xml:space="preserve">
+    <value>Нет данных от Defender; возможно, используется другой антивирус.</value>
+  </data>
+  <data name="Health.Check.Disk" xml:space="preserve">
+    <value>Диск: {0}</value>
+  </data>
+  <data name="Health.Disk.Healthy" xml:space="preserve">
+    <value>Исправен ({0})</value>
+  </data>
+  <data name="Health.Disk.Warning" xml:space="preserve">
+    <value>Windows сообщает о предупреждении ({0}). Сделайте резервную копию данных.</value>
+  </data>
+  <data name="Health.Disk.Unhealthy" xml:space="preserve">
+    <value>Windows сообщает о неисправности диска ({0}). Срочно сохраните данные.</value>
+  </data>
+  <data name="Health.Check.Trim" xml:space="preserve">
+    <value>TRIM для SSD</value>
+  </data>
+  <data name="Health.Trim.Off" xml:space="preserve">
+    <value>Выключен. Без него SSD со временем замедляются.</value>
+  </data>
+  <data name="Health.Check.FreeSpace" xml:space="preserve">
+    <value>Свободно на системном диске</value>
+  </data>
+  <data name="Health.FreeSpace.Value" xml:space="preserve">
+    <value>Свободно {0} из {1} ({2}%)</value>
+  </data>
+  <data name="Health.Check.PendingRestart" xml:space="preserve">
+    <value>Ожидающая перезагрузка</value>
+  </data>
+  <data name="Health.PendingRestart.Yes" xml:space="preserve">
+    <value>Windows ждёт перезагрузки, чтобы завершить установку обновлений.</value>
+  </data>
+  <data name="Health.PendingRestart.No" xml:space="preserve">
+    <value>Перезагрузка не требуется.</value>
+  </data>
+  <data name="Health.Check.BootTime" xml:space="preserve">
+    <value>Время последней загрузки</value>
+  </data>
+  <data name="Health.BootTime.Value" xml:space="preserve">
+    <value>{0} с по данным Windows</value>
+  </data>
+  <data name="Health.BootTime.Unknown" xml:space="preserve">
+    <value>Windows ещё не записал время загрузки.</value>
+  </data>
+  <data name="Health.Check.Battery" xml:space="preserve">
+    <value>Износ батареи</value>
+  </data>
+  <data name="Health.Battery.Value" xml:space="preserve">
+    <value>Сохраняет {0}% исходной ёмкости.</value>
+  </data>
+  <data name="ContextMenu.Header.Title" xml:space="preserve">
+    <value>Контекстное меню</value>
+  </data>
+  <data name="ContextMenu.Header.Description" xml:space="preserve">
+    <value>Отключайте пункты, которые программы добавляют в меню правой кнопки Проводника. Ничего не удаляется: повторное включение возвращает пункт.</value>
+  </data>
+  <data name="ContextMenu.Search" xml:space="preserve">
+    <value>Поиск пунктов</value>
+  </data>
+  <data name="ContextMenu.ShowWindows" xml:space="preserve">
+    <value>Показать пункты Windows</value>
+  </data>
+  <data name="ContextMenu.Loading" xml:space="preserve">
+    <value>Чтение пунктов контекстного меню...</value>
+  </data>
+  <data name="ContextMenu.RestartNeeded" xml:space="preserve">
+    <value>Перезапустите Проводник, чтобы увидеть изменения.</value>
+  </data>
+  <data name="ContextMenu.RestartExplorer" xml:space="preserve">
+    <value>Перезапустить Проводник</value>
+  </data>
+  <data name="ContextMenu.Error.Title" xml:space="preserve">
+    <value>Не удалось изменить пункт</value>
+  </data>
+  <data name="ContextMenu.Location.Files" xml:space="preserve">
+    <value>Файлы</value>
+  </data>
+  <data name="ContextMenu.Location.Folders" xml:space="preserve">
+    <value>Папки</value>
+  </data>
+  <data name="ContextMenu.Location.Background" xml:space="preserve">
+    <value>Фон папки</value>
+  </data>
+  <data name="ContextMenu.Location.Drives" xml:space="preserve">
+    <value>Диски</value>
+  </data>
+  <data name="OptionalFeatures.Header.Title" xml:space="preserve">
+    <value>Компоненты Windows</value>
+  </data>
+  <data name="OptionalFeatures.Header.Description" xml:space="preserve">
+    <value>Включайте и отключайте компоненты Windows, как в окне «Включение или отключение компонентов Windows». Большинство изменений вступают в силу после перезагрузки.</value>
+  </data>
+  <data name="OptionalFeatures.Search" xml:space="preserve">
+    <value>Поиск компонентов</value>
+  </data>
+  <data name="OptionalFeatures.Loading" xml:space="preserve">
+    <value>Запрос компонентов у Windows...</value>
+  </data>
+  <data name="OptionalFeatures.RestartNeeded" xml:space="preserve">
+    <value>Перезагрузите Windows, чтобы завершить изменение.</value>
+  </data>
+  <data name="OptionalFeatures.Error.Title" xml:space="preserve">
+    <value>Не удалось изменить компонент</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Microsoft_Hyper_V_All" xml:space="preserve">
+    <value>Hyper-V: запуск виртуальных машин. Может снизить производительность в играх и конфликтовать с другими программами виртуализации.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Microsoft_Windows_Subsystem_Linux" xml:space="preserve">
+    <value>Подсистема Windows для Linux (WSL): запуск инструментов Linux в Windows.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.VirtualMachinePlatform" xml:space="preserve">
+    <value>Платформа виртуальной машины: нужна для WSL 2 и Android-приложений.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Containers_DisposableClientVM" xml:space="preserve">
+    <value>Песочница Windows: одноразовый рабочий стол для безопасной проверки неизвестных программ.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.NetFx3" xml:space="preserve">
+    <value>.NET Framework 3.5: нужен некоторым старым программам и играм.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.SMB1Protocol" xml:space="preserve">
+    <value>SMB 1.0: устаревший и небезопасный протокол общего доступа. Не включайте без необходимости для старых устройств.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.TelnetClient" xml:space="preserve">
+    <value>Клиент Telnet: консольная утилита для проверки сетевых портов.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Printing_PrintToPDFServices_Features" xml:space="preserve">
+    <value>Microsoft Print to PDF: сохранение в PDF всего, что можно напечатать.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.MediaPlayback" xml:space="preserve">
+    <value>Компоненты мультимедиа: проигрыватель Windows Media и компоненты воспроизведения, нужные некоторым программам.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Recall" xml:space="preserve">
+    <value>Recall: делает снимки экрана для последующего поиска. Удаление освобождает место и защищает вашу активность.</value>
+  </data>
+  <data name="AppInstaller.Header.Title" xml:space="preserve">
+    <value>Установка приложений</value>
+  </data>
+  <data name="AppInstaller.Header.Description" xml:space="preserve">
+    <value>Выберите популярные приложения и установите их разом через winget, менеджер пакетов Microsoft. Приложения загружаются из официальных источников.</value>
+  </data>
+  <data name="AppInstaller.Install" xml:space="preserve">
+    <value>Установить выбранные ({0})</value>
+  </data>
+  <data name="AppInstaller.Loading" xml:space="preserve">
+    <value>Поиск winget...</value>
+  </data>
+  <data name="AppInstaller.WingetMissing" xml:space="preserve">
+    <value>winget не найден. Установите «Установщик приложений» из Microsoft Store и вернитесь.</value>
+  </data>
+  <data name="AppInstaller.Progress" xml:space="preserve">
+    <value>Установка {0}...</value>
+  </data>
+  <data name="AppInstaller.Success.Title" xml:space="preserve">
+    <value>Приложения установлены</value>
+  </data>
+  <data name="AppInstaller.Success.Message" xml:space="preserve">
+    <value>Установлено или уже актуально: {0}</value>
+  </data>
+  <data name="AppInstaller.Error.Title" xml:space="preserve">
+    <value>Некоторые приложения не удалось установить</value>
+  </data>
+  <data name="AppInstaller.Category.Browsers" xml:space="preserve">
+    <value>Браузеры</value>
+  </data>
+  <data name="AppInstaller.Category.Utilities" xml:space="preserve">
+    <value>Утилиты</value>
+  </data>
+  <data name="AppInstaller.Category.Media" xml:space="preserve">
+    <value>Мультимедиа</value>
+  </data>
+  <data name="AppInstaller.Category.Gaming" xml:space="preserve">
+    <value>Игры</value>
+  </data>
+  <data name="AppInstaller.Category.Development" xml:space="preserve">
+    <value>Разработка</value>
+  </data>
+  <data name="AppInstaller.Category.Runtimes" xml:space="preserve">
+    <value>Среды выполнения</value>
+  </data>
 </root>

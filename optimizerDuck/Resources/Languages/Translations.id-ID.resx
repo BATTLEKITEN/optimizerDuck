@@ -2814,4 +2814,304 @@ Kode keluar: 0 berhasil, 1 ada kegagalan atau optimasi yang dibatalkan, 2 kesala
   <data name="Optimizer.BloatwareAndServices.DisableOneDrive.ShortDescription" xml:space="preserve">
     <value>Mencegah OneDrive berjalan dan menyinkronkan, serta menghapusnya dari panel samping File Explorer. File di folder OneDrive tetap ada di disk; tidak ada yang dicopot.</value>
   </data>
+  <data name="Sidebar.Health" xml:space="preserve">
+    <value>Kesehatan sistem</value>
+  </data>
+  <data name="Sidebar.ContextMenu" xml:space="preserve">
+    <value>Menu konteks</value>
+  </data>
+  <data name="Sidebar.OptionalFeatures" xml:space="preserve">
+    <value>Fitur Windows</value>
+  </data>
+  <data name="Sidebar.AppInstaller" xml:space="preserve">
+    <value>Pasang aplikasi</value>
+  </data>
+  <data name="DiskCleanup.Item.DeliveryOptimization" xml:space="preserve">
+    <value>Cache Pengoptimalan Pengiriman</value>
+  </data>
+  <data name="DiskCleanup.Item.DeliveryOptimization.Description" xml:space="preserve">
+    <value>File pembaruan yang disimpan Windows untuk dibagikan ke PC lain; aman dihapus</value>
+  </data>
+  <data name="DiskCleanup.Item.SystemErrorReports" xml:space="preserve">
+    <value>Laporan kesalahan sistem</value>
+  </data>
+  <data name="DiskCleanup.Item.SystemErrorReports.Description" xml:space="preserve">
+    <value>Laporan crash dan masalah yang disimpan Windows Error Reporting untuk semua pengguna</value>
+  </data>
+  <data name="DiskCleanup.Item.ShaderCache" xml:space="preserve">
+    <value>Cache shader DirectX</value>
+  </data>
+  <data name="DiskCleanup.Item.ShaderCache.Description" xml:space="preserve">
+    <value>Shader terkompilasi; game membuatnya ulang saat dijalankan berikutnya, bisa mengatasi stutter setelah update driver</value>
+  </data>
+  <data name="Health.Header.Title" xml:space="preserve">
+    <value>Kesehatan sistem</value>
+  </data>
+  <data name="Health.Header.Description" xml:space="preserve">
+    <value>Keamanan, disk, dan baterai sekilas. Tidak ada yang diubah di PC Anda.</value>
+  </data>
+  <data name="Health.Loading" xml:space="preserve">
+    <value>Memeriksa PC Anda...</value>
+  </data>
+  <data name="Health.Button.Refresh" xml:space="preserve">
+    <value>Segarkan</value>
+  </data>
+  <data name="Health.Button.Export" xml:space="preserve">
+    <value>Simpan laporan</value>
+  </data>
+  <data name="Health.Button.BatteryReport" xml:space="preserve">
+    <value>Laporan baterai</value>
+  </data>
+  <data name="Health.Export.Failed.Title" xml:space="preserve">
+    <value>Tidak dapat menyimpan laporan</value>
+  </data>
+  <data name="Health.Status.Good" xml:space="preserve">
+    <value>Baik</value>
+  </data>
+  <data name="Health.Status.Info" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="Health.Status.Warning" xml:space="preserve">
+    <value>Perhatian</value>
+  </data>
+  <data name="Health.Status.Bad" xml:space="preserve">
+    <value>Masalah</value>
+  </data>
+  <data name="Health.Status.Unknown" xml:space="preserve">
+    <value>Tidak diketahui</value>
+  </data>
+  <data name="Health.Unknown" xml:space="preserve">
+    <value>Windows tidak melaporkan ini.</value>
+  </data>
+  <data name="Health.State.On" xml:space="preserve">
+    <value>Aktif</value>
+  </data>
+  <data name="Health.State.Off" xml:space="preserve">
+    <value>Nonaktif</value>
+  </data>
+  <data name="Health.Check.SecureBoot" xml:space="preserve">
+    <value>Secure Boot</value>
+  </data>
+  <data name="Health.SecureBoot.Off" xml:space="preserve">
+    <value>Nonaktif. Aktifkan di pengaturan UEFI untuk memblokir malware saat boot.</value>
+  </data>
+  <data name="Health.SecureBoot.Unsupported" xml:space="preserve">
+    <value>Tidak tersedia: PC berjalan dalam mode legacy BIOS.</value>
+  </data>
+  <data name="Health.Check.Tpm" xml:space="preserve">
+    <value>TPM</value>
+  </data>
+  <data name="Health.Tpm.Ready" xml:space="preserve">
+    <value>TPM {0} aktif dan siap.</value>
+  </data>
+  <data name="Health.Tpm.NotReady" xml:space="preserve">
+    <value>TPM {0} ada tetapi nonaktif atau belum siap. Periksa pengaturan UEFI.</value>
+  </data>
+  <data name="Health.Tpm.None" xml:space="preserve">
+    <value>TPM tidak ditemukan. Windows 11 dan BitLocker membutuhkannya.</value>
+  </data>
+  <data name="Health.Check.Vbs" xml:space="preserve">
+    <value>Keamanan berbasis virtualisasi</value>
+  </data>
+  <data name="Health.Vbs.Running" xml:space="preserve">
+    <value>Berjalan. Melindungi sistem dengan sedikit pengorbanan performa game.</value>
+  </data>
+  <data name="Health.Vbs.Enabled" xml:space="preserve">
+    <value>Diaktifkan tetapi tidak berjalan. Mungkin perlu restart atau pengaturan firmware.</value>
+  </data>
+  <data name="Health.Check.MemoryIntegrity" xml:space="preserve">
+    <value>Integritas memori</value>
+  </data>
+  <data name="Health.Check.Defender" xml:space="preserve">
+    <value>Microsoft Defender</value>
+  </data>
+  <data name="Health.Defender.On" xml:space="preserve">
+    <value>Perlindungan real-time aktif dan definisi terbaru.</value>
+  </data>
+  <data name="Health.Defender.Off" xml:space="preserve">
+    <value>Perlindungan real-time nonaktif. Pastikan ada antivirus lain yang melindungi PC ini.</value>
+  </data>
+  <data name="Health.Defender.Old" xml:space="preserve">
+    <value>Definisi sudah berumur {0} hari. Jalankan Windows Update.</value>
+  </data>
+  <data name="Health.Defender.Unknown" xml:space="preserve">
+    <value>Tidak ada status dari Defender; mungkin antivirus lain sedang digunakan.</value>
+  </data>
+  <data name="Health.Check.Disk" xml:space="preserve">
+    <value>Disk: {0}</value>
+  </data>
+  <data name="Health.Disk.Healthy" xml:space="preserve">
+    <value>Sehat ({0})</value>
+  </data>
+  <data name="Health.Disk.Warning" xml:space="preserve">
+    <value>Windows melaporkan peringatan ({0}). Cadangkan data Anda.</value>
+  </data>
+  <data name="Health.Disk.Unhealthy" xml:space="preserve">
+    <value>Windows melaporkan disk ini bermasalah ({0}). Segera cadangkan data Anda.</value>
+  </data>
+  <data name="Health.Check.Trim" xml:space="preserve">
+    <value>TRIM SSD</value>
+  </data>
+  <data name="Health.Trim.Off" xml:space="preserve">
+    <value>Nonaktif. Tanpa TRIM, SSD melambat seiring waktu.</value>
+  </data>
+  <data name="Health.Check.FreeSpace" xml:space="preserve">
+    <value>Ruang kosong di drive sistem</value>
+  </data>
+  <data name="Health.FreeSpace.Value" xml:space="preserve">
+    <value>{0} kosong dari {1} ({2}%)</value>
+  </data>
+  <data name="Health.Check.PendingRestart" xml:space="preserve">
+    <value>Restart tertunda</value>
+  </data>
+  <data name="Health.PendingRestart.Yes" xml:space="preserve">
+    <value>Windows menunggu restart untuk menyelesaikan instalasi pembaruan.</value>
+  </data>
+  <data name="Health.PendingRestart.No" xml:space="preserve">
+    <value>Tidak perlu restart.</value>
+  </data>
+  <data name="Health.Check.BootTime" xml:space="preserve">
+    <value>Waktu boot terakhir</value>
+  </data>
+  <data name="Health.BootTime.Value" xml:space="preserve">
+    <value>{0} dtk, menurut pengukuran Windows</value>
+  </data>
+  <data name="Health.BootTime.Unknown" xml:space="preserve">
+    <value>Windows belum mencatat waktu boot.</value>
+  </data>
+  <data name="Health.Check.Battery" xml:space="preserve">
+    <value>Keausan baterai</value>
+  </data>
+  <data name="Health.Battery.Value" xml:space="preserve">
+    <value>Menyimpan {0}% dari kapasitas aslinya.</value>
+  </data>
+  <data name="ContextMenu.Header.Title" xml:space="preserve">
+    <value>Menu konteks</value>
+  </data>
+  <data name="ContextMenu.Header.Description" xml:space="preserve">
+    <value>Matikan entri yang ditambahkan aplikasi ke menu klik kanan File Explorer. Tidak ada yang dihapus; mengaktifkannya lagi akan memulihkannya.</value>
+  </data>
+  <data name="ContextMenu.Search" xml:space="preserve">
+    <value>Cari entri</value>
+  </data>
+  <data name="ContextMenu.ShowWindows" xml:space="preserve">
+    <value>Tampilkan entri Windows</value>
+  </data>
+  <data name="ContextMenu.Loading" xml:space="preserve">
+    <value>Membaca entri menu konteks...</value>
+  </data>
+  <data name="ContextMenu.RestartNeeded" xml:space="preserve">
+    <value>Mulai ulang File Explorer untuk melihat perubahannya.</value>
+  </data>
+  <data name="ContextMenu.RestartExplorer" xml:space="preserve">
+    <value>Mulai ulang File Explorer</value>
+  </data>
+  <data name="ContextMenu.Error.Title" xml:space="preserve">
+    <value>Tidak dapat mengubah entri</value>
+  </data>
+  <data name="ContextMenu.Location.Files" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="ContextMenu.Location.Folders" xml:space="preserve">
+    <value>Folder</value>
+  </data>
+  <data name="ContextMenu.Location.Background" xml:space="preserve">
+    <value>Latar folder</value>
+  </data>
+  <data name="ContextMenu.Location.Drives" xml:space="preserve">
+    <value>Drive</value>
+  </data>
+  <data name="OptionalFeatures.Header.Title" xml:space="preserve">
+    <value>Fitur Windows</value>
+  </data>
+  <data name="OptionalFeatures.Header.Description" xml:space="preserve">
+    <value>Aktifkan atau nonaktifkan fitur opsional Windows, sama seperti "Turn Windows features on or off". Sebagian besar perubahan selesai setelah restart.</value>
+  </data>
+  <data name="OptionalFeatures.Search" xml:space="preserve">
+    <value>Cari fitur</value>
+  </data>
+  <data name="OptionalFeatures.Loading" xml:space="preserve">
+    <value>Meminta daftar fitur dari Windows...</value>
+  </data>
+  <data name="OptionalFeatures.RestartNeeded" xml:space="preserve">
+    <value>Mulai ulang Windows untuk menyelesaikan perubahan.</value>
+  </data>
+  <data name="OptionalFeatures.Error.Title" xml:space="preserve">
+    <value>Tidak dapat mengubah fitur</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Microsoft_Hyper_V_All" xml:space="preserve">
+    <value>Hyper-V: menjalankan mesin virtual. Bisa menurunkan performa game dan bentrok dengan aplikasi virtualisasi lain.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Microsoft_Windows_Subsystem_Linux" xml:space="preserve">
+    <value>Windows Subsystem for Linux (WSL): menjalankan tool Linux di Windows.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.VirtualMachinePlatform" xml:space="preserve">
+    <value>Virtual Machine Platform: dibutuhkan WSL 2 dan aplikasi Android.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Containers_DisposableClientVM" xml:space="preserve">
+    <value>Windows Sandbox: desktop sekali pakai untuk mencoba program tak dikenal dengan aman.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.NetFx3" xml:space="preserve">
+    <value>.NET Framework 3.5: dibutuhkan beberapa program dan game lama.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.SMB1Protocol" xml:space="preserve">
+    <value>SMB 1.0: protokol berbagi file usang dan tidak aman. Biarkan nonaktif kecuali perangkat lama membutuhkannya.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.TelnetClient" xml:space="preserve">
+    <value>Klien Telnet: tool command line untuk menguji port jaringan.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Printing_PrintToPDFServices_Features" xml:space="preserve">
+    <value>Microsoft Print to PDF: simpan apa pun yang bisa dicetak sebagai PDF.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.MediaPlayback" xml:space="preserve">
+    <value>Fitur media: Windows Media Player dan komponen pemutaran yang dibutuhkan beberapa aplikasi.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Recall" xml:space="preserve">
+    <value>Recall: mengambil cuplikan layar untuk dicari nanti. Menghapusnya menghemat ruang dan menjaga privasi aktivitas.</value>
+  </data>
+  <data name="AppInstaller.Header.Title" xml:space="preserve">
+    <value>Pasang aplikasi</value>
+  </data>
+  <data name="AppInstaller.Header.Description" xml:space="preserve">
+    <value>Pilih aplikasi populer dan pasang sekaligus lewat winget, package manager dari Microsoft. Aplikasi berasal dari sumber resminya.</value>
+  </data>
+  <data name="AppInstaller.Install" xml:space="preserve">
+    <value>Pasang yang dipilih ({0})</value>
+  </data>
+  <data name="AppInstaller.Loading" xml:space="preserve">
+    <value>Mencari winget...</value>
+  </data>
+  <data name="AppInstaller.WingetMissing" xml:space="preserve">
+    <value>winget tidak ditemukan. Pasang "App Installer" dari Microsoft Store, lalu kembali.</value>
+  </data>
+  <data name="AppInstaller.Progress" xml:space="preserve">
+    <value>Memasang {0}...</value>
+  </data>
+  <data name="AppInstaller.Success.Title" xml:space="preserve">
+    <value>Aplikasi terpasang</value>
+  </data>
+  <data name="AppInstaller.Success.Message" xml:space="preserve">
+    <value>Terpasang atau sudah terbaru: {0}</value>
+  </data>
+  <data name="AppInstaller.Error.Title" xml:space="preserve">
+    <value>Beberapa aplikasi tidak dapat dipasang</value>
+  </data>
+  <data name="AppInstaller.Category.Browsers" xml:space="preserve">
+    <value>Browser</value>
+  </data>
+  <data name="AppInstaller.Category.Utilities" xml:space="preserve">
+    <value>Utilitas</value>
+  </data>
+  <data name="AppInstaller.Category.Media" xml:space="preserve">
+    <value>Media</value>
+  </data>
+  <data name="AppInstaller.Category.Gaming" xml:space="preserve">
+    <value>Gaming</value>
+  </data>
+  <data name="AppInstaller.Category.Development" xml:space="preserve">
+    <value>Pengembangan</value>
+  </data>
+  <data name="AppInstaller.Category.Runtimes" xml:space="preserve">
+    <value>Runtime</value>
+  </data>
 </root>
