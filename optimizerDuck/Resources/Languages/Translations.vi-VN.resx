@@ -3073,4 +3073,7 @@ Mã thoát: 0 thành công, 1 có lỗi hoặc có tối ưu bị hoàn tác, 2 
   <data name="Update.Failed.Message" xml:space="preserve">
     <value>Không thể tải hoặc xác minh. Trang phát hành sẽ mở để bạn cập nhật thủ công.</value>
   </data>
+  <data name="Optimizer.Menu.HideUnavailable" xml:space="preserve">
+    <value>Ẩn mục không hỗ trợ</value>
+  </data>
 </root>

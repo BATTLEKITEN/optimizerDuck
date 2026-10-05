@@ -3133,4 +3133,7 @@ Exitcodes: 0 Erfolg, 1 Fehler oder rückgängig gemachte Optimierungen gefunden,
   <data name="Update.Failed.Message" xml:space="preserve">
     <value>Es konnte nicht heruntergeladen oder geprüft werden. Die Release-Seite wird geöffnet, damit du manuell aktualisieren kannst.</value>
   </data>
+  <data name="Optimizer.Menu.HideUnavailable" xml:space="preserve">
+    <value>Nicht unterstützte ausblenden</value>
+  </data>
 </root>

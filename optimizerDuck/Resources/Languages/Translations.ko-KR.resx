@@ -3072,4 +3072,7 @@
   <data name="Update.Failed.Message" xml:space="preserve">
     <value>내려받거나 확인할 수 없습니다. 직접 업데이트할 수 있도록 릴리스 페이지를 엽니다.</value>
   </data>
+  <data name="Optimizer.Menu.HideUnavailable" xml:space="preserve">
+    <value>지원되지 않는 항목 숨기기</value>
+  </data>
 </root>

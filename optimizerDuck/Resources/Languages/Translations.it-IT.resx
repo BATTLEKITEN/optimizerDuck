@@ -3089,4 +3089,7 @@ Codici di uscita: 0 riuscito, 1 errori od ottimizzazioni annullate trovate, 2 er
   <data name="Update.Failed.Message" xml:space="preserve">
     <value>Non è stato possibile scaricarlo o verificarlo. Si apre la pagina della versione per aggiornare manualmente.</value>
   </data>
+  <data name="Optimizer.Menu.HideUnavailable" xml:space="preserve">
+    <value>Nascondi non supportate</value>
+  </data>
 </root>

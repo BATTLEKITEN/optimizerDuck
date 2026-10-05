@@ -3073,4 +3073,7 @@
   <data name="Update.Failed.Message" xml:space="preserve">
     <value>ダウンロードまたは検証ができませんでした。手動で更新できるようリリース ページを開きます。</value>
   </data>
+  <data name="Optimizer.Menu.HideUnavailable" xml:space="preserve">
+    <value>非対応を非表示</value>
+  </data>
 </root>

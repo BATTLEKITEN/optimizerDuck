@@ -142,6 +142,16 @@
                             <TextBlock Text="{ext:Loc Optimizer.Menu.HideApplied}" />
                         </StackPanel>
                     </ui:ToggleSwitch>
+
+                    <ui:ToggleSwitch
+                        Margin="12,0,0,0"
+                        VerticalAlignment="Stretch"
+                        IsChecked="{Binding ViewModel.HideUnavailable}"
+                        Visibility="{Binding ViewModel.HasUnavailableOptimizations, Converter={StaticResource BooleanToVisibilityConverter}}">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{ext:Loc Optimizer.Menu.HideUnavailable}" />
+                        </StackPanel>
+                    </ui:ToggleSwitch>
                 </WrapPanel>
             </Border>
 

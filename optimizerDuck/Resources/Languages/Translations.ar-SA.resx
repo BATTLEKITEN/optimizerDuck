@@ -3123,5 +3123,8 @@
   <data name="Update.Failed.Message" xml:space="preserve">
     <value>تعذر تنزيله أو التحقق منه. ستُفتح صفحة الإصدار لتحدّث يدويًا.</value>
   </data>
+  <data name="Optimizer.Menu.HideUnavailable" xml:space="preserve">
+    <value>إخفاء غير المدعوم</value>
+  </data>
 </root>
 

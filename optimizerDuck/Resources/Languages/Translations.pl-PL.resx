@@ -3081,4 +3081,7 @@ Kody wyjścia: 0 sukces, 1 błędy lub wykryte cofnięte optymalizacje, 2 błąd
   <data name="Update.Failed.Message" xml:space="preserve">
     <value>Nie udało się jej pobrać ani zweryfikować. Otworzy się strona wydania, aby zaktualizować ręcznie.</value>
   </data>
+  <data name="Optimizer.Menu.HideUnavailable" xml:space="preserve">
+    <value>Ukryj nieobsługiwane</value>
+  </data>
 </root>

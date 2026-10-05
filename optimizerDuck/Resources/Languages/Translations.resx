@@ -3139,4 +3139,7 @@ Exit codes: 0 success, 1 failures or undone optimizations found, 2 usage or file
   <data name="Update.Failed.Message" xml:space="preserve">
     <value>It could not be downloaded or verified. The release page opens so you can update by hand.</value>
   </data>
+  <data name="Optimizer.Menu.HideUnavailable" xml:space="preserve">
+    <value>Hide unsupported</value>
+  </data>
 </root>

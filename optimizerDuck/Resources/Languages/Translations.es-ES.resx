@@ -4886,4 +4886,7 @@ Códigos de salida: 0 correcto, 1 errores u optimizaciones deshechas encontradas
   <data name="Update.Failed.Message" xml:space="preserve">
     <value>No se pudo descargar o verificar. Se abre la página de la versión para actualizar a mano.</value>
   </data>
+  <data name="Optimizer.Menu.HideUnavailable" xml:space="preserve">
+    <value>Ocultar no compatibles</value>
+  </data>
 </root>

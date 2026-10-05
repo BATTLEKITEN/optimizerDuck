@@ -3076,4 +3076,7 @@
   <data name="Update.Failed.Message" xml:space="preserve">
     <value>無法下載或驗證。將開啟發行頁面以便手動更新。</value>
   </data>
+  <data name="Optimizer.Menu.HideUnavailable" xml:space="preserve">
+    <value>隱藏不支援的項目</value>
+  </data>
 </root>

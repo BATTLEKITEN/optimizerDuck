@@ -8983,5 +8983,14 @@ namespace optimizerDuck.Resources.Languages {
                 return ResourceManager.GetString("Update.Failed.Message", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hide unsupported.
+        /// </summary>
+        internal static string Optimizer_Menu_HideUnavailable {
+            get {
+                return ResourceManager.GetString("Optimizer.Menu.HideUnavailable", resourceCulture);
+            }
+        }
     }
 }

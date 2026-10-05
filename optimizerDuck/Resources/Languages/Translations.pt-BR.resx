@@ -3081,4 +3081,7 @@ Códigos de saída: 0 sucesso, 1 falhas ou otimizações desfeitas encontradas, 
   <data name="Update.Failed.Message" xml:space="preserve">
     <value>Não foi possível baixar ou verificar. A página da versão será aberta para atualizar manualmente.</value>
   </data>
+  <data name="Optimizer.Menu.HideUnavailable" xml:space="preserve">
+    <value>Ocultar não suportados</value>
+  </data>
 </root>

@@ -3138,4 +3138,7 @@ Kode keluar: 0 berhasil, 1 ada kegagalan atau optimasi yang dibatalkan, 2 kesala
   <data name="Update.Failed.Message" xml:space="preserve">
     <value>Tidak dapat diunduh atau diverifikasi. Halaman rilis dibuka agar Anda bisa memperbarui manual.</value>
   </data>
+  <data name="Optimizer.Menu.HideUnavailable" xml:space="preserve">
+    <value>Sembunyikan yang tidak didukung</value>
+  </data>
 </root>

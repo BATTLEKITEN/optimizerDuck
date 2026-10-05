@@ -3072,4 +3072,7 @@ Seçenekler:
   <data name="Update.Failed.Message" xml:space="preserve">
     <value>İndirilemedi veya doğrulanamadı. Elle güncellemeniz için sürüm sayfası açılıyor.</value>
   </data>
+  <data name="Optimizer.Menu.HideUnavailable" xml:space="preserve">
+    <value>Desteklenmeyenleri gizle</value>
+  </data>
 </root>

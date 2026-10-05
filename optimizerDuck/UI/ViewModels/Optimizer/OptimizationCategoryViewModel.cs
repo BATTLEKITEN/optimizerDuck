@@ -79,6 +79,9 @@ public partial class OptimizationCategoryViewModel : ViewModel
     private bool _hideApplied;
 
     [ObservableProperty]
+    private bool _hideUnavailable;
+
+    [ObservableProperty]
     private bool _isLoading;
 
     [ObservableProperty]
@@ -110,6 +113,12 @@ public partial class OptimizationCategoryViewModel : ViewModel
     partial void OnSelectedSortByIndexChanged(int value) => ApplyFilter();
 
     partial void OnHideAppliedChanged(bool value) => ApplyFilter();
+
+    partial void OnHideUnavailableChanged(bool value) => ApplyFilter();
+
+    /// <summary>Whether any item in the category is not supported on this PC.</summary>
+    public bool HasUnavailableOptimizations =>
+        _allOptimizations.Any(o => o.ConditionResult.IsBlocking && !o.State.IsApplied);
 
     private void ScheduleApplyFilter()
     {
@@ -592,6 +601,10 @@ public partial class OptimizationCategoryViewModel : ViewModel
         if (HideApplied)
             query = query.Where(o => !o.State.IsApplied && !o.State.IsAlreadyOptimal);
 
+        // An applied item stays visible even when unsupported, so it can still be reverted.
+        if (HideUnavailable)
+            query = query.Where(o => !o.ConditionResult.IsBlocking || o.State.IsApplied);
+
         query = SelectedSortByIndex switch
         {
             1 => query.OrderBy(o => o.Name),
@@ -604,6 +617,7 @@ public partial class OptimizationCategoryViewModel : ViewModel
         Optimizations = new ObservableCollection<IOptimization>(filtered);
 
         OnPropertyChanged(nameof(HasAppliedOptimizations));
+        OnPropertyChanged(nameof(HasUnavailableOptimizations));
     }
 
     #endregion Helpers

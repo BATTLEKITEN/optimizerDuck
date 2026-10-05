@@ -3089,4 +3089,7 @@
   <data name="Update.Failed.Message" xml:space="preserve">
     <value>无法下载或验证。将打开发布页面以便手动更新。</value>
   </data>
+  <data name="Optimizer.Menu.HideUnavailable" xml:space="preserve">
+    <value>隐藏不支持的项</value>
+  </data>
 </root>

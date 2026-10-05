@@ -3138,4 +3138,7 @@
   <data name="Update.Failed.Message" xml:space="preserve">
     <value>לא ניתן היה להוריד או לאמת אותו. דף הגרסה נפתח כדי לעדכן ידנית.</value>
   </data>
+  <data name="Optimizer.Menu.HideUnavailable" xml:space="preserve">
+    <value>הסתר לא נתמכים</value>
+  </data>
 </root>

@@ -3081,4 +3081,7 @@
   <data name="Update.Failed.Message" xml:space="preserve">
     <value>Не удалось скачать или проверить обновление. Откроется страница релиза для ручного обновления.</value>
   </data>
+  <data name="Optimizer.Menu.HideUnavailable" xml:space="preserve">
+    <value>Скрыть неподдерживаемые</value>
+  </data>
 </root>
