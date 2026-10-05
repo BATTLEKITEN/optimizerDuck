@@ -8,6 +8,42 @@ namespace optimizerDuck.Test.Services;
 /// </summary>
 public class UpdaterServiceTests
 {
+    private const string Hash = "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08";
+
+    [Fact]
+    public void ParseChecksum_ReadsTheLineForTheFile()
+    {
+        var text =
+            $"{new string('0', 64)}  other.exe\n{Hash}  optimizerDuck-Windows-x64-3.0.0.exe\n";
+
+        Assert.Equal(
+            Hash,
+            UpdaterService.ParseChecksum(text, "optimizerDuck-Windows-x64-3.0.0.exe")
+        );
+    }
+
+    [Fact]
+    public void ParseChecksum_AcceptsBinaryMarkerAndBareHash()
+    {
+        Assert.Equal(Hash, UpdaterService.ParseChecksum($"{Hash} *app.exe", "app.exe"));
+        Assert.Equal(Hash, UpdaterService.ParseChecksum(Hash, "app.exe"));
+    }
+
+    [Theory]
+    [InlineData("")]
+    [InlineData("not a hash  app.exe")]
+    [InlineData("9f86d081  app.exe")]
+    public void ParseChecksum_NoUsableLine_ReturnsNull(string text)
+    {
+        Assert.Null(UpdaterService.ParseChecksum(text, "app.exe"));
+    }
+
+    [Fact]
+    public void ParseChecksum_OtherFileOnly_ReturnsNull()
+    {
+        Assert.Null(UpdaterService.ParseChecksum($"{Hash}  other.exe", "app.exe"));
+    }
+
     [Fact]
     public void BuildUserAgentHeader_NamesTheRunningBuild()
     {

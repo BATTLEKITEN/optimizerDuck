@@ -3109,4 +3109,28 @@ Exitcodes: 0 Erfolg, 1 Fehler oder rückgängig gemachte Optimierungen gefunden,
   <data name="AppInstaller.Category.Runtimes" xml:space="preserve">
     <value>Laufzeitumgebungen</value>
   </data>
+  <data name="Search.Global.Placeholder" xml:space="preserve">
+    <value>Optimierungen und Einstellungen suchen</value>
+  </data>
+  <data name="Health.BootTime.Trend" xml:space="preserve">
+    <value>{0} s beim letzten Start, im Schnitt {1} s über die letzten {2} Starts (gemessen von Windows)</value>
+  </data>
+  <data name="Update.Button.Install" xml:space="preserve">
+    <value>Jetzt aktualisieren</value>
+  </data>
+  <data name="Update.Confirm.Title" xml:space="preserve">
+    <value>Auf Version {0} aktualisieren</value>
+  </data>
+  <data name="Update.Confirm.Message" xml:space="preserve">
+    <value>optimizerDuck lädt die neue Version von GitHub herunter, prüft sie gegen die veröffentlichte SHA-256-Prüfsumme, ersetzt sich selbst und startet neu. Angewendete Optimierungen und Wiederherstellungsdaten bleiben erhalten.</value>
+  </data>
+  <data name="Update.Downloading" xml:space="preserve">
+    <value>Update wird heruntergeladen und geprüft...</value>
+  </data>
+  <data name="Update.Failed.Title" xml:space="preserve">
+    <value>Das Update konnte nicht installiert werden</value>
+  </data>
+  <data name="Update.Failed.Message" xml:space="preserve">
+    <value>Es konnte nicht heruntergeladen oder geprüft werden. Die Release-Seite wird geöffnet, damit du manuell aktualisieren kannst.</value>
+  </data>
 </root>

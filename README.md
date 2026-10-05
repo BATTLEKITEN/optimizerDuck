@@ -220,6 +220,7 @@ See the [Privacy Policy](./PRIVACY.md) for details on our data practices.
 - **No defaults applied**: Nothing runs until you select it. The tool does not enable anything on its own
 - **Restore point prompt**: Before your first optimization, the app suggests creating a Windows restore point
 - **Preview first**: The eye button on every optimization shows exactly what it would change on your PC, without changing anything
+- **Verified updates**: "Update now" downloads the new release from GitHub and installs it only when it matches the published SHA-256 checksum (and, once releases are code-signed, the same publisher signature)
 - **Tamper-proof undo data**: Revert files are signed with a key only administrators can read, so another program cannot slip its own commands into an undo
 
 ---

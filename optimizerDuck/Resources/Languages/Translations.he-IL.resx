@@ -3114,4 +3114,28 @@
   <data name="AppInstaller.Category.Runtimes" xml:space="preserve">
     <value>סביבות ריצה</value>
   </data>
+  <data name="Search.Global.Placeholder" xml:space="preserve">
+    <value>חיפוש מיטובים והגדרות</value>
+  </data>
+  <data name="Health.BootTime.Trend" xml:space="preserve">
+    <value>{0} שניות באתחול האחרון, {1} שניות בממוצע ב-{2} האתחולים האחרונים (לפי Windows)</value>
+  </data>
+  <data name="Update.Button.Install" xml:space="preserve">
+    <value>עדכן עכשיו</value>
+  </data>
+  <data name="Update.Confirm.Title" xml:space="preserve">
+    <value>עדכון לגרסה {0}</value>
+  </data>
+  <data name="Update.Confirm.Message" xml:space="preserve">
+    <value>optimizerDuck מוריד את הגרסה החדשה מ-GitHub, בודק אותה מול סכום SHA-256 שפורסם, מחליף את עצמו ומופעל מחדש. המיטובים שהוחלו ונתוני הביטול נשמרים.</value>
+  </data>
+  <data name="Update.Downloading" xml:space="preserve">
+    <value>מוריד ומאמת את העדכון...</value>
+  </data>
+  <data name="Update.Failed.Title" xml:space="preserve">
+    <value>לא ניתן להתקין את העדכון</value>
+  </data>
+  <data name="Update.Failed.Message" xml:space="preserve">
+    <value>לא ניתן היה להוריד או לאמת אותו. דף הגרסה נפתח כדי לעדכן ידנית.</value>
+  </data>
 </root>

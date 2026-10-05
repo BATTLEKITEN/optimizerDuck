@@ -3048,4 +3048,28 @@
   <data name="AppInstaller.Category.Runtimes" xml:space="preserve">
     <value>런타임</value>
   </data>
+  <data name="Search.Global.Placeholder" xml:space="preserve">
+    <value>최적화 및 설정 검색</value>
+  </data>
+  <data name="Health.BootTime.Trend" xml:space="preserve">
+    <value>마지막 부팅 {0}초, 최근 {2}회 평균 {1}초 (Windows 측정값)</value>
+  </data>
+  <data name="Update.Button.Install" xml:space="preserve">
+    <value>지금 업데이트</value>
+  </data>
+  <data name="Update.Confirm.Title" xml:space="preserve">
+    <value>버전 {0}(으)로 업데이트</value>
+  </data>
+  <data name="Update.Confirm.Message" xml:space="preserve">
+    <value>optimizerDuck이 GitHub에서 새 버전을 내려받아 게시된 SHA-256 체크섬으로 확인한 뒤 자신을 교체하고 다시 시작합니다. 적용한 최적화와 되돌리기 데이터는 유지됩니다.</value>
+  </data>
+  <data name="Update.Downloading" xml:space="preserve">
+    <value>업데이트를 내려받고 확인하는 중...</value>
+  </data>
+  <data name="Update.Failed.Title" xml:space="preserve">
+    <value>업데이트를 설치할 수 없습니다</value>
+  </data>
+  <data name="Update.Failed.Message" xml:space="preserve">
+    <value>내려받거나 확인할 수 없습니다. 직접 업데이트할 수 있도록 릴리스 페이지를 엽니다.</value>
+  </data>
 </root>

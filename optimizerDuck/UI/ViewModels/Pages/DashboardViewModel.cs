@@ -6,14 +6,18 @@ using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Microsoft.Extensions.Logging;
 using optimizerDuck.Common.Helpers;
+using optimizerDuck.Domain.UI;
 using optimizerDuck.Resources.Languages;
 using optimizerDuck.Services.Configuration;
 using optimizerDuck.Services.Optimization;
 using optimizerDuck.Services.System;
+using optimizerDuck.UI.Dialogs;
 using optimizerDuck.UI.Pages;
+using optimizerDuck.UI.ViewModels.Dialogs;
 using Wpf.Ui;
 using Wpf.Ui.Appearance;
 using Wpf.Ui.Controls;
+using Wpf.Ui.Extensions;
 
 namespace optimizerDuck.UI.ViewModels.Pages;
 
@@ -25,6 +29,7 @@ public partial class DashboardViewModel : ViewModel
     private readonly SystemInfoService _systemInfoService;
     private readonly UpdaterService _updaterService;
     private readonly DriftService _driftService;
+    private readonly StreamService _streamService;
     private readonly INavigationService _navigationService;
 
     [ObservableProperty]
@@ -81,9 +86,11 @@ public partial class DashboardViewModel : ViewModel
         UpdaterService updaterService,
         IContentDialogService contentDialogService,
         DriftService driftService,
-        INavigationService navigationService
+        INavigationService navigationService,
+        StreamService streamService
     )
     {
+        _streamService = streamService;
         _driftService = driftService;
         _navigationService = navigationService;
         _driftService.Checked += (_, _) => _ = UiThread.InvokeAsync(ShowDrift);
@@ -120,6 +127,84 @@ public partial class DashboardViewModel : ViewModel
         var count = _driftService.LastResult.Count;
         DriftMessage = Loc.Instance["Dashboard.Drift.Message", count];
         IsDriftInfoOpen = count > 0;
+    }
+
+    /// <summary>
+    ///     Downloads the newer release, verifies it against its published SHA-256 (and the
+    ///     publisher's signature when this build is signed), then swaps it in and restarts.
+    /// </summary>
+    [RelayCommand]
+    private async Task UpdateNow()
+    {
+        var confirm = await _contentDialogService.ShowSimpleDialogAsync(
+            new SimpleContentDialogCreateOptions
+            {
+                Title = Loc.Instance["Update.Confirm.Title", LatestVersion ?? string.Empty],
+                Content = Loc.Instance["Update.Confirm.Message"],
+                PrimaryButtonText = Loc.Instance["Update.Button.Install"],
+                CloseButtonText = Loc.Instance["Button.Cancel"],
+            },
+            CancellationToken.None
+        );
+        if (confirm != ContentDialogResult.Primary)
+            return;
+
+        var processing = new ProcessingViewModel();
+        processing.ProgressReporter.Report(
+            new ProcessingProgress
+            {
+                Message = Loc.Instance["Update.Downloading"],
+                IsIndeterminate = true,
+            }
+        );
+        var dialog = new ContentDialog
+        {
+            Title = Loc.Instance["Update.Confirm.Title", LatestVersion ?? string.Empty],
+            Content = new ProcessingDialog { DataContext = processing },
+            IsFooterVisible = false,
+        };
+        _ = _contentDialogService.ShowAsync(dialog, CancellationToken.None);
+
+        string? verified;
+        try
+        {
+            verified = await _updaterService.DownloadVerifiedUpdateAsync(_streamService);
+        }
+        finally
+        {
+            dialog.Hide();
+        }
+
+        if (verified is null)
+        {
+            _snackbarService.Show(
+                Loc.Instance["Update.Failed.Title"],
+                Loc.Instance["Update.Failed.Message"],
+                ControlAppearance.Caution,
+                new SymbolIcon { Symbol = SymbolRegular.Warning24, Filled = true },
+                TimeSpan.FromSeconds(6)
+            );
+            OpenLatestRelease();
+            return;
+        }
+
+        try
+        {
+            UpdaterService.InstallAndStart(verified);
+            if (System.Windows.Application.Current is App app)
+                app.ShutdownWithoutPrompt();
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Installing the update failed");
+            _snackbarService.Show(
+                Loc.Instance["Update.Failed.Title"],
+                ex.Message,
+                ControlAppearance.Danger,
+                new SymbolIcon { Symbol = SymbolRegular.ErrorCircle24, Filled = true },
+                TimeSpan.FromSeconds(6)
+            );
+        }
     }
 
     [RelayCommand]

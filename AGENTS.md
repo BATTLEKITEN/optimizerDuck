@@ -82,6 +82,7 @@ Reflection discovery, no registration array to update.
 ## Security rules
 - Open links with `ShellLauncher.OpenUrl` (HTTPS only) and folders with `ShellLauncher.OpenFolder` / `Reveal`; never hand a path to `UseShellExecute` from the elevated process.
 - Delete inside user-writable folders through `ConfinedDelete` (handle based, never follows a junction or symlink).
+- Self-update: `UpdaterService.DownloadVerifiedUpdateAsync` needs the release's `<exe>.sha256` asset (written by `release.yml`) and, when the running build is signed, the same Authenticode subject (`AuthenticodeSigner`); `InstallAndStart` renames the running exe to `.old` (removed at next start) and starts the new one.
 - `StreamService.TryDownloadAsync(url, fileName, expectedSha256)` downloads HTTPS only, into a fresh folder under the protected directory, and keeps the file only when the hash matches.
 
 ## Conditions (compatibility gating)

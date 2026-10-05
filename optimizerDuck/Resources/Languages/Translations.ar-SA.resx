@@ -3099,5 +3099,29 @@
   <data name="AppInstaller.Category.Runtimes" xml:space="preserve">
     <value>بيئات التشغيل</value>
   </data>
+  <data name="Search.Global.Placeholder" xml:space="preserve">
+    <value>ابحث في التحسينات والإعدادات</value>
+  </data>
+  <data name="Health.BootTime.Trend" xml:space="preserve">
+    <value>{0} ث في آخر إقلاع، و{1} ث في المتوسط خلال آخر {2} مرات إقلاع (حسب قياس Windows)</value>
+  </data>
+  <data name="Update.Button.Install" xml:space="preserve">
+    <value>التحديث الآن</value>
+  </data>
+  <data name="Update.Confirm.Title" xml:space="preserve">
+    <value>التحديث إلى الإصدار {0}</value>
+  </data>
+  <data name="Update.Confirm.Message" xml:space="preserve">
+    <value>ينزّل optimizerDuck الإصدار الجديد من GitHub، ويتحقق منه مقابل مجموع SHA-256 المنشور، ثم يستبدل نفسه ويعيد التشغيل. تبقى تحسيناتك المطبقة وبيانات التراجع كما هي.</value>
+  </data>
+  <data name="Update.Downloading" xml:space="preserve">
+    <value>جارٍ تنزيل التحديث والتحقق منه...</value>
+  </data>
+  <data name="Update.Failed.Title" xml:space="preserve">
+    <value>تعذر تثبيت التحديث</value>
+  </data>
+  <data name="Update.Failed.Message" xml:space="preserve">
+    <value>تعذر تنزيله أو التحقق منه. ستُفتح صفحة الإصدار لتحدّث يدويًا.</value>
+  </data>
 </root>
 

@@ -117,6 +117,19 @@
                     TargetPageType="{x:Type pages:HealthPage}" />
             </ui:NavigationView.MenuItems>
 
+            <ui:NavigationView.AutoSuggestBox>
+                <ui:AutoSuggestBox
+                    x:Name="GlobalSearchBox"
+                    Margin="8,0,8,8"
+                    PlaceholderText="{extensions:Loc Search.Global.Placeholder}">
+                    <ui:AutoSuggestBox.Icon>
+                        <ui:IconSourceElement>
+                            <ui:SymbolIconSource Symbol="Search24" />
+                        </ui:IconSourceElement>
+                    </ui:AutoSuggestBox.Icon>
+                </ui:AutoSuggestBox>
+            </ui:NavigationView.AutoSuggestBox>
+
             <ui:NavigationView.FooterMenuItems>
                 <ui:NavigationViewItemSeparator Margin="0,2,0,2" />
                 <controls:FilledNavigationViewItem

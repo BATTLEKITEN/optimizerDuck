@@ -384,6 +384,7 @@ public partial class App : Application
         _logger.LogInformation("Loaded language: {Language}", appSettings.App.Language);
 
         RevertDataSeal.EnsureKey(_logger);
+        UpdaterService.RemovePreviousVersion(_logger);
         if (SecureDirectory.EnsureAdminOnly(Shared.SecureDataDirectory, _logger))
             Directory.CreateDirectory(Shared.DownloadsDirectory);
 
@@ -443,6 +444,13 @@ public partial class App : Application
                 _logger.LogWarning(ex, "Startup drift check failed");
             }
         });
+    }
+
+    /// <summary>Closes the app without the pending changes prompt, for a self-update.</summary>
+    internal void ShutdownWithoutPrompt()
+    {
+        _allowClose = true;
+        Shutdown();
     }
 
     protected override async void OnExit(ExitEventArgs e)

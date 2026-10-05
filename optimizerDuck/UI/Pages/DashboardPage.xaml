@@ -33,7 +33,15 @@
                 IsOpen="{Binding ViewModel.IsUpdateInfoOpen, Mode=TwoWay}"
                 Message="{ext:Loc Dashboard.UpdateInfoBar.Message,
                                   {Binding ViewModel.LatestVersion}}"
-                Severity="Warning" />
+                Severity="Warning">
+                <ui:Button
+                    Margin="0,4,0,0"
+                    Appearance="Primary"
+                    Command="{Binding ViewModel.UpdateNowCommand}"
+                    Content="{ext:Loc Update.Button.Install}"
+                    Cursor="Hand"
+                    Icon="{ui:SymbolIcon ArrowDownload24}" />
+            </ui:InfoBar>
             <ui:InfoBar
                 Margin="0,0,0,12"
                 IsOpen="{Binding ViewModel.IsDriftInfoOpen, Mode=TwoWay}"

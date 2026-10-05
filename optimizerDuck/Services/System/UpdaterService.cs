@@ -1,3 +1,5 @@
+using System.Diagnostics;
+using System.IO;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using Microsoft.Extensions.Logging;
@@ -115,6 +117,7 @@ public class UpdaterService : IDisposable
                     return null;
                 }
 
+                LatestRelease = latestRelease;
                 var latestVersionStr = latestVersion.ToString();
                 _logger.LogInformation(
                     "A new version ({LatestVersion}) is available!",
@@ -132,6 +135,139 @@ public class UpdaterService : IDisposable
             _logger.LogError(ex, "Error checking for updates");
             return null;
         }
+    }
+
+    /// <summary>The newer release the last check found, or <see langword="null" />.</summary>
+    public GitHubRelease? LatestRelease { get; private set; }
+
+    /// <summary>
+    ///     Downloads the newer release's executable and keeps it only when it matches the SHA-256
+    ///     published next to it, and, when this build is code-signed, only when the download is
+    ///     signed by the same publisher. A release without a checksum is never installed.
+    /// </summary>
+    /// <returns>The verified file, or <see langword="null" /> when it cannot be trusted.</returns>
+    public async Task<string?> DownloadVerifiedUpdateAsync(StreamService streamService)
+    {
+        var release = LatestRelease;
+        var executable = FindExecutableAsset(release);
+        var checksum = release?.Assets.FirstOrDefault(a =>
+            executable is not null
+            && a.Name.Equals(executable.Name + ".sha256", StringComparison.OrdinalIgnoreCase)
+        );
+        if (executable is null || checksum is null)
+        {
+            _logger.LogWarning(
+                "The release publishes no checksum, so it is not installed automatically"
+            );
+            return null;
+        }
+
+        try
+        {
+            var expected = ParseChecksum(
+                await _httpClient.GetStringAsync(checksum.BrowserDownloadUrl),
+                executable.Name
+            );
+            if (expected is null)
+            {
+                _logger.LogWarning("The checksum file does not name {Asset}", executable.Name);
+                return null;
+            }
+
+            var download = await streamService.TryDownloadAsync(
+                executable.BrowserDownloadUrl,
+                executable.Name,
+                expected
+            );
+            if (!download.Ok || download.FilePath is null)
+                return null;
+
+            if (!AuthenticodeSigner.SameSigner(Shared.ExePath, download.FilePath, _logger))
+            {
+                _logger.LogError("The downloaded update is not signed by this build's publisher");
+                File.Delete(download.FilePath);
+                return null;
+            }
+
+            return download.FilePath;
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Downloading the update failed");
+            return null;
+        }
+    }
+
+    /// <summary>
+    ///     Swaps the running executable for the verified update and starts it; the caller then
+    ///     shuts this instance down. Windows lets a running executable be renamed, so the old one
+    ///     moves aside and is deleted on the next start by <see cref="RemovePreviousVersion" />.
+    /// </summary>
+    public static void InstallAndStart(string verifiedUpdate)
+    {
+        var current = Shared.ExePath;
+        var previous = current + ".old";
+        if (File.Exists(previous))
+            File.Delete(previous);
+
+        File.Move(current, previous);
+        try
+        {
+            File.Copy(verifiedUpdate, current);
+        }
+        catch
+        {
+            File.Move(previous, current);
+            throw;
+        }
+
+        Process
+            .Start(new ProcessStartInfo { FileName = current, UseShellExecute = false })
+            ?.Dispose();
+    }
+
+    /// <summary>Deletes the executable an update moved aside. Called once at startup.</summary>
+    public static void RemovePreviousVersion(ILogger logger)
+    {
+        var previous = Shared.ExePath + ".old";
+        try
+        {
+            if (File.Exists(previous))
+                File.Delete(previous);
+        }
+        catch (Exception ex)
+        {
+            logger.LogWarning(ex, "Could not remove the previous version {Path}", previous);
+        }
+    }
+
+    /// <summary>
+    ///     Reads a <c>sha256sum</c> style line ("hash  file name") for the given file, or a file
+    ///     that holds the bare hash.
+    /// </summary>
+    internal static string? ParseChecksum(string text, string fileName)
+    {
+        foreach (
+            var line in text.Split(
+                '\n',
+                StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries
+            )
+        )
+        {
+            var parts = line.Split((char[]?)null, 2, StringSplitOptions.RemoveEmptyEntries);
+            if (parts.Length == 0 || parts[0].Length != 64 || !parts[0].All(Uri.IsHexDigit))
+                continue;
+            if (
+                parts.Length == 1
+                || parts[1]
+                    .Trim()
+                    .TrimStart('*')
+                    .Equals(fileName, StringComparison.OrdinalIgnoreCase)
+            )
+                return parts[0];
+        }
+
+        return null;
     }
 
     /// <summary>Releases the underlying <see cref="HttpClient"/> resources.</summary>

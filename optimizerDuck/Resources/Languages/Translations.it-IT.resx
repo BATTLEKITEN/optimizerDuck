@@ -3065,4 +3065,28 @@ Codici di uscita: 0 riuscito, 1 errori od ottimizzazioni annullate trovate, 2 er
   <data name="AppInstaller.Category.Runtimes" xml:space="preserve">
     <value>Runtime</value>
   </data>
+  <data name="Search.Global.Placeholder" xml:space="preserve">
+    <value>Cerca ottimizzazioni e impostazioni</value>
+  </data>
+  <data name="Health.BootTime.Trend" xml:space="preserve">
+    <value>{0} s all’ultimo avvio, {1} s in media negli ultimi {2} avvii (misurati da Windows)</value>
+  </data>
+  <data name="Update.Button.Install" xml:space="preserve">
+    <value>Aggiorna ora</value>
+  </data>
+  <data name="Update.Confirm.Title" xml:space="preserve">
+    <value>Aggiorna alla versione {0}</value>
+  </data>
+  <data name="Update.Confirm.Message" xml:space="preserve">
+    <value>optimizerDuck scarica la nuova versione da GitHub, la verifica con il checksum SHA-256 pubblicato, si sostituisce e si riavvia. Le ottimizzazioni applicate e i dati di ripristino vengono mantenuti.</value>
+  </data>
+  <data name="Update.Downloading" xml:space="preserve">
+    <value>Download e verifica dell’aggiornamento...</value>
+  </data>
+  <data name="Update.Failed.Title" xml:space="preserve">
+    <value>Impossibile installare l’aggiornamento</value>
+  </data>
+  <data name="Update.Failed.Message" xml:space="preserve">
+    <value>Non è stato possibile scaricarlo o verificarlo. Si apre la pagina della versione per aggiornare manualmente.</value>
+  </data>
 </root>

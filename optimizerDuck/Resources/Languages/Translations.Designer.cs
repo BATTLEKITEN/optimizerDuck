@@ -8911,5 +8911,77 @@ namespace optimizerDuck.Resources.Languages {
                 return ResourceManager.GetString("AppInstaller.Category.Runtimes", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Search optimizations and settings.
+        /// </summary>
+        internal static string Search_Global_Placeholder {
+            get {
+                return ResourceManager.GetString("Search.Global.Placeholder", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} s last boot, {1} s on average over the last {2} boots (measured by Windows).
+        /// </summary>
+        internal static string Health_BootTime_Trend {
+            get {
+                return ResourceManager.GetString("Health.BootTime.Trend", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Update now.
+        /// </summary>
+        internal static string Update_Button_Install {
+            get {
+                return ResourceManager.GetString("Update.Button.Install", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Update to version {0}.
+        /// </summary>
+        internal static string Update_Confirm_Title {
+            get {
+                return ResourceManager.GetString("Update.Confirm.Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to optimizerDuck downloads the new version from GitHub, checks it against the published SHA-256 checksu....
+        /// </summary>
+        internal static string Update_Confirm_Message {
+            get {
+                return ResourceManager.GetString("Update.Confirm.Message", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Downloading and verifying the update....
+        /// </summary>
+        internal static string Update_Downloading {
+            get {
+                return ResourceManager.GetString("Update.Downloading", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The update could not be installed.
+        /// </summary>
+        internal static string Update_Failed_Title {
+            get {
+                return ResourceManager.GetString("Update.Failed.Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to It could not be downloaded or verified. The release page opens so you can update by hand..
+        /// </summary>
+        internal static string Update_Failed_Message {
+            get {
+                return ResourceManager.GetString("Update.Failed.Message", resourceCulture);
+            }
+        }
     }
 }

@@ -3114,4 +3114,28 @@ Kode keluar: 0 berhasil, 1 ada kegagalan atau optimasi yang dibatalkan, 2 kesala
   <data name="AppInstaller.Category.Runtimes" xml:space="preserve">
     <value>Runtime</value>
   </data>
+  <data name="Search.Global.Placeholder" xml:space="preserve">
+    <value>Cari optimasi dan pengaturan</value>
+  </data>
+  <data name="Health.BootTime.Trend" xml:space="preserve">
+    <value>{0} dtk pada boot terakhir, rata-rata {1} dtk dari {2} boot terakhir (diukur Windows)</value>
+  </data>
+  <data name="Update.Button.Install" xml:space="preserve">
+    <value>Perbarui sekarang</value>
+  </data>
+  <data name="Update.Confirm.Title" xml:space="preserve">
+    <value>Perbarui ke versi {0}</value>
+  </data>
+  <data name="Update.Confirm.Message" xml:space="preserve">
+    <value>optimizerDuck mengunduh versi baru dari GitHub, memeriksanya dengan checksum SHA-256 yang dipublikasikan, mengganti dirinya, lalu memulai ulang. Optimasi dan data pembatalan Anda tetap tersimpan.</value>
+  </data>
+  <data name="Update.Downloading" xml:space="preserve">
+    <value>Mengunduh dan memverifikasi pembaruan...</value>
+  </data>
+  <data name="Update.Failed.Title" xml:space="preserve">
+    <value>Pembaruan tidak dapat dipasang</value>
+  </data>
+  <data name="Update.Failed.Message" xml:space="preserve">
+    <value>Tidak dapat diunduh atau diverifikasi. Halaman rilis dibuka agar Anda bisa memperbarui manual.</value>
+  </data>
 </root>

@@ -74,4 +74,14 @@ public class ToolServicesTests
         Assert.Contains("&lt;script&gt;", html);
         Assert.Contains("a &amp; b", html);
     }
+
+    [Fact]
+    public void ParseBootTimes_SkipsNoise()
+    {
+        Assert.Equal(
+            [21000L, 19500L],
+            HealthCheckService.ParseBootTimes("21000\r\n\r\nWARNING: x\r\n19500\r\n")
+        );
+        Assert.Empty(HealthCheckService.ParseBootTimes(""));
+    }
 }

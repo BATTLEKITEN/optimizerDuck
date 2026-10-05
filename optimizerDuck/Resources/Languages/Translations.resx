@@ -3115,4 +3115,28 @@ Exit codes: 0 success, 1 failures or undone optimizations found, 2 usage or file
   <data name="AppInstaller.Category.Runtimes" xml:space="preserve">
     <value>Runtimes</value>
   </data>
+  <data name="Search.Global.Placeholder" xml:space="preserve">
+    <value>Search optimizations and settings</value>
+  </data>
+  <data name="Health.BootTime.Trend" xml:space="preserve">
+    <value>{0} s last boot, {1} s on average over the last {2} boots (measured by Windows)</value>
+  </data>
+  <data name="Update.Button.Install" xml:space="preserve">
+    <value>Update now</value>
+  </data>
+  <data name="Update.Confirm.Title" xml:space="preserve">
+    <value>Update to version {0}</value>
+  </data>
+  <data name="Update.Confirm.Message" xml:space="preserve">
+    <value>optimizerDuck downloads the new version from GitHub, checks it against the published SHA-256 checksum, replaces itself and restarts. Your applied optimizations and revert data are kept.</value>
+  </data>
+  <data name="Update.Downloading" xml:space="preserve">
+    <value>Downloading and verifying the update...</value>
+  </data>
+  <data name="Update.Failed.Title" xml:space="preserve">
+    <value>The update could not be installed</value>
+  </data>
+  <data name="Update.Failed.Message" xml:space="preserve">
+    <value>It could not be downloaded or verified. The release page opens so you can update by hand.</value>
+  </data>
 </root>

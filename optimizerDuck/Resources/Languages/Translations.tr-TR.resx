@@ -3048,4 +3048,28 @@ Seçenekler:
   <data name="AppInstaller.Category.Runtimes" xml:space="preserve">
     <value>Çalışma zamanları</value>
   </data>
+  <data name="Search.Global.Placeholder" xml:space="preserve">
+    <value>Optimizasyon ve ayarlarda ara</value>
+  </data>
+  <data name="Health.BootTime.Trend" xml:space="preserve">
+    <value>Son önyükleme {0} sn, son {2} önyüklemenin ortalaması {1} sn (Windows ölçümü)</value>
+  </data>
+  <data name="Update.Button.Install" xml:space="preserve">
+    <value>Şimdi güncelle</value>
+  </data>
+  <data name="Update.Confirm.Title" xml:space="preserve">
+    <value>{0} sürümüne güncelle</value>
+  </data>
+  <data name="Update.Confirm.Message" xml:space="preserve">
+    <value>optimizerDuck yeni sürümü GitHub’dan indirir, yayımlanan SHA-256 sağlama toplamıyla doğrular, kendini değiştirir ve yeniden başlar. Uygulanan optimizasyonlar ve geri alma verileri korunur.</value>
+  </data>
+  <data name="Update.Downloading" xml:space="preserve">
+    <value>Güncelleme indiriliyor ve doğrulanıyor...</value>
+  </data>
+  <data name="Update.Failed.Title" xml:space="preserve">
+    <value>Güncelleme yüklenemedi</value>
+  </data>
+  <data name="Update.Failed.Message" xml:space="preserve">
+    <value>İndirilemedi veya doğrulanamadı. Elle güncellemeniz için sürüm sayfası açılıyor.</value>
+  </data>
 </root>

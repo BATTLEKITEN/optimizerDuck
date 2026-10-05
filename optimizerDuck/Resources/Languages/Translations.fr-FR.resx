@@ -3057,4 +3057,28 @@ Codes de sortie : 0 succès, 1 échecs ou optimisations annulées trouvées, 2 e
   <data name="AppInstaller.Category.Runtimes" xml:space="preserve">
     <value>Environnements d’exécution</value>
   </data>
+  <data name="Search.Global.Placeholder" xml:space="preserve">
+    <value>Rechercher optimisations et réglages</value>
+  </data>
+  <data name="Health.BootTime.Trend" xml:space="preserve">
+    <value>{0} s au dernier démarrage, {1} s en moyenne sur les {2} derniers (mesuré par Windows)</value>
+  </data>
+  <data name="Update.Button.Install" xml:space="preserve">
+    <value>Mettre à jour maintenant</value>
+  </data>
+  <data name="Update.Confirm.Title" xml:space="preserve">
+    <value>Mettre à jour vers la version {0}</value>
+  </data>
+  <data name="Update.Confirm.Message" xml:space="preserve">
+    <value>optimizerDuck télécharge la nouvelle version depuis GitHub, la vérifie avec la somme SHA-256 publiée, se remplace et redémarre. Vos optimisations appliquées et données d’annulation sont conservées.</value>
+  </data>
+  <data name="Update.Downloading" xml:space="preserve">
+    <value>Téléchargement et vérification de la mise à jour...</value>
+  </data>
+  <data name="Update.Failed.Title" xml:space="preserve">
+    <value>Impossible d’installer la mise à jour</value>
+  </data>
+  <data name="Update.Failed.Message" xml:space="preserve">
+    <value>Le téléchargement ou la vérification a échoué. La page de la version s’ouvre pour une mise à jour manuelle.</value>
+  </data>
 </root>

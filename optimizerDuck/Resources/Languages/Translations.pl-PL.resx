@@ -3057,4 +3057,28 @@ Kody wyjścia: 0 sukces, 1 błędy lub wykryte cofnięte optymalizacje, 2 błąd
   <data name="AppInstaller.Category.Runtimes" xml:space="preserve">
     <value>Środowiska uruchomieniowe</value>
   </data>
+  <data name="Search.Global.Placeholder" xml:space="preserve">
+    <value>Szukaj optymalizacji i ustawień</value>
+  </data>
+  <data name="Health.BootTime.Trend" xml:space="preserve">
+    <value>{0} s przy ostatnim rozruchu, średnio {1} s z ostatnich {2} rozruchów (pomiar Windows)</value>
+  </data>
+  <data name="Update.Button.Install" xml:space="preserve">
+    <value>Aktualizuj teraz</value>
+  </data>
+  <data name="Update.Confirm.Title" xml:space="preserve">
+    <value>Aktualizacja do wersji {0}</value>
+  </data>
+  <data name="Update.Confirm.Message" xml:space="preserve">
+    <value>optimizerDuck pobierze nową wersję z GitHuba, sprawdzi ją z opublikowaną sumą SHA-256, podmieni się i uruchomi ponownie. Zastosowane optymalizacje i dane do cofania zostaną zachowane.</value>
+  </data>
+  <data name="Update.Downloading" xml:space="preserve">
+    <value>Pobieranie i weryfikacja aktualizacji...</value>
+  </data>
+  <data name="Update.Failed.Title" xml:space="preserve">
+    <value>Nie udało się zainstalować aktualizacji</value>
+  </data>
+  <data name="Update.Failed.Message" xml:space="preserve">
+    <value>Nie udało się jej pobrać ani zweryfikować. Otworzy się strona wydania, aby zaktualizować ręcznie.</value>
+  </data>
 </root>

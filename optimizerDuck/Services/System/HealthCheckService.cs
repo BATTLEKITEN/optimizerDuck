@@ -398,20 +398,29 @@ public class HealthCheckService(ShellService shell, ILogger<HealthCheckService> 
         var title = Loc.Instance["Health.Check.BootTime"];
         try
         {
-            // Event 100 of the boot performance log carries the last boot's duration in ms.
+            // Event 100 of the boot performance log carries each boot's duration in ms, newest
+            // first; the last few give a trend, so a change after optimizing is visible.
             var result = await shell
                 .QueryPowerShellAsync(
-                    "$e = Get-WinEvent -FilterHashtable @{LogName='Microsoft-Windows-Diagnostics-Performance/Operational';Id=100} -MaxEvents 1 -ErrorAction Stop; "
-                        + "(([xml]$e.ToXml()).Event.EventData.Data | Where-Object Name -eq 'BootTime').'#text'",
+                    "Get-WinEvent -FilterHashtable @{LogName='Microsoft-Windows-Diagnostics-Performance/Operational';Id=100} -MaxEvents 5 -ErrorAction Stop | "
+                        + "ForEach-Object { (([xml]$_.ToXml()).Event.EventData.Data | Where-Object Name -eq 'BootTime').'#text' }",
                     logger,
                     ct: cancellationToken
                 )
                 .ConfigureAwait(false);
-            if (long.TryParse(result.Stdout.Trim(), out var ms) && ms > 0)
+            var boots = ParseBootTimes(result.Stdout);
+            if (boots.Count > 0)
                 return new HealthCheck(
                     title,
                     HealthStatus.Info,
-                    Loc.Instance["Health.BootTime.Value", Math.Round(ms / 1000.0, 1)]
+                    boots.Count == 1
+                        ? Loc.Instance["Health.BootTime.Value", Seconds(boots[0])]
+                        : Loc.Instance[
+                            "Health.BootTime.Trend",
+                            Seconds(boots[0]),
+                            Seconds((long)boots.Average()),
+                            boots.Count
+                        ]
                 );
         }
         catch (OperationCanceledException)
@@ -420,7 +429,7 @@ public class HealthCheckService(ShellService shell, ILogger<HealthCheckService> 
         }
         catch (Exception ex)
         {
-            logger.LogWarning(ex, "Could not read the last boot duration");
+            logger.LogWarning(ex, "Could not read the boot durations");
         }
 
         return new HealthCheck(
@@ -429,6 +438,18 @@ public class HealthCheckService(ShellService shell, ILogger<HealthCheckService> 
             Loc.Instance["Health.BootTime.Unknown"]
         );
     }
+
+    /// <summary>The boot durations in ms, one per line, newest first; noise is skipped.</summary>
+    internal static List<long> ParseBootTimes(string output)
+    {
+        return output
+            .Split('\n', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
+            .Select(line => long.TryParse(line, out var ms) ? ms : 0)
+            .Where(ms => ms > 0)
+            .ToList();
+    }
+
+    private static double Seconds(long ms) => Math.Round(ms / 1000.0, 1);
 
     private static string FormatBytes(long bytes)
     {

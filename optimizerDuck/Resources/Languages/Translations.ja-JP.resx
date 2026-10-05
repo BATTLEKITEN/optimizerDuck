@@ -3049,4 +3049,28 @@
   <data name="AppInstaller.Category.Runtimes" xml:space="preserve">
     <value>ランタイム</value>
   </data>
+  <data name="Search.Global.Placeholder" xml:space="preserve">
+    <value>最適化と設定を検索</value>
+  </data>
+  <data name="Health.BootTime.Trend" xml:space="preserve">
+    <value>前回 {0} 秒、直近 {2} 回の平均 {1} 秒 (Windows の計測値)</value>
+  </data>
+  <data name="Update.Button.Install" xml:space="preserve">
+    <value>今すぐ更新</value>
+  </data>
+  <data name="Update.Confirm.Title" xml:space="preserve">
+    <value>バージョン {0} に更新</value>
+  </data>
+  <data name="Update.Confirm.Message" xml:space="preserve">
+    <value>optimizerDuck は新しいバージョンを GitHub からダウンロードし、公開されている SHA-256 チェックサムで検証してから置き換え、再起動します。適用済みの最適化と元に戻すためのデータは保持されます。</value>
+  </data>
+  <data name="Update.Downloading" xml:space="preserve">
+    <value>更新をダウンロードして検証しています...</value>
+  </data>
+  <data name="Update.Failed.Title" xml:space="preserve">
+    <value>更新をインストールできませんでした</value>
+  </data>
+  <data name="Update.Failed.Message" xml:space="preserve">
+    <value>ダウンロードまたは検証ができませんでした。手動で更新できるようリリース ページを開きます。</value>
+  </data>
 </root>

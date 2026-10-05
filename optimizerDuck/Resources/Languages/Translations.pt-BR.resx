@@ -3057,4 +3057,28 @@ Códigos de saída: 0 sucesso, 1 falhas ou otimizações desfeitas encontradas, 
   <data name="AppInstaller.Category.Runtimes" xml:space="preserve">
     <value>Runtimes</value>
   </data>
+  <data name="Search.Global.Placeholder" xml:space="preserve">
+    <value>Pesquisar otimizações e configurações</value>
+  </data>
+  <data name="Health.BootTime.Trend" xml:space="preserve">
+    <value>{0} s na última inicialização, média de {1} s nas últimas {2} (medido pelo Windows)</value>
+  </data>
+  <data name="Update.Button.Install" xml:space="preserve">
+    <value>Atualizar agora</value>
+  </data>
+  <data name="Update.Confirm.Title" xml:space="preserve">
+    <value>Atualizar para a versão {0}</value>
+  </data>
+  <data name="Update.Confirm.Message" xml:space="preserve">
+    <value>O optimizerDuck baixa a nova versão do GitHub, confere com o checksum SHA-256 publicado, se substitui e reinicia. Suas otimizações aplicadas e os dados para reverter são mantidos.</value>
+  </data>
+  <data name="Update.Downloading" xml:space="preserve">
+    <value>Baixando e verificando a atualização...</value>
+  </data>
+  <data name="Update.Failed.Title" xml:space="preserve">
+    <value>Não foi possível instalar a atualização</value>
+  </data>
+  <data name="Update.Failed.Message" xml:space="preserve">
+    <value>Não foi possível baixar ou verificar. A página da versão será aberta para atualizar manualmente.</value>
+  </data>
 </root>
