@@ -3079,4 +3079,139 @@
   <data name="Optimizer.Menu.HideUnavailable" xml:space="preserve">
     <value>隱藏不支援的項目</value>
   </data>
+  <data name="OptimizationDetailsDialog.SideEffects" xml:space="preserve">
+    <value>可能受影響的功能</value>
+  </data>
+  <data name="Optimizer.Performance.DisableBackgroundApps.SideEffects" xml:space="preserve">
+    <value>市集應用程式不再於背景執行：郵件、行事曆、天氣等應用程式只在開啟時更新，部分通知會延遲或收不到。</value>
+  </data>
+  <data name="Optimizer.Performance.ConsolidateServiceHosts.SideEffects" xml:space="preserve">
+    <value>多個服務重新共用一個處理程序，一個服務當掉可能連帶同一處理程序的其他服務，工作管理員也會將它們合併顯示。</value>
+  </data>
+  <data name="Optimizer.Performance.ProcessPriority.SideEffects" xml:space="preserve">
+    <value>在你使用其他視窗時，背景工作（下載、影片編碼、編譯）分到的 CPU 時間較少，可能需要更久。</value>
+  </data>
+  <data name="Optimizer.Performance.OptimizeMultimediaScheduler.SideEffects" xml:space="preserve">
+    <value>遊戲或媒體執行時，背景工作與網路流量的優先順序降低，背景下載與串流可能變慢。</value>
+  </data>
+  <data name="Optimizer.Performance.KeyboardLatencyOptimization.SideEffects" xml:space="preserve">
+    <value>按住按鍵時重複開始得更早、速度更快，手指搭在按鍵上可能會多輸入字元。</value>
+  </data>
+  <data name="Optimizer.Performance.DisableAccessibilityKeyboardHotkeys.SideEffects" xml:space="preserve">
+    <value>連按五次 Shift 或按住 Shift、Num Lock 不再開啟相黏鍵、篩選鍵或切換鍵。需要的使用者仍可在「設定 &gt; 協助工具 &gt; 鍵盤」中開啟。</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.SideEffects" xml:space="preserve">
+    <value>Edge 啟動稍慢，關閉最後一個視窗後不再顯示通知，也不會繼續完成下載。</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableTelemetry.SideEffects" xml:space="preserve">
+    <value>意見反應中樞無法使用，無法接收 Windows 測試人員組建，部分疑難排解工具可用的資料減少，Microsoft 收到的當機報告也會變少，較難修正你硬體上的問題。</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableErrorReporting.SideEffects" xml:space="preserve">
+    <value>當機報告不再儲存或傳送，可靠性監視器顯示的資訊變少，Microsoft 也無法提供已知的解決方法。程式相容性助理不再為舊程式提供修正建議。</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableAdvertisingAndSuggestions.SideEffects" xml:space="preserve">
+    <value>應用程式無法再顯示個人化廣告，Windows 不再建議應用程式、提示和設定步驟，輸入與手寫建議從你的輸入中學習得更少。</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableNewsAndInterests.SideEffects" xml:space="preserve">
+    <value>工作列上的小工具（天氣）按鈕和新聞動態消失。</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableActivityHistory.SideEffects" xml:space="preserve">
+    <value>Windows 不再保存你使用過的應用程式、檔案和網頁記錄，「從上次中斷的地方繼續」建議和時間軸將無法使用。</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableLocationAndSensors.SideEffects" xml:space="preserve">
+    <value>應用程式無法再取得你的位置：地圖、天氣、尋找我的裝置和自動時區將不再使用位置資訊，離線地圖不再更新，自動旋轉、環境光等部分感應器也可能失效。</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableAutoLogger.SideEffects" xml:space="preserve">
+    <value>部分內建診斷記錄（Wi-Fi 工作階段、網路、應用程式模型）不再記錄，排查連線與應用程式問題會更困難。</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableCortana.SideEffects" xml:space="preserve">
+    <value>Cortana 不再可用，搜尋也不再使用網路或你的位置，開始功能表搜尋只顯示本機結果。</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableCopilot.SideEffects" xml:space="preserve">
+    <value>Copilot 按鈕和 Windows + C 快速鍵消失，無法從 Windows 中啟動 Copilot。</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableContentDeliveryManager.SideEffects" xml:space="preserve">
+    <value>鎖定畫面的 Windows 焦點圖片、趣味知識和開始功能表中的建議應用程式不再更新，鎖定畫面圖片或投影片需由你自行選擇。</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableFindMyDevice.SideEffects" xml:space="preserve">
+    <value>電腦遺失或遭竊時，將無法透過 Microsoft 帳戶找到或鎖定它。</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableDeliveryOptimization.SideEffects" xml:space="preserve">
+    <value>更新只從 Microsoft 下載，不再從網路中的其他電腦取得，多台電腦的家庭或辦公室會消耗更多頻寬。</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.SideEffects" xml:space="preserve">
+    <value>Edge 將失去側邊欄（及其中的 Copilot）、比價和優惠券功能，並因使用原則而在設定中顯示「你的瀏覽器由你的組織管理」。</value>
+  </data>
+  <data name="Optimizer.UserExperience.SpeedUpExplorerAndMenus.SideEffects" xml:space="preserve">
+    <value>啟動應用程式會在登入後立即同時啟動而不是錯開，在較慢的電腦上登入後的前幾秒可能較卡。</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableVisualEffects.SideEffects" xml:space="preserve">
+    <value>Windows 外觀更扁平：沒有透明效果、工作列動畫、桌面圖示文字陰影，也沒有工作列角落的預覽桌面。</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableStartMenuWebSearch.SideEffects" xml:space="preserve">
+    <value>開始功能表搜尋只顯示本機結果，Bing 網頁結果和搜尋醒目提示將消失。</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableStartRecommended.SideEffects" xml:space="preserve">
+    <value>開始功能表不再列出最近開啟的檔案和新安裝的應用程式，需透過檔案總管或搜尋尋找。</value>
+  </data>
+  <data name="Optimizer.UserExperience.MaximizeUpdatePauseLimit.SideEffects" xml:space="preserve">
+    <value>可以將更新暫停更長時間。暫停期間安全性修正也不會安裝，請定期繼續更新。</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.SideEffects" xml:space="preserve">
+    <value>Windows Update 不再安裝或更新驅動程式，新裝置的驅動程式或修正需要從製造商網站取得。</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableUlps.SideEffects" xml:space="preserve">
+    <value>GPU（或 CrossFire 中的第二張 GPU）閒置時不再進入最深的休眠狀態，閒置功耗和溫度會略為升高。</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisablePowerGating.SideEffects" xml:space="preserve">
+    <value>即使在桌面閒置時 GPU 的部分區域仍保持供電：閒置功耗、溫度和風扇噪音更高，筆電續航力更短。</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableVideoClockGating.SideEffects" xml:space="preserve">
+    <value>視訊編碼器和解碼器在不使用時仍保持供電，閒置功耗略為上升，在筆電上更明顯。</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableAspm.SideEffects" xml:space="preserve">
+    <value>連接 GPU 的 PCIe 鏈路閒置時不再節能：功耗略高，筆電續航力更短。</value>
+  </data>
+  <data name="Optimizer.Gpu.NvidiaDisableDynamicPstate.SideEffects" xml:space="preserve">
+    <value>即使在桌面閒置時 GPU 也保持高頻：閒置功耗、溫度和風扇噪音更高，筆電續航力更短。</value>
+  </data>
+  <data name="Optimizer.Gpu.NvidiaDisableAsyncPstates.SideEffects" xml:space="preserve">
+    <value>GPU 切換電源狀態的頻率降低，可能維持高於需要的頻率：輕負載時功耗和發熱更多。</value>
+  </data>
+  <data name="Optimizer.Gpu.IntelDisableAdaptiveVsync.SideEffects" xml:space="preserve">
+    <value>當遊戲畫面播放速率低於顯示器更新率時，可能出現卡頓而不是短暫的畫面撕裂。</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisableHibernateAndFastStartup.SideEffects" xml:space="preserve">
+    <value>休眠不再可用，由於快速啟動已關閉，關機後再開機會稍慢。筆電在電量低時也不會再進入休眠。</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisableUSBPowerSaving.SideEffects" xml:space="preserve">
+    <value>USB 裝置閒置時不再休眠而是一直供電，筆電續航力會略為縮短。</value>
+  </data>
+  <data name="Optimizer.PowerManagement.InstallOptimizerDuckPowerPlan.SideEffects" xml:space="preserve">
+    <value>CPU 更常以高頻執行：功耗和發熱增加，輕負載時風扇更吵，筆電續航力明顯縮短。工作管理員在閒置時也可能顯示較高的 CPU 使用率。</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisablePowerSaving.SideEffects" xml:space="preserve">
+    <value>Windows 不再為省電限制背景應用程式，筆電更耗電，也不再嘗試復原耗電過大的 USB 連接埠。</value>
+  </data>
+  <data name="Optimizer.AI.DisableRecall.SideEffects" xml:space="preserve">
+    <value>Recall 停止儲存快照並刪除已有快照，你將無法再搜尋之前在螢幕上看到的內容。</value>
+  </data>
+  <data name="Optimizer.AI.DisableClickToDo.SideEffects" xml:space="preserve">
+    <value>Click to Do（Windows 鍵 + 按一下）不再可用，無法對螢幕上的文字或圖片執行快速 AI 動作。</value>
+  </data>
+  <data name="Optimizer.AI.DisablePaintAI.SideEffects" xml:space="preserve">
+    <value>小畫家中的 Cocreator、Image Creator、生成式填滿和生成式清除消失，一般繪圖工具保留。</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.SideEffects" xml:space="preserve">
+    <value>記事本中的重寫、摘要等 AI 選項消失，文字編輯照常可用。</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisablePreinstalledApps.SideEffects" xml:space="preserve">
+    <value>Windows 不再自動安裝建議的應用程式和遊戲，已安裝的應用程式會保留直到你解除安裝。</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.ConfigureServices.SideEffects" xml:space="preserve">
+    <value>傳真、遠端登錄、遠端存取、零售示範等少用服務將被停用，許多其他服務改為需要時才啟動，因此首次使用列印、藍牙、掃描等功能時可能稍慢。依賴被停用服務的程式在你還原前可能無法正常運作。</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.SideEffects" xml:space="preserve">
+    <value>OneDrive 停止同步：檔案不再備份到雲端，也無法在其他裝置上存取，Office 自動儲存到 OneDrive 將停止，已備份的資料夾（桌面、文件、圖片）也不再線上更新。</value>
+  </data>
 </root>

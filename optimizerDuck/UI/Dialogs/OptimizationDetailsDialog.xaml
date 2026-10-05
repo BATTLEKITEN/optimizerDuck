@@ -166,6 +166,30 @@
             </StackPanel>
         </Border>
 
+        <Border
+            Margin="0,0,0,12"
+            Padding="16"
+            Background="{DynamicResource CardBackgroundFillColorDefaultBrush}"
+            BorderBrush="{DynamicResource SystemFillColorCautionBrush}"
+            BorderThickness="1"
+            CornerRadius="{StaticResource CornerRadiusMedium}"
+            Visibility="{Binding Optimization.HasSideEffects, Converter={StaticResource BooleanToVisibilityConverter}, FallbackValue=Collapsed}">
+            <StackPanel>
+                <StackPanel Margin="0,0,0,8" Orientation="Horizontal">
+                    <ui:SymbolIcon
+                        Margin="0,0,6,0"
+                        Foreground="{DynamicResource SystemFillColorCautionBrush}"
+                        Symbol="Warning24" />
+                    <ui:TextBlock FontTypography="BodyStrong" Text="{ext:Loc OptimizationDetailsDialog.SideEffects}" />
+                </StackPanel>
+                <ui:TextBlock
+                    FontTypography="Body"
+                    Foreground="{DynamicResource TextFillColorSecondaryBrush}"
+                    Text="{Binding Optimization.SideEffects}"
+                    TextWrapping="Wrap" />
+            </StackPanel>
+        </Border>
+
         <ui:TextBlock
             Margin="0,0,0,8"
             FontTypography="BodyStrong"

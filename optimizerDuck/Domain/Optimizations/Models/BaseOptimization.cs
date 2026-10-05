@@ -153,6 +153,23 @@ public abstract partial class BaseOptimization : LocalizedObject, IOptimization
     /// <summary>Gets the localized short description of what this optimization does.</summary>
     public virtual string ShortDescription => Loc.Instance[$"{Prefix}.ShortDescription"];
 
+    /// <summary>
+    ///     Gets what may stop working or behave differently once the optimization is applied, or
+    ///     an empty string when nothing noticeable changes beyond the description.
+    /// </summary>
+    public string SideEffects
+    {
+        get
+        {
+            var key = $"Optimizer.{OwnerKey}.{OptimizationKey}.SideEffects";
+            var text = Loc.Instance[key];
+            return text == key ? string.Empty : text;
+        }
+    }
+
+    /// <summary>Gets a value that indicates whether <see cref="SideEffects" /> has any text.</summary>
+    public bool HasSideEffects => SideEffects.Length > 0;
+
     /// <summary>Gets the English name written to the log.</summary>
     public virtual string LogName => Loc.Invariant[$"Optimizer.{OwnerKey}.{OptimizationKey}.Name"];
 

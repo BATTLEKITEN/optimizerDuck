@@ -52,6 +52,7 @@ Reflection discovery, no registration array to update.
 - **Discovery**: `ReflectionHelper.FindImplementationsInLoadedAssemblies<T>()` scans assemblies whose name starts with `optimizerDuck`; `CategoryDiscovery` builds the categories and instantiates their nested items, skipping empty categories. Results are cached. `OptimizationValidation` fails fast on a duplicate or malformed Id during discovery.
 - **Preloading**: `OptimizationRegistry.PreloadOptimizationsAsync()` / `EnsurePreloadedAsync()` and `CustomizeRegistry.PreloadCategoriesAsync()` / `EnsurePreloadedAsync()` run discovery on a background thread; `App.xaml.cs` preloads at startup and the pages await `EnsurePreloadedAsync()` before binding.
 - **DI**: register through `AddOptimizerApplication(configuration)`. The host sets `ValidateOnBuild`/`ValidateScopes`, so a broken or scoped-into-singleton registration fails at startup, not at apply time. Keep it that way.
+- **Side effects**: add `Optimizer.{Category}.{Key}.SideEffects` (all locales) when applying the item can break or change something the user relies on; `BaseOptimization.SideEffects` / `HasSideEffects` read it, the card shows a warning icon and the details dialog a section. Leave it out when nothing noticeable changes.
 - **Results**: an optimization ends `ApplyAsync` with `return context.Changes.ToApplyResult();`. Only an early-out failure constructs `ApplyResult` by hand.
 
 ## Execution model

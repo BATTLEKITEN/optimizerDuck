@@ -3075,4 +3075,139 @@ Seçenekler:
   <data name="Optimizer.Menu.HideUnavailable" xml:space="preserve">
     <value>Desteklenmeyenleri gizle</value>
   </data>
+  <data name="OptimizationDetailsDialog.SideEffects" xml:space="preserve">
+    <value>Nelerin çalışması durabilir</value>
+  </data>
+  <data name="Optimizer.Performance.DisableBackgroundApps.SideEffects" xml:space="preserve">
+    <value>Store uygulamaları artık arka planda çalışmaz: Posta, Takvim, Hava Durumu ve benzerleri yalnızca açıldığında yenilenir, bazı bildirimler gecikir veya hiç gelmez.</value>
+  </data>
+  <data name="Optimizer.Performance.ConsolidateServiceHosts.SideEffects" xml:space="preserve">
+    <value>Birden fazla hizmet yeniden tek bir işlemi paylaşır; biri çökerse aynı işlemdeki diğerlerini de düşürebilir ve Görev Yöneticisi bunları tek tek değil gruplu gösterir.</value>
+  </data>
+  <data name="Optimizer.Performance.ProcessPriority.SideEffects" xml:space="preserve">
+    <value>Arka planda çalışan işler (indirmeler, video kodlama, derleme) siz başka bir pencereyi kullanırken daha az CPU zamanı alır ve daha uzun sürebilir.</value>
+  </data>
+  <data name="Optimizer.Performance.OptimizeMultimediaScheduler.SideEffects" xml:space="preserve">
+    <value>Bir oyun veya medya oynatılırken arka plan görevleri ve ağ trafiği daha düşük öncelik alır; arka plandaki indirmeler ve yayınlar yavaşlayabilir.</value>
+  </data>
+  <data name="Optimizer.Performance.KeyboardLatencyOptimization.SideEffects" xml:space="preserve">
+    <value>Basılı tutulan tuşlar daha erken ve daha hızlı tekrarlanır; parmağınızı bir tuşta bırakırsanız fazladan karakter yazılabilir.</value>
+  </data>
+  <data name="Optimizer.Performance.DisableAccessibilityKeyboardHotkeys.SideEffects" xml:space="preserve">
+    <value>Shift’e beş kez basmak ya da Shift veya Num Lock’u basılı tutmak artık Yapışkan, Filtre veya Geçiş Tuşları’nı açmaz. İhtiyacı olanlar bunları Ayarlar &gt; Erişilebilirlik &gt; Klavye’den açabilir.</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.SideEffects" xml:space="preserve">
+    <value>Edge biraz daha yavaş açılır; son penceresi kapatıldıktan sonra bildirim göstermez ve indirmeleri tamamlamaz.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableTelemetry.SideEffects" xml:space="preserve">
+    <value>Geri Bildirim Merkezi çalışmaz, Windows Insider derlemeleri alınamaz, bazı sorun gidericilerin elindeki veri azalır ve Microsoft donanımınızdaki sorunları düzeltmek için daha az çökme raporu alır.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableErrorReporting.SideEffects" xml:space="preserve">
+    <value>Çökme raporları artık kaydedilmez ve gönderilmez; Güvenilirlik İzleyicisi daha az ayrıntı gösterir, Microsoft bilinen çözümleri öneremez. Program Uyumluluk Yardımcısı da eski programlar için düzeltme önermez.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableAdvertisingAndSuggestions.SideEffects" xml:space="preserve">
+    <value>Uygulamalar artık size özel reklam gösteremez, Windows uygulama, ipucu ve kurulum adımı önermeyi bırakır; yazma ve el yazısı önerileri yazdıklarınızdan daha az öğrenir.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableNewsAndInterests.SideEffects" xml:space="preserve">
+    <value>Görev çubuğundaki Pencere Öğeleri (hava durumu) düğmesi ve haber akışı kaybolur.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableActivityHistory.SideEffects" xml:space="preserve">
+    <value>Windows kullandığınız uygulama, dosya ve sayfaların geçmişini tutmaz; "kaldığınız yerden devam edin" önerileri ve Zaman Çizelgesi çalışmaz.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableLocationAndSensors.SideEffects" xml:space="preserve">
+    <value>Uygulamalar artık konumunuzu alamaz: Haritalar, Hava Durumu, Cihazımı Bul ve otomatik saat dilimi konumu kullanmaz, çevrimdışı haritalar güncellenmez; otomatik döndürme veya ortam ışığı gibi bazı sensörler çalışmayabilir.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableAutoLogger.SideEffects" xml:space="preserve">
+    <value>Bazı yerleşik tanılama günlükleri (Wi-Fi oturumları, ağ, uygulama modeli) artık kaydedilmez; bağlantı ve uygulama sorunlarını gidermek zorlaşır.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableCortana.SideEffects" xml:space="preserve">
+    <value>Cortana kullanılamaz; arama artık web’i veya konumunuzu kullanmaz, Başlat araması yalnızca bu PC’deki sonuçları gösterir.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableCopilot.SideEffects" xml:space="preserve">
+    <value>Copilot düğmesi ve Windows + C kısayolu kaybolur; Copilot Windows’un içinden başlatılamaz.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableContentDeliveryManager.SideEffects" xml:space="preserve">
+    <value>Kilit ekranındaki Windows Spotlight görselleri, ilginç bilgiler ve Başlat’taki önerilen uygulamalar güncellenmez; kilit ekranı için resmi veya slayt gösterisini kendiniz seçersiniz.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableFindMyDevice.SideEffects" xml:space="preserve">
+    <value>Bu PC kaybolur veya çalınırsa artık Microsoft hesabınızdan bulamaz ya da kilitleyemezsiniz.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableDeliveryOptimization.SideEffects" xml:space="preserve">
+    <value>Güncellemeler ağınızdaki diğer PC’lerden değil yalnızca Microsoft’tan indirilir; birden fazla PC olan bir ev veya ofis güncellemeler için daha fazla bant genişliği kullanır.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.SideEffects" xml:space="preserve">
+    <value>Edge kenar çubuğunu (ve içindeki Copilot’u), fiyat karşılaştırmayı ve kuponları kaybeder; değişiklik ilke kullandığı için ayarlarda "Tarayıcınız kuruluşunuz tarafından yönetiliyor" yazar.</value>
+  </data>
+  <data name="Optimizer.UserExperience.SpeedUpExplorerAndMenus.SideEffects" xml:space="preserve">
+    <value>Başlangıç uygulamaları oturum açılır açılmaz kademeli değil hep birlikte başlar; yavaş PC’lerde oturum açtıktan sonraki ilk saniyeler daha ağır hissedilebilir.</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableVisualEffects.SideEffects" xml:space="preserve">
+    <value>Windows daha düz görünür: saydamlık, görev çubuğu animasyonları, masaüstü simge adlarının altındaki gölgeler ve görev çubuğu köşesindeki Aero Peek önizlemesi olmaz.</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableStartMenuWebSearch.SideEffects" xml:space="preserve">
+    <value>Başlat araması yalnızca bu PC’deki sonuçları gösterir: Bing web sonuçları ve arama öne çıkanları kaybolur.</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableStartRecommended.SideEffects" xml:space="preserve">
+    <value>Başlat artık son açılan dosyaları ve yeni yüklenen uygulamaları listelemez; bunları Dosya Gezgini veya arama ile bulursunuz.</value>
+  </data>
+  <data name="Optimizer.UserExperience.MaximizeUpdatePauseLimit.SideEffects" xml:space="preserve">
+    <value>Güncellemeler çok daha uzun süre duraklatılabilir. Duraklatıldıkları sürece güvenlik düzeltmeleri de yüklenmez; güncellemeleri düzenli olarak sürdürün.</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.SideEffects" xml:space="preserve">
+    <value>Windows Update artık sürücü yüklemez veya güncellemez; yeni bir cihazın sürücüsünü ya da düzeltmesini üreticinin sitesinden almanız gerekir.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableUlps.SideEffects" xml:space="preserve">
+    <value>GPU (veya CrossFire’daki ikinci GPU) boştayken en derin uyku durumuna geçmez; boşta güç tüketimi ve sıcaklık biraz artar.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisablePowerGating.SideEffects" xml:space="preserve">
+    <value>GPU’nun bazı bölümleri masaüstünde bile güç almaya devam eder: boşta daha yüksek güç tüketimi, sıcaklık ve fan sesi, dizüstülerde daha kısa pil ömrü.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableVideoClockGating.SideEffects" xml:space="preserve">
+    <value>Video kodlayıcı ve kod çözücü kullanılmadığında da güç almaya devam eder; boşta güç tüketimi biraz artar, en çok dizüstülerde fark edilir.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableAspm.SideEffects" xml:space="preserve">
+    <value>GPU’ya giden PCIe bağlantısı boştayken artık güç tasarrufu yapmaz: biraz daha yüksek güç tüketimi ve dizüstülerde daha kısa pil ömrü.</value>
+  </data>
+  <data name="Optimizer.Gpu.NvidiaDisableDynamicPstate.SideEffects" xml:space="preserve">
+    <value>GPU masaüstünde bile yüksek saat hızlarında kalır: boşta daha yüksek güç tüketimi, sıcaklık ve fan sesi, dizüstülerde daha kısa pil ömrü.</value>
+  </data>
+  <data name="Optimizer.Gpu.NvidiaDisableAsyncPstates.SideEffects" xml:space="preserve">
+    <value>GPU güç durumlarını daha seyrek değiştirir ve gerekenden yüksek saat hızlarında kalabilir: hafif yüklerde daha fazla güç tüketimi ve ısı.</value>
+  </data>
+  <data name="Optimizer.Gpu.IntelDisableAdaptiveVsync.SideEffects" xml:space="preserve">
+    <value>Bir oyunun kare hızı ekranın yenileme hızının altına düştüğünde kısa bir yırtılma yerine takılma görülebilir.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisableHibernateAndFastStartup.SideEffects" xml:space="preserve">
+    <value>Hazırda bekletme kullanılamaz ve Hızlı Başlangıç kapalı olduğu için kapattıktan sonra açılış biraz daha uzun sürer. Dizüstüler pil azaldığında hazırda bekletmeye geçmez.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisableUSBPowerSaving.SideEffects" xml:space="preserve">
+    <value>USB cihazları boştayken uyumak yerine sürekli güç alır; dizüstülerde pil ömrü biraz kısalır.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.InstallOptimizerDuckPowerPlan.SideEffects" xml:space="preserve">
+    <value>CPU daha sık yüksek saat hızlarında çalışır: daha fazla güç tüketimi ve ısı, hafif yükte daha gürültülü fanlar ve dizüstülerde çok daha kısa pil ömrü. Görev Yöneticisi boştayken bile yüksek CPU kullanımı gösterebilir.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisablePowerSaving.SideEffects" xml:space="preserve">
+    <value>Windows güç tasarrufu için arka plan uygulamalarını kısmayı bırakır; dizüstüler daha fazla pil harcar ve aşırı güç çeken USB bağlantı noktalarını kurtarmaya çalışmaz.</value>
+  </data>
+  <data name="Optimizer.AI.DisableRecall.SideEffects" xml:space="preserve">
+    <value>Recall anlık görüntü kaydetmeyi bırakır ve kayıtlı olanları siler; ekranda daha önce gördüklerinizi artık arayamazsınız.</value>
+  </data>
+  <data name="Optimizer.AI.DisableClickToDo.SideEffects" xml:space="preserve">
+    <value>Click to Do (Windows tuşu + tıklama) kullanılamaz; ekrandaki metin veya görseller üzerinde hızlı yapay zekâ eylemleri çalıştıramazsınız.</value>
+  </data>
+  <data name="Optimizer.AI.DisablePaintAI.SideEffects" xml:space="preserve">
+    <value>Paint’ten Cocreator, Image Creator, üretken dolgu ve üretken silme kalkar; normal çizim araçları kalır.</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.SideEffects" xml:space="preserve">
+    <value>Not Defteri’nden Yeniden Yaz, Özetle ve diğer yapay zekâ seçenekleri kalkar; metin düzenleme eskisi gibi çalışır.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisablePreinstalledApps.SideEffects" xml:space="preserve">
+    <value>Windows önerilen uygulama ve oyunları kendiliğinden yüklemeyi bırakır; zaten yüklü olanlar siz kaldırana kadar kalır.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.ConfigureServices.SideEffects" xml:space="preserve">
+    <value>Faks, Uzak Kayıt Defteri, Uzaktan Erişim, mağaza demosu ve nadiren kullanılan birkaç hizmet kapatılır; diğer birçok hizmet yalnızca gerektiğinde başlar. Bu nedenle bazı özelliklerin (yazdırma, Bluetooth, tarama) ilk kullanımı biraz daha uzun sürebilir. Kapatılan bir hizmete bağlı bir program siz geri alana kadar çalışmayabilir.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.SideEffects" xml:space="preserve">
+    <value>OneDrive eşitlemeyi bırakır: dosyalar artık buluta yedeklenmez ve diğer cihazlarınızda kullanılamaz, Office’in OneDrive’a Otomatik Kaydetme özelliği durur, yedeklenen klasörler (Masaüstü, Belgeler, Resimler) çevrimiçi güncellenmez.</value>
+  </data>
 </root>

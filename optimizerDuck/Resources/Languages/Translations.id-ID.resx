@@ -3141,4 +3141,139 @@ Kode keluar: 0 berhasil, 1 ada kegagalan atau optimasi yang dibatalkan, 2 kesala
   <data name="Optimizer.Menu.HideUnavailable" xml:space="preserve">
     <value>Sembunyikan yang tidak didukung</value>
   </data>
+  <data name="OptimizationDetailsDialog.SideEffects" xml:space="preserve">
+    <value>Yang mungkin berhenti berfungsi</value>
+  </data>
+  <data name="Optimizer.Performance.DisableBackgroundApps.SideEffects" xml:space="preserve">
+    <value>Aplikasi Store tidak lagi berjalan di latar belakang: Mail, Kalender, Cuaca, dan sejenisnya hanya diperbarui saat dibuka, dan sebagian notifikasi datang terlambat atau tidak datang.</value>
+  </data>
+  <data name="Optimizer.Performance.ConsolidateServiceHosts.SideEffects" xml:space="preserve">
+    <value>Beberapa layanan kembali berbagi satu proses, jadi layanan yang crash bisa ikut menjatuhkan layanan lain di proses yang sama, dan Task Manager menampilkannya berkelompok.</value>
+  </data>
+  <data name="Optimizer.Performance.ProcessPriority.SideEffects" xml:space="preserve">
+    <value>Pekerjaan di latar belakang (unduhan, encoding video, kompilasi) mendapat lebih sedikit waktu CPU saat Anda memakai jendela lain, jadi bisa lebih lama.</value>
+  </data>
+  <data name="Optimizer.Performance.OptimizeMultimediaScheduler.SideEffects" xml:space="preserve">
+    <value>Saat game atau media berjalan, tugas latar belakang dan lalu lintas jaringan mendapat prioritas lebih rendah, jadi unduhan dan streaming di latar belakang bisa melambat.</value>
+  </data>
+  <data name="Optimizer.Performance.KeyboardLatencyOptimization.SideEffects" xml:space="preserve">
+    <value>Tombol yang ditahan mulai berulang lebih cepat dan lebih sering, sehingga bisa mengetik karakter tambahan jika jari menempel di tombol.</value>
+  </data>
+  <data name="Optimizer.Performance.DisableAccessibilityKeyboardHotkeys.SideEffects" xml:space="preserve">
+    <value>Menekan Shift lima kali atau menahan Shift atau Num Lock tidak lagi mengaktifkan Sticky, Filter, atau Toggle Keys. Yang membutuhkannya tetap bisa mengaktifkan di Pengaturan &gt; Aksesibilitas &gt; Keyboard.</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.SideEffects" xml:space="preserve">
+    <value>Edge terbuka sedikit lebih lambat, dan setelah jendela terakhirnya ditutup tidak lagi menampilkan notifikasi atau menyelesaikan unduhan.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableTelemetry.SideEffects" xml:space="preserve">
+    <value>Feedback Hub berhenti bekerja, build Windows Insider tidak bisa diterima, beberapa pemecah masalah punya lebih sedikit data, dan Microsoft menerima lebih sedikit laporan crash untuk memperbaiki masalah di perangkat keras Anda.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableErrorReporting.SideEffects" xml:space="preserve">
+    <value>Laporan crash tidak lagi disimpan atau dikirim, jadi Reliability Monitor menampilkan lebih sedikit detail dan Microsoft tidak bisa menawarkan solusi yang diketahui. Program Compatibility Assistant tidak lagi menyarankan perbaikan untuk program lama.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableAdvertisingAndSuggestions.SideEffects" xml:space="preserve">
+    <value>Aplikasi tidak lagi bisa menampilkan iklan yang dipersonalisasi, Windows berhenti menyarankan aplikasi, tips, dan langkah penyiapan, dan saran pengetikan serta tulisan tangan belajar lebih sedikit dari tulisan Anda.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableNewsAndInterests.SideEffects" xml:space="preserve">
+    <value>Tombol Widget (cuaca) di taskbar dan feed berita menghilang.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableActivityHistory.SideEffects" xml:space="preserve">
+    <value>Windows tidak lagi menyimpan riwayat aplikasi, file, dan halaman yang Anda gunakan, jadi saran "lanjutkan dari terakhir" dan Timeline berhenti bekerja.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableLocationAndSensors.SideEffects" xml:space="preserve">
+    <value>Aplikasi tidak lagi bisa mendapatkan lokasi Anda: Peta, Cuaca, Temukan Perangkat Saya, dan zona waktu otomatis berhenti memakainya, peta offline tidak diperbarui, dan beberapa sensor seperti rotasi otomatis atau sensor cahaya bisa berhenti bekerja.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableAutoLogger.SideEffects" xml:space="preserve">
+    <value>Beberapa log diagnostik bawaan (sesi Wi-Fi, jaringan, model aplikasi) tidak lagi direkam, sehingga masalah koneksi dan aplikasi lebih sulit dilacak.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableCortana.SideEffects" xml:space="preserve">
+    <value>Cortana tidak lagi tersedia, dan pencarian tidak lagi memakai web atau lokasi Anda, jadi pencarian Start hanya menampilkan hasil dari PC ini.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableCopilot.SideEffects" xml:space="preserve">
+    <value>Tombol Copilot dan pintasan Windows + C menghilang, dan Copilot tidak bisa dibuka dari Windows.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableContentDeliveryManager.SideEffects" xml:space="preserve">
+    <value>Gambar Windows Spotlight di layar kunci, "fakta menarik", dan aplikasi yang disarankan di Start berhenti diperbarui; Anda memilih sendiri gambar atau slideshow untuk layar kunci.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableFindMyDevice.SideEffects" xml:space="preserve">
+    <value>Anda tidak bisa lagi menemukan atau mengunci PC ini dari akun Microsoft jika hilang atau dicuri.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableDeliveryOptimization.SideEffects" xml:space="preserve">
+    <value>Pembaruan hanya diunduh dari Microsoft, bukan dari PC lain di jaringan Anda, jadi rumah atau kantor dengan banyak PC memakai lebih banyak bandwidth internet.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.SideEffects" xml:space="preserve">
+    <value>Edge kehilangan sidebar (dan Copilot di dalamnya), perbandingan harga, dan kupon, dan pengaturannya menampilkan "Browser Anda dikelola oleh organisasi Anda" karena perubahan ini memakai kebijakan.</value>
+  </data>
+  <data name="Optimizer.UserExperience.SpeedUpExplorerAndMenus.SideEffects" xml:space="preserve">
+    <value>Aplikasi startup berjalan bersamaan tepat setelah masuk, bukan bertahap, jadi detik-detik awal setelah masuk bisa terasa lebih berat di PC yang lebih lambat.</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableVisualEffects.SideEffects" xml:space="preserve">
+    <value>Windows terlihat lebih datar: tanpa transparansi, tanpa animasi taskbar, tanpa bayangan di bawah label ikon desktop, dan tanpa pratinjau Aero Peek di sudut taskbar.</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableStartMenuWebSearch.SideEffects" xml:space="preserve">
+    <value>Pencarian Start hanya menampilkan hasil dari PC ini: hasil web Bing dan sorotan pencarian menghilang.</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableStartRecommended.SideEffects" xml:space="preserve">
+    <value>Start tidak lagi menampilkan file yang baru dibuka dan aplikasi yang baru dipasang; Anda menemukannya lewat File Explorer atau pencarian.</value>
+  </data>
+  <data name="Optimizer.UserExperience.MaximizeUpdatePauseLimit.SideEffects" xml:space="preserve">
+    <value>Pembaruan bisa dijeda jauh lebih lama. Selama dijeda, perbaikan keamanan juga tidak dipasang, jadi lanjutkan pembaruan secara rutin.</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.SideEffects" xml:space="preserve">
+    <value>Windows Update tidak lagi memasang atau memperbarui driver, jadi driver untuk perangkat baru atau perbaikannya harus diambil dari situs produsen.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableUlps.SideEffects" xml:space="preserve">
+    <value>GPU (atau GPU kedua di CrossFire) tidak lagi masuk ke mode tidur terdalam saat idle, jadi konsumsi daya dan suhu saat idle sedikit naik.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisablePowerGating.SideEffects" xml:space="preserve">
+    <value>Sebagian GPU tetap menyala bahkan di desktop: konsumsi daya, suhu, dan suara kipas saat idle lebih tinggi, serta baterai laptop lebih cepat habis.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableVideoClockGating.SideEffects" xml:space="preserve">
+    <value>Encoder dan decoder video tetap menyala meski tidak dipakai, sehingga konsumsi daya saat idle sedikit naik, terutama terasa di laptop.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableAspm.SideEffects" xml:space="preserve">
+    <value>Jalur PCIe ke GPU tidak lagi menghemat daya saat idle: konsumsi daya sedikit lebih tinggi dan baterai laptop lebih cepat habis.</value>
+  </data>
+  <data name="Optimizer.Gpu.NvidiaDisableDynamicPstate.SideEffects" xml:space="preserve">
+    <value>GPU tetap di clock tinggi bahkan di desktop: konsumsi daya, suhu, dan suara kipas saat idle lebih tinggi, serta baterai laptop lebih cepat habis.</value>
+  </data>
+  <data name="Optimizer.Gpu.NvidiaDisableAsyncPstates.SideEffects" xml:space="preserve">
+    <value>GPU lebih jarang berganti status daya dan bisa tetap di clock lebih tinggi dari yang dibutuhkan: konsumsi daya dan panas lebih besar pada beban ringan.</value>
+  </data>
+  <data name="Optimizer.Gpu.IntelDisableAdaptiveVsync.SideEffects" xml:space="preserve">
+    <value>Saat frame rate game turun di bawah refresh rate layar, game bisa tersendat alih-alih mengalami tearing sesaat.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisableHibernateAndFastStartup.SideEffects" xml:space="preserve">
+    <value>Hibernate tidak lagi tersedia, dan menyalakan setelah shutdown sedikit lebih lama karena Fast Startup nonaktif. Laptop tidak lagi masuk hibernate saat baterai hampir habis.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisableUSBPowerSaving.SideEffects" xml:space="preserve">
+    <value>Perangkat USB tetap menyala terus alih-alih tidur saat idle, jadi baterai laptop sedikit lebih cepat habis.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.InstallOptimizerDuckPowerPlan.SideEffects" xml:space="preserve">
+    <value>CPU lebih sering berjalan di clock tinggi: konsumsi daya dan panas lebih besar, kipas lebih bising pada beban ringan, dan baterai laptop jauh lebih cepat habis. Task Manager bisa menunjukkan penggunaan CPU tinggi bahkan saat idle.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisablePowerSaving.SideEffects" xml:space="preserve">
+    <value>Windows berhenti membatasi aplikasi latar belakang untuk menghemat daya, jadi laptop lebih boros baterai, dan tidak lagi mencoba memulihkan port USB yang menarik daya berlebih.</value>
+  </data>
+  <data name="Optimizer.AI.DisableRecall.SideEffects" xml:space="preserve">
+    <value>Recall berhenti menyimpan snapshot dan menghapus yang sudah ada, jadi Anda tidak bisa lagi mencari hal yang pernah terlihat di layar.</value>
+  </data>
+  <data name="Optimizer.AI.DisableClickToDo.SideEffects" xml:space="preserve">
+    <value>Click to Do (tombol Windows + klik) tidak lagi tersedia, jadi Anda tidak bisa menjalankan aksi AI cepat pada teks atau gambar di layar.</value>
+  </data>
+  <data name="Optimizer.AI.DisablePaintAI.SideEffects" xml:space="preserve">
+    <value>Cocreator, Image Creator, isian generatif, dan penghapusan generatif hilang dari Paint; alat gambar biasa tetap ada.</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.SideEffects" xml:space="preserve">
+    <value>Rewrite, Summarize, dan opsi AI lainnya hilang dari Notepad; mengedit teks tetap seperti biasa.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisablePreinstalledApps.SideEffects" xml:space="preserve">
+    <value>Windows berhenti memasang aplikasi dan game yang disarankan secara otomatis; aplikasi yang sudah terpasang tetap ada sampai Anda menghapusnya.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.ConfigureServices.SideEffects" xml:space="preserve">
+    <value>Fax, Remote Registry, Remote Access, demo ritel, dan beberapa layanan yang jarang dipakai dimatikan, dan banyak layanan lain hanya berjalan saat dibutuhkan, jadi penggunaan pertama beberapa fitur (mencetak, Bluetooth, memindai) bisa sedikit lebih lama. Program yang bergantung pada layanan yang dimatikan bisa berhenti bekerja sampai Anda membatalkan perubahan.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.SideEffects" xml:space="preserve">
+    <value>OneDrive berhenti menyinkronkan: file tidak lagi dicadangkan ke cloud atau tersedia di perangkat lain, AutoSave Office ke OneDrive berhenti, dan folder yang dicadangkan (Desktop, Dokumen, Gambar) berhenti diperbarui online.</value>
+  </data>
 </root>

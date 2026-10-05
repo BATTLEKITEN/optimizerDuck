@@ -3075,4 +3075,139 @@
   <data name="Optimizer.Menu.HideUnavailable" xml:space="preserve">
     <value>지원되지 않는 항목 숨기기</value>
   </data>
+  <data name="OptimizationDetailsDialog.SideEffects" xml:space="preserve">
+    <value>작동하지 않을 수 있는 기능</value>
+  </data>
+  <data name="Optimizer.Performance.DisableBackgroundApps.SideEffects" xml:space="preserve">
+    <value>Store 앱이 백그라운드에서 실행되지 않습니다. 메일, 일정, 날씨 같은 앱은 열 때만 새로 고쳐지며 일부 알림이 늦게 오거나 오지 않습니다.</value>
+  </data>
+  <data name="Optimizer.Performance.ConsolidateServiceHosts.SideEffects" xml:space="preserve">
+    <value>여러 서비스가 다시 한 프로세스를 공유하므로 서비스 하나가 충돌하면 같은 프로세스의 다른 서비스도 함께 중지될 수 있고, 작업 관리자에서는 묶여서 표시됩니다.</value>
+  </data>
+  <data name="Optimizer.Performance.ProcessPriority.SideEffects" xml:space="preserve">
+    <value>다른 창을 사용하는 동안 백그라운드 작업(다운로드, 동영상 인코딩, 컴파일)에 할당되는 CPU 시간이 줄어 더 오래 걸릴 수 있습니다.</value>
+  </data>
+  <data name="Optimizer.Performance.OptimizeMultimediaScheduler.SideEffects" xml:space="preserve">
+    <value>게임이나 미디어를 재생하는 동안 백그라운드 작업과 네트워크 트래픽의 우선순위가 낮아져 백그라운드 다운로드와 스트리밍이 느려질 수 있습니다.</value>
+  </data>
+  <data name="Optimizer.Performance.KeyboardLatencyOptimization.SideEffects" xml:space="preserve">
+    <value>키를 누르고 있을 때 반복이 더 빨리 시작되고 더 빠르게 반복되어, 손가락을 키에 올려 두면 문자가 더 입력될 수 있습니다.</value>
+  </data>
+  <data name="Optimizer.Performance.DisableAccessibilityKeyboardHotkeys.SideEffects" xml:space="preserve">
+    <value>Shift 키를 다섯 번 누르거나 Shift 또는 Num Lock을 길게 눌러도 고정 키, 필터 키, 토글 키가 켜지지 않습니다. 필요한 경우 설정 &gt; 접근성 &gt; 키보드에서 켤 수 있습니다.</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.SideEffects" xml:space="preserve">
+    <value>Edge가 조금 더 늦게 열리며, 마지막 창을 닫은 뒤에는 알림을 표시하거나 다운로드를 마치지 않습니다.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableTelemetry.SideEffects" xml:space="preserve">
+    <value>피드백 허브가 작동하지 않고 Windows 참가자 빌드를 받을 수 없으며, 일부 문제 해결사가 쓸 수 있는 정보가 줄고 하드웨어 문제 해결에 쓰이는 충돌 보고서도 Microsoft에 덜 전달됩니다.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableErrorReporting.SideEffects" xml:space="preserve">
+    <value>충돌 보고서가 저장되거나 전송되지 않아 안정성 모니터에 표시되는 정보가 줄고, Microsoft가 알려진 해결책을 제시할 수 없습니다. 프로그램 호환성 관리자도 오래된 프로그램에 대한 수정을 제안하지 않습니다.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableAdvertisingAndSuggestions.SideEffects" xml:space="preserve">
+    <value>앱에서 맞춤 광고를 표시할 수 없고, Windows가 앱, 팁, 설정 단계를 추천하지 않으며, 입력 및 필기 제안이 사용자가 쓴 내용에서 덜 학습합니다.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableNewsAndInterests.SideEffects" xml:space="preserve">
+    <value>작업 표시줄의 위젯(날씨) 단추와 뉴스 피드가 사라집니다.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableActivityHistory.SideEffects" xml:space="preserve">
+    <value>Windows가 사용한 앱, 파일, 페이지 기록을 보관하지 않아 "중단한 곳에서 계속" 추천과 타임라인이 작동하지 않습니다.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableLocationAndSensors.SideEffects" xml:space="preserve">
+    <value>앱에서 위치를 가져올 수 없습니다. 지도, 날씨, 내 장치 찾기, 표준 시간대 자동 설정이 위치를 사용하지 않고 오프라인 지도가 업데이트되지 않으며, 자동 회전이나 조도 센서 같은 일부 센서가 작동하지 않을 수 있습니다.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableAutoLogger.SideEffects" xml:space="preserve">
+    <value>일부 기본 진단 로그(Wi-Fi 세션, 네트워크, 앱 모델)가 기록되지 않아 연결 및 앱 문제를 해결하기가 어려워집니다.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableCortana.SideEffects" xml:space="preserve">
+    <value>Cortana를 사용할 수 없으며, 검색에서 웹이나 위치를 사용하지 않아 시작 메뉴 검색에는 이 PC의 결과만 표시됩니다.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableCopilot.SideEffects" xml:space="preserve">
+    <value>Copilot 단추와 Windows 키 + C 바로 가기가 사라지며 Windows에서 Copilot을 실행할 수 없습니다.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableContentDeliveryManager.SideEffects" xml:space="preserve">
+    <value>잠금 화면의 Windows 추천 이미지, 흥미로운 정보, 시작 메뉴의 추천 앱이 더 이상 업데이트되지 않으며 잠금 화면 사진이나 슬라이드 쇼는 직접 선택합니다.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableFindMyDevice.SideEffects" xml:space="preserve">
+    <value>PC를 분실하거나 도난당해도 Microsoft 계정에서 위치를 찾거나 잠글 수 없습니다.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableDeliveryOptimization.SideEffects" xml:space="preserve">
+    <value>업데이트를 네트워크의 다른 PC가 아닌 Microsoft에서만 받으므로, PC가 여러 대인 가정이나 사무실에서는 인터넷 대역폭을 더 사용합니다.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.SideEffects" xml:space="preserve">
+    <value>Edge에서 사이드바(와 그 안의 Copilot), 가격 비교, 쿠폰이 사라지며, 정책을 사용하므로 설정에 "조직에서 브라우저를 관리합니다"라고 표시됩니다.</value>
+  </data>
+  <data name="Optimizer.UserExperience.SpeedUpExplorerAndMenus.SideEffects" xml:space="preserve">
+    <value>시작 앱이 로그인 직후 나눠서가 아니라 한꺼번에 실행되므로, 느린 PC에서는 로그인 후 처음 몇 초가 더 버벅일 수 있습니다.</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableVisualEffects.SideEffects" xml:space="preserve">
+    <value>투명 효과, 작업 표시줄 애니메이션, 바탕 화면 아이콘 이름 그림자, 작업 표시줄 모서리의 Aero Peek 미리 보기가 사라져 화면이 더 밋밋해집니다.</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableStartMenuWebSearch.SideEffects" xml:space="preserve">
+    <value>시작 메뉴 검색에 이 PC의 결과만 표시되며 Bing 웹 결과와 검색 하이라이트가 사라집니다.</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableStartRecommended.SideEffects" xml:space="preserve">
+    <value>시작 메뉴에 최근에 연 파일과 새로 설치한 앱이 표시되지 않으므로 파일 탐색기나 검색으로 찾아야 합니다.</value>
+  </data>
+  <data name="Optimizer.UserExperience.MaximizeUpdatePauseLimit.SideEffects" xml:space="preserve">
+    <value>업데이트를 훨씬 오래 일시 중지할 수 있습니다. 일시 중지 중에는 보안 수정도 설치되지 않으므로 정기적으로 다시 시작하세요.</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.SideEffects" xml:space="preserve">
+    <value>Windows 업데이트가 드라이버를 설치하거나 업데이트하지 않으므로, 새 장치용 드라이버나 수정판은 제조사 웹사이트에서 받아야 합니다.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableUlps.SideEffects" xml:space="preserve">
+    <value>GPU(CrossFire 구성에서는 두 번째 GPU)가 유휴 상태에서 가장 깊은 절전 상태로 들어가지 않아 유휴 전력과 온도가 약간 올라갑니다.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisablePowerGating.SideEffects" xml:space="preserve">
+    <value>바탕 화면에서도 GPU 일부에 전원이 계속 공급되어 유휴 전력, 온도, 팬 소음이 늘고 노트북의 배터리 사용 시간이 줄어듭니다.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableVideoClockGating.SideEffects" xml:space="preserve">
+    <value>비디오 인코더와 디코더가 사용하지 않을 때도 전원이 켜져 있어 유휴 전력이 약간 늘어나며, 주로 노트북에서 체감됩니다.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableAspm.SideEffects" xml:space="preserve">
+    <value>GPU와의 PCIe 링크가 유휴 상태에서 전력을 절약하지 않아 전력 소비가 약간 늘고 노트북의 배터리 사용 시간이 줄어듭니다.</value>
+  </data>
+  <data name="Optimizer.Gpu.NvidiaDisableDynamicPstate.SideEffects" xml:space="preserve">
+    <value>바탕 화면에서도 GPU가 높은 클럭을 유지해 유휴 전력, 온도, 팬 소음이 늘고 노트북의 배터리 사용 시간이 줄어듭니다.</value>
+  </data>
+  <data name="Optimizer.Gpu.NvidiaDisableAsyncPstates.SideEffects" xml:space="preserve">
+    <value>GPU가 전원 상태를 덜 자주 바꾸고 필요 이상으로 높은 클럭에 머물 수 있어, 가벼운 작업에서도 전력 소비와 발열이 늘어납니다.</value>
+  </data>
+  <data name="Optimizer.Gpu.IntelDisableAdaptiveVsync.SideEffects" xml:space="preserve">
+    <value>게임 프레임 속도가 디스플레이 주사율보다 낮아지면 잠깐 화면이 찢어지는 대신 끊김이 생길 수 있습니다.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisableHibernateAndFastStartup.SideEffects" xml:space="preserve">
+    <value>최대 절전 모드를 사용할 수 없고, 빠른 시작이 꺼지므로 종료 후 켤 때 조금 더 오래 걸립니다. 노트북은 배터리가 부족해도 최대 절전 모드로 전환되지 않습니다.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisableUSBPowerSaving.SideEffects" xml:space="preserve">
+    <value>USB 장치가 유휴 상태에서 절전되지 않고 항상 전원이 공급되어 노트북의 배터리 사용 시간이 약간 줄어듭니다.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.InstallOptimizerDuckPowerPlan.SideEffects" xml:space="preserve">
+    <value>CPU가 더 자주 높은 클럭으로 동작해 전력 소비와 발열이 늘고, 가벼운 작업에서도 팬 소음이 커지며, 노트북의 배터리 사용 시간이 크게 줄어듭니다. 유휴 상태에서도 작업 관리자에 CPU 사용률이 높게 표시될 수 있습니다.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisablePowerSaving.SideEffects" xml:space="preserve">
+    <value>Windows가 전력을 아끼려고 백그라운드 앱을 제한하지 않으므로 노트북의 배터리 소모가 늘고, 전력을 과다하게 쓴 USB 포트를 복구하지도 않습니다.</value>
+  </data>
+  <data name="Optimizer.AI.DisableRecall.SideEffects" xml:space="preserve">
+    <value>Recall이 스냅숏 저장을 중지하고 저장된 것도 삭제하므로, 이전에 화면에서 본 내용을 검색할 수 없습니다.</value>
+  </data>
+  <data name="Optimizer.AI.DisableClickToDo.SideEffects" xml:space="preserve">
+    <value>Click to Do(Windows 키 + 클릭)를 사용할 수 없어 화면의 텍스트나 이미지에 빠른 AI 작업을 실행할 수 없습니다.</value>
+  </data>
+  <data name="Optimizer.AI.DisablePaintAI.SideEffects" xml:space="preserve">
+    <value>그림판에서 Cocreator, Image Creator, 생성형 채우기와 생성형 지우기가 사라지며 일반 그리기 도구는 그대로 남습니다.</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.SideEffects" xml:space="preserve">
+    <value>메모장에서 다시 쓰기, 요약 등 AI 옵션이 사라지며 텍스트 편집은 그대로 작동합니다.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisablePreinstalledApps.SideEffects" xml:space="preserve">
+    <value>Windows가 추천 앱과 게임을 자동으로 설치하지 않으며, 이미 설치된 앱은 직접 제거할 때까지 남아 있습니다.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.ConfigureServices.SideEffects" xml:space="preserve">
+    <value>팩스, 원격 레지스트리, 원격 액세스, 매장 데모 등 거의 쓰이지 않는 서비스가 꺼지고, 다른 많은 서비스는 필요할 때만 시작되므로 일부 기능(인쇄, Bluetooth, 스캔)을 처음 사용할 때 조금 더 걸릴 수 있습니다. 꺼진 서비스에 의존하는 프로그램은 되돌릴 때까지 작동하지 않을 수 있습니다.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.SideEffects" xml:space="preserve">
+    <value>OneDrive 동기화가 중지됩니다. 파일이 클라우드에 백업되지 않고 다른 장치에서도 사용할 수 없으며, Office의 OneDrive 자동 저장이 중지되고 백업된 폴더(바탕 화면, 문서, 사진)도 온라인에서 업데이트되지 않습니다.</value>
+  </data>
 </root>

@@ -3142,4 +3142,139 @@ Exit codes: 0 success, 1 failures or undone optimizations found, 2 usage or file
   <data name="Optimizer.Menu.HideUnavailable" xml:space="preserve">
     <value>Hide unsupported</value>
   </data>
+  <data name="OptimizationDetailsDialog.SideEffects" xml:space="preserve">
+    <value>What may stop working</value>
+  </data>
+  <data name="Optimizer.Performance.DisableBackgroundApps.SideEffects" xml:space="preserve">
+    <value>Store apps no longer run in the background: Mail, Calendar, Weather and similar apps refresh only when you open them, and some of their notifications arrive late or not at all.</value>
+  </data>
+  <data name="Optimizer.Performance.ConsolidateServiceHosts.SideEffects" xml:space="preserve">
+    <value>Several services share one process again, so a service that crashes can take the others in the same process down with it, and Task Manager shows them grouped instead of one per line.</value>
+  </data>
+  <data name="Optimizer.Performance.ProcessPriority.SideEffects" xml:space="preserve">
+    <value>Work running in the background (downloads, video encoding, compiling) gets less CPU time while you use another window, so it can take longer.</value>
+  </data>
+  <data name="Optimizer.Performance.OptimizeMultimediaScheduler.SideEffects" xml:space="preserve">
+    <value>While a game or media plays, background tasks and network traffic get lower priority, so background downloads and streams can slow down.</value>
+  </data>
+  <data name="Optimizer.Performance.KeyboardLatencyOptimization.SideEffects" xml:space="preserve">
+    <value>Held keys start repeating sooner and repeat faster, which can type extra characters if you rest a finger on a key.</value>
+  </data>
+  <data name="Optimizer.Performance.DisableAccessibilityKeyboardHotkeys.SideEffects" xml:space="preserve">
+    <value>Pressing Shift five times or holding Shift or Num Lock no longer turns on Sticky, Filter or Toggle Keys. People who rely on them can still turn them on in Settings &gt; Accessibility &gt; Keyboard.</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.SideEffects" xml:space="preserve">
+    <value>Edge opens a little slower, and once its last window is closed it no longer shows notifications or finishes downloads.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableTelemetry.SideEffects" xml:space="preserve">
+    <value>Feedback Hub stops working, Windows Insider builds cannot be received, some troubleshooters have less to go on, and Microsoft gets fewer crash reports to fix problems on your hardware.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableErrorReporting.SideEffects" xml:space="preserve">
+    <value>Crash reports are no longer saved or sent, so Reliability Monitor shows less detail and Microsoft cannot offer known fixes for a crash. The Program Compatibility Assistant no longer suggests fixes for older programs.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableAdvertisingAndSuggestions.SideEffects" xml:space="preserve">
+    <value>Apps can no longer show ads tailored to you, Windows stops suggesting apps, tips and setup steps, and typing and handwriting suggestions learn less from what you write.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableNewsAndInterests.SideEffects" xml:space="preserve">
+    <value>The Widgets (weather) button on the taskbar and the news feed disappear.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableActivityHistory.SideEffects" xml:space="preserve">
+    <value>Windows no longer keeps a history of the apps, files and pages you used, so "pick up where you left off" suggestions and the Timeline stop working.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableLocationAndSensors.SideEffects" xml:space="preserve">
+    <value>Apps can no longer get your location: Maps, Weather, Find My Device and the automatic time zone stop using it, offline maps stop updating, and some sensors such as auto-rotation or ambient light may stop working.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableAutoLogger.SideEffects" xml:space="preserve">
+    <value>Some built-in diagnostic logs (Wi-Fi sessions, network, app model) are no longer recorded, which makes connection and app problems harder to troubleshoot.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableCortana.SideEffects" xml:space="preserve">
+    <value>Cortana is no longer available, and search no longer uses the web or your location, so Start search shows only results from this PC.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableCopilot.SideEffects" xml:space="preserve">
+    <value>The Copilot button and the Windows key + C shortcut disappear, and Copilot cannot be started from Windows itself.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableContentDeliveryManager.SideEffects" xml:space="preserve">
+    <value>Windows Spotlight lock screen pictures, "fun facts" and suggested apps in Start stop updating; you choose a picture or slideshow for the lock screen yourself.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableFindMyDevice.SideEffects" xml:space="preserve">
+    <value>You can no longer locate or lock this PC from your Microsoft account if it is lost or stolen.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableDeliveryOptimization.SideEffects" xml:space="preserve">
+    <value>Updates are downloaded only from Microsoft, not from other PCs on your network, so a home or office with several PCs uses more internet bandwidth for updates.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.SideEffects" xml:space="preserve">
+    <value>Edge loses its sidebar (and Copilot in it), price comparison and coupons, and its settings show "Your browser is managed by your organization" because the change uses policies.</value>
+  </data>
+  <data name="Optimizer.UserExperience.SpeedUpExplorerAndMenus.SideEffects" xml:space="preserve">
+    <value>Startup apps launch all at once right after sign-in instead of being spread out, so the first seconds after sign-in can feel busier on slower PCs.</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableVisualEffects.SideEffects" xml:space="preserve">
+    <value>Windows looks flatter: no transparency, no taskbar animations, no shadows under desktop icon labels and no Aero Peek preview when you point at the corner of the taskbar.</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableStartMenuWebSearch.SideEffects" xml:space="preserve">
+    <value>Start search shows only results from this PC: Bing web results and search highlights disappear.</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableStartRecommended.SideEffects" xml:space="preserve">
+    <value>Start no longer lists recently opened files and newly installed apps, so you find them through File Explorer or search instead.</value>
+  </data>
+  <data name="Optimizer.UserExperience.MaximizeUpdatePauseLimit.SideEffects" xml:space="preserve">
+    <value>Updates can be paused for far longer. While they are paused, security fixes are not installed either, so resume updates regularly.</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.SideEffects" xml:space="preserve">
+    <value>Windows Update no longer installs or updates drivers, so a new device or a driver fix has to come from the manufacturer's website.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableUlps.SideEffects" xml:space="preserve">
+    <value>The GPU (or the second GPU in a CrossFire setup) no longer drops into its deepest sleep at idle, so idle power draw and temperature go up slightly.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisablePowerGating.SideEffects" xml:space="preserve">
+    <value>Parts of the GPU stay powered even at the desktop: higher idle power draw, temperature and fan noise, and shorter battery life on laptops.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableVideoClockGating.SideEffects" xml:space="preserve">
+    <value>The video encoder and decoder stay powered when not in use, which raises idle power draw slightly, mostly noticeable on laptops.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableAspm.SideEffects" xml:space="preserve">
+    <value>The PCIe link to the GPU no longer saves power at idle: slightly higher power draw and shorter battery life on laptops.</value>
+  </data>
+  <data name="Optimizer.Gpu.NvidiaDisableDynamicPstate.SideEffects" xml:space="preserve">
+    <value>The GPU stays at high clocks even at the desktop: higher idle power draw, temperature and fan noise, and shorter battery life on laptops.</value>
+  </data>
+  <data name="Optimizer.Gpu.NvidiaDisableAsyncPstates.SideEffects" xml:space="preserve">
+    <value>The GPU switches power states less often and can stay at higher clocks than it needs: more power draw and heat at light loads.</value>
+  </data>
+  <data name="Optimizer.Gpu.IntelDisableAdaptiveVsync.SideEffects" xml:space="preserve">
+    <value>When a game's frame rate drops below the display's refresh rate, it may stutter instead of briefly tearing.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisableHibernateAndFastStartup.SideEffects" xml:space="preserve">
+    <value>Hibernate is no longer available, and a cold start after shutting down takes a little longer because Fast Startup is off. Laptops can no longer hibernate when the battery runs low.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisableUSBPowerSaving.SideEffects" xml:space="preserve">
+    <value>USB devices stay powered all the time instead of sleeping when idle, so laptops lose some battery life.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.InstallOptimizerDuckPowerPlan.SideEffects" xml:space="preserve">
+    <value>The CPU runs at higher clocks more often: more power draw and heat, louder fans under light load, and much shorter battery life on laptops. Task Manager can show high CPU usage even at idle.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisablePowerSaving.SideEffects" xml:space="preserve">
+    <value>Windows stops throttling background apps to save power, so laptops use more battery, and it no longer tries to recover USB ports that drew too much power.</value>
+  </data>
+  <data name="Optimizer.AI.DisableRecall.SideEffects" xml:space="preserve">
+    <value>Recall stops saving snapshots and deletes the ones already saved, so you can no longer search for things you saw on screen earlier.</value>
+  </data>
+  <data name="Optimizer.AI.DisableClickToDo.SideEffects" xml:space="preserve">
+    <value>Click to Do (Windows key + click) is no longer available, so you cannot run quick AI actions on text or images on screen.</value>
+  </data>
+  <data name="Optimizer.AI.DisablePaintAI.SideEffects" xml:space="preserve">
+    <value>Cocreator, Image Creator, generative fill and generative erase disappear from Paint; the regular drawing tools stay.</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.SideEffects" xml:space="preserve">
+    <value>Rewrite, Summarize and the other AI options disappear from Notepad; editing text works as before.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisablePreinstalledApps.SideEffects" xml:space="preserve">
+    <value>Windows stops installing suggested apps and games on its own; apps that are already installed stay until you remove them.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.ConfigureServices.SideEffects" xml:space="preserve">
+    <value>Fax, Remote Registry, Remote Access, the retail demo and a few other rarely used services are turned off, and many others start only when needed, so the first use of some features (printing, Bluetooth, scanning) can take a moment longer. A program that relies on a disabled service may stop working until you revert.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.SideEffects" xml:space="preserve">
+    <value>OneDrive stops syncing: files are no longer backed up to the cloud or available on your other devices, Office AutoSave to OneDrive stops, and folders backed up to OneDrive (Desktop, Documents, Pictures) stop updating online.</value>
+  </data>
 </root>

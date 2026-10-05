@@ -3084,4 +3084,139 @@ Códigos de saída: 0 sucesso, 1 falhas ou otimizações desfeitas encontradas, 
   <data name="Optimizer.Menu.HideUnavailable" xml:space="preserve">
     <value>Ocultar não suportados</value>
   </data>
+  <data name="OptimizationDetailsDialog.SideEffects" xml:space="preserve">
+    <value>O que pode parar de funcionar</value>
+  </data>
+  <data name="Optimizer.Performance.DisableBackgroundApps.SideEffects" xml:space="preserve">
+    <value>Os apps da Store deixam de rodar em segundo plano: Email, Calendário, Clima e similares só atualizam quando abertos, e algumas notificações chegam atrasadas ou não chegam.</value>
+  </data>
+  <data name="Optimizer.Performance.ConsolidateServiceHosts.SideEffects" xml:space="preserve">
+    <value>Vários serviços voltam a compartilhar um processo, então um serviço que travar pode derrubar os outros do mesmo processo, e o Gerenciador de Tarefas os mostra agrupados.</value>
+  </data>
+  <data name="Optimizer.Performance.ProcessPriority.SideEffects" xml:space="preserve">
+    <value>Tarefas em segundo plano (downloads, codificação de vídeo, compilação) recebem menos tempo de CPU enquanto você usa outra janela e podem demorar mais.</value>
+  </data>
+  <data name="Optimizer.Performance.OptimizeMultimediaScheduler.SideEffects" xml:space="preserve">
+    <value>Enquanto um jogo ou mídia é executado, tarefas em segundo plano e o tráfego de rede têm prioridade menor, então downloads e streams em segundo plano podem ficar lentos.</value>
+  </data>
+  <data name="Optimizer.Performance.KeyboardLatencyOptimization.SideEffects" xml:space="preserve">
+    <value>Teclas pressionadas começam a repetir mais cedo e mais rápido, o que pode digitar caracteres extras se o dedo ficar apoiado numa tecla.</value>
+  </data>
+  <data name="Optimizer.Performance.DisableAccessibilityKeyboardHotkeys.SideEffects" xml:space="preserve">
+    <value>Pressionar Shift cinco vezes ou segurar Shift ou Num Lock não ativa mais Teclas de Aderência, Filtragem ou Alternância. Quem precisa delas pode ativá-las em Configurações &gt; Acessibilidade &gt; Teclado.</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.SideEffects" xml:space="preserve">
+    <value>O Edge abre um pouco mais devagar e, depois que a última janela é fechada, não mostra mais notificações nem conclui downloads.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableTelemetry.SideEffects" xml:space="preserve">
+    <value>O Hub de Comentários para de funcionar, builds do Windows Insider não podem ser recebidas, alguns solucionadores de problemas têm menos dados e a Microsoft recebe menos relatórios de falhas para corrigir problemas no seu hardware.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableErrorReporting.SideEffects" xml:space="preserve">
+    <value>Relatórios de falhas não são mais salvos nem enviados, então o Monitor de Confiabilidade mostra menos detalhes e a Microsoft não consegue oferecer soluções conhecidas. O Assistente de Compatibilidade de Programas deixa de sugerir correções para programas antigos.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableAdvertisingAndSuggestions.SideEffects" xml:space="preserve">
+    <value>Os apps não podem mais exibir anúncios personalizados, o Windows deixa de sugerir apps, dicas e etapas de configuração, e as sugestões de digitação e escrita à mão aprendem menos com o que você escreve.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableNewsAndInterests.SideEffects" xml:space="preserve">
+    <value>O botão de Widgets (clima) na barra de tarefas e o feed de notícias desaparecem.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableActivityHistory.SideEffects" xml:space="preserve">
+    <value>O Windows deixa de guardar o histórico de apps, arquivos e páginas usados, então as sugestões de "continuar de onde parou" e a Linha do Tempo param de funcionar.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableLocationAndSensors.SideEffects" xml:space="preserve">
+    <value>Os apps não conseguem mais obter sua localização: Mapas, Clima, Localizar Meu Dispositivo e o fuso horário automático deixam de usá-la, os mapas offline não são atualizados e alguns sensores, como rotação automática ou luz ambiente, podem parar.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableAutoLogger.SideEffects" xml:space="preserve">
+    <value>Alguns logs de diagnóstico integrados (sessões de Wi-Fi, rede, modelo de apps) deixam de ser gravados, o que dificulta solucionar problemas de conexão e de apps.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableCortana.SideEffects" xml:space="preserve">
+    <value>A Cortana deixa de estar disponível e a pesquisa não usa mais a web nem sua localização, então a pesquisa do Iniciar mostra apenas resultados deste PC.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableCopilot.SideEffects" xml:space="preserve">
+    <value>O botão do Copilot e o atalho Windows + C desaparecem, e o Copilot não pode ser aberto pelo próprio Windows.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableContentDeliveryManager.SideEffects" xml:space="preserve">
+    <value>As imagens do Windows Spotlight na tela de bloqueio, as curiosidades e os apps sugeridos no Iniciar deixam de atualizar; você escolhe uma imagem ou apresentação para a tela de bloqueio.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableFindMyDevice.SideEffects" xml:space="preserve">
+    <value>Você não poderá mais localizar nem bloquear este PC pela sua conta Microsoft em caso de perda ou roubo.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableDeliveryOptimization.SideEffects" xml:space="preserve">
+    <value>As atualizações são baixadas apenas da Microsoft, não de outros PCs da rede, então uma casa ou escritório com vários PCs usa mais banda de internet.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.SideEffects" xml:space="preserve">
+    <value>O Edge perde a barra lateral (e o Copilot nela), a comparação de preços e os cupons, e as configurações mostram "Seu navegador é gerenciado pela sua organização" porque a mudança usa políticas.</value>
+  </data>
+  <data name="Optimizer.UserExperience.SpeedUpExplorerAndMenus.SideEffects" xml:space="preserve">
+    <value>Os apps de inicialização abrem todos de uma vez logo após entrar, em vez de escalonados, então os primeiros segundos podem ficar mais pesados em PCs mais lentos.</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableVisualEffects.SideEffects" xml:space="preserve">
+    <value>O Windows fica mais simples: sem transparência, sem animações da barra de tarefas, sem sombras nos nomes dos ícones da área de trabalho e sem a prévia do Aero Peek no canto da barra.</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableStartMenuWebSearch.SideEffects" xml:space="preserve">
+    <value>A pesquisa do Iniciar mostra apenas resultados deste PC: os resultados da web do Bing e os destaques da pesquisa desaparecem.</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableStartRecommended.SideEffects" xml:space="preserve">
+    <value>O Iniciar deixa de listar arquivos abertos recentemente e apps recém-instalados; você os encontra pelo Explorador de Arquivos ou pela pesquisa.</value>
+  </data>
+  <data name="Optimizer.UserExperience.MaximizeUpdatePauseLimit.SideEffects" xml:space="preserve">
+    <value>As atualizações podem ser pausadas por muito mais tempo. Enquanto pausadas, correções de segurança também não são instaladas, então retome-as regularmente.</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.SideEffects" xml:space="preserve">
+    <value>O Windows Update deixa de instalar e atualizar drivers, então o driver de um dispositivo novo ou uma correção terá de vir do site do fabricante.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableUlps.SideEffects" xml:space="preserve">
+    <value>A GPU (ou a segunda GPU no CrossFire) não entra mais no estado de suspensão mais profundo em repouso, então o consumo e a temperatura em repouso sobem um pouco.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisablePowerGating.SideEffects" xml:space="preserve">
+    <value>Partes da GPU continuam energizadas mesmo na área de trabalho: maior consumo, temperatura e ruído das ventoinhas em repouso e menos bateria em notebooks.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableVideoClockGating.SideEffects" xml:space="preserve">
+    <value>O codificador e o decodificador de vídeo continuam energizados mesmo sem uso, o que aumenta um pouco o consumo em repouso, principalmente em notebooks.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableAspm.SideEffects" xml:space="preserve">
+    <value>O link PCIe com a GPU deixa de economizar energia em repouso: consumo um pouco maior e menos bateria em notebooks.</value>
+  </data>
+  <data name="Optimizer.Gpu.NvidiaDisableDynamicPstate.SideEffects" xml:space="preserve">
+    <value>A GPU fica em clocks altos mesmo na área de trabalho: maior consumo, temperatura e ruído das ventoinhas em repouso e menos bateria em notebooks.</value>
+  </data>
+  <data name="Optimizer.Gpu.NvidiaDisableAsyncPstates.SideEffects" xml:space="preserve">
+    <value>A GPU troca de estado de energia com menos frequência e pode ficar em clocks mais altos que o necessário: mais consumo e calor em cargas leves.</value>
+  </data>
+  <data name="Optimizer.Gpu.IntelDisableAdaptiveVsync.SideEffects" xml:space="preserve">
+    <value>Quando a taxa de quadros de um jogo cai abaixo da taxa de atualização da tela, ele pode engasgar em vez de apresentar um breve tearing.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisableHibernateAndFastStartup.SideEffects" xml:space="preserve">
+    <value>A hibernação deixa de estar disponível e ligar após desligar demora um pouco mais porque a inicialização rápida fica desativada. Notebooks não hibernam mais com bateria baixa.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisableUSBPowerSaving.SideEffects" xml:space="preserve">
+    <value>Os dispositivos USB ficam energizados o tempo todo em vez de suspender em repouso, então notebooks perdem um pouco de bateria.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.InstallOptimizerDuckPowerPlan.SideEffects" xml:space="preserve">
+    <value>A CPU funciona em clocks altos com mais frequência: mais consumo e calor, ventoinhas mais barulhentas com carga leve e bateria bem mais curta em notebooks. O Gerenciador de Tarefas pode mostrar uso alto de CPU mesmo em repouso.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisablePowerSaving.SideEffects" xml:space="preserve">
+    <value>O Windows deixa de limitar apps em segundo plano para economizar energia, então notebooks gastam mais bateria, e não tenta mais recuperar portas USB que consumiram energia demais.</value>
+  </data>
+  <data name="Optimizer.AI.DisableRecall.SideEffects" xml:space="preserve">
+    <value>O Recall para de salvar instantâneos e exclui os já salvos, então você não pode mais pesquisar coisas que viu antes na tela.</value>
+  </data>
+  <data name="Optimizer.AI.DisableClickToDo.SideEffects" xml:space="preserve">
+    <value>O Click to Do (tecla Windows + clique) deixa de estar disponível, então você não pode executar ações rápidas de IA em textos ou imagens na tela.</value>
+  </data>
+  <data name="Optimizer.AI.DisablePaintAI.SideEffects" xml:space="preserve">
+    <value>Cocreator, Image Creator, preenchimento generativo e apagamento generativo somem do Paint; as ferramentas de desenho comuns continuam.</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.SideEffects" xml:space="preserve">
+    <value>Reescrever, Resumir e as outras opções de IA somem do Bloco de Notas; a edição de texto funciona como antes.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisablePreinstalledApps.SideEffects" xml:space="preserve">
+    <value>O Windows deixa de instalar sozinho apps e jogos sugeridos; os apps já instalados continuam até você removê-los.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.ConfigureServices.SideEffects" xml:space="preserve">
+    <value>Fax, Registro Remoto, Acesso Remoto, a demonstração para lojas e alguns serviços pouco usados são desativados, e muitos outros só iniciam quando necessário, então o primeiro uso de alguns recursos (impressão, Bluetooth, digitalização) pode demorar um pouco mais. Um programa que dependa de um serviço desativado pode parar de funcionar até você reverter.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.SideEffects" xml:space="preserve">
+    <value>O OneDrive para de sincronizar: os arquivos não são mais copiados para a nuvem nem ficam disponíveis em outros dispositivos, o Salvamento Automático do Office no OneDrive para e as pastas com backup (Área de Trabalho, Documentos, Imagens) deixam de atualizar online.</value>
+  </data>
 </root>

@@ -3141,4 +3141,139 @@
   <data name="Optimizer.Menu.HideUnavailable" xml:space="preserve">
     <value>הסתר לא נתמכים</value>
   </data>
+  <data name="OptimizationDetailsDialog.SideEffects" xml:space="preserve">
+    <value>מה עלול להפסיק לעבוד</value>
+  </data>
+  <data name="Optimizer.Performance.DisableBackgroundApps.SideEffects" xml:space="preserve">
+    <value>אפליקציות Store כבר לא פועלות ברקע: דואר, לוח שנה, מזג אוויר ודומיהן מתעדכנות רק כשפותחים אותן, וחלק מההתראות מגיעות באיחור או לא מגיעות כלל.</value>
+  </data>
+  <data name="Optimizer.Performance.ConsolidateServiceHosts.SideEffects" xml:space="preserve">
+    <value>כמה שירותים חולקים שוב תהליך אחד, כך ששירות שקורס עלול להפיל איתו את האחרים באותו תהליך, ומנהל המשימות מציג אותם מקובצים במקום שורה לכל שירות.</value>
+  </data>
+  <data name="Optimizer.Performance.ProcessPriority.SideEffects" xml:space="preserve">
+    <value>עבודה שרצה ברקע (הורדות, קידוד וידאו, הידור) מקבלת פחות זמן מעבד כשאתה עובד בחלון אחר, ולכן עשויה להימשך יותר.</value>
+  </data>
+  <data name="Optimizer.Performance.OptimizeMultimediaScheduler.SideEffects" xml:space="preserve">
+    <value>בזמן שמשחק או מדיה פועלים, משימות רקע ותעבורת רשת מקבלות עדיפות נמוכה יותר, כך שהורדות וזרמים ברקע עלולים להאט.</value>
+  </data>
+  <data name="Optimizer.Performance.KeyboardLatencyOptimization.SideEffects" xml:space="preserve">
+    <value>מקשים לחוצים מתחילים לחזור מוקדם יותר ומהר יותר, מה שעלול להקליד תווים מיותרים אם האצבע נחה על מקש.</value>
+  </data>
+  <data name="Optimizer.Performance.DisableAccessibilityKeyboardHotkeys.SideEffects" xml:space="preserve">
+    <value>לחיצה חמש פעמים על Shift או החזקת Shift או Num Lock כבר לא מפעילה מקשים דביקים, מסננים או מתחלפים. מי שזקוק להם יכול להפעיל אותם בהגדרות &gt; נגישות &gt; מקלדת.</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.SideEffects" xml:space="preserve">
+    <value>Edge נפתח מעט לאט יותר, ואחרי סגירת החלון האחרון שלו הוא כבר לא מציג התראות ולא משלים הורדות.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableTelemetry.SideEffects" xml:space="preserve">
+    <value>מרכז המשוב מפסיק לעבוד, לא ניתן לקבל גרסאות Windows Insider, לחלק מפותרי הבעיות יש פחות נתונים, ו-Microsoft מקבלת פחות דוחות קריסה לתיקון בעיות בחומרה שלך.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableErrorReporting.SideEffects" xml:space="preserve">
+    <value>דוחות קריסה כבר לא נשמרים או נשלחים, כך שצג האמינות מציג פחות פרטים ו-Microsoft לא יכולה להציע תיקונים ידועים. מסייע תאימות התוכניות כבר לא מציע תיקונים לתוכניות ישנות.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableAdvertisingAndSuggestions.SideEffects" xml:space="preserve">
+    <value>אפליקציות כבר לא יכולות להציג פרסומות מותאמות אישית, Windows מפסיק להציע אפליקציות, טיפים ושלבי הגדרה, והצעות ההקלדה והכתב היד לומדות פחות ממה שאתה כותב.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableNewsAndInterests.SideEffects" xml:space="preserve">
+    <value>לחצן הווידג׳טים (מזג האוויר) בשורת המשימות ופיד החדשות נעלמים.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableActivityHistory.SideEffects" xml:space="preserve">
+    <value>Windows כבר לא שומר היסטוריה של האפליקציות, הקבצים והדפים שבהם השתמשת, כך שהצעות "המשך מאיפה שהפסקת" וציר הזמן מפסיקים לעבוד.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableLocationAndSensors.SideEffects" xml:space="preserve">
+    <value>אפליקציות כבר לא יכולות לקבל את המיקום שלך: מפות, מזג אוויר, איתור המכשיר שלי ואזור הזמן האוטומטי מפסיקים להשתמש בו, מפות לא מקוונות לא מתעדכנות, וחיישנים כמו סיבוב אוטומטי או חיישן אור עלולים להפסיק לעבוד.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableAutoLogger.SideEffects" xml:space="preserve">
+    <value>חלק מיומני האבחון המובנים (הפעלות Wi-Fi, רשת, מודל האפליקציות) כבר לא נרשמים, מה שמקשה על פתרון בעיות חיבור ואפליקציות.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableCortana.SideEffects" xml:space="preserve">
+    <value>Cortana כבר לא זמינה, והחיפוש כבר לא משתמש באינטרנט או במיקום שלך, כך שחיפוש ההתחלה מציג רק תוצאות מהמחשב.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableCopilot.SideEffects" xml:space="preserve">
+    <value>לחצן Copilot וקיצור הדרך Windows + C נעלמים, ולא ניתן להפעיל את Copilot מתוך Windows.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableContentDeliveryManager.SideEffects" xml:space="preserve">
+    <value>תמונות Windows Spotlight במסך הנעילה, "עובדות מעניינות" והאפליקציות המוצעות בתפריט התחל מפסיקות להתעדכן; אתה בוחר בעצמך תמונה או מצגת למסך הנעילה.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableFindMyDevice.SideEffects" xml:space="preserve">
+    <value>לא תוכל עוד לאתר או לנעול את המחשב מחשבון Microsoft שלך אם הוא אובד או נגנב.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableDeliveryOptimization.SideEffects" xml:space="preserve">
+    <value>עדכונים מורדים רק מ-Microsoft ולא ממחשבים אחרים ברשת, כך שבית או משרד עם כמה מחשבים צורכים יותר רוחב פס לעדכונים.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.SideEffects" xml:space="preserve">
+    <value>Edge מאבד את סרגל הצד (ואת Copilot שבו), השוואת מחירים וקופונים, וההגדרות שלו מציגות "הדפדפן שלך מנוהל על ידי הארגון" כי השינוי משתמש במדיניות.</value>
+  </data>
+  <data name="Optimizer.UserExperience.SpeedUpExplorerAndMenus.SideEffects" xml:space="preserve">
+    <value>אפליקציות ההפעלה נטענות כולן מיד אחרי הכניסה במקום בהדרגה, כך שהשניות הראשונות אחרי הכניסה עלולות להרגיש איטיות יותר במחשבים חלשים.</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableVisualEffects.SideEffects" xml:space="preserve">
+    <value>Windows נראה שטוח יותר: בלי שקיפות, בלי אנימציות בשורת המשימות, בלי צללים מתחת לשמות סמלי שולחן העבודה ובלי תצוגת Aero Peek בפינת שורת המשימות.</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableStartMenuWebSearch.SideEffects" xml:space="preserve">
+    <value>חיפוש ההתחלה מציג רק תוצאות מהמחשב: תוצאות האינטרנט של Bing ונקודות השיא בחיפוש נעלמות.</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableStartRecommended.SideEffects" xml:space="preserve">
+    <value>תפריט התחל כבר לא מציג קבצים שנפתחו לאחרונה ואפליקציות שהותקנו לאחרונה; תמצא אותם דרך סייר הקבצים או החיפוש.</value>
+  </data>
+  <data name="Optimizer.UserExperience.MaximizeUpdatePauseLimit.SideEffects" xml:space="preserve">
+    <value>ניתן להשהות עדכונים לזמן ארוך הרבה יותר. בזמן ההשהיה גם תיקוני אבטחה לא מותקנים, לכן חדש את העדכונים באופן קבוע.</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.SideEffects" xml:space="preserve">
+    <value>Windows Update כבר לא מתקין או מעדכן מנהלי התקן, כך שמנהל התקן למכשיר חדש או תיקון יצטרכו להגיע מאתר היצרן.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableUlps.SideEffects" xml:space="preserve">
+    <value>ה-GPU (או ה-GPU השני בתצורת CrossFire) כבר לא נכנס לשינה העמוקה ביותר במצב סרק, כך שצריכת החשמל והטמפרטורה בסרק עולות מעט.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisablePowerGating.SideEffects" xml:space="preserve">
+    <value>חלקים מה-GPU נשארים מופעלים גם בשולחן העבודה: צריכת חשמל, טמפרטורה ורעש מאווררים גבוהים יותר בסרק, וחיי סוללה קצרים יותר במחשבים ניידים.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableVideoClockGating.SideEffects" xml:space="preserve">
+    <value>מקודד ומפענח הווידאו נשארים מופעלים גם כשאינם בשימוש, מה שמעלה מעט את צריכת החשמל בסרק, בעיקר במחשבים ניידים.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableAspm.SideEffects" xml:space="preserve">
+    <value>קישור ה-PCIe ל-GPU כבר לא חוסך חשמל בסרק: צריכת חשמל מעט גבוהה יותר וחיי סוללה קצרים יותר במחשבים ניידים.</value>
+  </data>
+  <data name="Optimizer.Gpu.NvidiaDisableDynamicPstate.SideEffects" xml:space="preserve">
+    <value>ה-GPU נשאר בתדרים גבוהים גם בשולחן העבודה: צריכת חשמל, טמפרטורה ורעש מאווררים גבוהים יותר בסרק, וחיי סוללה קצרים יותר במחשבים ניידים.</value>
+  </data>
+  <data name="Optimizer.Gpu.NvidiaDisableAsyncPstates.SideEffects" xml:space="preserve">
+    <value>ה-GPU מחליף מצבי צריכת חשמל לעתים רחוקות יותר ועלול להישאר בתדרים גבוהים מהנדרש: יותר צריכת חשמל וחום בעומס קל.</value>
+  </data>
+  <data name="Optimizer.Gpu.IntelDisableAdaptiveVsync.SideEffects" xml:space="preserve">
+    <value>כשקצב הפריימים של משחק יורד מתחת לקצב הרענון של המסך, הוא עלול לגמגם במקום קריעת תמונה רגעית.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisableHibernateAndFastStartup.SideEffects" xml:space="preserve">
+    <value>מצב שינה עמוקה כבר לא זמין, והפעלה אחרי כיבוי לוקחת מעט יותר זמן כי ההפעלה המהירה כבויה. מחשבים ניידים כבר לא נכנסים לשינה עמוקה כשהסוללה חלשה.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisableUSBPowerSaving.SideEffects" xml:space="preserve">
+    <value>התקני USB נשארים מופעלים כל הזמן במקום להירדם בסרק, כך שמחשבים ניידים מאבדים מעט מחיי הסוללה.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.InstallOptimizerDuckPowerPlan.SideEffects" xml:space="preserve">
+    <value>המעבד פועל בתדרים גבוהים לעתים קרובות יותר: יותר צריכת חשמל וחום, מאווררים רועשים יותר בעומס קל וחיי סוללה קצרים בהרבה במחשבים ניידים. מנהל המשימות עשוי להציג ניצולת מעבד גבוהה גם בסרק.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisablePowerSaving.SideEffects" xml:space="preserve">
+    <value>Windows מפסיק להגביל אפליקציות רקע לחיסכון בחשמל, כך שמחשבים ניידים צורכים יותר סוללה, והוא כבר לא מנסה לשחזר יציאות USB שמשכו יותר מדי חשמל.</value>
+  </data>
+  <data name="Optimizer.AI.DisableRecall.SideEffects" xml:space="preserve">
+    <value>Recall מפסיק לשמור תמונות מצב ומוחק את אלו שכבר נשמרו, כך שלא תוכל עוד לחפש דברים שראית קודם על המסך.</value>
+  </data>
+  <data name="Optimizer.AI.DisableClickToDo.SideEffects" xml:space="preserve">
+    <value>Click to Do ‏(מקש Windows + לחיצה) כבר לא זמין, כך שלא ניתן להריץ פעולות AI מהירות על טקסט או תמונות במסך.</value>
+  </data>
+  <data name="Optimizer.AI.DisablePaintAI.SideEffects" xml:space="preserve">
+    <value>Cocreator,‏ Image Creator, מילוי גנרטיבי ומחיקה גנרטיבית נעלמים מהצייר; כלי הציור הרגילים נשארים.</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.SideEffects" xml:space="preserve">
+    <value>שכתוב, סיכום ושאר אפשרויות ה-AI נעלמים מפנקס הרשימות; עריכת הטקסט עובדת כרגיל.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisablePreinstalledApps.SideEffects" xml:space="preserve">
+    <value>Windows מפסיק להתקין מעצמו אפליקציות ומשחקים מוצעים; אפליקציות שכבר מותקנות נשארות עד שתסיר אותן.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.ConfigureServices.SideEffects" xml:space="preserve">
+    <value>פקס, רישום מרוחק, גישה מרחוק, מצב ההדגמה לחנויות ועוד כמה שירותים נדירים נכבים, ושירותים רבים אחרים מופעלים רק כשצריך, כך ששימוש ראשון בחלק מהתכונות (הדפסה, Bluetooth, סריקה) עלול לקחת מעט יותר זמן. תוכנה שתלויה בשירות כבוי עלולה להפסיק לעבוד עד שתבטל את השינוי.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.SideEffects" xml:space="preserve">
+    <value>OneDrive מפסיק לסנכרן: קבצים כבר לא מגובים לענן ולא זמינים במכשירים האחרים שלך, השמירה האוטומטית של Office ל-OneDrive נעצרת, ותיקיות מגובות (שולחן העבודה, מסמכים, תמונות) מפסיקות להתעדכן ברשת.</value>
+  </data>
 </root>

@@ -409,6 +409,20 @@
                                             <ui:Button
                                                 HorizontalAlignment="Right"
                                                 VerticalAlignment="Bottom"
+                                                Command="{Binding DataContext.ViewModel.ShowDetailsCommand, RelativeSource={RelativeSource AncestorType=Page}}"
+                                                CommandParameter="{Binding}"
+                                                Cursor="Hand"
+                                                Style="{StaticResource TransparentButtonStyle}"
+                                                ToolTip="{Binding SideEffects}"
+                                                ToolTipService.InitialShowDelay="150"
+                                                Visibility="{Binding HasSideEffects, Converter={StaticResource BooleanToVisibilityConverter}, FallbackValue=Collapsed}">
+                                                <ui:Button.Icon>
+                                                    <ui:SymbolIcon Foreground="{DynamicResource SystemFillColorCautionBrush}" Symbol="Warning24" />
+                                                </ui:Button.Icon>
+                                            </ui:Button>
+                                            <ui:Button
+                                                HorizontalAlignment="Right"
+                                                VerticalAlignment="Bottom"
                                                 Command="{Binding DataContext.ViewModel.ViewSourceOnGitHubCommand, RelativeSource={RelativeSource AncestorType=Page}}"
                                                 CommandParameter="{Binding}"
                                                 Cursor="Hand"

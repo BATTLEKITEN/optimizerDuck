@@ -8992,5 +8992,410 @@ namespace optimizerDuck.Resources.Languages {
                 return ResourceManager.GetString("Optimizer.Menu.HideUnavailable", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to What may stop working.
+        /// </summary>
+        internal static string OptimizationDetailsDialog_SideEffects {
+            get {
+                return ResourceManager.GetString("OptimizationDetailsDialog.SideEffects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Store apps no longer run in the background: Mail, Calendar, Weather and similar apps refresh only wh....
+        /// </summary>
+        internal static string Optimizer_Performance_DisableBackgroundApps_SideEffects {
+            get {
+                return ResourceManager.GetString("Optimizer.Performance.DisableBackgroundApps.SideEffects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Several services share one process again, so a service that crashes can take the others in the same ....
+        /// </summary>
+        internal static string Optimizer_Performance_ConsolidateServiceHosts_SideEffects {
+            get {
+                return ResourceManager.GetString("Optimizer.Performance.ConsolidateServiceHosts.SideEffects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Work running in the background (downloads, video encoding, compiling) gets less CPU time while you u....
+        /// </summary>
+        internal static string Optimizer_Performance_ProcessPriority_SideEffects {
+            get {
+                return ResourceManager.GetString("Optimizer.Performance.ProcessPriority.SideEffects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to While a game or media plays, background tasks and network traffic get lower priority, so background ....
+        /// </summary>
+        internal static string Optimizer_Performance_OptimizeMultimediaScheduler_SideEffects {
+            get {
+                return ResourceManager.GetString("Optimizer.Performance.OptimizeMultimediaScheduler.SideEffects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Held keys start repeating sooner and repeat faster, which can type extra characters if you rest a fi....
+        /// </summary>
+        internal static string Optimizer_Performance_KeyboardLatencyOptimization_SideEffects {
+            get {
+                return ResourceManager.GetString("Optimizer.Performance.KeyboardLatencyOptimization.SideEffects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pressing Shift five times or holding Shift or Num Lock no longer turns on Sticky, Filter or Toggle K....
+        /// </summary>
+        internal static string Optimizer_Performance_DisableAccessibilityKeyboardHotkeys_SideEffects {
+            get {
+                return ResourceManager.GetString("Optimizer.Performance.DisableAccessibilityKeyboardHotkeys.SideEffects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edge opens a little slower, and once its last window is closed it no longer shows notifications or f....
+        /// </summary>
+        internal static string Optimizer_Performance_DisableEdgeBackgroundRunning_SideEffects {
+            get {
+                return ResourceManager.GetString("Optimizer.Performance.DisableEdgeBackgroundRunning.SideEffects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Feedback Hub stops working, Windows Insider builds cannot be received, some troubleshooters have les....
+        /// </summary>
+        internal static string Optimizer_SecurityAndPrivacy_DisableTelemetry_SideEffects {
+            get {
+                return ResourceManager.GetString("Optimizer.SecurityAndPrivacy.DisableTelemetry.SideEffects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Crash reports are no longer saved or sent, so Reliability Monitor shows less detail and Microsoft ca....
+        /// </summary>
+        internal static string Optimizer_SecurityAndPrivacy_DisableErrorReporting_SideEffects {
+            get {
+                return ResourceManager.GetString("Optimizer.SecurityAndPrivacy.DisableErrorReporting.SideEffects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Apps can no longer show ads tailored to you, Windows stops suggesting apps, tips and setup steps, an....
+        /// </summary>
+        internal static string Optimizer_SecurityAndPrivacy_DisableAdvertisingAndSuggestions_SideEffects {
+            get {
+                return ResourceManager.GetString("Optimizer.SecurityAndPrivacy.DisableAdvertisingAndSuggestions.SideEffects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The Widgets (weather) button on the taskbar and the news feed disappear..
+        /// </summary>
+        internal static string Optimizer_SecurityAndPrivacy_DisableNewsAndInterests_SideEffects {
+            get {
+                return ResourceManager.GetString("Optimizer.SecurityAndPrivacy.DisableNewsAndInterests.SideEffects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Windows no longer keeps a history of the apps, files and pages you used, so "pick up where you left ....
+        /// </summary>
+        internal static string Optimizer_SecurityAndPrivacy_DisableActivityHistory_SideEffects {
+            get {
+                return ResourceManager.GetString("Optimizer.SecurityAndPrivacy.DisableActivityHistory.SideEffects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Apps can no longer get your location: Maps, Weather, Find My Device and the automatic time zone stop....
+        /// </summary>
+        internal static string Optimizer_SecurityAndPrivacy_DisableLocationAndSensors_SideEffects {
+            get {
+                return ResourceManager.GetString("Optimizer.SecurityAndPrivacy.DisableLocationAndSensors.SideEffects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Some built-in diagnostic logs (Wi-Fi sessions, network, app model) are no longer recorded, which mak....
+        /// </summary>
+        internal static string Optimizer_SecurityAndPrivacy_DisableAutoLogger_SideEffects {
+            get {
+                return ResourceManager.GetString("Optimizer.SecurityAndPrivacy.DisableAutoLogger.SideEffects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cortana is no longer available, and search no longer uses the web or your location, so Start search ....
+        /// </summary>
+        internal static string Optimizer_SecurityAndPrivacy_DisableCortana_SideEffects {
+            get {
+                return ResourceManager.GetString("Optimizer.SecurityAndPrivacy.DisableCortana.SideEffects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The Copilot button and the Windows key + C shortcut disappear, and Copilot cannot be started from Wi....
+        /// </summary>
+        internal static string Optimizer_SecurityAndPrivacy_DisableCopilot_SideEffects {
+            get {
+                return ResourceManager.GetString("Optimizer.SecurityAndPrivacy.DisableCopilot.SideEffects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Windows Spotlight lock screen pictures, "fun facts" and suggested apps in Start stop updating; you c....
+        /// </summary>
+        internal static string Optimizer_SecurityAndPrivacy_DisableContentDeliveryManager_SideEffects {
+            get {
+                return ResourceManager.GetString("Optimizer.SecurityAndPrivacy.DisableContentDeliveryManager.SideEffects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You can no longer locate or lock this PC from your Microsoft account if it is lost or stolen..
+        /// </summary>
+        internal static string Optimizer_SecurityAndPrivacy_DisableFindMyDevice_SideEffects {
+            get {
+                return ResourceManager.GetString("Optimizer.SecurityAndPrivacy.DisableFindMyDevice.SideEffects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Updates are downloaded only from Microsoft, not from other PCs on your network, so a home or office ....
+        /// </summary>
+        internal static string Optimizer_SecurityAndPrivacy_DisableDeliveryOptimization_SideEffects {
+            get {
+                return ResourceManager.GetString("Optimizer.SecurityAndPrivacy.DisableDeliveryOptimization.SideEffects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edge loses its sidebar (and Copilot in it), price comparison and coupons, and its settings show "You....
+        /// </summary>
+        internal static string Optimizer_SecurityAndPrivacy_DisableEdgeExtras_SideEffects {
+            get {
+                return ResourceManager.GetString("Optimizer.SecurityAndPrivacy.DisableEdgeExtras.SideEffects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Startup apps launch all at once right after sign-in instead of being spread out, so the first second....
+        /// </summary>
+        internal static string Optimizer_UserExperience_SpeedUpExplorerAndMenus_SideEffects {
+            get {
+                return ResourceManager.GetString("Optimizer.UserExperience.SpeedUpExplorerAndMenus.SideEffects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Windows looks flatter: no transparency, no taskbar animations, no shadows under desktop icon labels ....
+        /// </summary>
+        internal static string Optimizer_UserExperience_DisableVisualEffects_SideEffects {
+            get {
+                return ResourceManager.GetString("Optimizer.UserExperience.DisableVisualEffects.SideEffects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Start search shows only results from this PC: Bing web results and search highlights disappear..
+        /// </summary>
+        internal static string Optimizer_UserExperience_DisableStartMenuWebSearch_SideEffects {
+            get {
+                return ResourceManager.GetString("Optimizer.UserExperience.DisableStartMenuWebSearch.SideEffects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Start no longer lists recently opened files and newly installed apps, so you find them through File ....
+        /// </summary>
+        internal static string Optimizer_UserExperience_DisableStartRecommended_SideEffects {
+            get {
+                return ResourceManager.GetString("Optimizer.UserExperience.DisableStartRecommended.SideEffects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Updates can be paused for far longer. While they are paused, security fixes are not installed either....
+        /// </summary>
+        internal static string Optimizer_UserExperience_MaximizeUpdatePauseLimit_SideEffects {
+            get {
+                return ResourceManager.GetString("Optimizer.UserExperience.MaximizeUpdatePauseLimit.SideEffects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Windows Update no longer installs or updates drivers, so a new device or a driver fix has to come fr....
+        /// </summary>
+        internal static string Optimizer_UserExperience_ExcludeDriversFromWindowsUpdate_SideEffects {
+            get {
+                return ResourceManager.GetString("Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.SideEffects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The GPU (or the second GPU in a CrossFire setup) no longer drops into its deepest sleep at idle, so ....
+        /// </summary>
+        internal static string Optimizer_Gpu_AmdDisableUlps_SideEffects {
+            get {
+                return ResourceManager.GetString("Optimizer.Gpu.AmdDisableUlps.SideEffects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Parts of the GPU stay powered even at the desktop: higher idle power draw, temperature and fan noise....
+        /// </summary>
+        internal static string Optimizer_Gpu_AmdDisablePowerGating_SideEffects {
+            get {
+                return ResourceManager.GetString("Optimizer.Gpu.AmdDisablePowerGating.SideEffects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The video encoder and decoder stay powered when not in use, which raises idle power draw slightly, m....
+        /// </summary>
+        internal static string Optimizer_Gpu_AmdDisableVideoClockGating_SideEffects {
+            get {
+                return ResourceManager.GetString("Optimizer.Gpu.AmdDisableVideoClockGating.SideEffects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The PCIe link to the GPU no longer saves power at idle: slightly higher power draw and shorter batte....
+        /// </summary>
+        internal static string Optimizer_Gpu_AmdDisableAspm_SideEffects {
+            get {
+                return ResourceManager.GetString("Optimizer.Gpu.AmdDisableAspm.SideEffects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The GPU stays at high clocks even at the desktop: higher idle power draw, temperature and fan noise,....
+        /// </summary>
+        internal static string Optimizer_Gpu_NvidiaDisableDynamicPstate_SideEffects {
+            get {
+                return ResourceManager.GetString("Optimizer.Gpu.NvidiaDisableDynamicPstate.SideEffects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The GPU switches power states less often and can stay at higher clocks than it needs: more power dra....
+        /// </summary>
+        internal static string Optimizer_Gpu_NvidiaDisableAsyncPstates_SideEffects {
+            get {
+                return ResourceManager.GetString("Optimizer.Gpu.NvidiaDisableAsyncPstates.SideEffects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to When a game's frame rate drops below the display's refresh rate, it may stutter instead of briefly t....
+        /// </summary>
+        internal static string Optimizer_Gpu_IntelDisableAdaptiveVsync_SideEffects {
+            get {
+                return ResourceManager.GetString("Optimizer.Gpu.IntelDisableAdaptiveVsync.SideEffects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hibernate is no longer available, and a cold start after shutting down takes a little longer because....
+        /// </summary>
+        internal static string Optimizer_PowerManagement_DisableHibernateAndFastStartup_SideEffects {
+            get {
+                return ResourceManager.GetString("Optimizer.PowerManagement.DisableHibernateAndFastStartup.SideEffects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to USB devices stay powered all the time instead of sleeping when idle, so laptops lose some battery li....
+        /// </summary>
+        internal static string Optimizer_PowerManagement_DisableUSBPowerSaving_SideEffects {
+            get {
+                return ResourceManager.GetString("Optimizer.PowerManagement.DisableUSBPowerSaving.SideEffects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The CPU runs at higher clocks more often: more power draw and heat, louder fans under light load, an....
+        /// </summary>
+        internal static string Optimizer_PowerManagement_InstallOptimizerDuckPowerPlan_SideEffects {
+            get {
+                return ResourceManager.GetString("Optimizer.PowerManagement.InstallOptimizerDuckPowerPlan.SideEffects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Windows stops throttling background apps to save power, so laptops use more battery, and it no longe....
+        /// </summary>
+        internal static string Optimizer_PowerManagement_DisablePowerSaving_SideEffects {
+            get {
+                return ResourceManager.GetString("Optimizer.PowerManagement.DisablePowerSaving.SideEffects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Recall stops saving snapshots and deletes the ones already saved, so you can no longer search for th....
+        /// </summary>
+        internal static string Optimizer_AI_DisableRecall_SideEffects {
+            get {
+                return ResourceManager.GetString("Optimizer.AI.DisableRecall.SideEffects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Click to Do (Windows key + click) is no longer available, so you cannot run quick AI actions on text....
+        /// </summary>
+        internal static string Optimizer_AI_DisableClickToDo_SideEffects {
+            get {
+                return ResourceManager.GetString("Optimizer.AI.DisableClickToDo.SideEffects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cocreator, Image Creator, generative fill and generative erase disappear from Paint; the regular dra....
+        /// </summary>
+        internal static string Optimizer_AI_DisablePaintAI_SideEffects {
+            get {
+                return ResourceManager.GetString("Optimizer.AI.DisablePaintAI.SideEffects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rewrite, Summarize and the other AI options disappear from Notepad; editing text works as before..
+        /// </summary>
+        internal static string Optimizer_AI_DisableNotepadAI_SideEffects {
+            get {
+                return ResourceManager.GetString("Optimizer.AI.DisableNotepadAI.SideEffects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Windows stops installing suggested apps and games on its own; apps that are already installed stay u....
+        /// </summary>
+        internal static string Optimizer_BloatwareAndServices_DisablePreinstalledApps_SideEffects {
+            get {
+                return ResourceManager.GetString("Optimizer.BloatwareAndServices.DisablePreinstalledApps.SideEffects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fax, Remote Registry, Remote Access, the retail demo and a few other rarely used services are turned....
+        /// </summary>
+        internal static string Optimizer_BloatwareAndServices_ConfigureServices_SideEffects {
+            get {
+                return ResourceManager.GetString("Optimizer.BloatwareAndServices.ConfigureServices.SideEffects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OneDrive stops syncing: files are no longer backed up to the cloud or available on your other device....
+        /// </summary>
+        internal static string Optimizer_BloatwareAndServices_DisableOneDrive_SideEffects {
+            get {
+                return ResourceManager.GetString("Optimizer.BloatwareAndServices.DisableOneDrive.SideEffects", resourceCulture);
+            }
+        }
     }
 }

@@ -3126,5 +3126,140 @@
   <data name="Optimizer.Menu.HideUnavailable" xml:space="preserve">
     <value>إخفاء غير المدعوم</value>
   </data>
+  <data name="OptimizationDetailsDialog.SideEffects" xml:space="preserve">
+    <value>ما الذي قد يتوقف عن العمل</value>
+  </data>
+  <data name="Optimizer.Performance.DisableBackgroundApps.SideEffects" xml:space="preserve">
+    <value>لم تعد تطبيقات المتجر تعمل في الخلفية: يتم تحديث البريد والتقويم والطقس وما شابهها فقط عند فتحها، وقد تتأخر بعض إشعاراتها أو لا تصل.</value>
+  </data>
+  <data name="Optimizer.Performance.ConsolidateServiceHosts.SideEffects" xml:space="preserve">
+    <value>تعود عدة خدمات لمشاركة عملية واحدة، لذا قد يؤدي تعطل خدمة إلى إسقاط الخدمات الأخرى في العملية نفسها، ويعرضها مدير المهام مجمّعة بدلًا من سطر لكل خدمة.</value>
+  </data>
+  <data name="Optimizer.Performance.ProcessPriority.SideEffects" xml:space="preserve">
+    <value>تحصل المهام العاملة في الخلفية (التنزيلات وترميز الفيديو والتجميع) على وقت معالج أقل أثناء استخدامك نافذة أخرى، لذا قد تستغرق وقتًا أطول.</value>
+  </data>
+  <data name="Optimizer.Performance.OptimizeMultimediaScheduler.SideEffects" xml:space="preserve">
+    <value>أثناء تشغيل لعبة أو وسائط، تحصل مهام الخلفية وحركة الشبكة على أولوية أقل، لذا قد تتباطأ التنزيلات والبث في الخلفية.</value>
+  </data>
+  <data name="Optimizer.Performance.KeyboardLatencyOptimization.SideEffects" xml:space="preserve">
+    <value>تبدأ المفاتيح المضغوطة بالتكرار أسرع وتتكرر بسرعة أكبر، وقد يؤدي ذلك إلى كتابة أحرف إضافية إذا أبقيت إصبعك على مفتاح.</value>
+  </data>
+  <data name="Optimizer.Performance.DisableAccessibilityKeyboardHotkeys.SideEffects" xml:space="preserve">
+    <value>لم يعد الضغط على Shift خمس مرات أو الاستمرار في ضغط Shift أو Num Lock يشغّل المفاتيح الثابتة أو مفاتيح التصفية أو مفاتيح التبديل. يمكن لمن يعتمد عليها تشغيلها من الإعدادات &gt; إمكانية الوصول &gt; لوحة المفاتيح.</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.SideEffects" xml:space="preserve">
+    <value>يُفتح Edge أبطأ قليلًا، وبعد إغلاق آخر نافذة له لا يعرض الإشعارات ولا يُكمل التنزيلات.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableTelemetry.SideEffects" xml:space="preserve">
+    <value>يتوقف مركز الملاحظات عن العمل، ولا يمكن استلام إصدارات Windows Insider، وتقل البيانات المتاحة لبعض أدوات استكشاف الأخطاء، وتحصل Microsoft على تقارير أعطال أقل لإصلاح مشكلات أجهزتك.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableErrorReporting.SideEffects" xml:space="preserve">
+    <value>لم تعد تقارير الأعطال تُحفظ أو تُرسل، لذا يعرض مراقب الموثوقية تفاصيل أقل ولا تستطيع Microsoft اقتراح حلول معروفة للعطل. ولم يعد مساعد توافق البرامج يقترح حلولًا للبرامج القديمة.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableAdvertisingAndSuggestions.SideEffects" xml:space="preserve">
+    <value>لم تعد التطبيقات قادرة على عرض إعلانات مخصصة لك، ويتوقف Windows عن اقتراح التطبيقات والنصائح وخطوات الإعداد، وتتعلم اقتراحات الكتابة والخط اليدوي أقل مما تكتبه.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableNewsAndInterests.SideEffects" xml:space="preserve">
+    <value>يختفي زر الأدوات (الطقس) من شريط المهام وتختفي موجز الأخبار.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableActivityHistory.SideEffects" xml:space="preserve">
+    <value>لم يعد Windows يحتفظ بسجل للتطبيقات والملفات والصفحات التي استخدمتها، لذا تتوقف اقتراحات "المتابعة من حيث توقفت" والمخطط الزمني عن العمل.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableLocationAndSensors.SideEffects" xml:space="preserve">
+    <value>لم تعد التطبيقات قادرة على معرفة موقعك: تتوقف الخرائط والطقس والعثور على جهازي والمنطقة الزمنية التلقائية عن استخدامه، وتتوقف الخرائط دون اتصال عن التحديث، وقد تتوقف بعض المستشعرات مثل التدوير التلقائي أو استشعار الإضاءة.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableAutoLogger.SideEffects" xml:space="preserve">
+    <value>لم تعد بعض سجلات التشخيص المدمجة (جلسات Wi-Fi والشبكة ونموذج التطبيقات) تُسجَّل، مما يصعّب استكشاف مشكلات الاتصال والتطبيقات.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableCortana.SideEffects" xml:space="preserve">
+    <value>لم يعد Cortana متاحًا، ولم يعد البحث يستخدم الويب أو موقعك، لذا يعرض بحث قائمة ابدأ نتائج من هذا الجهاز فقط.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableCopilot.SideEffects" xml:space="preserve">
+    <value>يختفي زر Copilot واختصار مفتاح Windows + C، ولا يمكن تشغيل Copilot من Windows نفسه.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableContentDeliveryManager.SideEffects" xml:space="preserve">
+    <value>تتوقف صور Windows Spotlight على شاشة القفل و"المعلومات الطريفة" والتطبيقات المقترحة في قائمة ابدأ عن التحديث، وتختار صورة أو عرض شرائح لشاشة القفل بنفسك.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableFindMyDevice.SideEffects" xml:space="preserve">
+    <value>لم يعد بإمكانك تحديد موقع هذا الجهاز أو قفله من حساب Microsoft إذا فُقد أو سُرق.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableDeliveryOptimization.SideEffects" xml:space="preserve">
+    <value>تُنزَّل التحديثات من Microsoft فقط وليس من أجهزة أخرى على شبكتك، لذا يستهلك المنزل أو المكتب الذي فيه عدة أجهزة نطاقًا أكبر من الإنترنت للتحديثات.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.SideEffects" xml:space="preserve">
+    <value>يفقد Edge الشريط الجانبي (ومعه Copilot) ومقارنة الأسعار والقسائم، وتعرض إعداداته "تتم إدارة المتصفح من قبل مؤسستك" لأن التغيير يستخدم السياسات.</value>
+  </data>
+  <data name="Optimizer.UserExperience.SpeedUpExplorerAndMenus.SideEffects" xml:space="preserve">
+    <value>تُشغَّل تطبيقات بدء التشغيل كلها فور تسجيل الدخول بدلًا من توزيعها، لذا قد تبدو الثواني الأولى بعد تسجيل الدخول أبطأ على الأجهزة الأضعف.</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableVisualEffects.SideEffects" xml:space="preserve">
+    <value>يبدو Windows أبسط: لا شفافية ولا حركات في شريط المهام ولا ظلال تحت أسماء أيقونات سطح المكتب ولا معاينة Aero Peek عند الإشارة إلى زاوية شريط المهام.</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableStartMenuWebSearch.SideEffects" xml:space="preserve">
+    <value>يعرض بحث قائمة ابدأ نتائج من هذا الجهاز فقط: تختفي نتائج الويب من Bing وأبرز عناصر البحث.</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableStartRecommended.SideEffects" xml:space="preserve">
+    <value>لم تعد قائمة ابدأ تعرض الملفات المفتوحة مؤخرًا والتطبيقات المثبتة حديثًا، لذا ستجدها عبر مستكشف الملفات أو البحث.</value>
+  </data>
+  <data name="Optimizer.UserExperience.MaximizeUpdatePauseLimit.SideEffects" xml:space="preserve">
+    <value>يمكن إيقاف التحديثات مؤقتًا لفترة أطول بكثير. أثناء الإيقاف لا تُثبَّت إصلاحات الأمان أيضًا، لذا استأنف التحديثات بانتظام.</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.SideEffects" xml:space="preserve">
+    <value>لم يعد Windows Update يثبّت برامج التشغيل أو يحدّثها، لذا يجب الحصول على برنامج تشغيل الجهاز الجديد أو إصلاحاته من موقع الشركة المصنعة.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableUlps.SideEffects" xml:space="preserve">
+    <value>لم تعد بطاقة الرسوميات (أو البطاقة الثانية في إعداد CrossFire) تدخل أعمق حالات السكون في وضع الخمول، لذا يرتفع استهلاك الطاقة ودرجة الحرارة في الخمول قليلًا.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisablePowerGating.SideEffects" xml:space="preserve">
+    <value>تبقى أجزاء من بطاقة الرسوميات مشغّلة حتى على سطح المكتب: استهلاك طاقة وحرارة وضجيج مراوح أعلى في الخمول، وعمر بطارية أقصر في الحواسيب المحمولة.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableVideoClockGating.SideEffects" xml:space="preserve">
+    <value>تبقى وحدتا ترميز الفيديو وفك ترميزه مشغّلتين حتى عند عدم الاستخدام، مما يرفع استهلاك الطاقة في الخمول قليلًا، ويُلاحظ ذلك غالبًا في الحواسيب المحمولة.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableAspm.SideEffects" xml:space="preserve">
+    <value>لم يعد اتصال PCIe ببطاقة الرسوميات يوفّر الطاقة في الخمول: استهلاك طاقة أعلى قليلًا وعمر بطارية أقصر في الحواسيب المحمولة.</value>
+  </data>
+  <data name="Optimizer.Gpu.NvidiaDisableDynamicPstate.SideEffects" xml:space="preserve">
+    <value>تبقى بطاقة الرسوميات على ترددات عالية حتى على سطح المكتب: استهلاك طاقة وحرارة وضجيج مراوح أعلى في الخمول، وعمر بطارية أقصر في الحواسيب المحمولة.</value>
+  </data>
+  <data name="Optimizer.Gpu.NvidiaDisableAsyncPstates.SideEffects" xml:space="preserve">
+    <value>تبدّل بطاقة الرسوميات حالات الطاقة بشكل أقل وقد تبقى على ترددات أعلى مما تحتاج: استهلاك طاقة وحرارة أكبر في الأحمال الخفيفة.</value>
+  </data>
+  <data name="Optimizer.Gpu.IntelDisableAdaptiveVsync.SideEffects" xml:space="preserve">
+    <value>عندما ينخفض معدل إطارات اللعبة عن معدل تحديث الشاشة، قد يحدث تقطّع بدلًا من تمزّق مؤقت في الصورة.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisableHibernateAndFastStartup.SideEffects" xml:space="preserve">
+    <value>لم يعد السبات متاحًا، ويستغرق التشغيل بعد إيقاف التشغيل وقتًا أطول قليلًا لأن بدء التشغيل السريع معطّل. ولم تعد الحواسيب المحمولة تدخل السبات عند انخفاض البطارية.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisableUSBPowerSaving.SideEffects" xml:space="preserve">
+    <value>تبقى أجهزة USB مشغّلة طوال الوقت بدلًا من السكون عند الخمول، لذا تفقد الحواسيب المحمولة بعض عمر البطارية.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.InstallOptimizerDuckPowerPlan.SideEffects" xml:space="preserve">
+    <value>يعمل المعالج على ترددات أعلى أكثر: استهلاك طاقة وحرارة أكبر، ومراوح أعلى صوتًا في الأحمال الخفيفة، وعمر بطارية أقصر بكثير في الحواسيب المحمولة. وقد يعرض مدير المهام استخدامًا عاليًا للمعالج حتى في الخمول.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisablePowerSaving.SideEffects" xml:space="preserve">
+    <value>يتوقف Windows عن خنق تطبيقات الخلفية لتوفير الطاقة، لذا تستهلك الحواسيب المحمولة بطارية أكثر، ولم يعد يحاول استعادة منافذ USB التي سحبت طاقة زائدة.</value>
+  </data>
+  <data name="Optimizer.AI.DisableRecall.SideEffects" xml:space="preserve">
+    <value>يتوقف Recall عن حفظ اللقطات ويحذف المحفوظة منها، لذا لا يمكنك البحث عن أشياء رأيتها على الشاشة سابقًا.</value>
+  </data>
+  <data name="Optimizer.AI.DisableClickToDo.SideEffects" xml:space="preserve">
+    <value>لم يعد Click to Do (مفتاح Windows + نقرة) متاحًا، لذا لا يمكنك تنفيذ إجراءات الذكاء الاصطناعي السريعة على النصوص أو الصور على الشاشة.</value>
+  </data>
+  <data name="Optimizer.AI.DisablePaintAI.SideEffects" xml:space="preserve">
+    <value>تختفي ميزات Cocreator وImage Creator والتعبئة التوليدية والمسح التوليدي من الرسام، وتبقى أدوات الرسم العادية.</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.SideEffects" xml:space="preserve">
+    <value>تختفي خيارات إعادة الصياغة والتلخيص وخيارات الذكاء الاصطناعي الأخرى من المفكرة، ويعمل تحرير النص كما كان.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisablePreinstalledApps.SideEffects" xml:space="preserve">
+    <value>يتوقف Windows عن تثبيت التطبيقات والألعاب المقترحة من تلقاء نفسه، وتبقى التطبيقات المثبتة بالفعل حتى تزيلها.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.ConfigureServices.SideEffects" xml:space="preserve">
+    <value>يتم إيقاف الفاكس والسجل البعيد والوصول البعيد والعرض التجريبي للمتاجر وبعض الخدمات النادرة الاستخدام، وتبدأ خدمات كثيرة أخرى عند الحاجة فقط، لذا قد يستغرق أول استخدام لبعض الميزات (الطباعة وBluetooth والمسح الضوئي) وقتًا أطول قليلًا. وقد يتوقف برنامج يعتمد على خدمة معطّلة حتى تتراجع عن التغيير.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.SideEffects" xml:space="preserve">
+    <value>يتوقف OneDrive عن المزامنة: لم تعد الملفات تُنسخ احتياطيًا إلى السحابة أو تتوفر على أجهزتك الأخرى، ويتوقف الحفظ التلقائي في Office إلى OneDrive، وتتوقف المجلدات المنسوخة احتياطيًا (سطح المكتب والمستندات والصور) عن التحديث عبر الإنترنت.</value>
+  </data>
 </root>
 

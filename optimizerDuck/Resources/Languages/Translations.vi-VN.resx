@@ -3076,4 +3076,139 @@ Mã thoát: 0 thành công, 1 có lỗi hoặc có tối ưu bị hoàn tác, 2 
   <data name="Optimizer.Menu.HideUnavailable" xml:space="preserve">
     <value>Ẩn mục không hỗ trợ</value>
   </data>
+  <data name="OptimizationDetailsDialog.SideEffects" xml:space="preserve">
+    <value>Những gì có thể ngừng hoạt động</value>
+  </data>
+  <data name="Optimizer.Performance.DisableBackgroundApps.SideEffects" xml:space="preserve">
+    <value>Ứng dụng Store không còn chạy nền: Mail, Lịch, Thời tiết và các ứng dụng tương tự chỉ cập nhật khi mở, một số thông báo đến trễ hoặc không đến.</value>
+  </data>
+  <data name="Optimizer.Performance.ConsolidateServiceHosts.SideEffects" xml:space="preserve">
+    <value>Nhiều dịch vụ lại dùng chung một tiến trình, nên một dịch vụ bị lỗi có thể kéo theo các dịch vụ khác trong cùng tiến trình, và Task Manager hiển thị chúng theo nhóm.</value>
+  </data>
+  <data name="Optimizer.Performance.ProcessPriority.SideEffects" xml:space="preserve">
+    <value>Công việc chạy nền (tải xuống, mã hóa video, biên dịch) nhận ít thời gian CPU hơn khi bạn dùng cửa sổ khác, nên có thể lâu hơn.</value>
+  </data>
+  <data name="Optimizer.Performance.OptimizeMultimediaScheduler.SideEffects" xml:space="preserve">
+    <value>Khi đang chơi game hoặc phát media, tác vụ nền và lưu lượng mạng được ưu tiên thấp hơn, nên tải xuống và stream chạy nền có thể chậm lại.</value>
+  </data>
+  <data name="Optimizer.Performance.KeyboardLatencyOptimization.SideEffects" xml:space="preserve">
+    <value>Phím được giữ sẽ lặp sớm hơn và nhanh hơn, có thể gõ thêm ký tự nếu bạn đặt tay lên phím.</value>
+  </data>
+  <data name="Optimizer.Performance.DisableAccessibilityKeyboardHotkeys.SideEffects" xml:space="preserve">
+    <value>Nhấn Shift năm lần hoặc giữ Shift, Num Lock sẽ không còn bật Sticky, Filter hay Toggle Keys. Ai cần vẫn có thể bật trong Cài đặt &gt; Trợ năng &gt; Bàn phím.</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.SideEffects" xml:space="preserve">
+    <value>Edge mở chậm hơn một chút, và sau khi đóng cửa sổ cuối cùng sẽ không còn hiện thông báo hay tải nốt các tệp.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableTelemetry.SideEffects" xml:space="preserve">
+    <value>Feedback Hub ngừng hoạt động, không nhận được bản Windows Insider, một số trình khắc phục sự cố có ít dữ liệu hơn và Microsoft nhận ít báo cáo sự cố hơn để sửa lỗi trên phần cứng của bạn.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableErrorReporting.SideEffects" xml:space="preserve">
+    <value>Báo cáo sự cố không còn được lưu hay gửi đi, nên Reliability Monitor hiển thị ít chi tiết hơn và Microsoft không thể gợi ý cách khắc phục đã biết. Program Compatibility Assistant cũng không còn đề xuất sửa lỗi cho chương trình cũ.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableAdvertisingAndSuggestions.SideEffects" xml:space="preserve">
+    <value>Ứng dụng không còn hiển thị quảng cáo cá nhân hóa, Windows ngừng gợi ý ứng dụng, mẹo và bước thiết lập, còn gợi ý gõ phím và viết tay học ít hơn từ những gì bạn viết.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableNewsAndInterests.SideEffects" xml:space="preserve">
+    <value>Nút Widget (thời tiết) trên thanh tác vụ và bảng tin tức biến mất.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableActivityHistory.SideEffects" xml:space="preserve">
+    <value>Windows không còn lưu lịch sử ứng dụng, tệp và trang bạn đã dùng, nên gợi ý "tiếp tục từ chỗ bạn dừng" và Timeline ngừng hoạt động.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableLocationAndSensors.SideEffects" xml:space="preserve">
+    <value>Ứng dụng không còn lấy được vị trí của bạn: Bản đồ, Thời tiết, Tìm thiết bị và múi giờ tự động ngừng dùng vị trí, bản đồ ngoại tuyến không cập nhật, một số cảm biến như tự xoay hoặc cảm biến ánh sáng có thể ngừng hoạt động.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableAutoLogger.SideEffects" xml:space="preserve">
+    <value>Một số nhật ký chẩn đoán tích hợp (phiên Wi-Fi, mạng, mô hình ứng dụng) không còn được ghi, khiến việc khắc phục sự cố kết nối và ứng dụng khó hơn.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableCortana.SideEffects" xml:space="preserve">
+    <value>Cortana không còn dùng được, và tìm kiếm không dùng web hay vị trí của bạn, nên tìm kiếm Start chỉ hiện kết quả trên PC này.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableCopilot.SideEffects" xml:space="preserve">
+    <value>Nút Copilot và phím tắt Windows + C biến mất, không thể mở Copilot từ Windows.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableContentDeliveryManager.SideEffects" xml:space="preserve">
+    <value>Hình Windows Spotlight trên màn hình khóa, "thông tin thú vị" và ứng dụng gợi ý trong Start ngừng cập nhật; bạn tự chọn ảnh hoặc trình chiếu cho màn hình khóa.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableFindMyDevice.SideEffects" xml:space="preserve">
+    <value>Bạn sẽ không thể định vị hay khóa PC này từ tài khoản Microsoft nếu bị mất hoặc bị đánh cắp.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableDeliveryOptimization.SideEffects" xml:space="preserve">
+    <value>Bản cập nhật chỉ tải từ Microsoft, không từ PC khác trong mạng, nên nhà hoặc văn phòng có nhiều PC sẽ tốn nhiều băng thông hơn.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.SideEffects" xml:space="preserve">
+    <value>Edge mất thanh bên (cùng Copilot), so sánh giá và phiếu giảm giá, và phần cài đặt hiện "Trình duyệt của bạn do tổ chức quản lý" vì thay đổi dùng chính sách.</value>
+  </data>
+  <data name="Optimizer.UserExperience.SpeedUpExplorerAndMenus.SideEffects" xml:space="preserve">
+    <value>Ứng dụng khởi động chạy cùng lúc ngay sau khi đăng nhập thay vì lần lượt, nên vài giây đầu có thể nặng hơn trên PC yếu.</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableVisualEffects.SideEffects" xml:space="preserve">
+    <value>Windows trông phẳng hơn: không còn hiệu ứng trong suốt, hoạt ảnh thanh tác vụ, bóng dưới tên biểu tượng desktop và xem trước Aero Peek ở góc thanh tác vụ.</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableStartMenuWebSearch.SideEffects" xml:space="preserve">
+    <value>Tìm kiếm Start chỉ hiện kết quả trên PC này: kết quả web Bing và điểm nổi bật tìm kiếm biến mất.</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableStartRecommended.SideEffects" xml:space="preserve">
+    <value>Start không còn liệt kê tệp mở gần đây và ứng dụng mới cài; bạn tìm chúng qua File Explorer hoặc tìm kiếm.</value>
+  </data>
+  <data name="Optimizer.UserExperience.MaximizeUpdatePauseLimit.SideEffects" xml:space="preserve">
+    <value>Bạn có thể tạm dừng cập nhật lâu hơn nhiều. Trong lúc tạm dừng, bản vá bảo mật cũng không được cài, nên hãy tiếp tục cập nhật thường xuyên.</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.SideEffects" xml:space="preserve">
+    <value>Windows Update không còn cài hay cập nhật Driver, nên Driver cho thiết bị mới hoặc bản sửa lỗi phải tải từ trang của nhà sản xuất.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableUlps.SideEffects" xml:space="preserve">
+    <value>GPU (hoặc GPU thứ hai trong CrossFire) không còn vào trạng thái ngủ sâu nhất khi rảnh, nên điện năng và nhiệt độ khi rảnh tăng nhẹ.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisablePowerGating.SideEffects" xml:space="preserve">
+    <value>Một phần GPU vẫn được cấp điện kể cả khi ở desktop: điện năng, nhiệt độ và tiếng quạt khi rảnh cao hơn, pin laptop nhanh hết hơn.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableVideoClockGating.SideEffects" xml:space="preserve">
+    <value>Bộ mã hóa và giải mã video vẫn được cấp điện khi không dùng, làm tăng nhẹ điện năng khi rảnh, rõ nhất trên laptop.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableAspm.SideEffects" xml:space="preserve">
+    <value>Kết nối PCIe tới GPU không còn tiết kiệm điện khi rảnh: tiêu thụ điện cao hơn chút và pin laptop nhanh hết hơn.</value>
+  </data>
+  <data name="Optimizer.Gpu.NvidiaDisableDynamicPstate.SideEffects" xml:space="preserve">
+    <value>GPU giữ xung nhịp cao kể cả ở desktop: điện năng, nhiệt độ và tiếng quạt khi rảnh cao hơn, pin laptop nhanh hết hơn.</value>
+  </data>
+  <data name="Optimizer.Gpu.NvidiaDisableAsyncPstates.SideEffects" xml:space="preserve">
+    <value>GPU đổi trạng thái năng lượng ít hơn và có thể giữ xung nhịp cao hơn mức cần: tốn điện và nóng hơn khi tải nhẹ.</value>
+  </data>
+  <data name="Optimizer.Gpu.IntelDisableAdaptiveVsync.SideEffects" xml:space="preserve">
+    <value>Khi FPS của game xuống dưới tần số quét màn hình, game có thể bị giật thay vì xé hình thoáng qua.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisableHibernateAndFastStartup.SideEffects" xml:space="preserve">
+    <value>Hibernate không còn dùng được, và khởi động sau khi tắt máy lâu hơn chút vì Fast Startup đã tắt. Laptop không còn hibernate khi pin yếu.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisableUSBPowerSaving.SideEffects" xml:space="preserve">
+    <value>Thiết bị USB luôn được cấp điện thay vì ngủ khi rảnh, nên pin laptop giảm đi một chút.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.InstallOptimizerDuckPowerPlan.SideEffects" xml:space="preserve">
+    <value>CPU chạy xung nhịp cao thường xuyên hơn: tốn điện và nóng hơn, quạt ồn hơn khi tải nhẹ và pin laptop nhanh hết hơn nhiều. Task Manager có thể báo CPU cao ngay cả khi rảnh.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisablePowerSaving.SideEffects" xml:space="preserve">
+    <value>Windows ngừng hạn chế ứng dụng nền để tiết kiệm điện, nên laptop hao pin hơn, và không còn cố khôi phục cổng USB bị quá tải điện.</value>
+  </data>
+  <data name="Optimizer.AI.DisableRecall.SideEffects" xml:space="preserve">
+    <value>Recall ngừng lưu ảnh chụp và xóa những ảnh đã lưu, nên bạn không thể tìm lại những gì từng thấy trên màn hình.</value>
+  </data>
+  <data name="Optimizer.AI.DisableClickToDo.SideEffects" xml:space="preserve">
+    <value>Click to Do (phím Windows + nhấp) không còn dùng được, nên bạn không thể chạy thao tác AI nhanh trên chữ hay hình trên màn hình.</value>
+  </data>
+  <data name="Optimizer.AI.DisablePaintAI.SideEffects" xml:space="preserve">
+    <value>Cocreator, Image Creator, tô màu tạo sinh và xóa tạo sinh biến mất khỏi Paint; công cụ vẽ thông thường vẫn còn.</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.SideEffects" xml:space="preserve">
+    <value>Rewrite, Summarize và các tùy chọn AI khác biến mất khỏi Notepad; chỉnh sửa văn bản vẫn như cũ.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisablePreinstalledApps.SideEffects" xml:space="preserve">
+    <value>Windows ngừng tự cài ứng dụng và game được gợi ý; ứng dụng đã cài vẫn còn cho đến khi bạn gỡ.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.ConfigureServices.SideEffects" xml:space="preserve">
+    <value>Fax, Remote Registry, Remote Access, chế độ demo cửa hàng và vài dịch vụ hiếm dùng bị tắt, nhiều dịch vụ khác chỉ chạy khi cần, nên lần đầu dùng một số tính năng (in, Bluetooth, quét) có thể chậm hơn chút. Chương trình phụ thuộc dịch vụ bị tắt có thể ngừng hoạt động cho đến khi bạn hoàn tác.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.SideEffects" xml:space="preserve">
+    <value>OneDrive ngừng đồng bộ: tệp không còn sao lưu lên đám mây hay có trên thiết bị khác, AutoSave của Office lên OneDrive dừng lại, các thư mục được sao lưu (Desktop, Tài liệu, Ảnh) không còn cập nhật trực tuyến.</value>
+  </data>
 </root>
