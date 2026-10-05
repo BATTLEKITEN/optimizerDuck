@@ -2669,4 +2669,56 @@ Nieudane: {4}</value>
   <data name="Dashboard.Drift.Button" xml:space="preserve">
     <value>Przejrzyj i zastosuj ponownie</value>
   </data>
+  <data name="Cli.Usage" xml:space="preserve">
+    <value>Użycie: optimizerDuck.exe &lt;polecenie&gt; [opcje]
+
+Polecenia:
+  --apply-profile &lt;file&gt;    Stosuje plik profilu
+  --apply-preset &lt;name&gt;     Stosuje gotowy zestaw: Recommended, Gaming, Privacy, Laptop
+  --export-profile &lt;file&gt;   Zapisuje to, co jest zastosowane na tym komputerze, do pliku profilu
+  --check-drift             Wyświetla optymalizacje cofnięte przez Windows
+  --reapply-drift           Ponownie stosuje optymalizacje cofnięte przez Windows
+  --help                    Wyświetla tę pomoc
+
+Opcje:
+  --restore-point           Tworzy punkt przywracania przed jakąkolwiek zmianą
+  --report &lt;file&gt;           Zapisuje wynik do pliku JSON
+  --accept-terms            Akceptuje warunki użytkowania (wymagane raz, przed pierwszą zmianą)
+
+Uruchom z terminala z uprawnieniami administratora, aby zobaczyć wynik.
+Kody wyjścia: 0 sukces, 1 błędy lub wykryte cofnięte optymalizacje, 2 błąd użycia lub pliku.</value>
+  </data>
+  <data name="Cli.Error.UnknownArgument" xml:space="preserve">
+    <value>Nieznany argument: {0}</value>
+  </data>
+  <data name="Cli.Error.OptionWithoutCommand" xml:space="preserve">
+    <value>Podano opcję bez polecenia.</value>
+  </data>
+  <data name="Cli.Error.OneCommand" xml:space="preserve">
+    <value>Naraz można uruchomić tylko jedno polecenie.</value>
+  </data>
+  <data name="Cli.Error.MissingValue" xml:space="preserve">
+    <value>{0} wymaga wartości.</value>
+  </data>
+  <data name="Cli.Error.Terms" xml:space="preserve">
+    <value>Warunki użytkowania nie zostały jeszcze zaakceptowane. Przeczytaj je w aplikacji albo dodaj --accept-terms, aby je zaakceptować.</value>
+  </data>
+  <data name="Cli.Error.UnknownPreset" xml:space="preserve">
+    <value>Nieznany zestaw: {0}. Dostępne: {1}</value>
+  </data>
+  <data name="Optimizer.Preview.Button" xml:space="preserve">
+    <value>Podgląd zmian</value>
+  </data>
+  <data name="Optimizer.Preview.Title" xml:space="preserve">
+    <value>Co zmieni „{0}”</value>
+  </data>
+  <data name="Optimizer.Preview.Summary" xml:space="preserve">
+    <value>Zmiany do wprowadzenia: {0}. Już ustawione: {1}. Nic jeszcze nie zostało zmienione.</value>
+  </data>
+  <data name="Optimizer.Preview.Nothing" xml:space="preserve">
+    <value>Nic do zmiany: ten komputer już spełnia te ustawienia.</value>
+  </data>
+  <data name="Optimizer.Preview.Failed.Title" xml:space="preserve">
+    <value>Nie udało się wyświetlić podglądu zmian</value>
+  </data>
 </root>

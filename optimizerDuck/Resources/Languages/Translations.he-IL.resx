@@ -2726,4 +2726,56 @@
   <data name="Dashboard.Drift.Button" xml:space="preserve">
     <value>סקירה והחלה מחדש</value>
   </data>
+  <data name="Cli.Usage" xml:space="preserve">
+    <value>שימוש: optimizerDuck.exe &lt;פקודה&gt; [אפשרויות]
+
+פקודות:
+  --apply-profile &lt;file&gt;    החלת קובץ פרופיל
+  --apply-preset &lt;name&gt;     החלת הגדרה מוכנה: Recommended, Gaming, Privacy, Laptop
+  --export-profile &lt;file&gt;   שמירת מה שהוחל במחשב זה לקובץ פרופיל
+  --check-drift             הצגת המיטובים ש-Windows ביטל
+  --reapply-drift           החלה מחדש של המיטובים ש-Windows ביטל
+  --help                    הצגת עזרה זו
+
+אפשרויות:
+  --restore-point           יצירת נקודת שחזור לפני כל שינוי
+  --report &lt;file&gt;           כתיבת התוצאה לקובץ JSON
+  --accept-terms            קבלת תנאי השימוש (נדרש פעם אחת, לפני השינוי הראשון)
+
+הפעל ממסוף עם הרשאות מנהל כדי לראות את הפלט.
+קודי יציאה: 0 הצלחה, 1 כשלים או מיטובים שבוטלו, 2 שגיאת שימוש או קובץ.</value>
+  </data>
+  <data name="Cli.Error.UnknownArgument" xml:space="preserve">
+    <value>ארגומנט לא מוכר: {0}</value>
+  </data>
+  <data name="Cli.Error.OptionWithoutCommand" xml:space="preserve">
+    <value>צוינה אפשרות ללא פקודה.</value>
+  </data>
+  <data name="Cli.Error.OneCommand" xml:space="preserve">
+    <value>ניתן להריץ פקודה אחת בלבד בכל פעם.</value>
+  </data>
+  <data name="Cli.Error.MissingValue" xml:space="preserve">
+    <value>{0} דורש ערך.</value>
+  </data>
+  <data name="Cli.Error.Terms" xml:space="preserve">
+    <value>תנאי השימוש עדיין לא התקבלו. קרא אותם באפליקציה, או הוסף ‎--accept-terms כדי לקבל אותם.</value>
+  </data>
+  <data name="Cli.Error.UnknownPreset" xml:space="preserve">
+    <value>הגדרה מוכנה לא מוכרת: {0}. זמינות: {1}</value>
+  </data>
+  <data name="Optimizer.Preview.Button" xml:space="preserve">
+    <value>תצוגה מקדימה של השינויים</value>
+  </data>
+  <data name="Optimizer.Preview.Title" xml:space="preserve">
+    <value>מה "{0}" ישנה</value>
+  </data>
+  <data name="Optimizer.Preview.Summary" xml:space="preserve">
+    <value>שינויים לביצוע: {0}. כבר מוגדרים: {1}. עדיין לא שונה דבר.</value>
+  </data>
+  <data name="Optimizer.Preview.Nothing" xml:space="preserve">
+    <value>אין מה לשנות: המחשב כבר תואם.</value>
+  </data>
+  <data name="Optimizer.Preview.Failed.Title" xml:space="preserve">
+    <value>לא ניתן להציג תצוגה מקדימה של השינויים</value>
+  </data>
 </root>

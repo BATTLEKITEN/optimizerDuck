@@ -7795,5 +7795,113 @@ namespace optimizerDuck.Resources.Languages {
                 return ResourceManager.GetString("Dashboard.Drift.Button", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Usage: optimizerDuck.exe &lt;command&gt; [options]  Commands:   --apply-profile &lt;file&gt;    Appl....
+        /// </summary>
+        internal static string Cli_Usage {
+            get {
+                return ResourceManager.GetString("Cli.Usage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unknown argument: {0}.
+        /// </summary>
+        internal static string Cli_Error_UnknownArgument {
+            get {
+                return ResourceManager.GetString("Cli.Error.UnknownArgument", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to An option was given without a command..
+        /// </summary>
+        internal static string Cli_Error_OptionWithoutCommand {
+            get {
+                return ResourceManager.GetString("Cli.Error.OptionWithoutCommand", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Only one command can run at a time..
+        /// </summary>
+        internal static string Cli_Error_OneCommand {
+            get {
+                return ResourceManager.GetString("Cli.Error.OneCommand", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} needs a value..
+        /// </summary>
+        internal static string Cli_Error_MissingValue {
+            get {
+                return ResourceManager.GetString("Cli.Error.MissingValue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The terms of use have not been accepted yet. Read them in the app, or add --accept-terms to accept t....
+        /// </summary>
+        internal static string Cli_Error_Terms {
+            get {
+                return ResourceManager.GetString("Cli.Error.Terms", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unknown preset: {0}. Available: {1}.
+        /// </summary>
+        internal static string Cli_Error_UnknownPreset {
+            get {
+                return ResourceManager.GetString("Cli.Error.UnknownPreset", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Preview changes.
+        /// </summary>
+        internal static string Optimizer_Preview_Button {
+            get {
+                return ResourceManager.GetString("Optimizer.Preview.Button", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to What "{0}" would change.
+        /// </summary>
+        internal static string Optimizer_Preview_Title {
+            get {
+                return ResourceManager.GetString("Optimizer.Preview.Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Changes to make: {0}. Already set: {1}. Nothing has been changed yet..
+        /// </summary>
+        internal static string Optimizer_Preview_Summary {
+            get {
+                return ResourceManager.GetString("Optimizer.Preview.Summary", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nothing to change: this PC already matches..
+        /// </summary>
+        internal static string Optimizer_Preview_Nothing {
+            get {
+                return ResourceManager.GetString("Optimizer.Preview.Nothing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Could not preview the changes.
+        /// </summary>
+        internal static string Optimizer_Preview_Failed_Title {
+            get {
+                return ResourceManager.GetString("Optimizer.Preview.Failed.Title", resourceCulture);
+            }
+        }
     }
 }

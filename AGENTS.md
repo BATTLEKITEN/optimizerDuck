@@ -76,6 +76,9 @@ Reflection discovery, no registration array to update.
 - `SystemRestoreService` — the only owner of every System Restore WMI call.
 - `RecycleBinService`, `HibernationService`, `UsbPowerService` — static, one Windows operation each (shell Recycle Bin APIs, the documented power information callback, `root\wmi` device power); they fail open instead of throwing. The PowerManagement category records their steps.
 
+## Command line
+- `CommandLineOptions.Parse(e.Args)` in `App.OnStartupAsync`; any command runs through `CliRunner` without the window and shuts down with its exit code (0 ok, 1 failures/drift, 2 usage or file error). Output goes to the parent console (`ConsoleBridge`) and optionally a JSON `--report`. Every message is a `Cli.*` / existing resource key.
+
 ## Security rules
 - Open links with `ShellLauncher.OpenUrl` (HTTPS only) and folders with `ShellLauncher.OpenFolder` / `Reveal`; never hand a path to `UseShellExecute` from the elevated process.
 - Delete inside user-writable folders through `ConfinedDelete` (handle based, never follows a junction or symlink).

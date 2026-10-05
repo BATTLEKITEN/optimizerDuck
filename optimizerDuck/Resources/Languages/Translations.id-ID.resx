@@ -2726,4 +2726,56 @@ Gagal: {4}</value>
   <data name="Dashboard.Drift.Button" xml:space="preserve">
     <value>Tinjau dan terapkan ulang</value>
   </data>
+  <data name="Cli.Usage" xml:space="preserve">
+    <value>Penggunaan: optimizerDuck.exe &lt;perintah&gt; [opsi]
+
+Perintah:
+  --apply-profile &lt;file&gt;    Terapkan file profil
+  --apply-preset &lt;name&gt;     Terapkan preset: Recommended, Gaming, Privacy, Laptop
+  --export-profile &lt;file&gt;   Simpan yang diterapkan di PC ini ke file profil
+  --check-drift             Tampilkan optimasi yang dibatalkan Windows
+  --reapply-drift           Terapkan ulang optimasi yang dibatalkan Windows
+  --help                    Tampilkan bantuan ini
+
+Opsi:
+  --restore-point           Buat titik pemulihan sebelum mengubah apa pun
+  --report &lt;file&gt;           Tulis hasilnya ke file JSON
+  --accept-terms            Terima ketentuan penggunaan (diperlukan sekali, sebelum perubahan pertama)
+
+Jalankan dari terminal dengan hak administrator untuk melihat output.
+Kode keluar: 0 berhasil, 1 ada kegagalan atau optimasi yang dibatalkan, 2 kesalahan penggunaan atau file.</value>
+  </data>
+  <data name="Cli.Error.UnknownArgument" xml:space="preserve">
+    <value>Argumen tidak dikenal: {0}</value>
+  </data>
+  <data name="Cli.Error.OptionWithoutCommand" xml:space="preserve">
+    <value>Opsi diberikan tanpa perintah.</value>
+  </data>
+  <data name="Cli.Error.OneCommand" xml:space="preserve">
+    <value>Hanya satu perintah yang dapat dijalankan dalam satu waktu.</value>
+  </data>
+  <data name="Cli.Error.MissingValue" xml:space="preserve">
+    <value>{0} memerlukan nilai.</value>
+  </data>
+  <data name="Cli.Error.Terms" xml:space="preserve">
+    <value>Ketentuan penggunaan belum diterima. Baca di aplikasi, atau tambahkan --accept-terms untuk menerimanya.</value>
+  </data>
+  <data name="Cli.Error.UnknownPreset" xml:space="preserve">
+    <value>Preset tidak dikenal: {0}. Tersedia: {1}</value>
+  </data>
+  <data name="Optimizer.Preview.Button" xml:space="preserve">
+    <value>Pratinjau perubahan</value>
+  </data>
+  <data name="Optimizer.Preview.Title" xml:space="preserve">
+    <value>Yang akan diubah "{0}"</value>
+  </data>
+  <data name="Optimizer.Preview.Summary" xml:space="preserve">
+    <value>Perubahan yang akan dibuat: {0}. Sudah sesuai: {1}. Belum ada yang diubah.</value>
+  </data>
+  <data name="Optimizer.Preview.Nothing" xml:space="preserve">
+    <value>Tidak ada yang perlu diubah: PC ini sudah sesuai.</value>
+  </data>
+  <data name="Optimizer.Preview.Failed.Title" xml:space="preserve">
+    <value>Tidak dapat menampilkan pratinjau perubahan</value>
+  </data>
 </root>

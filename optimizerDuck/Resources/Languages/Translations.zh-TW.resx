@@ -2664,4 +2664,56 @@
   <data name="Dashboard.Drift.Button" xml:space="preserve">
     <value>檢視並重新套用</value>
   </data>
+  <data name="Cli.Usage" xml:space="preserve">
+    <value>用法：optimizerDuck.exe &lt;命令&gt; [選項]
+
+命令：
+  --apply-profile &lt;file&gt;    套用設定檔
+  --apply-preset &lt;name&gt;     套用預設組合：Recommended、Gaming、Privacy、Laptop
+  --export-profile &lt;file&gt;   將此電腦已套用的內容儲存為設定檔
+  --check-drift             列出被 Windows 復原的最佳化
+  --reapply-drift           重新套用被 Windows 復原的最佳化
+  --help                    顯示此說明
+
+選項：
+  --restore-point           變更前先建立還原點
+  --report &lt;file&gt;           將結果寫入 JSON 檔案
+  --accept-terms            接受使用條款（首次變更前需要一次）
+
+請在以系統管理員身分執行的終端機中執行以查看輸出。
+結束代碼：0 成功，1 有失敗或發現被復原的最佳化，2 用法或檔案錯誤。</value>
+  </data>
+  <data name="Cli.Error.UnknownArgument" xml:space="preserve">
+    <value>未知的引數：{0}</value>
+  </data>
+  <data name="Cli.Error.OptionWithoutCommand" xml:space="preserve">
+    <value>指定了選項但沒有命令。</value>
+  </data>
+  <data name="Cli.Error.OneCommand" xml:space="preserve">
+    <value>一次只能執行一個命令。</value>
+  </data>
+  <data name="Cli.Error.MissingValue" xml:space="preserve">
+    <value>{0} 需要一個值。</value>
+  </data>
+  <data name="Cli.Error.Terms" xml:space="preserve">
+    <value>尚未接受使用條款。請在應用程式中閱讀，或加上 --accept-terms 以接受。</value>
+  </data>
+  <data name="Cli.Error.UnknownPreset" xml:space="preserve">
+    <value>未知的預設組合：{0}。可用：{1}</value>
+  </data>
+  <data name="Optimizer.Preview.Button" xml:space="preserve">
+    <value>預覽變更</value>
+  </data>
+  <data name="Optimizer.Preview.Title" xml:space="preserve">
+    <value>「{0}」將變更的內容</value>
+  </data>
+  <data name="Optimizer.Preview.Summary" xml:space="preserve">
+    <value>待變更：{0}。已設定：{1}。目前尚未進行任何變更。</value>
+  </data>
+  <data name="Optimizer.Preview.Nothing" xml:space="preserve">
+    <value>無需變更：此電腦已符合。</value>
+  </data>
+  <data name="Optimizer.Preview.Failed.Title" xml:space="preserve">
+    <value>無法預覽變更</value>
+  </data>
 </root>

@@ -390,6 +390,15 @@
                                             <ui:Button
                                                 HorizontalAlignment="Right"
                                                 VerticalAlignment="Bottom"
+                                                Command="{Binding DataContext.ViewModel.PreviewOptimizationCommand, RelativeSource={RelativeSource AncestorType=Page}}"
+                                                CommandParameter="{Binding}"
+                                                Cursor="Hand"
+                                                Icon="{ui:SymbolIcon Eye24}"
+                                                Style="{StaticResource TransparentButtonStyle}"
+                                                ToolTip="{ext:Loc Optimizer.Preview.Button}" />
+                                            <ui:Button
+                                                HorizontalAlignment="Right"
+                                                VerticalAlignment="Bottom"
                                                 Command="{Binding DataContext.ViewModel.ViewSourceOnGitHubCommand, RelativeSource={RelativeSource AncestorType=Page}}"
                                                 CommandParameter="{Binding}"
                                                 Cursor="Hand"

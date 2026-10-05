@@ -412,6 +412,49 @@ public partial class OptimizationCategoryViewModel : ViewModel
         var result = await _contentDialogService.ShowAsync(dialog, CancellationToken.None);
     }
 
+    /// <summary>Shows what applying the optimization would change, without changing it.</summary>
+    [RelayCommand]
+    private async Task PreviewOptimizationAsync(IOptimization optimization)
+    {
+        string text;
+        try
+        {
+            var preview = await Task.Run(() => _optimizationService.PreviewAsync(optimization));
+            text = ChangePreviewFormatter.Format(preview.Changes);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Preview of {Key} failed", optimization.OptimizationKey);
+            _snackbarService.Show(
+                Loc.Instance["Optimizer.Preview.Failed.Title"],
+                ex.Message,
+                ControlAppearance.Danger,
+                new SymbolIcon { Symbol = SymbolRegular.ErrorCircle24, Filled = true },
+                TimeSpan.FromSeconds(5)
+            );
+            return;
+        }
+
+        await _contentDialogService.ShowSimpleDialogAsync(
+            new SimpleContentDialogCreateOptions
+            {
+                Title = Loc.Instance["Optimizer.Preview.Title", optimization.Name],
+                Content = new ScrollViewer
+                {
+                    MaxHeight = 420,
+                    VerticalScrollBarVisibility = ScrollBarVisibility.Auto,
+                    Content = new System.Windows.Controls.TextBlock
+                    {
+                        Text = text,
+                        TextWrapping = TextWrapping.Wrap,
+                    },
+                },
+                CloseButtonText = Loc.Instance["Button.Ok"],
+            },
+            CancellationToken.None
+        );
+    }
+
     [RelayCommand]
     private async Task ViewSourceOnGitHubAsync(IOptimization optimization)
     {

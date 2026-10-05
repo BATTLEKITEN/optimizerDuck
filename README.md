@@ -145,6 +145,21 @@ It also includes built-in management tools, allowing you to see what is running,
 | **Scheduled Tasks**   | Browse, run, stop, enable, disable, or delete Windows scheduled tasks                                                                            |
 | **Disk Cleanup**      | Scan and clear temp files, system cache, Windows Update leftovers, prefetch, thumbnails, recycle bin, crash dumps, and old Windows installations |
 | **Bloatware Remover** | Lists all removable AppX packages with risk badges (Safe, Caution, Unknown), so you can pick what to remove                                      |
+| **Profiles**          | Apply a preset (Recommended, Gaming, Privacy, Laptop), export your setup to a `.duckprofile` file, or import one on another PC                   |
+
+### Command line
+
+The same profiles can be applied without the window, for example after a fresh Windows install. Run from an elevated terminal to see the output:
+
+```
+optimizerDuck.exe --apply-preset Gaming --restore-point
+optimizerDuck.exe --apply-profile my-setup.duckprofile --report result.json
+optimizerDuck.exe --export-profile my-setup.duckprofile
+optimizerDuck.exe --check-drift
+optimizerDuck.exe --reapply-drift
+```
+
+`--accept-terms` accepts the terms of use when the app has never been opened. Exit codes: `0` success, `1` failures or undone optimizations found, `2` usage or file error. `--help` lists everything.
 
 ### Why optimize Windows instead of just upgrading your hardware?
 
@@ -200,6 +215,8 @@ See the [Privacy Policy](./PRIVACY.md) for details on our data practices.
 - **Risk ratings**: Each tweak is labeled Safe, Moderate, or Risky based on its potential impact
 - **No defaults applied**: Nothing runs until you select it. The tool does not enable anything on its own
 - **Restore point prompt**: Before your first optimization, the app suggests creating a Windows restore point
+- **Preview first**: The eye button on every optimization shows exactly what it would change on your PC, without changing anything
+- **Tamper-proof undo data**: Revert files are signed with a key only administrators can read, so another program cannot slip its own commands into an undo
 
 ---
 
@@ -270,7 +287,7 @@ Revert files are stored in `%LocalAppData%\optimizerDuck\Revert\`. If a file is 
 
 ### Windows Update resets my settings
 
-Windows feature updates occasionally reset certain registry values and service configurations to defaults. Simply re-apply your previous optimizations from the app after a major update.
+Windows feature updates occasionally reset certain registry values and service configurations to defaults. optimizerDuck checks your applied optimizations at every start: when something was undone, the dashboard says so and **Profiles → Changes undone by Windows → Reapply** puts it back. From the command line, `--reapply-drift` does the same.
 
 ### I found a bug / want to request a feature
 

@@ -2661,4 +2661,56 @@
   <data name="Dashboard.Drift.Button" xml:space="preserve">
     <value>確認して再適用</value>
   </data>
+  <data name="Cli.Usage" xml:space="preserve">
+    <value>使い方: optimizerDuck.exe &lt;コマンド&gt; [オプション]
+
+コマンド:
+  --apply-profile &lt;file&gt;    プロファイル ファイルを適用します
+  --apply-preset &lt;name&gt;     プリセットを適用します: Recommended、Gaming、Privacy、Laptop
+  --export-profile &lt;file&gt;   この PC に適用済みの内容をプロファイル ファイルに保存します
+  --check-drift             Windows が元に戻した最適化を一覧表示します
+  --reapply-drift           Windows が元に戻した最適化を再適用します
+  --help                    このヘルプを表示します
+
+オプション:
+  --restore-point           変更の前に復元ポイントを作成します
+  --report &lt;file&gt;           結果を JSON ファイルに書き出します
+  --accept-terms            利用規約に同意します (最初の変更の前に一度だけ必要)
+
+出力を表示するには、管理者として実行したターミナルから起動してください。
+終了コード: 0 成功、1 失敗または元に戻された最適化あり、2 使い方またはファイルのエラー。</value>
+  </data>
+  <data name="Cli.Error.UnknownArgument" xml:space="preserve">
+    <value>不明な引数: {0}</value>
+  </data>
+  <data name="Cli.Error.OptionWithoutCommand" xml:space="preserve">
+    <value>コマンドなしでオプションが指定されました。</value>
+  </data>
+  <data name="Cli.Error.OneCommand" xml:space="preserve">
+    <value>一度に実行できるコマンドは 1 つだけです。</value>
+  </data>
+  <data name="Cli.Error.MissingValue" xml:space="preserve">
+    <value>{0} には値が必要です。</value>
+  </data>
+  <data name="Cli.Error.Terms" xml:space="preserve">
+    <value>利用規約にまだ同意していません。アプリで確認するか、--accept-terms を付けて同意してください。</value>
+  </data>
+  <data name="Cli.Error.UnknownPreset" xml:space="preserve">
+    <value>不明なプリセット: {0}。使用可能: {1}</value>
+  </data>
+  <data name="Optimizer.Preview.Button" xml:space="preserve">
+    <value>変更をプレビュー</value>
+  </data>
+  <data name="Optimizer.Preview.Title" xml:space="preserve">
+    <value>「{0}」で変更される内容</value>
+  </data>
+  <data name="Optimizer.Preview.Summary" xml:space="preserve">
+    <value>変更予定: {0} 件、設定済み: {1} 件。まだ何も変更されていません。</value>
+  </data>
+  <data name="Optimizer.Preview.Nothing" xml:space="preserve">
+    <value>変更は不要です。この PC はすでに一致しています。</value>
+  </data>
+  <data name="Optimizer.Preview.Failed.Title" xml:space="preserve">
+    <value>変更をプレビューできませんでした</value>
+  </data>
 </root>

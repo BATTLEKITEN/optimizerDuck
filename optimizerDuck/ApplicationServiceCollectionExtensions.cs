@@ -114,6 +114,7 @@ public static class ApplicationServiceCollectionExtensions
         services.AddSingleton<IRegistryWatcher, RegistryWatcher>();
         services.AddSingleton<UserErrorSurface>();
         services.AddSingleton<DriftService>();
+        services.AddSingleton<optimizerDuck.Services.Cli.CliRunner>();
         services.AddSingleton<optimizerDuck.Services.Profiles.ProfileService>();
 
         return services;

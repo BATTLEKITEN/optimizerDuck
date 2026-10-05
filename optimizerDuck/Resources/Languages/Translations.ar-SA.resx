@@ -2711,5 +2711,57 @@
   <data name="Dashboard.Drift.Button" xml:space="preserve">
     <value>مراجعة وإعادة التطبيق</value>
   </data>
+  <data name="Cli.Usage" xml:space="preserve">
+    <value>الاستخدام: optimizerDuck.exe &lt;الأمر&gt; [الخيارات]
+
+الأوامر:
+  --apply-profile &lt;file&gt;    تطبيق ملف شخصي
+  --apply-preset &lt;name&gt;     تطبيق إعداد مسبق: Recommended أو Gaming أو Privacy أو Laptop
+  --export-profile &lt;file&gt;   حفظ ما هو مطبق على هذا الجهاز في ملف شخصي
+  --check-drift             عرض التحسينات التي تراجع عنها Windows
+  --reapply-drift           إعادة تطبيق التحسينات التي تراجع عنها Windows
+  --help                    عرض هذه المساعدة
+
+الخيارات:
+  --restore-point           إنشاء نقطة استعادة قبل تغيير أي شيء
+  --report &lt;file&gt;           كتابة النتيجة في ملف JSON
+  --accept-terms            قبول شروط الاستخدام (مطلوب مرة واحدة قبل أول تغيير)
+
+شغّله من نافذة طرفية بصلاحيات المسؤول لرؤية النتائج.
+رموز الخروج: 0 نجاح، 1 فشل أو وجود تحسينات تم التراجع عنها، 2 خطأ في الاستخدام أو الملف.</value>
+  </data>
+  <data name="Cli.Error.UnknownArgument" xml:space="preserve">
+    <value>وسيطة غير معروفة: {0}</value>
+  </data>
+  <data name="Cli.Error.OptionWithoutCommand" xml:space="preserve">
+    <value>تم تحديد خيار بدون أمر.</value>
+  </data>
+  <data name="Cli.Error.OneCommand" xml:space="preserve">
+    <value>يمكن تشغيل أمر واحد فقط في كل مرة.</value>
+  </data>
+  <data name="Cli.Error.MissingValue" xml:space="preserve">
+    <value>يحتاج {0} إلى قيمة.</value>
+  </data>
+  <data name="Cli.Error.Terms" xml:space="preserve">
+    <value>لم يتم قبول شروط الاستخدام بعد. اقرأها في التطبيق، أو أضف ‎--accept-terms لقبولها.</value>
+  </data>
+  <data name="Cli.Error.UnknownPreset" xml:space="preserve">
+    <value>إعداد مسبق غير معروف: {0}. المتاح: {1}</value>
+  </data>
+  <data name="Optimizer.Preview.Button" xml:space="preserve">
+    <value>معاينة التغييرات</value>
+  </data>
+  <data name="Optimizer.Preview.Title" xml:space="preserve">
+    <value>ما الذي سيغيره "{0}"</value>
+  </data>
+  <data name="Optimizer.Preview.Summary" xml:space="preserve">
+    <value>تغييرات مطلوبة: {0}. مضبوط مسبقًا: {1}. لم يتم تغيير أي شيء بعد.</value>
+  </data>
+  <data name="Optimizer.Preview.Nothing" xml:space="preserve">
+    <value>لا شيء لتغييره: هذا الجهاز مطابق بالفعل.</value>
+  </data>
+  <data name="Optimizer.Preview.Failed.Title" xml:space="preserve">
+    <value>تعذرت معاينة التغييرات</value>
+  </data>
 </root>
 

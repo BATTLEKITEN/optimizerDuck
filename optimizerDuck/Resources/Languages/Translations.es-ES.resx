@@ -4474,4 +4474,56 @@ Con errores: {4}</value>
   <data name="Dashboard.Drift.Button" xml:space="preserve">
     <value>Revisar y volver a aplicar</value>
   </data>
+  <data name="Cli.Usage" xml:space="preserve">
+    <value>Uso: optimizerDuck.exe &lt;comando&gt; [opciones]
+
+Comandos:
+  --apply-profile &lt;file&gt;    Aplica un archivo de perfil
+  --apply-preset &lt;name&gt;     Aplica un ajuste predefinido: Recommended, Gaming, Privacy, Laptop
+  --export-profile &lt;file&gt;   Guarda lo aplicado en este PC en un archivo de perfil
+  --check-drift             Muestra las optimizaciones que Windows ha deshecho
+  --reapply-drift           Vuelve a aplicar las optimizaciones que Windows ha deshecho
+  --help                    Muestra esta ayuda
+
+Opciones:
+  --restore-point           Crea un punto de restauración antes de cambiar nada
+  --report &lt;file&gt;           Escribe el resultado en un archivo JSON
+  --accept-terms            Acepta las condiciones de uso (necesario una vez, antes del primer cambio)
+
+Ejecútalo desde un terminal con privilegios de administrador para ver la salida.
+Códigos de salida: 0 correcto, 1 errores u optimizaciones deshechas encontradas, 2 error de uso o de archivo.</value>
+  </data>
+  <data name="Cli.Error.UnknownArgument" xml:space="preserve">
+    <value>Argumento desconocido: {0}</value>
+  </data>
+  <data name="Cli.Error.OptionWithoutCommand" xml:space="preserve">
+    <value>Se indicó una opción sin un comando.</value>
+  </data>
+  <data name="Cli.Error.OneCommand" xml:space="preserve">
+    <value>Solo se puede ejecutar un comando a la vez.</value>
+  </data>
+  <data name="Cli.Error.MissingValue" xml:space="preserve">
+    <value>{0} necesita un valor.</value>
+  </data>
+  <data name="Cli.Error.Terms" xml:space="preserve">
+    <value>Aún no se han aceptado las condiciones de uso. Léelas en la aplicación o añade --accept-terms para aceptarlas.</value>
+  </data>
+  <data name="Cli.Error.UnknownPreset" xml:space="preserve">
+    <value>Ajuste predefinido desconocido: {0}. Disponibles: {1}</value>
+  </data>
+  <data name="Optimizer.Preview.Button" xml:space="preserve">
+    <value>Ver los cambios</value>
+  </data>
+  <data name="Optimizer.Preview.Title" xml:space="preserve">
+    <value>Qué cambiaría «{0}»</value>
+  </data>
+  <data name="Optimizer.Preview.Summary" xml:space="preserve">
+    <value>Cambios por hacer: {0}. Ya configurados: {1}. Todavía no se ha cambiado nada.</value>
+  </data>
+  <data name="Optimizer.Preview.Nothing" xml:space="preserve">
+    <value>Nada que cambiar: este PC ya coincide.</value>
+  </data>
+  <data name="Optimizer.Preview.Failed.Title" xml:space="preserve">
+    <value>No se pudieron previsualizar los cambios</value>
+  </data>
 </root>

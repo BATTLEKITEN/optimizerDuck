@@ -2669,4 +2669,56 @@ Non reconnus par cette version : {3}
   <data name="Dashboard.Drift.Button" xml:space="preserve">
     <value>Vérifier et réappliquer</value>
   </data>
+  <data name="Cli.Usage" xml:space="preserve">
+    <value>Utilisation : optimizerDuck.exe &lt;commande&gt; [options]
+
+Commandes :
+  --apply-profile &lt;file&gt;    Applique un fichier de profil
+  --apply-preset &lt;name&gt;     Applique un préréglage : Recommended, Gaming, Privacy, Laptop
+  --export-profile &lt;file&gt;   Enregistre ce qui est appliqué sur ce PC dans un fichier de profil
+  --check-drift             Liste les optimisations annulées par Windows
+  --reapply-drift           Réapplique les optimisations annulées par Windows
+  --help                    Affiche cette aide
+
+Options :
+  --restore-point           Crée un point de restauration avant toute modification
+  --report &lt;file&gt;           Écrit le résultat dans un fichier JSON
+  --accept-terms            Accepte les conditions d’utilisation (nécessaire une fois, avant la première modification)
+
+Lancez-le depuis un terminal administrateur pour voir la sortie.
+Codes de sortie : 0 succès, 1 échecs ou optimisations annulées trouvées, 2 erreur d’utilisation ou de fichier.</value>
+  </data>
+  <data name="Cli.Error.UnknownArgument" xml:space="preserve">
+    <value>Argument inconnu : {0}</value>
+  </data>
+  <data name="Cli.Error.OptionWithoutCommand" xml:space="preserve">
+    <value>Une option a été donnée sans commande.</value>
+  </data>
+  <data name="Cli.Error.OneCommand" xml:space="preserve">
+    <value>Une seule commande peut s’exécuter à la fois.</value>
+  </data>
+  <data name="Cli.Error.MissingValue" xml:space="preserve">
+    <value>{0} nécessite une valeur.</value>
+  </data>
+  <data name="Cli.Error.Terms" xml:space="preserve">
+    <value>Les conditions d’utilisation n’ont pas encore été acceptées. Lisez-les dans l’application ou ajoutez --accept-terms pour les accepter.</value>
+  </data>
+  <data name="Cli.Error.UnknownPreset" xml:space="preserve">
+    <value>Préréglage inconnu : {0}. Disponibles : {1}</value>
+  </data>
+  <data name="Optimizer.Preview.Button" xml:space="preserve">
+    <value>Aperçu des modifications</value>
+  </data>
+  <data name="Optimizer.Preview.Title" xml:space="preserve">
+    <value>Ce que « {0} » modifierait</value>
+  </data>
+  <data name="Optimizer.Preview.Summary" xml:space="preserve">
+    <value>Modifications à faire : {0}. Déjà en place : {1}. Rien n’a encore été modifié.</value>
+  </data>
+  <data name="Optimizer.Preview.Nothing" xml:space="preserve">
+    <value>Rien à modifier : ce PC est déjà conforme.</value>
+  </data>
+  <data name="Optimizer.Preview.Failed.Title" xml:space="preserve">
+    <value>Impossible d’afficher l’aperçu des modifications</value>
+  </data>
 </root>

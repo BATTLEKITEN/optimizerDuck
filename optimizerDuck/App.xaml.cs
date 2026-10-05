@@ -12,6 +12,7 @@ using optimizerDuck.Common.Extensions;
 using optimizerDuck.Common.Helpers;
 using optimizerDuck.Domain.Configuration;
 using optimizerDuck.Resources.Languages;
+using optimizerDuck.Services.Cli;
 using optimizerDuck.Services.Configuration;
 using optimizerDuck.Services.Customize;
 using optimizerDuck.Services.Optimization;
@@ -385,6 +386,18 @@ public partial class App : Application
         RevertDataSeal.EnsureKey(_logger);
         if (SecureDirectory.EnsureAdminOnly(Shared.SecureDataDirectory, _logger))
             Directory.CreateDirectory(Shared.DownloadsDirectory);
+
+        var commandLine = CommandLineOptions.Parse(e.Args);
+        if (commandLine.IsCommand)
+        {
+            int exitCode;
+            await using (var output = ConsoleBridge.Open())
+                exitCode = await _host
+                    .Services.GetRequiredService<CliRunner>()
+                    .RunAsync(commandLine, output);
+            await Dispatcher.InvokeAsync(() => Shutdown(exitCode));
+            return;
+        }
 
         var optimizationRegistry = _host.Services.GetRequiredService<OptimizationRegistry>();
 

@@ -2661,4 +2661,56 @@ Thất bại: {4}</value>
   <data name="Dashboard.Drift.Button" xml:space="preserve">
     <value>Xem lại và áp dụng lại</value>
   </data>
+  <data name="Cli.Usage" xml:space="preserve">
+    <value>Cách dùng: optimizerDuck.exe &lt;lệnh&gt; [tùy chọn]
+
+Lệnh:
+  --apply-profile &lt;file&gt;    Áp dụng tệp hồ sơ
+  --apply-preset &lt;name&gt;     Áp dụng cấu hình sẵn: Recommended, Gaming, Privacy, Laptop
+  --export-profile &lt;file&gt;   Lưu những gì đã áp dụng trên PC này vào tệp hồ sơ
+  --check-drift             Liệt kê các tối ưu bị Windows hoàn tác
+  --reapply-drift           Áp dụng lại các tối ưu bị Windows hoàn tác
+  --help                    Hiển thị trợ giúp này
+
+Tùy chọn:
+  --restore-point           Tạo điểm khôi phục trước khi thay đổi bất cứ thứ gì
+  --report &lt;file&gt;           Ghi kết quả ra tệp JSON
+  --accept-terms            Chấp nhận điều khoản sử dụng (cần một lần, trước thay đổi đầu tiên)
+
+Chạy từ terminal với quyền quản trị viên để xem kết quả.
+Mã thoát: 0 thành công, 1 có lỗi hoặc có tối ưu bị hoàn tác, 2 lỗi cách dùng hoặc lỗi tệp.</value>
+  </data>
+  <data name="Cli.Error.UnknownArgument" xml:space="preserve">
+    <value>Đối số không xác định: {0}</value>
+  </data>
+  <data name="Cli.Error.OptionWithoutCommand" xml:space="preserve">
+    <value>Đã chỉ định tùy chọn mà không có lệnh.</value>
+  </data>
+  <data name="Cli.Error.OneCommand" xml:space="preserve">
+    <value>Mỗi lần chỉ chạy được một lệnh.</value>
+  </data>
+  <data name="Cli.Error.MissingValue" xml:space="preserve">
+    <value>{0} cần một giá trị.</value>
+  </data>
+  <data name="Cli.Error.Terms" xml:space="preserve">
+    <value>Bạn chưa chấp nhận điều khoản sử dụng. Hãy đọc trong ứng dụng hoặc thêm --accept-terms để chấp nhận.</value>
+  </data>
+  <data name="Cli.Error.UnknownPreset" xml:space="preserve">
+    <value>Cấu hình sẵn không xác định: {0}. Có sẵn: {1}</value>
+  </data>
+  <data name="Optimizer.Preview.Button" xml:space="preserve">
+    <value>Xem trước thay đổi</value>
+  </data>
+  <data name="Optimizer.Preview.Title" xml:space="preserve">
+    <value>"{0}" sẽ thay đổi gì</value>
+  </data>
+  <data name="Optimizer.Preview.Summary" xml:space="preserve">
+    <value>Sẽ thay đổi: {0}. Đã đúng sẵn: {1}. Chưa có gì bị thay đổi.</value>
+  </data>
+  <data name="Optimizer.Preview.Nothing" xml:space="preserve">
+    <value>Không có gì cần thay đổi: PC này đã khớp.</value>
+  </data>
+  <data name="Optimizer.Preview.Failed.Title" xml:space="preserve">
+    <value>Không thể xem trước thay đổi</value>
+  </data>
 </root>
