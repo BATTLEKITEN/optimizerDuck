@@ -2576,4 +2576,704 @@ Perbarui sekarang untuk menikmati fitur terbaru, peningkatan, dan perbaikan bug.
   <data name="Error.Unhandled.LogHint" xml:space="preserve">
     <value>Detailnya ada di file log.</value>
   </data>
+  <data name="Sidebar.Profiles" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="Profiles.Header.Title" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="Profiles.Header.Description" xml:space="preserve">
+    <value>Terapkan kumpulan optimasi siap pakai, pindahkan pengaturan Anda ke PC lain, atau pulihkan yang dibatalkan oleh Windows.</value>
+  </data>
+  <data name="Profiles.Presets.Header" xml:space="preserve">
+    <value>Preset</value>
+  </data>
+  <data name="Profiles.Preset.Recommended.Title" xml:space="preserve">
+    <value>Direkomendasikan</value>
+  </data>
+  <data name="Profiles.Preset.Recommended.Description" xml:space="preserve">
+    <value>Semua optimasi yang ditandai aman. Awal yang baik untuk sebagian besar PC desktop.</value>
+  </data>
+  <data name="Profiles.Preset.Gaming.Title" xml:space="preserve">
+    <value>Gaming</value>
+  </data>
+  <data name="Profiles.Preset.Gaming.Description" xml:space="preserve">
+    <value>Optimasi performa dan latensi, tanpa yang berisiko.</value>
+  </data>
+  <data name="Profiles.Preset.Privacy.Title" xml:space="preserve">
+    <value>Privasi</value>
+  </data>
+  <data name="Profiles.Preset.Privacy.Description" xml:space="preserve">
+    <value>Mematikan telemetri, iklan, saran, dan fitur AI, tanpa optimasi yang berisiko.</value>
+  </data>
+  <data name="Profiles.Preset.Laptop.Title" xml:space="preserve">
+    <value>Laptop</value>
+  </data>
+  <data name="Profiles.Preset.Laptop.Description" xml:space="preserve">
+    <value>Optimasi aman yang tidak menguras baterai: tanpa perubahan power plan, USB, atau GPU.</value>
+  </data>
+  <data name="Profiles.Preset.Count" xml:space="preserve">
+    <value>Optimasi: {0}</value>
+  </data>
+  <data name="Profiles.Button.Preview" xml:space="preserve">
+    <value>Pratinjau</value>
+  </data>
+  <data name="Profiles.Button.Apply" xml:space="preserve">
+    <value>Terapkan</value>
+  </data>
+  <data name="Profiles.File.Header" xml:space="preserve">
+    <value>Pengaturan Anda</value>
+  </data>
+  <data name="Profiles.Export.Title" xml:space="preserve">
+    <value>Ekspor ke file</value>
+  </data>
+  <data name="Profiles.Export.Description" xml:space="preserve">
+    <value>Menyimpan optimasi yang diterapkan di PC ini beserta pengaturan kustomisasi agar bisa diterapkan di PC lain.</value>
+  </data>
+  <data name="Profiles.Export.Button" xml:space="preserve">
+    <value>Ekspor</value>
+  </data>
+  <data name="Profiles.Import.Title" xml:space="preserve">
+    <value>Impor dan terapkan</value>
+  </data>
+  <data name="Profiles.Import.Description" xml:space="preserve">
+    <value>Membuka file profil dan menerapkan isinya. Item yang tidak didukung PC ini akan dilewati.</value>
+  </data>
+  <data name="Profiles.Import.Button" xml:space="preserve">
+    <value>Impor</value>
+  </data>
+  <data name="Profiles.FileFilter" xml:space="preserve">
+    <value>Profil optimizerDuck</value>
+  </data>
+  <data name="Profiles.Export.Success.Title" xml:space="preserve">
+    <value>Profil disimpan</value>
+  </data>
+  <data name="Profiles.Export.Success.Message" xml:space="preserve">
+    <value>Optimasi: {0}. Pengaturan kustomisasi: {1}.</value>
+  </data>
+  <data name="Profiles.Export.Failed.Title" xml:space="preserve">
+    <value>Tidak dapat menyimpan profil</value>
+  </data>
+  <data name="Profiles.Import.Failed.Title" xml:space="preserve">
+    <value>Tidak dapat membuka profil</value>
+  </data>
+  <data name="Profiles.Import.Failed.Message" xml:space="preserve">
+    <value>File ini bukan profil optimizerDuck, atau dibuat dengan versi yang lebih baru.</value>
+  </data>
+  <data name="Profiles.Apply.Confirm.Title" xml:space="preserve">
+    <value>Terapkan "{0}"?</value>
+  </data>
+  <data name="Profiles.Apply.Confirm.Message" xml:space="preserve">
+    <value>Optimasi yang akan diterapkan: {0}. Pengaturan kustomisasi: {1}.
+
+Item yang sudah diterapkan dan yang tidak didukung PC ini akan dilewati. Setiap optimasi dapat dibatalkan nanti dari kartunya.</value>
+  </data>
+  <data name="Profiles.Apply.Title" xml:space="preserve">
+    <value>Menerapkan "{0}"</value>
+  </data>
+  <data name="Profiles.Apply.Progress" xml:space="preserve">
+    <value>Menerapkan: {0}</value>
+  </data>
+  <data name="Profiles.Report.Title" xml:space="preserve">
+    <value>Profil diterapkan</value>
+  </data>
+  <data name="Profiles.Report.Summary" xml:space="preserve">
+    <value>Diterapkan: {0}
+Sudah diterapkan: {1}
+Tidak didukung PC ini: {2}
+Tidak dikenali versi ini: {3}
+Gagal: {4}</value>
+  </data>
+  <data name="Profiles.Report.Failures" xml:space="preserve">
+    <value>Yang gagal:</value>
+  </data>
+  <data name="Profiles.Preview.Title" xml:space="preserve">
+    <value>Yang diterapkan "{0}"</value>
+  </data>
+  <data name="Profiles.Preview.Empty" xml:space="preserve">
+    <value>Preset ini tidak berisi optimasi di versi ini.</value>
+  </data>
+  <data name="Drift.Header" xml:space="preserve">
+    <value>Perubahan yang dibatalkan Windows</value>
+  </data>
+  <data name="Drift.Description" xml:space="preserve">
+    <value>Pembaruan Windows dan program lain terkadang mengembalikan pengaturan. Pemeriksaan ini hanya membaca kondisi saat ini dan tidak mengubah apa pun.</value>
+  </data>
+  <data name="Drift.Button.Check" xml:space="preserve">
+    <value>Periksa sekarang</value>
+  </data>
+  <data name="Drift.Button.Reapply" xml:space="preserve">
+    <value>Terapkan ulang</value>
+  </data>
+  <data name="Drift.Status.Checking" xml:space="preserve">
+    <value>Memeriksa optimasi yang diterapkan...</value>
+  </data>
+  <data name="Drift.Status.None" xml:space="preserve">
+    <value>Semua optimasi yang diterapkan masih berlaku.</value>
+  </data>
+  <data name="Drift.Status.Found" xml:space="preserve">
+    <value>Optimasi yang dibatalkan sejak diterapkan: {0}</value>
+  </data>
+  <data name="Drift.Reapply.Title" xml:space="preserve">
+    <value>Menerapkan ulang optimasi</value>
+  </data>
+  <data name="Dashboard.Drift.Title" xml:space="preserve">
+    <value>Beberapa optimasi telah dibatalkan</value>
+  </data>
+  <data name="Dashboard.Drift.Message" xml:space="preserve">
+    <value>Windows atau program lain mengembalikan pengaturan yang diubah oleh {0} optimasi yang diterapkan.</value>
+  </data>
+  <data name="Dashboard.Drift.Button" xml:space="preserve">
+    <value>Tinjau dan terapkan ulang</value>
+  </data>
+  <data name="Cli.Usage" xml:space="preserve">
+    <value>Penggunaan: optimizerDuck.exe &lt;perintah&gt; [opsi]
+
+Perintah:
+  --apply-profile &lt;file&gt;    Terapkan file profil
+  --apply-preset &lt;name&gt;     Terapkan preset: Recommended, Gaming, Privacy, Laptop
+  --export-profile &lt;file&gt;   Simpan yang diterapkan di PC ini ke file profil
+  --check-drift             Tampilkan optimasi yang dibatalkan Windows
+  --reapply-drift           Terapkan ulang optimasi yang dibatalkan Windows
+  --help                    Tampilkan bantuan ini
+
+Opsi:
+  --restore-point           Buat titik pemulihan sebelum mengubah apa pun
+  --report &lt;file&gt;           Tulis hasilnya ke file JSON
+  --accept-terms            Terima ketentuan penggunaan (diperlukan sekali, sebelum perubahan pertama)
+
+Jalankan dari terminal dengan hak administrator untuk melihat output.
+Kode keluar: 0 berhasil, 1 ada kegagalan atau optimasi yang dibatalkan, 2 kesalahan penggunaan atau file.</value>
+  </data>
+  <data name="Cli.Error.UnknownArgument" xml:space="preserve">
+    <value>Argumen tidak dikenal: {0}</value>
+  </data>
+  <data name="Cli.Error.OptionWithoutCommand" xml:space="preserve">
+    <value>Opsi diberikan tanpa perintah.</value>
+  </data>
+  <data name="Cli.Error.OneCommand" xml:space="preserve">
+    <value>Hanya satu perintah yang dapat dijalankan dalam satu waktu.</value>
+  </data>
+  <data name="Cli.Error.MissingValue" xml:space="preserve">
+    <value>{0} memerlukan nilai.</value>
+  </data>
+  <data name="Cli.Error.Terms" xml:space="preserve">
+    <value>Ketentuan penggunaan belum diterima. Baca di aplikasi, atau tambahkan --accept-terms untuk menerimanya.</value>
+  </data>
+  <data name="Cli.Error.UnknownPreset" xml:space="preserve">
+    <value>Preset tidak dikenal: {0}. Tersedia: {1}</value>
+  </data>
+  <data name="Optimizer.Preview.Button" xml:space="preserve">
+    <value>Pratinjau perubahan</value>
+  </data>
+  <data name="Optimizer.Preview.Title" xml:space="preserve">
+    <value>Yang akan diubah "{0}"</value>
+  </data>
+  <data name="Optimizer.Preview.Summary" xml:space="preserve">
+    <value>Perubahan yang akan dibuat: {0}. Sudah sesuai: {1}. Belum ada yang diubah.</value>
+  </data>
+  <data name="Optimizer.Preview.Nothing" xml:space="preserve">
+    <value>Tidak ada yang perlu diubah: PC ini sudah sesuai.</value>
+  </data>
+  <data name="Optimizer.Preview.Failed.Title" xml:space="preserve">
+    <value>Tidak dapat menampilkan pratinjau perubahan</value>
+  </data>
+  <data name="Optimizer.AI.DisablePaintAI.Name" xml:space="preserve">
+    <value>Nonaktifkan AI di Paint</value>
+  </data>
+  <data name="Optimizer.AI.DisablePaintAI.ShortDescription" xml:space="preserve">
+    <value>Mematikan Cocreator, Image Creator, isian generatif, dan penghapusan generatif di Paint melalui kebijakan resmi Microsoft.</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.Name" xml:space="preserve">
+    <value>Nonaktifkan AI di Notepad</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.ShortDescription" xml:space="preserve">
+    <value>Menghapus Rewrite, Summarize, dan fitur AI lainnya dari Notepad melalui kebijakan resminya.</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.Name" xml:space="preserve">
+    <value>Hentikan Microsoft Edge berjalan di latar belakang</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.ShortDescription" xml:space="preserve">
+    <value>Mematikan startup boost yang memuat Edge saat masuk, serta mode latar belakang yang membuatnya tetap berjalan setelah ditutup. Menghemat RAM meski Anda tidak pernah membuka Edge.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.Name" xml:space="preserve">
+    <value>Matikan sidebar, belanja, dan pengumpulan data Edge</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.ShortDescription" xml:space="preserve">
+    <value>Menggunakan kebijakan Edge untuk menyembunyikan sidebar (dan Copilot di dalamnya), mematikan asisten belanja dan rekomendasi, serta menghentikan laporan personalisasi dan data diagnostik opsional.</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.Name" xml:space="preserve">
+    <value>Kecualikan driver dari Windows Update</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.ShortDescription" xml:space="preserve">
+    <value>Mencegah Windows Update mengganti driver yang Anda pasang sendiri, misalnya driver GPU atau audio dari produsen. Setelah itu Anda memperbarui driver sendiri.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.Name" xml:space="preserve">
+    <value>Nonaktifkan OneDrive</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.ShortDescription" xml:space="preserve">
+    <value>Mencegah OneDrive berjalan dan menyinkronkan, serta menghapusnya dari panel samping File Explorer. File di folder OneDrive tetap ada di disk; tidak ada yang dicopot.</value>
+  </data>
+  <data name="Sidebar.Health" xml:space="preserve">
+    <value>Kesehatan sistem</value>
+  </data>
+  <data name="Sidebar.ContextMenu" xml:space="preserve">
+    <value>Menu konteks</value>
+  </data>
+  <data name="Sidebar.OptionalFeatures" xml:space="preserve">
+    <value>Fitur Windows</value>
+  </data>
+  <data name="Sidebar.AppInstaller" xml:space="preserve">
+    <value>Pasang aplikasi</value>
+  </data>
+  <data name="DiskCleanup.Item.DeliveryOptimization" xml:space="preserve">
+    <value>Cache Pengoptimalan Pengiriman</value>
+  </data>
+  <data name="DiskCleanup.Item.DeliveryOptimization.Description" xml:space="preserve">
+    <value>File pembaruan yang disimpan Windows untuk dibagikan ke PC lain; aman dihapus</value>
+  </data>
+  <data name="DiskCleanup.Item.SystemErrorReports" xml:space="preserve">
+    <value>Laporan kesalahan sistem</value>
+  </data>
+  <data name="DiskCleanup.Item.SystemErrorReports.Description" xml:space="preserve">
+    <value>Laporan crash dan masalah yang disimpan Windows Error Reporting untuk semua pengguna</value>
+  </data>
+  <data name="DiskCleanup.Item.ShaderCache" xml:space="preserve">
+    <value>Cache shader DirectX</value>
+  </data>
+  <data name="DiskCleanup.Item.ShaderCache.Description" xml:space="preserve">
+    <value>Shader terkompilasi; game membuatnya ulang saat dijalankan berikutnya, bisa mengatasi stutter setelah update driver</value>
+  </data>
+  <data name="Health.Header.Title" xml:space="preserve">
+    <value>Kesehatan sistem</value>
+  </data>
+  <data name="Health.Header.Description" xml:space="preserve">
+    <value>Keamanan, disk, dan baterai sekilas. Tidak ada yang diubah di PC Anda.</value>
+  </data>
+  <data name="Health.Loading" xml:space="preserve">
+    <value>Memeriksa PC Anda...</value>
+  </data>
+  <data name="Health.Button.Refresh" xml:space="preserve">
+    <value>Segarkan</value>
+  </data>
+  <data name="Health.Button.Export" xml:space="preserve">
+    <value>Simpan laporan</value>
+  </data>
+  <data name="Health.Button.BatteryReport" xml:space="preserve">
+    <value>Laporan baterai</value>
+  </data>
+  <data name="Health.Export.Failed.Title" xml:space="preserve">
+    <value>Tidak dapat menyimpan laporan</value>
+  </data>
+  <data name="Health.Status.Good" xml:space="preserve">
+    <value>Baik</value>
+  </data>
+  <data name="Health.Status.Info" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="Health.Status.Warning" xml:space="preserve">
+    <value>Perhatian</value>
+  </data>
+  <data name="Health.Status.Bad" xml:space="preserve">
+    <value>Masalah</value>
+  </data>
+  <data name="Health.Status.Unknown" xml:space="preserve">
+    <value>Tidak diketahui</value>
+  </data>
+  <data name="Health.Unknown" xml:space="preserve">
+    <value>Windows tidak melaporkan ini.</value>
+  </data>
+  <data name="Health.State.On" xml:space="preserve">
+    <value>Aktif</value>
+  </data>
+  <data name="Health.State.Off" xml:space="preserve">
+    <value>Nonaktif</value>
+  </data>
+  <data name="Health.Check.SecureBoot" xml:space="preserve">
+    <value>Secure Boot</value>
+  </data>
+  <data name="Health.SecureBoot.Off" xml:space="preserve">
+    <value>Nonaktif. Aktifkan di pengaturan UEFI untuk memblokir malware saat boot.</value>
+  </data>
+  <data name="Health.SecureBoot.Unsupported" xml:space="preserve">
+    <value>Tidak tersedia: PC berjalan dalam mode legacy BIOS.</value>
+  </data>
+  <data name="Health.Check.Tpm" xml:space="preserve">
+    <value>TPM</value>
+  </data>
+  <data name="Health.Tpm.Ready" xml:space="preserve">
+    <value>TPM {0} aktif dan siap.</value>
+  </data>
+  <data name="Health.Tpm.NotReady" xml:space="preserve">
+    <value>TPM {0} ada tetapi nonaktif atau belum siap. Periksa pengaturan UEFI.</value>
+  </data>
+  <data name="Health.Tpm.None" xml:space="preserve">
+    <value>TPM tidak ditemukan. Windows 11 dan BitLocker membutuhkannya.</value>
+  </data>
+  <data name="Health.Check.Vbs" xml:space="preserve">
+    <value>Keamanan berbasis virtualisasi</value>
+  </data>
+  <data name="Health.Vbs.Running" xml:space="preserve">
+    <value>Berjalan. Melindungi sistem dengan sedikit pengorbanan performa game.</value>
+  </data>
+  <data name="Health.Vbs.Enabled" xml:space="preserve">
+    <value>Diaktifkan tetapi tidak berjalan. Mungkin perlu restart atau pengaturan firmware.</value>
+  </data>
+  <data name="Health.Check.MemoryIntegrity" xml:space="preserve">
+    <value>Integritas memori</value>
+  </data>
+  <data name="Health.Check.Defender" xml:space="preserve">
+    <value>Microsoft Defender</value>
+  </data>
+  <data name="Health.Defender.On" xml:space="preserve">
+    <value>Perlindungan real-time aktif dan definisi terbaru.</value>
+  </data>
+  <data name="Health.Defender.Off" xml:space="preserve">
+    <value>Perlindungan real-time nonaktif. Pastikan ada antivirus lain yang melindungi PC ini.</value>
+  </data>
+  <data name="Health.Defender.Old" xml:space="preserve">
+    <value>Definisi sudah berumur {0} hari. Jalankan Windows Update.</value>
+  </data>
+  <data name="Health.Defender.Unknown" xml:space="preserve">
+    <value>Tidak ada status dari Defender; mungkin antivirus lain sedang digunakan.</value>
+  </data>
+  <data name="Health.Check.Disk" xml:space="preserve">
+    <value>Disk: {0}</value>
+  </data>
+  <data name="Health.Disk.Healthy" xml:space="preserve">
+    <value>Sehat ({0})</value>
+  </data>
+  <data name="Health.Disk.Warning" xml:space="preserve">
+    <value>Windows melaporkan peringatan ({0}). Cadangkan data Anda.</value>
+  </data>
+  <data name="Health.Disk.Unhealthy" xml:space="preserve">
+    <value>Windows melaporkan disk ini bermasalah ({0}). Segera cadangkan data Anda.</value>
+  </data>
+  <data name="Health.Check.Trim" xml:space="preserve">
+    <value>TRIM SSD</value>
+  </data>
+  <data name="Health.Trim.Off" xml:space="preserve">
+    <value>Nonaktif. Tanpa TRIM, SSD melambat seiring waktu.</value>
+  </data>
+  <data name="Health.Check.FreeSpace" xml:space="preserve">
+    <value>Ruang kosong di drive sistem</value>
+  </data>
+  <data name="Health.FreeSpace.Value" xml:space="preserve">
+    <value>{0} kosong dari {1} ({2}%)</value>
+  </data>
+  <data name="Health.Check.PendingRestart" xml:space="preserve">
+    <value>Restart tertunda</value>
+  </data>
+  <data name="Health.PendingRestart.Yes" xml:space="preserve">
+    <value>Windows menunggu restart untuk menyelesaikan instalasi pembaruan.</value>
+  </data>
+  <data name="Health.PendingRestart.No" xml:space="preserve">
+    <value>Tidak perlu restart.</value>
+  </data>
+  <data name="Health.Check.BootTime" xml:space="preserve">
+    <value>Waktu boot terakhir</value>
+  </data>
+  <data name="Health.BootTime.Value" xml:space="preserve">
+    <value>{0} dtk, menurut pengukuran Windows</value>
+  </data>
+  <data name="Health.BootTime.Unknown" xml:space="preserve">
+    <value>Windows belum mencatat waktu boot.</value>
+  </data>
+  <data name="Health.Check.Battery" xml:space="preserve">
+    <value>Keausan baterai</value>
+  </data>
+  <data name="Health.Battery.Value" xml:space="preserve">
+    <value>Menyimpan {0}% dari kapasitas aslinya.</value>
+  </data>
+  <data name="ContextMenu.Header.Title" xml:space="preserve">
+    <value>Menu konteks</value>
+  </data>
+  <data name="ContextMenu.Header.Description" xml:space="preserve">
+    <value>Matikan entri yang ditambahkan aplikasi ke menu klik kanan File Explorer. Tidak ada yang dihapus; mengaktifkannya lagi akan memulihkannya.</value>
+  </data>
+  <data name="ContextMenu.Search" xml:space="preserve">
+    <value>Cari entri</value>
+  </data>
+  <data name="ContextMenu.ShowWindows" xml:space="preserve">
+    <value>Tampilkan entri Windows</value>
+  </data>
+  <data name="ContextMenu.Loading" xml:space="preserve">
+    <value>Membaca entri menu konteks...</value>
+  </data>
+  <data name="ContextMenu.RestartNeeded" xml:space="preserve">
+    <value>Mulai ulang File Explorer untuk melihat perubahannya.</value>
+  </data>
+  <data name="ContextMenu.RestartExplorer" xml:space="preserve">
+    <value>Mulai ulang File Explorer</value>
+  </data>
+  <data name="ContextMenu.Error.Title" xml:space="preserve">
+    <value>Tidak dapat mengubah entri</value>
+  </data>
+  <data name="ContextMenu.Location.Files" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="ContextMenu.Location.Folders" xml:space="preserve">
+    <value>Folder</value>
+  </data>
+  <data name="ContextMenu.Location.Background" xml:space="preserve">
+    <value>Latar folder</value>
+  </data>
+  <data name="ContextMenu.Location.Drives" xml:space="preserve">
+    <value>Drive</value>
+  </data>
+  <data name="OptionalFeatures.Header.Title" xml:space="preserve">
+    <value>Fitur Windows</value>
+  </data>
+  <data name="OptionalFeatures.Header.Description" xml:space="preserve">
+    <value>Aktifkan atau nonaktifkan fitur opsional Windows, sama seperti "Turn Windows features on or off". Sebagian besar perubahan selesai setelah restart.</value>
+  </data>
+  <data name="OptionalFeatures.Search" xml:space="preserve">
+    <value>Cari fitur</value>
+  </data>
+  <data name="OptionalFeatures.Loading" xml:space="preserve">
+    <value>Meminta daftar fitur dari Windows...</value>
+  </data>
+  <data name="OptionalFeatures.RestartNeeded" xml:space="preserve">
+    <value>Mulai ulang Windows untuk menyelesaikan perubahan.</value>
+  </data>
+  <data name="OptionalFeatures.Error.Title" xml:space="preserve">
+    <value>Tidak dapat mengubah fitur</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Microsoft_Hyper_V_All" xml:space="preserve">
+    <value>Hyper-V: menjalankan mesin virtual. Bisa menurunkan performa game dan bentrok dengan aplikasi virtualisasi lain.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Microsoft_Windows_Subsystem_Linux" xml:space="preserve">
+    <value>Windows Subsystem for Linux (WSL): menjalankan tool Linux di Windows.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.VirtualMachinePlatform" xml:space="preserve">
+    <value>Virtual Machine Platform: dibutuhkan WSL 2 dan aplikasi Android.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Containers_DisposableClientVM" xml:space="preserve">
+    <value>Windows Sandbox: desktop sekali pakai untuk mencoba program tak dikenal dengan aman.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.NetFx3" xml:space="preserve">
+    <value>.NET Framework 3.5: dibutuhkan beberapa program dan game lama.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.SMB1Protocol" xml:space="preserve">
+    <value>SMB 1.0: protokol berbagi file usang dan tidak aman. Biarkan nonaktif kecuali perangkat lama membutuhkannya.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.TelnetClient" xml:space="preserve">
+    <value>Klien Telnet: tool command line untuk menguji port jaringan.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Printing_PrintToPDFServices_Features" xml:space="preserve">
+    <value>Microsoft Print to PDF: simpan apa pun yang bisa dicetak sebagai PDF.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.MediaPlayback" xml:space="preserve">
+    <value>Fitur media: Windows Media Player dan komponen pemutaran yang dibutuhkan beberapa aplikasi.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Recall" xml:space="preserve">
+    <value>Recall: mengambil cuplikan layar untuk dicari nanti. Menghapusnya menghemat ruang dan menjaga privasi aktivitas.</value>
+  </data>
+  <data name="AppInstaller.Header.Title" xml:space="preserve">
+    <value>Pasang aplikasi</value>
+  </data>
+  <data name="AppInstaller.Header.Description" xml:space="preserve">
+    <value>Pilih aplikasi populer dan pasang sekaligus lewat winget, package manager dari Microsoft. Aplikasi berasal dari sumber resminya.</value>
+  </data>
+  <data name="AppInstaller.Install" xml:space="preserve">
+    <value>Pasang yang dipilih ({0})</value>
+  </data>
+  <data name="AppInstaller.Loading" xml:space="preserve">
+    <value>Mencari winget...</value>
+  </data>
+  <data name="AppInstaller.WingetMissing" xml:space="preserve">
+    <value>winget tidak ditemukan. Pasang "App Installer" dari Microsoft Store, lalu kembali.</value>
+  </data>
+  <data name="AppInstaller.Progress" xml:space="preserve">
+    <value>Memasang {0}...</value>
+  </data>
+  <data name="AppInstaller.Success.Title" xml:space="preserve">
+    <value>Aplikasi terpasang</value>
+  </data>
+  <data name="AppInstaller.Success.Message" xml:space="preserve">
+    <value>Terpasang atau sudah terbaru: {0}</value>
+  </data>
+  <data name="AppInstaller.Error.Title" xml:space="preserve">
+    <value>Beberapa aplikasi tidak dapat dipasang</value>
+  </data>
+  <data name="AppInstaller.Category.Browsers" xml:space="preserve">
+    <value>Browser</value>
+  </data>
+  <data name="AppInstaller.Category.Utilities" xml:space="preserve">
+    <value>Utilitas</value>
+  </data>
+  <data name="AppInstaller.Category.Media" xml:space="preserve">
+    <value>Media</value>
+  </data>
+  <data name="AppInstaller.Category.Gaming" xml:space="preserve">
+    <value>Gaming</value>
+  </data>
+  <data name="AppInstaller.Category.Development" xml:space="preserve">
+    <value>Pengembangan</value>
+  </data>
+  <data name="AppInstaller.Category.Runtimes" xml:space="preserve">
+    <value>Runtime</value>
+  </data>
+  <data name="Search.Global.Placeholder" xml:space="preserve">
+    <value>Cari optimasi dan pengaturan</value>
+  </data>
+  <data name="Health.BootTime.Trend" xml:space="preserve">
+    <value>{0} dtk pada boot terakhir, rata-rata {1} dtk dari {2} boot terakhir (diukur Windows)</value>
+  </data>
+  <data name="Update.Button.Install" xml:space="preserve">
+    <value>Perbarui sekarang</value>
+  </data>
+  <data name="Update.Confirm.Title" xml:space="preserve">
+    <value>Perbarui ke versi {0}</value>
+  </data>
+  <data name="Update.Confirm.Message" xml:space="preserve">
+    <value>optimizerDuck mengunduh versi baru dari GitHub, memeriksanya dengan checksum SHA-256 yang dipublikasikan, mengganti dirinya, lalu memulai ulang. Optimasi dan data pembatalan Anda tetap tersimpan.</value>
+  </data>
+  <data name="Update.Downloading" xml:space="preserve">
+    <value>Mengunduh dan memverifikasi pembaruan...</value>
+  </data>
+  <data name="Update.Failed.Title" xml:space="preserve">
+    <value>Pembaruan tidak dapat dipasang</value>
+  </data>
+  <data name="Update.Failed.Message" xml:space="preserve">
+    <value>Tidak dapat diunduh atau diverifikasi. Halaman rilis dibuka agar Anda bisa memperbarui manual.</value>
+  </data>
+  <data name="Optimizer.Menu.HideUnavailable" xml:space="preserve">
+    <value>Sembunyikan yang tidak didukung</value>
+  </data>
+  <data name="OptimizationDetailsDialog.SideEffects" xml:space="preserve">
+    <value>Yang mungkin berhenti berfungsi</value>
+  </data>
+  <data name="Optimizer.Performance.DisableBackgroundApps.SideEffects" xml:space="preserve">
+    <value>Aplikasi Store tidak lagi berjalan di latar belakang: Mail, Kalender, Cuaca, dan sejenisnya hanya diperbarui saat dibuka, dan sebagian notifikasi datang terlambat atau tidak datang.</value>
+  </data>
+  <data name="Optimizer.Performance.ConsolidateServiceHosts.SideEffects" xml:space="preserve">
+    <value>Beberapa layanan kembali berbagi satu proses, jadi layanan yang crash bisa ikut menjatuhkan layanan lain di proses yang sama, dan Task Manager menampilkannya berkelompok.</value>
+  </data>
+  <data name="Optimizer.Performance.ProcessPriority.SideEffects" xml:space="preserve">
+    <value>Pekerjaan di latar belakang (unduhan, encoding video, kompilasi) mendapat lebih sedikit waktu CPU saat Anda memakai jendela lain, jadi bisa lebih lama.</value>
+  </data>
+  <data name="Optimizer.Performance.OptimizeMultimediaScheduler.SideEffects" xml:space="preserve">
+    <value>Saat game atau media berjalan, tugas latar belakang dan lalu lintas jaringan mendapat prioritas lebih rendah, jadi unduhan dan streaming di latar belakang bisa melambat.</value>
+  </data>
+  <data name="Optimizer.Performance.KeyboardLatencyOptimization.SideEffects" xml:space="preserve">
+    <value>Tombol yang ditahan mulai berulang lebih cepat dan lebih sering, sehingga bisa mengetik karakter tambahan jika jari menempel di tombol.</value>
+  </data>
+  <data name="Optimizer.Performance.DisableAccessibilityKeyboardHotkeys.SideEffects" xml:space="preserve">
+    <value>Menekan Shift lima kali atau menahan Shift atau Num Lock tidak lagi mengaktifkan Sticky, Filter, atau Toggle Keys. Yang membutuhkannya tetap bisa mengaktifkan di Pengaturan &gt; Aksesibilitas &gt; Keyboard.</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.SideEffects" xml:space="preserve">
+    <value>Edge terbuka sedikit lebih lambat, dan setelah jendela terakhirnya ditutup tidak lagi menampilkan notifikasi atau menyelesaikan unduhan.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableTelemetry.SideEffects" xml:space="preserve">
+    <value>Feedback Hub berhenti bekerja, build Windows Insider tidak bisa diterima, beberapa pemecah masalah punya lebih sedikit data, dan Microsoft menerima lebih sedikit laporan crash untuk memperbaiki masalah di perangkat keras Anda.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableErrorReporting.SideEffects" xml:space="preserve">
+    <value>Laporan crash tidak lagi disimpan atau dikirim, jadi Reliability Monitor menampilkan lebih sedikit detail dan Microsoft tidak bisa menawarkan solusi yang diketahui. Program Compatibility Assistant tidak lagi menyarankan perbaikan untuk program lama.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableAdvertisingAndSuggestions.SideEffects" xml:space="preserve">
+    <value>Aplikasi tidak lagi bisa menampilkan iklan yang dipersonalisasi, Windows berhenti menyarankan aplikasi, tips, dan langkah penyiapan, dan saran pengetikan serta tulisan tangan belajar lebih sedikit dari tulisan Anda.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableNewsAndInterests.SideEffects" xml:space="preserve">
+    <value>Tombol Widget (cuaca) di taskbar dan feed berita menghilang.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableActivityHistory.SideEffects" xml:space="preserve">
+    <value>Windows tidak lagi menyimpan riwayat aplikasi, file, dan halaman yang Anda gunakan, jadi saran "lanjutkan dari terakhir" dan Timeline berhenti bekerja.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableLocationAndSensors.SideEffects" xml:space="preserve">
+    <value>Aplikasi tidak lagi bisa mendapatkan lokasi Anda: Peta, Cuaca, Temukan Perangkat Saya, dan zona waktu otomatis berhenti memakainya, peta offline tidak diperbarui, dan beberapa sensor seperti rotasi otomatis atau sensor cahaya bisa berhenti bekerja.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableAutoLogger.SideEffects" xml:space="preserve">
+    <value>Beberapa log diagnostik bawaan (sesi Wi-Fi, jaringan, model aplikasi) tidak lagi direkam, sehingga masalah koneksi dan aplikasi lebih sulit dilacak.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableCortana.SideEffects" xml:space="preserve">
+    <value>Cortana tidak lagi tersedia, dan pencarian tidak lagi memakai web atau lokasi Anda, jadi pencarian Start hanya menampilkan hasil dari PC ini.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableCopilot.SideEffects" xml:space="preserve">
+    <value>Tombol Copilot dan pintasan Windows + C menghilang, dan Copilot tidak bisa dibuka dari Windows.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableContentDeliveryManager.SideEffects" xml:space="preserve">
+    <value>Gambar Windows Spotlight di layar kunci, "fakta menarik", dan aplikasi yang disarankan di Start berhenti diperbarui; Anda memilih sendiri gambar atau slideshow untuk layar kunci.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableFindMyDevice.SideEffects" xml:space="preserve">
+    <value>Anda tidak bisa lagi menemukan atau mengunci PC ini dari akun Microsoft jika hilang atau dicuri.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableDeliveryOptimization.SideEffects" xml:space="preserve">
+    <value>Pembaruan hanya diunduh dari Microsoft, bukan dari PC lain di jaringan Anda, jadi rumah atau kantor dengan banyak PC memakai lebih banyak bandwidth internet.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.SideEffects" xml:space="preserve">
+    <value>Edge kehilangan sidebar (dan Copilot di dalamnya), perbandingan harga, dan kupon, dan pengaturannya menampilkan "Browser Anda dikelola oleh organisasi Anda" karena perubahan ini memakai kebijakan.</value>
+  </data>
+  <data name="Optimizer.UserExperience.SpeedUpExplorerAndMenus.SideEffects" xml:space="preserve">
+    <value>Aplikasi startup berjalan bersamaan tepat setelah masuk, bukan bertahap, jadi detik-detik awal setelah masuk bisa terasa lebih berat di PC yang lebih lambat.</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableVisualEffects.SideEffects" xml:space="preserve">
+    <value>Windows terlihat lebih datar: tanpa transparansi, tanpa animasi taskbar, tanpa bayangan di bawah label ikon desktop, dan tanpa pratinjau Aero Peek di sudut taskbar.</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableStartMenuWebSearch.SideEffects" xml:space="preserve">
+    <value>Pencarian Start hanya menampilkan hasil dari PC ini: hasil web Bing dan sorotan pencarian menghilang.</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableStartRecommended.SideEffects" xml:space="preserve">
+    <value>Start tidak lagi menampilkan file yang baru dibuka dan aplikasi yang baru dipasang; Anda menemukannya lewat File Explorer atau pencarian.</value>
+  </data>
+  <data name="Optimizer.UserExperience.MaximizeUpdatePauseLimit.SideEffects" xml:space="preserve">
+    <value>Pembaruan bisa dijeda jauh lebih lama. Selama dijeda, perbaikan keamanan juga tidak dipasang, jadi lanjutkan pembaruan secara rutin.</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.SideEffects" xml:space="preserve">
+    <value>Windows Update tidak lagi memasang atau memperbarui driver, jadi driver untuk perangkat baru atau perbaikannya harus diambil dari situs produsen.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableUlps.SideEffects" xml:space="preserve">
+    <value>GPU (atau GPU kedua di CrossFire) tidak lagi masuk ke mode tidur terdalam saat idle, jadi konsumsi daya dan suhu saat idle sedikit naik.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisablePowerGating.SideEffects" xml:space="preserve">
+    <value>Sebagian GPU tetap menyala bahkan di desktop: konsumsi daya, suhu, dan suara kipas saat idle lebih tinggi, serta baterai laptop lebih cepat habis.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableVideoClockGating.SideEffects" xml:space="preserve">
+    <value>Encoder dan decoder video tetap menyala meski tidak dipakai, sehingga konsumsi daya saat idle sedikit naik, terutama terasa di laptop.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableAspm.SideEffects" xml:space="preserve">
+    <value>Jalur PCIe ke GPU tidak lagi menghemat daya saat idle: konsumsi daya sedikit lebih tinggi dan baterai laptop lebih cepat habis.</value>
+  </data>
+  <data name="Optimizer.Gpu.NvidiaDisableDynamicPstate.SideEffects" xml:space="preserve">
+    <value>GPU tetap di clock tinggi bahkan di desktop: konsumsi daya, suhu, dan suara kipas saat idle lebih tinggi, serta baterai laptop lebih cepat habis.</value>
+  </data>
+  <data name="Optimizer.Gpu.NvidiaDisableAsyncPstates.SideEffects" xml:space="preserve">
+    <value>GPU lebih jarang berganti status daya dan bisa tetap di clock lebih tinggi dari yang dibutuhkan: konsumsi daya dan panas lebih besar pada beban ringan.</value>
+  </data>
+  <data name="Optimizer.Gpu.IntelDisableAdaptiveVsync.SideEffects" xml:space="preserve">
+    <value>Saat frame rate game turun di bawah refresh rate layar, game bisa tersendat alih-alih mengalami tearing sesaat.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisableHibernateAndFastStartup.SideEffects" xml:space="preserve">
+    <value>Hibernate tidak lagi tersedia, dan menyalakan setelah shutdown sedikit lebih lama karena Fast Startup nonaktif. Laptop tidak lagi masuk hibernate saat baterai hampir habis.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisableUSBPowerSaving.SideEffects" xml:space="preserve">
+    <value>Perangkat USB tetap menyala terus alih-alih tidur saat idle, jadi baterai laptop sedikit lebih cepat habis.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.InstallOptimizerDuckPowerPlan.SideEffects" xml:space="preserve">
+    <value>CPU lebih sering berjalan di clock tinggi: konsumsi daya dan panas lebih besar, kipas lebih bising pada beban ringan, dan baterai laptop jauh lebih cepat habis. Task Manager bisa menunjukkan penggunaan CPU tinggi bahkan saat idle.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisablePowerSaving.SideEffects" xml:space="preserve">
+    <value>Windows berhenti membatasi aplikasi latar belakang untuk menghemat daya, jadi laptop lebih boros baterai, dan tidak lagi mencoba memulihkan port USB yang menarik daya berlebih.</value>
+  </data>
+  <data name="Optimizer.AI.DisableRecall.SideEffects" xml:space="preserve">
+    <value>Recall berhenti menyimpan snapshot dan menghapus yang sudah ada, jadi Anda tidak bisa lagi mencari hal yang pernah terlihat di layar.</value>
+  </data>
+  <data name="Optimizer.AI.DisableClickToDo.SideEffects" xml:space="preserve">
+    <value>Click to Do (tombol Windows + klik) tidak lagi tersedia, jadi Anda tidak bisa menjalankan aksi AI cepat pada teks atau gambar di layar.</value>
+  </data>
+  <data name="Optimizer.AI.DisablePaintAI.SideEffects" xml:space="preserve">
+    <value>Cocreator, Image Creator, isian generatif, dan penghapusan generatif hilang dari Paint; alat gambar biasa tetap ada.</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.SideEffects" xml:space="preserve">
+    <value>Rewrite, Summarize, dan opsi AI lainnya hilang dari Notepad; mengedit teks tetap seperti biasa.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisablePreinstalledApps.SideEffects" xml:space="preserve">
+    <value>Windows berhenti memasang aplikasi dan game yang disarankan secara otomatis; aplikasi yang sudah terpasang tetap ada sampai Anda menghapusnya.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.ConfigureServices.SideEffects" xml:space="preserve">
+    <value>Fax, Remote Registry, Remote Access, demo ritel, dan beberapa layanan yang jarang dipakai dimatikan, dan banyak layanan lain hanya berjalan saat dibutuhkan, jadi penggunaan pertama beberapa fitur (mencetak, Bluetooth, memindai) bisa sedikit lebih lama. Program yang bergantung pada layanan yang dimatikan bisa berhenti bekerja sampai Anda membatalkan perubahan.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.SideEffects" xml:space="preserve">
+    <value>OneDrive berhenti menyinkronkan: file tidak lagi dicadangkan ke cloud atau tersedia di perangkat lain, AutoSave Office ke OneDrive berhenti, dan folder yang dicadangkan (Desktop, Dokumen, Gambar) berhenti diperbarui online.</value>
+  </data>
 </root>

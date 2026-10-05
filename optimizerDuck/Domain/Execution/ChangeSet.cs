@@ -155,6 +155,13 @@ public sealed class ChangeSet
     ///     Records a step that modified the system on purpose with no way back, so no
     ///     compensation is expected for it.
     /// </summary>
+    /// <summary>
+    ///     Records a change a preview found would be made. Only a dry run records this; it carries
+    ///     no compensation because nothing was changed.
+    /// </summary>
+    public Change AddPlanned(string name, string description, ChangeDetail? detail = null) =>
+        Add(name, description, true, detail: detail, kind: ChangeKind.Change);
+
     public Change AddIrreversible(string name, string description) =>
         Add(name, description, true, kind: ChangeKind.Irreversible);
 

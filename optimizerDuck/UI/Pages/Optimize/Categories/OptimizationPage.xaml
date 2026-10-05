@@ -142,6 +142,16 @@
                             <TextBlock Text="{ext:Loc Optimizer.Menu.HideApplied}" />
                         </StackPanel>
                     </ui:ToggleSwitch>
+
+                    <ui:ToggleSwitch
+                        Margin="12,0,0,0"
+                        VerticalAlignment="Stretch"
+                        IsChecked="{Binding ViewModel.HideUnavailable}"
+                        Visibility="{Binding ViewModel.HasUnavailableOptimizations, Converter={StaticResource BooleanToVisibilityConverter}}">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{ext:Loc Optimizer.Menu.HideUnavailable}" />
+                        </StackPanel>
+                    </ui:ToggleSwitch>
                 </WrapPanel>
             </Border>
 
@@ -387,6 +397,29 @@
                                                 Cursor="Hand"
                                                 IsChecked="{Binding State.IsApplied, Mode=TwoWay}"
                                                 IsEnabled="{Binding DataContext.ViewModel.IsProcessing, RelativeSource={RelativeSource AncestorType=Page}, Converter={StaticResource InverseBooleanConverter}}" />
+                                            <ui:Button
+                                                HorizontalAlignment="Right"
+                                                VerticalAlignment="Bottom"
+                                                Command="{Binding DataContext.ViewModel.PreviewOptimizationCommand, RelativeSource={RelativeSource AncestorType=Page}}"
+                                                CommandParameter="{Binding}"
+                                                Cursor="Hand"
+                                                Icon="{ui:SymbolIcon Eye24}"
+                                                Style="{StaticResource TransparentButtonStyle}"
+                                                ToolTip="{ext:Loc Optimizer.Preview.Button}" />
+                                            <ui:Button
+                                                HorizontalAlignment="Right"
+                                                VerticalAlignment="Bottom"
+                                                Command="{Binding DataContext.ViewModel.ShowDetailsCommand, RelativeSource={RelativeSource AncestorType=Page}}"
+                                                CommandParameter="{Binding}"
+                                                Cursor="Hand"
+                                                Style="{StaticResource TransparentButtonStyle}"
+                                                ToolTip="{Binding SideEffects}"
+                                                ToolTipService.InitialShowDelay="150"
+                                                Visibility="{Binding HasSideEffects, Converter={StaticResource BooleanToVisibilityConverter}, FallbackValue=Collapsed}">
+                                                <ui:Button.Icon>
+                                                    <ui:SymbolIcon Foreground="{DynamicResource SystemFillColorCautionBrush}" Symbol="Warning24" />
+                                                </ui:Button.Icon>
+                                            </ui:Button>
                                             <ui:Button
                                                 HorizontalAlignment="Right"
                                                 VerticalAlignment="Bottom"

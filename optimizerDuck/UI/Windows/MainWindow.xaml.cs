@@ -10,6 +10,7 @@ using optimizerDuck.Domain.Configuration;
 using optimizerDuck.Resources.Languages;
 using optimizerDuck.Services.Configuration;
 using optimizerDuck.Services.Customize;
+using optimizerDuck.Services.Optimization;
 using optimizerDuck.UI.Controls;
 using optimizerDuck.UI.Dialogs;
 using optimizerDuck.UI.Pages;
@@ -36,6 +37,7 @@ public partial class MainWindow : IWindow
         IOptionsMonitor<AppSettings> appOptionsMonitor,
         ISnackbarService snackbarService,
         CustomizeRegistry customizeRegistry,
+        OptimizationRegistry optimizationRegistry,
         ILogger<MainWindow> logger
     )
     {
@@ -61,6 +63,14 @@ public partial class MainWindow : IWindow
         RootNavigation.SetPageProviderService(pageProvider);
 
         RootNavigation.Loaded += OnRootNavigationLoaded;
+
+        new GlobalSearch(
+            GlobalSearchBox,
+            RootNavigation,
+            pageProvider,
+            optimizationRegistry,
+            customizeRegistry
+        ).Attach();
     }
 
     internal void UpdatePendingIndicator(bool hasPending)

@@ -583,6 +583,18 @@ public class RevertManager(
                         return null;
                     }
 
+                    if (!RevertDataSeal.Verify(json))
+                    {
+                        LogCorruptRevertFile(
+                            logger,
+                            path,
+                            new InvalidOperationException(
+                                "Revert data signature is missing or does not match"
+                            )
+                        );
+                        return null;
+                    }
+
                     // A payload with no step array is unreadable rather than empty, so it is
                     // reported as corrupt and parked before any new write.
                     if (data.Steps is null)
@@ -650,7 +662,7 @@ public class RevertManager(
     {
         Directory.CreateDirectory(Path.GetDirectoryName(path)!);
 
-        var json = JsonConvert.SerializeObject(data, Formatting.Indented);
+        var json = RevertDataSeal.ToJson(data);
         var tempPath = path + ".tmp";
         await using (
             var stream = new FileStream(

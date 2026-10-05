@@ -2576,4 +2576,704 @@
   <data name="Error.Unhandled.LogHint" xml:space="preserve">
     <value>הפרטים נמצאים בקובץ היומן.</value>
   </data>
+  <data name="Sidebar.Profiles" xml:space="preserve">
+    <value>פרופילים</value>
+  </data>
+  <data name="Profiles.Header.Title" xml:space="preserve">
+    <value>פרופילים</value>
+  </data>
+  <data name="Profiles.Header.Description" xml:space="preserve">
+    <value>החל ערכת מיטובים מוכנה, העבר את ההגדרות שלך למחשב אחר או החזר את מה ש-Windows ביטל.</value>
+  </data>
+  <data name="Profiles.Presets.Header" xml:space="preserve">
+    <value>הגדרות מוכנות</value>
+  </data>
+  <data name="Profiles.Preset.Recommended.Title" xml:space="preserve">
+    <value>מומלץ</value>
+  </data>
+  <data name="Profiles.Preset.Recommended.Description" xml:space="preserve">
+    <value>כל המיטובים שמסומנים כבטוחים. נקודת התחלה טובה לרוב המחשבים השולחניים.</value>
+  </data>
+  <data name="Profiles.Preset.Gaming.Title" xml:space="preserve">
+    <value>גיימינג</value>
+  </data>
+  <data name="Profiles.Preset.Gaming.Description" xml:space="preserve">
+    <value>מיטובי ביצועים והשהיה, בלי המסוכנים שבהם.</value>
+  </data>
+  <data name="Profiles.Preset.Privacy.Title" xml:space="preserve">
+    <value>פרטיות</value>
+  </data>
+  <data name="Profiles.Preset.Privacy.Description" xml:space="preserve">
+    <value>כיבוי טלמטריה, פרסומות, הצעות ותכונות AI, בלי המיטובים המסוכנים.</value>
+  </data>
+  <data name="Profiles.Preset.Laptop.Title" xml:space="preserve">
+    <value>מחשב נייד</value>
+  </data>
+  <data name="Profiles.Preset.Laptop.Description" xml:space="preserve">
+    <value>מיטובים בטוחים שלא פוגעים בסוללה: בלי שינויים בתוכנית צריכת החשמל, ב-USB או ב-GPU.</value>
+  </data>
+  <data name="Profiles.Preset.Count" xml:space="preserve">
+    <value>מיטובים: {0}</value>
+  </data>
+  <data name="Profiles.Button.Preview" xml:space="preserve">
+    <value>תצוגה מקדימה</value>
+  </data>
+  <data name="Profiles.Button.Apply" xml:space="preserve">
+    <value>החל</value>
+  </data>
+  <data name="Profiles.File.Header" xml:space="preserve">
+    <value>ההגדרות שלך</value>
+  </data>
+  <data name="Profiles.Export.Title" xml:space="preserve">
+    <value>ייצוא לקובץ</value>
+  </data>
+  <data name="Profiles.Export.Description" xml:space="preserve">
+    <value>שומר את המיטובים שהוחלו במחשב זה ואת הגדרות ההתאמה האישית, כדי להחיל אותם במחשב אחר.</value>
+  </data>
+  <data name="Profiles.Export.Button" xml:space="preserve">
+    <value>ייצוא</value>
+  </data>
+  <data name="Profiles.Import.Title" xml:space="preserve">
+    <value>ייבוא והחלה</value>
+  </data>
+  <data name="Profiles.Import.Description" xml:space="preserve">
+    <value>פותח קובץ פרופיל ומחיל את תוכנו. פריטים שהמחשב לא תומך בהם ידולגו.</value>
+  </data>
+  <data name="Profiles.Import.Button" xml:space="preserve">
+    <value>ייבוא</value>
+  </data>
+  <data name="Profiles.FileFilter" xml:space="preserve">
+    <value>פרופיל optimizerDuck</value>
+  </data>
+  <data name="Profiles.Export.Success.Title" xml:space="preserve">
+    <value>הפרופיל נשמר</value>
+  </data>
+  <data name="Profiles.Export.Success.Message" xml:space="preserve">
+    <value>מיטובים: {0}. הגדרות התאמה אישית: {1}.</value>
+  </data>
+  <data name="Profiles.Export.Failed.Title" xml:space="preserve">
+    <value>לא ניתן לשמור את הפרופיל</value>
+  </data>
+  <data name="Profiles.Import.Failed.Title" xml:space="preserve">
+    <value>לא ניתן לפתוח את הפרופיל</value>
+  </data>
+  <data name="Profiles.Import.Failed.Message" xml:space="preserve">
+    <value>הקובץ אינו פרופיל של optimizerDuck, או שנוצר בגרסה חדשה יותר.</value>
+  </data>
+  <data name="Profiles.Apply.Confirm.Title" xml:space="preserve">
+    <value>להחיל את "{0}"?</value>
+  </data>
+  <data name="Profiles.Apply.Confirm.Message" xml:space="preserve">
+    <value>מיטובים להחלה: {0}. הגדרות התאמה אישית: {1}.
+
+פריטים שכבר הוחלו ופריטים שהמחשב לא תומך בהם ידולגו. ניתן לבטל כל מיטוב מאוחר יותר מהכרטיס שלו.</value>
+  </data>
+  <data name="Profiles.Apply.Title" xml:space="preserve">
+    <value>מחיל את "{0}"</value>
+  </data>
+  <data name="Profiles.Apply.Progress" xml:space="preserve">
+    <value>מחיל: {0}</value>
+  </data>
+  <data name="Profiles.Report.Title" xml:space="preserve">
+    <value>הפרופיל הוחל</value>
+  </data>
+  <data name="Profiles.Report.Summary" xml:space="preserve">
+    <value>הוחלו: {0}
+כבר פעילים: {1}
+לא נתמכים במחשב זה: {2}
+לא מזוהים בגרסה זו: {3}
+נכשלו: {4}</value>
+  </data>
+  <data name="Profiles.Report.Failures" xml:space="preserve">
+    <value>מה נכשל:</value>
+  </data>
+  <data name="Profiles.Preview.Title" xml:space="preserve">
+    <value>מה "{0}" מחיל</value>
+  </data>
+  <data name="Profiles.Preview.Empty" xml:space="preserve">
+    <value>הגדרה מוכנה זו אינה כוללת מיטובים בגרסה זו.</value>
+  </data>
+  <data name="Drift.Header" xml:space="preserve">
+    <value>שינויים ש-Windows ביטל</value>
+  </data>
+  <data name="Drift.Description" xml:space="preserve">
+    <value>עדכוני Windows ותוכנות אחרות מחזירים לפעמים הגדרות למצבן הקודם. הבדיקה רק קוראת את המצב הנוכחי ואינה משנה דבר.</value>
+  </data>
+  <data name="Drift.Button.Check" xml:space="preserve">
+    <value>בדוק עכשיו</value>
+  </data>
+  <data name="Drift.Button.Reapply" xml:space="preserve">
+    <value>החל מחדש</value>
+  </data>
+  <data name="Drift.Status.Checking" xml:space="preserve">
+    <value>בודק את המיטובים שהוחלו...</value>
+  </data>
+  <data name="Drift.Status.None" xml:space="preserve">
+    <value>כל המיטובים שהוחלו עדיין בתוקף.</value>
+  </data>
+  <data name="Drift.Status.Found" xml:space="preserve">
+    <value>מיטובים שבוטלו מאז שהוחלו: {0}</value>
+  </data>
+  <data name="Drift.Reapply.Title" xml:space="preserve">
+    <value>מחיל מחדש את המיטובים</value>
+  </data>
+  <data name="Dashboard.Drift.Title" xml:space="preserve">
+    <value>חלק מהמיטובים בוטלו</value>
+  </data>
+  <data name="Dashboard.Drift.Message" xml:space="preserve">
+    <value>Windows או תוכנה אחרת החזירו הגדרות ששונו על ידי מיטובים שהוחלו (מספר: {0}).</value>
+  </data>
+  <data name="Dashboard.Drift.Button" xml:space="preserve">
+    <value>סקירה והחלה מחדש</value>
+  </data>
+  <data name="Cli.Usage" xml:space="preserve">
+    <value>שימוש: optimizerDuck.exe &lt;פקודה&gt; [אפשרויות]
+
+פקודות:
+  --apply-profile &lt;file&gt;    החלת קובץ פרופיל
+  --apply-preset &lt;name&gt;     החלת הגדרה מוכנה: Recommended, Gaming, Privacy, Laptop
+  --export-profile &lt;file&gt;   שמירת מה שהוחל במחשב זה לקובץ פרופיל
+  --check-drift             הצגת המיטובים ש-Windows ביטל
+  --reapply-drift           החלה מחדש של המיטובים ש-Windows ביטל
+  --help                    הצגת עזרה זו
+
+אפשרויות:
+  --restore-point           יצירת נקודת שחזור לפני כל שינוי
+  --report &lt;file&gt;           כתיבת התוצאה לקובץ JSON
+  --accept-terms            קבלת תנאי השימוש (נדרש פעם אחת, לפני השינוי הראשון)
+
+הפעל ממסוף עם הרשאות מנהל כדי לראות את הפלט.
+קודי יציאה: 0 הצלחה, 1 כשלים או מיטובים שבוטלו, 2 שגיאת שימוש או קובץ.</value>
+  </data>
+  <data name="Cli.Error.UnknownArgument" xml:space="preserve">
+    <value>ארגומנט לא מוכר: {0}</value>
+  </data>
+  <data name="Cli.Error.OptionWithoutCommand" xml:space="preserve">
+    <value>צוינה אפשרות ללא פקודה.</value>
+  </data>
+  <data name="Cli.Error.OneCommand" xml:space="preserve">
+    <value>ניתן להריץ פקודה אחת בלבד בכל פעם.</value>
+  </data>
+  <data name="Cli.Error.MissingValue" xml:space="preserve">
+    <value>{0} דורש ערך.</value>
+  </data>
+  <data name="Cli.Error.Terms" xml:space="preserve">
+    <value>תנאי השימוש עדיין לא התקבלו. קרא אותם באפליקציה, או הוסף ‎--accept-terms כדי לקבל אותם.</value>
+  </data>
+  <data name="Cli.Error.UnknownPreset" xml:space="preserve">
+    <value>הגדרה מוכנה לא מוכרת: {0}. זמינות: {1}</value>
+  </data>
+  <data name="Optimizer.Preview.Button" xml:space="preserve">
+    <value>תצוגה מקדימה של השינויים</value>
+  </data>
+  <data name="Optimizer.Preview.Title" xml:space="preserve">
+    <value>מה "{0}" ישנה</value>
+  </data>
+  <data name="Optimizer.Preview.Summary" xml:space="preserve">
+    <value>שינויים לביצוע: {0}. כבר מוגדרים: {1}. עדיין לא שונה דבר.</value>
+  </data>
+  <data name="Optimizer.Preview.Nothing" xml:space="preserve">
+    <value>אין מה לשנות: המחשב כבר תואם.</value>
+  </data>
+  <data name="Optimizer.Preview.Failed.Title" xml:space="preserve">
+    <value>לא ניתן להציג תצוגה מקדימה של השינויים</value>
+  </data>
+  <data name="Optimizer.AI.DisablePaintAI.Name" xml:space="preserve">
+    <value>השבתת AI בצייר</value>
+  </data>
+  <data name="Optimizer.AI.DisablePaintAI.ShortDescription" xml:space="preserve">
+    <value>מכבה את Cocreator,‏ Image Creator, מילוי גנרטיבי ומחיקה גנרטיבית בצייר באמצעות המדיניות הרשמית של Microsoft.</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.Name" xml:space="preserve">
+    <value>השבתת AI בפנקס הרשימות</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.ShortDescription" xml:space="preserve">
+    <value>מסיר את שכתוב, סיכום ושאר תכונות ה-AI מפנקס הרשימות באמצעות המדיניות המתועדת שלו.</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.Name" xml:space="preserve">
+    <value>מניעת ריצה של Microsoft Edge ברקע</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.ShortDescription" xml:space="preserve">
+    <value>מכבה את האצת ההפעלה שטוענת את Edge מראש בכניסה, ואת מצב הרקע שמשאיר אותו פועל אחרי הסגירה. משחרר RAM גם אם אף פעם לא פותחים את Edge.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.Name" xml:space="preserve">
+    <value>כיבוי סרגל הצד, הקניות ואיסוף הנתונים ב-Edge</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.ShortDescription" xml:space="preserve">
+    <value>משתמש במדיניות של Edge כדי להסתיר את סרגל הצד (ואת Copilot שבו), לכבות את עוזר הקניות וההמלצות, ולהפסיק דיווחי התאמה אישית ונתוני אבחון אופציונליים.</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.Name" xml:space="preserve">
+    <value>החרגת מנהלי התקן מ-Windows Update</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.ShortDescription" xml:space="preserve">
+    <value>מונע מ-Windows Update להחליף מנהלי התקן שהתקנת בעצמך, כמו מנהל ההתקן של ה-GPU או השמע מהיצרן. מעכשיו תעדכן מנהלי התקן בעצמך.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.Name" xml:space="preserve">
+    <value>השבתת OneDrive</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.ShortDescription" xml:space="preserve">
+    <value>מונע מ-OneDrive לפעול ולסנכרן ומסיר אותו מסרגל הצד של סייר הקבצים. קבצים שכבר נמצאים בתיקיית OneDrive נשארים בדיסק, ושום דבר לא מוסר.</value>
+  </data>
+  <data name="Sidebar.Health" xml:space="preserve">
+    <value>תקינות המערכת</value>
+  </data>
+  <data name="Sidebar.ContextMenu" xml:space="preserve">
+    <value>תפריט הקשר</value>
+  </data>
+  <data name="Sidebar.OptionalFeatures" xml:space="preserve">
+    <value>תכונות Windows</value>
+  </data>
+  <data name="Sidebar.AppInstaller" xml:space="preserve">
+    <value>התקנת אפליקציות</value>
+  </data>
+  <data name="DiskCleanup.Item.DeliveryOptimization" xml:space="preserve">
+    <value>מטמון אופטימיזציית מסירה</value>
+  </data>
+  <data name="DiskCleanup.Item.DeliveryOptimization.Description" xml:space="preserve">
+    <value>קובצי עדכון ש-Windows שומר כדי לשתף עם מחשבים אחרים; בטוח למחוק</value>
+  </data>
+  <data name="DiskCleanup.Item.SystemErrorReports" xml:space="preserve">
+    <value>דוחות שגיאות מערכת</value>
+  </data>
+  <data name="DiskCleanup.Item.SystemErrorReports.Description" xml:space="preserve">
+    <value>דוחות קריסה ובעיות שדיווח השגיאות של Windows שומר לכל המשתמשים</value>
+  </data>
+  <data name="DiskCleanup.Item.ShaderCache" xml:space="preserve">
+    <value>מטמון Shader של DirectX</value>
+  </data>
+  <data name="DiskCleanup.Item.ShaderCache.Description" xml:space="preserve">
+    <value>Shaders מהודרים; משחקים בונים אותם מחדש בהפעלה הבאה, מה שיכול לתקן גמגומים אחרי עדכון מנהל התקן</value>
+  </data>
+  <data name="Health.Header.Title" xml:space="preserve">
+    <value>תקינות המערכת</value>
+  </data>
+  <data name="Health.Header.Description" xml:space="preserve">
+    <value>אבטחה, דיסקים וסוללה במבט אחד. שום דבר כאן לא משנה את המחשב.</value>
+  </data>
+  <data name="Health.Loading" xml:space="preserve">
+    <value>בודק את המחשב...</value>
+  </data>
+  <data name="Health.Button.Refresh" xml:space="preserve">
+    <value>רענון</value>
+  </data>
+  <data name="Health.Button.Export" xml:space="preserve">
+    <value>שמירת דוח</value>
+  </data>
+  <data name="Health.Button.BatteryReport" xml:space="preserve">
+    <value>דוח סוללה</value>
+  </data>
+  <data name="Health.Export.Failed.Title" xml:space="preserve">
+    <value>לא ניתן לשמור את הדוח</value>
+  </data>
+  <data name="Health.Status.Good" xml:space="preserve">
+    <value>תקין</value>
+  </data>
+  <data name="Health.Status.Info" xml:space="preserve">
+    <value>מידע</value>
+  </data>
+  <data name="Health.Status.Warning" xml:space="preserve">
+    <value>לתשומת לב</value>
+  </data>
+  <data name="Health.Status.Bad" xml:space="preserve">
+    <value>בעיה</value>
+  </data>
+  <data name="Health.Status.Unknown" xml:space="preserve">
+    <value>לא ידוע</value>
+  </data>
+  <data name="Health.Unknown" xml:space="preserve">
+    <value>Windows לא דיווח על כך.</value>
+  </data>
+  <data name="Health.State.On" xml:space="preserve">
+    <value>מופעל</value>
+  </data>
+  <data name="Health.State.Off" xml:space="preserve">
+    <value>כבוי</value>
+  </data>
+  <data name="Health.Check.SecureBoot" xml:space="preserve">
+    <value>אתחול מאובטח</value>
+  </data>
+  <data name="Health.SecureBoot.Off" xml:space="preserve">
+    <value>כבוי. הפעל אותו בהגדרות UEFI כדי לחסום נוזקות ברמת האתחול.</value>
+  </data>
+  <data name="Health.SecureBoot.Unsupported" xml:space="preserve">
+    <value>לא זמין: המחשב מאתחל במצב BIOS מדור קודם.</value>
+  </data>
+  <data name="Health.Check.Tpm" xml:space="preserve">
+    <value>TPM</value>
+  </data>
+  <data name="Health.Tpm.Ready" xml:space="preserve">
+    <value>TPM {0} מופעל ומוכן.</value>
+  </data>
+  <data name="Health.Tpm.NotReady" xml:space="preserve">
+    <value>TPM {0} קיים אך כבוי או לא מוכן. בדוק את הגדרות UEFI.</value>
+  </data>
+  <data name="Health.Tpm.None" xml:space="preserve">
+    <value>לא נמצא TPM. Windows 11 ו-BitLocker זקוקים לו.</value>
+  </data>
+  <data name="Health.Check.Vbs" xml:space="preserve">
+    <value>אבטחה מבוססת וירטואליזציה</value>
+  </data>
+  <data name="Health.Vbs.Running" xml:space="preserve">
+    <value>פועל. מגן על המערכת במחיר קטן בביצועי משחקים.</value>
+  </data>
+  <data name="Health.Vbs.Enabled" xml:space="preserve">
+    <value>מופעל אך לא פועל. ייתכן שחסרה הפעלה מחדש או הגדרת קושחה.</value>
+  </data>
+  <data name="Health.Check.MemoryIntegrity" xml:space="preserve">
+    <value>שלמות זיכרון</value>
+  </data>
+  <data name="Health.Check.Defender" xml:space="preserve">
+    <value>Microsoft Defender</value>
+  </data>
+  <data name="Health.Defender.On" xml:space="preserve">
+    <value>ההגנה בזמן אמת פועלת וההגדרות מעודכנות.</value>
+  </data>
+  <data name="Health.Defender.Off" xml:space="preserve">
+    <value>ההגנה בזמן אמת כבויה. ודא שאנטי-וירוס אחר מגן על המחשב.</value>
+  </data>
+  <data name="Health.Defender.Old" xml:space="preserve">
+    <value>ההגדרות בנות {0} ימים. הפעל את Windows Update.</value>
+  </data>
+  <data name="Health.Defender.Unknown" xml:space="preserve">
+    <value>אין סטטוס מ-Defender; ייתכן שבשימוש אנטי-וירוס אחר.</value>
+  </data>
+  <data name="Health.Check.Disk" xml:space="preserve">
+    <value>דיסק: {0}</value>
+  </data>
+  <data name="Health.Disk.Healthy" xml:space="preserve">
+    <value>תקין ({0})</value>
+  </data>
+  <data name="Health.Disk.Warning" xml:space="preserve">
+    <value>Windows מדווח על אזהרה ({0}). גבה את הנתונים שלך.</value>
+  </data>
+  <data name="Health.Disk.Unhealthy" xml:space="preserve">
+    <value>Windows מדווח שהדיסק כושל ({0}). גבה את הנתונים עכשיו.</value>
+  </data>
+  <data name="Health.Check.Trim" xml:space="preserve">
+    <value>SSD TRIM</value>
+  </data>
+  <data name="Health.Trim.Off" xml:space="preserve">
+    <value>כבוי. בלעדיו כונני SSD מאטים עם הזמן.</value>
+  </data>
+  <data name="Health.Check.FreeSpace" xml:space="preserve">
+    <value>שטח פנוי בכונן המערכת</value>
+  </data>
+  <data name="Health.FreeSpace.Value" xml:space="preserve">
+    <value>{0} פנויים מתוך {1} ({2}%)</value>
+  </data>
+  <data name="Health.Check.PendingRestart" xml:space="preserve">
+    <value>הפעלה מחדש ממתינה</value>
+  </data>
+  <data name="Health.PendingRestart.Yes" xml:space="preserve">
+    <value>Windows ממתין להפעלה מחדש כדי לסיים התקנת עדכונים.</value>
+  </data>
+  <data name="Health.PendingRestart.No" xml:space="preserve">
+    <value>אין צורך בהפעלה מחדש.</value>
+  </data>
+  <data name="Health.Check.BootTime" xml:space="preserve">
+    <value>משך האתחול האחרון</value>
+  </data>
+  <data name="Health.BootTime.Value" xml:space="preserve">
+    <value>{0} שניות, לפי מדידת Windows</value>
+  </data>
+  <data name="Health.BootTime.Unknown" xml:space="preserve">
+    <value>Windows עדיין לא תיעד משך אתחול.</value>
+  </data>
+  <data name="Health.Check.Battery" xml:space="preserve">
+    <value>בלאי סוללה</value>
+  </data>
+  <data name="Health.Battery.Value" xml:space="preserve">
+    <value>מחזיקה {0}% מהקיבולת המקורית.</value>
+  </data>
+  <data name="ContextMenu.Header.Title" xml:space="preserve">
+    <value>תפריט הקשר</value>
+  </data>
+  <data name="ContextMenu.Header.Description" xml:space="preserve">
+    <value>כבה פריטים שאפליקציות מוסיפות לתפריט הלחיצה הימנית בסייר הקבצים. שום דבר לא נמחק, והפעלה מחדש משחזרת את הפריט.</value>
+  </data>
+  <data name="ContextMenu.Search" xml:space="preserve">
+    <value>חיפוש פריטים</value>
+  </data>
+  <data name="ContextMenu.ShowWindows" xml:space="preserve">
+    <value>הצג פריטים של Windows</value>
+  </data>
+  <data name="ContextMenu.Loading" xml:space="preserve">
+    <value>קורא את פריטי תפריט ההקשר...</value>
+  </data>
+  <data name="ContextMenu.RestartNeeded" xml:space="preserve">
+    <value>הפעל מחדש את סייר הקבצים כדי לראות את השינוי.</value>
+  </data>
+  <data name="ContextMenu.RestartExplorer" xml:space="preserve">
+    <value>הפעלה מחדש של סייר הקבצים</value>
+  </data>
+  <data name="ContextMenu.Error.Title" xml:space="preserve">
+    <value>לא ניתן לשנות את הפריט</value>
+  </data>
+  <data name="ContextMenu.Location.Files" xml:space="preserve">
+    <value>קבצים</value>
+  </data>
+  <data name="ContextMenu.Location.Folders" xml:space="preserve">
+    <value>תיקיות</value>
+  </data>
+  <data name="ContextMenu.Location.Background" xml:space="preserve">
+    <value>רקע תיקייה</value>
+  </data>
+  <data name="ContextMenu.Location.Drives" xml:space="preserve">
+    <value>כוננים</value>
+  </data>
+  <data name="OptionalFeatures.Header.Title" xml:space="preserve">
+    <value>תכונות Windows</value>
+  </data>
+  <data name="OptionalFeatures.Header.Description" xml:space="preserve">
+    <value>הפעל או כבה תכונות אופציונליות של Windows, בדיוק כמו ב"הפעלה או ביטול של תכונות Windows". רוב השינויים מסתיימים אחרי הפעלה מחדש.</value>
+  </data>
+  <data name="OptionalFeatures.Search" xml:space="preserve">
+    <value>חיפוש תכונות</value>
+  </data>
+  <data name="OptionalFeatures.Loading" xml:space="preserve">
+    <value>מבקש מ-Windows את רשימת התכונות...</value>
+  </data>
+  <data name="OptionalFeatures.RestartNeeded" xml:space="preserve">
+    <value>הפעל מחדש את Windows כדי לסיים את השינוי.</value>
+  </data>
+  <data name="OptionalFeatures.Error.Title" xml:space="preserve">
+    <value>לא ניתן לשנות את התכונה</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Microsoft_Hyper_V_All" xml:space="preserve">
+    <value>Hyper-V: הרצת מכונות וירטואליות. עלול להוריד ביצועי משחקים ולהתנגש עם תוכנות וירטואליזציה אחרות.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Microsoft_Windows_Subsystem_Linux" xml:space="preserve">
+    <value>תת-מערכת Windows ל-Linux ‏(WSL): הרצת כלי Linux ב-Windows.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.VirtualMachinePlatform" xml:space="preserve">
+    <value>פלטפורמת מכונה וירטואלית: נדרשת ל-WSL 2 ולאפליקציות Android.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Containers_DisposableClientVM" xml:space="preserve">
+    <value>Windows Sandbox: שולחן עבודה חד-פעמי לניסוי בטוח של תוכנות לא מוכרות.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.NetFx3" xml:space="preserve">
+    <value>‏.NET Framework 3.5: נדרש לחלק מהתוכנות והמשחקים הישנים.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.SMB1Protocol" xml:space="preserve">
+    <value>SMB 1.0: פרוטוקול שיתוף קבצים מיושן ולא מאובטח. השאר כבוי אלא אם מכשיר ישן צריך אותו.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.TelnetClient" xml:space="preserve">
+    <value>לקוח Telnet: כלי שורת פקודה לבדיקת יציאות רשת.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Printing_PrintToPDFServices_Features" xml:space="preserve">
+    <value>Microsoft Print to PDF: שמירת כל מה שניתן להדפיס כקובץ PDF.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.MediaPlayback" xml:space="preserve">
+    <value>תכונות מדיה: Windows Media Player ורכיבי הפעלת מדיה שחלק מהאפליקציות תלויות בהם.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Recall" xml:space="preserve">
+    <value>Recall: מצלם את המסך לחיפוש מאוחר יותר. הסרתו מפנה מקום ושומרת על פרטיות הפעילות.</value>
+  </data>
+  <data name="AppInstaller.Header.Title" xml:space="preserve">
+    <value>התקנת אפליקציות</value>
+  </data>
+  <data name="AppInstaller.Header.Description" xml:space="preserve">
+    <value>בחר אפליקציות פופולריות והתקן את כולן בבת אחת דרך winget, מנהל החבילות של Microsoft. האפליקציות מגיעות ממקורותיהן הרשמיים.</value>
+  </data>
+  <data name="AppInstaller.Install" xml:space="preserve">
+    <value>התקן נבחרים ({0})</value>
+  </data>
+  <data name="AppInstaller.Loading" xml:space="preserve">
+    <value>מחפש את winget...</value>
+  </data>
+  <data name="AppInstaller.WingetMissing" xml:space="preserve">
+    <value>לא נמצא winget. התקן את "App Installer" מ-Microsoft Store וחזור לכאן.</value>
+  </data>
+  <data name="AppInstaller.Progress" xml:space="preserve">
+    <value>מתקין את {0}...</value>
+  </data>
+  <data name="AppInstaller.Success.Title" xml:space="preserve">
+    <value>האפליקציות הותקנו</value>
+  </data>
+  <data name="AppInstaller.Success.Message" xml:space="preserve">
+    <value>הותקנו או כבר מעודכנות: {0}</value>
+  </data>
+  <data name="AppInstaller.Error.Title" xml:space="preserve">
+    <value>לא ניתן היה להתקין חלק מהאפליקציות</value>
+  </data>
+  <data name="AppInstaller.Category.Browsers" xml:space="preserve">
+    <value>דפדפנים</value>
+  </data>
+  <data name="AppInstaller.Category.Utilities" xml:space="preserve">
+    <value>כלי עזר</value>
+  </data>
+  <data name="AppInstaller.Category.Media" xml:space="preserve">
+    <value>מדיה</value>
+  </data>
+  <data name="AppInstaller.Category.Gaming" xml:space="preserve">
+    <value>גיימינג</value>
+  </data>
+  <data name="AppInstaller.Category.Development" xml:space="preserve">
+    <value>פיתוח</value>
+  </data>
+  <data name="AppInstaller.Category.Runtimes" xml:space="preserve">
+    <value>סביבות ריצה</value>
+  </data>
+  <data name="Search.Global.Placeholder" xml:space="preserve">
+    <value>חיפוש מיטובים והגדרות</value>
+  </data>
+  <data name="Health.BootTime.Trend" xml:space="preserve">
+    <value>{0} שניות באתחול האחרון, {1} שניות בממוצע ב-{2} האתחולים האחרונים (לפי Windows)</value>
+  </data>
+  <data name="Update.Button.Install" xml:space="preserve">
+    <value>עדכן עכשיו</value>
+  </data>
+  <data name="Update.Confirm.Title" xml:space="preserve">
+    <value>עדכון לגרסה {0}</value>
+  </data>
+  <data name="Update.Confirm.Message" xml:space="preserve">
+    <value>optimizerDuck מוריד את הגרסה החדשה מ-GitHub, בודק אותה מול סכום SHA-256 שפורסם, מחליף את עצמו ומופעל מחדש. המיטובים שהוחלו ונתוני הביטול נשמרים.</value>
+  </data>
+  <data name="Update.Downloading" xml:space="preserve">
+    <value>מוריד ומאמת את העדכון...</value>
+  </data>
+  <data name="Update.Failed.Title" xml:space="preserve">
+    <value>לא ניתן להתקין את העדכון</value>
+  </data>
+  <data name="Update.Failed.Message" xml:space="preserve">
+    <value>לא ניתן היה להוריד או לאמת אותו. דף הגרסה נפתח כדי לעדכן ידנית.</value>
+  </data>
+  <data name="Optimizer.Menu.HideUnavailable" xml:space="preserve">
+    <value>הסתר לא נתמכים</value>
+  </data>
+  <data name="OptimizationDetailsDialog.SideEffects" xml:space="preserve">
+    <value>מה עלול להפסיק לעבוד</value>
+  </data>
+  <data name="Optimizer.Performance.DisableBackgroundApps.SideEffects" xml:space="preserve">
+    <value>אפליקציות Store כבר לא פועלות ברקע: דואר, לוח שנה, מזג אוויר ודומיהן מתעדכנות רק כשפותחים אותן, וחלק מההתראות מגיעות באיחור או לא מגיעות כלל.</value>
+  </data>
+  <data name="Optimizer.Performance.ConsolidateServiceHosts.SideEffects" xml:space="preserve">
+    <value>כמה שירותים חולקים שוב תהליך אחד, כך ששירות שקורס עלול להפיל איתו את האחרים באותו תהליך, ומנהל המשימות מציג אותם מקובצים במקום שורה לכל שירות.</value>
+  </data>
+  <data name="Optimizer.Performance.ProcessPriority.SideEffects" xml:space="preserve">
+    <value>עבודה שרצה ברקע (הורדות, קידוד וידאו, הידור) מקבלת פחות זמן מעבד כשאתה עובד בחלון אחר, ולכן עשויה להימשך יותר.</value>
+  </data>
+  <data name="Optimizer.Performance.OptimizeMultimediaScheduler.SideEffects" xml:space="preserve">
+    <value>בזמן שמשחק או מדיה פועלים, משימות רקע ותעבורת רשת מקבלות עדיפות נמוכה יותר, כך שהורדות וזרמים ברקע עלולים להאט.</value>
+  </data>
+  <data name="Optimizer.Performance.KeyboardLatencyOptimization.SideEffects" xml:space="preserve">
+    <value>מקשים לחוצים מתחילים לחזור מוקדם יותר ומהר יותר, מה שעלול להקליד תווים מיותרים אם האצבע נחה על מקש.</value>
+  </data>
+  <data name="Optimizer.Performance.DisableAccessibilityKeyboardHotkeys.SideEffects" xml:space="preserve">
+    <value>לחיצה חמש פעמים על Shift או החזקת Shift או Num Lock כבר לא מפעילה מקשים דביקים, מסננים או מתחלפים. מי שזקוק להם יכול להפעיל אותם בהגדרות &gt; נגישות &gt; מקלדת.</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.SideEffects" xml:space="preserve">
+    <value>Edge נפתח מעט לאט יותר, ואחרי סגירת החלון האחרון שלו הוא כבר לא מציג התראות ולא משלים הורדות.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableTelemetry.SideEffects" xml:space="preserve">
+    <value>מרכז המשוב מפסיק לעבוד, לא ניתן לקבל גרסאות Windows Insider, לחלק מפותרי הבעיות יש פחות נתונים, ו-Microsoft מקבלת פחות דוחות קריסה לתיקון בעיות בחומרה שלך.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableErrorReporting.SideEffects" xml:space="preserve">
+    <value>דוחות קריסה כבר לא נשמרים או נשלחים, כך שצג האמינות מציג פחות פרטים ו-Microsoft לא יכולה להציע תיקונים ידועים. מסייע תאימות התוכניות כבר לא מציע תיקונים לתוכניות ישנות.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableAdvertisingAndSuggestions.SideEffects" xml:space="preserve">
+    <value>אפליקציות כבר לא יכולות להציג פרסומות מותאמות אישית, Windows מפסיק להציע אפליקציות, טיפים ושלבי הגדרה, והצעות ההקלדה והכתב היד לומדות פחות ממה שאתה כותב.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableNewsAndInterests.SideEffects" xml:space="preserve">
+    <value>לחצן הווידג׳טים (מזג האוויר) בשורת המשימות ופיד החדשות נעלמים.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableActivityHistory.SideEffects" xml:space="preserve">
+    <value>Windows כבר לא שומר היסטוריה של האפליקציות, הקבצים והדפים שבהם השתמשת, כך שהצעות "המשך מאיפה שהפסקת" וציר הזמן מפסיקים לעבוד.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableLocationAndSensors.SideEffects" xml:space="preserve">
+    <value>אפליקציות כבר לא יכולות לקבל את המיקום שלך: מפות, מזג אוויר, איתור המכשיר שלי ואזור הזמן האוטומטי מפסיקים להשתמש בו, מפות לא מקוונות לא מתעדכנות, וחיישנים כמו סיבוב אוטומטי או חיישן אור עלולים להפסיק לעבוד.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableAutoLogger.SideEffects" xml:space="preserve">
+    <value>חלק מיומני האבחון המובנים (הפעלות Wi-Fi, רשת, מודל האפליקציות) כבר לא נרשמים, מה שמקשה על פתרון בעיות חיבור ואפליקציות.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableCortana.SideEffects" xml:space="preserve">
+    <value>Cortana כבר לא זמינה, והחיפוש כבר לא משתמש באינטרנט או במיקום שלך, כך שחיפוש ההתחלה מציג רק תוצאות מהמחשב.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableCopilot.SideEffects" xml:space="preserve">
+    <value>לחצן Copilot וקיצור הדרך Windows + C נעלמים, ולא ניתן להפעיל את Copilot מתוך Windows.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableContentDeliveryManager.SideEffects" xml:space="preserve">
+    <value>תמונות Windows Spotlight במסך הנעילה, "עובדות מעניינות" והאפליקציות המוצעות בתפריט התחל מפסיקות להתעדכן; אתה בוחר בעצמך תמונה או מצגת למסך הנעילה.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableFindMyDevice.SideEffects" xml:space="preserve">
+    <value>לא תוכל עוד לאתר או לנעול את המחשב מחשבון Microsoft שלך אם הוא אובד או נגנב.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableDeliveryOptimization.SideEffects" xml:space="preserve">
+    <value>עדכונים מורדים רק מ-Microsoft ולא ממחשבים אחרים ברשת, כך שבית או משרד עם כמה מחשבים צורכים יותר רוחב פס לעדכונים.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.SideEffects" xml:space="preserve">
+    <value>Edge מאבד את סרגל הצד (ואת Copilot שבו), השוואת מחירים וקופונים, וההגדרות שלו מציגות "הדפדפן שלך מנוהל על ידי הארגון" כי השינוי משתמש במדיניות.</value>
+  </data>
+  <data name="Optimizer.UserExperience.SpeedUpExplorerAndMenus.SideEffects" xml:space="preserve">
+    <value>אפליקציות ההפעלה נטענות כולן מיד אחרי הכניסה במקום בהדרגה, כך שהשניות הראשונות אחרי הכניסה עלולות להרגיש איטיות יותר במחשבים חלשים.</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableVisualEffects.SideEffects" xml:space="preserve">
+    <value>Windows נראה שטוח יותר: בלי שקיפות, בלי אנימציות בשורת המשימות, בלי צללים מתחת לשמות סמלי שולחן העבודה ובלי תצוגת Aero Peek בפינת שורת המשימות.</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableStartMenuWebSearch.SideEffects" xml:space="preserve">
+    <value>חיפוש ההתחלה מציג רק תוצאות מהמחשב: תוצאות האינטרנט של Bing ונקודות השיא בחיפוש נעלמות.</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableStartRecommended.SideEffects" xml:space="preserve">
+    <value>תפריט התחל כבר לא מציג קבצים שנפתחו לאחרונה ואפליקציות שהותקנו לאחרונה; תמצא אותם דרך סייר הקבצים או החיפוש.</value>
+  </data>
+  <data name="Optimizer.UserExperience.MaximizeUpdatePauseLimit.SideEffects" xml:space="preserve">
+    <value>ניתן להשהות עדכונים לזמן ארוך הרבה יותר. בזמן ההשהיה גם תיקוני אבטחה לא מותקנים, לכן חדש את העדכונים באופן קבוע.</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.SideEffects" xml:space="preserve">
+    <value>Windows Update כבר לא מתקין או מעדכן מנהלי התקן, כך שמנהל התקן למכשיר חדש או תיקון יצטרכו להגיע מאתר היצרן.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableUlps.SideEffects" xml:space="preserve">
+    <value>ה-GPU (או ה-GPU השני בתצורת CrossFire) כבר לא נכנס לשינה העמוקה ביותר במצב סרק, כך שצריכת החשמל והטמפרטורה בסרק עולות מעט.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisablePowerGating.SideEffects" xml:space="preserve">
+    <value>חלקים מה-GPU נשארים מופעלים גם בשולחן העבודה: צריכת חשמל, טמפרטורה ורעש מאווררים גבוהים יותר בסרק, וחיי סוללה קצרים יותר במחשבים ניידים.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableVideoClockGating.SideEffects" xml:space="preserve">
+    <value>מקודד ומפענח הווידאו נשארים מופעלים גם כשאינם בשימוש, מה שמעלה מעט את צריכת החשמל בסרק, בעיקר במחשבים ניידים.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableAspm.SideEffects" xml:space="preserve">
+    <value>קישור ה-PCIe ל-GPU כבר לא חוסך חשמל בסרק: צריכת חשמל מעט גבוהה יותר וחיי סוללה קצרים יותר במחשבים ניידים.</value>
+  </data>
+  <data name="Optimizer.Gpu.NvidiaDisableDynamicPstate.SideEffects" xml:space="preserve">
+    <value>ה-GPU נשאר בתדרים גבוהים גם בשולחן העבודה: צריכת חשמל, טמפרטורה ורעש מאווררים גבוהים יותר בסרק, וחיי סוללה קצרים יותר במחשבים ניידים.</value>
+  </data>
+  <data name="Optimizer.Gpu.NvidiaDisableAsyncPstates.SideEffects" xml:space="preserve">
+    <value>ה-GPU מחליף מצבי צריכת חשמל לעתים רחוקות יותר ועלול להישאר בתדרים גבוהים מהנדרש: יותר צריכת חשמל וחום בעומס קל.</value>
+  </data>
+  <data name="Optimizer.Gpu.IntelDisableAdaptiveVsync.SideEffects" xml:space="preserve">
+    <value>כשקצב הפריימים של משחק יורד מתחת לקצב הרענון של המסך, הוא עלול לגמגם במקום קריעת תמונה רגעית.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisableHibernateAndFastStartup.SideEffects" xml:space="preserve">
+    <value>מצב שינה עמוקה כבר לא זמין, והפעלה אחרי כיבוי לוקחת מעט יותר זמן כי ההפעלה המהירה כבויה. מחשבים ניידים כבר לא נכנסים לשינה עמוקה כשהסוללה חלשה.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisableUSBPowerSaving.SideEffects" xml:space="preserve">
+    <value>התקני USB נשארים מופעלים כל הזמן במקום להירדם בסרק, כך שמחשבים ניידים מאבדים מעט מחיי הסוללה.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.InstallOptimizerDuckPowerPlan.SideEffects" xml:space="preserve">
+    <value>המעבד פועל בתדרים גבוהים לעתים קרובות יותר: יותר צריכת חשמל וחום, מאווררים רועשים יותר בעומס קל וחיי סוללה קצרים בהרבה במחשבים ניידים. מנהל המשימות עשוי להציג ניצולת מעבד גבוהה גם בסרק.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisablePowerSaving.SideEffects" xml:space="preserve">
+    <value>Windows מפסיק להגביל אפליקציות רקע לחיסכון בחשמל, כך שמחשבים ניידים צורכים יותר סוללה, והוא כבר לא מנסה לשחזר יציאות USB שמשכו יותר מדי חשמל.</value>
+  </data>
+  <data name="Optimizer.AI.DisableRecall.SideEffects" xml:space="preserve">
+    <value>Recall מפסיק לשמור תמונות מצב ומוחק את אלו שכבר נשמרו, כך שלא תוכל עוד לחפש דברים שראית קודם על המסך.</value>
+  </data>
+  <data name="Optimizer.AI.DisableClickToDo.SideEffects" xml:space="preserve">
+    <value>Click to Do ‏(מקש Windows + לחיצה) כבר לא זמין, כך שלא ניתן להריץ פעולות AI מהירות על טקסט או תמונות במסך.</value>
+  </data>
+  <data name="Optimizer.AI.DisablePaintAI.SideEffects" xml:space="preserve">
+    <value>Cocreator,‏ Image Creator, מילוי גנרטיבי ומחיקה גנרטיבית נעלמים מהצייר; כלי הציור הרגילים נשארים.</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.SideEffects" xml:space="preserve">
+    <value>שכתוב, סיכום ושאר אפשרויות ה-AI נעלמים מפנקס הרשימות; עריכת הטקסט עובדת כרגיל.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisablePreinstalledApps.SideEffects" xml:space="preserve">
+    <value>Windows מפסיק להתקין מעצמו אפליקציות ומשחקים מוצעים; אפליקציות שכבר מותקנות נשארות עד שתסיר אותן.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.ConfigureServices.SideEffects" xml:space="preserve">
+    <value>פקס, רישום מרוחק, גישה מרחוק, מצב ההדגמה לחנויות ועוד כמה שירותים נדירים נכבים, ושירותים רבים אחרים מופעלים רק כשצריך, כך ששימוש ראשון בחלק מהתכונות (הדפסה, Bluetooth, סריקה) עלול לקחת מעט יותר זמן. תוכנה שתלויה בשירות כבוי עלולה להפסיק לעבוד עד שתבטל את השינוי.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.SideEffects" xml:space="preserve">
+    <value>OneDrive מפסיק לסנכרן: קבצים כבר לא מגובים לענן ולא זמינים במכשירים האחרים שלך, השמירה האוטומטית של Office ל-OneDrive נעצרת, ותיקיות מגובות (שולחן העבודה, מסמכים, תמונות) מפסיקות להתעדכן ברשת.</value>
+  </data>
 </root>

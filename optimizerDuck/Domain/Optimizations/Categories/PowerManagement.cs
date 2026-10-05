@@ -74,6 +74,16 @@ public class PowerManagement : LocalizedObject, IOptimizationCategory
                 return OpResult.Success();
             }
 
+            if (call.DryRun)
+            {
+                call.Changes.AddPlanned(
+                    ServiceStrings.HibernationName,
+                    ServiceStrings.HibernationDescriptionDisable,
+                    new HibernationDetail { PreviousPresent = wasPresent, NewPresent = false }
+                );
+                return OpResult.Success();
+            }
+
             var result = HibernationService.SetHibernationFile(present: false);
             var revert = new HibernationRevertStep { WasPresent = wasPresent };
 
@@ -148,6 +158,24 @@ public class PowerManagement : LocalizedObject, IOptimizationCategory
                     ServiceStrings.UsbPowerInfoNoDevices,
                     new UsbPowerDetail { DeviceCount = 0, Reason = UsbReasonNoDevices }
                 );
+                return Task.FromResult(context.Changes.ToApplyResult());
+            }
+
+            if (context.DryRun)
+            {
+                var enabled = captured.Count(static state => state.Enable);
+                if (enabled == 0)
+                    context.Changes.AddSkip(
+                        ServiceStrings.UsbPowerName,
+                        ServiceStrings.UsbPowerInfoAlreadyConfigured,
+                        new UsbPowerDetail { DeviceCount = 0 }
+                    );
+                else
+                    context.Changes.AddPlanned(
+                        ServiceStrings.UsbPowerName,
+                        ServiceStrings.Format(ServiceStrings.UsbPowerDescriptionDisable, enabled),
+                        new UsbPowerDetail { DeviceCount = enabled }
+                    );
                 return Task.FromResult(context.Changes.ToApplyResult());
             }
 
@@ -263,16 +291,22 @@ public class PowerManagement : LocalizedObject, IOptimizationCategory
             OptimizationContext context
         )
         {
+            // powercfg imports this file elevated, so it is written where only administrators
+            // can replace it.
             var powerPlanPath = Path.Combine(
-                Shared.AssetsDirectory,
+                Shared.SecureDataDirectory,
                 "PowerPlans",
                 "optimizerDuck.pow"
             );
             if (
-                !EmbeddedResourceHelper.TryExtract(
-                    "PowerPlans.optimizerDuck.pow",
-                    powerPlanPath,
-                    true
+                !context.DryRun
+                && (
+                    !SecureDirectory.EnsureAdminOnly(Shared.SecureDataDirectory, context.Logger)
+                    || !EmbeddedResourceHelper.TryExtract(
+                        "PowerPlans.optimizerDuck.pow",
+                        powerPlanPath,
+                        true
+                    )
                 )
             )
             {

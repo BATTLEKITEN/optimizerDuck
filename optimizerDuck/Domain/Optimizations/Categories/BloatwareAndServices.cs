@@ -341,4 +341,39 @@ public class BloatwareAndServices : LocalizedObject, IOptimizationCategory
             return context.Changes.ToApplyResult();
         }
     }
+
+    [Optimization(
+        Id = "95DE1F76-98AC-4411-BF89-66B3A67B1361",
+        Risk = OptimizationRisk.Moderate,
+        Tags = OptimizationTags.Privacy
+            | OptimizationTags.Performance
+            | OptimizationTags.NetworkRequired
+    )]
+    public class DisableOneDrive : BaseOptimization
+    {
+        public override Task<ApplyResult> ApplyAsync(
+            IProgress<ProcessingProgress> progress,
+            OptimizationContext context
+        )
+        {
+            // The documented policy that stops OneDrive from starting and syncing, plus the
+            // shell flag that removes it from the File Explorer navigation pane. Files already
+            // in the OneDrive folder stay on disk; nothing is uninstalled.
+            RegistryService.Write(
+                context,
+                new RegistryItem(
+                    @"HKLM\SOFTWARE\Policies\Microsoft\Windows\OneDrive",
+                    "DisableFileSyncNGSC",
+                    1
+                ),
+                new RegistryItem(
+                    @"HKCU\Software\Classes\CLSID\{018D5C66-4533-4307-9B53-224DE2ED1FE6}",
+                    "System.IsPinnedToNameSpaceTree",
+                    0
+                )
+            );
+            context.Logger.LogInformation("Disabled OneDrive");
+            return Task.FromResult(context.Changes.ToApplyResult());
+        }
+    }
 }

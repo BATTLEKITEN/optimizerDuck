@@ -2510,4 +2510,704 @@ En son özelliklerden, iyileştirmelerden ve hata düzeltmelerinden yararlanmak 
   <data name="Error.Unhandled.LogHint" xml:space="preserve">
     <value>Ayrıntılar günlük dosyasında.</value>
   </data>
+  <data name="Sidebar.Profiles" xml:space="preserve">
+    <value>Profiller</value>
+  </data>
+  <data name="Profiles.Header.Title" xml:space="preserve">
+    <value>Profiller</value>
+  </data>
+  <data name="Profiles.Header.Description" xml:space="preserve">
+    <value>Hazır bir optimizasyon setini uygulayın, ayarlarınızı başka bir PC’ye taşıyın veya Windows’un geri aldıklarını yeniden uygulayın.</value>
+  </data>
+  <data name="Profiles.Presets.Header" xml:space="preserve">
+    <value>Hazır ayarlar</value>
+  </data>
+  <data name="Profiles.Preset.Recommended.Title" xml:space="preserve">
+    <value>Önerilen</value>
+  </data>
+  <data name="Profiles.Preset.Recommended.Description" xml:space="preserve">
+    <value>Güvenli olarak işaretlenen tüm optimizasyonlar. Çoğu masaüstü PC için iyi bir başlangıç.</value>
+  </data>
+  <data name="Profiles.Preset.Gaming.Title" xml:space="preserve">
+    <value>Oyun</value>
+  </data>
+  <data name="Profiles.Preset.Gaming.Description" xml:space="preserve">
+    <value>Riskli olanlar hariç performans ve gecikme optimizasyonları.</value>
+  </data>
+  <data name="Profiles.Preset.Privacy.Title" xml:space="preserve">
+    <value>Gizlilik</value>
+  </data>
+  <data name="Profiles.Preset.Privacy.Description" xml:space="preserve">
+    <value>Telemetri, reklamlar, öneriler ve yapay zekâ özellikleri kapatılır; riskli optimizasyonlar hariç.</value>
+  </data>
+  <data name="Profiles.Preset.Laptop.Title" xml:space="preserve">
+    <value>Dizüstü</value>
+  </data>
+  <data name="Profiles.Preset.Laptop.Description" xml:space="preserve">
+    <value>Pil ömrünü azaltmayan güvenli optimizasyonlar: güç planı, USB veya GPU değişikliği yok.</value>
+  </data>
+  <data name="Profiles.Preset.Count" xml:space="preserve">
+    <value>Optimizasyon: {0}</value>
+  </data>
+  <data name="Profiles.Button.Preview" xml:space="preserve">
+    <value>Önizle</value>
+  </data>
+  <data name="Profiles.Button.Apply" xml:space="preserve">
+    <value>Uygula</value>
+  </data>
+  <data name="Profiles.File.Header" xml:space="preserve">
+    <value>Ayarlarınız</value>
+  </data>
+  <data name="Profiles.Export.Title" xml:space="preserve">
+    <value>Dosyaya aktar</value>
+  </data>
+  <data name="Profiles.Export.Description" xml:space="preserve">
+    <value>Bu PC’de uygulanan optimizasyonları ve özelleştirme ayarlarınızı kaydeder; böylece başka bir yerde uygulayabilirsiniz.</value>
+  </data>
+  <data name="Profiles.Export.Button" xml:space="preserve">
+    <value>Dışa aktar</value>
+  </data>
+  <data name="Profiles.Import.Title" xml:space="preserve">
+    <value>İçe aktar ve uygula</value>
+  </data>
+  <data name="Profiles.Import.Description" xml:space="preserve">
+    <value>Bir profil dosyasını açar ve içeriğini uygular. Bu PC’nin desteklemediği öğeler atlanır.</value>
+  </data>
+  <data name="Profiles.Import.Button" xml:space="preserve">
+    <value>İçe aktar</value>
+  </data>
+  <data name="Profiles.FileFilter" xml:space="preserve">
+    <value>optimizerDuck profili</value>
+  </data>
+  <data name="Profiles.Export.Success.Title" xml:space="preserve">
+    <value>Profil kaydedildi</value>
+  </data>
+  <data name="Profiles.Export.Success.Message" xml:space="preserve">
+    <value>Optimizasyon: {0}. Özelleştirme ayarı: {1}.</value>
+  </data>
+  <data name="Profiles.Export.Failed.Title" xml:space="preserve">
+    <value>Profil kaydedilemedi</value>
+  </data>
+  <data name="Profiles.Import.Failed.Title" xml:space="preserve">
+    <value>Profil açılamadı</value>
+  </data>
+  <data name="Profiles.Import.Failed.Message" xml:space="preserve">
+    <value>Dosya bir optimizerDuck profili değil ya da daha yeni bir sürümle oluşturulmuş.</value>
+  </data>
+  <data name="Profiles.Apply.Confirm.Title" xml:space="preserve">
+    <value>"{0}" uygulansın mı?</value>
+  </data>
+  <data name="Profiles.Apply.Confirm.Message" xml:space="preserve">
+    <value>Uygulanacak optimizasyon: {0}. Özelleştirme ayarı: {1}.
+
+Zaten uygulanmış ve bu PC’nin desteklemediği öğeler atlanır. Her optimizasyon daha sonra kendi kartından geri alınabilir.</value>
+  </data>
+  <data name="Profiles.Apply.Title" xml:space="preserve">
+    <value>"{0}" uygulanıyor</value>
+  </data>
+  <data name="Profiles.Apply.Progress" xml:space="preserve">
+    <value>Uygulanıyor: {0}</value>
+  </data>
+  <data name="Profiles.Report.Title" xml:space="preserve">
+    <value>Profil uygulandı</value>
+  </data>
+  <data name="Profiles.Report.Summary" xml:space="preserve">
+    <value>Uygulanan: {0}
+Zaten uygulanmış: {1}
+Bu PC’de desteklenmeyen: {2}
+Bu sürümün tanımadığı: {3}
+Başarısız: {4}</value>
+  </data>
+  <data name="Profiles.Report.Failures" xml:space="preserve">
+    <value>Başarısız olanlar:</value>
+  </data>
+  <data name="Profiles.Preview.Title" xml:space="preserve">
+    <value>"{0}" neleri uygular</value>
+  </data>
+  <data name="Profiles.Preview.Empty" xml:space="preserve">
+    <value>Bu hazır ayar bu sürümde hiçbir optimizasyon içermiyor.</value>
+  </data>
+  <data name="Drift.Header" xml:space="preserve">
+    <value>Windows’un geri aldığı değişiklikler</value>
+  </data>
+  <data name="Drift.Description" xml:space="preserve">
+    <value>Windows güncellemeleri ve diğer programlar bazen ayarları geri alır. Bu kontrol yalnızca mevcut durumu okur, hiçbir şeyi değiştirmez.</value>
+  </data>
+  <data name="Drift.Button.Check" xml:space="preserve">
+    <value>Şimdi kontrol et</value>
+  </data>
+  <data name="Drift.Button.Reapply" xml:space="preserve">
+    <value>Yeniden uygula</value>
+  </data>
+  <data name="Drift.Status.Checking" xml:space="preserve">
+    <value>Uygulanan optimizasyonlar kontrol ediliyor...</value>
+  </data>
+  <data name="Drift.Status.None" xml:space="preserve">
+    <value>Uygulanan tüm optimizasyonlar hâlâ geçerli.</value>
+  </data>
+  <data name="Drift.Status.Found" xml:space="preserve">
+    <value>Uygulandıktan sonra geri alınan optimizasyon: {0}</value>
+  </data>
+  <data name="Drift.Reapply.Title" xml:space="preserve">
+    <value>Optimizasyonlar yeniden uygulanıyor</value>
+  </data>
+  <data name="Dashboard.Drift.Title" xml:space="preserve">
+    <value>Bazı optimizasyonlar geri alındı</value>
+  </data>
+  <data name="Dashboard.Drift.Message" xml:space="preserve">
+    <value>Windows veya başka bir program, uygulanan {0} optimizasyonun değiştirdiği ayarları geri aldı.</value>
+  </data>
+  <data name="Dashboard.Drift.Button" xml:space="preserve">
+    <value>İncele ve yeniden uygula</value>
+  </data>
+  <data name="Cli.Usage" xml:space="preserve">
+    <value>Kullanım: optimizerDuck.exe &lt;komut&gt; [seçenekler]
+
+Komutlar:
+  --apply-profile &lt;file&gt;    Bir profil dosyasını uygular
+  --apply-preset &lt;name&gt;     Hazır ayar uygular: Recommended, Gaming, Privacy, Laptop
+  --export-profile &lt;file&gt;   Bu PC’de uygulananları bir profil dosyasına kaydeder
+  --check-drift             Windows’un geri aldığı optimizasyonları listeler
+  --reapply-drift           Windows’un geri aldığı optimizasyonları yeniden uygular
+  --help                    Bu yardımı gösterir
+
+Seçenekler:
+  --restore-point           Herhangi bir değişiklikten önce geri yükleme noktası oluşturur
+  --report &lt;file&gt;           Sonucu bir JSON dosyasına yazar
+  --accept-terms            Kullanım koşullarını kabul eder (ilk değişiklikten önce bir kez gerekir)
+
+Çıktıyı görmek için yönetici olarak açılmış bir terminalden çalıştırın.
+Çıkış kodları: 0 başarılı, 1 hata veya geri alınmış optimizasyon bulundu, 2 kullanım veya dosya hatası.</value>
+  </data>
+  <data name="Cli.Error.UnknownArgument" xml:space="preserve">
+    <value>Bilinmeyen bağımsız değişken: {0}</value>
+  </data>
+  <data name="Cli.Error.OptionWithoutCommand" xml:space="preserve">
+    <value>Komut olmadan bir seçenek verildi.</value>
+  </data>
+  <data name="Cli.Error.OneCommand" xml:space="preserve">
+    <value>Aynı anda yalnızca bir komut çalıştırılabilir.</value>
+  </data>
+  <data name="Cli.Error.MissingValue" xml:space="preserve">
+    <value>{0} için bir değer gerekli.</value>
+  </data>
+  <data name="Cli.Error.Terms" xml:space="preserve">
+    <value>Kullanım koşulları henüz kabul edilmedi. Uygulamada okuyun veya kabul etmek için --accept-terms ekleyin.</value>
+  </data>
+  <data name="Cli.Error.UnknownPreset" xml:space="preserve">
+    <value>Bilinmeyen hazır ayar: {0}. Kullanılabilir: {1}</value>
+  </data>
+  <data name="Optimizer.Preview.Button" xml:space="preserve">
+    <value>Değişiklikleri önizle</value>
+  </data>
+  <data name="Optimizer.Preview.Title" xml:space="preserve">
+    <value>"{0}" neleri değiştirir</value>
+  </data>
+  <data name="Optimizer.Preview.Summary" xml:space="preserve">
+    <value>Yapılacak değişiklik: {0}. Zaten ayarlı: {1}. Henüz hiçbir şey değiştirilmedi.</value>
+  </data>
+  <data name="Optimizer.Preview.Nothing" xml:space="preserve">
+    <value>Değiştirilecek bir şey yok: Bu PC zaten uygun.</value>
+  </data>
+  <data name="Optimizer.Preview.Failed.Title" xml:space="preserve">
+    <value>Değişiklikler önizlenemedi</value>
+  </data>
+  <data name="Optimizer.AI.DisablePaintAI.Name" xml:space="preserve">
+    <value>Paint’te yapay zekâyı kapat</value>
+  </data>
+  <data name="Optimizer.AI.DisablePaintAI.ShortDescription" xml:space="preserve">
+    <value>Paint’teki Cocreator, Image Creator, üretken dolgu ve üretken silme özelliklerini Microsoft’un resmi ilkeleriyle kapatır.</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.Name" xml:space="preserve">
+    <value>Not Defteri’nde yapay zekâyı kapat</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.ShortDescription" xml:space="preserve">
+    <value>Belgelenmiş ilkeyle Not Defteri’nden Yeniden Yaz, Özetle ve diğer yapay zekâ özelliklerini kaldırır.</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.Name" xml:space="preserve">
+    <value>Microsoft Edge’in arka planda çalışmasını durdur</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.ShortDescription" xml:space="preserve">
+    <value>Oturum açılırken Edge’i önceden yükleyen başlangıç hızlandırmayı ve kapatıldıktan sonra çalışmaya devam ettiren arka plan modunu kapatır. Edge’i hiç açmasanız bile RAM kazandırır.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.Name" xml:space="preserve">
+    <value>Edge kenar çubuğunu, alışverişi ve veri toplamayı kapat</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.ShortDescription" xml:space="preserve">
+    <value>Edge ilkeleriyle kenar çubuğunu (ve içindeki Copilot’u) gizler, alışveriş yardımcısını ve önerileri kapatır, kişiselleştirme raporlarını ve isteğe bağlı tanılama verilerini durdurur.</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.Name" xml:space="preserve">
+    <value>Sürücüleri Windows Update’ten hariç tut</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.ShortDescription" xml:space="preserve">
+    <value>Windows Update’in kendi yüklediğiniz sürücüleri (örneğin üreticinin GPU veya ses sürücüsü) değiştirmesini engeller. Sürücüleri bundan sonra kendiniz güncellersiniz.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.Name" xml:space="preserve">
+    <value>OneDrive’ı devre dışı bırak</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.ShortDescription" xml:space="preserve">
+    <value>OneDrive’ın başlamasını ve eşitlemesini durdurur, Dosya Gezgini kenar çubuğundan kaldırır. OneDrive klasöründeki dosyalar diskte kalır; hiçbir şey kaldırılmaz.</value>
+  </data>
+  <data name="Sidebar.Health" xml:space="preserve">
+    <value>Sistem durumu</value>
+  </data>
+  <data name="Sidebar.ContextMenu" xml:space="preserve">
+    <value>Bağlam menüsü</value>
+  </data>
+  <data name="Sidebar.OptionalFeatures" xml:space="preserve">
+    <value>Windows özellikleri</value>
+  </data>
+  <data name="Sidebar.AppInstaller" xml:space="preserve">
+    <value>Uygulama yükle</value>
+  </data>
+  <data name="DiskCleanup.Item.DeliveryOptimization" xml:space="preserve">
+    <value>Teslim İyileştirme önbelleği</value>
+  </data>
+  <data name="DiskCleanup.Item.DeliveryOptimization.Description" xml:space="preserve">
+    <value>Windows’un diğer PC’lerle paylaşmak için tuttuğu güncelleme dosyaları; silinmesi güvenlidir</value>
+  </data>
+  <data name="DiskCleanup.Item.SystemErrorReports" xml:space="preserve">
+    <value>Sistem hata raporları</value>
+  </data>
+  <data name="DiskCleanup.Item.SystemErrorReports.Description" xml:space="preserve">
+    <value>Windows Hata Bildirimi’nin tüm kullanıcılar için sakladığı çökme ve sorun raporları</value>
+  </data>
+  <data name="DiskCleanup.Item.ShaderCache" xml:space="preserve">
+    <value>DirectX gölgelendirici önbelleği</value>
+  </data>
+  <data name="DiskCleanup.Item.ShaderCache.Description" xml:space="preserve">
+    <value>Derlenmiş gölgelendiriciler; oyunlar bir sonraki açılışta yeniden oluşturur, sürücü güncellemesinden sonraki takılmaları giderebilir</value>
+  </data>
+  <data name="Health.Header.Title" xml:space="preserve">
+    <value>Sistem durumu</value>
+  </data>
+  <data name="Health.Header.Description" xml:space="preserve">
+    <value>Güvenlik, diskler ve pil tek bakışta. Burada PC’nizde hiçbir şey değiştirilmez.</value>
+  </data>
+  <data name="Health.Loading" xml:space="preserve">
+    <value>PC’niz kontrol ediliyor...</value>
+  </data>
+  <data name="Health.Button.Refresh" xml:space="preserve">
+    <value>Yenile</value>
+  </data>
+  <data name="Health.Button.Export" xml:space="preserve">
+    <value>Raporu kaydet</value>
+  </data>
+  <data name="Health.Button.BatteryReport" xml:space="preserve">
+    <value>Pil raporu</value>
+  </data>
+  <data name="Health.Export.Failed.Title" xml:space="preserve">
+    <value>Rapor kaydedilemedi</value>
+  </data>
+  <data name="Health.Status.Good" xml:space="preserve">
+    <value>İyi</value>
+  </data>
+  <data name="Health.Status.Info" xml:space="preserve">
+    <value>Bilgi</value>
+  </data>
+  <data name="Health.Status.Warning" xml:space="preserve">
+    <value>Dikkat</value>
+  </data>
+  <data name="Health.Status.Bad" xml:space="preserve">
+    <value>Sorun</value>
+  </data>
+  <data name="Health.Status.Unknown" xml:space="preserve">
+    <value>Bilinmiyor</value>
+  </data>
+  <data name="Health.Unknown" xml:space="preserve">
+    <value>Windows bunu bildirmedi.</value>
+  </data>
+  <data name="Health.State.On" xml:space="preserve">
+    <value>Açık</value>
+  </data>
+  <data name="Health.State.Off" xml:space="preserve">
+    <value>Kapalı</value>
+  </data>
+  <data name="Health.Check.SecureBoot" xml:space="preserve">
+    <value>Güvenli Önyükleme</value>
+  </data>
+  <data name="Health.SecureBoot.Off" xml:space="preserve">
+    <value>Kapalı. Önyükleme düzeyindeki kötü amaçlı yazılımları engellemek için UEFI ayarlarından açın.</value>
+  </data>
+  <data name="Health.SecureBoot.Unsupported" xml:space="preserve">
+    <value>Kullanılamıyor: PC eski BIOS modunda başlıyor.</value>
+  </data>
+  <data name="Health.Check.Tpm" xml:space="preserve">
+    <value>TPM</value>
+  </data>
+  <data name="Health.Tpm.Ready" xml:space="preserve">
+    <value>TPM {0} açık ve hazır.</value>
+  </data>
+  <data name="Health.Tpm.NotReady" xml:space="preserve">
+    <value>TPM {0} var ancak kapalı veya hazır değil. UEFI ayarlarını kontrol edin.</value>
+  </data>
+  <data name="Health.Tpm.None" xml:space="preserve">
+    <value>TPM bulunamadı. Windows 11 ve BitLocker için gereklidir.</value>
+  </data>
+  <data name="Health.Check.Vbs" xml:space="preserve">
+    <value>Sanallaştırma tabanlı güvenlik</value>
+  </data>
+  <data name="Health.Vbs.Running" xml:space="preserve">
+    <value>Çalışıyor. Sistemi korur, oyun performansından biraz götürür.</value>
+  </data>
+  <data name="Health.Vbs.Enabled" xml:space="preserve">
+    <value>Etkin ancak çalışmıyor. Yeniden başlatma veya bir donanım yazılımı ayarı eksik olabilir.</value>
+  </data>
+  <data name="Health.Check.MemoryIntegrity" xml:space="preserve">
+    <value>Bellek bütünlüğü</value>
+  </data>
+  <data name="Health.Check.Defender" xml:space="preserve">
+    <value>Microsoft Defender</value>
+  </data>
+  <data name="Health.Defender.On" xml:space="preserve">
+    <value>Gerçek zamanlı koruma açık ve tanımlar güncel.</value>
+  </data>
+  <data name="Health.Defender.Off" xml:space="preserve">
+    <value>Gerçek zamanlı koruma kapalı. Bu PC’yi başka bir antivirüsün koruduğundan emin olun.</value>
+  </data>
+  <data name="Health.Defender.Old" xml:space="preserve">
+    <value>Tanımlar {0} gün önceye ait. Windows Update’i çalıştırın.</value>
+  </data>
+  <data name="Health.Defender.Unknown" xml:space="preserve">
+    <value>Defender’dan durum alınamadı; başka bir antivirüs kullanılıyor olabilir.</value>
+  </data>
+  <data name="Health.Check.Disk" xml:space="preserve">
+    <value>Disk: {0}</value>
+  </data>
+  <data name="Health.Disk.Healthy" xml:space="preserve">
+    <value>Sağlıklı ({0})</value>
+  </data>
+  <data name="Health.Disk.Warning" xml:space="preserve">
+    <value>Windows bir uyarı bildiriyor ({0}). Verilerinizi yedekleyin.</value>
+  </data>
+  <data name="Health.Disk.Unhealthy" xml:space="preserve">
+    <value>Windows bu diskin arızalandığını bildiriyor ({0}). Verilerinizi hemen yedekleyin.</value>
+  </data>
+  <data name="Health.Check.Trim" xml:space="preserve">
+    <value>SSD TRIM</value>
+  </data>
+  <data name="Health.Trim.Off" xml:space="preserve">
+    <value>Kapalı. TRIM olmadan SSD’ler zamanla yavaşlar.</value>
+  </data>
+  <data name="Health.Check.FreeSpace" xml:space="preserve">
+    <value>Sistem sürücüsündeki boş alan</value>
+  </data>
+  <data name="Health.FreeSpace.Value" xml:space="preserve">
+    <value>{1} alanın {0} kadarı boş (%{2})</value>
+  </data>
+  <data name="Health.Check.PendingRestart" xml:space="preserve">
+    <value>Bekleyen yeniden başlatma</value>
+  </data>
+  <data name="Health.PendingRestart.Yes" xml:space="preserve">
+    <value>Windows, güncellemeleri tamamlamak için yeniden başlatma bekliyor.</value>
+  </data>
+  <data name="Health.PendingRestart.No" xml:space="preserve">
+    <value>Yeniden başlatma gerekmiyor.</value>
+  </data>
+  <data name="Health.Check.BootTime" xml:space="preserve">
+    <value>Son önyükleme süresi</value>
+  </data>
+  <data name="Health.BootTime.Value" xml:space="preserve">
+    <value>{0} sn (Windows ölçümü)</value>
+  </data>
+  <data name="Health.BootTime.Unknown" xml:space="preserve">
+    <value>Windows henüz bir önyükleme süresi kaydetmedi.</value>
+  </data>
+  <data name="Health.Check.Battery" xml:space="preserve">
+    <value>Pil yıpranması</value>
+  </data>
+  <data name="Health.Battery.Value" xml:space="preserve">
+    <value>Orijinal kapasitesinin %{0} kadarını tutuyor.</value>
+  </data>
+  <data name="ContextMenu.Header.Title" xml:space="preserve">
+    <value>Bağlam menüsü</value>
+  </data>
+  <data name="ContextMenu.Header.Description" xml:space="preserve">
+    <value>Uygulamaların Dosya Gezgini sağ tık menüsüne eklediği öğeleri kapatın. Hiçbir şey silinmez; yeniden açmak öğeyi geri getirir.</value>
+  </data>
+  <data name="ContextMenu.Search" xml:space="preserve">
+    <value>Öğelerde ara</value>
+  </data>
+  <data name="ContextMenu.ShowWindows" xml:space="preserve">
+    <value>Windows öğelerini göster</value>
+  </data>
+  <data name="ContextMenu.Loading" xml:space="preserve">
+    <value>Bağlam menüsü öğeleri okunuyor...</value>
+  </data>
+  <data name="ContextMenu.RestartNeeded" xml:space="preserve">
+    <value>Değişikliği görmek için Dosya Gezgini’ni yeniden başlatın.</value>
+  </data>
+  <data name="ContextMenu.RestartExplorer" xml:space="preserve">
+    <value>Dosya Gezgini’ni yeniden başlat</value>
+  </data>
+  <data name="ContextMenu.Error.Title" xml:space="preserve">
+    <value>Öğe değiştirilemedi</value>
+  </data>
+  <data name="ContextMenu.Location.Files" xml:space="preserve">
+    <value>Dosyalar</value>
+  </data>
+  <data name="ContextMenu.Location.Folders" xml:space="preserve">
+    <value>Klasörler</value>
+  </data>
+  <data name="ContextMenu.Location.Background" xml:space="preserve">
+    <value>Klasör arka planı</value>
+  </data>
+  <data name="ContextMenu.Location.Drives" xml:space="preserve">
+    <value>Sürücüler</value>
+  </data>
+  <data name="OptionalFeatures.Header.Title" xml:space="preserve">
+    <value>Windows özellikleri</value>
+  </data>
+  <data name="OptionalFeatures.Header.Description" xml:space="preserve">
+    <value>"Windows özelliklerini aç veya kapat" ile aynı şekilde isteğe bağlı özellikleri açıp kapatın. Çoğu değişiklik yeniden başlatmadan sonra tamamlanır.</value>
+  </data>
+  <data name="OptionalFeatures.Search" xml:space="preserve">
+    <value>Özelliklerde ara</value>
+  </data>
+  <data name="OptionalFeatures.Loading" xml:space="preserve">
+    <value>Windows özellikleri alınıyor...</value>
+  </data>
+  <data name="OptionalFeatures.RestartNeeded" xml:space="preserve">
+    <value>Değişikliği tamamlamak için Windows’u yeniden başlatın.</value>
+  </data>
+  <data name="OptionalFeatures.Error.Title" xml:space="preserve">
+    <value>Özellik değiştirilemedi</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Microsoft_Hyper_V_All" xml:space="preserve">
+    <value>Hyper-V: sanal makineler çalıştırır. Açmak oyun performansını düşürebilir ve diğer sanallaştırma uygulamalarıyla çakışabilir.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Microsoft_Windows_Subsystem_Linux" xml:space="preserve">
+    <value>Linux için Windows Alt Sistemi (WSL): Windows’ta Linux araçlarını çalıştırır.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.VirtualMachinePlatform" xml:space="preserve">
+    <value>Sanal Makine Platformu: WSL 2 ve Android uygulamaları için gerekir.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Containers_DisposableClientVM" xml:space="preserve">
+    <value>Windows Sandbox: bilinmeyen programları güvenle denemek için kullan-at bir masaüstü.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.NetFx3" xml:space="preserve">
+    <value>.NET Framework 3.5: bazı eski program ve oyunlar için gerekir.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.SMB1Protocol" xml:space="preserve">
+    <value>SMB 1.0: eski ve güvensiz bir dosya paylaşım protokolü. Eski bir cihaz gerektirmedikçe kapalı tutun.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.TelnetClient" xml:space="preserve">
+    <value>Telnet istemcisi: ağ bağlantı noktalarını test etmek için komut satırı aracı.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Printing_PrintToPDFServices_Features" xml:space="preserve">
+    <value>Microsoft Print to PDF: yazdırılabilen her şeyi PDF olarak kaydeder.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.MediaPlayback" xml:space="preserve">
+    <value>Medya özellikleri: Windows Media Player ve bazı uygulamaların kullandığı oynatma bileşenleri.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Recall" xml:space="preserve">
+    <value>Recall: daha sonra aramak için ekran görüntüleri alır. Kaldırmak yer açar ve etkinliğinizi gizli tutar.</value>
+  </data>
+  <data name="AppInstaller.Header.Title" xml:space="preserve">
+    <value>Uygulama yükle</value>
+  </data>
+  <data name="AppInstaller.Header.Description" xml:space="preserve">
+    <value>Popüler uygulamaları seçip Microsoft’un paket yöneticisi winget ile tek seferde yükleyin. Uygulamalar resmi kaynaklarından gelir.</value>
+  </data>
+  <data name="AppInstaller.Install" xml:space="preserve">
+    <value>Seçilenleri yükle ({0})</value>
+  </data>
+  <data name="AppInstaller.Loading" xml:space="preserve">
+    <value>winget aranıyor...</value>
+  </data>
+  <data name="AppInstaller.WingetMissing" xml:space="preserve">
+    <value>winget bulunamadı. Microsoft Store’dan "Uygulama Yükleyicisi"ni yükleyip geri dönün.</value>
+  </data>
+  <data name="AppInstaller.Progress" xml:space="preserve">
+    <value>{0} yükleniyor...</value>
+  </data>
+  <data name="AppInstaller.Success.Title" xml:space="preserve">
+    <value>Uygulamalar yüklendi</value>
+  </data>
+  <data name="AppInstaller.Success.Message" xml:space="preserve">
+    <value>Yüklenen veya zaten güncel: {0}</value>
+  </data>
+  <data name="AppInstaller.Error.Title" xml:space="preserve">
+    <value>Bazı uygulamalar yüklenemedi</value>
+  </data>
+  <data name="AppInstaller.Category.Browsers" xml:space="preserve">
+    <value>Tarayıcılar</value>
+  </data>
+  <data name="AppInstaller.Category.Utilities" xml:space="preserve">
+    <value>Yardımcı araçlar</value>
+  </data>
+  <data name="AppInstaller.Category.Media" xml:space="preserve">
+    <value>Medya</value>
+  </data>
+  <data name="AppInstaller.Category.Gaming" xml:space="preserve">
+    <value>Oyun</value>
+  </data>
+  <data name="AppInstaller.Category.Development" xml:space="preserve">
+    <value>Geliştirme</value>
+  </data>
+  <data name="AppInstaller.Category.Runtimes" xml:space="preserve">
+    <value>Çalışma zamanları</value>
+  </data>
+  <data name="Search.Global.Placeholder" xml:space="preserve">
+    <value>Optimizasyon ve ayarlarda ara</value>
+  </data>
+  <data name="Health.BootTime.Trend" xml:space="preserve">
+    <value>Son önyükleme {0} sn, son {2} önyüklemenin ortalaması {1} sn (Windows ölçümü)</value>
+  </data>
+  <data name="Update.Button.Install" xml:space="preserve">
+    <value>Şimdi güncelle</value>
+  </data>
+  <data name="Update.Confirm.Title" xml:space="preserve">
+    <value>{0} sürümüne güncelle</value>
+  </data>
+  <data name="Update.Confirm.Message" xml:space="preserve">
+    <value>optimizerDuck yeni sürümü GitHub’dan indirir, yayımlanan SHA-256 sağlama toplamıyla doğrular, kendini değiştirir ve yeniden başlar. Uygulanan optimizasyonlar ve geri alma verileri korunur.</value>
+  </data>
+  <data name="Update.Downloading" xml:space="preserve">
+    <value>Güncelleme indiriliyor ve doğrulanıyor...</value>
+  </data>
+  <data name="Update.Failed.Title" xml:space="preserve">
+    <value>Güncelleme yüklenemedi</value>
+  </data>
+  <data name="Update.Failed.Message" xml:space="preserve">
+    <value>İndirilemedi veya doğrulanamadı. Elle güncellemeniz için sürüm sayfası açılıyor.</value>
+  </data>
+  <data name="Optimizer.Menu.HideUnavailable" xml:space="preserve">
+    <value>Desteklenmeyenleri gizle</value>
+  </data>
+  <data name="OptimizationDetailsDialog.SideEffects" xml:space="preserve">
+    <value>Nelerin çalışması durabilir</value>
+  </data>
+  <data name="Optimizer.Performance.DisableBackgroundApps.SideEffects" xml:space="preserve">
+    <value>Store uygulamaları artık arka planda çalışmaz: Posta, Takvim, Hava Durumu ve benzerleri yalnızca açıldığında yenilenir, bazı bildirimler gecikir veya hiç gelmez.</value>
+  </data>
+  <data name="Optimizer.Performance.ConsolidateServiceHosts.SideEffects" xml:space="preserve">
+    <value>Birden fazla hizmet yeniden tek bir işlemi paylaşır; biri çökerse aynı işlemdeki diğerlerini de düşürebilir ve Görev Yöneticisi bunları tek tek değil gruplu gösterir.</value>
+  </data>
+  <data name="Optimizer.Performance.ProcessPriority.SideEffects" xml:space="preserve">
+    <value>Arka planda çalışan işler (indirmeler, video kodlama, derleme) siz başka bir pencereyi kullanırken daha az CPU zamanı alır ve daha uzun sürebilir.</value>
+  </data>
+  <data name="Optimizer.Performance.OptimizeMultimediaScheduler.SideEffects" xml:space="preserve">
+    <value>Bir oyun veya medya oynatılırken arka plan görevleri ve ağ trafiği daha düşük öncelik alır; arka plandaki indirmeler ve yayınlar yavaşlayabilir.</value>
+  </data>
+  <data name="Optimizer.Performance.KeyboardLatencyOptimization.SideEffects" xml:space="preserve">
+    <value>Basılı tutulan tuşlar daha erken ve daha hızlı tekrarlanır; parmağınızı bir tuşta bırakırsanız fazladan karakter yazılabilir.</value>
+  </data>
+  <data name="Optimizer.Performance.DisableAccessibilityKeyboardHotkeys.SideEffects" xml:space="preserve">
+    <value>Shift’e beş kez basmak ya da Shift veya Num Lock’u basılı tutmak artık Yapışkan, Filtre veya Geçiş Tuşları’nı açmaz. İhtiyacı olanlar bunları Ayarlar &gt; Erişilebilirlik &gt; Klavye’den açabilir.</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.SideEffects" xml:space="preserve">
+    <value>Edge biraz daha yavaş açılır; son penceresi kapatıldıktan sonra bildirim göstermez ve indirmeleri tamamlamaz.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableTelemetry.SideEffects" xml:space="preserve">
+    <value>Geri Bildirim Merkezi çalışmaz, Windows Insider derlemeleri alınamaz, bazı sorun gidericilerin elindeki veri azalır ve Microsoft donanımınızdaki sorunları düzeltmek için daha az çökme raporu alır.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableErrorReporting.SideEffects" xml:space="preserve">
+    <value>Çökme raporları artık kaydedilmez ve gönderilmez; Güvenilirlik İzleyicisi daha az ayrıntı gösterir, Microsoft bilinen çözümleri öneremez. Program Uyumluluk Yardımcısı da eski programlar için düzeltme önermez.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableAdvertisingAndSuggestions.SideEffects" xml:space="preserve">
+    <value>Uygulamalar artık size özel reklam gösteremez, Windows uygulama, ipucu ve kurulum adımı önermeyi bırakır; yazma ve el yazısı önerileri yazdıklarınızdan daha az öğrenir.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableNewsAndInterests.SideEffects" xml:space="preserve">
+    <value>Görev çubuğundaki Pencere Öğeleri (hava durumu) düğmesi ve haber akışı kaybolur.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableActivityHistory.SideEffects" xml:space="preserve">
+    <value>Windows kullandığınız uygulama, dosya ve sayfaların geçmişini tutmaz; "kaldığınız yerden devam edin" önerileri ve Zaman Çizelgesi çalışmaz.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableLocationAndSensors.SideEffects" xml:space="preserve">
+    <value>Uygulamalar artık konumunuzu alamaz: Haritalar, Hava Durumu, Cihazımı Bul ve otomatik saat dilimi konumu kullanmaz, çevrimdışı haritalar güncellenmez; otomatik döndürme veya ortam ışığı gibi bazı sensörler çalışmayabilir.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableAutoLogger.SideEffects" xml:space="preserve">
+    <value>Bazı yerleşik tanılama günlükleri (Wi-Fi oturumları, ağ, uygulama modeli) artık kaydedilmez; bağlantı ve uygulama sorunlarını gidermek zorlaşır.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableCortana.SideEffects" xml:space="preserve">
+    <value>Cortana kullanılamaz; arama artık web’i veya konumunuzu kullanmaz, Başlat araması yalnızca bu PC’deki sonuçları gösterir.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableCopilot.SideEffects" xml:space="preserve">
+    <value>Copilot düğmesi ve Windows + C kısayolu kaybolur; Copilot Windows’un içinden başlatılamaz.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableContentDeliveryManager.SideEffects" xml:space="preserve">
+    <value>Kilit ekranındaki Windows Spotlight görselleri, ilginç bilgiler ve Başlat’taki önerilen uygulamalar güncellenmez; kilit ekranı için resmi veya slayt gösterisini kendiniz seçersiniz.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableFindMyDevice.SideEffects" xml:space="preserve">
+    <value>Bu PC kaybolur veya çalınırsa artık Microsoft hesabınızdan bulamaz ya da kilitleyemezsiniz.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableDeliveryOptimization.SideEffects" xml:space="preserve">
+    <value>Güncellemeler ağınızdaki diğer PC’lerden değil yalnızca Microsoft’tan indirilir; birden fazla PC olan bir ev veya ofis güncellemeler için daha fazla bant genişliği kullanır.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.SideEffects" xml:space="preserve">
+    <value>Edge kenar çubuğunu (ve içindeki Copilot’u), fiyat karşılaştırmayı ve kuponları kaybeder; değişiklik ilke kullandığı için ayarlarda "Tarayıcınız kuruluşunuz tarafından yönetiliyor" yazar.</value>
+  </data>
+  <data name="Optimizer.UserExperience.SpeedUpExplorerAndMenus.SideEffects" xml:space="preserve">
+    <value>Başlangıç uygulamaları oturum açılır açılmaz kademeli değil hep birlikte başlar; yavaş PC’lerde oturum açtıktan sonraki ilk saniyeler daha ağır hissedilebilir.</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableVisualEffects.SideEffects" xml:space="preserve">
+    <value>Windows daha düz görünür: saydamlık, görev çubuğu animasyonları, masaüstü simge adlarının altındaki gölgeler ve görev çubuğu köşesindeki Aero Peek önizlemesi olmaz.</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableStartMenuWebSearch.SideEffects" xml:space="preserve">
+    <value>Başlat araması yalnızca bu PC’deki sonuçları gösterir: Bing web sonuçları ve arama öne çıkanları kaybolur.</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableStartRecommended.SideEffects" xml:space="preserve">
+    <value>Başlat artık son açılan dosyaları ve yeni yüklenen uygulamaları listelemez; bunları Dosya Gezgini veya arama ile bulursunuz.</value>
+  </data>
+  <data name="Optimizer.UserExperience.MaximizeUpdatePauseLimit.SideEffects" xml:space="preserve">
+    <value>Güncellemeler çok daha uzun süre duraklatılabilir. Duraklatıldıkları sürece güvenlik düzeltmeleri de yüklenmez; güncellemeleri düzenli olarak sürdürün.</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.SideEffects" xml:space="preserve">
+    <value>Windows Update artık sürücü yüklemez veya güncellemez; yeni bir cihazın sürücüsünü ya da düzeltmesini üreticinin sitesinden almanız gerekir.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableUlps.SideEffects" xml:space="preserve">
+    <value>GPU (veya CrossFire’daki ikinci GPU) boştayken en derin uyku durumuna geçmez; boşta güç tüketimi ve sıcaklık biraz artar.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisablePowerGating.SideEffects" xml:space="preserve">
+    <value>GPU’nun bazı bölümleri masaüstünde bile güç almaya devam eder: boşta daha yüksek güç tüketimi, sıcaklık ve fan sesi, dizüstülerde daha kısa pil ömrü.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableVideoClockGating.SideEffects" xml:space="preserve">
+    <value>Video kodlayıcı ve kod çözücü kullanılmadığında da güç almaya devam eder; boşta güç tüketimi biraz artar, en çok dizüstülerde fark edilir.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableAspm.SideEffects" xml:space="preserve">
+    <value>GPU’ya giden PCIe bağlantısı boştayken artık güç tasarrufu yapmaz: biraz daha yüksek güç tüketimi ve dizüstülerde daha kısa pil ömrü.</value>
+  </data>
+  <data name="Optimizer.Gpu.NvidiaDisableDynamicPstate.SideEffects" xml:space="preserve">
+    <value>GPU masaüstünde bile yüksek saat hızlarında kalır: boşta daha yüksek güç tüketimi, sıcaklık ve fan sesi, dizüstülerde daha kısa pil ömrü.</value>
+  </data>
+  <data name="Optimizer.Gpu.NvidiaDisableAsyncPstates.SideEffects" xml:space="preserve">
+    <value>GPU güç durumlarını daha seyrek değiştirir ve gerekenden yüksek saat hızlarında kalabilir: hafif yüklerde daha fazla güç tüketimi ve ısı.</value>
+  </data>
+  <data name="Optimizer.Gpu.IntelDisableAdaptiveVsync.SideEffects" xml:space="preserve">
+    <value>Bir oyunun kare hızı ekranın yenileme hızının altına düştüğünde kısa bir yırtılma yerine takılma görülebilir.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisableHibernateAndFastStartup.SideEffects" xml:space="preserve">
+    <value>Hazırda bekletme kullanılamaz ve Hızlı Başlangıç kapalı olduğu için kapattıktan sonra açılış biraz daha uzun sürer. Dizüstüler pil azaldığında hazırda bekletmeye geçmez.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisableUSBPowerSaving.SideEffects" xml:space="preserve">
+    <value>USB cihazları boştayken uyumak yerine sürekli güç alır; dizüstülerde pil ömrü biraz kısalır.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.InstallOptimizerDuckPowerPlan.SideEffects" xml:space="preserve">
+    <value>CPU daha sık yüksek saat hızlarında çalışır: daha fazla güç tüketimi ve ısı, hafif yükte daha gürültülü fanlar ve dizüstülerde çok daha kısa pil ömrü. Görev Yöneticisi boştayken bile yüksek CPU kullanımı gösterebilir.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisablePowerSaving.SideEffects" xml:space="preserve">
+    <value>Windows güç tasarrufu için arka plan uygulamalarını kısmayı bırakır; dizüstüler daha fazla pil harcar ve aşırı güç çeken USB bağlantı noktalarını kurtarmaya çalışmaz.</value>
+  </data>
+  <data name="Optimizer.AI.DisableRecall.SideEffects" xml:space="preserve">
+    <value>Recall anlık görüntü kaydetmeyi bırakır ve kayıtlı olanları siler; ekranda daha önce gördüklerinizi artık arayamazsınız.</value>
+  </data>
+  <data name="Optimizer.AI.DisableClickToDo.SideEffects" xml:space="preserve">
+    <value>Click to Do (Windows tuşu + tıklama) kullanılamaz; ekrandaki metin veya görseller üzerinde hızlı yapay zekâ eylemleri çalıştıramazsınız.</value>
+  </data>
+  <data name="Optimizer.AI.DisablePaintAI.SideEffects" xml:space="preserve">
+    <value>Paint’ten Cocreator, Image Creator, üretken dolgu ve üretken silme kalkar; normal çizim araçları kalır.</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.SideEffects" xml:space="preserve">
+    <value>Not Defteri’nden Yeniden Yaz, Özetle ve diğer yapay zekâ seçenekleri kalkar; metin düzenleme eskisi gibi çalışır.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisablePreinstalledApps.SideEffects" xml:space="preserve">
+    <value>Windows önerilen uygulama ve oyunları kendiliğinden yüklemeyi bırakır; zaten yüklü olanlar siz kaldırana kadar kalır.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.ConfigureServices.SideEffects" xml:space="preserve">
+    <value>Faks, Uzak Kayıt Defteri, Uzaktan Erişim, mağaza demosu ve nadiren kullanılan birkaç hizmet kapatılır; diğer birçok hizmet yalnızca gerektiğinde başlar. Bu nedenle bazı özelliklerin (yazdırma, Bluetooth, tarama) ilk kullanımı biraz daha uzun sürebilir. Kapatılan bir hizmete bağlı bir program siz geri alana kadar çalışmayabilir.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.SideEffects" xml:space="preserve">
+    <value>OneDrive eşitlemeyi bırakır: dosyalar artık buluta yedeklenmez ve diğer cihazlarınızda kullanılamaz, Office’in OneDrive’a Otomatik Kaydetme özelliği durur, yedeklenen klasörler (Masaüstü, Belgeler, Resimler) çevrimiçi güncellenmez.</value>
+  </data>
 </root>

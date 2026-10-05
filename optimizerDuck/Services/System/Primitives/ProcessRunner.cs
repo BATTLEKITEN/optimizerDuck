@@ -45,7 +45,10 @@ public sealed class ProcessRunner
         ILogger<ProcessRunner>? logger = null
     )
     {
-        _readTimeoutMs = () => options.CurrentValue.Optimize.ShellTimeoutMs;
+        _readTimeoutMs = () =>
+            AppSettings.OptimizeOptions.ClampShellTimeout(
+                options.CurrentValue.Optimize.ShellTimeoutMs
+            );
         _logger = logger;
     }
 

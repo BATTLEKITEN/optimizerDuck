@@ -49,7 +49,7 @@ public class RevertManagerTests
 
         try
         {
-            var json = JsonConvert.SerializeObject(payload, Formatting.Indented);
+            var json = RevertDataSeal.ToJson(payload);
             await File.WriteAllTextAsync(path, json, cancellationToken);
 
             var data = await RevertManager.GetRevertDataAsync(id);
@@ -162,7 +162,7 @@ public class RevertManagerTests
 
         try
         {
-            var json = JsonConvert.SerializeObject(payload, Formatting.Indented);
+            var json = RevertDataSeal.ToJson(payload);
             await File.WriteAllTextAsync(path, json, cancellationToken);
 
             var manager = new RevertManager(
@@ -224,7 +224,7 @@ public class RevertManagerTests
 
         try
         {
-            var json = JsonConvert.SerializeObject(payload, Formatting.Indented);
+            var json = RevertDataSeal.ToJson(payload);
             await File.WriteAllTextAsync(path, json, cancellationToken);
 
             var manager = new RevertManager(
@@ -291,7 +291,7 @@ public class RevertManagerTests
 
         try
         {
-            var json = JsonConvert.SerializeObject(payload, Formatting.Indented);
+            var json = RevertDataSeal.ToJson(payload);
             await File.WriteAllTextAsync(path, json, cancellationToken);
 
             var manager = new RevertManager(
@@ -434,11 +434,7 @@ public class RevertManagerTests
 
         try
         {
-            await File.WriteAllTextAsync(
-                path,
-                JsonConvert.SerializeObject(payload),
-                cancellationToken
-            );
+            await File.WriteAllTextAsync(path, RevertDataSeal.ToJson(payload), cancellationToken);
 
             var manager = new RevertManager(
                 NullLogger<RevertManager>.Instance,
@@ -1002,7 +998,7 @@ public class RevertIntegrityTests
             // loadable, so the rest of the file still reverts and the failure names the type.
             await File.WriteAllTextAsync(
                 path,
-                JsonConvert.SerializeObject(
+                RevertDataSeal.ToJson(
                     new RevertData
                     {
                         SchemaVersion = 1,
@@ -1104,7 +1100,7 @@ public class RevertIntegrityTests
         {
             await File.WriteAllTextAsync(
                 path,
-                JsonConvert.SerializeObject(
+                RevertDataSeal.ToJson(
                     new RevertData
                     {
                         SchemaVersion = 1,

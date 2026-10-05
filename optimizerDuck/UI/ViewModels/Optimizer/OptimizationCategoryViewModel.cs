@@ -79,6 +79,9 @@ public partial class OptimizationCategoryViewModel : ViewModel
     private bool _hideApplied;
 
     [ObservableProperty]
+    private bool _hideUnavailable;
+
+    [ObservableProperty]
     private bool _isLoading;
 
     [ObservableProperty]
@@ -110,6 +113,12 @@ public partial class OptimizationCategoryViewModel : ViewModel
     partial void OnSelectedSortByIndexChanged(int value) => ApplyFilter();
 
     partial void OnHideAppliedChanged(bool value) => ApplyFilter();
+
+    partial void OnHideUnavailableChanged(bool value) => ApplyFilter();
+
+    /// <summary>Whether any item in the category is not supported on this PC.</summary>
+    public bool HasUnavailableOptimizations =>
+        _allOptimizations.Any(o => o.ConditionResult.IsBlocking && !o.State.IsApplied);
 
     private void ScheduleApplyFilter()
     {
@@ -412,6 +421,49 @@ public partial class OptimizationCategoryViewModel : ViewModel
         var result = await _contentDialogService.ShowAsync(dialog, CancellationToken.None);
     }
 
+    /// <summary>Shows what applying the optimization would change, without changing it.</summary>
+    [RelayCommand]
+    private async Task PreviewOptimizationAsync(IOptimization optimization)
+    {
+        string text;
+        try
+        {
+            var preview = await Task.Run(() => _optimizationService.PreviewAsync(optimization));
+            text = ChangePreviewFormatter.Format(preview.Changes);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Preview of {Key} failed", optimization.OptimizationKey);
+            _snackbarService.Show(
+                Loc.Instance["Optimizer.Preview.Failed.Title"],
+                ex.Message,
+                ControlAppearance.Danger,
+                new SymbolIcon { Symbol = SymbolRegular.ErrorCircle24, Filled = true },
+                TimeSpan.FromSeconds(5)
+            );
+            return;
+        }
+
+        await _contentDialogService.ShowSimpleDialogAsync(
+            new SimpleContentDialogCreateOptions
+            {
+                Title = Loc.Instance["Optimizer.Preview.Title", optimization.Name],
+                Content = new ScrollViewer
+                {
+                    MaxHeight = 420,
+                    VerticalScrollBarVisibility = ScrollBarVisibility.Auto,
+                    Content = new System.Windows.Controls.TextBlock
+                    {
+                        Text = text,
+                        TextWrapping = TextWrapping.Wrap,
+                    },
+                },
+                CloseButtonText = Loc.Instance["Button.Ok"],
+            },
+            CancellationToken.None
+        );
+    }
+
     [RelayCommand]
     private async Task ViewSourceOnGitHubAsync(IOptimization optimization)
     {
@@ -549,6 +601,10 @@ public partial class OptimizationCategoryViewModel : ViewModel
         if (HideApplied)
             query = query.Where(o => !o.State.IsApplied && !o.State.IsAlreadyOptimal);
 
+        // An applied item stays visible even when unsupported, so it can still be reverted.
+        if (HideUnavailable)
+            query = query.Where(o => !o.ConditionResult.IsBlocking || o.State.IsApplied);
+
         query = SelectedSortByIndex switch
         {
             1 => query.OrderBy(o => o.Name),
@@ -561,6 +617,7 @@ public partial class OptimizationCategoryViewModel : ViewModel
         Optimizations = new ObservableCollection<IOptimization>(filtered);
 
         OnPropertyChanged(nameof(HasAppliedOptimizations));
+        OnPropertyChanged(nameof(HasUnavailableOptimizations));
     }
 
     #endregion Helpers

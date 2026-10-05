@@ -2561,5 +2561,705 @@
   <data name="Error.Unhandled.LogHint" xml:space="preserve">
     <value>التفاصيل موجودة في ملف السجل.</value>
   </data>
+  <data name="Sidebar.Profiles" xml:space="preserve">
+    <value>الملفات الشخصية</value>
+  </data>
+  <data name="Profiles.Header.Title" xml:space="preserve">
+    <value>الملفات الشخصية</value>
+  </data>
+  <data name="Profiles.Header.Description" xml:space="preserve">
+    <value>طبّق مجموعة جاهزة من التحسينات، أو انقل إعداداتك إلى جهاز آخر، أو أعِد ما تراجع عنه Windows.</value>
+  </data>
+  <data name="Profiles.Presets.Header" xml:space="preserve">
+    <value>إعدادات مسبقة</value>
+  </data>
+  <data name="Profiles.Preset.Recommended.Title" xml:space="preserve">
+    <value>موصى به</value>
+  </data>
+  <data name="Profiles.Preset.Recommended.Description" xml:space="preserve">
+    <value>كل التحسينات المصنفة آمنة. بداية جيدة لمعظم أجهزة الكمبيوتر المكتبية.</value>
+  </data>
+  <data name="Profiles.Preset.Gaming.Title" xml:space="preserve">
+    <value>الألعاب</value>
+  </data>
+  <data name="Profiles.Preset.Gaming.Description" xml:space="preserve">
+    <value>تحسينات الأداء وزمن الاستجابة، باستثناء الخطرة منها.</value>
+  </data>
+  <data name="Profiles.Preset.Privacy.Title" xml:space="preserve">
+    <value>الخصوصية</value>
+  </data>
+  <data name="Profiles.Preset.Privacy.Description" xml:space="preserve">
+    <value>إيقاف بيانات القياس عن بُعد والإعلانات والاقتراحات وميزات الذكاء الاصطناعي، دون التحسينات الخطرة.</value>
+  </data>
+  <data name="Profiles.Preset.Laptop.Title" xml:space="preserve">
+    <value>حاسوب محمول</value>
+  </data>
+  <data name="Profiles.Preset.Laptop.Description" xml:space="preserve">
+    <value>تحسينات آمنة لا تستهلك البطارية: بلا تغييرات في خطة الطاقة أو USB أو GPU.</value>
+  </data>
+  <data name="Profiles.Preset.Count" xml:space="preserve">
+    <value>التحسينات: {0}</value>
+  </data>
+  <data name="Profiles.Button.Preview" xml:space="preserve">
+    <value>معاينة</value>
+  </data>
+  <data name="Profiles.Button.Apply" xml:space="preserve">
+    <value>تطبيق</value>
+  </data>
+  <data name="Profiles.File.Header" xml:space="preserve">
+    <value>إعداداتك</value>
+  </data>
+  <data name="Profiles.Export.Title" xml:space="preserve">
+    <value>تصدير إلى ملف</value>
+  </data>
+  <data name="Profiles.Export.Description" xml:space="preserve">
+    <value>يحفظ التحسينات المطبقة على هذا الجهاز وإعدادات التخصيص لتطبيقها على جهاز آخر.</value>
+  </data>
+  <data name="Profiles.Export.Button" xml:space="preserve">
+    <value>تصدير</value>
+  </data>
+  <data name="Profiles.Import.Title" xml:space="preserve">
+    <value>استيراد وتطبيق</value>
+  </data>
+  <data name="Profiles.Import.Description" xml:space="preserve">
+    <value>يفتح ملف ملف شخصي ويطبق محتواه. يتم تخطي العناصر التي لا يدعمها هذا الجهاز.</value>
+  </data>
+  <data name="Profiles.Import.Button" xml:space="preserve">
+    <value>استيراد</value>
+  </data>
+  <data name="Profiles.FileFilter" xml:space="preserve">
+    <value>ملف optimizerDuck الشخصي</value>
+  </data>
+  <data name="Profiles.Export.Success.Title" xml:space="preserve">
+    <value>تم حفظ الملف الشخصي</value>
+  </data>
+  <data name="Profiles.Export.Success.Message" xml:space="preserve">
+    <value>التحسينات: {0}. إعدادات التخصيص: {1}.</value>
+  </data>
+  <data name="Profiles.Export.Failed.Title" xml:space="preserve">
+    <value>تعذر حفظ الملف الشخصي</value>
+  </data>
+  <data name="Profiles.Import.Failed.Title" xml:space="preserve">
+    <value>تعذر فتح الملف الشخصي</value>
+  </data>
+  <data name="Profiles.Import.Failed.Message" xml:space="preserve">
+    <value>الملف ليس ملفًا شخصيًا لـ optimizerDuck، أو تم إنشاؤه بإصدار أحدث.</value>
+  </data>
+  <data name="Profiles.Apply.Confirm.Title" xml:space="preserve">
+    <value>تطبيق "{0}"؟</value>
+  </data>
+  <data name="Profiles.Apply.Confirm.Message" xml:space="preserve">
+    <value>التحسينات المراد تطبيقها: {0}. إعدادات التخصيص: {1}.
+
+سيتم تخطي العناصر المطبقة مسبقًا والعناصر غير المدعومة على هذا الجهاز. يمكن التراجع عن كل تحسين لاحقًا من بطاقته.</value>
+  </data>
+  <data name="Profiles.Apply.Title" xml:space="preserve">
+    <value>جارٍ تطبيق "{0}"</value>
+  </data>
+  <data name="Profiles.Apply.Progress" xml:space="preserve">
+    <value>جارٍ التطبيق: {0}</value>
+  </data>
+  <data name="Profiles.Report.Title" xml:space="preserve">
+    <value>تم تطبيق الملف الشخصي</value>
+  </data>
+  <data name="Profiles.Report.Summary" xml:space="preserve">
+    <value>تم التطبيق: {0}
+مطبق مسبقًا: {1}
+غير مدعوم على هذا الجهاز: {2}
+غير معروف لهذا الإصدار: {3}
+فشل: {4}</value>
+  </data>
+  <data name="Profiles.Report.Failures" xml:space="preserve">
+    <value>ما فشل:</value>
+  </data>
+  <data name="Profiles.Preview.Title" xml:space="preserve">
+    <value>ما يطبقه "{0}"</value>
+  </data>
+  <data name="Profiles.Preview.Empty" xml:space="preserve">
+    <value>لا يحتوي هذا الإعداد المسبق على أي تحسينات في هذا الإصدار.</value>
+  </data>
+  <data name="Drift.Header" xml:space="preserve">
+    <value>تغييرات تراجع عنها Windows</value>
+  </data>
+  <data name="Drift.Description" xml:space="preserve">
+    <value>قد تعيد تحديثات Windows وبرامج أخرى بعض الإعدادات إلى حالتها السابقة. هذا الفحص يقرأ الحالة الحالية فقط ولا يغيّر شيئًا.</value>
+  </data>
+  <data name="Drift.Button.Check" xml:space="preserve">
+    <value>افحص الآن</value>
+  </data>
+  <data name="Drift.Button.Reapply" xml:space="preserve">
+    <value>إعادة التطبيق</value>
+  </data>
+  <data name="Drift.Status.Checking" xml:space="preserve">
+    <value>جارٍ فحص التحسينات المطبقة...</value>
+  </data>
+  <data name="Drift.Status.None" xml:space="preserve">
+    <value>لا تزال جميع التحسينات المطبقة سارية.</value>
+  </data>
+  <data name="Drift.Status.Found" xml:space="preserve">
+    <value>تحسينات تم التراجع عنها منذ تطبيقها: {0}</value>
+  </data>
+  <data name="Drift.Reapply.Title" xml:space="preserve">
+    <value>إعادة تطبيق التحسينات</value>
+  </data>
+  <data name="Dashboard.Drift.Title" xml:space="preserve">
+    <value>تم التراجع عن بعض التحسينات</value>
+  </data>
+  <data name="Dashboard.Drift.Message" xml:space="preserve">
+    <value>أعاد Windows أو برنامج آخر إعدادات غيّرتها تحسينات مطبقة (العدد: {0}).</value>
+  </data>
+  <data name="Dashboard.Drift.Button" xml:space="preserve">
+    <value>مراجعة وإعادة التطبيق</value>
+  </data>
+  <data name="Cli.Usage" xml:space="preserve">
+    <value>الاستخدام: optimizerDuck.exe &lt;الأمر&gt; [الخيارات]
+
+الأوامر:
+  --apply-profile &lt;file&gt;    تطبيق ملف شخصي
+  --apply-preset &lt;name&gt;     تطبيق إعداد مسبق: Recommended أو Gaming أو Privacy أو Laptop
+  --export-profile &lt;file&gt;   حفظ ما هو مطبق على هذا الجهاز في ملف شخصي
+  --check-drift             عرض التحسينات التي تراجع عنها Windows
+  --reapply-drift           إعادة تطبيق التحسينات التي تراجع عنها Windows
+  --help                    عرض هذه المساعدة
+
+الخيارات:
+  --restore-point           إنشاء نقطة استعادة قبل تغيير أي شيء
+  --report &lt;file&gt;           كتابة النتيجة في ملف JSON
+  --accept-terms            قبول شروط الاستخدام (مطلوب مرة واحدة قبل أول تغيير)
+
+شغّله من نافذة طرفية بصلاحيات المسؤول لرؤية النتائج.
+رموز الخروج: 0 نجاح، 1 فشل أو وجود تحسينات تم التراجع عنها، 2 خطأ في الاستخدام أو الملف.</value>
+  </data>
+  <data name="Cli.Error.UnknownArgument" xml:space="preserve">
+    <value>وسيطة غير معروفة: {0}</value>
+  </data>
+  <data name="Cli.Error.OptionWithoutCommand" xml:space="preserve">
+    <value>تم تحديد خيار بدون أمر.</value>
+  </data>
+  <data name="Cli.Error.OneCommand" xml:space="preserve">
+    <value>يمكن تشغيل أمر واحد فقط في كل مرة.</value>
+  </data>
+  <data name="Cli.Error.MissingValue" xml:space="preserve">
+    <value>يحتاج {0} إلى قيمة.</value>
+  </data>
+  <data name="Cli.Error.Terms" xml:space="preserve">
+    <value>لم يتم قبول شروط الاستخدام بعد. اقرأها في التطبيق، أو أضف ‎--accept-terms لقبولها.</value>
+  </data>
+  <data name="Cli.Error.UnknownPreset" xml:space="preserve">
+    <value>إعداد مسبق غير معروف: {0}. المتاح: {1}</value>
+  </data>
+  <data name="Optimizer.Preview.Button" xml:space="preserve">
+    <value>معاينة التغييرات</value>
+  </data>
+  <data name="Optimizer.Preview.Title" xml:space="preserve">
+    <value>ما الذي سيغيره "{0}"</value>
+  </data>
+  <data name="Optimizer.Preview.Summary" xml:space="preserve">
+    <value>تغييرات مطلوبة: {0}. مضبوط مسبقًا: {1}. لم يتم تغيير أي شيء بعد.</value>
+  </data>
+  <data name="Optimizer.Preview.Nothing" xml:space="preserve">
+    <value>لا شيء لتغييره: هذا الجهاز مطابق بالفعل.</value>
+  </data>
+  <data name="Optimizer.Preview.Failed.Title" xml:space="preserve">
+    <value>تعذرت معاينة التغييرات</value>
+  </data>
+  <data name="Optimizer.AI.DisablePaintAI.Name" xml:space="preserve">
+    <value>تعطيل الذكاء الاصطناعي في الرسام</value>
+  </data>
+  <data name="Optimizer.AI.DisablePaintAI.ShortDescription" xml:space="preserve">
+    <value>يوقف Cocreator ومنشئ الصور والتعبئة التوليدية والمسح التوليدي في الرسام عبر سياسات Microsoft الرسمية.</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.Name" xml:space="preserve">
+    <value>تعطيل الذكاء الاصطناعي في المفكرة</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.ShortDescription" xml:space="preserve">
+    <value>يزيل إعادة الصياغة والتلخيص وميزات الذكاء الاصطناعي الأخرى من المفكرة باستخدام سياستها الموثقة.</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.Name" xml:space="preserve">
+    <value>إيقاف تشغيل Microsoft Edge في الخلفية</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.ShortDescription" xml:space="preserve">
+    <value>يوقف التشغيل المسبق الذي يحمّل Edge عند تسجيل الدخول، ووضع الخلفية الذي يبقيه يعمل بعد إغلاقه. يحرر ذاكرة RAM حتى لو لم تفتح Edge أبدًا.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.Name" xml:space="preserve">
+    <value>إيقاف الشريط الجانبي والتسوق وجمع البيانات في Edge</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.ShortDescription" xml:space="preserve">
+    <value>يستخدم سياسات Edge لإخفاء الشريط الجانبي (ومعه Copilot)، وإيقاف مساعد التسوق والتوصيات، ووقف تقارير التخصيص وبيانات التشخيص الاختيارية.</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.Name" xml:space="preserve">
+    <value>استبعاد برامج التشغيل من Windows Update</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.ShortDescription" xml:space="preserve">
+    <value>يمنع Windows Update من استبدال برامج التشغيل التي ثبّتها بنفسك، مثل برنامج تشغيل GPU أو الصوت من الشركة المصنعة. ستحتاج بعدها إلى تحديث برامج التشغيل بنفسك.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.Name" xml:space="preserve">
+    <value>تعطيل OneDrive</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.ShortDescription" xml:space="preserve">
+    <value>يمنع OneDrive من التشغيل والمزامنة، ويزيله من الشريط الجانبي لمستكشف الملفات. تبقى الملفات الموجودة في مجلد OneDrive على القرص ولا يتم إلغاء تثبيت أي شيء.</value>
+  </data>
+  <data name="Sidebar.Health" xml:space="preserve">
+    <value>صحة النظام</value>
+  </data>
+  <data name="Sidebar.ContextMenu" xml:space="preserve">
+    <value>قائمة السياق</value>
+  </data>
+  <data name="Sidebar.OptionalFeatures" xml:space="preserve">
+    <value>ميزات Windows</value>
+  </data>
+  <data name="Sidebar.AppInstaller" xml:space="preserve">
+    <value>تثبيت التطبيقات</value>
+  </data>
+  <data name="DiskCleanup.Item.DeliveryOptimization" xml:space="preserve">
+    <value>ذاكرة التخزين المؤقت لتحسين التسليم</value>
+  </data>
+  <data name="DiskCleanup.Item.DeliveryOptimization.Description" xml:space="preserve">
+    <value>ملفات تحديث يحتفظ بها Windows لمشاركتها مع أجهزة أخرى، ويمكن حذفها بأمان</value>
+  </data>
+  <data name="DiskCleanup.Item.SystemErrorReports" xml:space="preserve">
+    <value>تقارير أخطاء النظام</value>
+  </data>
+  <data name="DiskCleanup.Item.SystemErrorReports.Description" xml:space="preserve">
+    <value>تقارير الأعطال والمشكلات التي يحتفظ بها الإبلاغ عن أخطاء Windows لجميع المستخدمين</value>
+  </data>
+  <data name="DiskCleanup.Item.ShaderCache" xml:space="preserve">
+    <value>ذاكرة DirectX المؤقتة للمظللات</value>
+  </data>
+  <data name="DiskCleanup.Item.ShaderCache.Description" xml:space="preserve">
+    <value>مظللات مُجمّعة تعيد الألعاب بناءها عند التشغيل التالي، وقد يحل ذلك التقطيع بعد تحديث برنامج التشغيل</value>
+  </data>
+  <data name="Health.Header.Title" xml:space="preserve">
+    <value>صحة النظام</value>
+  </data>
+  <data name="Health.Header.Description" xml:space="preserve">
+    <value>الأمان والأقراص والبطارية في لمحة واحدة. لا شيء هنا يغيّر جهازك.</value>
+  </data>
+  <data name="Health.Loading" xml:space="preserve">
+    <value>جارٍ فحص جهازك...</value>
+  </data>
+  <data name="Health.Button.Refresh" xml:space="preserve">
+    <value>تحديث</value>
+  </data>
+  <data name="Health.Button.Export" xml:space="preserve">
+    <value>حفظ التقرير</value>
+  </data>
+  <data name="Health.Button.BatteryReport" xml:space="preserve">
+    <value>تقرير البطارية</value>
+  </data>
+  <data name="Health.Export.Failed.Title" xml:space="preserve">
+    <value>تعذر حفظ التقرير</value>
+  </data>
+  <data name="Health.Status.Good" xml:space="preserve">
+    <value>جيد</value>
+  </data>
+  <data name="Health.Status.Info" xml:space="preserve">
+    <value>معلومة</value>
+  </data>
+  <data name="Health.Status.Warning" xml:space="preserve">
+    <value>تنبيه</value>
+  </data>
+  <data name="Health.Status.Bad" xml:space="preserve">
+    <value>مشكلة</value>
+  </data>
+  <data name="Health.Status.Unknown" xml:space="preserve">
+    <value>غير معروف</value>
+  </data>
+  <data name="Health.Unknown" xml:space="preserve">
+    <value>لم يبلّغ Windows عن ذلك.</value>
+  </data>
+  <data name="Health.State.On" xml:space="preserve">
+    <value>مفعّل</value>
+  </data>
+  <data name="Health.State.Off" xml:space="preserve">
+    <value>معطّل</value>
+  </data>
+  <data name="Health.Check.SecureBoot" xml:space="preserve">
+    <value>التمهيد الآمن</value>
+  </data>
+  <data name="Health.SecureBoot.Off" xml:space="preserve">
+    <value>معطّل. فعّله من إعدادات UEFI لحظر البرمجيات الخبيثة على مستوى الإقلاع.</value>
+  </data>
+  <data name="Health.SecureBoot.Unsupported" xml:space="preserve">
+    <value>غير متاح: يبدأ الجهاز في وضع BIOS القديم.</value>
+  </data>
+  <data name="Health.Check.Tpm" xml:space="preserve">
+    <value>TPM</value>
+  </data>
+  <data name="Health.Tpm.Ready" xml:space="preserve">
+    <value>TPM {0} مفعّل وجاهز.</value>
+  </data>
+  <data name="Health.Tpm.NotReady" xml:space="preserve">
+    <value>TPM {0} موجود لكنه معطّل أو غير جاهز. راجع إعدادات UEFI.</value>
+  </data>
+  <data name="Health.Tpm.None" xml:space="preserve">
+    <value>لم يتم العثور على TPM. يحتاجه Windows 11 وBitLocker.</value>
+  </data>
+  <data name="Health.Check.Vbs" xml:space="preserve">
+    <value>الأمان المستند إلى المحاكاة الافتراضية</value>
+  </data>
+  <data name="Health.Vbs.Running" xml:space="preserve">
+    <value>قيد التشغيل. يحمي النظام مقابل تكلفة طفيفة في أداء الألعاب.</value>
+  </data>
+  <data name="Health.Vbs.Enabled" xml:space="preserve">
+    <value>مفعّل لكنه لا يعمل. قد يلزم إعادة التشغيل أو ضبط إعداد في البرنامج الثابت.</value>
+  </data>
+  <data name="Health.Check.MemoryIntegrity" xml:space="preserve">
+    <value>تكامل الذاكرة</value>
+  </data>
+  <data name="Health.Check.Defender" xml:space="preserve">
+    <value>Microsoft Defender</value>
+  </data>
+  <data name="Health.Defender.On" xml:space="preserve">
+    <value>الحماية في الوقت الحقيقي مفعّلة والتعريفات محدّثة.</value>
+  </data>
+  <data name="Health.Defender.Off" xml:space="preserve">
+    <value>الحماية في الوقت الحقيقي معطّلة. تأكد من أن برنامج مكافحة فيروسات آخر يحمي هذا الجهاز.</value>
+  </data>
+  <data name="Health.Defender.Old" xml:space="preserve">
+    <value>عمر التعريفات {0} يومًا. شغّل Windows Update.</value>
+  </data>
+  <data name="Health.Defender.Unknown" xml:space="preserve">
+    <value>لا توجد حالة من Defender؛ قد يكون برنامج مكافحة فيروسات آخر قيد الاستخدام.</value>
+  </data>
+  <data name="Health.Check.Disk" xml:space="preserve">
+    <value>القرص: {0}</value>
+  </data>
+  <data name="Health.Disk.Healthy" xml:space="preserve">
+    <value>سليم ({0})</value>
+  </data>
+  <data name="Health.Disk.Warning" xml:space="preserve">
+    <value>يبلّغ Windows عن تحذير ({0}). انسخ بياناتك احتياطيًا.</value>
+  </data>
+  <data name="Health.Disk.Unhealthy" xml:space="preserve">
+    <value>يبلّغ Windows أن هذا القرص يتعطل ({0}). انسخ بياناتك احتياطيًا الآن.</value>
+  </data>
+  <data name="Health.Check.Trim" xml:space="preserve">
+    <value>SSD TRIM</value>
+  </data>
+  <data name="Health.Trim.Off" xml:space="preserve">
+    <value>معطّل. تتباطأ أقراص SSD بمرور الوقت بدونه.</value>
+  </data>
+  <data name="Health.Check.FreeSpace" xml:space="preserve">
+    <value>المساحة الحرة على قرص النظام</value>
+  </data>
+  <data name="Health.FreeSpace.Value" xml:space="preserve">
+    <value>{0} متاحة من {1} ({2}%)</value>
+  </data>
+  <data name="Health.Check.PendingRestart" xml:space="preserve">
+    <value>إعادة تشغيل معلّقة</value>
+  </data>
+  <data name="Health.PendingRestart.Yes" xml:space="preserve">
+    <value>ينتظر Windows إعادة التشغيل لإكمال تثبيت التحديثات.</value>
+  </data>
+  <data name="Health.PendingRestart.No" xml:space="preserve">
+    <value>لا حاجة لإعادة التشغيل.</value>
+  </data>
+  <data name="Health.Check.BootTime" xml:space="preserve">
+    <value>مدة آخر إقلاع</value>
+  </data>
+  <data name="Health.BootTime.Value" xml:space="preserve">
+    <value>{0} ث، حسب قياس Windows</value>
+  </data>
+  <data name="Health.BootTime.Unknown" xml:space="preserve">
+    <value>لم يسجّل Windows مدة إقلاع بعد.</value>
+  </data>
+  <data name="Health.Check.Battery" xml:space="preserve">
+    <value>تآكل البطارية</value>
+  </data>
+  <data name="Health.Battery.Value" xml:space="preserve">
+    <value>تحتفظ بنسبة {0}% من سعتها الأصلية.</value>
+  </data>
+  <data name="ContextMenu.Header.Title" xml:space="preserve">
+    <value>قائمة السياق</value>
+  </data>
+  <data name="ContextMenu.Header.Description" xml:space="preserve">
+    <value>أوقف الإدخالات التي تضيفها التطبيقات إلى قائمة النقر بزر الماوس الأيمن في مستكشف الملفات. لا يُحذف شيء، وإعادة تشغيل الإدخال تستعيده.</value>
+  </data>
+  <data name="ContextMenu.Search" xml:space="preserve">
+    <value>البحث في الإدخالات</value>
+  </data>
+  <data name="ContextMenu.ShowWindows" xml:space="preserve">
+    <value>إظهار إدخالات Windows</value>
+  </data>
+  <data name="ContextMenu.Loading" xml:space="preserve">
+    <value>جارٍ قراءة إدخالات قائمة السياق...</value>
+  </data>
+  <data name="ContextMenu.RestartNeeded" xml:space="preserve">
+    <value>أعد تشغيل مستكشف الملفات لرؤية التغيير.</value>
+  </data>
+  <data name="ContextMenu.RestartExplorer" xml:space="preserve">
+    <value>إعادة تشغيل مستكشف الملفات</value>
+  </data>
+  <data name="ContextMenu.Error.Title" xml:space="preserve">
+    <value>تعذر تغيير الإدخال</value>
+  </data>
+  <data name="ContextMenu.Location.Files" xml:space="preserve">
+    <value>الملفات</value>
+  </data>
+  <data name="ContextMenu.Location.Folders" xml:space="preserve">
+    <value>المجلدات</value>
+  </data>
+  <data name="ContextMenu.Location.Background" xml:space="preserve">
+    <value>خلفية المجلد</value>
+  </data>
+  <data name="ContextMenu.Location.Drives" xml:space="preserve">
+    <value>محركات الأقراص</value>
+  </data>
+  <data name="OptionalFeatures.Header.Title" xml:space="preserve">
+    <value>ميزات Windows</value>
+  </data>
+  <data name="OptionalFeatures.Header.Description" xml:space="preserve">
+    <value>شغّل ميزات Windows الاختيارية أو أوقفها، تمامًا مثل "تشغيل ميزات Windows أو إيقاف تشغيلها". تكتمل معظم التغييرات بعد إعادة التشغيل.</value>
+  </data>
+  <data name="OptionalFeatures.Search" xml:space="preserve">
+    <value>البحث في الميزات</value>
+  </data>
+  <data name="OptionalFeatures.Loading" xml:space="preserve">
+    <value>جارٍ طلب الميزات من Windows...</value>
+  </data>
+  <data name="OptionalFeatures.RestartNeeded" xml:space="preserve">
+    <value>أعد تشغيل Windows لإكمال التغيير.</value>
+  </data>
+  <data name="OptionalFeatures.Error.Title" xml:space="preserve">
+    <value>تعذر تغيير الميزة</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Microsoft_Hyper_V_All" xml:space="preserve">
+    <value>Hyper-V: تشغيل الأجهزة الافتراضية. قد يقلل تشغيله أداء الألعاب ويتعارض مع تطبيقات المحاكاة الأخرى.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Microsoft_Windows_Subsystem_Linux" xml:space="preserve">
+    <value>نظام Windows الفرعي لـ Linux ‏(WSL): تشغيل أدوات Linux على Windows.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.VirtualMachinePlatform" xml:space="preserve">
+    <value>منصة الجهاز الظاهري: يحتاجها WSL 2 وتطبيقات Android.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Containers_DisposableClientVM" xml:space="preserve">
+    <value>Windows Sandbox: سطح مكتب مؤقت لتجربة البرامج المجهولة بأمان.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.NetFx3" xml:space="preserve">
+    <value>‏.NET Framework 3.5: تحتاجه بعض البرامج والألعاب القديمة.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.SMB1Protocol" xml:space="preserve">
+    <value>‏SMB 1.0: بروتوكول مشاركة ملفات قديم وغير آمن. أبقه معطّلًا ما لم يحتجه جهاز قديم.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.TelnetClient" xml:space="preserve">
+    <value>عميل Telnet: أداة سطر أوامر لاختبار منافذ الشبكة.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Printing_PrintToPDFServices_Features" xml:space="preserve">
+    <value>‏Microsoft Print to PDF: احفظ أي شيء قابل للطباعة كملف PDF.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.MediaPlayback" xml:space="preserve">
+    <value>ميزات الوسائط: مشغل Windows Media ومكونات تشغيل الوسائط التي تعتمد عليها بعض التطبيقات.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Recall" xml:space="preserve">
+    <value>Recall: يلتقط لقطات لشاشتك للبحث فيها لاحقًا. إزالته توفر مساحة وتحافظ على خصوصية نشاطك.</value>
+  </data>
+  <data name="AppInstaller.Header.Title" xml:space="preserve">
+    <value>تثبيت التطبيقات</value>
+  </data>
+  <data name="AppInstaller.Header.Description" xml:space="preserve">
+    <value>اختر تطبيقات شائعة وثبّتها دفعة واحدة عبر winget، مدير الحزم من Microsoft. تأتي التطبيقات من مصادرها الرسمية.</value>
+  </data>
+  <data name="AppInstaller.Install" xml:space="preserve">
+    <value>تثبيت المحدد ({0})</value>
+  </data>
+  <data name="AppInstaller.Loading" xml:space="preserve">
+    <value>جارٍ البحث عن winget...</value>
+  </data>
+  <data name="AppInstaller.WingetMissing" xml:space="preserve">
+    <value>لم يتم العثور على winget. ثبّت "مثبّت التطبيقات" من Microsoft Store ثم عد.</value>
+  </data>
+  <data name="AppInstaller.Progress" xml:space="preserve">
+    <value>جارٍ تثبيت {0}...</value>
+  </data>
+  <data name="AppInstaller.Success.Title" xml:space="preserve">
+    <value>تم تثبيت التطبيقات</value>
+  </data>
+  <data name="AppInstaller.Success.Message" xml:space="preserve">
+    <value>التطبيقات المثبتة أو المحدّثة مسبقًا: {0}</value>
+  </data>
+  <data name="AppInstaller.Error.Title" xml:space="preserve">
+    <value>تعذر تثبيت بعض التطبيقات</value>
+  </data>
+  <data name="AppInstaller.Category.Browsers" xml:space="preserve">
+    <value>المتصفحات</value>
+  </data>
+  <data name="AppInstaller.Category.Utilities" xml:space="preserve">
+    <value>الأدوات المساعدة</value>
+  </data>
+  <data name="AppInstaller.Category.Media" xml:space="preserve">
+    <value>الوسائط</value>
+  </data>
+  <data name="AppInstaller.Category.Gaming" xml:space="preserve">
+    <value>الألعاب</value>
+  </data>
+  <data name="AppInstaller.Category.Development" xml:space="preserve">
+    <value>التطوير</value>
+  </data>
+  <data name="AppInstaller.Category.Runtimes" xml:space="preserve">
+    <value>بيئات التشغيل</value>
+  </data>
+  <data name="Search.Global.Placeholder" xml:space="preserve">
+    <value>ابحث في التحسينات والإعدادات</value>
+  </data>
+  <data name="Health.BootTime.Trend" xml:space="preserve">
+    <value>{0} ث في آخر إقلاع، و{1} ث في المتوسط خلال آخر {2} مرات إقلاع (حسب قياس Windows)</value>
+  </data>
+  <data name="Update.Button.Install" xml:space="preserve">
+    <value>التحديث الآن</value>
+  </data>
+  <data name="Update.Confirm.Title" xml:space="preserve">
+    <value>التحديث إلى الإصدار {0}</value>
+  </data>
+  <data name="Update.Confirm.Message" xml:space="preserve">
+    <value>ينزّل optimizerDuck الإصدار الجديد من GitHub، ويتحقق منه مقابل مجموع SHA-256 المنشور، ثم يستبدل نفسه ويعيد التشغيل. تبقى تحسيناتك المطبقة وبيانات التراجع كما هي.</value>
+  </data>
+  <data name="Update.Downloading" xml:space="preserve">
+    <value>جارٍ تنزيل التحديث والتحقق منه...</value>
+  </data>
+  <data name="Update.Failed.Title" xml:space="preserve">
+    <value>تعذر تثبيت التحديث</value>
+  </data>
+  <data name="Update.Failed.Message" xml:space="preserve">
+    <value>تعذر تنزيله أو التحقق منه. ستُفتح صفحة الإصدار لتحدّث يدويًا.</value>
+  </data>
+  <data name="Optimizer.Menu.HideUnavailable" xml:space="preserve">
+    <value>إخفاء غير المدعوم</value>
+  </data>
+  <data name="OptimizationDetailsDialog.SideEffects" xml:space="preserve">
+    <value>ما الذي قد يتوقف عن العمل</value>
+  </data>
+  <data name="Optimizer.Performance.DisableBackgroundApps.SideEffects" xml:space="preserve">
+    <value>لم تعد تطبيقات المتجر تعمل في الخلفية: يتم تحديث البريد والتقويم والطقس وما شابهها فقط عند فتحها، وقد تتأخر بعض إشعاراتها أو لا تصل.</value>
+  </data>
+  <data name="Optimizer.Performance.ConsolidateServiceHosts.SideEffects" xml:space="preserve">
+    <value>تعود عدة خدمات لمشاركة عملية واحدة، لذا قد يؤدي تعطل خدمة إلى إسقاط الخدمات الأخرى في العملية نفسها، ويعرضها مدير المهام مجمّعة بدلًا من سطر لكل خدمة.</value>
+  </data>
+  <data name="Optimizer.Performance.ProcessPriority.SideEffects" xml:space="preserve">
+    <value>تحصل المهام العاملة في الخلفية (التنزيلات وترميز الفيديو والتجميع) على وقت معالج أقل أثناء استخدامك نافذة أخرى، لذا قد تستغرق وقتًا أطول.</value>
+  </data>
+  <data name="Optimizer.Performance.OptimizeMultimediaScheduler.SideEffects" xml:space="preserve">
+    <value>أثناء تشغيل لعبة أو وسائط، تحصل مهام الخلفية وحركة الشبكة على أولوية أقل، لذا قد تتباطأ التنزيلات والبث في الخلفية.</value>
+  </data>
+  <data name="Optimizer.Performance.KeyboardLatencyOptimization.SideEffects" xml:space="preserve">
+    <value>تبدأ المفاتيح المضغوطة بالتكرار أسرع وتتكرر بسرعة أكبر، وقد يؤدي ذلك إلى كتابة أحرف إضافية إذا أبقيت إصبعك على مفتاح.</value>
+  </data>
+  <data name="Optimizer.Performance.DisableAccessibilityKeyboardHotkeys.SideEffects" xml:space="preserve">
+    <value>لم يعد الضغط على Shift خمس مرات أو الاستمرار في ضغط Shift أو Num Lock يشغّل المفاتيح الثابتة أو مفاتيح التصفية أو مفاتيح التبديل. يمكن لمن يعتمد عليها تشغيلها من الإعدادات &gt; إمكانية الوصول &gt; لوحة المفاتيح.</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.SideEffects" xml:space="preserve">
+    <value>يُفتح Edge أبطأ قليلًا، وبعد إغلاق آخر نافذة له لا يعرض الإشعارات ولا يُكمل التنزيلات.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableTelemetry.SideEffects" xml:space="preserve">
+    <value>يتوقف مركز الملاحظات عن العمل، ولا يمكن استلام إصدارات Windows Insider، وتقل البيانات المتاحة لبعض أدوات استكشاف الأخطاء، وتحصل Microsoft على تقارير أعطال أقل لإصلاح مشكلات أجهزتك.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableErrorReporting.SideEffects" xml:space="preserve">
+    <value>لم تعد تقارير الأعطال تُحفظ أو تُرسل، لذا يعرض مراقب الموثوقية تفاصيل أقل ولا تستطيع Microsoft اقتراح حلول معروفة للعطل. ولم يعد مساعد توافق البرامج يقترح حلولًا للبرامج القديمة.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableAdvertisingAndSuggestions.SideEffects" xml:space="preserve">
+    <value>لم تعد التطبيقات قادرة على عرض إعلانات مخصصة لك، ويتوقف Windows عن اقتراح التطبيقات والنصائح وخطوات الإعداد، وتتعلم اقتراحات الكتابة والخط اليدوي أقل مما تكتبه.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableNewsAndInterests.SideEffects" xml:space="preserve">
+    <value>يختفي زر الأدوات (الطقس) من شريط المهام وتختفي موجز الأخبار.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableActivityHistory.SideEffects" xml:space="preserve">
+    <value>لم يعد Windows يحتفظ بسجل للتطبيقات والملفات والصفحات التي استخدمتها، لذا تتوقف اقتراحات "المتابعة من حيث توقفت" والمخطط الزمني عن العمل.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableLocationAndSensors.SideEffects" xml:space="preserve">
+    <value>لم تعد التطبيقات قادرة على معرفة موقعك: تتوقف الخرائط والطقس والعثور على جهازي والمنطقة الزمنية التلقائية عن استخدامه، وتتوقف الخرائط دون اتصال عن التحديث، وقد تتوقف بعض المستشعرات مثل التدوير التلقائي أو استشعار الإضاءة.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableAutoLogger.SideEffects" xml:space="preserve">
+    <value>لم تعد بعض سجلات التشخيص المدمجة (جلسات Wi-Fi والشبكة ونموذج التطبيقات) تُسجَّل، مما يصعّب استكشاف مشكلات الاتصال والتطبيقات.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableCortana.SideEffects" xml:space="preserve">
+    <value>لم يعد Cortana متاحًا، ولم يعد البحث يستخدم الويب أو موقعك، لذا يعرض بحث قائمة ابدأ نتائج من هذا الجهاز فقط.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableCopilot.SideEffects" xml:space="preserve">
+    <value>يختفي زر Copilot واختصار مفتاح Windows + C، ولا يمكن تشغيل Copilot من Windows نفسه.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableContentDeliveryManager.SideEffects" xml:space="preserve">
+    <value>تتوقف صور Windows Spotlight على شاشة القفل و"المعلومات الطريفة" والتطبيقات المقترحة في قائمة ابدأ عن التحديث، وتختار صورة أو عرض شرائح لشاشة القفل بنفسك.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableFindMyDevice.SideEffects" xml:space="preserve">
+    <value>لم يعد بإمكانك تحديد موقع هذا الجهاز أو قفله من حساب Microsoft إذا فُقد أو سُرق.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableDeliveryOptimization.SideEffects" xml:space="preserve">
+    <value>تُنزَّل التحديثات من Microsoft فقط وليس من أجهزة أخرى على شبكتك، لذا يستهلك المنزل أو المكتب الذي فيه عدة أجهزة نطاقًا أكبر من الإنترنت للتحديثات.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.SideEffects" xml:space="preserve">
+    <value>يفقد Edge الشريط الجانبي (ومعه Copilot) ومقارنة الأسعار والقسائم، وتعرض إعداداته "تتم إدارة المتصفح من قبل مؤسستك" لأن التغيير يستخدم السياسات.</value>
+  </data>
+  <data name="Optimizer.UserExperience.SpeedUpExplorerAndMenus.SideEffects" xml:space="preserve">
+    <value>تُشغَّل تطبيقات بدء التشغيل كلها فور تسجيل الدخول بدلًا من توزيعها، لذا قد تبدو الثواني الأولى بعد تسجيل الدخول أبطأ على الأجهزة الأضعف.</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableVisualEffects.SideEffects" xml:space="preserve">
+    <value>يبدو Windows أبسط: لا شفافية ولا حركات في شريط المهام ولا ظلال تحت أسماء أيقونات سطح المكتب ولا معاينة Aero Peek عند الإشارة إلى زاوية شريط المهام.</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableStartMenuWebSearch.SideEffects" xml:space="preserve">
+    <value>يعرض بحث قائمة ابدأ نتائج من هذا الجهاز فقط: تختفي نتائج الويب من Bing وأبرز عناصر البحث.</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableStartRecommended.SideEffects" xml:space="preserve">
+    <value>لم تعد قائمة ابدأ تعرض الملفات المفتوحة مؤخرًا والتطبيقات المثبتة حديثًا، لذا ستجدها عبر مستكشف الملفات أو البحث.</value>
+  </data>
+  <data name="Optimizer.UserExperience.MaximizeUpdatePauseLimit.SideEffects" xml:space="preserve">
+    <value>يمكن إيقاف التحديثات مؤقتًا لفترة أطول بكثير. أثناء الإيقاف لا تُثبَّت إصلاحات الأمان أيضًا، لذا استأنف التحديثات بانتظام.</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.SideEffects" xml:space="preserve">
+    <value>لم يعد Windows Update يثبّت برامج التشغيل أو يحدّثها، لذا يجب الحصول على برنامج تشغيل الجهاز الجديد أو إصلاحاته من موقع الشركة المصنعة.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableUlps.SideEffects" xml:space="preserve">
+    <value>لم تعد بطاقة الرسوميات (أو البطاقة الثانية في إعداد CrossFire) تدخل أعمق حالات السكون في وضع الخمول، لذا يرتفع استهلاك الطاقة ودرجة الحرارة في الخمول قليلًا.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisablePowerGating.SideEffects" xml:space="preserve">
+    <value>تبقى أجزاء من بطاقة الرسوميات مشغّلة حتى على سطح المكتب: استهلاك طاقة وحرارة وضجيج مراوح أعلى في الخمول، وعمر بطارية أقصر في الحواسيب المحمولة.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableVideoClockGating.SideEffects" xml:space="preserve">
+    <value>تبقى وحدتا ترميز الفيديو وفك ترميزه مشغّلتين حتى عند عدم الاستخدام، مما يرفع استهلاك الطاقة في الخمول قليلًا، ويُلاحظ ذلك غالبًا في الحواسيب المحمولة.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableAspm.SideEffects" xml:space="preserve">
+    <value>لم يعد اتصال PCIe ببطاقة الرسوميات يوفّر الطاقة في الخمول: استهلاك طاقة أعلى قليلًا وعمر بطارية أقصر في الحواسيب المحمولة.</value>
+  </data>
+  <data name="Optimizer.Gpu.NvidiaDisableDynamicPstate.SideEffects" xml:space="preserve">
+    <value>تبقى بطاقة الرسوميات على ترددات عالية حتى على سطح المكتب: استهلاك طاقة وحرارة وضجيج مراوح أعلى في الخمول، وعمر بطارية أقصر في الحواسيب المحمولة.</value>
+  </data>
+  <data name="Optimizer.Gpu.NvidiaDisableAsyncPstates.SideEffects" xml:space="preserve">
+    <value>تبدّل بطاقة الرسوميات حالات الطاقة بشكل أقل وقد تبقى على ترددات أعلى مما تحتاج: استهلاك طاقة وحرارة أكبر في الأحمال الخفيفة.</value>
+  </data>
+  <data name="Optimizer.Gpu.IntelDisableAdaptiveVsync.SideEffects" xml:space="preserve">
+    <value>عندما ينخفض معدل إطارات اللعبة عن معدل تحديث الشاشة، قد يحدث تقطّع بدلًا من تمزّق مؤقت في الصورة.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisableHibernateAndFastStartup.SideEffects" xml:space="preserve">
+    <value>لم يعد السبات متاحًا، ويستغرق التشغيل بعد إيقاف التشغيل وقتًا أطول قليلًا لأن بدء التشغيل السريع معطّل. ولم تعد الحواسيب المحمولة تدخل السبات عند انخفاض البطارية.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisableUSBPowerSaving.SideEffects" xml:space="preserve">
+    <value>تبقى أجهزة USB مشغّلة طوال الوقت بدلًا من السكون عند الخمول، لذا تفقد الحواسيب المحمولة بعض عمر البطارية.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.InstallOptimizerDuckPowerPlan.SideEffects" xml:space="preserve">
+    <value>يعمل المعالج على ترددات أعلى أكثر: استهلاك طاقة وحرارة أكبر، ومراوح أعلى صوتًا في الأحمال الخفيفة، وعمر بطارية أقصر بكثير في الحواسيب المحمولة. وقد يعرض مدير المهام استخدامًا عاليًا للمعالج حتى في الخمول.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisablePowerSaving.SideEffects" xml:space="preserve">
+    <value>يتوقف Windows عن خنق تطبيقات الخلفية لتوفير الطاقة، لذا تستهلك الحواسيب المحمولة بطارية أكثر، ولم يعد يحاول استعادة منافذ USB التي سحبت طاقة زائدة.</value>
+  </data>
+  <data name="Optimizer.AI.DisableRecall.SideEffects" xml:space="preserve">
+    <value>يتوقف Recall عن حفظ اللقطات ويحذف المحفوظة منها، لذا لا يمكنك البحث عن أشياء رأيتها على الشاشة سابقًا.</value>
+  </data>
+  <data name="Optimizer.AI.DisableClickToDo.SideEffects" xml:space="preserve">
+    <value>لم يعد Click to Do (مفتاح Windows + نقرة) متاحًا، لذا لا يمكنك تنفيذ إجراءات الذكاء الاصطناعي السريعة على النصوص أو الصور على الشاشة.</value>
+  </data>
+  <data name="Optimizer.AI.DisablePaintAI.SideEffects" xml:space="preserve">
+    <value>تختفي ميزات Cocreator وImage Creator والتعبئة التوليدية والمسح التوليدي من الرسام، وتبقى أدوات الرسم العادية.</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.SideEffects" xml:space="preserve">
+    <value>تختفي خيارات إعادة الصياغة والتلخيص وخيارات الذكاء الاصطناعي الأخرى من المفكرة، ويعمل تحرير النص كما كان.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisablePreinstalledApps.SideEffects" xml:space="preserve">
+    <value>يتوقف Windows عن تثبيت التطبيقات والألعاب المقترحة من تلقاء نفسه، وتبقى التطبيقات المثبتة بالفعل حتى تزيلها.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.ConfigureServices.SideEffects" xml:space="preserve">
+    <value>يتم إيقاف الفاكس والسجل البعيد والوصول البعيد والعرض التجريبي للمتاجر وبعض الخدمات النادرة الاستخدام، وتبدأ خدمات كثيرة أخرى عند الحاجة فقط، لذا قد يستغرق أول استخدام لبعض الميزات (الطباعة وBluetooth والمسح الضوئي) وقتًا أطول قليلًا. وقد يتوقف برنامج يعتمد على خدمة معطّلة حتى تتراجع عن التغيير.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.SideEffects" xml:space="preserve">
+    <value>يتوقف OneDrive عن المزامنة: لم تعد الملفات تُنسخ احتياطيًا إلى السحابة أو تتوفر على أجهزتك الأخرى، ويتوقف الحفظ التلقائي في Office إلى OneDrive، وتتوقف المجلدات المنسوخة احتياطيًا (سطح المكتب والمستندات والصور) عن التحديث عبر الإنترنت.</value>
+  </data>
 </root>
 

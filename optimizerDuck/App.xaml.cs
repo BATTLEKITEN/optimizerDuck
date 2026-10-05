@@ -12,6 +12,7 @@ using optimizerDuck.Common.Extensions;
 using optimizerDuck.Common.Helpers;
 using optimizerDuck.Domain.Configuration;
 using optimizerDuck.Resources.Languages;
+using optimizerDuck.Services.Cli;
 using optimizerDuck.Services.Configuration;
 using optimizerDuck.Services.Customize;
 using optimizerDuck.Services.Optimization;
@@ -316,7 +317,6 @@ public partial class App : Application
     {
         Directory.CreateDirectory(Shared.RootDirectory);
         Directory.CreateDirectory(Shared.ResourcesDirectory);
-        Directory.CreateDirectory(Shared.DownloadsDirectory);
         Directory.CreateDirectory(Shared.AssetsDirectory);
         Directory.CreateDirectory(Shared.RevertDirectory);
         Directory.CreateDirectory(Shared.HistoryDirectory);
@@ -383,6 +383,23 @@ public partial class App : Application
         );
         _logger.LogInformation("Loaded language: {Language}", appSettings.App.Language);
 
+        RevertDataSeal.EnsureKey(_logger);
+        UpdaterService.RemovePreviousVersion(_logger);
+        if (SecureDirectory.EnsureAdminOnly(Shared.SecureDataDirectory, _logger))
+            Directory.CreateDirectory(Shared.DownloadsDirectory);
+
+        var commandLine = CommandLineOptions.Parse(e.Args);
+        if (commandLine.IsCommand)
+        {
+            int exitCode;
+            await using (var output = ConsoleBridge.Open())
+                exitCode = await _host
+                    .Services.GetRequiredService<CliRunner>()
+                    .RunAsync(commandLine, output);
+            await Dispatcher.InvokeAsync(() => Shutdown(exitCode));
+            return;
+        }
+
         var optimizationRegistry = _host.Services.GetRequiredService<OptimizationRegistry>();
 
         await Dispatcher.InvokeAsync(() =>
@@ -413,6 +430,27 @@ public partial class App : Application
         await customizeRegistry.PreloadCategoriesAsync().ConfigureAwait(false);
 
         RevertManager.RemoveOrphanedTempFiles(_logger);
+
+        // Feature updates put tweaks back; the check only reads, so it runs in the background.
+        var drift = _host.Services.GetRequiredService<DriftService>();
+        _ = Task.Run(async () =>
+        {
+            try
+            {
+                await drift.CheckAsync().ConfigureAwait(false);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogWarning(ex, "Startup drift check failed");
+            }
+        });
+    }
+
+    /// <summary>Closes the app without the pending changes prompt, for a self-update.</summary>
+    internal void ShutdownWithoutPrompt()
+    {
+        _allowClose = true;
+        Shutdown();
     }
 
     protected override async void OnExit(ExitEventArgs e)

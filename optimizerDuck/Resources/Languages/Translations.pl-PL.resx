@@ -2519,4 +2519,704 @@ Zaktualizuj teraz, aby korzystać z najnowszych funkcji, ulepszeń i poprawek b�
   <data name="Error.Unhandled.LogHint" xml:space="preserve">
     <value>Szczegóły znajdują się w pliku dziennika.</value>
   </data>
+  <data name="Sidebar.Profiles" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+  <data name="Profiles.Header.Title" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+  <data name="Profiles.Header.Description" xml:space="preserve">
+    <value>Zastosuj gotowy zestaw optymalizacji, przenieś swoją konfigurację na inny komputer albo przywróć to, co cofnął Windows.</value>
+  </data>
+  <data name="Profiles.Presets.Header" xml:space="preserve">
+    <value>Gotowe zestawy</value>
+  </data>
+  <data name="Profiles.Preset.Recommended.Title" xml:space="preserve">
+    <value>Zalecane</value>
+  </data>
+  <data name="Profiles.Preset.Recommended.Description" xml:space="preserve">
+    <value>Wszystkie optymalizacje oznaczone jako bezpieczne. Dobry początek dla większości komputerów stacjonarnych.</value>
+  </data>
+  <data name="Profiles.Preset.Gaming.Title" xml:space="preserve">
+    <value>Gaming</value>
+  </data>
+  <data name="Profiles.Preset.Gaming.Description" xml:space="preserve">
+    <value>Optymalizacje wydajności i opóźnień, bez tych ryzykownych.</value>
+  </data>
+  <data name="Profiles.Preset.Privacy.Title" xml:space="preserve">
+    <value>Prywatność</value>
+  </data>
+  <data name="Profiles.Preset.Privacy.Description" xml:space="preserve">
+    <value>Wyłącza telemetrię, reklamy, sugestie i funkcje AI, bez ryzykownych optymalizacji.</value>
+  </data>
+  <data name="Profiles.Preset.Laptop.Title" xml:space="preserve">
+    <value>Laptop</value>
+  </data>
+  <data name="Profiles.Preset.Laptop.Description" xml:space="preserve">
+    <value>Bezpieczne optymalizacje, które nie skracają pracy na baterii: bez zmian planu zasilania, USB i GPU.</value>
+  </data>
+  <data name="Profiles.Preset.Count" xml:space="preserve">
+    <value>Optymalizacje: {0}</value>
+  </data>
+  <data name="Profiles.Button.Preview" xml:space="preserve">
+    <value>Podgląd</value>
+  </data>
+  <data name="Profiles.Button.Apply" xml:space="preserve">
+    <value>Zastosuj</value>
+  </data>
+  <data name="Profiles.File.Header" xml:space="preserve">
+    <value>Twoja konfiguracja</value>
+  </data>
+  <data name="Profiles.Export.Title" xml:space="preserve">
+    <value>Eksportuj do pliku</value>
+  </data>
+  <data name="Profiles.Export.Description" xml:space="preserve">
+    <value>Zapisuje optymalizacje zastosowane na tym komputerze i ustawienia personalizacji, aby można je było zastosować gdzie indziej.</value>
+  </data>
+  <data name="Profiles.Export.Button" xml:space="preserve">
+    <value>Eksportuj</value>
+  </data>
+  <data name="Profiles.Import.Title" xml:space="preserve">
+    <value>Importuj i zastosuj</value>
+  </data>
+  <data name="Profiles.Import.Description" xml:space="preserve">
+    <value>Otwiera plik profilu i stosuje jego zawartość. Elementy nieobsługiwane przez ten komputer są pomijane.</value>
+  </data>
+  <data name="Profiles.Import.Button" xml:space="preserve">
+    <value>Importuj</value>
+  </data>
+  <data name="Profiles.FileFilter" xml:space="preserve">
+    <value>Profil optimizerDuck</value>
+  </data>
+  <data name="Profiles.Export.Success.Title" xml:space="preserve">
+    <value>Zapisano profil</value>
+  </data>
+  <data name="Profiles.Export.Success.Message" xml:space="preserve">
+    <value>Optymalizacje: {0}. Ustawienia personalizacji: {1}.</value>
+  </data>
+  <data name="Profiles.Export.Failed.Title" xml:space="preserve">
+    <value>Nie udało się zapisać profilu</value>
+  </data>
+  <data name="Profiles.Import.Failed.Title" xml:space="preserve">
+    <value>Nie udało się otworzyć profilu</value>
+  </data>
+  <data name="Profiles.Import.Failed.Message" xml:space="preserve">
+    <value>Plik nie jest profilem optimizerDuck albo został utworzony w nowszej wersji.</value>
+  </data>
+  <data name="Profiles.Apply.Confirm.Title" xml:space="preserve">
+    <value>Zastosować „{0}”?</value>
+  </data>
+  <data name="Profiles.Apply.Confirm.Message" xml:space="preserve">
+    <value>Optymalizacje do zastosowania: {0}. Ustawienia personalizacji: {1}.
+
+Elementy już zastosowane i nieobsługiwane przez ten komputer zostaną pominięte. Każdą optymalizację można później cofnąć z jej karty.</value>
+  </data>
+  <data name="Profiles.Apply.Title" xml:space="preserve">
+    <value>Stosowanie „{0}”</value>
+  </data>
+  <data name="Profiles.Apply.Progress" xml:space="preserve">
+    <value>Stosowanie: {0}</value>
+  </data>
+  <data name="Profiles.Report.Title" xml:space="preserve">
+    <value>Profil zastosowany</value>
+  </data>
+  <data name="Profiles.Report.Summary" xml:space="preserve">
+    <value>Zastosowano: {0}
+Już zastosowane: {1}
+Nieobsługiwane na tym komputerze: {2}
+Nierozpoznane przez tę wersję: {3}
+Nieudane: {4}</value>
+  </data>
+  <data name="Profiles.Report.Failures" xml:space="preserve">
+    <value>Co się nie udało:</value>
+  </data>
+  <data name="Profiles.Preview.Title" xml:space="preserve">
+    <value>Co zastosuje „{0}”</value>
+  </data>
+  <data name="Profiles.Preview.Empty" xml:space="preserve">
+    <value>Ten zestaw nie zawiera żadnych optymalizacji w tej wersji.</value>
+  </data>
+  <data name="Drift.Header" xml:space="preserve">
+    <value>Zmiany cofnięte przez Windows</value>
+  </data>
+  <data name="Drift.Description" xml:space="preserve">
+    <value>Aktualizacje Windows i inne programy czasem przywracają ustawienia. To sprawdzenie tylko odczytuje bieżący stan i niczego nie zmienia.</value>
+  </data>
+  <data name="Drift.Button.Check" xml:space="preserve">
+    <value>Sprawdź teraz</value>
+  </data>
+  <data name="Drift.Button.Reapply" xml:space="preserve">
+    <value>Zastosuj ponownie</value>
+  </data>
+  <data name="Drift.Status.Checking" xml:space="preserve">
+    <value>Sprawdzanie zastosowanych optymalizacji...</value>
+  </data>
+  <data name="Drift.Status.None" xml:space="preserve">
+    <value>Wszystkie zastosowane optymalizacje nadal działają.</value>
+  </data>
+  <data name="Drift.Status.Found" xml:space="preserve">
+    <value>Optymalizacje cofnięte od czasu zastosowania: {0}</value>
+  </data>
+  <data name="Drift.Reapply.Title" xml:space="preserve">
+    <value>Ponowne stosowanie optymalizacji</value>
+  </data>
+  <data name="Dashboard.Drift.Title" xml:space="preserve">
+    <value>Część optymalizacji została cofnięta</value>
+  </data>
+  <data name="Dashboard.Drift.Message" xml:space="preserve">
+    <value>Windows lub inny program przywrócił ustawienia zmienione przez zastosowane optymalizacje (liczba: {0}).</value>
+  </data>
+  <data name="Dashboard.Drift.Button" xml:space="preserve">
+    <value>Przejrzyj i zastosuj ponownie</value>
+  </data>
+  <data name="Cli.Usage" xml:space="preserve">
+    <value>Użycie: optimizerDuck.exe &lt;polecenie&gt; [opcje]
+
+Polecenia:
+  --apply-profile &lt;file&gt;    Stosuje plik profilu
+  --apply-preset &lt;name&gt;     Stosuje gotowy zestaw: Recommended, Gaming, Privacy, Laptop
+  --export-profile &lt;file&gt;   Zapisuje to, co jest zastosowane na tym komputerze, do pliku profilu
+  --check-drift             Wyświetla optymalizacje cofnięte przez Windows
+  --reapply-drift           Ponownie stosuje optymalizacje cofnięte przez Windows
+  --help                    Wyświetla tę pomoc
+
+Opcje:
+  --restore-point           Tworzy punkt przywracania przed jakąkolwiek zmianą
+  --report &lt;file&gt;           Zapisuje wynik do pliku JSON
+  --accept-terms            Akceptuje warunki użytkowania (wymagane raz, przed pierwszą zmianą)
+
+Uruchom z terminala z uprawnieniami administratora, aby zobaczyć wynik.
+Kody wyjścia: 0 sukces, 1 błędy lub wykryte cofnięte optymalizacje, 2 błąd użycia lub pliku.</value>
+  </data>
+  <data name="Cli.Error.UnknownArgument" xml:space="preserve">
+    <value>Nieznany argument: {0}</value>
+  </data>
+  <data name="Cli.Error.OptionWithoutCommand" xml:space="preserve">
+    <value>Podano opcję bez polecenia.</value>
+  </data>
+  <data name="Cli.Error.OneCommand" xml:space="preserve">
+    <value>Naraz można uruchomić tylko jedno polecenie.</value>
+  </data>
+  <data name="Cli.Error.MissingValue" xml:space="preserve">
+    <value>{0} wymaga wartości.</value>
+  </data>
+  <data name="Cli.Error.Terms" xml:space="preserve">
+    <value>Warunki użytkowania nie zostały jeszcze zaakceptowane. Przeczytaj je w aplikacji albo dodaj --accept-terms, aby je zaakceptować.</value>
+  </data>
+  <data name="Cli.Error.UnknownPreset" xml:space="preserve">
+    <value>Nieznany zestaw: {0}. Dostępne: {1}</value>
+  </data>
+  <data name="Optimizer.Preview.Button" xml:space="preserve">
+    <value>Podgląd zmian</value>
+  </data>
+  <data name="Optimizer.Preview.Title" xml:space="preserve">
+    <value>Co zmieni „{0}”</value>
+  </data>
+  <data name="Optimizer.Preview.Summary" xml:space="preserve">
+    <value>Zmiany do wprowadzenia: {0}. Już ustawione: {1}. Nic jeszcze nie zostało zmienione.</value>
+  </data>
+  <data name="Optimizer.Preview.Nothing" xml:space="preserve">
+    <value>Nic do zmiany: ten komputer już spełnia te ustawienia.</value>
+  </data>
+  <data name="Optimizer.Preview.Failed.Title" xml:space="preserve">
+    <value>Nie udało się wyświetlić podglądu zmian</value>
+  </data>
+  <data name="Optimizer.AI.DisablePaintAI.Name" xml:space="preserve">
+    <value>Wyłącz AI w Paint</value>
+  </data>
+  <data name="Optimizer.AI.DisablePaintAI.ShortDescription" xml:space="preserve">
+    <value>Wyłącza w Paint funkcje Cocreator, Image Creator, generatywne wypełnianie i generatywne wymazywanie za pomocą oficjalnych zasad Microsoftu.</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.Name" xml:space="preserve">
+    <value>Wyłącz AI w Notatniku</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.ShortDescription" xml:space="preserve">
+    <value>Usuwa z Notatnika funkcje Przepisz, Podsumuj i inne funkcje AI za pomocą udokumentowanych zasad.</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.Name" xml:space="preserve">
+    <value>Zatrzymaj działanie Microsoft Edge w tle</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.ShortDescription" xml:space="preserve">
+    <value>Wyłącza przyspieszanie uruchamiania, które ładuje Edge przy logowaniu, oraz tryb w tle, który utrzymuje go po zamknięciu. Oszczędza RAM, nawet jeśli nie otwierasz Edge.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.Name" xml:space="preserve">
+    <value>Wyłącz pasek boczny, zakupy i zbieranie danych w Edge</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.ShortDescription" xml:space="preserve">
+    <value>Za pomocą zasad Edge ukrywa pasek boczny (wraz z Copilotem), wyłącza asystenta zakupów i rekomendacje oraz zatrzymuje raporty personalizacji i opcjonalne dane diagnostyczne.</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.Name" xml:space="preserve">
+    <value>Wyklucz sterowniki z Windows Update</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.ShortDescription" xml:space="preserve">
+    <value>Zapobiega zastępowaniu przez Windows Update sterowników zainstalowanych samodzielnie, np. sterownika GPU lub audio od producenta. Sterowniki aktualizujesz wtedy sam.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.Name" xml:space="preserve">
+    <value>Wyłącz OneDrive</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.ShortDescription" xml:space="preserve">
+    <value>Zatrzymuje uruchamianie i synchronizację OneDrive oraz usuwa go z panelu bocznego Eksploratora plików. Pliki w folderze OneDrive zostają na dysku, nic nie jest odinstalowywane.</value>
+  </data>
+  <data name="Sidebar.Health" xml:space="preserve">
+    <value>Stan systemu</value>
+  </data>
+  <data name="Sidebar.ContextMenu" xml:space="preserve">
+    <value>Menu kontekstowe</value>
+  </data>
+  <data name="Sidebar.OptionalFeatures" xml:space="preserve">
+    <value>Funkcje systemu Windows</value>
+  </data>
+  <data name="Sidebar.AppInstaller" xml:space="preserve">
+    <value>Instaluj aplikacje</value>
+  </data>
+  <data name="DiskCleanup.Item.DeliveryOptimization" xml:space="preserve">
+    <value>Pamięć podręczna optymalizacji dostarczania</value>
+  </data>
+  <data name="DiskCleanup.Item.DeliveryOptimization.Description" xml:space="preserve">
+    <value>Pliki aktualizacji przechowywane przez Windows do udostępniania innym komputerom; można je bezpiecznie usunąć</value>
+  </data>
+  <data name="DiskCleanup.Item.SystemErrorReports" xml:space="preserve">
+    <value>Raporty błędów systemu</value>
+  </data>
+  <data name="DiskCleanup.Item.SystemErrorReports.Description" xml:space="preserve">
+    <value>Raporty awarii i problemów przechowywane przez Raportowanie błędów systemu Windows dla wszystkich użytkowników</value>
+  </data>
+  <data name="DiskCleanup.Item.ShaderCache" xml:space="preserve">
+    <value>Pamięć podręczna shaderów DirectX</value>
+  </data>
+  <data name="DiskCleanup.Item.ShaderCache.Description" xml:space="preserve">
+    <value>Skompilowane shadery; gry odbudują je przy następnym uruchomieniu, co może usunąć przycięcia po aktualizacji sterownika</value>
+  </data>
+  <data name="Health.Header.Title" xml:space="preserve">
+    <value>Stan systemu</value>
+  </data>
+  <data name="Health.Header.Description" xml:space="preserve">
+    <value>Bezpieczeństwo, dyski i bateria w jednym miejscu. Nic tutaj nie zmienia komputera.</value>
+  </data>
+  <data name="Health.Loading" xml:space="preserve">
+    <value>Sprawdzanie komputera...</value>
+  </data>
+  <data name="Health.Button.Refresh" xml:space="preserve">
+    <value>Odśwież</value>
+  </data>
+  <data name="Health.Button.Export" xml:space="preserve">
+    <value>Zapisz raport</value>
+  </data>
+  <data name="Health.Button.BatteryReport" xml:space="preserve">
+    <value>Raport baterii</value>
+  </data>
+  <data name="Health.Export.Failed.Title" xml:space="preserve">
+    <value>Nie udało się zapisać raportu</value>
+  </data>
+  <data name="Health.Status.Good" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Health.Status.Info" xml:space="preserve">
+    <value>Informacja</value>
+  </data>
+  <data name="Health.Status.Warning" xml:space="preserve">
+    <value>Uwaga</value>
+  </data>
+  <data name="Health.Status.Bad" xml:space="preserve">
+    <value>Problem</value>
+  </data>
+  <data name="Health.Status.Unknown" xml:space="preserve">
+    <value>Nieznany</value>
+  </data>
+  <data name="Health.Unknown" xml:space="preserve">
+    <value>Windows nie zwrócił tej informacji.</value>
+  </data>
+  <data name="Health.State.On" xml:space="preserve">
+    <value>Włączone</value>
+  </data>
+  <data name="Health.State.Off" xml:space="preserve">
+    <value>Wyłączone</value>
+  </data>
+  <data name="Health.Check.SecureBoot" xml:space="preserve">
+    <value>Bezpieczny rozruch</value>
+  </data>
+  <data name="Health.SecureBoot.Off" xml:space="preserve">
+    <value>Wyłączony. Włącz go w ustawieniach UEFI, aby blokować złośliwe oprogramowanie na etapie rozruchu.</value>
+  </data>
+  <data name="Health.SecureBoot.Unsupported" xml:space="preserve">
+    <value>Niedostępny: komputer uruchamia się w trybie starszego BIOS.</value>
+  </data>
+  <data name="Health.Check.Tpm" xml:space="preserve">
+    <value>TPM</value>
+  </data>
+  <data name="Health.Tpm.Ready" xml:space="preserve">
+    <value>TPM {0} jest włączony i gotowy.</value>
+  </data>
+  <data name="Health.Tpm.NotReady" xml:space="preserve">
+    <value>TPM {0} jest obecny, ale wyłączony lub niegotowy. Sprawdź ustawienia UEFI.</value>
+  </data>
+  <data name="Health.Tpm.None" xml:space="preserve">
+    <value>Nie znaleziono TPM. Windows 11 i BitLocker go wymagają.</value>
+  </data>
+  <data name="Health.Check.Vbs" xml:space="preserve">
+    <value>Zabezpieczenia oparte na wirtualizacji</value>
+  </data>
+  <data name="Health.Vbs.Running" xml:space="preserve">
+    <value>Działa. Chroni system kosztem niewielkiego spadku wydajności w grach.</value>
+  </data>
+  <data name="Health.Vbs.Enabled" xml:space="preserve">
+    <value>Włączone, ale nie działa. Może brakować ponownego uruchomienia lub ustawienia w oprogramowaniu układowym.</value>
+  </data>
+  <data name="Health.Check.MemoryIntegrity" xml:space="preserve">
+    <value>Integralność pamięci</value>
+  </data>
+  <data name="Health.Check.Defender" xml:space="preserve">
+    <value>Microsoft Defender</value>
+  </data>
+  <data name="Health.Defender.On" xml:space="preserve">
+    <value>Ochrona w czasie rzeczywistym jest włączona, a definicje aktualne.</value>
+  </data>
+  <data name="Health.Defender.Off" xml:space="preserve">
+    <value>Ochrona w czasie rzeczywistym jest wyłączona. Upewnij się, że komputer chroni inny antywirus.</value>
+  </data>
+  <data name="Health.Defender.Old" xml:space="preserve">
+    <value>Definicje mają {0} dni. Uruchom Windows Update.</value>
+  </data>
+  <data name="Health.Defender.Unknown" xml:space="preserve">
+    <value>Brak stanu z Defendera; może być używany inny antywirus.</value>
+  </data>
+  <data name="Health.Check.Disk" xml:space="preserve">
+    <value>Dysk: {0}</value>
+  </data>
+  <data name="Health.Disk.Healthy" xml:space="preserve">
+    <value>Sprawny ({0})</value>
+  </data>
+  <data name="Health.Disk.Warning" xml:space="preserve">
+    <value>Windows zgłasza ostrzeżenie ({0}). Zrób kopię zapasową danych.</value>
+  </data>
+  <data name="Health.Disk.Unhealthy" xml:space="preserve">
+    <value>Windows zgłasza awarię tego dysku ({0}). Natychmiast zrób kopię zapasową.</value>
+  </data>
+  <data name="Health.Check.Trim" xml:space="preserve">
+    <value>TRIM dla SSD</value>
+  </data>
+  <data name="Health.Trim.Off" xml:space="preserve">
+    <value>Wyłączony. Bez niego dyski SSD z czasem zwalniają.</value>
+  </data>
+  <data name="Health.Check.FreeSpace" xml:space="preserve">
+    <value>Wolne miejsce na dysku systemowym</value>
+  </data>
+  <data name="Health.FreeSpace.Value" xml:space="preserve">
+    <value>{0} wolne z {1} ({2}%)</value>
+  </data>
+  <data name="Health.Check.PendingRestart" xml:space="preserve">
+    <value>Oczekujące ponowne uruchomienie</value>
+  </data>
+  <data name="Health.PendingRestart.Yes" xml:space="preserve">
+    <value>Windows czeka na ponowne uruchomienie, aby dokończyć instalację aktualizacji.</value>
+  </data>
+  <data name="Health.PendingRestart.No" xml:space="preserve">
+    <value>Ponowne uruchomienie nie jest potrzebne.</value>
+  </data>
+  <data name="Health.Check.BootTime" xml:space="preserve">
+    <value>Czas ostatniego rozruchu</value>
+  </data>
+  <data name="Health.BootTime.Value" xml:space="preserve">
+    <value>{0} s według pomiaru Windows</value>
+  </data>
+  <data name="Health.BootTime.Unknown" xml:space="preserve">
+    <value>Windows nie zarejestrował jeszcze czasu rozruchu.</value>
+  </data>
+  <data name="Health.Check.Battery" xml:space="preserve">
+    <value>Zużycie baterii</value>
+  </data>
+  <data name="Health.Battery.Value" xml:space="preserve">
+    <value>Mieści {0}% pierwotnej pojemności.</value>
+  </data>
+  <data name="ContextMenu.Header.Title" xml:space="preserve">
+    <value>Menu kontekstowe</value>
+  </data>
+  <data name="ContextMenu.Header.Description" xml:space="preserve">
+    <value>Wyłącz pozycje, które aplikacje dodają do menu prawego przycisku w Eksploratorze plików. Nic nie jest usuwane; ponowne włączenie przywraca pozycję.</value>
+  </data>
+  <data name="ContextMenu.Search" xml:space="preserve">
+    <value>Szukaj pozycji</value>
+  </data>
+  <data name="ContextMenu.ShowWindows" xml:space="preserve">
+    <value>Pokaż pozycje systemu Windows</value>
+  </data>
+  <data name="ContextMenu.Loading" xml:space="preserve">
+    <value>Odczytywanie pozycji menu kontekstowego...</value>
+  </data>
+  <data name="ContextMenu.RestartNeeded" xml:space="preserve">
+    <value>Uruchom ponownie Eksplorator plików, aby zobaczyć zmianę.</value>
+  </data>
+  <data name="ContextMenu.RestartExplorer" xml:space="preserve">
+    <value>Uruchom ponownie Eksplorator</value>
+  </data>
+  <data name="ContextMenu.Error.Title" xml:space="preserve">
+    <value>Nie udało się zmienić pozycji</value>
+  </data>
+  <data name="ContextMenu.Location.Files" xml:space="preserve">
+    <value>Pliki</value>
+  </data>
+  <data name="ContextMenu.Location.Folders" xml:space="preserve">
+    <value>Foldery</value>
+  </data>
+  <data name="ContextMenu.Location.Background" xml:space="preserve">
+    <value>Tło folderu</value>
+  </data>
+  <data name="ContextMenu.Location.Drives" xml:space="preserve">
+    <value>Dyski</value>
+  </data>
+  <data name="OptionalFeatures.Header.Title" xml:space="preserve">
+    <value>Funkcje systemu Windows</value>
+  </data>
+  <data name="OptionalFeatures.Header.Description" xml:space="preserve">
+    <value>Włączaj i wyłączaj opcjonalne funkcje systemu Windows, tak jak w „Włącz lub wyłącz funkcje systemu Windows”. Większość zmian kończy się po ponownym uruchomieniu.</value>
+  </data>
+  <data name="OptionalFeatures.Search" xml:space="preserve">
+    <value>Szukaj funkcji</value>
+  </data>
+  <data name="OptionalFeatures.Loading" xml:space="preserve">
+    <value>Pobieranie listy funkcji z Windows...</value>
+  </data>
+  <data name="OptionalFeatures.RestartNeeded" xml:space="preserve">
+    <value>Uruchom ponownie Windows, aby dokończyć zmianę.</value>
+  </data>
+  <data name="OptionalFeatures.Error.Title" xml:space="preserve">
+    <value>Nie udało się zmienić funkcji</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Microsoft_Hyper_V_All" xml:space="preserve">
+    <value>Hyper-V: uruchamianie maszyn wirtualnych. Może obniżyć wydajność w grach i kolidować z innymi programami do wirtualizacji.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Microsoft_Windows_Subsystem_Linux" xml:space="preserve">
+    <value>Podsystem Windows dla systemu Linux (WSL): uruchamianie narzędzi Linuksa w Windows.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.VirtualMachinePlatform" xml:space="preserve">
+    <value>Platforma maszyny wirtualnej: wymagana przez WSL 2 i aplikacje Android.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Containers_DisposableClientVM" xml:space="preserve">
+    <value>Piaskownica systemu Windows: jednorazowy pulpit do bezpiecznego testowania nieznanych programów.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.NetFx3" xml:space="preserve">
+    <value>.NET Framework 3.5: wymagany przez niektóre starsze programy i gry.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.SMB1Protocol" xml:space="preserve">
+    <value>SMB 1.0: przestarzały i niebezpieczny protokół udostępniania plików. Nie włączaj, chyba że wymaga go stare urządzenie.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.TelnetClient" xml:space="preserve">
+    <value>Klient Telnet: narzędzie wiersza poleceń do testowania portów sieciowych.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Printing_PrintToPDFServices_Features" xml:space="preserve">
+    <value>Microsoft Print to PDF: zapis jako PDF wszystkiego, co da się wydrukować.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.MediaPlayback" xml:space="preserve">
+    <value>Funkcje multimediów: Windows Media Player i składniki odtwarzania, z których korzystają niektóre aplikacje.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Recall" xml:space="preserve">
+    <value>Recall: robi zrzuty ekranu do późniejszego przeszukiwania. Usunięcie zwalnia miejsce i chroni prywatność.</value>
+  </data>
+  <data name="AppInstaller.Header.Title" xml:space="preserve">
+    <value>Instaluj aplikacje</value>
+  </data>
+  <data name="AppInstaller.Header.Description" xml:space="preserve">
+    <value>Wybierz popularne aplikacje i zainstaluj je za jednym razem przez winget, menedżer pakietów Microsoftu. Aplikacje pochodzą z oficjalnych źródeł.</value>
+  </data>
+  <data name="AppInstaller.Install" xml:space="preserve">
+    <value>Zainstaluj zaznaczone ({0})</value>
+  </data>
+  <data name="AppInstaller.Loading" xml:space="preserve">
+    <value>Wyszukiwanie winget...</value>
+  </data>
+  <data name="AppInstaller.WingetMissing" xml:space="preserve">
+    <value>Nie znaleziono winget. Zainstaluj „Instalator aplikacji” ze sklepu Microsoft Store i wróć.</value>
+  </data>
+  <data name="AppInstaller.Progress" xml:space="preserve">
+    <value>Instalowanie {0}...</value>
+  </data>
+  <data name="AppInstaller.Success.Title" xml:space="preserve">
+    <value>Zainstalowano aplikacje</value>
+  </data>
+  <data name="AppInstaller.Success.Message" xml:space="preserve">
+    <value>Zainstalowane lub już aktualne: {0}</value>
+  </data>
+  <data name="AppInstaller.Error.Title" xml:space="preserve">
+    <value>Nie udało się zainstalować niektórych aplikacji</value>
+  </data>
+  <data name="AppInstaller.Category.Browsers" xml:space="preserve">
+    <value>Przeglądarki</value>
+  </data>
+  <data name="AppInstaller.Category.Utilities" xml:space="preserve">
+    <value>Narzędzia</value>
+  </data>
+  <data name="AppInstaller.Category.Media" xml:space="preserve">
+    <value>Multimedia</value>
+  </data>
+  <data name="AppInstaller.Category.Gaming" xml:space="preserve">
+    <value>Gry</value>
+  </data>
+  <data name="AppInstaller.Category.Development" xml:space="preserve">
+    <value>Programowanie</value>
+  </data>
+  <data name="AppInstaller.Category.Runtimes" xml:space="preserve">
+    <value>Środowiska uruchomieniowe</value>
+  </data>
+  <data name="Search.Global.Placeholder" xml:space="preserve">
+    <value>Szukaj optymalizacji i ustawień</value>
+  </data>
+  <data name="Health.BootTime.Trend" xml:space="preserve">
+    <value>{0} s przy ostatnim rozruchu, średnio {1} s z ostatnich {2} rozruchów (pomiar Windows)</value>
+  </data>
+  <data name="Update.Button.Install" xml:space="preserve">
+    <value>Aktualizuj teraz</value>
+  </data>
+  <data name="Update.Confirm.Title" xml:space="preserve">
+    <value>Aktualizacja do wersji {0}</value>
+  </data>
+  <data name="Update.Confirm.Message" xml:space="preserve">
+    <value>optimizerDuck pobierze nową wersję z GitHuba, sprawdzi ją z opublikowaną sumą SHA-256, podmieni się i uruchomi ponownie. Zastosowane optymalizacje i dane do cofania zostaną zachowane.</value>
+  </data>
+  <data name="Update.Downloading" xml:space="preserve">
+    <value>Pobieranie i weryfikacja aktualizacji...</value>
+  </data>
+  <data name="Update.Failed.Title" xml:space="preserve">
+    <value>Nie udało się zainstalować aktualizacji</value>
+  </data>
+  <data name="Update.Failed.Message" xml:space="preserve">
+    <value>Nie udało się jej pobrać ani zweryfikować. Otworzy się strona wydania, aby zaktualizować ręcznie.</value>
+  </data>
+  <data name="Optimizer.Menu.HideUnavailable" xml:space="preserve">
+    <value>Ukryj nieobsługiwane</value>
+  </data>
+  <data name="OptimizationDetailsDialog.SideEffects" xml:space="preserve">
+    <value>Co może przestać działać</value>
+  </data>
+  <data name="Optimizer.Performance.DisableBackgroundApps.SideEffects" xml:space="preserve">
+    <value>Aplikacje ze Sklepu przestają działać w tle: Poczta, Kalendarz, Pogoda i podobne odświeżają się dopiero po otwarciu, a część powiadomień przychodzi z opóźnieniem albo wcale.</value>
+  </data>
+  <data name="Optimizer.Performance.ConsolidateServiceHosts.SideEffects" xml:space="preserve">
+    <value>Kilka usług znowu dzieli jeden proces, więc awaria jednej może pociągnąć za sobą pozostałe w tym procesie, a Menedżer zadań pokazuje je zgrupowane zamiast osobno.</value>
+  </data>
+  <data name="Optimizer.Performance.ProcessPriority.SideEffects" xml:space="preserve">
+    <value>Praca w tle (pobieranie, kodowanie wideo, kompilacja) dostaje mniej czasu procesora, gdy korzystasz z innego okna, więc może trwać dłużej.</value>
+  </data>
+  <data name="Optimizer.Performance.OptimizeMultimediaScheduler.SideEffects" xml:space="preserve">
+    <value>Podczas gry lub odtwarzania multimediów zadania w tle i ruch sieciowy dostają niższy priorytet, więc pobieranie i strumienie w tle mogą zwolnić.</value>
+  </data>
+  <data name="Optimizer.Performance.KeyboardLatencyOptimization.SideEffects" xml:space="preserve">
+    <value>Przytrzymane klawisze zaczynają się powtarzać szybciej i częściej, co może wpisać dodatkowe znaki, gdy palec spoczywa na klawiszu.</value>
+  </data>
+  <data name="Optimizer.Performance.DisableAccessibilityKeyboardHotkeys.SideEffects" xml:space="preserve">
+    <value>Pięciokrotne naciśnięcie Shift ani przytrzymanie Shift lub Num Lock nie włącza już klawiszy trwałych, filtru ani przełączania. Osoby, które ich potrzebują, włączą je w Ustawienia &gt; Ułatwienia dostępu &gt; Klawiatura.</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.SideEffects" xml:space="preserve">
+    <value>Edge uruchamia się nieco wolniej, a po zamknięciu ostatniego okna nie pokazuje już powiadomień i nie kończy pobierania.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableTelemetry.SideEffects" xml:space="preserve">
+    <value>Centrum opinii przestaje działać, nie da się otrzymywać kompilacji Windows Insider, część narzędzi do rozwiązywania problemów ma mniej danych, a Microsoft dostaje mniej raportów o awariach, które pomagają naprawiać błędy na Twoim sprzęcie.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableErrorReporting.SideEffects" xml:space="preserve">
+    <value>Raporty o awariach nie są już zapisywane ani wysyłane, więc Monitor niezawodności pokazuje mniej, a Microsoft nie podpowie znanych rozwiązań. Asystent zgodności programów przestaje też proponować poprawki dla starszych programów.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableAdvertisingAndSuggestions.SideEffects" xml:space="preserve">
+    <value>Aplikacje nie mogą już wyświetlać spersonalizowanych reklam, Windows przestaje proponować aplikacje, porady i kroki konfiguracji, a podpowiedzi przy pisaniu i piśmie odręcznym mniej uczą się z tego, co piszesz.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableNewsAndInterests.SideEffects" xml:space="preserve">
+    <value>Znika przycisk Widżetów (pogoda) z paska zadań i kanał wiadomości.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableActivityHistory.SideEffects" xml:space="preserve">
+    <value>Windows przestaje zapisywać historię używanych aplikacji, plików i stron, więc podpowiedzi „kontynuuj tam, gdzie skończyłeś” i Oś czasu przestają działać.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableLocationAndSensors.SideEffects" xml:space="preserve">
+    <value>Aplikacje nie mogą już pobrać lokalizacji: Mapy, Pogoda, Znajdź moje urządzenie i automatyczna strefa czasowa przestają z niej korzystać, mapy offline nie są aktualizowane, a niektóre czujniki, np. autoobrót czy czujnik światła, mogą przestać działać.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableAutoLogger.SideEffects" xml:space="preserve">
+    <value>Część wbudowanych dzienników diagnostycznych (sesje Wi-Fi, sieć, model aplikacji) przestaje być zapisywana, co utrudnia diagnozowanie problemów z połączeniem i aplikacjami.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableCortana.SideEffects" xml:space="preserve">
+    <value>Cortana przestaje być dostępna, a wyszukiwanie nie korzysta już z internetu ani lokalizacji, więc wyszukiwanie w menu Start pokazuje tylko wyniki z tego komputera.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableCopilot.SideEffects" xml:space="preserve">
+    <value>Znika przycisk Copilot i skrót Windows + C, a Copilota nie da się uruchomić z poziomu systemu.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableContentDeliveryManager.SideEffects" xml:space="preserve">
+    <value>Obrazy Windows Spotlight na ekranie blokady, ciekawostki i proponowane aplikacje w menu Start przestają się aktualizować; obraz lub pokaz slajdów na ekran blokady wybierasz sam.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableFindMyDevice.SideEffects" xml:space="preserve">
+    <value>W razie zgubienia lub kradzieży nie zlokalizujesz ani nie zablokujesz tego komputera z poziomu konta Microsoft.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableDeliveryOptimization.SideEffects" xml:space="preserve">
+    <value>Aktualizacje są pobierane tylko z serwerów Microsoftu, a nie z innych komputerów w sieci, więc dom lub biuro z kilkoma komputerami zużyje na nie więcej łącza.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.SideEffects" xml:space="preserve">
+    <value>Edge traci pasek boczny (razem z Copilotem), porównywanie cen i kupony, a w ustawieniach pojawia się „Przeglądarka jest zarządzana przez organizację”, bo zmiana korzysta z zasad.</value>
+  </data>
+  <data name="Optimizer.UserExperience.SpeedUpExplorerAndMenus.SideEffects" xml:space="preserve">
+    <value>Aplikacje autostartu uruchamiają się wszystkie naraz zaraz po zalogowaniu, a nie stopniowo, więc na słabszym komputerze pierwsze sekundy mogą być bardziej obciążone.</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableVisualEffects.SideEffects" xml:space="preserve">
+    <value>Windows wygląda bardziej płasko: bez przezroczystości, animacji paska zadań, cieni pod podpisami ikon pulpitu i podglądu Aero Peek w rogu paska zadań.</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableStartMenuWebSearch.SideEffects" xml:space="preserve">
+    <value>Wyszukiwanie w menu Start pokazuje tylko wyniki z tego komputera: znikają wyniki z Binga i wyróżnienia wyszukiwania.</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableStartRecommended.SideEffects" xml:space="preserve">
+    <value>Menu Start nie pokazuje już ostatnio otwieranych plików ani nowo zainstalowanych aplikacji; znajdziesz je w Eksploratorze plików lub wyszukiwaniu.</value>
+  </data>
+  <data name="Optimizer.UserExperience.MaximizeUpdatePauseLimit.SideEffects" xml:space="preserve">
+    <value>Aktualizacje można wstrzymać na znacznie dłużej. W czasie wstrzymania nie instalują się też poprawki zabezpieczeń, więc regularnie je wznawiaj.</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.SideEffects" xml:space="preserve">
+    <value>Windows Update przestaje instalować i aktualizować sterowniki, więc sterownik do nowego urządzenia lub poprawkę trzeba pobrać ze strony producenta.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableUlps.SideEffects" xml:space="preserve">
+    <value>GPU (lub druga karta w konfiguracji CrossFire) nie przechodzi już w najgłębszy stan uśpienia w spoczynku, więc pobór prądu i temperatura w spoczynku nieco rosną.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisablePowerGating.SideEffects" xml:space="preserve">
+    <value>Części GPU pozostają zasilane nawet na pulpicie: wyższy pobór prądu, temperatura i hałas wentylatorów w spoczynku oraz krótsza praca na baterii w laptopach.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableVideoClockGating.SideEffects" xml:space="preserve">
+    <value>Koder i dekoder wideo pozostają zasilane nawet nieużywane, co lekko podnosi pobór prądu w spoczynku, zauważalnie głównie w laptopach.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableAspm.SideEffects" xml:space="preserve">
+    <value>Łącze PCIe do GPU nie oszczędza już energii w spoczynku: nieco wyższy pobór prądu i krótsza praca na baterii w laptopach.</value>
+  </data>
+  <data name="Optimizer.Gpu.NvidiaDisableDynamicPstate.SideEffects" xml:space="preserve">
+    <value>GPU utrzymuje wysokie taktowanie nawet na pulpicie: wyższy pobór prądu, temperatura i hałas wentylatorów w spoczynku oraz krótsza praca na baterii w laptopach.</value>
+  </data>
+  <data name="Optimizer.Gpu.NvidiaDisableAsyncPstates.SideEffects" xml:space="preserve">
+    <value>GPU rzadziej zmienia stany zasilania i może utrzymywać wyższe taktowanie niż potrzeba: większy pobór prądu i więcej ciepła przy lekkim obciążeniu.</value>
+  </data>
+  <data name="Optimizer.Gpu.IntelDisableAdaptiveVsync.SideEffects" xml:space="preserve">
+    <value>Gdy liczba klatek w grze spadnie poniżej odświeżania ekranu, obraz może się przycinać zamiast na chwilę się rozrywać.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisableHibernateAndFastStartup.SideEffects" xml:space="preserve">
+    <value>Hibernacja przestaje być dostępna, a uruchamianie po wyłączeniu trwa nieco dłużej, bo szybkie uruchamianie jest wyłączone. Laptopy nie przejdą w hibernację przy niskim poziomie baterii.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisableUSBPowerSaving.SideEffects" xml:space="preserve">
+    <value>Urządzenia USB są stale zasilane zamiast usypiać w spoczynku, więc laptopy tracą trochę czasu pracy na baterii.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.InstallOptimizerDuckPowerPlan.SideEffects" xml:space="preserve">
+    <value>Procesor częściej pracuje z wysokim taktowaniem: większy pobór prądu i więcej ciepła, głośniejsze wentylatory przy lekkim obciążeniu i znacznie krótsza praca na baterii w laptopach. Menedżer zadań może pokazywać wysokie użycie CPU nawet w spoczynku.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisablePowerSaving.SideEffects" xml:space="preserve">
+    <value>Windows przestaje ograniczać aplikacje w tle w celu oszczędzania energii, więc laptopy zużywają więcej baterii, i nie próbuje już przywracać portów USB, które pobrały za dużo prądu.</value>
+  </data>
+  <data name="Optimizer.AI.DisableRecall.SideEffects" xml:space="preserve">
+    <value>Recall przestaje zapisywać migawki i usuwa już zapisane, więc nie wyszukasz rzeczy, które wcześniej widziałeś na ekranie.</value>
+  </data>
+  <data name="Optimizer.AI.DisableClickToDo.SideEffects" xml:space="preserve">
+    <value>Click to Do (klawisz Windows + kliknięcie) przestaje być dostępne, więc nie uruchomisz szybkich akcji AI na tekście lub obrazach na ekranie.</value>
+  </data>
+  <data name="Optimizer.AI.DisablePaintAI.SideEffects" xml:space="preserve">
+    <value>Z Painta znikają Cocreator, Image Creator, generatywne wypełnianie i generatywne wymazywanie; zwykłe narzędzia do rysowania zostają.</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.SideEffects" xml:space="preserve">
+    <value>Z Notatnika znikają opcje Przepisz, Podsumuj i inne funkcje AI; edycja tekstu działa jak dotąd.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisablePreinstalledApps.SideEffects" xml:space="preserve">
+    <value>Windows przestaje samodzielnie instalować proponowane aplikacje i gry; już zainstalowane zostają, dopóki ich nie usuniesz.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.ConfigureServices.SideEffects" xml:space="preserve">
+    <value>Faks, Rejestr zdalny, Dostęp zdalny, tryb demonstracyjny dla sklepów i kilka rzadko używanych usług zostaje wyłączonych, a wiele innych uruchamia się dopiero w razie potrzeby, więc pierwsze użycie niektórych funkcji (drukowanie, Bluetooth, skanowanie) może potrwać chwilę dłużej. Program zależny od wyłączonej usługi może przestać działać do czasu cofnięcia zmiany.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.SideEffects" xml:space="preserve">
+    <value>OneDrive przestaje synchronizować: pliki nie trafiają już do chmury ani na inne urządzenia, Autozapis Office w OneDrive się zatrzymuje, a foldery objęte kopią (Pulpit, Dokumenty, Obrazy) przestają się aktualizować online.</value>
+  </data>
 </root>

@@ -90,6 +90,37 @@ public class DiskCleanupService(ILogger<DiskCleanupService> logger)
             },
             new CleanupItem
             {
+                Id = "DeliveryOptimization",
+                NameKey = "DiskCleanup.Item.DeliveryOptimization",
+                DescriptionKey = "DiskCleanup.Item.DeliveryOptimization.Description",
+                Path = Path.Combine(
+                    windowsDir,
+                    @"ServiceProfiles\NetworkService\AppData\Local",
+                    @"Microsoft\Windows\DeliveryOptimization\Cache"
+                ),
+                Icon = SymbolRegular.CloudArrowDown24,
+            },
+            new CleanupItem
+            {
+                Id = "SystemErrorReports",
+                NameKey = "DiskCleanup.Item.SystemErrorReports",
+                DescriptionKey = "DiskCleanup.Item.SystemErrorReports.Description",
+                Path = Path.Combine(
+                    Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData),
+                    @"Microsoft\Windows\WER"
+                ),
+                Icon = SymbolRegular.DocumentError24,
+            },
+            new CleanupItem
+            {
+                Id = "ShaderCache",
+                NameKey = "DiskCleanup.Item.ShaderCache",
+                DescriptionKey = "DiskCleanup.Item.ShaderCache.Description",
+                Path = Path.Combine(localAppData, "D3DSCache"),
+                Icon = SymbolRegular.Games24,
+            },
+            new CleanupItem
+            {
                 Id = "OldWindowsInstallation",
                 NameKey = "DiskCleanup.Item.OldWindowsInstallation",
                 DescriptionKey = "DiskCleanup.Item.OldWindowsInstallation.Description",
@@ -228,48 +259,11 @@ public class DiskCleanupService(ILogger<DiskCleanupService> logger)
 
         try
         {
-            var searchPattern = itemId == "Thumbnails" ? "thumbcache_*" : "*";
-            var isRecursive = itemId != "Thumbnails";
-            var options = new EnumerationOptions
-            {
-                IgnoreInaccessible = true,
-                RecurseSubdirectories = isRecursive,
-                ReturnSpecialDirectories = false,
-            };
-
-            var dirInfo = new DirectoryInfo(path);
-
-            // Pre-check: only filter .net path if the .net temp directory is a descendant of the
-            // scan root
-            var needsDotNetFilter =
-                isRecursive
-                && DotNetTempPath.StartsWith(
-                    path.TrimEnd(Path.DirectorySeparatorChar) + Path.DirectorySeparatorChar,
-                    StringComparison.OrdinalIgnoreCase
-                );
-
-            foreach (var fileInfo in dirInfo.EnumerateFiles(searchPattern, options))
+            foreach (var file in EnumerateCleanable(path, itemId).OfType<FileInfo>())
                 try
                 {
-                    if (needsDotNetFilter)
-                    {
-                        var fullDirPath = fileInfo.DirectoryName ?? string.Empty;
-                        fullDirPath =
-                            fullDirPath.TrimEnd(Path.DirectorySeparatorChar)
-                            + Path.DirectorySeparatorChar;
-
-                        if (
-                            fullDirPath.StartsWith(
-                                DotNetTempPath,
-                                StringComparison.OrdinalIgnoreCase
-                            )
-                        )
-                            continue;
-                    }
-
-                    // .Length is already cached from EnumerateFiles under the hood
-                    // (WIN32_FIND_DATA)
-                    size += fileInfo.Length;
+                    // .Length is already cached from the enumeration (WIN32_FIND_DATA)
+                    size += file.Length;
                     count++;
                 }
                 catch
@@ -290,20 +284,42 @@ public class DiskCleanupService(ILogger<DiskCleanupService> logger)
         if (!Directory.Exists(path))
             return 0;
 
+        // The real location of the root: every delete is checked against it through the handle
+        // that performs the delete, so a link planted in a user-writable folder cannot redirect
+        // an elevated delete elsewhere.
+        var resolvedRoot = ConfinedDelete.ResolveRoot(path);
+        if (resolvedRoot is null)
+        {
+            logger.LogWarning("Cleanup root {Path} could not be opened", path);
+            return 0;
+        }
+
         long freed = 0;
+        foreach (var entry in EnumerateCleanable(path, itemId))
+            try
+            {
+                var deleted = ConfinedDelete.TryDelete(entry.FullName, resolvedRoot);
+                if (deleted is { } length)
+                    freed += length;
+            }
+            catch
+            {
+                // skip locked/inaccessible entries; a directory that is not empty stays
+            }
+
+        return freed;
+    }
+
+    /// <summary>
+    ///     The files of a cleanup item, then its directories deepest first, never descending
+    ///     into a junction or a symbolic link and never touching the active .NET scratch folder.
+    /// </summary>
+    private static IEnumerable<FileSystemInfo> EnumerateCleanable(string path, string itemId)
+    {
         var searchPattern = itemId == "Thumbnails" ? "thumbcache_*" : "*";
         var isRecursive = itemId != "Thumbnails";
-        var options = new EnumerationOptions
-        {
-            IgnoreInaccessible = true,
-            RecurseSubdirectories = isRecursive,
-            ReturnSpecialDirectories = false,
-        };
 
-        var dirInfo = new DirectoryInfo(path);
-
-        // Pre-check: only filter .net path if the .net temp directory is a descendant of the
-        // scan root
+        // Only filter the .net path if the .net temp directory is a descendant of the scan root
         var needsDotNetFilter =
             isRecursive
             && DotNetTempPath.StartsWith(
@@ -311,61 +327,21 @@ public class DiskCleanupService(ILogger<DiskCleanupService> logger)
                 StringComparison.OrdinalIgnoreCase
             );
 
-        foreach (var fileInfo in dirInfo.EnumerateFiles(searchPattern, options))
-            try
-            {
-                if (needsDotNetFilter)
-                {
-                    var fullDirPath = fileInfo.DirectoryName ?? string.Empty;
-                    fullDirPath =
-                        fullDirPath.TrimEnd(Path.DirectorySeparatorChar)
-                        + Path.DirectorySeparatorChar;
-
-                    if (fullDirPath.StartsWith(DotNetTempPath, StringComparison.OrdinalIgnoreCase))
-                        continue;
-                }
-
-                var length = fileInfo.Length;
-                fileInfo.Delete();
-                freed += length;
-            }
-            catch
-            {
-                // skip locked/inaccessible files
-            }
-
-        if (options.RecurseSubdirectories)
+        foreach (
+            var entry in ConfinedDelete.Walk(new DirectoryInfo(path), searchPattern, isRecursive)
+        )
         {
-            var dirOptions = new EnumerationOptions
+            if (needsDotNetFilter)
             {
-                IgnoreInaccessible = true,
-                RecurseSubdirectories = true,
-                ReturnSpecialDirectories = false,
-            };
+                var directory =
+                    (entry is FileInfo file ? file.DirectoryName : entry.FullName) ?? string.Empty;
+                directory =
+                    directory.TrimEnd(Path.DirectorySeparatorChar) + Path.DirectorySeparatorChar;
+                if (directory.StartsWith(DotNetTempPath, StringComparison.OrdinalIgnoreCase))
+                    continue;
+            }
 
-            // Order by descending length to process deepest children first
-            var dirs = dirInfo
-                .EnumerateDirectories("*", dirOptions)
-                .OrderByDescending(d => d.FullName.Length)
-                .ToList();
-
-            foreach (var dir in dirs)
-                try
-                {
-                    var fullDir =
-                        dir.FullName.TrimEnd(Path.DirectorySeparatorChar)
-                        + Path.DirectorySeparatorChar;
-                    if (fullDir.StartsWith(DotNetTempPath, StringComparison.OrdinalIgnoreCase))
-                        continue;
-
-                    dir.Delete(false); // Only delete if empty
-                }
-                catch
-                {
-                    // directory may not be empty if files were locked, or access denied
-                }
+            yield return entry;
         }
-
-        return freed;
     }
 }

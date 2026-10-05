@@ -33,7 +33,28 @@
                 IsOpen="{Binding ViewModel.IsUpdateInfoOpen, Mode=TwoWay}"
                 Message="{ext:Loc Dashboard.UpdateInfoBar.Message,
                                   {Binding ViewModel.LatestVersion}}"
-                Severity="Warning" />
+                Severity="Warning">
+                <ui:Button
+                    Margin="0,4,0,0"
+                    Appearance="Primary"
+                    Command="{Binding ViewModel.UpdateNowCommand}"
+                    Content="{ext:Loc Update.Button.Install}"
+                    Cursor="Hand"
+                    Icon="{ui:SymbolIcon ArrowDownload24}" />
+            </ui:InfoBar>
+            <ui:InfoBar
+                Margin="0,0,0,12"
+                IsOpen="{Binding ViewModel.IsDriftInfoOpen, Mode=TwoWay}"
+                Message="{Binding ViewModel.DriftMessage}"
+                Severity="Informational"
+                Title="{ext:Loc Dashboard.Drift.Title}">
+                <ui:Button
+                    Margin="0,4,0,0"
+                    Command="{Binding ViewModel.OpenProfilesCommand}"
+                    Content="{ext:Loc Dashboard.Drift.Button}"
+                    Cursor="Hand"
+                    Icon="{ui:SymbolIcon ArrowRepeatAll24}" />
+            </ui:InfoBar>
             <Grid ColumnDefinitions="*,Auto">
                 <ui:TextBlock Style="{StaticResource PageTitleStyle}" Text="{ext:Loc Dashboard.Header.Title}" />
 

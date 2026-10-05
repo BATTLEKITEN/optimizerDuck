@@ -21,6 +21,29 @@ public static class PowerPlanChanges
         ArgumentNullException.ThrowIfNull(plans);
 
         var name = plans.GetSchemeName(schemeId) ?? schemeId.ToString();
+        if (call.DryRun)
+        {
+            var active = plans.GetActiveSchemeId();
+            if (active == schemeId)
+                call.Changes.AddSkip(
+                    ServiceStrings.PowerPlanName,
+                    ServiceStrings.Format("Power plan {0} already active (skipped)", name),
+                    new PowerPlanActivateDetail { PlanName = name, PreviousPlanName = name }
+                );
+            else
+                call.Changes.AddPlanned(
+                    ServiceStrings.PowerPlanName,
+                    ServiceStrings.Format("Activate power plan {0}", name),
+                    new PowerPlanActivateDetail
+                    {
+                        PlanName = name,
+                        PreviousPlanName = active is { } id ? plans.GetSchemeName(id) : null,
+                        NewPlanName = name,
+                    }
+                );
+            return OpResult.Success();
+        }
+
         var activation = plans.SetActiveScheme(schemeId, call.Logger);
         var result = activation.Result;
         var previousId = activation.PreviousSchemeId;
@@ -80,6 +103,27 @@ public static class PowerPlanChanges
     {
         ArgumentNullException.ThrowIfNull(call);
         ArgumentNullException.ThrowIfNull(plans);
+
+        if (call.DryRun)
+        {
+            var installed = plans.SchemeExists(destinationId);
+            var planName = installed
+                ? plans.GetSchemeName(destinationId) ?? destinationId.ToString()
+                : destinationId.ToString();
+            if (installed && plans.GetActiveSchemeId() == destinationId)
+                call.Changes.AddSkip(
+                    ServiceStrings.PowerPlanName,
+                    ServiceStrings.Format("Power plan {0} already active (skipped)", planName),
+                    new PowerPlanInstallDetail { PlanName = planName }
+                );
+            else
+                call.Changes.AddPlanned(
+                    ServiceStrings.PowerPlanName,
+                    ServiceStrings.Format("Install power plan {0}", planName),
+                    new PowerPlanInstallDetail { PlanName = planName }
+                );
+            return new InstallResult(OpResult.Success(), null, null);
+        }
 
         var install = await plans
             .InstallSchemeAsync(filePath, destinationId, call.Logger, ct)
@@ -152,6 +196,27 @@ public static class PowerPlanChanges
             subgroupId,
             settingId
         );
+        if (call.DryRun)
+        {
+            var currentAc = plans.GetSettingValue(schemeId, subgroupId, settingId, PowerSource.Ac);
+            var currentDc = plans.GetSettingValue(schemeId, subgroupId, settingId, PowerSource.Dc);
+            var plannedFacts = new PowerSettingDetail
+            {
+                SettingId = settingId.ToString(),
+                SettingName = plans.GetSetting(schemeId, subgroupId, settingId)?.Name,
+                PreviousValue = $"AC {currentAc} / DC {currentDc}",
+                NewValue = $"AC {acValue ?? currentAc} / DC {dcValue ?? currentDc}",
+            };
+            if (
+                (acValue is null || acValue == currentAc)
+                && (dcValue is null || dcValue == currentDc)
+            )
+                call.Changes.AddSkip(ServiceStrings.PowerPlanName, description, plannedFacts);
+            else
+                call.Changes.AddPlanned(ServiceStrings.PowerPlanName, description, plannedFacts);
+            return OpResult.Success();
+        }
+
         var write = plans.SetSetting(
             schemeId,
             subgroupId,

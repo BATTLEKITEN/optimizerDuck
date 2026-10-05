@@ -2511,4 +2511,704 @@
   <data name="Error.Unhandled.LogHint" xml:space="preserve">
     <value>詳細はログ ファイルに記録されています。</value>
   </data>
+  <data name="Sidebar.Profiles" xml:space="preserve">
+    <value>プロファイル</value>
+  </data>
+  <data name="Profiles.Header.Title" xml:space="preserve">
+    <value>プロファイル</value>
+  </data>
+  <data name="Profiles.Header.Description" xml:space="preserve">
+    <value>用意された最適化セットを適用したり、設定を別の PC に移したり、Windows が元に戻した設定を再適用したりできます。</value>
+  </data>
+  <data name="Profiles.Presets.Header" xml:space="preserve">
+    <value>プリセット</value>
+  </data>
+  <data name="Profiles.Preset.Recommended.Title" xml:space="preserve">
+    <value>おすすめ</value>
+  </data>
+  <data name="Profiles.Preset.Recommended.Description" xml:space="preserve">
+    <value>「安全」と表示されたすべての最適化です。ほとんどのデスクトップ PC に適しています。</value>
+  </data>
+  <data name="Profiles.Preset.Gaming.Title" xml:space="preserve">
+    <value>ゲーム</value>
+  </data>
+  <data name="Profiles.Preset.Gaming.Description" xml:space="preserve">
+    <value>パフォーマンスと遅延に関する最適化です（リスクの高いものは除く）。</value>
+  </data>
+  <data name="Profiles.Preset.Privacy.Title" xml:space="preserve">
+    <value>プライバシー</value>
+  </data>
+  <data name="Profiles.Preset.Privacy.Description" xml:space="preserve">
+    <value>テレメトリ、広告、おすすめ、AI 機能をオフにします（リスクの高い最適化は除く）。</value>
+  </data>
+  <data name="Profiles.Preset.Laptop.Title" xml:space="preserve">
+    <value>ノート PC</value>
+  </data>
+  <data name="Profiles.Preset.Laptop.Description" xml:space="preserve">
+    <value>バッテリー持ちに影響しない安全な最適化です。電源プラン、USB、GPU は変更しません。</value>
+  </data>
+  <data name="Profiles.Preset.Count" xml:space="preserve">
+    <value>最適化: {0} 件</value>
+  </data>
+  <data name="Profiles.Button.Preview" xml:space="preserve">
+    <value>プレビュー</value>
+  </data>
+  <data name="Profiles.Button.Apply" xml:space="preserve">
+    <value>適用</value>
+  </data>
+  <data name="Profiles.File.Header" xml:space="preserve">
+    <value>現在の設定</value>
+  </data>
+  <data name="Profiles.Export.Title" xml:space="preserve">
+    <value>ファイルにエクスポート</value>
+  </data>
+  <data name="Profiles.Export.Description" xml:space="preserve">
+    <value>この PC に適用済みの最適化とカスタマイズ設定を保存し、別の PC で適用できるようにします。</value>
+  </data>
+  <data name="Profiles.Export.Button" xml:space="preserve">
+    <value>エクスポート</value>
+  </data>
+  <data name="Profiles.Import.Title" xml:space="preserve">
+    <value>インポートして適用</value>
+  </data>
+  <data name="Profiles.Import.Description" xml:space="preserve">
+    <value>プロファイル ファイルを開いて内容を適用します。この PC が対応していない項目はスキップされます。</value>
+  </data>
+  <data name="Profiles.Import.Button" xml:space="preserve">
+    <value>インポート</value>
+  </data>
+  <data name="Profiles.FileFilter" xml:space="preserve">
+    <value>optimizerDuck プロファイル</value>
+  </data>
+  <data name="Profiles.Export.Success.Title" xml:space="preserve">
+    <value>プロファイルを保存しました</value>
+  </data>
+  <data name="Profiles.Export.Success.Message" xml:space="preserve">
+    <value>最適化: {0} 件、カスタマイズ設定: {1} 件。</value>
+  </data>
+  <data name="Profiles.Export.Failed.Title" xml:space="preserve">
+    <value>プロファイルを保存できませんでした</value>
+  </data>
+  <data name="Profiles.Import.Failed.Title" xml:space="preserve">
+    <value>プロファイルを開けませんでした</value>
+  </data>
+  <data name="Profiles.Import.Failed.Message" xml:space="preserve">
+    <value>このファイルは optimizerDuck のプロファイルではないか、新しいバージョンで作成されています。</value>
+  </data>
+  <data name="Profiles.Apply.Confirm.Title" xml:space="preserve">
+    <value>「{0}」を適用しますか？</value>
+  </data>
+  <data name="Profiles.Apply.Confirm.Message" xml:space="preserve">
+    <value>適用する最適化: {0} 件、カスタマイズ設定: {1} 件。
+
+適用済みの項目と、この PC が対応していない項目はスキップされます。各最適化はあとからカードで元に戻せます。</value>
+  </data>
+  <data name="Profiles.Apply.Title" xml:space="preserve">
+    <value>「{0}」を適用中</value>
+  </data>
+  <data name="Profiles.Apply.Progress" xml:space="preserve">
+    <value>適用中: {0}</value>
+  </data>
+  <data name="Profiles.Report.Title" xml:space="preserve">
+    <value>プロファイルを適用しました</value>
+  </data>
+  <data name="Profiles.Report.Summary" xml:space="preserve">
+    <value>適用: {0}
+適用済み: {1}
+この PC では非対応: {2}
+このバージョンでは不明: {3}
+失敗: {4}</value>
+  </data>
+  <data name="Profiles.Report.Failures" xml:space="preserve">
+    <value>失敗した項目:</value>
+  </data>
+  <data name="Profiles.Preview.Title" xml:space="preserve">
+    <value>「{0}」で適用される項目</value>
+  </data>
+  <data name="Profiles.Preview.Empty" xml:space="preserve">
+    <value>このバージョンでは、このプリセットに最適化は含まれていません。</value>
+  </data>
+  <data name="Drift.Header" xml:space="preserve">
+    <value>Windows によって元に戻された変更</value>
+  </data>
+  <data name="Drift.Description" xml:space="preserve">
+    <value>Windows Update やほかのプログラムが設定を元に戻すことがあります。このチェックは現在の状態を読み取るだけで、何も変更しません。</value>
+  </data>
+  <data name="Drift.Button.Check" xml:space="preserve">
+    <value>今すぐチェック</value>
+  </data>
+  <data name="Drift.Button.Reapply" xml:space="preserve">
+    <value>再適用</value>
+  </data>
+  <data name="Drift.Status.Checking" xml:space="preserve">
+    <value>適用済みの最適化をチェックしています...</value>
+  </data>
+  <data name="Drift.Status.None" xml:space="preserve">
+    <value>適用済みの最適化はすべて有効なままです。</value>
+  </data>
+  <data name="Drift.Status.Found" xml:space="preserve">
+    <value>適用後に元に戻された最適化: {0} 件</value>
+  </data>
+  <data name="Drift.Reapply.Title" xml:space="preserve">
+    <value>最適化を再適用しています</value>
+  </data>
+  <data name="Dashboard.Drift.Title" xml:space="preserve">
+    <value>一部の最適化が元に戻されました</value>
+  </data>
+  <data name="Dashboard.Drift.Message" xml:space="preserve">
+    <value>Windows または別のプログラムが、適用済みの最適化 {0} 件で変更した設定を元に戻しました。</value>
+  </data>
+  <data name="Dashboard.Drift.Button" xml:space="preserve">
+    <value>確認して再適用</value>
+  </data>
+  <data name="Cli.Usage" xml:space="preserve">
+    <value>使い方: optimizerDuck.exe &lt;コマンド&gt; [オプション]
+
+コマンド:
+  --apply-profile &lt;file&gt;    プロファイル ファイルを適用します
+  --apply-preset &lt;name&gt;     プリセットを適用します: Recommended、Gaming、Privacy、Laptop
+  --export-profile &lt;file&gt;   この PC に適用済みの内容をプロファイル ファイルに保存します
+  --check-drift             Windows が元に戻した最適化を一覧表示します
+  --reapply-drift           Windows が元に戻した最適化を再適用します
+  --help                    このヘルプを表示します
+
+オプション:
+  --restore-point           変更の前に復元ポイントを作成します
+  --report &lt;file&gt;           結果を JSON ファイルに書き出します
+  --accept-terms            利用規約に同意します (最初の変更の前に一度だけ必要)
+
+出力を表示するには、管理者として実行したターミナルから起動してください。
+終了コード: 0 成功、1 失敗または元に戻された最適化あり、2 使い方またはファイルのエラー。</value>
+  </data>
+  <data name="Cli.Error.UnknownArgument" xml:space="preserve">
+    <value>不明な引数: {0}</value>
+  </data>
+  <data name="Cli.Error.OptionWithoutCommand" xml:space="preserve">
+    <value>コマンドなしでオプションが指定されました。</value>
+  </data>
+  <data name="Cli.Error.OneCommand" xml:space="preserve">
+    <value>一度に実行できるコマンドは 1 つだけです。</value>
+  </data>
+  <data name="Cli.Error.MissingValue" xml:space="preserve">
+    <value>{0} には値が必要です。</value>
+  </data>
+  <data name="Cli.Error.Terms" xml:space="preserve">
+    <value>利用規約にまだ同意していません。アプリで確認するか、--accept-terms を付けて同意してください。</value>
+  </data>
+  <data name="Cli.Error.UnknownPreset" xml:space="preserve">
+    <value>不明なプリセット: {0}。使用可能: {1}</value>
+  </data>
+  <data name="Optimizer.Preview.Button" xml:space="preserve">
+    <value>変更をプレビュー</value>
+  </data>
+  <data name="Optimizer.Preview.Title" xml:space="preserve">
+    <value>「{0}」で変更される内容</value>
+  </data>
+  <data name="Optimizer.Preview.Summary" xml:space="preserve">
+    <value>変更予定: {0} 件、設定済み: {1} 件。まだ何も変更されていません。</value>
+  </data>
+  <data name="Optimizer.Preview.Nothing" xml:space="preserve">
+    <value>変更は不要です。この PC はすでに一致しています。</value>
+  </data>
+  <data name="Optimizer.Preview.Failed.Title" xml:space="preserve">
+    <value>変更をプレビューできませんでした</value>
+  </data>
+  <data name="Optimizer.AI.DisablePaintAI.Name" xml:space="preserve">
+    <value>ペイントの AI 機能を無効化</value>
+  </data>
+  <data name="Optimizer.AI.DisablePaintAI.ShortDescription" xml:space="preserve">
+    <value>Microsoft 公式のポリシーで、ペイントの Cocreator、Image Creator、生成塗りつぶし、生成消去をオフにします。</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.Name" xml:space="preserve">
+    <value>メモ帳の AI 機能を無効化</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.ShortDescription" xml:space="preserve">
+    <value>公開されているポリシーで、メモ帳の書き換え、要約などの AI 機能を削除します。</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.Name" xml:space="preserve">
+    <value>Microsoft Edge のバックグラウンド実行を停止</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.ShortDescription" xml:space="preserve">
+    <value>サインイン時に Edge を先読みするスタートアップ ブーストと、閉じた後も Edge を動かし続けるバックグラウンド モードをオフにします。Edge を使わなくても RAM を節約できます。</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.Name" xml:space="preserve">
+    <value>Edge のサイドバー、ショッピング、データ収集をオフ</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.ShortDescription" xml:space="preserve">
+    <value>Edge のポリシーで、サイドバー (と Copilot) を非表示にし、ショッピング アシスタントとおすすめをオフにし、パーソナライズのレポートと任意の診断データの送信を止めます。</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.Name" xml:space="preserve">
+    <value>Windows Update からドライバーを除外</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.ShortDescription" xml:space="preserve">
+    <value>GPU やオーディオなど、メーカーから自分で入れたドライバーが Windows Update で置き換えられるのを防ぎます。以後、ドライバーの更新は自分で行います。</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.Name" xml:space="preserve">
+    <value>OneDrive を無効化</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.ShortDescription" xml:space="preserve">
+    <value>OneDrive の起動と同期を止め、エクスプローラーのナビゲーション ウィンドウから削除します。OneDrive フォルダー内のファイルはそのまま残り、アンインストールは行いません。</value>
+  </data>
+  <data name="Sidebar.Health" xml:space="preserve">
+    <value>システムの状態</value>
+  </data>
+  <data name="Sidebar.ContextMenu" xml:space="preserve">
+    <value>コンテキスト メニュー</value>
+  </data>
+  <data name="Sidebar.OptionalFeatures" xml:space="preserve">
+    <value>Windows の機能</value>
+  </data>
+  <data name="Sidebar.AppInstaller" xml:space="preserve">
+    <value>アプリのインストール</value>
+  </data>
+  <data name="DiskCleanup.Item.DeliveryOptimization" xml:space="preserve">
+    <value>配信の最適化キャッシュ</value>
+  </data>
+  <data name="DiskCleanup.Item.DeliveryOptimization.Description" xml:space="preserve">
+    <value>他の PC と共有するために Windows が保持している更新ファイル。削除しても安全です</value>
+  </data>
+  <data name="DiskCleanup.Item.SystemErrorReports" xml:space="preserve">
+    <value>システム エラー レポート</value>
+  </data>
+  <data name="DiskCleanup.Item.SystemErrorReports.Description" xml:space="preserve">
+    <value>Windows エラー報告がすべてのユーザー向けに保存しているクラッシュと問題のレポート</value>
+  </data>
+  <data name="DiskCleanup.Item.ShaderCache" xml:space="preserve">
+    <value>DirectX シェーダー キャッシュ</value>
+  </data>
+  <data name="DiskCleanup.Item.ShaderCache.Description" xml:space="preserve">
+    <value>コンパイル済みシェーダーです。ゲームの次回起動時に再生成され、ドライバー更新後のカクつきが直ることがあります</value>
+  </data>
+  <data name="Health.Header.Title" xml:space="preserve">
+    <value>システムの状態</value>
+  </data>
+  <data name="Health.Header.Description" xml:space="preserve">
+    <value>セキュリティ、ディスク、バッテリーの状態をひと目で確認できます。ここでは PC に変更を加えません。</value>
+  </data>
+  <data name="Health.Loading" xml:space="preserve">
+    <value>PC をチェックしています...</value>
+  </data>
+  <data name="Health.Button.Refresh" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="Health.Button.Export" xml:space="preserve">
+    <value>レポートを保存</value>
+  </data>
+  <data name="Health.Button.BatteryReport" xml:space="preserve">
+    <value>バッテリー レポート</value>
+  </data>
+  <data name="Health.Export.Failed.Title" xml:space="preserve">
+    <value>レポートを保存できませんでした</value>
+  </data>
+  <data name="Health.Status.Good" xml:space="preserve">
+    <value>正常</value>
+  </data>
+  <data name="Health.Status.Info" xml:space="preserve">
+    <value>情報</value>
+  </data>
+  <data name="Health.Status.Warning" xml:space="preserve">
+    <value>注意</value>
+  </data>
+  <data name="Health.Status.Bad" xml:space="preserve">
+    <value>問題あり</value>
+  </data>
+  <data name="Health.Status.Unknown" xml:space="preserve">
+    <value>不明</value>
+  </data>
+  <data name="Health.Unknown" xml:space="preserve">
+    <value>Windows から情報を取得できませんでした。</value>
+  </data>
+  <data name="Health.State.On" xml:space="preserve">
+    <value>オン</value>
+  </data>
+  <data name="Health.State.Off" xml:space="preserve">
+    <value>オフ</value>
+  </data>
+  <data name="Health.Check.SecureBoot" xml:space="preserve">
+    <value>セキュア ブート</value>
+  </data>
+  <data name="Health.SecureBoot.Off" xml:space="preserve">
+    <value>オフです。UEFI 設定でオンにすると、起動時のマルウェアを防げます。</value>
+  </data>
+  <data name="Health.SecureBoot.Unsupported" xml:space="preserve">
+    <value>利用不可: PC はレガシ BIOS モードで起動しています。</value>
+  </data>
+  <data name="Health.Check.Tpm" xml:space="preserve">
+    <value>TPM</value>
+  </data>
+  <data name="Health.Tpm.Ready" xml:space="preserve">
+    <value>TPM {0} は有効で使用可能です。</value>
+  </data>
+  <data name="Health.Tpm.NotReady" xml:space="preserve">
+    <value>TPM {0} はありますが、無効か準備ができていません。UEFI 設定を確認してください。</value>
+  </data>
+  <data name="Health.Tpm.None" xml:space="preserve">
+    <value>TPM が見つかりません。Windows 11 と BitLocker には TPM が必要です。</value>
+  </data>
+  <data name="Health.Check.Vbs" xml:space="preserve">
+    <value>仮想化ベースのセキュリティ</value>
+  </data>
+  <data name="Health.Vbs.Running" xml:space="preserve">
+    <value>実行中です。システムを保護しますが、ゲーム性能はわずかに低下します。</value>
+  </data>
+  <data name="Health.Vbs.Enabled" xml:space="preserve">
+    <value>有効ですが実行されていません。再起動またはファームウェア設定が必要な場合があります。</value>
+  </data>
+  <data name="Health.Check.MemoryIntegrity" xml:space="preserve">
+    <value>メモリ整合性</value>
+  </data>
+  <data name="Health.Check.Defender" xml:space="preserve">
+    <value>Microsoft Defender</value>
+  </data>
+  <data name="Health.Defender.On" xml:space="preserve">
+    <value>リアルタイム保護がオンで、定義ファイルは最新です。</value>
+  </data>
+  <data name="Health.Defender.Off" xml:space="preserve">
+    <value>リアルタイム保護がオフです。別のウイルス対策ソフトがこの PC を保護しているか確認してください。</value>
+  </data>
+  <data name="Health.Defender.Old" xml:space="preserve">
+    <value>定義ファイルが {0} 日前のものです。Windows Update を実行してください。</value>
+  </data>
+  <data name="Health.Defender.Unknown" xml:space="preserve">
+    <value>Defender から状態を取得できません。別のウイルス対策ソフトを使用している可能性があります。</value>
+  </data>
+  <data name="Health.Check.Disk" xml:space="preserve">
+    <value>ディスク: {0}</value>
+  </data>
+  <data name="Health.Disk.Healthy" xml:space="preserve">
+    <value>正常 ({0})</value>
+  </data>
+  <data name="Health.Disk.Warning" xml:space="preserve">
+    <value>Windows が警告を報告しています ({0})。データをバックアップしてください。</value>
+  </data>
+  <data name="Health.Disk.Unhealthy" xml:space="preserve">
+    <value>Windows がこのディスクの故障を報告しています ({0})。今すぐデータをバックアップしてください。</value>
+  </data>
+  <data name="Health.Check.Trim" xml:space="preserve">
+    <value>SSD TRIM</value>
+  </data>
+  <data name="Health.Trim.Off" xml:space="preserve">
+    <value>オフです。TRIM がないと SSD は徐々に遅くなります。</value>
+  </data>
+  <data name="Health.Check.FreeSpace" xml:space="preserve">
+    <value>システム ドライブの空き容量</value>
+  </data>
+  <data name="Health.FreeSpace.Value" xml:space="preserve">
+    <value>{1} 中 {0} が空き ({2}%)</value>
+  </data>
+  <data name="Health.Check.PendingRestart" xml:space="preserve">
+    <value>保留中の再起動</value>
+  </data>
+  <data name="Health.PendingRestart.Yes" xml:space="preserve">
+    <value>更新プログラムのインストールを完了するために再起動が必要です。</value>
+  </data>
+  <data name="Health.PendingRestart.No" xml:space="preserve">
+    <value>再起動は不要です。</value>
+  </data>
+  <data name="Health.Check.BootTime" xml:space="preserve">
+    <value>前回の起動時間</value>
+  </data>
+  <data name="Health.BootTime.Value" xml:space="preserve">
+    <value>{0} 秒 (Windows の計測値)</value>
+  </data>
+  <data name="Health.BootTime.Unknown" xml:space="preserve">
+    <value>Windows はまだ起動時間を記録していません。</value>
+  </data>
+  <data name="Health.Check.Battery" xml:space="preserve">
+    <value>バッテリーの劣化</value>
+  </data>
+  <data name="Health.Battery.Value" xml:space="preserve">
+    <value>元の容量の {0}% を保持しています。</value>
+  </data>
+  <data name="ContextMenu.Header.Title" xml:space="preserve">
+    <value>コンテキスト メニュー</value>
+  </data>
+  <data name="ContextMenu.Header.Description" xml:space="preserve">
+    <value>アプリがエクスプローラーの右クリック メニューに追加した項目をオフにします。削除はされず、オンに戻せば元どおりになります。</value>
+  </data>
+  <data name="ContextMenu.Search" xml:space="preserve">
+    <value>項目を検索</value>
+  </data>
+  <data name="ContextMenu.ShowWindows" xml:space="preserve">
+    <value>Windows の項目を表示</value>
+  </data>
+  <data name="ContextMenu.Loading" xml:space="preserve">
+    <value>コンテキスト メニューの項目を読み込んでいます...</value>
+  </data>
+  <data name="ContextMenu.RestartNeeded" xml:space="preserve">
+    <value>変更を反映するにはエクスプローラーを再起動してください。</value>
+  </data>
+  <data name="ContextMenu.RestartExplorer" xml:space="preserve">
+    <value>エクスプローラーを再起動</value>
+  </data>
+  <data name="ContextMenu.Error.Title" xml:space="preserve">
+    <value>項目を変更できませんでした</value>
+  </data>
+  <data name="ContextMenu.Location.Files" xml:space="preserve">
+    <value>ファイル</value>
+  </data>
+  <data name="ContextMenu.Location.Folders" xml:space="preserve">
+    <value>フォルダー</value>
+  </data>
+  <data name="ContextMenu.Location.Background" xml:space="preserve">
+    <value>フォルダーの背景</value>
+  </data>
+  <data name="ContextMenu.Location.Drives" xml:space="preserve">
+    <value>ドライブ</value>
+  </data>
+  <data name="OptionalFeatures.Header.Title" xml:space="preserve">
+    <value>Windows の機能</value>
+  </data>
+  <data name="OptionalFeatures.Header.Description" xml:space="preserve">
+    <value>「Windows の機能の有効化または無効化」と同じように、オプション機能をオン/オフします。ほとんどの変更は再起動後に完了します。</value>
+  </data>
+  <data name="OptionalFeatures.Search" xml:space="preserve">
+    <value>機能を検索</value>
+  </data>
+  <data name="OptionalFeatures.Loading" xml:space="preserve">
+    <value>Windows の機能を取得しています...</value>
+  </data>
+  <data name="OptionalFeatures.RestartNeeded" xml:space="preserve">
+    <value>変更を完了するには Windows を再起動してください。</value>
+  </data>
+  <data name="OptionalFeatures.Error.Title" xml:space="preserve">
+    <value>機能を変更できませんでした</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Microsoft_Hyper_V_All" xml:space="preserve">
+    <value>Hyper-V: 仮想マシンを実行します。オンにするとゲーム性能が下がったり、他の仮想化ソフトと競合したりすることがあります。</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Microsoft_Windows_Subsystem_Linux" xml:space="preserve">
+    <value>Windows Subsystem for Linux (WSL): Windows 上で Linux ツールを実行します。</value>
+  </data>
+  <data name="OptionalFeatures.Feature.VirtualMachinePlatform" xml:space="preserve">
+    <value>仮想マシン プラットフォーム: WSL 2 や Android アプリに必要です。</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Containers_DisposableClientVM" xml:space="preserve">
+    <value>Windows サンドボックス: 不明なプログラムを安全に試せる使い捨てのデスクトップです。</value>
+  </data>
+  <data name="OptionalFeatures.Feature.NetFx3" xml:space="preserve">
+    <value>.NET Framework 3.5: 一部の古いプログラムやゲームに必要です。</value>
+  </data>
+  <data name="OptionalFeatures.Feature.SMB1Protocol" xml:space="preserve">
+    <value>SMB 1.0: 古く安全でないファイル共有プロトコルです。古い機器で必要な場合を除き、オフのままにしてください。</value>
+  </data>
+  <data name="OptionalFeatures.Feature.TelnetClient" xml:space="preserve">
+    <value>Telnet クライアント: ネットワーク ポートをテストするコマンド ライン ツールです。</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Printing_PrintToPDFServices_Features" xml:space="preserve">
+    <value>Microsoft Print to PDF: 印刷できるものを PDF として保存します。</value>
+  </data>
+  <data name="OptionalFeatures.Feature.MediaPlayback" xml:space="preserve">
+    <value>メディア機能: Windows Media Player と、一部のアプリが使う再生コンポーネントです。</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Recall" xml:space="preserve">
+    <value>Recall: 後で検索できるよう画面のスナップショットを保存します。削除すると空き容量が増え、操作履歴も守れます。</value>
+  </data>
+  <data name="AppInstaller.Header.Title" xml:space="preserve">
+    <value>アプリのインストール</value>
+  </data>
+  <data name="AppInstaller.Header.Description" xml:space="preserve">
+    <value>人気のアプリを選んで、Microsoft のパッケージ マネージャー winget でまとめてインストールします。アプリは公式の配布元から取得されます。</value>
+  </data>
+  <data name="AppInstaller.Install" xml:space="preserve">
+    <value>選択したアプリをインストール ({0})</value>
+  </data>
+  <data name="AppInstaller.Loading" xml:space="preserve">
+    <value>winget を確認しています...</value>
+  </data>
+  <data name="AppInstaller.WingetMissing" xml:space="preserve">
+    <value>winget が見つかりません。Microsoft Store から「アプリ インストーラー」をインストールしてから戻ってください。</value>
+  </data>
+  <data name="AppInstaller.Progress" xml:space="preserve">
+    <value>{0} をインストールしています...</value>
+  </data>
+  <data name="AppInstaller.Success.Title" xml:space="preserve">
+    <value>アプリをインストールしました</value>
+  </data>
+  <data name="AppInstaller.Success.Message" xml:space="preserve">
+    <value>インストール済みまたは最新: {0} 件</value>
+  </data>
+  <data name="AppInstaller.Error.Title" xml:space="preserve">
+    <value>一部のアプリをインストールできませんでした</value>
+  </data>
+  <data name="AppInstaller.Category.Browsers" xml:space="preserve">
+    <value>ブラウザー</value>
+  </data>
+  <data name="AppInstaller.Category.Utilities" xml:space="preserve">
+    <value>ユーティリティ</value>
+  </data>
+  <data name="AppInstaller.Category.Media" xml:space="preserve">
+    <value>メディア</value>
+  </data>
+  <data name="AppInstaller.Category.Gaming" xml:space="preserve">
+    <value>ゲーム</value>
+  </data>
+  <data name="AppInstaller.Category.Development" xml:space="preserve">
+    <value>開発</value>
+  </data>
+  <data name="AppInstaller.Category.Runtimes" xml:space="preserve">
+    <value>ランタイム</value>
+  </data>
+  <data name="Search.Global.Placeholder" xml:space="preserve">
+    <value>最適化と設定を検索</value>
+  </data>
+  <data name="Health.BootTime.Trend" xml:space="preserve">
+    <value>前回 {0} 秒、直近 {2} 回の平均 {1} 秒 (Windows の計測値)</value>
+  </data>
+  <data name="Update.Button.Install" xml:space="preserve">
+    <value>今すぐ更新</value>
+  </data>
+  <data name="Update.Confirm.Title" xml:space="preserve">
+    <value>バージョン {0} に更新</value>
+  </data>
+  <data name="Update.Confirm.Message" xml:space="preserve">
+    <value>optimizerDuck は新しいバージョンを GitHub からダウンロードし、公開されている SHA-256 チェックサムで検証してから置き換え、再起動します。適用済みの最適化と元に戻すためのデータは保持されます。</value>
+  </data>
+  <data name="Update.Downloading" xml:space="preserve">
+    <value>更新をダウンロードして検証しています...</value>
+  </data>
+  <data name="Update.Failed.Title" xml:space="preserve">
+    <value>更新をインストールできませんでした</value>
+  </data>
+  <data name="Update.Failed.Message" xml:space="preserve">
+    <value>ダウンロードまたは検証ができませんでした。手動で更新できるようリリース ページを開きます。</value>
+  </data>
+  <data name="Optimizer.Menu.HideUnavailable" xml:space="preserve">
+    <value>非対応を非表示</value>
+  </data>
+  <data name="OptimizationDetailsDialog.SideEffects" xml:space="preserve">
+    <value>動作しなくなる可能性があるもの</value>
+  </data>
+  <data name="Optimizer.Performance.DisableBackgroundApps.SideEffects" xml:space="preserve">
+    <value>ストア アプリがバックグラウンドで動かなくなります。メール、カレンダー、天気などは開いたときだけ更新され、一部の通知は遅れるか届かなくなります。</value>
+  </data>
+  <data name="Optimizer.Performance.ConsolidateServiceHosts.SideEffects" xml:space="preserve">
+    <value>複数のサービスが再び 1 つのプロセスを共有するため、1 つがクラッシュすると同じプロセスの他のサービスも巻き込まれることがあり、タスク マネージャーではまとめて表示されます。</value>
+  </data>
+  <data name="Optimizer.Performance.ProcessPriority.SideEffects" xml:space="preserve">
+    <value>別のウィンドウを使っている間、バックグラウンドの処理 (ダウンロード、動画のエンコード、コンパイルなど) に割り当てられる CPU 時間が減り、時間がかかることがあります。</value>
+  </data>
+  <data name="Optimizer.Performance.OptimizeMultimediaScheduler.SideEffects" xml:space="preserve">
+    <value>ゲームやメディアの再生中は、バックグラウンド タスクとネットワーク通信の優先度が下がるため、裏でのダウンロードやストリーミングが遅くなることがあります。</value>
+  </data>
+  <data name="Optimizer.Performance.KeyboardLatencyOptimization.SideEffects" xml:space="preserve">
+    <value>キーを押し続けたときのリピート開始が早く、速度も速くなるため、指を置いたままにすると余分な文字が入力されることがあります。</value>
+  </data>
+  <data name="Optimizer.Performance.DisableAccessibilityKeyboardHotkeys.SideEffects" xml:space="preserve">
+    <value>Shift キーを 5 回押す、または Shift や Num Lock を押し続けても、固定キー、フィルター キー、切り替えキーがオンにならなくなります。必要な場合は [設定] &gt; [アクセシビリティ] &gt; [キーボード] でオンにできます。</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.SideEffects" xml:space="preserve">
+    <value>Edge の起動が少し遅くなり、最後のウィンドウを閉じた後は通知の表示やダウンロードの継続を行わなくなります。</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableTelemetry.SideEffects" xml:space="preserve">
+    <value>フィードバック Hub が使えなくなり、Windows Insider ビルドを受け取れなくなります。一部のトラブルシューティング ツールで使える情報も減り、ハードウェアの不具合修正に使われるクラッシュ レポートも Microsoft に届きにくくなります。</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableErrorReporting.SideEffects" xml:space="preserve">
+    <value>クラッシュ レポートが保存も送信もされなくなるため、信頼性モニターの情報が減り、Microsoft から既知の解決策が提示されなくなります。プログラム互換性アシスタントも古いプログラム向けの修正を提案しなくなります。</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableAdvertisingAndSuggestions.SideEffects" xml:space="preserve">
+    <value>アプリでパーソナライズされた広告が表示されなくなり、Windows はアプリ、ヒント、セットアップ手順を提案しなくなります。入力や手書きの候補も、あなたの入力から学習しにくくなります。</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableNewsAndInterests.SideEffects" xml:space="preserve">
+    <value>タスク バーのウィジェット (天気) ボタンとニュース フィードが表示されなくなります。</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableActivityHistory.SideEffects" xml:space="preserve">
+    <value>使ったアプリ、ファイル、ページの履歴が保存されなくなるため、「中断したところから再開」の候補やタイムラインが使えなくなります。</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableLocationAndSensors.SideEffects" xml:space="preserve">
+    <value>アプリが位置情報を取得できなくなります。マップ、天気、デバイスの検索、タイム ゾーンの自動設定で位置情報が使われなくなり、オフライン マップも更新されません。自動回転や環境光などのセンサーが動作しなくなる場合もあります。</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableAutoLogger.SideEffects" xml:space="preserve">
+    <value>一部の組み込み診断ログ (Wi-Fi セッション、ネットワーク、アプリ モデル) が記録されなくなるため、接続やアプリの問題を調べにくくなります。</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableCortana.SideEffects" xml:space="preserve">
+    <value>Cortana が使えなくなり、検索で Web や位置情報が使われなくなるため、スタートの検索ではこの PC の結果だけが表示されます。</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableCopilot.SideEffects" xml:space="preserve">
+    <value>Copilot ボタンと Windows キー + C のショートカットがなくなり、Windows から Copilot を起動できなくなります。</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableContentDeliveryManager.SideEffects" xml:space="preserve">
+    <value>ロック画面の Windows スポットライト画像、豆知識、スタートのおすすめアプリが更新されなくなります。ロック画面の画像やスライドショーは自分で選びます。</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableFindMyDevice.SideEffects" xml:space="preserve">
+    <value>PC を紛失したり盗まれたりしても、Microsoft アカウントから場所の確認やロックができなくなります。</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableDeliveryOptimization.SideEffects" xml:space="preserve">
+    <value>更新プログラムはネットワーク内の他の PC からではなく Microsoft からのみダウンロードされるため、複数の PC がある家庭や職場ではインターネット帯域の使用量が増えます。</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.SideEffects" xml:space="preserve">
+    <value>Edge のサイドバー (と Copilot)、価格比較、クーポンが使えなくなります。ポリシーを使うため、設定に「お使いのブラウザーは組織によって管理されています」と表示されます。</value>
+  </data>
+  <data name="Optimizer.UserExperience.SpeedUpExplorerAndMenus.SideEffects" xml:space="preserve">
+    <value>スタートアップ アプリがサインイン直後に分散されずに一斉に起動するため、性能の低い PC ではサインイン直後の数秒が重く感じることがあります。</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableVisualEffects.SideEffects" xml:space="preserve">
+    <value>透明効果、タスク バーのアニメーション、デスクトップ アイコン名の影、タスク バー隅の Aero Peek プレビューがなくなり、見た目がフラットになります。</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableStartMenuWebSearch.SideEffects" xml:space="preserve">
+    <value>スタートの検索にはこの PC の結果だけが表示され、Bing の Web 結果や検索のハイライトは表示されなくなります。</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableStartRecommended.SideEffects" xml:space="preserve">
+    <value>スタートに最近開いたファイルや新しくインストールしたアプリが表示されなくなるため、エクスプローラーや検索から探します。</value>
+  </data>
+  <data name="Optimizer.UserExperience.MaximizeUpdatePauseLimit.SideEffects" xml:space="preserve">
+    <value>更新をずっと長く一時停止できるようになります。一時停止中はセキュリティ修正もインストールされないため、定期的に再開してください。</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.SideEffects" xml:space="preserve">
+    <value>Windows Update でドライバーのインストールや更新が行われなくなるため、新しいデバイスのドライバーや修正版はメーカーのサイトから入手する必要があります。</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableUlps.SideEffects" xml:space="preserve">
+    <value>GPU (CrossFire 構成では 2 枚目の GPU) がアイドル時に最も深いスリープに入らなくなるため、アイドル時の消費電力と温度がやや上がります。</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisablePowerGating.SideEffects" xml:space="preserve">
+    <value>デスクトップ表示中も GPU の一部に電力が供給され続けるため、アイドル時の消費電力、温度、ファンの騒音が増え、ノート PC ではバッテリー持ちが短くなります。</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableVideoClockGating.SideEffects" xml:space="preserve">
+    <value>動画エンコーダーとデコーダーが未使用時も通電したままになるため、アイドル時の消費電力がやや増えます (主にノート PC で影響があります)。</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableAspm.SideEffects" xml:space="preserve">
+    <value>GPU への PCIe リンクがアイドル時に省電力にならなくなるため、消費電力がやや増え、ノート PC ではバッテリー持ちが短くなります。</value>
+  </data>
+  <data name="Optimizer.Gpu.NvidiaDisableDynamicPstate.SideEffects" xml:space="preserve">
+    <value>デスクトップ表示中も GPU が高クロックのままになるため、アイドル時の消費電力、温度、ファンの騒音が増え、ノート PC ではバッテリー持ちが短くなります。</value>
+  </data>
+  <data name="Optimizer.Gpu.NvidiaDisableAsyncPstates.SideEffects" xml:space="preserve">
+    <value>GPU の電力状態の切り替えが減り、必要以上に高いクロックのままになることがあるため、軽い負荷でも消費電力と発熱が増えます。</value>
+  </data>
+  <data name="Optimizer.Gpu.IntelDisableAdaptiveVsync.SideEffects" xml:space="preserve">
+    <value>ゲームのフレーム レートがディスプレイのリフレッシュ レートを下回ると、一瞬のティアリングの代わりにカクつきが起きることがあります。</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisableHibernateAndFastStartup.SideEffects" xml:space="preserve">
+    <value>休止状態が使えなくなり、高速スタートアップがオフになるため、シャットダウン後の起動が少し遅くなります。ノート PC はバッテリー残量が少なくなっても休止状態になりません。</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisableUSBPowerSaving.SideEffects" xml:space="preserve">
+    <value>USB デバイスがアイドル時にスリープせず常に通電するため、ノート PC のバッテリー持ちが少し短くなります。</value>
+  </data>
+  <data name="Optimizer.PowerManagement.InstallOptimizerDuckPowerPlan.SideEffects" xml:space="preserve">
+    <value>CPU が高クロックで動く時間が増えるため、消費電力と発熱が増え、軽い負荷でもファンがうるさくなり、ノート PC ではバッテリー持ちが大幅に短くなります。アイドル時でもタスク マネージャーで CPU 使用率が高く表示されることがあります。</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisablePowerSaving.SideEffects" xml:space="preserve">
+    <value>Windows が省電力のためにバックグラウンド アプリを抑制しなくなるため、ノート PC はバッテリーの消費が増えます。また、電力を使いすぎた USB ポートの自動回復も行われなくなります。</value>
+  </data>
+  <data name="Optimizer.AI.DisableRecall.SideEffects" xml:space="preserve">
+    <value>Recall がスナップショットを保存しなくなり、保存済みのものも削除されるため、以前に画面で見た内容を検索できなくなります。</value>
+  </data>
+  <data name="Optimizer.AI.DisableClickToDo.SideEffects" xml:space="preserve">
+    <value>Click to Do (Windows キー + クリック) が使えなくなり、画面上のテキストや画像に対する AI のクイック操作を実行できなくなります。</value>
+  </data>
+  <data name="Optimizer.AI.DisablePaintAI.SideEffects" xml:space="preserve">
+    <value>ペイントから Cocreator、Image Creator、生成塗りつぶし、生成消去がなくなります。通常の描画ツールはそのまま使えます。</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.SideEffects" xml:space="preserve">
+    <value>メモ帳から書き換え、要約などの AI オプションがなくなります。テキストの編集はこれまでどおりです。</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisablePreinstalledApps.SideEffects" xml:space="preserve">
+    <value>Windows がおすすめのアプリやゲームを自動でインストールしなくなります。インストール済みのアプリは削除するまで残ります。</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.ConfigureServices.SideEffects" xml:space="preserve">
+    <value>FAX、リモート レジストリ、リモート アクセス、店頭デモなど、ほとんど使われないサービスが無効になり、他の多くのサービスは必要なときだけ起動します。そのため一部の機能 (印刷、Bluetooth、スキャン) の初回利用に少し時間がかかることがあります。無効化したサービスに依存するプログラムは、元に戻すまで動作しないことがあります。</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.SideEffects" xml:space="preserve">
+    <value>OneDrive の同期が止まります。ファイルはクラウドにバックアップされず、他のデバイスでも使えなくなり、Office の OneDrive への自動保存も停止し、バックアップ対象のフォルダー (デスクトップ、ドキュメント、ピクチャ) もオンラインで更新されなくなります。</value>
+  </data>
 </root>

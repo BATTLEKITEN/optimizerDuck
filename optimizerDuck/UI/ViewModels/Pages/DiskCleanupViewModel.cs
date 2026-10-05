@@ -3,6 +3,7 @@ using System.Diagnostics;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Microsoft.Extensions.Logging;
+using optimizerDuck.Common.Helpers;
 using optimizerDuck.Resources.Languages;
 using optimizerDuck.Services.Configuration;
 using optimizerDuck.Services.UI;
@@ -320,7 +321,7 @@ public partial class DiskCleanupViewModel(
 
         try
         {
-            Process.Start(new ProcessStartInfo { FileName = item.Path, UseShellExecute = true });
+            ShellLauncher.OpenFolder(item.Path);
             logger.LogInformation("Opened folder: {Path}", item.Path);
         }
         catch (Exception ex)

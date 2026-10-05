@@ -101,4 +101,54 @@ public class AI : LocalizedObject, IOptimizationCategory
             return Task.FromResult(context.Changes.ToApplyResult());
         }
     }
+
+    [Optimization(
+        Id = "55565318-C022-4D62-B00C-BBE642A7DA9E",
+        Risk = OptimizationRisk.Safe,
+        Tags = OptimizationTags.Privacy | OptimizationTags.Windows11Only,
+        Condition = typeof(Windows11Condition)
+    )]
+    public class DisablePaintAI : BaseOptimization
+    {
+        public override Task<ApplyResult> ApplyAsync(
+            IProgress<ProcessingProgress> progress,
+            OptimizationContext context
+        )
+        {
+            // The documented Paint policies: Cocreator, Image Creator and generative fill/erase.
+            const string policy = @"HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Paint";
+            RegistryService.Write(
+                context,
+                new RegistryItem(policy, "DisableCocreator", 1),
+                new RegistryItem(policy, "DisableImageCreator", 1),
+                new RegistryItem(policy, "DisableGenerativeFill", 1),
+                new RegistryItem(policy, "DisableGenerativeErase", 1)
+            );
+            context.Logger.LogInformation("Disabled the AI features in Paint");
+            return Task.FromResult(context.Changes.ToApplyResult());
+        }
+    }
+
+    [Optimization(
+        Id = "E2DA4CDD-EF45-43EC-A669-46FD4DB3CBF4",
+        Risk = OptimizationRisk.Safe,
+        Tags = OptimizationTags.Privacy | OptimizationTags.Windows11Only,
+        Condition = typeof(Windows11Condition)
+    )]
+    public class DisableNotepadAI : BaseOptimization
+    {
+        public override Task<ApplyResult> ApplyAsync(
+            IProgress<ProcessingProgress> progress,
+            OptimizationContext context
+        )
+        {
+            // Notepad's documented policy for Rewrite, Summarize and the other AI features.
+            RegistryService.Write(
+                context,
+                new RegistryItem(@"HKLM\SOFTWARE\Policies\WindowsNotepad", "DisableAIFeatures", 1)
+            );
+            context.Logger.LogInformation("Disabled the AI features in Notepad");
+            return Task.FromResult(context.Changes.ToApplyResult());
+        }
+    }
 }

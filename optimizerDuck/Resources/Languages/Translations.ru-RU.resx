@@ -2519,4 +2519,704 @@
   <data name="Error.Unhandled.LogHint" xml:space="preserve">
     <value>Подробности в файле журнала.</value>
   </data>
+  <data name="Sidebar.Profiles" xml:space="preserve">
+    <value>Профили</value>
+  </data>
+  <data name="Profiles.Header.Title" xml:space="preserve">
+    <value>Профили</value>
+  </data>
+  <data name="Profiles.Header.Description" xml:space="preserve">
+    <value>Примените готовый набор оптимизаций, перенесите настройки на другой ПК или верните то, что откатил Windows.</value>
+  </data>
+  <data name="Profiles.Presets.Header" xml:space="preserve">
+    <value>Готовые наборы</value>
+  </data>
+  <data name="Profiles.Preset.Recommended.Title" xml:space="preserve">
+    <value>Рекомендуемый</value>
+  </data>
+  <data name="Profiles.Preset.Recommended.Description" xml:space="preserve">
+    <value>Все оптимизации с пометкой «безопасно». Хорошее начало для большинства настольных ПК.</value>
+  </data>
+  <data name="Profiles.Preset.Gaming.Title" xml:space="preserve">
+    <value>Игры</value>
+  </data>
+  <data name="Profiles.Preset.Gaming.Description" xml:space="preserve">
+    <value>Оптимизации производительности и задержек, без рискованных.</value>
+  </data>
+  <data name="Profiles.Preset.Privacy.Title" xml:space="preserve">
+    <value>Конфиденциальность</value>
+  </data>
+  <data name="Profiles.Preset.Privacy.Description" xml:space="preserve">
+    <value>Отключает телеметрию, рекламу, рекомендации и функции ИИ, без рискованных оптимизаций.</value>
+  </data>
+  <data name="Profiles.Preset.Laptop.Title" xml:space="preserve">
+    <value>Ноутбук</value>
+  </data>
+  <data name="Profiles.Preset.Laptop.Description" xml:space="preserve">
+    <value>Безопасные оптимизации, не влияющие на время работы от батареи: без изменений схемы питания, USB и GPU.</value>
+  </data>
+  <data name="Profiles.Preset.Count" xml:space="preserve">
+    <value>Оптимизаций: {0}</value>
+  </data>
+  <data name="Profiles.Button.Preview" xml:space="preserve">
+    <value>Просмотр</value>
+  </data>
+  <data name="Profiles.Button.Apply" xml:space="preserve">
+    <value>Применить</value>
+  </data>
+  <data name="Profiles.File.Header" xml:space="preserve">
+    <value>Ваши настройки</value>
+  </data>
+  <data name="Profiles.Export.Title" xml:space="preserve">
+    <value>Экспорт в файл</value>
+  </data>
+  <data name="Profiles.Export.Description" xml:space="preserve">
+    <value>Сохраняет оптимизации, применённые на этом ПК, и ваши настройки, чтобы применить их на другом компьютере.</value>
+  </data>
+  <data name="Profiles.Export.Button" xml:space="preserve">
+    <value>Экспорт</value>
+  </data>
+  <data name="Profiles.Import.Title" xml:space="preserve">
+    <value>Импорт и применение</value>
+  </data>
+  <data name="Profiles.Import.Description" xml:space="preserve">
+    <value>Открывает файл профиля и применяет его содержимое. Неподдерживаемые на этом ПК пункты пропускаются.</value>
+  </data>
+  <data name="Profiles.Import.Button" xml:space="preserve">
+    <value>Импорт</value>
+  </data>
+  <data name="Profiles.FileFilter" xml:space="preserve">
+    <value>Профиль optimizerDuck</value>
+  </data>
+  <data name="Profiles.Export.Success.Title" xml:space="preserve">
+    <value>Профиль сохранён</value>
+  </data>
+  <data name="Profiles.Export.Success.Message" xml:space="preserve">
+    <value>Оптимизаций: {0}. Настроек: {1}.</value>
+  </data>
+  <data name="Profiles.Export.Failed.Title" xml:space="preserve">
+    <value>Не удалось сохранить профиль</value>
+  </data>
+  <data name="Profiles.Import.Failed.Title" xml:space="preserve">
+    <value>Не удалось открыть профиль</value>
+  </data>
+  <data name="Profiles.Import.Failed.Message" xml:space="preserve">
+    <value>Файл не является профилем optimizerDuck или создан более новой версией.</value>
+  </data>
+  <data name="Profiles.Apply.Confirm.Title" xml:space="preserve">
+    <value>Применить «{0}»?</value>
+  </data>
+  <data name="Profiles.Apply.Confirm.Message" xml:space="preserve">
+    <value>Будет применено оптимизаций: {0}. Настроек: {1}.
+
+Уже применённые и неподдерживаемые на этом ПК пункты будут пропущены. Любую оптимизацию можно позже отменить на её карточке.</value>
+  </data>
+  <data name="Profiles.Apply.Title" xml:space="preserve">
+    <value>Применение «{0}»</value>
+  </data>
+  <data name="Profiles.Apply.Progress" xml:space="preserve">
+    <value>Применяется: {0}</value>
+  </data>
+  <data name="Profiles.Report.Title" xml:space="preserve">
+    <value>Профиль применён</value>
+  </data>
+  <data name="Profiles.Report.Summary" xml:space="preserve">
+    <value>Применено: {0}
+Уже было применено: {1}
+Не поддерживается на этом ПК: {2}
+Неизвестно этой версии: {3}
+Ошибки: {4}</value>
+  </data>
+  <data name="Profiles.Report.Failures" xml:space="preserve">
+    <value>Что не удалось:</value>
+  </data>
+  <data name="Profiles.Preview.Title" xml:space="preserve">
+    <value>Что применяет «{0}»</value>
+  </data>
+  <data name="Profiles.Preview.Empty" xml:space="preserve">
+    <value>В этой версии набор не содержит оптимизаций.</value>
+  </data>
+  <data name="Drift.Header" xml:space="preserve">
+    <value>Изменения, отменённые Windows</value>
+  </data>
+  <data name="Drift.Description" xml:space="preserve">
+    <value>Обновления Windows и другие программы иногда возвращают настройки. Проверка только считывает текущее состояние и ничего не меняет.</value>
+  </data>
+  <data name="Drift.Button.Check" xml:space="preserve">
+    <value>Проверить</value>
+  </data>
+  <data name="Drift.Button.Reapply" xml:space="preserve">
+    <value>Применить снова</value>
+  </data>
+  <data name="Drift.Status.Checking" xml:space="preserve">
+    <value>Проверка применённых оптимизаций...</value>
+  </data>
+  <data name="Drift.Status.None" xml:space="preserve">
+    <value>Все применённые оптимизации по-прежнему действуют.</value>
+  </data>
+  <data name="Drift.Status.Found" xml:space="preserve">
+    <value>Оптимизаций, отменённых после применения: {0}</value>
+  </data>
+  <data name="Drift.Reapply.Title" xml:space="preserve">
+    <value>Повторное применение оптимизаций</value>
+  </data>
+  <data name="Dashboard.Drift.Title" xml:space="preserve">
+    <value>Некоторые оптимизации были отменены</value>
+  </data>
+  <data name="Dashboard.Drift.Message" xml:space="preserve">
+    <value>Windows или другая программа вернули настройки, изменённые применёнными оптимизациями (количество: {0}).</value>
+  </data>
+  <data name="Dashboard.Drift.Button" xml:space="preserve">
+    <value>Просмотреть и применить снова</value>
+  </data>
+  <data name="Cli.Usage" xml:space="preserve">
+    <value>Использование: optimizerDuck.exe &lt;команда&gt; [параметры]
+
+Команды:
+  --apply-profile &lt;file&gt;    Применить файл профиля
+  --apply-preset &lt;name&gt;     Применить готовый набор: Recommended, Gaming, Privacy, Laptop
+  --export-profile &lt;file&gt;   Сохранить применённое на этом ПК в файл профиля
+  --check-drift             Показать оптимизации, отменённые Windows
+  --reapply-drift           Снова применить оптимизации, отменённые Windows
+  --help                    Показать эту справку
+
+Параметры:
+  --restore-point           Создать точку восстановления перед изменениями
+  --report &lt;file&gt;           Записать результат в файл JSON
+  --accept-terms            Принять условия использования (нужно один раз, перед первым изменением)
+
+Запускайте из терминала с правами администратора, чтобы увидеть вывод.
+Коды выхода: 0 успех, 1 ошибки или найдены отменённые оптимизации, 2 ошибка использования или файла.</value>
+  </data>
+  <data name="Cli.Error.UnknownArgument" xml:space="preserve">
+    <value>Неизвестный аргумент: {0}</value>
+  </data>
+  <data name="Cli.Error.OptionWithoutCommand" xml:space="preserve">
+    <value>Параметр указан без команды.</value>
+  </data>
+  <data name="Cli.Error.OneCommand" xml:space="preserve">
+    <value>Одновременно можно выполнить только одну команду.</value>
+  </data>
+  <data name="Cli.Error.MissingValue" xml:space="preserve">
+    <value>Для {0} нужно значение.</value>
+  </data>
+  <data name="Cli.Error.Terms" xml:space="preserve">
+    <value>Условия использования ещё не приняты. Прочитайте их в приложении или добавьте --accept-terms, чтобы принять.</value>
+  </data>
+  <data name="Cli.Error.UnknownPreset" xml:space="preserve">
+    <value>Неизвестный набор: {0}. Доступны: {1}</value>
+  </data>
+  <data name="Optimizer.Preview.Button" xml:space="preserve">
+    <value>Предпросмотр изменений</value>
+  </data>
+  <data name="Optimizer.Preview.Title" xml:space="preserve">
+    <value>Что изменит «{0}»</value>
+  </data>
+  <data name="Optimizer.Preview.Summary" xml:space="preserve">
+    <value>Будет изменено: {0}. Уже настроено: {1}. Пока ничего не изменено.</value>
+  </data>
+  <data name="Optimizer.Preview.Nothing" xml:space="preserve">
+    <value>Менять нечего: на этом ПК уже всё настроено.</value>
+  </data>
+  <data name="Optimizer.Preview.Failed.Title" xml:space="preserve">
+    <value>Не удалось показать предпросмотр изменений</value>
+  </data>
+  <data name="Optimizer.AI.DisablePaintAI.Name" xml:space="preserve">
+    <value>Отключить ИИ в Paint</value>
+  </data>
+  <data name="Optimizer.AI.DisablePaintAI.ShortDescription" xml:space="preserve">
+    <value>Отключает Cocreator, Image Creator, генеративную заливку и генеративное стирание в Paint через официальные политики Microsoft.</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.Name" xml:space="preserve">
+    <value>Отключить ИИ в Блокноте</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.ShortDescription" xml:space="preserve">
+    <value>Убирает из Блокнота функции «Переписать», «Кратко» и другие функции ИИ через документированную политику.</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.Name" xml:space="preserve">
+    <value>Запретить работу Microsoft Edge в фоне</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.ShortDescription" xml:space="preserve">
+    <value>Отключает ускорение запуска, которое загружает Edge при входе в систему, и фоновый режим, оставляющий его работать после закрытия. Освобождает RAM, даже если вы не открываете Edge.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.Name" xml:space="preserve">
+    <value>Отключить боковую панель, покупки и сбор данных в Edge</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.ShortDescription" xml:space="preserve">
+    <value>Через политики Edge скрывает боковую панель (и Copilot в ней), отключает помощника покупок и рекомендации, останавливает отчёты о персонализации и необязательные диагностические данные.</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.Name" xml:space="preserve">
+    <value>Исключить драйверы из Центра обновления Windows</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.ShortDescription" xml:space="preserve">
+    <value>Не даёт Центру обновления Windows заменять установленные вами драйверы, например драйвер GPU или звука от производителя. Обновлять драйверы придётся самостоятельно.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.Name" xml:space="preserve">
+    <value>Отключить OneDrive</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.ShortDescription" xml:space="preserve">
+    <value>Не даёт OneDrive запускаться и синхронизироваться и убирает его из боковой панели Проводника. Файлы в папке OneDrive остаются на диске, ничего не удаляется.</value>
+  </data>
+  <data name="Sidebar.Health" xml:space="preserve">
+    <value>Состояние системы</value>
+  </data>
+  <data name="Sidebar.ContextMenu" xml:space="preserve">
+    <value>Контекстное меню</value>
+  </data>
+  <data name="Sidebar.OptionalFeatures" xml:space="preserve">
+    <value>Компоненты Windows</value>
+  </data>
+  <data name="Sidebar.AppInstaller" xml:space="preserve">
+    <value>Установка приложений</value>
+  </data>
+  <data name="DiskCleanup.Item.DeliveryOptimization" xml:space="preserve">
+    <value>Кэш оптимизации доставки</value>
+  </data>
+  <data name="DiskCleanup.Item.DeliveryOptimization.Description" xml:space="preserve">
+    <value>Файлы обновлений, которые Windows хранит для раздачи другим ПК; можно безопасно удалить</value>
+  </data>
+  <data name="DiskCleanup.Item.SystemErrorReports" xml:space="preserve">
+    <value>Системные отчёты об ошибках</value>
+  </data>
+  <data name="DiskCleanup.Item.SystemErrorReports.Description" xml:space="preserve">
+    <value>Отчёты о сбоях и проблемах, которые служба отчётов об ошибках Windows хранит для всех пользователей</value>
+  </data>
+  <data name="DiskCleanup.Item.ShaderCache" xml:space="preserve">
+    <value>Кэш шейдеров DirectX</value>
+  </data>
+  <data name="DiskCleanup.Item.ShaderCache.Description" xml:space="preserve">
+    <value>Скомпилированные шейдеры; игры пересоздадут их при следующем запуске, что может убрать фризы после обновления драйвера</value>
+  </data>
+  <data name="Health.Header.Title" xml:space="preserve">
+    <value>Состояние системы</value>
+  </data>
+  <data name="Health.Header.Description" xml:space="preserve">
+    <value>Безопасность, диски и батарея в одном окне. Здесь ничего не меняется.</value>
+  </data>
+  <data name="Health.Loading" xml:space="preserve">
+    <value>Проверка ПК...</value>
+  </data>
+  <data name="Health.Button.Refresh" xml:space="preserve">
+    <value>Обновить</value>
+  </data>
+  <data name="Health.Button.Export" xml:space="preserve">
+    <value>Сохранить отчёт</value>
+  </data>
+  <data name="Health.Button.BatteryReport" xml:space="preserve">
+    <value>Отчёт о батарее</value>
+  </data>
+  <data name="Health.Export.Failed.Title" xml:space="preserve">
+    <value>Не удалось сохранить отчёт</value>
+  </data>
+  <data name="Health.Status.Good" xml:space="preserve">
+    <value>Норма</value>
+  </data>
+  <data name="Health.Status.Info" xml:space="preserve">
+    <value>Сведения</value>
+  </data>
+  <data name="Health.Status.Warning" xml:space="preserve">
+    <value>Внимание</value>
+  </data>
+  <data name="Health.Status.Bad" xml:space="preserve">
+    <value>Проблема</value>
+  </data>
+  <data name="Health.Status.Unknown" xml:space="preserve">
+    <value>Неизвестно</value>
+  </data>
+  <data name="Health.Unknown" xml:space="preserve">
+    <value>Windows не сообщил эти данные.</value>
+  </data>
+  <data name="Health.State.On" xml:space="preserve">
+    <value>Включено</value>
+  </data>
+  <data name="Health.State.Off" xml:space="preserve">
+    <value>Выключено</value>
+  </data>
+  <data name="Health.Check.SecureBoot" xml:space="preserve">
+    <value>Безопасная загрузка</value>
+  </data>
+  <data name="Health.SecureBoot.Off" xml:space="preserve">
+    <value>Выключена. Включите её в настройках UEFI, чтобы блокировать вредоносные загрузчики.</value>
+  </data>
+  <data name="Health.SecureBoot.Unsupported" xml:space="preserve">
+    <value>Недоступно: ПК загружается в режиме Legacy BIOS.</value>
+  </data>
+  <data name="Health.Check.Tpm" xml:space="preserve">
+    <value>TPM</value>
+  </data>
+  <data name="Health.Tpm.Ready" xml:space="preserve">
+    <value>TPM {0} включён и готов.</value>
+  </data>
+  <data name="Health.Tpm.NotReady" xml:space="preserve">
+    <value>TPM {0} есть, но выключен или не готов. Проверьте настройки UEFI.</value>
+  </data>
+  <data name="Health.Tpm.None" xml:space="preserve">
+    <value>TPM не найден. Он нужен для Windows 11 и BitLocker.</value>
+  </data>
+  <data name="Health.Check.Vbs" xml:space="preserve">
+    <value>Безопасность на основе виртуализации</value>
+  </data>
+  <data name="Health.Vbs.Running" xml:space="preserve">
+    <value>Работает. Защищает систему ценой небольшого снижения производительности в играх.</value>
+  </data>
+  <data name="Health.Vbs.Enabled" xml:space="preserve">
+    <value>Включена, но не работает. Возможно, нужна перезагрузка или настройка прошивки.</value>
+  </data>
+  <data name="Health.Check.MemoryIntegrity" xml:space="preserve">
+    <value>Целостность памяти</value>
+  </data>
+  <data name="Health.Check.Defender" xml:space="preserve">
+    <value>Microsoft Defender</value>
+  </data>
+  <data name="Health.Defender.On" xml:space="preserve">
+    <value>Защита в реальном времени включена, базы актуальны.</value>
+  </data>
+  <data name="Health.Defender.Off" xml:space="preserve">
+    <value>Защита в реальном времени выключена. Убедитесь, что ПК защищает другой антивирус.</value>
+  </data>
+  <data name="Health.Defender.Old" xml:space="preserve">
+    <value>Базам {0} дн. Запустите Центр обновления Windows.</value>
+  </data>
+  <data name="Health.Defender.Unknown" xml:space="preserve">
+    <value>Нет данных от Defender; возможно, используется другой антивирус.</value>
+  </data>
+  <data name="Health.Check.Disk" xml:space="preserve">
+    <value>Диск: {0}</value>
+  </data>
+  <data name="Health.Disk.Healthy" xml:space="preserve">
+    <value>Исправен ({0})</value>
+  </data>
+  <data name="Health.Disk.Warning" xml:space="preserve">
+    <value>Windows сообщает о предупреждении ({0}). Сделайте резервную копию данных.</value>
+  </data>
+  <data name="Health.Disk.Unhealthy" xml:space="preserve">
+    <value>Windows сообщает о неисправности диска ({0}). Срочно сохраните данные.</value>
+  </data>
+  <data name="Health.Check.Trim" xml:space="preserve">
+    <value>TRIM для SSD</value>
+  </data>
+  <data name="Health.Trim.Off" xml:space="preserve">
+    <value>Выключен. Без него SSD со временем замедляются.</value>
+  </data>
+  <data name="Health.Check.FreeSpace" xml:space="preserve">
+    <value>Свободно на системном диске</value>
+  </data>
+  <data name="Health.FreeSpace.Value" xml:space="preserve">
+    <value>Свободно {0} из {1} ({2}%)</value>
+  </data>
+  <data name="Health.Check.PendingRestart" xml:space="preserve">
+    <value>Ожидающая перезагрузка</value>
+  </data>
+  <data name="Health.PendingRestart.Yes" xml:space="preserve">
+    <value>Windows ждёт перезагрузки, чтобы завершить установку обновлений.</value>
+  </data>
+  <data name="Health.PendingRestart.No" xml:space="preserve">
+    <value>Перезагрузка не требуется.</value>
+  </data>
+  <data name="Health.Check.BootTime" xml:space="preserve">
+    <value>Время последней загрузки</value>
+  </data>
+  <data name="Health.BootTime.Value" xml:space="preserve">
+    <value>{0} с по данным Windows</value>
+  </data>
+  <data name="Health.BootTime.Unknown" xml:space="preserve">
+    <value>Windows ещё не записал время загрузки.</value>
+  </data>
+  <data name="Health.Check.Battery" xml:space="preserve">
+    <value>Износ батареи</value>
+  </data>
+  <data name="Health.Battery.Value" xml:space="preserve">
+    <value>Сохраняет {0}% исходной ёмкости.</value>
+  </data>
+  <data name="ContextMenu.Header.Title" xml:space="preserve">
+    <value>Контекстное меню</value>
+  </data>
+  <data name="ContextMenu.Header.Description" xml:space="preserve">
+    <value>Отключайте пункты, которые программы добавляют в меню правой кнопки Проводника. Ничего не удаляется: повторное включение возвращает пункт.</value>
+  </data>
+  <data name="ContextMenu.Search" xml:space="preserve">
+    <value>Поиск пунктов</value>
+  </data>
+  <data name="ContextMenu.ShowWindows" xml:space="preserve">
+    <value>Показать пункты Windows</value>
+  </data>
+  <data name="ContextMenu.Loading" xml:space="preserve">
+    <value>Чтение пунктов контекстного меню...</value>
+  </data>
+  <data name="ContextMenu.RestartNeeded" xml:space="preserve">
+    <value>Перезапустите Проводник, чтобы увидеть изменения.</value>
+  </data>
+  <data name="ContextMenu.RestartExplorer" xml:space="preserve">
+    <value>Перезапустить Проводник</value>
+  </data>
+  <data name="ContextMenu.Error.Title" xml:space="preserve">
+    <value>Не удалось изменить пункт</value>
+  </data>
+  <data name="ContextMenu.Location.Files" xml:space="preserve">
+    <value>Файлы</value>
+  </data>
+  <data name="ContextMenu.Location.Folders" xml:space="preserve">
+    <value>Папки</value>
+  </data>
+  <data name="ContextMenu.Location.Background" xml:space="preserve">
+    <value>Фон папки</value>
+  </data>
+  <data name="ContextMenu.Location.Drives" xml:space="preserve">
+    <value>Диски</value>
+  </data>
+  <data name="OptionalFeatures.Header.Title" xml:space="preserve">
+    <value>Компоненты Windows</value>
+  </data>
+  <data name="OptionalFeatures.Header.Description" xml:space="preserve">
+    <value>Включайте и отключайте компоненты Windows, как в окне «Включение или отключение компонентов Windows». Большинство изменений вступают в силу после перезагрузки.</value>
+  </data>
+  <data name="OptionalFeatures.Search" xml:space="preserve">
+    <value>Поиск компонентов</value>
+  </data>
+  <data name="OptionalFeatures.Loading" xml:space="preserve">
+    <value>Запрос компонентов у Windows...</value>
+  </data>
+  <data name="OptionalFeatures.RestartNeeded" xml:space="preserve">
+    <value>Перезагрузите Windows, чтобы завершить изменение.</value>
+  </data>
+  <data name="OptionalFeatures.Error.Title" xml:space="preserve">
+    <value>Не удалось изменить компонент</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Microsoft_Hyper_V_All" xml:space="preserve">
+    <value>Hyper-V: запуск виртуальных машин. Может снизить производительность в играх и конфликтовать с другими программами виртуализации.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Microsoft_Windows_Subsystem_Linux" xml:space="preserve">
+    <value>Подсистема Windows для Linux (WSL): запуск инструментов Linux в Windows.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.VirtualMachinePlatform" xml:space="preserve">
+    <value>Платформа виртуальной машины: нужна для WSL 2 и Android-приложений.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Containers_DisposableClientVM" xml:space="preserve">
+    <value>Песочница Windows: одноразовый рабочий стол для безопасной проверки неизвестных программ.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.NetFx3" xml:space="preserve">
+    <value>.NET Framework 3.5: нужен некоторым старым программам и играм.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.SMB1Protocol" xml:space="preserve">
+    <value>SMB 1.0: устаревший и небезопасный протокол общего доступа. Не включайте без необходимости для старых устройств.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.TelnetClient" xml:space="preserve">
+    <value>Клиент Telnet: консольная утилита для проверки сетевых портов.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Printing_PrintToPDFServices_Features" xml:space="preserve">
+    <value>Microsoft Print to PDF: сохранение в PDF всего, что можно напечатать.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.MediaPlayback" xml:space="preserve">
+    <value>Компоненты мультимедиа: проигрыватель Windows Media и компоненты воспроизведения, нужные некоторым программам.</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Recall" xml:space="preserve">
+    <value>Recall: делает снимки экрана для последующего поиска. Удаление освобождает место и защищает вашу активность.</value>
+  </data>
+  <data name="AppInstaller.Header.Title" xml:space="preserve">
+    <value>Установка приложений</value>
+  </data>
+  <data name="AppInstaller.Header.Description" xml:space="preserve">
+    <value>Выберите популярные приложения и установите их разом через winget, менеджер пакетов Microsoft. Приложения загружаются из официальных источников.</value>
+  </data>
+  <data name="AppInstaller.Install" xml:space="preserve">
+    <value>Установить выбранные ({0})</value>
+  </data>
+  <data name="AppInstaller.Loading" xml:space="preserve">
+    <value>Поиск winget...</value>
+  </data>
+  <data name="AppInstaller.WingetMissing" xml:space="preserve">
+    <value>winget не найден. Установите «Установщик приложений» из Microsoft Store и вернитесь.</value>
+  </data>
+  <data name="AppInstaller.Progress" xml:space="preserve">
+    <value>Установка {0}...</value>
+  </data>
+  <data name="AppInstaller.Success.Title" xml:space="preserve">
+    <value>Приложения установлены</value>
+  </data>
+  <data name="AppInstaller.Success.Message" xml:space="preserve">
+    <value>Установлено или уже актуально: {0}</value>
+  </data>
+  <data name="AppInstaller.Error.Title" xml:space="preserve">
+    <value>Некоторые приложения не удалось установить</value>
+  </data>
+  <data name="AppInstaller.Category.Browsers" xml:space="preserve">
+    <value>Браузеры</value>
+  </data>
+  <data name="AppInstaller.Category.Utilities" xml:space="preserve">
+    <value>Утилиты</value>
+  </data>
+  <data name="AppInstaller.Category.Media" xml:space="preserve">
+    <value>Мультимедиа</value>
+  </data>
+  <data name="AppInstaller.Category.Gaming" xml:space="preserve">
+    <value>Игры</value>
+  </data>
+  <data name="AppInstaller.Category.Development" xml:space="preserve">
+    <value>Разработка</value>
+  </data>
+  <data name="AppInstaller.Category.Runtimes" xml:space="preserve">
+    <value>Среды выполнения</value>
+  </data>
+  <data name="Search.Global.Placeholder" xml:space="preserve">
+    <value>Поиск оптимизаций и настроек</value>
+  </data>
+  <data name="Health.BootTime.Trend" xml:space="preserve">
+    <value>{0} с при последней загрузке, в среднем {1} с за последние {2} загрузки (по данным Windows)</value>
+  </data>
+  <data name="Update.Button.Install" xml:space="preserve">
+    <value>Обновить сейчас</value>
+  </data>
+  <data name="Update.Confirm.Title" xml:space="preserve">
+    <value>Обновление до версии {0}</value>
+  </data>
+  <data name="Update.Confirm.Message" xml:space="preserve">
+    <value>optimizerDuck скачает новую версию с GitHub, сверит её с опубликованной суммой SHA-256, заменит себя и перезапустится. Применённые оптимизации и данные для отката сохранятся.</value>
+  </data>
+  <data name="Update.Downloading" xml:space="preserve">
+    <value>Загрузка и проверка обновления...</value>
+  </data>
+  <data name="Update.Failed.Title" xml:space="preserve">
+    <value>Не удалось установить обновление</value>
+  </data>
+  <data name="Update.Failed.Message" xml:space="preserve">
+    <value>Не удалось скачать или проверить обновление. Откроется страница релиза для ручного обновления.</value>
+  </data>
+  <data name="Optimizer.Menu.HideUnavailable" xml:space="preserve">
+    <value>Скрыть неподдерживаемые</value>
+  </data>
+  <data name="OptimizationDetailsDialog.SideEffects" xml:space="preserve">
+    <value>Что может перестать работать</value>
+  </data>
+  <data name="Optimizer.Performance.DisableBackgroundApps.SideEffects" xml:space="preserve">
+    <value>Приложения из Store больше не работают в фоне: Почта, Календарь, Погода и подобные обновляются только при открытии, а часть уведомлений приходит с опозданием или не приходит.</value>
+  </data>
+  <data name="Optimizer.Performance.ConsolidateServiceHosts.SideEffects" xml:space="preserve">
+    <value>Несколько служб снова работают в одном процессе: сбой одной может обрушить остальные в этом процессе, а Диспетчер задач показывает их группой, а не по одной.</value>
+  </data>
+  <data name="Optimizer.Performance.ProcessPriority.SideEffects" xml:space="preserve">
+    <value>Фоновые задачи (загрузки, кодирование видео, компиляция) получают меньше процессорного времени, пока вы работаете в другом окне, и могут выполняться дольше.</value>
+  </data>
+  <data name="Optimizer.Performance.OptimizeMultimediaScheduler.SideEffects" xml:space="preserve">
+    <value>Во время игры или воспроизведения мультимедиа фоновые задачи и сетевой трафик получают меньший приоритет, поэтому фоновые загрузки и трансляции могут замедлиться.</value>
+  </data>
+  <data name="Optimizer.Performance.KeyboardLatencyOptimization.SideEffects" xml:space="preserve">
+    <value>Удерживаемые клавиши начинают повторяться раньше и быстрее, поэтому при лёгком нажатии могут вводиться лишние символы.</value>
+  </data>
+  <data name="Optimizer.Performance.DisableAccessibilityKeyboardHotkeys.SideEffects" xml:space="preserve">
+    <value>Пятикратное нажатие Shift или удержание Shift и Num Lock больше не включает залипание, фильтрацию или озвучивание переключения клавиш. Кому они нужны, могут включить их в Параметры &gt; Специальные возможности &gt; Клавиатура.</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.SideEffects" xml:space="preserve">
+    <value>Edge запускается немного медленнее, а после закрытия последнего окна больше не показывает уведомления и не завершает загрузки.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableTelemetry.SideEffects" xml:space="preserve">
+    <value>Центр отзывов перестаёт работать, сборки Windows Insider больше не приходят, у некоторых средств устранения неполадок меньше данных, а Microsoft получает меньше отчётов о сбоях для исправления проблем с вашим оборудованием.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableErrorReporting.SideEffects" xml:space="preserve">
+    <value>Отчёты о сбоях больше не сохраняются и не отправляются, поэтому Монитор стабильности показывает меньше, а Microsoft не сможет предложить известные решения. Помощник по совместимости программ перестаёт предлагать исправления для старых программ.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableAdvertisingAndSuggestions.SideEffects" xml:space="preserve">
+    <value>Приложения больше не показывают персонализированную рекламу, Windows перестаёт предлагать приложения, советы и шаги настройки, а подсказки при вводе и рукописном вводе меньше учатся на ваших текстах.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableNewsAndInterests.SideEffects" xml:space="preserve">
+    <value>С панели задач исчезают кнопка виджетов (погода) и лента новостей.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableActivityHistory.SideEffects" xml:space="preserve">
+    <value>Windows больше не хранит историю используемых приложений, файлов и страниц, поэтому подсказки «продолжить с того места» и временная шкала перестают работать.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableLocationAndSensors.SideEffects" xml:space="preserve">
+    <value>Приложения больше не получают ваше местоположение: Карты, Погода, «Поиск устройства» и автоматический часовой пояс перестают его использовать, офлайн-карты не обновляются, а некоторые датчики, например автоповорот или датчик освещённости, могут перестать работать.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableAutoLogger.SideEffects" xml:space="preserve">
+    <value>Некоторые встроенные журналы диагностики (сеансы Wi-Fi, сеть, модель приложений) больше не записываются, поэтому проблемы с подключением и приложениями сложнее диагностировать.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableCortana.SideEffects" xml:space="preserve">
+    <value>Cortana становится недоступна, а поиск больше не использует интернет и ваше местоположение, поэтому поиск в меню «Пуск» показывает только результаты с этого ПК.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableCopilot.SideEffects" xml:space="preserve">
+    <value>Исчезают кнопка Copilot и сочетание Windows + C, и Copilot нельзя запустить средствами Windows.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableContentDeliveryManager.SideEffects" xml:space="preserve">
+    <value>Изображения Windows Spotlight на экране блокировки, «интересные факты» и рекомендуемые приложения в «Пуске» перестают обновляться; картинку или слайд-шоу для экрана блокировки вы выбираете сами.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableFindMyDevice.SideEffects" xml:space="preserve">
+    <value>Вы больше не сможете найти или заблокировать этот ПК через учётную запись Microsoft при потере или краже.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableDeliveryOptimization.SideEffects" xml:space="preserve">
+    <value>Обновления загружаются только с серверов Microsoft, а не с других ПК в сети, поэтому дома или в офисе с несколькими ПК на обновления уходит больше интернет-трафика.</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.SideEffects" xml:space="preserve">
+    <value>Edge лишается боковой панели (и Copilot в ней), сравнения цен и купонов, а в настройках появляется «Вашим браузером управляет организация», так как используются политики.</value>
+  </data>
+  <data name="Optimizer.UserExperience.SpeedUpExplorerAndMenus.SideEffects" xml:space="preserve">
+    <value>Приложения автозагрузки запускаются все сразу после входа, а не по очереди, поэтому на слабых ПК первые секунды после входа могут подтормаживать.</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableVisualEffects.SideEffects" xml:space="preserve">
+    <value>Windows выглядит проще: нет прозрачности, анимаций панели задач, теней под подписями значков рабочего стола и предпросмотра Aero Peek в углу панели задач.</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableStartMenuWebSearch.SideEffects" xml:space="preserve">
+    <value>Поиск в меню «Пуск» показывает только результаты с этого ПК: веб-результаты Bing и рекомендации поиска исчезают.</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableStartRecommended.SideEffects" xml:space="preserve">
+    <value>В «Пуске» больше не показываются недавно открытые файлы и новые приложения; находите их через Проводник или поиск.</value>
+  </data>
+  <data name="Optimizer.UserExperience.MaximizeUpdatePauseLimit.SideEffects" xml:space="preserve">
+    <value>Обновления можно приостановить намного дольше. Пока они на паузе, исправления безопасности тоже не устанавливаются, поэтому регулярно возобновляйте их.</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.SideEffects" xml:space="preserve">
+    <value>Центр обновления Windows больше не устанавливает и не обновляет драйверы, поэтому драйвер для нового устройства или исправление придётся брать с сайта производителя.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableUlps.SideEffects" xml:space="preserve">
+    <value>GPU (или вторая видеокарта в CrossFire) больше не уходит в самый глубокий сон в простое, поэтому энергопотребление и температура в простое немного растут.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisablePowerGating.SideEffects" xml:space="preserve">
+    <value>Части GPU остаются под напряжением даже на рабочем столе: выше энергопотребление, температура и шум вентиляторов в простое, меньше время работы ноутбука от батареи.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableVideoClockGating.SideEffects" xml:space="preserve">
+    <value>Видеокодер и видеодекодер остаются под напряжением даже без работы, что немного повышает энергопотребление в простое, особенно заметно на ноутбуках.</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableAspm.SideEffects" xml:space="preserve">
+    <value>Шина PCIe к GPU больше не экономит энергию в простое: немного выше энергопотребление и меньше время работы ноутбука от батареи.</value>
+  </data>
+  <data name="Optimizer.Gpu.NvidiaDisableDynamicPstate.SideEffects" xml:space="preserve">
+    <value>GPU держит высокие частоты даже на рабочем столе: выше энергопотребление, температура и шум вентиляторов в простое, меньше время работы ноутбука от батареи.</value>
+  </data>
+  <data name="Optimizer.Gpu.NvidiaDisableAsyncPstates.SideEffects" xml:space="preserve">
+    <value>GPU реже переключает режимы питания и может держать частоты выше нужного: больше энергопотребление и нагрев при лёгкой нагрузке.</value>
+  </data>
+  <data name="Optimizer.Gpu.IntelDisableAdaptiveVsync.SideEffects" xml:space="preserve">
+    <value>Когда частота кадров в игре падает ниже частоты обновления экрана, вместо кратковременных разрывов изображения могут появиться подтормаживания.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisableHibernateAndFastStartup.SideEffects" xml:space="preserve">
+    <value>Гибернация становится недоступной, а запуск после завершения работы занимает чуть больше времени, так как быстрый запуск отключён. Ноутбуки больше не уходят в гибернацию при разряде батареи.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisableUSBPowerSaving.SideEffects" xml:space="preserve">
+    <value>USB-устройства постоянно получают питание вместо перехода в спящий режим, поэтому ноутбуки немного теряют во времени работы от батареи.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.InstallOptimizerDuckPowerPlan.SideEffects" xml:space="preserve">
+    <value>Процессор чаще работает на высоких частотах: выше энергопотребление и нагрев, вентиляторы громче при лёгкой нагрузке, а время работы ноутбука от батареи заметно сокращается. Диспетчер задач может показывать высокую загрузку ЦП даже в простое.</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisablePowerSaving.SideEffects" xml:space="preserve">
+    <value>Windows перестаёт ограничивать фоновые приложения ради экономии энергии, поэтому ноутбуки расходуют больше батареи, и больше не пытается восстанавливать USB-порты с перегрузкой по питанию.</value>
+  </data>
+  <data name="Optimizer.AI.DisableRecall.SideEffects" xml:space="preserve">
+    <value>Recall перестаёт сохранять снимки и удаляет уже сохранённые, поэтому искать то, что вы видели на экране раньше, больше нельзя.</value>
+  </data>
+  <data name="Optimizer.AI.DisableClickToDo.SideEffects" xml:space="preserve">
+    <value>Click to Do (клавиша Windows + щелчок) становится недоступен, и быстрые действия ИИ с текстом и изображениями на экране не работают.</value>
+  </data>
+  <data name="Optimizer.AI.DisablePaintAI.SideEffects" xml:space="preserve">
+    <value>Из Paint исчезают Cocreator, Image Creator, генеративная заливка и генеративное стирание; обычные инструменты рисования остаются.</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.SideEffects" xml:space="preserve">
+    <value>Из Блокнота исчезают «Переписать», «Кратко» и другие функции ИИ; редактирование текста работает как прежде.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisablePreinstalledApps.SideEffects" xml:space="preserve">
+    <value>Windows перестаёт самостоятельно устанавливать рекомендуемые приложения и игры; уже установленные остаются, пока вы их не удалите.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.ConfigureServices.SideEffects" xml:space="preserve">
+    <value>Отключаются факс, удалённый реестр, удалённый доступ, демонстрационный режим для магазинов и ещё несколько редко используемых служб, а многие другие запускаются только по требованию, поэтому первое использование некоторых функций (печать, Bluetooth, сканирование) может занять чуть больше времени. Программа, зависящая от отключённой службы, может не работать до отмены изменения.</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.SideEffects" xml:space="preserve">
+    <value>OneDrive перестаёт синхронизировать: файлы больше не копируются в облако и не доступны на других устройствах, автосохранение Office в OneDrive останавливается, а резервируемые папки (Рабочий стол, Документы, Изображения) перестают обновляться в сети.</value>
+  </data>
 </root>

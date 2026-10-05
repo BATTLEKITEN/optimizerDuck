@@ -30,7 +30,17 @@ public sealed class AppSettings
 
     public sealed class OptimizeOptions
     {
+        public const int MinShellTimeoutMs = 1_000;
+        public const int MaxShellTimeoutMs = 3_600_000;
+
         public int ShellTimeoutMs { get; set; } = 120000;
+
+        /// <summary>
+        ///     The timeout a shell call actually uses: the settings file is writable without
+        ///     elevation, so a zero, negative or absurd value is pulled back into range.
+        /// </summary>
+        public static int ClampShellTimeout(int value) =>
+            Math.Clamp(value, MinShellTimeoutMs, MaxShellTimeoutMs);
 
         /// <summary>
         ///     Whether to show the success snackbar after applying an optimization.

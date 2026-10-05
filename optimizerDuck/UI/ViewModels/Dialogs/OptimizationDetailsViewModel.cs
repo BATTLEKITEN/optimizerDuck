@@ -125,14 +125,7 @@ public partial class OptimizationDetailsViewModel(
         try
         {
             var filePath = Path.Combine(Shared.RevertDirectory, Optimization.Id + ".json");
-            Process.Start(
-                new ProcessStartInfo
-                {
-                    FileName = "explorer.exe",
-                    Arguments = $"/select,\"{filePath}\"",
-                    UseShellExecute = true,
-                }
-            );
+            ShellLauncher.Reveal(filePath);
         }
         catch (Exception ex)
         {
@@ -161,14 +154,7 @@ public partial class OptimizationDetailsViewModel(
 
         try
         {
-            Process.Start(
-                new ProcessStartInfo
-                {
-                    FileName = "explorer.exe",
-                    Arguments = $"/select,\"{filePath}\"",
-                    UseShellExecute = true,
-                }
-            );
+            ShellLauncher.Reveal(filePath);
         }
         catch (Exception ex)
         {

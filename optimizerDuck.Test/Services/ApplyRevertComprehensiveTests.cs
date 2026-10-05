@@ -364,7 +364,7 @@ public class ApplyRevertComprehensiveTests
                     },
                 };
 
-                var json = JsonConvert.SerializeObject(payload, Formatting.Indented);
+                var json = RevertDataSeal.ToJson(payload);
                 await File.WriteAllTextAsync(revertPath, json);
 
                 var service = CreateService();
@@ -489,7 +489,7 @@ public class ApplyRevertComprehensiveTests
                     },
                 };
 
-                var json = JsonConvert.SerializeObject(payload, Formatting.Indented);
+                var json = RevertDataSeal.ToJson(payload);
                 await File.WriteAllTextAsync(revertPath, json);
 
                 var manager = new RevertManager(
@@ -564,7 +564,7 @@ public class ApplyRevertComprehensiveTests
                     },
                 };
 
-                var json = JsonConvert.SerializeObject(payload, Formatting.Indented);
+                var json = RevertDataSeal.ToJson(payload);
                 await File.WriteAllTextAsync(revertPath, json);
 
                 var service = CreateService();
@@ -629,7 +629,7 @@ public class ApplyRevertComprehensiveTests
                     },
                 };
 
-                var json = JsonConvert.SerializeObject(payload, Formatting.Indented);
+                var json = RevertDataSeal.ToJson(payload);
                 await File.WriteAllTextAsync(revertPath, json);
 
                 var service = CreateService();
@@ -700,7 +700,7 @@ public class ApplyRevertComprehensiveTests
                     },
                 };
 
-                var json = JsonConvert.SerializeObject(payload, Formatting.Indented);
+                var json = RevertDataSeal.ToJson(payload);
                 await File.WriteAllTextAsync(revertPath, json);
 
                 var service = CreateService();
@@ -763,7 +763,7 @@ public class ApplyRevertComprehensiveTests
                     },
                 };
 
-                var json = JsonConvert.SerializeObject(payload, Formatting.Indented);
+                var json = RevertDataSeal.ToJson(payload);
                 await File.WriteAllTextAsync(revertPath, json);
 
                 var manager = new RevertManager(

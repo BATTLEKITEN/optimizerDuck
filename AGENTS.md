@@ -40,7 +40,8 @@ Windows-only WPF desktop app that optimizes Windows. Read this before changing c
   - `ApplicationServiceCollectionExtensions.cs` — `AddOptimizerApplication(IConfiguration)`, the whole graph; `App.xaml.cs` only builds the host
   - `Resources/Languages/` — `Translations.resx` (neutral English) + one file per locale
 - `optimizerDuck.Test/` — xUnit v3, one project, `InternalsVisibleTo`.
-- Data directory `%LocalAppData%\optimizerDuck\`: `Revert/`, `History/`, `Resources/{Downloads,Assets}/`, `Crashes/`, `optimizerDuck.log`, `appsettings.json`.
+- Data directory `%LocalAppData%\optimizerDuck\`: `Revert/`, `History/`, `Resources/Assets/`, `Crashes/`, `optimizerDuck.log`, `appsettings.json`. It is writable by any process of the user, so nothing the elevated app *runs or imports* lives there.
+- Protected directory `%ProgramData%\optimizerDuck\` (`Shared.SecureDataDirectory`): `Downloads/`, `PowerPlans/`. `SecureDirectory.EnsureAdminOnly` creates it owned by Administrators with a protected Administrators + SYSTEM DACL and moves aside any copy with another descriptor.
 - Version lives in `optimizerDuck.csproj` (`<Version>`). Read it there; never hardcode it.
 
 ## Adding an optimization or customize setting
@@ -51,6 +52,7 @@ Reflection discovery, no registration array to update.
 - **Discovery**: `ReflectionHelper.FindImplementationsInLoadedAssemblies<T>()` scans assemblies whose name starts with `optimizerDuck`; `CategoryDiscovery` builds the categories and instantiates their nested items, skipping empty categories. Results are cached. `OptimizationValidation` fails fast on a duplicate or malformed Id during discovery.
 - **Preloading**: `OptimizationRegistry.PreloadOptimizationsAsync()` / `EnsurePreloadedAsync()` and `CustomizeRegistry.PreloadCategoriesAsync()` / `EnsurePreloadedAsync()` run discovery on a background thread; `App.xaml.cs` preloads at startup and the pages await `EnsurePreloadedAsync()` before binding.
 - **DI**: register through `AddOptimizerApplication(configuration)`. The host sets `ValidateOnBuild`/`ValidateScopes`, so a broken or scoped-into-singleton registration fails at startup, not at apply time. Keep it that way.
+- **Side effects**: add `Optimizer.{Category}.{Key}.SideEffects` (all locales) when applying the item can break or change something the user relies on; `BaseOptimization.SideEffects` / `HasSideEffects` read it, the card shows a warning icon and the details dialog a section. Leave it out when nothing noticeable changes.
 - **Results**: an optimization ends `ApplyAsync` with `return context.Changes.ToApplyResult();`. Only an early-out failure constructs `ApplyResult` by hand.
 
 ## Execution model
@@ -59,6 +61,9 @@ Reflection discovery, no registration array to update.
 - `ChangeKind` says what a step did: `Change` (modified, carries compensation), `Skip` (already correct), `NotApplicable` (nothing here to act on), `Refused` (Windows refused; not a failure), `Irreversible` (no way back).
 - `DidApplyAnything` = `Change` only, and gates revert persistence. `ModifiedSystem` = `Change` + `Irreversible`, and tells a change from nothing to do. So a run whose only step was irreversible is a success, and a run that recorded nothing is "nothing to do", not a failure.
 - `OperationRunner` is the one lifecycle: run the work, classify the outcome from the recorded steps, write the record, persist revert data when the subject asks for it. `OperationSubject` (Id + Key + English log name) identifies a run and its record; built-in tool ids live in `ToolSubjects`.
+- **Preview (dry run)**: `OpCall.DryRun` makes every provider read the current state and record `AddSkip` or `ChangeSet.AddPlanned` without changing anything (registry, services, scheduled tasks, power plans, shell, and the PowerManagement category's hibernation/USB steps). `OperationRunner.PreviewAsync` / `OptimizationService.PreviewAsync` run an item that way and write no record and no revert data. A new provider or a category that changes Windows directly must honour `DryRun` before its mutation; `PreviewIntegrationTests` fails when a preview step carries compensation.
+- **Drift**: `DriftService.CheckAsync` previews every applied item; planned steps mean Windows or another program undid it (steps Windows refused or found not applicable at the last apply are not drift; failed steps still count). It runs in the background at startup; the dashboard and the Profiles page show the result.
+- **Profiles**: `ProfileService` captures, saves (`*.duckprofile`, JSON, `SchemaVersion` 1), loads, validates and applies `OptimizerProfile`s, and builds the presets (`Recommended`, `Gaming`, `Privacy`, `Laptop`) from risk, tags and category at runtime. Every optimization it applies goes through `OptimizationService.ApplyAsync`.
 - **Skip policy**: a provider whose mutation needs a privilege it may not have, has a side effect beyond the value it sets, or can be refused on a second call reads the current state first and records a `Skip` when the machine already matches, without calling the mutation (`RegistryService`, `ServiceProcessService`, `ScheduledTaskService`, `PowerPlanChanges`, and the PowerManagement category for hibernation/USB). An item never decides this on its own: a skip recorded at the item level drops the step from the record.
 - **Failure policy**: a provider records a failed `Change` with an error and, when a retry can help, a retry action — it does not throw. Only unrecoverable state throws; the runner turns that into a failed step named for the user. Partial work is persisted with `CancellationToken.None`.
 - **Retry**: `OptimizationService.RetryFailedStepsWithResultsAsync()` (static) re-invokes the stored retry action with a fresh `OpCall` and appends the recovered steps. The optimize page's dialog and `ToolRunPresenter` both call it. Reverting passes a `RevertManager`, a tool passes none, so a retried tool step writes no revert data.
@@ -72,6 +77,15 @@ Reflection discovery, no registration array to update.
 - `SystemRestoreService` — the only owner of every System Restore WMI call.
 - `RecycleBinService`, `HibernationService`, `UsbPowerService` — static, one Windows operation each (shell Recycle Bin APIs, the documented power information callback, `root\wmi` device power); they fail open instead of throwing. The PowerManagement category records their steps.
 
+## Command line
+- `CommandLineOptions.Parse(e.Args)` in `App.OnStartupAsync`; any command runs through `CliRunner` without the window and shuts down with its exit code (0 ok, 1 failures/drift, 2 usage or file error). Output goes to the parent console (`ConsoleBridge`) and optionally a JSON `--report`. Every message is a `Cli.*` / existing resource key.
+
+## Security rules
+- Open links with `ShellLauncher.OpenUrl` (HTTPS only) and folders with `ShellLauncher.OpenFolder` / `Reveal`; never hand a path to `UseShellExecute` from the elevated process.
+- Delete inside user-writable folders through `ConfinedDelete` (handle based, never follows a junction or symlink).
+- Self-update: `UpdaterService.DownloadVerifiedUpdateAsync` needs the release's `<exe>.sha256` asset (written by `release.yml`) and, when the running build is signed, the same Authenticode subject (`AuthenticodeSigner`); `InstallAndStart` renames the running exe to `.old` (removed at next start) and starts the new one.
+- `StreamService.TryDownloadAsync(url, fileName, expectedSha256)` downloads HTTPS only, into a fresh folder under the protected directory, and keeps the file only when the hash matches.
+
 ## Conditions (compatibility gating)
 - `Domain/Conditions/`: `ICondition`, `ConditionBase`, `ConditionResult`, `ConditionState`, `ConditionValidation`, `WindowsBuilds`, `BuiltIn/` — Windows 10, Windows 11, Windows 11 24H2+, CPU brand, GPU brand, minimum RAM, registry key exists, service exists, Recall installed.
 - Evaluated by the static `Services/Conditions/ConditionEvaluator`. Both `[Optimization]` and `[CustomizeSetting]` accept an optional `Condition = typeof(T)` where `T : ICondition` with a public parameterless constructor.
@@ -81,6 +95,7 @@ Reflection discovery, no registration array to update.
 ## Revert system
 - One JSON file per subject: `%LocalAppData%\optimizerDuck\Revert\{id}.json`. Applied state is inferred from file presence.
 - `RevertManager` is the API: `SaveRevertDataAsync`, `RevertAsync`, `AppendRevertStepAsync`, `RemoveRevertStepAtIndexAsync`, `RemoveRevertStepsAtIndexesAsync`, `RemoveRevertData`, plus static `IsAppliedAsync`, `GetRevertDataAsync`, `ClearAllRevertData`, `RemoveOrphanedTempFiles`.
+- **Sealing**: every file carries `Signature`, an HMAC-SHA256 over the rest of the file keyed by `HKLM\SOFTWARE\optimizerDuck\RevertSealKey` (DACL: Administrators + SYSTEM only). `RevertDataSeal.ToJson` writes it, `RevertDataSeal.Verify` gates every load; an unsigned or edited file is unreadable and never executed. The first build that creates the key seals the files already on disk once. Tests write revert JSON through `RevertDataSeal.ToJson(payload)`.
 - **Atomic writes**: temp file via `FileStream(WriteThrough)` + `Flush(flushToDisk: true)`, then `File.Replace`. Stale `.tmp` files are swept at startup.
 - **Concurrency**: a per-file `SemaphoreSlim` (30 s timeout) in `RevertManager.FileLocks`. A lock entry is never disposed while another thread holds or waits on it.
 - **Compact layout**: only successful steps persist, re-indexed with no gaps. Re-apply appends; a recovered retry step appends (never overwrites), so LIFO revert still ends at the original backup.

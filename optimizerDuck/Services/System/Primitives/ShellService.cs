@@ -121,6 +121,12 @@ public sealed class ShellService
     {
         policy ??= ShellPolicy.Default;
 
+        if (call.DryRun)
+        {
+            call.Changes.AddPlanned(ServiceStrings.ShellName, command);
+            return OpResult.Success();
+        }
+
         using var linkedCts = CancellationTokenSource.CreateLinkedTokenSource(
             call.CancellationToken,
             ct

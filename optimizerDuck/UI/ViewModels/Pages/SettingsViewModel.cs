@@ -131,9 +131,7 @@ public partial class SettingsViewModel(
         try
         {
             logger.LogInformation("Opening root directory: {Path}", Shared.RootDirectory);
-            Process.Start(
-                new ProcessStartInfo { FileName = Shared.RootDirectory, UseShellExecute = true }
-            );
+            ShellLauncher.OpenFolder(Shared.RootDirectory);
         }
         catch (Exception ex)
         {
@@ -185,46 +183,22 @@ public partial class SettingsViewModel(
                         "Opening page: {Url}",
                         Shared.WebsiteURL + "docs/guides/getting-started"
                     );
-                    Process.Start(
-                        new ProcessStartInfo
-                        {
-                            FileName = Shared.WebsiteURL + "docs/guides/getting-started",
-                            UseShellExecute = true,
-                        }
-                    );
+                    ShellLauncher.OpenUrl(Shared.WebsiteURL + "docs/guides/getting-started");
                     break;
 
                 case "GitHub":
                     logger.LogInformation("Opening page: {Url}", Shared.GitHubRepoURL);
-                    Process.Start(
-                        new ProcessStartInfo
-                        {
-                            FileName = Shared.GitHubRepoURL,
-                            UseShellExecute = true,
-                        }
-                    );
+                    ShellLauncher.OpenUrl(Shared.GitHubRepoURL);
                     break;
 
                 case "Acknowledgements":
                     logger.LogInformation("Opening page: {Url}", Shared.AcknowledgementsURL);
-                    Process.Start(
-                        new ProcessStartInfo
-                        {
-                            FileName = Shared.AcknowledgementsURL,
-                            UseShellExecute = true,
-                        }
-                    );
+                    ShellLauncher.OpenUrl(Shared.AcknowledgementsURL);
                     break;
 
                 case "Help":
                     logger.LogInformation("Opening page: {Url}", Shared.CommunityURL);
-                    Process.Start(
-                        new ProcessStartInfo
-                        {
-                            FileName = Shared.CommunityURL,
-                            UseShellExecute = true,
-                        }
-                    );
+                    ShellLauncher.OpenUrl(Shared.CommunityURL);
                     break;
             }
         }
@@ -310,13 +284,7 @@ public partial class SettingsViewModel(
                 "Opening latest release page: {Url}",
                 UpdaterService.LatestReleaseUrl
             );
-            Process.Start(
-                new ProcessStartInfo
-                {
-                    FileName = UpdaterService.LatestReleaseUrl,
-                    UseShellExecute = true,
-                }
-            );
+            ShellLauncher.OpenUrl(UpdaterService.LatestReleaseUrl);
         }
         catch (Exception ex)
         {

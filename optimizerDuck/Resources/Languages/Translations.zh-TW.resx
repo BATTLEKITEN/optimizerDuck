@@ -2514,4 +2514,704 @@
   <data name="Error.Unhandled.LogHint" xml:space="preserve">
     <value>詳細資料已寫入記錄檔。</value>
   </data>
+  <data name="Sidebar.Profiles" xml:space="preserve">
+    <value>設定檔</value>
+  </data>
+  <data name="Profiles.Header.Title" xml:space="preserve">
+    <value>設定檔</value>
+  </data>
+  <data name="Profiles.Header.Description" xml:space="preserve">
+    <value>套用現成的最佳化組合、將設定移轉到另一台電腦，或還原被 Windows 復原的設定。</value>
+  </data>
+  <data name="Profiles.Presets.Header" xml:space="preserve">
+    <value>預設組合</value>
+  </data>
+  <data name="Profiles.Preset.Recommended.Title" xml:space="preserve">
+    <value>建議</value>
+  </data>
+  <data name="Profiles.Preset.Recommended.Description" xml:space="preserve">
+    <value>所有標示為「安全」的最佳化項目，適合大多數桌上型電腦作為起點。</value>
+  </data>
+  <data name="Profiles.Preset.Gaming.Title" xml:space="preserve">
+    <value>遊戲</value>
+  </data>
+  <data name="Profiles.Preset.Gaming.Description" xml:space="preserve">
+    <value>效能與延遲相關的最佳化，不含高風險項目。</value>
+  </data>
+  <data name="Profiles.Preset.Privacy.Title" xml:space="preserve">
+    <value>隱私權</value>
+  </data>
+  <data name="Profiles.Preset.Privacy.Description" xml:space="preserve">
+    <value>關閉遙測、廣告、建議與 AI 功能，不含高風險最佳化。</value>
+  </data>
+  <data name="Profiles.Preset.Laptop.Title" xml:space="preserve">
+    <value>筆記型電腦</value>
+  </data>
+  <data name="Profiles.Preset.Laptop.Description" xml:space="preserve">
+    <value>不影響電池續航力的安全最佳化：不變更電源計劃、USB 或 GPU 設定。</value>
+  </data>
+  <data name="Profiles.Preset.Count" xml:space="preserve">
+    <value>最佳化項目：{0}</value>
+  </data>
+  <data name="Profiles.Button.Preview" xml:space="preserve">
+    <value>預覽</value>
+  </data>
+  <data name="Profiles.Button.Apply" xml:space="preserve">
+    <value>套用</value>
+  </data>
+  <data name="Profiles.File.Header" xml:space="preserve">
+    <value>你的設定</value>
+  </data>
+  <data name="Profiles.Export.Title" xml:space="preserve">
+    <value>匯出至檔案</value>
+  </data>
+  <data name="Profiles.Export.Description" xml:space="preserve">
+    <value>儲存此電腦已套用的最佳化與自訂設定，方便在其他電腦上套用。</value>
+  </data>
+  <data name="Profiles.Export.Button" xml:space="preserve">
+    <value>匯出</value>
+  </data>
+  <data name="Profiles.Import.Title" xml:space="preserve">
+    <value>匯入並套用</value>
+  </data>
+  <data name="Profiles.Import.Description" xml:space="preserve">
+    <value>開啟設定檔並套用其中內容，此電腦不支援的項目會略過。</value>
+  </data>
+  <data name="Profiles.Import.Button" xml:space="preserve">
+    <value>匯入</value>
+  </data>
+  <data name="Profiles.FileFilter" xml:space="preserve">
+    <value>optimizerDuck 設定檔</value>
+  </data>
+  <data name="Profiles.Export.Success.Title" xml:space="preserve">
+    <value>設定檔已儲存</value>
+  </data>
+  <data name="Profiles.Export.Success.Message" xml:space="preserve">
+    <value>最佳化項目：{0}。自訂設定：{1}。</value>
+  </data>
+  <data name="Profiles.Export.Failed.Title" xml:space="preserve">
+    <value>無法儲存設定檔</value>
+  </data>
+  <data name="Profiles.Import.Failed.Title" xml:space="preserve">
+    <value>無法開啟設定檔</value>
+  </data>
+  <data name="Profiles.Import.Failed.Message" xml:space="preserve">
+    <value>此檔案不是 optimizerDuck 設定檔，或是由較新版本建立。</value>
+  </data>
+  <data name="Profiles.Apply.Confirm.Title" xml:space="preserve">
+    <value>要套用「{0}」嗎？</value>
+  </data>
+  <data name="Profiles.Apply.Confirm.Message" xml:space="preserve">
+    <value>將套用的最佳化項目：{0}。自訂設定：{1}。
+
+已生效與此電腦不支援的項目會略過。每項最佳化之後都能從其卡片還原。</value>
+  </data>
+  <data name="Profiles.Apply.Title" xml:space="preserve">
+    <value>正在套用「{0}」</value>
+  </data>
+  <data name="Profiles.Apply.Progress" xml:space="preserve">
+    <value>正在套用：{0}</value>
+  </data>
+  <data name="Profiles.Report.Title" xml:space="preserve">
+    <value>設定檔已套用</value>
+  </data>
+  <data name="Profiles.Report.Summary" xml:space="preserve">
+    <value>已套用：{0}
+已生效：{1}
+此電腦不支援：{2}
+此版本無法辨識：{3}
+失敗：{4}</value>
+  </data>
+  <data name="Profiles.Report.Failures" xml:space="preserve">
+    <value>失敗的項目：</value>
+  </data>
+  <data name="Profiles.Preview.Title" xml:space="preserve">
+    <value>「{0}」將套用的內容</value>
+  </data>
+  <data name="Profiles.Preview.Empty" xml:space="preserve">
+    <value>此預設組合在目前版本中不包含任何最佳化項目。</value>
+  </data>
+  <data name="Drift.Header" xml:space="preserve">
+    <value>被 Windows 復原的變更</value>
+  </data>
+  <data name="Drift.Description" xml:space="preserve">
+    <value>Windows 更新與其他程式有時會還原設定。此檢查只會讀取目前狀態，不會變更任何內容。</value>
+  </data>
+  <data name="Drift.Button.Check" xml:space="preserve">
+    <value>立即檢查</value>
+  </data>
+  <data name="Drift.Button.Reapply" xml:space="preserve">
+    <value>重新套用</value>
+  </data>
+  <data name="Drift.Status.Checking" xml:space="preserve">
+    <value>正在檢查已套用的最佳化...</value>
+  </data>
+  <data name="Drift.Status.None" xml:space="preserve">
+    <value>所有已套用的最佳化仍然有效。</value>
+  </data>
+  <data name="Drift.Status.Found" xml:space="preserve">
+    <value>套用後被復原的最佳化項目：{0}</value>
+  </data>
+  <data name="Drift.Reapply.Title" xml:space="preserve">
+    <value>正在重新套用最佳化</value>
+  </data>
+  <data name="Dashboard.Drift.Title" xml:space="preserve">
+    <value>部分最佳化已被復原</value>
+  </data>
+  <data name="Dashboard.Drift.Message" xml:space="preserve">
+    <value>Windows 或其他程式還原了 {0} 項已套用最佳化所變更的設定。</value>
+  </data>
+  <data name="Dashboard.Drift.Button" xml:space="preserve">
+    <value>檢視並重新套用</value>
+  </data>
+  <data name="Cli.Usage" xml:space="preserve">
+    <value>用法：optimizerDuck.exe &lt;命令&gt; [選項]
+
+命令：
+  --apply-profile &lt;file&gt;    套用設定檔
+  --apply-preset &lt;name&gt;     套用預設組合：Recommended、Gaming、Privacy、Laptop
+  --export-profile &lt;file&gt;   將此電腦已套用的內容儲存為設定檔
+  --check-drift             列出被 Windows 復原的最佳化
+  --reapply-drift           重新套用被 Windows 復原的最佳化
+  --help                    顯示此說明
+
+選項：
+  --restore-point           變更前先建立還原點
+  --report &lt;file&gt;           將結果寫入 JSON 檔案
+  --accept-terms            接受使用條款（首次變更前需要一次）
+
+請在以系統管理員身分執行的終端機中執行以查看輸出。
+結束代碼：0 成功，1 有失敗或發現被復原的最佳化，2 用法或檔案錯誤。</value>
+  </data>
+  <data name="Cli.Error.UnknownArgument" xml:space="preserve">
+    <value>未知的引數：{0}</value>
+  </data>
+  <data name="Cli.Error.OptionWithoutCommand" xml:space="preserve">
+    <value>指定了選項但沒有命令。</value>
+  </data>
+  <data name="Cli.Error.OneCommand" xml:space="preserve">
+    <value>一次只能執行一個命令。</value>
+  </data>
+  <data name="Cli.Error.MissingValue" xml:space="preserve">
+    <value>{0} 需要一個值。</value>
+  </data>
+  <data name="Cli.Error.Terms" xml:space="preserve">
+    <value>尚未接受使用條款。請在應用程式中閱讀，或加上 --accept-terms 以接受。</value>
+  </data>
+  <data name="Cli.Error.UnknownPreset" xml:space="preserve">
+    <value>未知的預設組合：{0}。可用：{1}</value>
+  </data>
+  <data name="Optimizer.Preview.Button" xml:space="preserve">
+    <value>預覽變更</value>
+  </data>
+  <data name="Optimizer.Preview.Title" xml:space="preserve">
+    <value>「{0}」將變更的內容</value>
+  </data>
+  <data name="Optimizer.Preview.Summary" xml:space="preserve">
+    <value>待變更：{0}。已設定：{1}。目前尚未進行任何變更。</value>
+  </data>
+  <data name="Optimizer.Preview.Nothing" xml:space="preserve">
+    <value>無需變更：此電腦已符合。</value>
+  </data>
+  <data name="Optimizer.Preview.Failed.Title" xml:space="preserve">
+    <value>無法預覽變更</value>
+  </data>
+  <data name="Optimizer.AI.DisablePaintAI.Name" xml:space="preserve">
+    <value>停用小畫家中的 AI</value>
+  </data>
+  <data name="Optimizer.AI.DisablePaintAI.ShortDescription" xml:space="preserve">
+    <value>透過 Microsoft 官方原則關閉小畫家中的 Cocreator、Image Creator、生成式填滿與生成式清除。</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.Name" xml:space="preserve">
+    <value>停用記事本中的 AI</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.ShortDescription" xml:space="preserve">
+    <value>使用官方原則移除記事本中的重寫、摘要等 AI 功能。</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.Name" xml:space="preserve">
+    <value>阻止 Microsoft Edge 在背景執行</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.ShortDescription" xml:space="preserve">
+    <value>關閉在登入時預先載入 Edge 的啟動加速，以及關閉視窗後仍持續執行的背景模式。即使從不開啟 Edge 也能節省記憶體。</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.Name" xml:space="preserve">
+    <value>關閉 Edge 側邊欄、購物與資料收集</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.ShortDescription" xml:space="preserve">
+    <value>透過 Edge 原則隱藏側邊欄（及其中的 Copilot），關閉購物助理與建議，並停止個人化報告與選用診斷資料。</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.Name" xml:space="preserve">
+    <value>從 Windows Update 排除驅動程式</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.ShortDescription" xml:space="preserve">
+    <value>防止 Windows Update 取代你自行安裝的驅動程式，例如廠商提供的 GPU 或音訊驅動程式。之後需自行更新驅動程式。</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.Name" xml:space="preserve">
+    <value>停用 OneDrive</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.ShortDescription" xml:space="preserve">
+    <value>阻止 OneDrive 啟動與同步，並將其從檔案總管側邊欄移除。OneDrive 資料夾中的檔案仍保留在磁碟上，不會解除安裝任何項目。</value>
+  </data>
+  <data name="Sidebar.Health" xml:space="preserve">
+    <value>系統健康狀態</value>
+  </data>
+  <data name="Sidebar.ContextMenu" xml:space="preserve">
+    <value>右鍵選單</value>
+  </data>
+  <data name="Sidebar.OptionalFeatures" xml:space="preserve">
+    <value>Windows 功能</value>
+  </data>
+  <data name="Sidebar.AppInstaller" xml:space="preserve">
+    <value>安裝應用程式</value>
+  </data>
+  <data name="DiskCleanup.Item.DeliveryOptimization" xml:space="preserve">
+    <value>傳遞最佳化快取</value>
+  </data>
+  <data name="DiskCleanup.Item.DeliveryOptimization.Description" xml:space="preserve">
+    <value>Windows 為了與其他電腦共用而保留的更新檔案，可安心刪除</value>
+  </data>
+  <data name="DiskCleanup.Item.SystemErrorReports" xml:space="preserve">
+    <value>系統錯誤報告</value>
+  </data>
+  <data name="DiskCleanup.Item.SystemErrorReports.Description" xml:space="preserve">
+    <value>Windows 錯誤報告為所有使用者保存的當機與問題報告</value>
+  </data>
+  <data name="DiskCleanup.Item.ShaderCache" xml:space="preserve">
+    <value>DirectX 著色器快取</value>
+  </data>
+  <data name="DiskCleanup.Item.ShaderCache.Description" xml:space="preserve">
+    <value>已編譯的著色器；遊戲下次啟動時會重新產生，可改善驅動程式更新後的卡頓</value>
+  </data>
+  <data name="Health.Header.Title" xml:space="preserve">
+    <value>系統健康狀態</value>
+  </data>
+  <data name="Health.Header.Description" xml:space="preserve">
+    <value>一覽安全性、磁碟與電池狀態。此頁面不會變更你的電腦。</value>
+  </data>
+  <data name="Health.Loading" xml:space="preserve">
+    <value>正在檢查你的電腦...</value>
+  </data>
+  <data name="Health.Button.Refresh" xml:space="preserve">
+    <value>重新整理</value>
+  </data>
+  <data name="Health.Button.Export" xml:space="preserve">
+    <value>儲存報告</value>
+  </data>
+  <data name="Health.Button.BatteryReport" xml:space="preserve">
+    <value>電池報告</value>
+  </data>
+  <data name="Health.Export.Failed.Title" xml:space="preserve">
+    <value>無法儲存報告</value>
+  </data>
+  <data name="Health.Status.Good" xml:space="preserve">
+    <value>良好</value>
+  </data>
+  <data name="Health.Status.Info" xml:space="preserve">
+    <value>資訊</value>
+  </data>
+  <data name="Health.Status.Warning" xml:space="preserve">
+    <value>注意</value>
+  </data>
+  <data name="Health.Status.Bad" xml:space="preserve">
+    <value>有問題</value>
+  </data>
+  <data name="Health.Status.Unknown" xml:space="preserve">
+    <value>未知</value>
+  </data>
+  <data name="Health.Unknown" xml:space="preserve">
+    <value>Windows 未提供此資訊。</value>
+  </data>
+  <data name="Health.State.On" xml:space="preserve">
+    <value>已開啟</value>
+  </data>
+  <data name="Health.State.Off" xml:space="preserve">
+    <value>已關閉</value>
+  </data>
+  <data name="Health.Check.SecureBoot" xml:space="preserve">
+    <value>安全開機</value>
+  </data>
+  <data name="Health.SecureBoot.Off" xml:space="preserve">
+    <value>已關閉。可在 UEFI 設定中開啟，以阻擋開機層級的惡意軟體。</value>
+  </data>
+  <data name="Health.SecureBoot.Unsupported" xml:space="preserve">
+    <value>無法使用：電腦以傳統 BIOS 模式開機。</value>
+  </data>
+  <data name="Health.Check.Tpm" xml:space="preserve">
+    <value>TPM</value>
+  </data>
+  <data name="Health.Tpm.Ready" xml:space="preserve">
+    <value>TPM {0} 已開啟並就緒。</value>
+  </data>
+  <data name="Health.Tpm.NotReady" xml:space="preserve">
+    <value>偵測到 TPM {0}，但未開啟或未就緒。請檢查 UEFI 設定。</value>
+  </data>
+  <data name="Health.Tpm.None" xml:space="preserve">
+    <value>找不到 TPM。Windows 11 與 BitLocker 需要 TPM。</value>
+  </data>
+  <data name="Health.Check.Vbs" xml:space="preserve">
+    <value>以虛擬化為基礎的安全性</value>
+  </data>
+  <data name="Health.Vbs.Running" xml:space="preserve">
+    <value>執行中。可保護系統，但會稍微影響遊戲效能。</value>
+  </data>
+  <data name="Health.Vbs.Enabled" xml:space="preserve">
+    <value>已啟用但未執行。可能需要重新啟動或調整韌體設定。</value>
+  </data>
+  <data name="Health.Check.MemoryIntegrity" xml:space="preserve">
+    <value>記憶體完整性</value>
+  </data>
+  <data name="Health.Check.Defender" xml:space="preserve">
+    <value>Microsoft Defender</value>
+  </data>
+  <data name="Health.Defender.On" xml:space="preserve">
+    <value>即時保護已開啟，病毒定義為最新。</value>
+  </data>
+  <data name="Health.Defender.Off" xml:space="preserve">
+    <value>即時保護已關閉。請確認有其他防毒軟體保護這台電腦。</value>
+  </data>
+  <data name="Health.Defender.Old" xml:space="preserve">
+    <value>病毒定義已過期 {0} 天，請執行 Windows Update。</value>
+  </data>
+  <data name="Health.Defender.Unknown" xml:space="preserve">
+    <value>未取得 Defender 狀態，可能正在使用其他防毒軟體。</value>
+  </data>
+  <data name="Health.Check.Disk" xml:space="preserve">
+    <value>磁碟：{0}</value>
+  </data>
+  <data name="Health.Disk.Healthy" xml:space="preserve">
+    <value>狀況良好 ({0})</value>
+  </data>
+  <data name="Health.Disk.Warning" xml:space="preserve">
+    <value>Windows 回報了警告 ({0})，請備份資料。</value>
+  </data>
+  <data name="Health.Disk.Unhealthy" xml:space="preserve">
+    <value>Windows 回報此磁碟正在故障 ({0})，請立即備份資料。</value>
+  </data>
+  <data name="Health.Check.Trim" xml:space="preserve">
+    <value>SSD TRIM</value>
+  </data>
+  <data name="Health.Trim.Off" xml:space="preserve">
+    <value>已關閉。沒有 TRIM，SSD 會隨時間變慢。</value>
+  </data>
+  <data name="Health.Check.FreeSpace" xml:space="preserve">
+    <value>系統磁碟可用空間</value>
+  </data>
+  <data name="Health.FreeSpace.Value" xml:space="preserve">
+    <value>{1} 中可用 {0} ({2}%)</value>
+  </data>
+  <data name="Health.Check.PendingRestart" xml:space="preserve">
+    <value>待重新啟動</value>
+  </data>
+  <data name="Health.PendingRestart.Yes" xml:space="preserve">
+    <value>Windows 正在等待重新啟動以完成更新安裝。</value>
+  </data>
+  <data name="Health.PendingRestart.No" xml:space="preserve">
+    <value>無須重新啟動。</value>
+  </data>
+  <data name="Health.Check.BootTime" xml:space="preserve">
+    <value>上次開機耗時</value>
+  </data>
+  <data name="Health.BootTime.Value" xml:space="preserve">
+    <value>{0} 秒（Windows 測量）</value>
+  </data>
+  <data name="Health.BootTime.Unknown" xml:space="preserve">
+    <value>Windows 尚未記錄開機耗時。</value>
+  </data>
+  <data name="Health.Check.Battery" xml:space="preserve">
+    <value>電池耗損</value>
+  </data>
+  <data name="Health.Battery.Value" xml:space="preserve">
+    <value>保有原始容量的 {0}%。</value>
+  </data>
+  <data name="ContextMenu.Header.Title" xml:space="preserve">
+    <value>右鍵選單</value>
+  </data>
+  <data name="ContextMenu.Header.Description" xml:space="preserve">
+    <value>關閉應用程式加入檔案總管右鍵選單的項目。不會刪除任何內容，重新開啟即可還原。</value>
+  </data>
+  <data name="ContextMenu.Search" xml:space="preserve">
+    <value>搜尋項目</value>
+  </data>
+  <data name="ContextMenu.ShowWindows" xml:space="preserve">
+    <value>顯示 Windows 項目</value>
+  </data>
+  <data name="ContextMenu.Loading" xml:space="preserve">
+    <value>正在讀取右鍵選單項目...</value>
+  </data>
+  <data name="ContextMenu.RestartNeeded" xml:space="preserve">
+    <value>重新啟動檔案總管後生效。</value>
+  </data>
+  <data name="ContextMenu.RestartExplorer" xml:space="preserve">
+    <value>重新啟動檔案總管</value>
+  </data>
+  <data name="ContextMenu.Error.Title" xml:space="preserve">
+    <value>無法變更該項目</value>
+  </data>
+  <data name="ContextMenu.Location.Files" xml:space="preserve">
+    <value>檔案</value>
+  </data>
+  <data name="ContextMenu.Location.Folders" xml:space="preserve">
+    <value>資料夾</value>
+  </data>
+  <data name="ContextMenu.Location.Background" xml:space="preserve">
+    <value>資料夾背景</value>
+  </data>
+  <data name="ContextMenu.Location.Drives" xml:space="preserve">
+    <value>磁碟機</value>
+  </data>
+  <data name="OptionalFeatures.Header.Title" xml:space="preserve">
+    <value>Windows 功能</value>
+  </data>
+  <data name="OptionalFeatures.Header.Description" xml:space="preserve">
+    <value>開啟或關閉 Windows 選用功能，與「開啟或關閉 Windows 功能」相同。大多數變更需重新啟動後才完成。</value>
+  </data>
+  <data name="OptionalFeatures.Search" xml:space="preserve">
+    <value>搜尋功能</value>
+  </data>
+  <data name="OptionalFeatures.Loading" xml:space="preserve">
+    <value>正在取得 Windows 功能...</value>
+  </data>
+  <data name="OptionalFeatures.RestartNeeded" xml:space="preserve">
+    <value>重新啟動 Windows 以完成變更。</value>
+  </data>
+  <data name="OptionalFeatures.Error.Title" xml:space="preserve">
+    <value>無法變更該功能</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Microsoft_Hyper_V_All" xml:space="preserve">
+    <value>Hyper-V：執行虛擬機器。開啟後可能降低遊戲效能，並與其他虛擬化軟體衝突。</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Microsoft_Windows_Subsystem_Linux" xml:space="preserve">
+    <value>Windows 子系統 Linux 版 (WSL)：在 Windows 上執行 Linux 工具。</value>
+  </data>
+  <data name="OptionalFeatures.Feature.VirtualMachinePlatform" xml:space="preserve">
+    <value>虛擬機器平台：WSL 2 與 Android 應用程式需要。</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Containers_DisposableClientVM" xml:space="preserve">
+    <value>Windows 沙箱：可安全試用不明程式的一次性桌面。</value>
+  </data>
+  <data name="OptionalFeatures.Feature.NetFx3" xml:space="preserve">
+    <value>.NET Framework 3.5：部分舊程式與遊戲需要。</value>
+  </data>
+  <data name="OptionalFeatures.Feature.SMB1Protocol" xml:space="preserve">
+    <value>SMB 1.0：過時且不安全的檔案共用通訊協定。除非舊裝置需要，否則請保持關閉。</value>
+  </data>
+  <data name="OptionalFeatures.Feature.TelnetClient" xml:space="preserve">
+    <value>Telnet 用戶端：用於測試網路連接埠的命令列工具。</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Printing_PrintToPDFServices_Features" xml:space="preserve">
+    <value>Microsoft Print to PDF：將任何可列印內容儲存為 PDF。</value>
+  </data>
+  <data name="OptionalFeatures.Feature.MediaPlayback" xml:space="preserve">
+    <value>媒體功能：Windows Media Player 以及部分應用程式依賴的播放元件。</value>
+  </data>
+  <data name="OptionalFeatures.Feature.Recall" xml:space="preserve">
+    <value>Recall：擷取螢幕快照以便日後搜尋。移除可釋放空間並保護你的活動隱私。</value>
+  </data>
+  <data name="AppInstaller.Header.Title" xml:space="preserve">
+    <value>安裝應用程式</value>
+  </data>
+  <data name="AppInstaller.Header.Description" xml:space="preserve">
+    <value>挑選常用應用程式，透過 Microsoft 的套件管理員 winget 一次安裝。應用程式皆來自官方來源。</value>
+  </data>
+  <data name="AppInstaller.Install" xml:space="preserve">
+    <value>安裝所選 ({0})</value>
+  </data>
+  <data name="AppInstaller.Loading" xml:space="preserve">
+    <value>正在尋找 winget...</value>
+  </data>
+  <data name="AppInstaller.WingetMissing" xml:space="preserve">
+    <value>找不到 winget。請從 Microsoft Store 安裝「應用程式安裝程式」後再回來。</value>
+  </data>
+  <data name="AppInstaller.Progress" xml:space="preserve">
+    <value>正在安裝 {0}...</value>
+  </data>
+  <data name="AppInstaller.Success.Title" xml:space="preserve">
+    <value>應用程式已安裝</value>
+  </data>
+  <data name="AppInstaller.Success.Message" xml:space="preserve">
+    <value>已安裝或已是最新：{0}</value>
+  </data>
+  <data name="AppInstaller.Error.Title" xml:space="preserve">
+    <value>部分應用程式無法安裝</value>
+  </data>
+  <data name="AppInstaller.Category.Browsers" xml:space="preserve">
+    <value>瀏覽器</value>
+  </data>
+  <data name="AppInstaller.Category.Utilities" xml:space="preserve">
+    <value>公用程式</value>
+  </data>
+  <data name="AppInstaller.Category.Media" xml:space="preserve">
+    <value>媒體</value>
+  </data>
+  <data name="AppInstaller.Category.Gaming" xml:space="preserve">
+    <value>遊戲</value>
+  </data>
+  <data name="AppInstaller.Category.Development" xml:space="preserve">
+    <value>開發</value>
+  </data>
+  <data name="AppInstaller.Category.Runtimes" xml:space="preserve">
+    <value>執行階段</value>
+  </data>
+  <data name="Search.Global.Placeholder" xml:space="preserve">
+    <value>搜尋最佳化項目與設定</value>
+  </data>
+  <data name="Health.BootTime.Trend" xml:space="preserve">
+    <value>上次開機 {0} 秒，最近 {2} 次平均 {1} 秒（Windows 測量）</value>
+  </data>
+  <data name="Update.Button.Install" xml:space="preserve">
+    <value>立即更新</value>
+  </data>
+  <data name="Update.Confirm.Title" xml:space="preserve">
+    <value>更新至版本 {0}</value>
+  </data>
+  <data name="Update.Confirm.Message" xml:space="preserve">
+    <value>optimizerDuck 會從 GitHub 下載新版本，以公布的 SHA-256 總和檢查碼驗證後取代自身並重新啟動。已套用的最佳化與還原資料都會保留。</value>
+  </data>
+  <data name="Update.Downloading" xml:space="preserve">
+    <value>正在下載並驗證更新...</value>
+  </data>
+  <data name="Update.Failed.Title" xml:space="preserve">
+    <value>無法安裝更新</value>
+  </data>
+  <data name="Update.Failed.Message" xml:space="preserve">
+    <value>無法下載或驗證。將開啟發行頁面以便手動更新。</value>
+  </data>
+  <data name="Optimizer.Menu.HideUnavailable" xml:space="preserve">
+    <value>隱藏不支援的項目</value>
+  </data>
+  <data name="OptimizationDetailsDialog.SideEffects" xml:space="preserve">
+    <value>可能受影響的功能</value>
+  </data>
+  <data name="Optimizer.Performance.DisableBackgroundApps.SideEffects" xml:space="preserve">
+    <value>市集應用程式不再於背景執行：郵件、行事曆、天氣等應用程式只在開啟時更新，部分通知會延遲或收不到。</value>
+  </data>
+  <data name="Optimizer.Performance.ConsolidateServiceHosts.SideEffects" xml:space="preserve">
+    <value>多個服務重新共用一個處理程序，一個服務當掉可能連帶同一處理程序的其他服務，工作管理員也會將它們合併顯示。</value>
+  </data>
+  <data name="Optimizer.Performance.ProcessPriority.SideEffects" xml:space="preserve">
+    <value>在你使用其他視窗時，背景工作（下載、影片編碼、編譯）分到的 CPU 時間較少，可能需要更久。</value>
+  </data>
+  <data name="Optimizer.Performance.OptimizeMultimediaScheduler.SideEffects" xml:space="preserve">
+    <value>遊戲或媒體執行時，背景工作與網路流量的優先順序降低，背景下載與串流可能變慢。</value>
+  </data>
+  <data name="Optimizer.Performance.KeyboardLatencyOptimization.SideEffects" xml:space="preserve">
+    <value>按住按鍵時重複開始得更早、速度更快，手指搭在按鍵上可能會多輸入字元。</value>
+  </data>
+  <data name="Optimizer.Performance.DisableAccessibilityKeyboardHotkeys.SideEffects" xml:space="preserve">
+    <value>連按五次 Shift 或按住 Shift、Num Lock 不再開啟相黏鍵、篩選鍵或切換鍵。需要的使用者仍可在「設定 &gt; 協助工具 &gt; 鍵盤」中開啟。</value>
+  </data>
+  <data name="Optimizer.Performance.DisableEdgeBackgroundRunning.SideEffects" xml:space="preserve">
+    <value>Edge 啟動稍慢，關閉最後一個視窗後不再顯示通知，也不會繼續完成下載。</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableTelemetry.SideEffects" xml:space="preserve">
+    <value>意見反應中樞無法使用，無法接收 Windows 測試人員組建，部分疑難排解工具可用的資料減少，Microsoft 收到的當機報告也會變少，較難修正你硬體上的問題。</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableErrorReporting.SideEffects" xml:space="preserve">
+    <value>當機報告不再儲存或傳送，可靠性監視器顯示的資訊變少，Microsoft 也無法提供已知的解決方法。程式相容性助理不再為舊程式提供修正建議。</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableAdvertisingAndSuggestions.SideEffects" xml:space="preserve">
+    <value>應用程式無法再顯示個人化廣告，Windows 不再建議應用程式、提示和設定步驟，輸入與手寫建議從你的輸入中學習得更少。</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableNewsAndInterests.SideEffects" xml:space="preserve">
+    <value>工作列上的小工具（天氣）按鈕和新聞動態消失。</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableActivityHistory.SideEffects" xml:space="preserve">
+    <value>Windows 不再保存你使用過的應用程式、檔案和網頁記錄，「從上次中斷的地方繼續」建議和時間軸將無法使用。</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableLocationAndSensors.SideEffects" xml:space="preserve">
+    <value>應用程式無法再取得你的位置：地圖、天氣、尋找我的裝置和自動時區將不再使用位置資訊，離線地圖不再更新，自動旋轉、環境光等部分感應器也可能失效。</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableAutoLogger.SideEffects" xml:space="preserve">
+    <value>部分內建診斷記錄（Wi-Fi 工作階段、網路、應用程式模型）不再記錄，排查連線與應用程式問題會更困難。</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableCortana.SideEffects" xml:space="preserve">
+    <value>Cortana 不再可用，搜尋也不再使用網路或你的位置，開始功能表搜尋只顯示本機結果。</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableCopilot.SideEffects" xml:space="preserve">
+    <value>Copilot 按鈕和 Windows + C 快速鍵消失，無法從 Windows 中啟動 Copilot。</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableContentDeliveryManager.SideEffects" xml:space="preserve">
+    <value>鎖定畫面的 Windows 焦點圖片、趣味知識和開始功能表中的建議應用程式不再更新，鎖定畫面圖片或投影片需由你自行選擇。</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableFindMyDevice.SideEffects" xml:space="preserve">
+    <value>電腦遺失或遭竊時，將無法透過 Microsoft 帳戶找到或鎖定它。</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableDeliveryOptimization.SideEffects" xml:space="preserve">
+    <value>更新只從 Microsoft 下載，不再從網路中的其他電腦取得，多台電腦的家庭或辦公室會消耗更多頻寬。</value>
+  </data>
+  <data name="Optimizer.SecurityAndPrivacy.DisableEdgeExtras.SideEffects" xml:space="preserve">
+    <value>Edge 將失去側邊欄（及其中的 Copilot）、比價和優惠券功能，並因使用原則而在設定中顯示「你的瀏覽器由你的組織管理」。</value>
+  </data>
+  <data name="Optimizer.UserExperience.SpeedUpExplorerAndMenus.SideEffects" xml:space="preserve">
+    <value>啟動應用程式會在登入後立即同時啟動而不是錯開，在較慢的電腦上登入後的前幾秒可能較卡。</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableVisualEffects.SideEffects" xml:space="preserve">
+    <value>Windows 外觀更扁平：沒有透明效果、工作列動畫、桌面圖示文字陰影，也沒有工作列角落的預覽桌面。</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableStartMenuWebSearch.SideEffects" xml:space="preserve">
+    <value>開始功能表搜尋只顯示本機結果，Bing 網頁結果和搜尋醒目提示將消失。</value>
+  </data>
+  <data name="Optimizer.UserExperience.DisableStartRecommended.SideEffects" xml:space="preserve">
+    <value>開始功能表不再列出最近開啟的檔案和新安裝的應用程式，需透過檔案總管或搜尋尋找。</value>
+  </data>
+  <data name="Optimizer.UserExperience.MaximizeUpdatePauseLimit.SideEffects" xml:space="preserve">
+    <value>可以將更新暫停更長時間。暫停期間安全性修正也不會安裝，請定期繼續更新。</value>
+  </data>
+  <data name="Optimizer.UserExperience.ExcludeDriversFromWindowsUpdate.SideEffects" xml:space="preserve">
+    <value>Windows Update 不再安裝或更新驅動程式，新裝置的驅動程式或修正需要從製造商網站取得。</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableUlps.SideEffects" xml:space="preserve">
+    <value>GPU（或 CrossFire 中的第二張 GPU）閒置時不再進入最深的休眠狀態，閒置功耗和溫度會略為升高。</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisablePowerGating.SideEffects" xml:space="preserve">
+    <value>即使在桌面閒置時 GPU 的部分區域仍保持供電：閒置功耗、溫度和風扇噪音更高，筆電續航力更短。</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableVideoClockGating.SideEffects" xml:space="preserve">
+    <value>視訊編碼器和解碼器在不使用時仍保持供電，閒置功耗略為上升，在筆電上更明顯。</value>
+  </data>
+  <data name="Optimizer.Gpu.AmdDisableAspm.SideEffects" xml:space="preserve">
+    <value>連接 GPU 的 PCIe 鏈路閒置時不再節能：功耗略高，筆電續航力更短。</value>
+  </data>
+  <data name="Optimizer.Gpu.NvidiaDisableDynamicPstate.SideEffects" xml:space="preserve">
+    <value>即使在桌面閒置時 GPU 也保持高頻：閒置功耗、溫度和風扇噪音更高，筆電續航力更短。</value>
+  </data>
+  <data name="Optimizer.Gpu.NvidiaDisableAsyncPstates.SideEffects" xml:space="preserve">
+    <value>GPU 切換電源狀態的頻率降低，可能維持高於需要的頻率：輕負載時功耗和發熱更多。</value>
+  </data>
+  <data name="Optimizer.Gpu.IntelDisableAdaptiveVsync.SideEffects" xml:space="preserve">
+    <value>當遊戲畫面播放速率低於顯示器更新率時，可能出現卡頓而不是短暫的畫面撕裂。</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisableHibernateAndFastStartup.SideEffects" xml:space="preserve">
+    <value>休眠不再可用，由於快速啟動已關閉，關機後再開機會稍慢。筆電在電量低時也不會再進入休眠。</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisableUSBPowerSaving.SideEffects" xml:space="preserve">
+    <value>USB 裝置閒置時不再休眠而是一直供電，筆電續航力會略為縮短。</value>
+  </data>
+  <data name="Optimizer.PowerManagement.InstallOptimizerDuckPowerPlan.SideEffects" xml:space="preserve">
+    <value>CPU 更常以高頻執行：功耗和發熱增加，輕負載時風扇更吵，筆電續航力明顯縮短。工作管理員在閒置時也可能顯示較高的 CPU 使用率。</value>
+  </data>
+  <data name="Optimizer.PowerManagement.DisablePowerSaving.SideEffects" xml:space="preserve">
+    <value>Windows 不再為省電限制背景應用程式，筆電更耗電，也不再嘗試復原耗電過大的 USB 連接埠。</value>
+  </data>
+  <data name="Optimizer.AI.DisableRecall.SideEffects" xml:space="preserve">
+    <value>Recall 停止儲存快照並刪除已有快照，你將無法再搜尋之前在螢幕上看到的內容。</value>
+  </data>
+  <data name="Optimizer.AI.DisableClickToDo.SideEffects" xml:space="preserve">
+    <value>Click to Do（Windows 鍵 + 按一下）不再可用，無法對螢幕上的文字或圖片執行快速 AI 動作。</value>
+  </data>
+  <data name="Optimizer.AI.DisablePaintAI.SideEffects" xml:space="preserve">
+    <value>小畫家中的 Cocreator、Image Creator、生成式填滿和生成式清除消失，一般繪圖工具保留。</value>
+  </data>
+  <data name="Optimizer.AI.DisableNotepadAI.SideEffects" xml:space="preserve">
+    <value>記事本中的重寫、摘要等 AI 選項消失，文字編輯照常可用。</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisablePreinstalledApps.SideEffects" xml:space="preserve">
+    <value>Windows 不再自動安裝建議的應用程式和遊戲，已安裝的應用程式會保留直到你解除安裝。</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.ConfigureServices.SideEffects" xml:space="preserve">
+    <value>傳真、遠端登錄、遠端存取、零售示範等少用服務將被停用，許多其他服務改為需要時才啟動，因此首次使用列印、藍牙、掃描等功能時可能稍慢。依賴被停用服務的程式在你還原前可能無法正常運作。</value>
+  </data>
+  <data name="Optimizer.BloatwareAndServices.DisableOneDrive.SideEffects" xml:space="preserve">
+    <value>OneDrive 停止同步：檔案不再備份到雲端，也無法在其他裝置上存取，Office 自動儲存到 OneDrive 將停止，已備份的資料夾（桌面、文件、圖片）也不再線上更新。</value>
+  </data>
 </root>

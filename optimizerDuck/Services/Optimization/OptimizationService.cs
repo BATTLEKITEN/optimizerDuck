@@ -207,6 +207,36 @@ public class OptimizationService(
     }
 
     /// <summary>
+    ///     Previews the specified optimization: the steps it would take on this machine right
+    ///     now, without changing anything.
+    /// </summary>
+    /// <param name="optimization">The optimization to preview.</param>
+    /// <param name="cancellationToken">A token to cancel the preview.</param>
+    /// <returns>The steps the apply would record.</returns>
+    public Task<ChangeSet> PreviewAsync(
+        IOptimization optimization,
+        CancellationToken cancellationToken = default
+    )
+    {
+        ArgumentNullException.ThrowIfNull(optimization);
+
+        return runner.PreviewAsync(
+            new OperationRequest(
+                new OperationSubject(
+                    optimization.Id,
+                    optimization.OptimizationKey,
+                    optimization.LogName()
+                ),
+                optimization.Name,
+                loggerFactory.CreateLogger(optimization.GetType()),
+                RevertPersistence.Disabled,
+                optimization.ApplyAsync
+            ),
+            cancellationToken
+        );
+    }
+
+    /// <summary>
     ///     Reverts the specified optimization using stored revert data from a previous apply
     ///     operation.
     /// </summary>
@@ -574,7 +604,7 @@ public class OptimizationService(
     }
 
     /// <summary>
-    ///     Deletes all files in the downloads directory. Silently skips files that cannot be
+    ///     Deletes every download, one folder per download. Silently skips entries that cannot be
     ///     deleted.
     /// </summary>
     /// <param name="logger">The logger for deletion errors.</param>
@@ -582,10 +612,13 @@ public class OptimizationService(
     {
         if (!Directory.Exists(Shared.DownloadsDirectory))
             return;
-        foreach (var f in Directory.GetFiles(Shared.DownloadsDirectory))
+        foreach (var f in Directory.GetFileSystemEntries(Shared.DownloadsDirectory))
             try
             {
-                File.Delete(f);
+                if (Directory.Exists(f))
+                    Directory.Delete(f, recursive: true);
+                else
+                    File.Delete(f);
             }
             catch (Exception ex)
             {

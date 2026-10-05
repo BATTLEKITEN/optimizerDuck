@@ -759,4 +759,34 @@ public class SecurityAndPrivacy : LocalizedObject, IOptimizationCategory
             return Task.FromResult(context.Changes.ToApplyResult());
         }
     }
+
+    [Optimization(
+        Id = "6B2D13CF-B473-4DF3-A226-5AE41777A770",
+        Risk = OptimizationRisk.Safe,
+        Tags = OptimizationTags.Privacy | OptimizationTags.Visual
+    )]
+    public class DisableEdgeExtras : BaseOptimization
+    {
+        public override Task<ApplyResult> ApplyAsync(
+            IProgress<ProcessingProgress> progress,
+            OptimizationContext context
+        )
+        {
+            // Documented Edge policies: the sidebar (and Copilot in it), shopping assistant,
+            // recommendations, personalization reporting and optional diagnostic data.
+            const string policy = @"HKLM\SOFTWARE\Policies\Microsoft\Edge";
+            RegistryService.Write(
+                context,
+                new RegistryItem(policy, "HubsSidebarEnabled", 0),
+                new RegistryItem(policy, "EdgeShoppingAssistantEnabled", 0),
+                new RegistryItem(policy, "ShowRecommendationsEnabled", 0),
+                new RegistryItem(policy, "PersonalizationReportingEnabled", 0),
+                new RegistryItem(policy, "DiagnosticData", 0)
+            );
+            context.Logger.LogInformation(
+                "Turned off the Microsoft Edge sidebar, shopping and data collection"
+            );
+            return Task.FromResult(context.Changes.ToApplyResult());
+        }
+    }
 }

@@ -66,6 +66,18 @@
                     Icon="{ui:SymbolIcon Delete24}"
                     TargetPageType="{x:Type pages:BloatwarePage}" />
 
+                <controls:FilledNavigationViewItem
+                    Content="{extensions:Loc Sidebar.AppInstaller}"
+                    Cursor="Hand"
+                    Icon="{ui:SymbolIcon ArrowDownload24}"
+                    TargetPageType="{x:Type pages:AppInstallerPage}" />
+
+                <controls:FilledNavigationViewItem
+                    Content="{extensions:Loc Sidebar.Profiles}"
+                    Cursor="Hand"
+                    Icon="{ui:SymbolIcon DocumentBulletList24}"
+                    TargetPageType="{x:Type pages:ProfilesPage}" />
+
                 <ui:NavigationViewItemSeparator Margin="0,2,0,2" />
 
                 <controls:FilledNavigationViewItem
@@ -81,11 +93,42 @@
                     TargetPageType="{x:Type pages:ScheduledTasksPage}" />
 
                 <controls:FilledNavigationViewItem
+                    Content="{extensions:Loc Sidebar.ContextMenu}"
+                    Cursor="Hand"
+                    Icon="{ui:SymbolIcon TextBulletListSquare24}"
+                    TargetPageType="{x:Type pages:ContextMenuPage}" />
+
+                <controls:FilledNavigationViewItem
+                    Content="{extensions:Loc Sidebar.OptionalFeatures}"
+                    Cursor="Hand"
+                    Icon="{ui:SymbolIcon PuzzlePiece24}"
+                    TargetPageType="{x:Type pages:OptionalFeaturesPage}" />
+
+                <controls:FilledNavigationViewItem
                     Content="{extensions:Loc Sidebar.DiskCleanup}"
                     Cursor="Hand"
                     Icon="{ui:SymbolIcon HardDrive20}"
                     TargetPageType="{x:Type pages:DiskCleanupPage}" />
+
+                <controls:FilledNavigationViewItem
+                    Content="{extensions:Loc Sidebar.Health}"
+                    Cursor="Hand"
+                    Icon="{ui:SymbolIcon HeartPulse24}"
+                    TargetPageType="{x:Type pages:HealthPage}" />
             </ui:NavigationView.MenuItems>
+
+            <ui:NavigationView.AutoSuggestBox>
+                <ui:AutoSuggestBox
+                    x:Name="GlobalSearchBox"
+                    Margin="8,0,8,8"
+                    PlaceholderText="{extensions:Loc Search.Global.Placeholder}">
+                    <ui:AutoSuggestBox.Icon>
+                        <ui:IconSourceElement>
+                            <ui:SymbolIconSource Symbol="Search24" />
+                        </ui:IconSourceElement>
+                    </ui:AutoSuggestBox.Icon>
+                </ui:AutoSuggestBox>
+            </ui:NavigationView.AutoSuggestBox>
 
             <ui:NavigationView.FooterMenuItems>
                 <ui:NavigationViewItemSeparator Margin="0,2,0,2" />

@@ -112,17 +112,17 @@ It also includes built-in management tools, allowing you to see what is running,
 
 ### System Optimizations
 
-42 tweaks across 7 categories, each with a clear description and risk rating so you know exactly what each change does before applying it.
+48 tweaks across 7 categories, each with a clear description and risk rating so you know exactly what each change does before applying it.
 
 | Category                 | What it covers                                                                                                                                       |
 | :----------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Performance**          | Service host tuning based on your RAM, process priority adjustments, keyboard latency reduction, and multimedia scheduler tweaks for smoother gaming |
-| **Privacy**              | Disable Windows telemetry, error reporting, advertising ID, location tracking, Cortana, Copilot, and content delivery suggestions                    |
+| **Performance**          | Service host tuning based on your RAM, process priority adjustments, keyboard latency reduction, multimedia scheduler tweaks for smoother gaming, and stopping Edge from running in the background |
+| **Privacy**              | Disable Windows telemetry, error reporting, advertising ID, location tracking, Cortana, Copilot, content delivery suggestions, and the Edge sidebar, shopping and data collection |
 | **GPU**                  | Vendor-specific registry tweaks for AMD, NVIDIA, and Intel GPUs, covering power states, clock gating, and display latency                            |
 | **Power**                | Disable hibernation and fast startup, turn off USB selective suspend, install a custom high-performance power plan, and disable power throttling     |
-| **Bloatware & Services** | Block OEM app reinstall behavior and fine-tune startup types for 200+ Windows services                                                               |
-| **User Experience**      | Remove menu show delays, disable visual effects like taskbar animations and transparency for a snappier feel                                         |
-| **AI**                   | Disable Windows Recall snapshots and the Click To Do AI overlay (Windows 11)                                                                         |
+| **Bloatware & Services** | Block OEM app reinstall behavior, fine-tune startup types for 200+ Windows services, and disable OneDrive without uninstalling it                    |
+| **User Experience**      | Remove menu show delays, disable visual effects like taskbar animations and transparency for a snappier feel, and keep Windows Update from replacing your drivers |
+| **AI**                   | Disable Windows Recall snapshots, the Click To Do AI overlay, and the AI features in Paint and Notepad (Windows 11)                                   |
 
 > [!NOTE]
 > The optimizations here are researched from well-known tools with large user bases, nothing is AI-generated or blindly added. Every tweak is chosen for real-world impact.
@@ -143,8 +143,27 @@ It also includes built-in management tools, allowing you to see what is running,
 | **System Dashboard**  | View your CPU, RAM, GPU, storage drives, and OS details in one panel                                                                             |
 | **Startup Manager**   | See every app and task that launches at boot, toggle them on or off, and open their file location                                                |
 | **Scheduled Tasks**   | Browse, run, stop, enable, disable, or delete Windows scheduled tasks                                                                            |
-| **Disk Cleanup**      | Scan and clear temp files, system cache, Windows Update leftovers, prefetch, thumbnails, recycle bin, crash dumps, and old Windows installations |
+| **Disk Cleanup**      | Scan and clear temp files, system cache, Windows Update leftovers, Delivery Optimization cache, prefetch, thumbnails, DirectX shader cache, recycle bin, crash dumps and error reports, and old Windows installations |
 | **Bloatware Remover** | Lists all removable AppX packages with risk badges (Safe, Caution, Unknown), so you can pick what to remove                                      |
+| **System Health**     | Secure Boot, TPM, virtualization-based security, memory integrity, Defender, disk health (SMART), TRIM, free space, pending restart, boot time and battery wear on one page, with an HTML report |
+| **Context Menu**      | Turn off the entries apps add to the File Explorer right-click menu, without deleting anything                                                   |
+| **Windows Features**  | Turn optional features such as Hyper-V, WSL, Windows Sandbox, .NET 3.5 or SMB 1.0 on or off                                                     |
+| **App Installer**     | Pick popular apps (browsers, 7-Zip, VLC, Steam, Discord, VS Code...) and install them in one go through winget                                   |
+| **Profiles**          | Apply a preset (Recommended, Gaming, Privacy, Laptop), export your setup to a `.duckprofile` file, or import one on another PC                   |
+
+### Command line
+
+The same profiles can be applied without the window, for example after a fresh Windows install. Run from an elevated terminal to see the output:
+
+```
+optimizerDuck.exe --apply-preset Gaming --restore-point
+optimizerDuck.exe --apply-profile my-setup.duckprofile --report result.json
+optimizerDuck.exe --export-profile my-setup.duckprofile
+optimizerDuck.exe --check-drift
+optimizerDuck.exe --reapply-drift
+```
+
+`--accept-terms` accepts the terms of use when the app has never been opened. Exit codes: `0` success, `1` failures or undone optimizations found, `2` usage or file error. `--help` lists everything.
 
 ### Why optimize Windows instead of just upgrading your hardware?
 
@@ -200,6 +219,10 @@ See the [Privacy Policy](./PRIVACY.md) for details on our data practices.
 - **Risk ratings**: Each tweak is labeled Safe, Moderate, or Risky based on its potential impact
 - **No defaults applied**: Nothing runs until you select it. The tool does not enable anything on its own
 - **Restore point prompt**: Before your first optimization, the app suggests creating a Windows restore point
+- **Know the trade-offs**: Every optimization with a noticeable side effect shows a warning icon and a "What may stop working" section in its details (for example Find My Device, OneDrive sync or battery life)
+- **Preview first**: The eye button on every optimization shows exactly what it would change on your PC, without changing anything
+- **Verified updates**: "Update now" downloads the new release from GitHub and installs it only when it matches the published SHA-256 checksum (and, once releases are code-signed, the same publisher signature)
+- **Tamper-proof undo data**: Revert files are signed with a key only administrators can read, so another program cannot slip its own commands into an undo
 
 ---
 
@@ -270,7 +293,7 @@ Revert files are stored in `%LocalAppData%\optimizerDuck\Revert\`. If a file is 
 
 ### Windows Update resets my settings
 
-Windows feature updates occasionally reset certain registry values and service configurations to defaults. Simply re-apply your previous optimizations from the app after a major update.
+Windows feature updates occasionally reset certain registry values and service configurations to defaults. optimizerDuck checks your applied optimizations at every start: when something was undone, the dashboard says so and **Profiles → Changes undone by Windows → Reapply** puts it back. From the command line, `--reapply-drift` does the same.
 
 ### I found a bug / want to request a feature
 

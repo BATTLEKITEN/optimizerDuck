@@ -102,6 +102,21 @@ public static class ScheduledTaskService
                 return OpResult.Success();
             }
 
+            if (call.DryRun)
+            {
+                call.Changes.AddPlanned(
+                    ServiceStrings.ScheduledTaskName,
+                    description,
+                    new ScheduledTaskDisableDetail
+                    {
+                        TaskPath = fullPath,
+                        PreviousEnabled = true,
+                        NewEnabled = false,
+                    }
+                );
+                return OpResult.Success();
+            }
+
             task.Enabled = false;
             var revertStep = new ScheduledTaskRevertStep
             {
@@ -215,6 +230,21 @@ public static class ScheduledTaskService
                         "enabled"
                     ),
                     new ScheduledTaskEnableDetail { TaskPath = fullPath, PreviousEnabled = true }
+                );
+                return OpResult.Success();
+            }
+
+            if (call.DryRun)
+            {
+                call.Changes.AddPlanned(
+                    ServiceStrings.ScheduledTaskName,
+                    description,
+                    new ScheduledTaskEnableDetail
+                    {
+                        TaskPath = fullPath,
+                        PreviousEnabled = false,
+                        NewEnabled = true,
+                    }
                 );
                 return OpResult.Success();
             }
