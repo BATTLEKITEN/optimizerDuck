@@ -260,8 +260,18 @@ public static class Shared
     /// <summary>The directory that holds downloaded and bundled resources.</summary>
     public static string ResourcesDirectory => Path.Combine(RootDirectory, "Resources");
 
-    /// <summary>The directory that holds downloaded resources.</summary>
-    public static string DownloadsDirectory => Path.Combine(ResourcesDirectory, "Downloads");
+    /// <summary>
+    ///     The machine-wide directory only administrators can change, for files the elevated app
+    ///     runs or imports. Prepared by <see cref="SecureDirectory.EnsureAdminOnly" />.
+    /// </summary>
+    public static string SecureDataDirectory =>
+        Path.Combine(
+            Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData),
+            "optimizerDuck"
+        );
+
+    /// <summary>The directory that holds downloaded resources, inside the protected one.</summary>
+    public static string DownloadsDirectory => Path.Combine(SecureDataDirectory, "Downloads");
 
     /// <summary>The directory that holds bundled assets.</summary>
     public static string AssetsDirectory => Path.Combine(ResourcesDirectory, "Assets");

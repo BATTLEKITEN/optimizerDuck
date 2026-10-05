@@ -40,7 +40,8 @@ Windows-only WPF desktop app that optimizes Windows. Read this before changing c
   - `ApplicationServiceCollectionExtensions.cs` — `AddOptimizerApplication(IConfiguration)`, the whole graph; `App.xaml.cs` only builds the host
   - `Resources/Languages/` — `Translations.resx` (neutral English) + one file per locale
 - `optimizerDuck.Test/` — xUnit v3, one project, `InternalsVisibleTo`.
-- Data directory `%LocalAppData%\optimizerDuck\`: `Revert/`, `History/`, `Resources/{Downloads,Assets}/`, `Crashes/`, `optimizerDuck.log`, `appsettings.json`.
+- Data directory `%LocalAppData%\optimizerDuck\`: `Revert/`, `History/`, `Resources/Assets/`, `Crashes/`, `optimizerDuck.log`, `appsettings.json`. It is writable by any process of the user, so nothing the elevated app *runs or imports* lives there.
+- Protected directory `%ProgramData%\optimizerDuck\` (`Shared.SecureDataDirectory`): `Downloads/`, `PowerPlans/`. `SecureDirectory.EnsureAdminOnly` creates it owned by Administrators with a protected Administrators + SYSTEM DACL and moves aside any copy with another descriptor.
 - Version lives in `optimizerDuck.csproj` (`<Version>`). Read it there; never hardcode it.
 
 ## Adding an optimization or customize setting
@@ -71,6 +72,11 @@ Reflection discovery, no registration array to update.
 - `PowerPlanService` — DI singleton, the only owner of power-**scheme** interop; lean: reads take ids, writes take `ILogger? = null` and record nothing. `PowerPlanChanges` is the single edge that turns those results into `Change` + revert step + retry.
 - `SystemRestoreService` — the only owner of every System Restore WMI call.
 - `RecycleBinService`, `HibernationService`, `UsbPowerService` — static, one Windows operation each (shell Recycle Bin APIs, the documented power information callback, `root\wmi` device power); they fail open instead of throwing. The PowerManagement category records their steps.
+
+## Security rules
+- Open links with `ShellLauncher.OpenUrl` (HTTPS only) and folders with `ShellLauncher.OpenFolder` / `Reveal`; never hand a path to `UseShellExecute` from the elevated process.
+- Delete inside user-writable folders through `ConfinedDelete` (handle based, never follows a junction or symlink).
+- `StreamService.TryDownloadAsync(url, fileName, expectedSha256)` downloads HTTPS only, into a fresh folder under the protected directory, and keeps the file only when the hash matches.
 
 ## Conditions (compatibility gating)
 - `Domain/Conditions/`: `ICondition`, `ConditionBase`, `ConditionResult`, `ConditionState`, `ConditionValidation`, `WindowsBuilds`, `BuiltIn/` — Windows 10, Windows 11, Windows 11 24H2+, CPU brand, GPU brand, minimum RAM, registry key exists, service exists, Recall installed.

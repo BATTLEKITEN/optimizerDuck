@@ -5,6 +5,7 @@ using System.IO;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Microsoft.Extensions.Logging;
+using optimizerDuck.Common.Helpers;
 using optimizerDuck.Domain.Execution;
 using optimizerDuck.Domain.Optimizations.Models;
 using optimizerDuck.Resources.Languages;
@@ -158,14 +159,7 @@ public partial class StartupManagerViewModel : ViewModel
             if (!File.Exists(safePath) && !Directory.Exists(safePath))
                 return;
 
-            Process.Start(
-                new ProcessStartInfo
-                {
-                    FileName = "explorer.exe",
-                    Arguments = $"/select,\"{safePath}\"",
-                    UseShellExecute = false,
-                }
-            );
+            ShellLauncher.Reveal(safePath);
         }
         catch (Exception ex)
         {

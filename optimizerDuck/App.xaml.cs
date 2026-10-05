@@ -316,7 +316,6 @@ public partial class App : Application
     {
         Directory.CreateDirectory(Shared.RootDirectory);
         Directory.CreateDirectory(Shared.ResourcesDirectory);
-        Directory.CreateDirectory(Shared.DownloadsDirectory);
         Directory.CreateDirectory(Shared.AssetsDirectory);
         Directory.CreateDirectory(Shared.RevertDirectory);
         Directory.CreateDirectory(Shared.HistoryDirectory);
@@ -384,6 +383,8 @@ public partial class App : Application
         _logger.LogInformation("Loaded language: {Language}", appSettings.App.Language);
 
         RevertDataSeal.EnsureKey(_logger);
+        if (SecureDirectory.EnsureAdminOnly(Shared.SecureDataDirectory, _logger))
+            Directory.CreateDirectory(Shared.DownloadsDirectory);
 
         var optimizationRegistry = _host.Services.GetRequiredService<OptimizationRegistry>();
 

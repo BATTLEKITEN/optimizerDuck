@@ -1,4 +1,4 @@
-using Microsoft.Extensions.Logging.Abstractions;
+﻿using Microsoft.Extensions.Logging.Abstractions;
 using optimizerDuck.Domain.Optimizations.Models.Cleanup;
 using optimizerDuck.Services.System.Primitives;
 using optimizerDuck.Services.UI;
@@ -128,5 +128,60 @@ public class DiskCleanupServiceTests
         Assert.True(item.IsCommand);
         Assert.Empty(item.Path);
         Assert.False(item.CanOpenFolder);
+    }
+
+    [Fact]
+    public async Task CleanAsync_JunctionInsideRoot_LeavesItsTargetAlone()
+    {
+        var tempRoot = Path.Combine(Path.GetTempPath(), $"optimizerDuck_Link_{Guid.NewGuid():N}");
+        var outside = Path.Combine(Path.GetTempPath(), $"optimizerDuck_Outside_{Guid.NewGuid():N}");
+        var cancellationToken = TestContext.Current.CancellationToken;
+        Directory.CreateDirectory(tempRoot);
+        Directory.CreateDirectory(outside);
+        var protectedFile = Path.Combine(outside, "keep.txt");
+        var junkFile = Path.Combine(tempRoot, "junk.txt");
+        await File.WriteAllTextAsync(protectedFile, "must survive", cancellationToken);
+        await File.WriteAllTextAsync(junkFile, "junk", cancellationToken);
+
+        try
+        {
+            using (
+                var mklink = System.Diagnostics.Process.Start(
+                    new System.Diagnostics.ProcessStartInfo(
+                        "cmd.exe",
+                        $"/c mklink /J \"{Path.Combine(tempRoot, "link")}\" \"{outside}\""
+                    )
+                    {
+                        CreateNoWindow = true,
+                        UseShellExecute = false,
+                    }
+                )!
+            )
+                await mklink.WaitForExitAsync(cancellationToken);
+            Assert.True(Directory.Exists(Path.Combine(tempRoot, "link")));
+
+            var item = new CleanupItem
+            {
+                Id = "TempFiles",
+                NameKey = "Temp Files",
+                DescriptionKey = "Temp Description",
+                Path = tempRoot,
+                Icon = SymbolRegular.Document24,
+            };
+            await NewService().CleanAsync(item);
+
+            Assert.False(File.Exists(junkFile));
+            Assert.True(File.Exists(protectedFile));
+        }
+        finally
+        {
+            var link = Path.Combine(tempRoot, "link");
+            if (Directory.Exists(link))
+                Directory.Delete(link);
+            if (Directory.Exists(tempRoot))
+                Directory.Delete(tempRoot, true);
+            if (Directory.Exists(outside))
+                Directory.Delete(outside, true);
+        }
     }
 }

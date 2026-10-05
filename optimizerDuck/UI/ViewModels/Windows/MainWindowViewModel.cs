@@ -21,9 +21,7 @@ public partial class MainWindowViewModel : LocalizedObject
     {
         try
         {
-            Process.Start(
-                new ProcessStartInfo { FileName = Shared.ContributeURL, UseShellExecute = true }
-            );
+            ShellLauncher.OpenUrl(Shared.ContributeURL);
         }
         catch
         {
@@ -39,9 +37,7 @@ public partial class MainWindowViewModel : LocalizedObject
     {
         try
         {
-            Process.Start(
-                new ProcessStartInfo { FileName = Shared.DiscordInviteURL, UseShellExecute = true }
-            );
+            ShellLauncher.OpenUrl(Shared.DiscordInviteURL);
         }
         catch
         {

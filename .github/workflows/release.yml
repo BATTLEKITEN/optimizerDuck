@@ -75,11 +75,53 @@ jobs:
           Move-Item -Path $source -Destination $dest
         shell: pwsh
 
+      # Runs only when a code signing certificate is configured as repository secrets
+      # (SIGNING_CERT_BASE64: the .pfx as base64, SIGNING_CERT_PASSWORD: its password).
+      - name: Check for a signing certificate
+        id: signing
+        env:
+          SIGNING_CERT_BASE64: ${{ secrets.SIGNING_CERT_BASE64 }}
+        shell: pwsh
+        run: |
+          $enabled = if ($env:SIGNING_CERT_BASE64) { 'true' } else { 'false' }
+          "enabled=$enabled" >> $env:GITHUB_OUTPUT
+
+      - name: Sign executable
+        if: ${{ steps.signing.outputs.enabled == 'true' }}
+        env:
+          SIGNING_CERT_BASE64: ${{ secrets.SIGNING_CERT_BASE64 }}
+          SIGNING_CERT_PASSWORD: ${{ secrets.SIGNING_CERT_PASSWORD }}
+        shell: pwsh
+        run: |
+          $pfx = Join-Path $env:RUNNER_TEMP "signing.pfx"
+          [IO.File]::WriteAllBytes($pfx, [Convert]::FromBase64String($env:SIGNING_CERT_BASE64))
+          try {
+            $signtool = Get-ChildItem "${env:ProgramFiles(x86)}\Windows Kits\10\bin\*\x64\signtool.exe" |
+              Sort-Object FullName | Select-Object -Last 1
+            & $signtool.FullName sign /f $pfx /p $env:SIGNING_CERT_PASSWORD /fd SHA256 `
+              /tr http://timestamp.digicert.com /td SHA256 `
+              "optimizerDuck-Windows-x64-${{ steps.get_version.outputs.version }}.exe"
+            if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          } finally {
+            Remove-Item $pfx -Force
+          }
+
+      # The in-app updater refuses a download whose hash does not match this file.
+      - name: Write checksum
+        shell: pwsh
+        run: |
+          $file = "optimizerDuck-Windows-x64-${{ steps.get_version.outputs.version }}.exe"
+          $hash = (Get-FileHash -Algorithm SHA256 $file).Hash.ToLowerInvariant()
+          "$hash  $file" | Out-File -Encoding ascii -NoNewline "$file.sha256"
+          Write-Host "SHA-256 $hash"
+
       - name: Upload Release Asset
         uses: softprops/action-gh-release@v3
         with:
           tag_name: ${{ steps.get_version.outputs.tag }}
-          files: ./optimizerDuck-Windows-x64-${{ steps.get_version.outputs.version }}.exe
+          files: |
+            ./optimizerDuck-Windows-x64-${{ steps.get_version.outputs.version }}.exe
+            ./optimizerDuck-Windows-x64-${{ steps.get_version.outputs.version }}.exe.sha256
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

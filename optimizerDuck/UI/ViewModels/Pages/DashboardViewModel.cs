@@ -166,7 +166,7 @@ public partial class DashboardViewModel : ViewModel
         {
             var drivePath = $"{diskVolume.DriveLetter}\\";
 
-            Process.Start(new ProcessStartInfo { FileName = drivePath, UseShellExecute = true });
+            ShellLauncher.OpenFolder(drivePath);
         }
         catch (Exception ex)
         {
@@ -193,34 +193,16 @@ public partial class DashboardViewModel : ViewModel
             switch (action)
             {
                 case "Discord":
-                    Process.Start(
-                        new ProcessStartInfo
-                        {
-                            FileName = Shared.DiscordInviteURL,
-                            UseShellExecute = true,
-                        }
-                    );
+                    ShellLauncher.OpenUrl(Shared.DiscordInviteURL);
                     break;
 
                 case "GitHub":
-                    Process.Start(
-                        new ProcessStartInfo
-                        {
-                            FileName = Shared.GitHubRepoURL,
-                            UseShellExecute = true,
-                        }
-                    );
+                    ShellLauncher.OpenUrl(Shared.GitHubRepoURL);
                     break;
 
                 case "Support":
                 case "Contribute":
-                    Process.Start(
-                        new ProcessStartInfo
-                        {
-                            FileName = Shared.ContributeURL,
-                            UseShellExecute = true,
-                        }
-                    );
+                    ShellLauncher.OpenUrl(Shared.ContributeURL);
                     break;
             }
         }
@@ -380,13 +362,7 @@ public partial class DashboardViewModel : ViewModel
     {
         try
         {
-            Process.Start(
-                new ProcessStartInfo
-                {
-                    FileName = UpdaterService.LatestReleaseUrl,
-                    UseShellExecute = true,
-                }
-            );
+            ShellLauncher.OpenUrl(UpdaterService.LatestReleaseUrl);
         }
         catch (Exception ex)
         {

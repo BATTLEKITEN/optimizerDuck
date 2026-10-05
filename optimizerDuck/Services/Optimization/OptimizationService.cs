@@ -574,7 +574,7 @@ public class OptimizationService(
     }
 
     /// <summary>
-    ///     Deletes all files in the downloads directory. Silently skips files that cannot be
+    ///     Deletes every download, one folder per download. Silently skips entries that cannot be
     ///     deleted.
     /// </summary>
     /// <param name="logger">The logger for deletion errors.</param>
@@ -582,10 +582,13 @@ public class OptimizationService(
     {
         if (!Directory.Exists(Shared.DownloadsDirectory))
             return;
-        foreach (var f in Directory.GetFiles(Shared.DownloadsDirectory))
+        foreach (var f in Directory.GetFileSystemEntries(Shared.DownloadsDirectory))
             try
             {
-                File.Delete(f);
+                if (Directory.Exists(f))
+                    Directory.Delete(f, recursive: true);
+                else
+                    File.Delete(f);
             }
             catch (Exception ex)
             {

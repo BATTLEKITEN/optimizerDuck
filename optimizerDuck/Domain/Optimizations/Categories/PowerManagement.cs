@@ -263,13 +263,16 @@ public class PowerManagement : LocalizedObject, IOptimizationCategory
             OptimizationContext context
         )
         {
+            // powercfg imports this file elevated, so it is written where only administrators
+            // can replace it.
             var powerPlanPath = Path.Combine(
-                Shared.AssetsDirectory,
+                Shared.SecureDataDirectory,
                 "PowerPlans",
                 "optimizerDuck.pow"
             );
             if (
-                !EmbeddedResourceHelper.TryExtract(
+                !SecureDirectory.EnsureAdminOnly(Shared.SecureDataDirectory, context.Logger)
+                || !EmbeddedResourceHelper.TryExtract(
                     "PowerPlans.optimizerDuck.pow",
                     powerPlanPath,
                     true
